@@ -14,7 +14,7 @@ const appRoutes: Routes = [
   // default route to home on load
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   // links to the components

@@ -1,1 +1,33 @@
-<h2>home</h2>
+<main id="home-intro">
+  <h2>{{homeTitles[0]}}</h2>
+  <figure class="photo">
+    <img [src]="introContent.image" [alt]="introContent.alt">
+    <figcaption>
+      <h3>{{introContent.title}}</h3>
+      <p>
+        Hi there! Thanks for having a look at my <strong>portfolio</strong>!
+        My name is <strong>Kevin</strong> and I am willing to help you, as much as I can, figuring out who I am exactly.
+        Am I <strong>Front-End Developer</strong> or <strong>UX Designer</strong>? That would be too easy to classify myself this way...
+        Then I invite you to ask me directly if you want to hear more about it!
+      </p>
+    </figcaption>
+  </figure>
+  <div id="home-question">
+    <q>I want to hear more about your experience as...</q>
+    <a [routerLink]="['../about']" fragment="about-fed">Developer</a>
+    <a [routerLink]="['../about']" fragment="about-ux">Designer</a>
+    <a [routerLink]="['../about']" fragment="about-archi">Architect</a>
+  </div>
+</main>
+<section id="home-projects">
+  <h2>{{homeTitles[1]}}</h2>
+  <a href="#">See the rest</a>
+</section>
+<section id="home-skills">
+  <h2>{{homeTitles[2]}}</h2>
+  <a href="#">See the rest</a>
+</section>
+<section id="home-certif">
+  <h2>{{homeTitles[3]}}</h2>
+  <a href="#">See the rest</a>
+</section>

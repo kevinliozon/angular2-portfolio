@@ -8,17 +8,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var AboutComponent = (function () {
     function AboutComponent() {
+        this.details = {
+            email: "mailto:kevinliozonpro@gmail.com",
+            street: "25 Church Crescent",
+            city: "N10 3NA, London",
+            country: "United Kingdom"
+        };
+        this.aboutTitles = [
+            "My experience as a Front-End Developer",
+            "My experience as an UX Designer",
+            "Why 'Front-End Architect'?",
+            "Where do I live?"
+        ];
     }
-    AboutComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/about/about.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AboutComponent);
+    AboutComponent.prototype.ngOnInit = function () {
+        // window.location.hash retrieves the anchor
+        // then scroll down to correct level
+        setTimeout(function () {
+            document.querySelector(window.location.hash).scrollIntoView();
+        });
+    };
     return AboutComponent;
 }());
+AboutComponent = __decorate([
+    core_1.Component({
+        templateUrl: 'app/about/about.html'
+    }),
+    __metadata("design:paramtypes", [])
+], AboutComponent);
 exports.AboutComponent = AboutComponent;
 //# sourceMappingURL=about.component.js.map

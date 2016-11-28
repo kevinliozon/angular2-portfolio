@@ -9,29 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// import { IntroContent } from './home';
-// import { INTROCONTENTS } from './homeMocks';
-var HomeComponent = (function () {
-    function HomeComponent() {
-        this.introContent = {
-            "title": "Overview",
-            "image": "app/shared/images/photo.png",
-            "alt": "My photo would have appeared if you activated Javascript on this browser :-("
-        };
-        this.homeTitles = [
-            "A Front-End Architect at your service",
-            "Some of my works",
-            "My Top 10 technologies",
-            "My achievements"
-        ];
+var HomeIntroComponent = (function () {
+    function HomeIntroComponent() {
     }
-    HomeComponent = __decorate([
+    HomeIntroComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/home/home.html'
+            selector: 'intro',
+            templateUrl: 'app/home/home-intro.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], HomeIntroComponent);
+    return HomeIntroComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.HomeIntroComponent = HomeIntroComponent;
+//# sourceMappingURL=home-intro.component.js.map
