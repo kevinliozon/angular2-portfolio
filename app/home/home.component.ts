@@ -1,27 +1,29 @@
 import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { IntroContent } from './home';
-// import { INTROCONTENTS } from './homeMocks';
+import { Project } from '../shared/project';
+import { PROJECTS } from '../shared/mocks';
+import { ProjectService } from '../shared/project.service'
+
 @Component({
   templateUrl: 'app/home/home.html'
 })
 export class HomeComponent
 {
   introContent = {
-    "title": "Overview",
+    "title": "A Front-End Architect at your service",
     "image": "app/shared/images/photo.png",
     "alt": "My photo would have appeared if you activated Javascript on this browser :-("
   };
   homeTitles = [
-    "A Front-End Architect at your service",
+    "Overview",
     "Some of my works",
     "My Top 10 technologies",
     "My achievements"
   ]
-
-  // introContents: IntroContent[];
-  // ngOnInit()
-  // {
-  //   this.introContents = INTROCONTENTS;
-  // }
+  // Injection of ProjectService
+  projects: Project[];
+  constructor(private ProjectService: ProjectService) { }
+  ngOnInit() {
+    this.projects = this.ProjectService.getProjects();
+  }
 }

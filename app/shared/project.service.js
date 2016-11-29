@@ -8,18 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var mocks_1 = require('./mocks');
 var core_1 = require('@angular/core');
-var HomeIntroComponent = (function () {
-    function HomeIntroComponent() {
+var ProjectService = (function () {
+    function ProjectService() {
     }
-    HomeIntroComponent = __decorate([
-        core_1.Component({
-            selector: 'intro',
-            templateUrl: 'app/home/home-intro.html'
-        }), 
+    ProjectService.prototype.getProjects = function () {
+        return mocks_1.PROJECTS;
+    };
+    ProjectService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], HomeIntroComponent);
-    return HomeIntroComponent;
+    ], ProjectService);
+    return ProjectService;
 }());
-exports.HomeIntroComponent = HomeIntroComponent;
-//# sourceMappingURL=home-intro.component.js.map
+exports.ProjectService = ProjectService;
+//# sourceMappingURL=project.service.js.map

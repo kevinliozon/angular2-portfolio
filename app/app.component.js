@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var project_service_1 = require('./shared/project.service');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/app.html'
+            templateUrl: 'app/app.html',
+            providers: [project_service_1.ProjectService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

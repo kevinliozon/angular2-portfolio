@@ -9,27 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// import { IntroContent } from './home';
-// import { INTROCONTENTS } from './homeMocks';
+var project_service_1 = require('../shared/project.service');
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(ProjectService) {
+        this.ProjectService = ProjectService;
         this.introContent = {
-            "title": "Overview",
+            "title": "A Front-End Architect at your service",
             "image": "app/shared/images/photo.png",
             "alt": "My photo would have appeared if you activated Javascript on this browser :-("
         };
         this.homeTitles = [
-            "A Front-End Architect at your service",
+            "Overview",
             "Some of my works",
             "My Top 10 technologies",
             "My achievements"
         ];
     }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.projects = this.ProjectService.getProjects();
+    };
     HomeComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/home/home.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [project_service_1.ProjectService])
     ], HomeComponent);
     return HomeComponent;
 }());
