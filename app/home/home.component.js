@@ -21,8 +21,8 @@ var HomeComponent = (function () {
         this.homeTitles = [
             "Overview",
             "Some of my works",
-            "My Top 10 technologies",
-            "My achievements"
+            "My TOP 10 technologies",
+            "My Resume"
         ];
     }
     HomeComponent.prototype.ngOnInit = function () {

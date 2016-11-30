@@ -51,4 +51,4 @@ exports.PROJECTS = [{
         "view": "string",
         "github": "string"
     }];
-//# sourceMappingURL=mocks.js.map
+//# sourceMappingURL=mock-projects.js.map

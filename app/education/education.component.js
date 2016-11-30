@@ -8,19 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var mock_projects_1 = require('./mocks/mock-projects');
 var core_1 = require('@angular/core');
-var ProjectService = (function () {
-    function ProjectService() {
+var EducationComponent = (function () {
+    function EducationComponent() {
     }
-    ProjectService.prototype.getProjects = function () {
-        return mock_projects_1.PROJECTS;
-    };
-    ProjectService = __decorate([
-        core_1.Injectable(), 
+    EducationComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/education/education.html'
+        }), 
         __metadata('design:paramtypes', [])
-    ], ProjectService);
-    return ProjectService;
+    ], EducationComponent);
+    return EducationComponent;
 }());
-exports.ProjectService = ProjectService;
-//# sourceMappingURL=project.service.js.map
+exports.EducationComponent = EducationComponent;
+//# sourceMappingURL=education.component.js.map

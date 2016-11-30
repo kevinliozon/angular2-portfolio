@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Project } from '../shared/project';
-import { PROJECTS } from '../shared/mocks';
+//projects
+import { Project } from '../shared/models/project';
+import { PROJECTS } from '../shared/mocks/mock-projects';
 import { ProjectService } from '../shared/project.service'
 
 @Component({
@@ -17,8 +18,8 @@ export class HomeComponent
   homeTitles = [
     "Overview",
     "Some of my works",
-    "My Top 10 technologies",
-    "My achievements"
+    "My TOP 10 technologies",
+    "My Resume"
   ]
   // Injection of ProjectService
   projects: Project[];

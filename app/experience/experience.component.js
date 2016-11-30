@@ -9,16 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var CertificatesComponent = (function () {
-    function CertificatesComponent() {
+var ExperienceComponent = (function () {
+    function ExperienceComponent() {
     }
-    CertificatesComponent = __decorate([
+    ExperienceComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/certificates/certificates.html'
+            templateUrl: 'app/experience/experience.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], CertificatesComponent);
-    return CertificatesComponent;
+    ], ExperienceComponent);
+    return ExperienceComponent;
 }());
-exports.CertificatesComponent = CertificatesComponent;
-//# sourceMappingURL=certificates.component.js.map
+exports.ExperienceComponent = ExperienceComponent;
+//# sourceMappingURL=experience.component.js.map

@@ -6,7 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent }   from './app.component';
 import { HomeComponent }   from './home/home.component';
 import { AboutComponent }   from './about/about.component';
-import { CertificatesComponent }   from './certificates/certificates.component';
+import { EducationComponent }   from './education/education.component';
+import { ExperienceComponent }   from './experience/experience.component';
 import { ProjectsComponent }   from './projects/projects.component';
 import { SkillsComponent }   from './skills/skills.component';
 
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
   // links to the components
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'certificates', component: CertificatesComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent }
 ];
@@ -37,7 +39,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    CertificatesComponent,
+    EducationComponent,
+    ExperienceComponent,
     ProjectsComponent,
     SkillsComponent
   ],
