@@ -1,1 +1,6 @@
-<h2>projects</h2>
+<h2>{{ title }}</h2>
+<ul>
+  <li *ngFor="let project of projects"> <!-- | orderBy : ['-project.id', 'project.title', 'project.date']" -->
+    <h3>{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy" }}</h3>
+  </li>
+</ul>

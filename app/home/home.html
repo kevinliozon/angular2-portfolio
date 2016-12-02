@@ -23,7 +23,7 @@
   <h2>{{homeTitles[1]}}</h2>
   <ul>
     <li *ngFor="let project of projects">
-      <h3>{{project.title}}</h3>
+      <h3 *ngIf="project.featured === true">{{project.title}}</h3>
     </li>
   </ul>
   <a href="#">See the rest</a>
