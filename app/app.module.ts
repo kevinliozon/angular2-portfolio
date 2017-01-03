@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-
+//Components
 import { AppComponent }   from './app.component';
 import { HomeComponent }   from './home/home.component';
 import { AboutComponent }   from './about/about.component';
@@ -10,6 +10,12 @@ import { EducationComponent }   from './education/education.component';
 import { ExperienceComponent }   from './experience/experience.component';
 import { ProjectsComponent }   from './projects/projects.component';
 import { SkillsComponent }   from './skills/skills.component';
+//Translations
+import { TRANSLATION_PROVIDERS }   from './translate/translation';
+import { TranslateService }   from './translate/translate.service';
+import { TranslatePipe }   from './translate/translate.pipe';
+//Services
+import { ProjectService } from './shared/project.service';
 
 const appRoutes: Routes = [
   // default route to home on load
@@ -42,8 +48,10 @@ const appRoutes: Routes = [
     EducationComponent,
     ExperienceComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    TranslatePipe
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers:    [ TRANSLATION_PROVIDERS, TranslateService, ProjectService ]
 })
 export class AppModule { }

@@ -9,17 +9,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var project_service_1 = require('./shared/project.service');
+var translate_service_1 = require('./translate/translate.service');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(_translate) {
+        this._translate = _translate;
     }
+    AppComponent.prototype.ngOnInit = function () {
+        // standing data
+        this.supportedLanguages = [
+            { display: 'English', value: 'eng' },
+            { display: 'Français', value: 'fra' },
+            { display: 'Español', value: 'esp' },
+            { display: 'Italiano', value: 'ita' },
+        ];
+        // set current langage
+        this.selectLang('eng');
+    };
+    AppComponent.prototype.isCurrentLang = function (lang) {
+        // check if the selected lang is current lang
+        return lang === this._translate.currentLang;
+    };
+    AppComponent.prototype.selectLang = function (lang) {
+        // set current lang;
+        this._translate.use(lang);
+        this.refreshText();
+    };
+    AppComponent.prototype.refreshText = function () {
+        // refresh translation when language change
+        this.translatedText = this._translate.instant('hello world');
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/app.html',
-            providers: [project_service_1.ProjectService]
+            templateUrl: 'app/app.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [translate_service_1.TranslateService])
     ], AppComponent);
     return AppComponent;
 }());

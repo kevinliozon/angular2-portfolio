@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
+//Components
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var about_component_1 = require('./about/about.component');
@@ -19,6 +20,12 @@ var education_component_1 = require('./education/education.component');
 var experience_component_1 = require('./experience/experience.component');
 var projects_component_1 = require('./projects/projects.component');
 var skills_component_1 = require('./skills/skills.component');
+//Translations
+var translation_1 = require('./translate/translation');
+var translate_service_1 = require('./translate/translate.service');
+var translate_pipe_1 = require('./translate/translate.pipe');
+//Services
+var project_service_1 = require('./shared/project.service');
 var appRoutes = [
     // default route to home on load
     {
@@ -51,9 +58,11 @@ var AppModule = (function () {
                 education_component_1.EducationComponent,
                 experience_component_1.ExperienceComponent,
                 projects_component_1.ProjectsComponent,
-                skills_component_1.SkillsComponent
+                skills_component_1.SkillsComponent,
+                translate_pipe_1.TranslatePipe
             ],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            providers: [translation_1.TRANSLATION_PROVIDERS, translate_service_1.TranslateService, project_service_1.ProjectService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

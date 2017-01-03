@@ -1,6 +1,9 @@
 <h2>{{ title }}</h2>
+{{ 'hello world' | translate }}
+{{ 'test' | translate }}
+{{ 'testmerge' | translate }}
 <ul>
-  <li *ngFor="let project of projects"> <!-- | orderBy : ['-project.id', 'project.title', 'project.date']" -->
+  <li *ngFor="let project of projects">
     <h3>{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy" }}</h3>
   </li>
 </ul>
