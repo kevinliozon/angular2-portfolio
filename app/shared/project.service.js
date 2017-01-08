@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var mock_projects_1 = require('./mocks/mock-projects');
-var core_1 = require('@angular/core');
+var mock_projects_1 = require("./mocks/mock-projects");
+var core_1 = require("@angular/core");
 var ProjectService = (function () {
     function ProjectService() {
     }
     ProjectService.prototype.getProjects = function () {
         return mock_projects_1.PROJECTS;
     };
-    ProjectService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], ProjectService);
     return ProjectService;
 }());
+ProjectService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], ProjectService);
 exports.ProjectService = ProjectService;
 //# sourceMappingURL=project.service.js.map

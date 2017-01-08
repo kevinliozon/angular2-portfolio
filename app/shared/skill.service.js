@@ -8,23 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var mock_skills_1 = require("./mocks/mock-skills");
 var core_1 = require("@angular/core");
-var project_service_1 = require("../shared/project.service");
-var ProjectsComponent = (function () {
-    function ProjectsComponent(ProjectService) {
-        this.ProjectService = ProjectService;
-        this.title = "My Projects";
+var SkillService = (function () {
+    function SkillService() {
     }
-    ProjectsComponent.prototype.ngOnInit = function () {
-        this.projects = this.ProjectService.getProjects();
+    SkillService.prototype.getSkills = function () {
+        return mock_skills_1.SKILLS;
     };
-    return ProjectsComponent;
+    return SkillService;
 }());
-ProjectsComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/projects/projects.html'
-    }),
-    __metadata("design:paramtypes", [project_service_1.ProjectService])
-], ProjectsComponent);
-exports.ProjectsComponent = ProjectsComponent;
-//# sourceMappingURL=projects.component.js.map
+SkillService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], SkillService);
+exports.SkillService = SkillService;
+//# sourceMappingURL=skill.service.js.map

@@ -16,6 +16,7 @@ import { TranslateService }   from './translate/translate.service';
 import { TranslatePipe }   from './translate/translate.pipe';
 //Services
 import { ProjectService } from './shared/project.service';
+import { SkillService } from './shared/skill.service';
 
 const appRoutes: Routes = [
   // default route to home on load
@@ -52,6 +53,6 @@ const appRoutes: Routes = [
     TranslatePipe
   ],
   bootstrap:    [ AppComponent ],
-  providers:    [ TRANSLATION_PROVIDERS, TranslateService, ProjectService ]
+  providers:    [ TRANSLATION_PROVIDERS, TranslateService, ProjectService, SkillService ]
 })
 export class AppModule { }

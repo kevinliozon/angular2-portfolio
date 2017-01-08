@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var translate_service_1 = require('./translate.service'); // our translate service
+var core_1 = require("@angular/core");
+var translate_service_1 = require("./translate.service"); // our translate service
 var TranslatePipe = (function () {
     function TranslatePipe(_translate) {
         this._translate = _translate;
@@ -19,15 +19,14 @@ var TranslatePipe = (function () {
             return;
         return this._translate.instant(value);
     };
-    TranslatePipe = __decorate([
-        // our translate service
-        core_1.Pipe({
-            name: 'translate',
-            pure: false // impure pipe allows updating value when we change language
-        }), 
-        __metadata('design:paramtypes', [translate_service_1.TranslateService])
-    ], TranslatePipe);
     return TranslatePipe;
 }());
+TranslatePipe = __decorate([
+    core_1.Pipe({
+        name: 'translate',
+        pure: false // impure pipe allows updating value when we change language
+    }),
+    __metadata("design:paramtypes", [translate_service_1.TranslateService])
+], TranslatePipe);
 exports.TranslatePipe = TranslatePipe;
 //# sourceMappingURL=translate.pipe.js.map

@@ -8,24 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var router_1 = require('@angular/router');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var router_1 = require("@angular/router");
 //Components
-var app_component_1 = require('./app.component');
-var home_component_1 = require('./home/home.component');
-var about_component_1 = require('./about/about.component');
-var education_component_1 = require('./education/education.component');
-var experience_component_1 = require('./experience/experience.component');
-var projects_component_1 = require('./projects/projects.component');
-var skills_component_1 = require('./skills/skills.component');
+var app_component_1 = require("./app.component");
+var home_component_1 = require("./home/home.component");
+var about_component_1 = require("./about/about.component");
+var education_component_1 = require("./education/education.component");
+var experience_component_1 = require("./experience/experience.component");
+var projects_component_1 = require("./projects/projects.component");
+var skills_component_1 = require("./skills/skills.component");
 //Translations
-var translation_1 = require('./translate/translation');
-var translate_service_1 = require('./translate/translate.service');
-var translate_pipe_1 = require('./translate/translate.pipe');
+var translation_1 = require("./translate/translation");
+var translate_service_1 = require("./translate/translate.service");
+var translate_pipe_1 = require("./translate/translate.pipe");
 //Services
-var project_service_1 = require('./shared/project.service');
+var project_service_1 = require("./shared/project.service");
+var skill_service_1 = require("./shared/skill.service");
 var appRoutes = [
     // default route to home on load
     {
@@ -44,29 +45,29 @@ var appRoutes = [
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule,
-                router_1.RouterModule.forRoot(appRoutes)
-            ],
-            declarations: [
-                app_component_1.AppComponent,
-                home_component_1.HomeComponent,
-                about_component_1.AboutComponent,
-                education_component_1.EducationComponent,
-                experience_component_1.ExperienceComponent,
-                projects_component_1.ProjectsComponent,
-                skills_component_1.SkillsComponent,
-                translate_pipe_1.TranslatePipe
-            ],
-            bootstrap: [app_component_1.AppComponent],
-            providers: [translation_1.TRANSLATION_PROVIDERS, translate_service_1.TranslateService, project_service_1.ProjectService]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            router_1.RouterModule.forRoot(appRoutes)
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            home_component_1.HomeComponent,
+            about_component_1.AboutComponent,
+            education_component_1.EducationComponent,
+            experience_component_1.ExperienceComponent,
+            projects_component_1.ProjectsComponent,
+            skills_component_1.SkillsComponent,
+            translate_pipe_1.TranslatePipe
+        ],
+        bootstrap: [app_component_1.AppComponent],
+        providers: [translation_1.TRANSLATION_PROVIDERS, translate_service_1.TranslateService, project_service_1.ProjectService, skill_service_1.SkillService]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

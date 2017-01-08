@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var project_service_1 = require('../shared/project.service');
+var core_1 = require("@angular/core");
+var project_service_1 = require("../shared/project.service");
 var HomeComponent = (function () {
     function HomeComponent(ProjectService) {
         this.ProjectService = ProjectService;
@@ -28,13 +28,13 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngOnInit = function () {
         this.projects = this.ProjectService.getProjects();
     };
-    HomeComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/home/home.html'
-        }), 
-        __metadata('design:paramtypes', [project_service_1.ProjectService])
-    ], HomeComponent);
     return HomeComponent;
 }());
+HomeComponent = __decorate([
+    core_1.Component({
+        templateUrl: 'app/home/home.html'
+    }),
+    __metadata("design:paramtypes", [project_service_1.ProjectService])
+], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map

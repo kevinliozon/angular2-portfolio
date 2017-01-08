@@ -9,7 +9,7 @@ import { ProjectService } from '../shared/project.service'
 })
 
 export class ProjectsComponent {
-  title= "My Works";
+  title= "My Projects";
 
   // Injection of ProjectService
   projects: Project[];

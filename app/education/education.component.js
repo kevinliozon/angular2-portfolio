@@ -8,17 +8,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var EducationComponent = (function () {
     function EducationComponent() {
     }
-    EducationComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/education/education.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], EducationComponent);
     return EducationComponent;
 }());
+EducationComponent = __decorate([
+    core_1.Component({
+        templateUrl: 'app/education/education.html'
+    }),
+    __metadata("design:paramtypes", [])
+], EducationComponent);
 exports.EducationComponent = EducationComponent;
 //# sourceMappingURL=education.component.js.map
