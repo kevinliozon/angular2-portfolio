@@ -27,6 +27,7 @@ var translate_pipe_1 = require("./translate/translate.pipe");
 //Services
 var project_service_1 = require("./shared/project.service");
 var skill_service_1 = require("./shared/skill.service");
+var role_service_1 = require("./shared/role.service");
 var appRoutes = [
     // default route to home on load
     {
@@ -65,7 +66,12 @@ AppModule = __decorate([
             translate_pipe_1.TranslatePipe
         ],
         bootstrap: [app_component_1.AppComponent],
-        providers: [translation_1.TRANSLATION_PROVIDERS, translate_service_1.TranslateService, project_service_1.ProjectService, skill_service_1.SkillService]
+        providers: [translation_1.TRANSLATION_PROVIDERS,
+            translate_service_1.TranslateService,
+            project_service_1.ProjectService,
+            skill_service_1.SkillService,
+            role_service_1.RoleService,
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);

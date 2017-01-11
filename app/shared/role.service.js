@@ -8,23 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var mock_roles_1 = require("./mocks/mock-roles");
 var core_1 = require("@angular/core");
-var role_service_1 = require("../shared/role.service");
-var ExperienceComponent = (function () {
-    function ExperienceComponent(RoleService) {
-        this.RoleService = RoleService;
-        this.title = "My Roles";
+var RoleService = (function () {
+    function RoleService() {
     }
-    ExperienceComponent.prototype.ngOnInit = function () {
-        this.roles = this.RoleService.getRoles();
+    RoleService.prototype.getRoles = function () {
+        return mock_roles_1.ROLES;
     };
-    return ExperienceComponent;
+    return RoleService;
 }());
-ExperienceComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/experience/experience.html'
-    }),
-    __metadata("design:paramtypes", [role_service_1.RoleService])
-], ExperienceComponent);
-exports.ExperienceComponent = ExperienceComponent;
-//# sourceMappingURL=experience.component.js.map
+RoleService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], RoleService);
+exports.RoleService = RoleService;
+//# sourceMappingURL=role.service.js.map

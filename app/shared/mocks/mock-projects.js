@@ -1,6 +1,6 @@
 "use strict";
 exports.PROJECTS = [{
-        "id": 1,
+        "id": "#project-1",
         "featured": true,
         "title": "About this Portfolio",
         "desc": "A social sharing platform for 3D designers",
@@ -13,7 +13,7 @@ exports.PROJECTS = [{
         "github": "string"
     },
     {
-        "id": 2,
+        "id": "#project-2",
         "featured": true,
         "title": "iMakr",
         "desc": "A social sharing platform for 3D designers",
@@ -26,7 +26,7 @@ exports.PROJECTS = [{
         "github": "string"
     },
     {
-        "id": 3,
+        "id": "#project-3",
         "featured": true,
         "title": "Digitela",
         "desc": "A social sharing platform for 3D designers",
@@ -39,7 +39,7 @@ exports.PROJECTS = [{
         "github": "string"
     },
     {
-        "id": 4,
+        "id": "#project-4",
         "featured": true,
         "title": "My Mini Factory",
         "desc": "A social sharing platform for 3D designers",
@@ -52,7 +52,7 @@ exports.PROJECTS = [{
         "github": "string"
     },
     {
-        "id": 5,
+        "id": "#project-5",
         "featured": false,
         "title": "C2I",
         "desc": "A social sharing platform for 3D designers",

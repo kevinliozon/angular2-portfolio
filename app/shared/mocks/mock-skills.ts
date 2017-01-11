@@ -2,7 +2,7 @@ import { Skill } from '../models/skill';
 
 
 export let SKILLS: Skill[] = [{
-  "id": 1,
+  "id": "#skill-1",
   "featured": true,
   "title": "Angular 2",
   "desc": "Front end framework",
@@ -11,7 +11,7 @@ export let SKILLS: Skill[] = [{
   "tag": "Angular.js"
 },
 {
-  "id": 2,
+  "id": "#skill-2",
   "featured": true,
   "title": "iMakr",
   "desc": "A social sharing platform for 3D designers",
@@ -20,7 +20,7 @@ export let SKILLS: Skill[] = [{
   "tag": "Front, UX, Symfony, Foundation, Angular.js"
 },
 {
-  "id": 3,
+  "id": "#skill-3",
   "featured": true,
   "title": "Digitela",
   "desc": "A social sharing platform for 3D designers",
@@ -29,7 +29,7 @@ export let SKILLS: Skill[] = [{
   "tag": "Front, UX, Symfony, Foundation, Angular.js"
 },
 {
-  "id": 4,
+  "id": "#skill-4",
   "featured": true,
   "title": "My Mini Factory",
   "desc": "A social sharing platform for 3D designers",
@@ -38,7 +38,7 @@ export let SKILLS: Skill[] = [{
   "tag": "Front, UX, Symfony, Foundation, Angular.js"
 },
 {
-  "id": 5,
+  "id": "#skill-5",
   "featured": false,
   "title": "C2I",
   "desc": "A social sharing platform for 3D designers",

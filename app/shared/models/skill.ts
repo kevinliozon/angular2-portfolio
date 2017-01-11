@@ -1,6 +1,6 @@
 export interface Skill
 {
-  id: number;
+  id: string;
   featured: boolean;
   title: string;
   desc: string;
