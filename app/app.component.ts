@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { TranslateService } from './translate/translate.service';
 
 @Component({
+  moduleId: module.id.replace("/dist/", "/app/"),
   selector: 'my-app',
-  templateUrl: 'app/app.html'
+  templateUrl: 'app.html'
 })
 export class AppComponent {
 

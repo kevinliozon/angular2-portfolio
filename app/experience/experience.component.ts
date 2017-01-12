@@ -5,7 +5,8 @@ import { ROLES } from '../shared/mocks/mock-roles';
 import { RoleService } from '../shared/role.service'
 
 @Component({
-  templateUrl: 'app/experience/experience.html'
+  moduleId: module.id.replace("/dist/", "/app/"),
+  templateUrl: 'experience.html'
 })
 export class ExperienceComponent {
   title= "My Roles";

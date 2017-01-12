@@ -5,7 +5,8 @@ import { PROJECTS } from '../shared/mocks/mock-projects';
 import { ProjectService } from '../shared/project.service'
 
 @Component({
-  templateUrl: 'app/projects/projects.html'
+  moduleId: module.id.replace("/dist/", "/app/"),
+  templateUrl: 'projects.html'
 })
 
 export class ProjectsComponent {

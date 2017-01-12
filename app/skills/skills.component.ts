@@ -5,7 +5,8 @@ import { SKILLS } from '../shared/mocks/mock-skills';
 import { SkillService } from '../shared/skill.service'
 
 @Component({
-  templateUrl: 'app/skills/skills.html'
+  moduleId: module.id.replace("/dist/", "/app/"),
+  templateUrl: 'skills.html'
 })
 export class SkillsComponent {
   title= "My Skills";

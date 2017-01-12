@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
-  templateUrl: 'app/education/education.html'
+  moduleId: module.id.replace("/dist/", "/app/"),
+  templateUrl: 'education.html'
 })
 export class EducationComponent { }
