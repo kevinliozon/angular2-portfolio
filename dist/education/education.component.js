@@ -9,9 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var diploma_service_1 = require("../shared/diploma.service");
 var EducationComponent = (function () {
-    function EducationComponent() {
+    function EducationComponent(DiplomaService) {
+        this.DiplomaService = DiplomaService;
+        this.title = "My Diplomas";
     }
+    EducationComponent.prototype.ngOnInit = function () {
+        this.diplomas = this.DiplomaService.getDiplomas();
+    };
     return EducationComponent;
 }());
 EducationComponent = __decorate([
@@ -19,7 +25,7 @@ EducationComponent = __decorate([
         moduleId: module.id.replace("/dist/", "/app/"),
         templateUrl: 'education.html'
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [diploma_service_1.DiplomaService])
 ], EducationComponent);
 exports.EducationComponent = EducationComponent;
 //# sourceMappingURL=education.component.js.map

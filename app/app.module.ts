@@ -18,6 +18,7 @@ import { TranslatePipe }   from './translate/translate.pipe';
 import { ProjectService } from './shared/project.service';
 import { SkillService } from './shared/skill.service';
 import { RoleService } from './shared/role.service';
+import { DiplomaService } from './shared/diploma.service';
 
 const appRoutes: Routes = [
   // default route to home on load
@@ -60,6 +61,7 @@ const appRoutes: Routes = [
     ProjectService,
     SkillService,
     RoleService,
+    DiplomaService
   ]
 })
 export class AppModule { }
