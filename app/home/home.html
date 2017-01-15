@@ -30,9 +30,24 @@
 </section>
 <section id="home-skills">
   <h2>{{homeTitles[2]}}</h2>
+  <ul>
+    <li *ngFor="let skill of skills">
+      <h3 *ngIf="skill.featured === true">{{skill.title}}</h3>
+    </li>
+  </ul>
   <a href="#">See the rest</a>
 </section>
-<section id="home-certif">
+<section id="home-milestones">
   <h2>{{homeTitles[3]}}</h2>
+  <ul>
+    <li *ngFor="let diploma of diplomas">
+      <h3>{{diploma.degree}}</h3>
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let role of roles">
+      <h3>{{role.title}}</h3>
+    </li>
+  </ul>
   <a href="#">See the rest</a>
 </section>

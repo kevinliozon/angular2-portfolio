@@ -4,6 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { Project } from '../shared/models/project';
 import { PROJECTS } from '../shared/mocks/mock-projects';
 import { ProjectService } from '../shared/project.service'
+//skills
+import { Skill } from '../shared/models/skill';
+import { SKILLS } from '../shared/mocks/mock-skills';
+import { SkillService } from '../shared/skill.service'
+//roles
+import { Role } from '../shared/models/role';
+import { ROLES } from '../shared/mocks/mock-roles';
+import { RoleService } from '../shared/role.service'
+//diplomas
+import { Diploma } from '../shared/models/diploma';
+import { DIPLOMAS } from '../shared/mocks/mock-diplomas';
+import { DiplomaService } from '../shared/diploma.service'
 
 @Component({
   moduleId: module.id.replace("/dist/", "/app/"),
@@ -19,13 +31,22 @@ export class HomeComponent
   homeTitles = [
     "Overview",
     "Some of my works",
-    "My TOP 10 technologies",
-    "My Resume"
+    "My Top 10 technologies",
+    "Milestones"
   ]
-  // Injection of ProjectService
+  // Injections of services
   projects: Project[];
-  constructor(private ProjectService: ProjectService) { }
+  skills: Skill[];
+  roles: Role[];
+  diplomas: Diploma[];
+  constructor(private ProjectService: ProjectService,
+              private SkillService: SkillService,
+              private RoleService: RoleService,
+              private DiplomaService: DiplomaService) { }
   ngOnInit() {
     this.projects = this.ProjectService.getProjects();
+    this.skills = this.SkillService.getSkills();
+    this.roles = this.RoleService.getRoles();
+    this.diplomas = this.DiplomaService.getDiplomas();
   }
 }
