@@ -652,12 +652,22 @@
     Now my main technologies.
 </p>
 </main>
-<section id="about-archi">
 <h2>{{aboutTitles[3]}}</h2>
-  <address>
-    <p><a href={{details.email}}>Kevin Liozon</a></p>
-    <p>{{details.street}}</p>
-    <p>{{details.city}}</p>
-    <p>{{details.country}}</p>
-  </address>
-</section>
+<address>
+  <p><a href={{details.email}}>Kevin Liozon</a></p>
+  <p>{{details.street}}</p>
+  <p>{{details.city}}</p>
+  <p>{{details.country}}</p>
+</address>
+<h2>{{aboutTitles[4]}}</h2>
+<ul>
+  <li *ngFor="let tool of tools">
+    <h3>{{ tool.id }} {{ tool.title }}</h3>
+  </li>
+</ul>
+<h2>{{aboutTitles[5]}}</h2>
+<ul>
+  <li *ngFor="let hobby of hobbies">
+    <h3>{{ hobby.id }} {{ hobby.title | translate }}</h3>
+  </li>
+</ul>
