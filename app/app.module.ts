@@ -14,6 +14,8 @@ import { SkillsComponent }   from './skills/skills.component';
 import { TRANSLATION_PROVIDERS }   from './translate/translation';
 import { TranslateService }   from './translate/translate.service';
 import { TranslatePipe }   from './translate/translate.pipe';
+//filters
+import { FilterPipe } from './shared/filter.pipe'
 //Services
 import { ProjectService } from './shared/project.service';
 import { SkillService } from './shared/skill.service';
@@ -54,7 +56,8 @@ const appRoutes: Routes = [
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
-    TranslatePipe
+    TranslatePipe,
+    FilterPipe
   ],
   bootstrap:    [ AppComponent ],
   providers:

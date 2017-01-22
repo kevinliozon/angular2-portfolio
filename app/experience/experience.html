@@ -1,6 +1,10 @@
 <h2>{{ title }}</h2>
+<button (click)='visible=""'>all</button>
+<button (click)='visible="Permanent"'>Permanent</button>
+<button (click)='visible="Contract"'>Contract</button>
+<button (click)='visible="Internship"'>Internship</button>
 <ul>
-  <li *ngFor="let role of roles">
+  <li *ngFor="let role of roles | filter:{category:visible}">
     <h3>{{ role.id }} {{ role.title }} {{ role.date_start | date : "MMM yyyy" }}</h3>
   </li>
 </ul>

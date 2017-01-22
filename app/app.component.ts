@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from './translate/translate.service';
+//filters
+import { FilterPipe } from './shared/filter.pipe';
 
 @Component({
   moduleId: module.id.replace("/dist/", "/app/"),

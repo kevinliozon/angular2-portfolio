@@ -6,7 +6,7 @@ export let ROLES: Role[] = [{
   "featured": true,
   "title": "Field Support Technician",
   "company": "Medasys",
-  "category": "Contract",
+  "category": "Permanent",
   "desc": "string",
   "image": "string",
   "alt": "string",

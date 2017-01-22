@@ -1,7 +1,10 @@
 <h2>{{ title }}</h2>
+<button (click)='visible=""'>all</button>
+<button (click)='visible="Front-End"'>Front-End</button>
+<button (click)='visible="UX"'>UX</button>
 
 <ul>
-  <li *ngFor="let skill of skills">
+  <li *ngFor="let skill of skills | filter:{category:visible}">
     <h3>{{ skill.id }} {{ skill.title }}</h3>
   </li>
 </ul>

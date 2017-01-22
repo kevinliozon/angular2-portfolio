@@ -2,8 +2,12 @@
 {{ 'hello world' | translate }}
 {{ 'test' | translate }}
 {{ 'testmerge' | translate }}
+<button (click)='visible=""'>all</button>
+<button (click)='visible="Front-End"'>Front-End</button>
+<button (click)='visible="UX"'>UX</button>
+<button (click)='visible="Portfolio"'>Portfolios</button>
 <ul>
-  <li *ngFor="let project of projects">
-    <h3>{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy" }}</h3>
+  <li *ngFor="let project of projects | filter:{category:visible}">
+    <h3>{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}</h3>
   </li>
 </ul>

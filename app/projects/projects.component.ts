@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 //projects
 import { Project } from '../shared/models/project';
-import { PROJECTS } from '../shared/mocks/mock-projects';
 import { ProjectService } from '../shared/project.service'
 
 @Component({
@@ -10,12 +9,14 @@ import { ProjectService } from '../shared/project.service'
 })
 
 export class ProjectsComponent {
-  title= "My Projects";
+  title: string;
 
   // Injection of ProjectService
   projects: Project[];
-  constructor(private ProjectService: ProjectService) { }
+  constructor(private projectService: ProjectService) { }
   ngOnInit() {
-    this.projects = this.ProjectService.getProjects();
+    this.title = "My Projects";
+    this.projects = this.projectService.getProjects();
   }
+  // all = {tag: "Digitela"};
 }
