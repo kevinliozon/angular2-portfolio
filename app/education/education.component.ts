@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 //diplomas
 import { Diploma } from '../shared/models/diploma';
-import { DIPLOMAS } from '../shared/mocks/mock-diplomas';
 import { DiplomaService } from '../shared/diploma.service'
 
 @Component({
@@ -9,12 +8,12 @@ import { DiplomaService } from '../shared/diploma.service'
   templateUrl: 'education.html'
 })
 export class EducationComponent {
-  title= "My Diplomas";
-
+  title: string;
   // Injection of ProjectService
   diplomas: Diploma[];
-  constructor(private DiplomaService: DiplomaService) { }
+  constructor(private diplomaService: DiplomaService) { }
   ngOnInit() {
-    this.diplomas = this.DiplomaService.getDiplomas();
+    this.title= "My Diplomas";
+    this.diplomas = this.diplomaService.getDiplomas();
   }
 }

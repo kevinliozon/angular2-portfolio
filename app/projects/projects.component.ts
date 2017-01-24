@@ -10,13 +10,11 @@ import { ProjectService } from '../shared/project.service'
 
 export class ProjectsComponent {
   title: string;
-
-  // Injection of ProjectService
   projects: Project[];
+  // Injection of ProjectService
   constructor(private projectService: ProjectService) { }
   ngOnInit() {
     this.title = "My Projects";
     this.projects = this.projectService.getProjects();
   }
-  // all = {tag: "Digitela"};
 }

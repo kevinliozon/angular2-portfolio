@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 //roles
 import { Role } from '../shared/models/role';
-import { ROLES } from '../shared/mocks/mock-roles';
 import { RoleService } from '../shared/role.service'
 
 @Component({
@@ -9,12 +8,12 @@ import { RoleService } from '../shared/role.service'
   templateUrl: 'experience.html'
 })
 export class ExperienceComponent {
-  title= "My Roles";
-
+  title: string;
   // Injection of ProjectService
   roles: Role[];
-  constructor(private RoleService: RoleService) { }
+  constructor(private roleService: RoleService) { }
   ngOnInit() {
-    this.roles = this.RoleService.getRoles();
+    this.title= "My Roles";
+    this.roles = this.roleService.getRoles();
   }
 }

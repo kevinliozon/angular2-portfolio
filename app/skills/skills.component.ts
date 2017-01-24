@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 //skills
 import { Skill } from '../shared/models/skill';
-import { SKILLS } from '../shared/mocks/mock-skills';
 import { SkillService } from '../shared/skill.service'
 
 @Component({
@@ -9,12 +8,12 @@ import { SkillService } from '../shared/skill.service'
   templateUrl: 'skills.html'
 })
 export class SkillsComponent {
-  title= "My Skills";
-
-  // Injection of SkillService
+  title: string;
   skills: Skill[];
-  constructor(private SkillService: SkillService) { }
+  // Injection of SkillService
+  constructor(private skillService: SkillService) { }
   ngOnInit() {
-    this.skills = this.SkillService.getSkills();
+    this.title= "My Skills";
+    this.skills = this.skillService.getSkills();
   }
 }

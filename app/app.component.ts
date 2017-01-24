@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateService } from './translate/translate.service';
-//filters
-import { FilterPipe } from './shared/filter.pipe';
 
 @Component({
   moduleId: module.id.replace("/dist/", "/app/"),
@@ -23,7 +21,6 @@ export class AppComponent {
         { display: 'Español', value: 'esp' },
         { display: 'Italiano', value: 'ita' },
       ];
-
       // set current langage
       this.selectLang('eng');
   }
