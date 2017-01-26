@@ -9,6 +9,7 @@ import { TranslateService } from './translate/translate.service';
 export class AppComponent {
 
   public translatedText: string;
+  public aboutFront: string;
   public supportedLanguages: any[];
 
   constructor(private _translate: TranslateService) { }
@@ -39,5 +40,6 @@ export class AppComponent {
   refreshText() {
       // refresh translation when language change
       this.translatedText = this._translate.instant('hello world');
+      this.aboutFront = this._translate.instant('aboutFront');
   }
 }
