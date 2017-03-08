@@ -8,6 +8,8 @@
 <button (click)='visible="Portfolio"'>Portfolios</button>
 <ul>
   <li *ngFor="let project of projects | filter:{category:visible}">
-    <h3>{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}</h3>
+    <a (click)="focus=project.id">{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}</a>
   </li>
 </ul>
+<!-- Now we are binding each iteration of project to the child's project property -->
+<project-view *ngFor="let project of projects | filter:{id:focus}" [project]="project"></project-view>

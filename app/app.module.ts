@@ -9,6 +9,7 @@ import { AboutComponent }   from './about/about.component';
 import { EducationComponent }   from './education/education.component';
 import { ExperienceComponent }   from './experience/experience.component';
 import { ProjectsComponent }   from './projects/projects.component';
+import { ProjectComponent }   from './projects/project.component';
 import { SkillsComponent }   from './skills/skills.component';
 //Translations
 import { TRANSLATION_PROVIDERS }   from './translate/translation';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'project', component: ProjectComponent },
   { path: 'skills', component: SkillsComponent }
 ];
 
@@ -55,6 +57,7 @@ const appRoutes: Routes = [
     EducationComponent,
     ExperienceComponent,
     ProjectsComponent,
+    ProjectComponent,
     SkillsComponent,
     TranslatePipe,
     FilterPipe

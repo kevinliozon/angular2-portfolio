@@ -11,6 +11,7 @@ import { ProjectService } from '../shared/project.service'
 export class ProjectsComponent {
   title: string;
   projects: Project[];
+
   // Injection of ProjectService
   constructor(private projectService: ProjectService) { }
   ngOnInit() {
