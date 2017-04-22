@@ -4,24 +4,36 @@
     <title>Kevin Liozon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icon/favicon.png" sizes="16x16" type="image/png">
+    <!-- build:css -->
+    <link rel="stylesheet" href="dist/styles.min.css">
+    <!-- endbuild -->
+
     <!-- 1. Load libraries -->
-     <!-- Polyfill for older browsers -->
+    <!-- Polyfill for older browsers -->
+    <!-- build:core -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:zone -->
     <script src="node_modules/zone.js/dist/zone.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:system -->
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
+
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+      System.import('app/main.js').catch(function(err){ console.error(err); });
     </script>
   </head>
   <!-- 3. Display the application -->
   <body>
     <my-app></my-app>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- build:vendors -->
+    <script src="dist/lib/vendors.min.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

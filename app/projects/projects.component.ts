@@ -4,11 +4,12 @@ import { Project } from '../shared/models/project';
 import { ProjectService } from '../shared/project.service'
 
 @Component({
-  moduleId: module.id.replace("/dist/", "/app/"),
+  moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'projects.html'
 })
 
 export class ProjectsComponent {
+  
   title: string;
   projects: Project[];
 

@@ -1,7 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
+assets
 node_modules
 dist
+.tmp
 typings
 npm-debug.log

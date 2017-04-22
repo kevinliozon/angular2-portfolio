@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 //tools
 import { Tool } from '../shared/models/tool';
 import { ToolService } from '../shared/tool.service';
@@ -7,17 +8,20 @@ import { Hobby } from '../shared/models/hobby';
 import { HobbyService } from '../shared/hobby.service'
 
 @Component({
-  moduleId: module.id.replace("/dist/", "/app/"),
+  moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'about.html'
 })
-export class AboutComponent
-{
+export class AboutComponent {
+
   details: any;
   aboutTitles: any;
   tools: Tool[];
   hobbies: Hobby[];
 
-  constructor(private ToolService: ToolService, private HobbyService: HobbyService) { }
+  constructor(private ToolService: ToolService,
+              private HobbyService: HobbyService,
+              private route: ActivatedRoute) { }
+
   ngOnInit()
   {
     this.details = {
@@ -39,7 +43,7 @@ export class AboutComponent
     // window.location.hash retrieves the anchor
     // then scroll down to correct level
     setTimeout(() => {
-      document.querySelector(window.location.hash).scrollIntoView();
+      document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
     });
   }
 }

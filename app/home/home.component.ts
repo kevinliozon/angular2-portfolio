@@ -14,11 +14,11 @@ import { Diploma } from '../shared/models/diploma';
 import { DiplomaService } from '../shared/diploma.service'
 
 @Component({
-  moduleId: module.id.replace("/dist/", "/app/"),
+  moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'home.html'
 })
-export class HomeComponent
-{
+export class HomeComponent {
+
   introContent: any;
   homeTitles: any;
   projects: Project[];
@@ -33,7 +33,7 @@ export class HomeComponent
   ngOnInit() {
     this.introContent = {
       "title": "A Front-End Architect at your service",
-      "image": "app/shared/images/photo.png",
+      "image": "assets/img/png/photo.png",
       "alt": "My photo would have appeared if you activated Javascript on this browser :-("
     };
     this.homeTitles = [

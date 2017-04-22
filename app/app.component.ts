@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { TranslateService } from './translate/translate.service';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
-  moduleId: module.id.replace("/dist/", "/app/"),
+  moduleId: module.id.replace("/dist/app/", "/app/"),
   selector: 'my-app',
   templateUrl: 'app.html'
 })
@@ -12,7 +13,7 @@ export class AppComponent {
   public aboutFront: string;
   public supportedLanguages: any[];
 
-  constructor(private _translate: TranslateService) { }
+  constructor(private _translate: TranslateService, private titleService: Title) { }
 
   ngOnInit() {
       // standing data
@@ -41,5 +42,9 @@ export class AppComponent {
       // refresh translation when language change
       this.translatedText = this._translate.instant('hello world');
       this.aboutFront = this._translate.instant('aboutFront');
+  }
+
+  public setTitle( newTitle: string ) {
+    this.titleService.setTitle( newTitle );
   }
 }

@@ -4,39 +4,83 @@ var gulp = require('gulp');
 // Include Our Plugins
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var htmlReplace = require('gulp-html-replace');
+
+// Concat and Uglify jQuery and Bootstrap
+gulp.task("libs", function() {
+  return gulp.src([
+      'jquery/dist/jquery.min.js',
+      'bootstrap/dist/js/bootstrap.min.js'
+  ], {cwd: "node_modules/**"})
+  .pipe(concat('vendors.min.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest("dist/lib"));
+});
+
+// Move Html files to /dist and modify index.html
+gulp.task('html', function() {
+  return gulp.src('app/**/*.html', {base: 'app'}) // base allow to keep the folder structure from the root app/
+    .pipe(gulp.dest('dist/app'));
+  return gulp.src('index.html')
+    .pipe(htmlReplace({
+      'css': 'styles.min.css',
+      'core': 'https://unpkg.com/core-js/client/shim.min.js',
+      'zone': {
+        src: ['https://unpkg.com/zone.js@0.8.4?main=browser'],
+        tpl: '<script src="%s"></script>'
+      },
+      'system': 'https://unpkg.com/systemjs@0.19.39/dist/system.src.js',
+      'vendors': 'lib/vendors.min.js',
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+// Compile and concat Sass
+gulp.task('sass', function() {
+  return gulp.src('app/**/*.scss')
+  .pipe(concat('styles.scss'))
+  .pipe(sass())
+  .pipe(gulp.dest('.tmp'));
+});
+
+// Minify the generated styles.css
+gulp.task('minify-css', function() {
+  return gulp.src([
+    'node_modules/bootstrap/dist/css/bootstrap.css',
+    '.tmp/styles.css'
+  ])
+  .pipe(concat('styles.css'))
+  .pipe(cleanCSS({debug: true}, function(details) {
+      console.log(details.name + ': ' + details.stats.originalSize);
+      console.log(details.name + ': ' + details.stats.minifiedSize);
+  }))
+  .pipe(rename('styles.min.css'))
+  .pipe(gulp.dest('dist'));
+});
+
+// Move assets to dist
+gulp.task("assets", function() {
+  return gulp.src('assets/**/*')
+  .pipe(gulp.dest("dist/assets"));
+});
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-// Compile Our Sass
-gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css'));
-});
-
-// Concatenate & Minify JS
-gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+  return gulp.src('dist/app/**/**/*.js')
+  .pipe(jshint())
+  .pipe(jshint.reporter('default'));
 });
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('dist/app/**/**/*.js', ['lint']);
+  gulp.watch('app/**/*.scss', ['sass', 'minify-css']);
+  gulp.watch('assets/**/*', ['assets']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['watch', 'libs', 'html', 'sass', 'minify-css', 'assets', 'lint']);
