@@ -4,10 +4,11 @@ import { Skill } from '../shared/models/skill';
 import { SkillService } from '../shared/skill.service'
 
 @Component({
-  moduleId: module.id.replace("/dist/", "/app/"),
+  moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'skills.html'
 })
 export class SkillsComponent {
+  
   title: string;
   skills: Skill[];
   // Injection of SkillService
