@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 //Components
 import { AppComponent }   from './app.component';
+import { PageNotFoundComponent }   from './not-found.component';
 import { HomeComponent }   from './home/home.component';
 import { AboutComponent }   from './about/about.component';
 import { EducationComponent }   from './education/education.component';
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'project', component: ProjectComponent },
-  { path: 'skills', component: SkillsComponent }
+  { path: 'skills', component: SkillsComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -52,6 +54,7 @@ const appRoutes: Routes = [
   declarations:
   [
     AppComponent,
+    PageNotFoundComponent,
     HomeComponent,
     AboutComponent,
     EducationComponent,
