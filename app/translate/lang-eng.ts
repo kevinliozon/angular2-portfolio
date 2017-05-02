@@ -12,6 +12,7 @@ let titles = {
 }
 export const LANG_ENG_TRANS = {
     /*** COMMON ***/
+    "hello world": "hello world",
     "more": "MORE",
     /*** ABOUT ME ***/
     // Title
