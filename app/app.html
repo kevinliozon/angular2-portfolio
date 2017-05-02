@@ -4,9 +4,8 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <!-- Burger menu -->
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">Kevin Liozon</a>
       </div>
@@ -32,12 +31,12 @@
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              {{ this._translate.currentLang }}<span class="caret"></span>
+              <img src="{{ currentFlag }}" /><span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <!--languages-->
               <li *ngFor="let lang of supportedLanguages"
-                  (click)="selectLang(lang.value)" [class.btn-primary]="isCurrentLang(lang.value)">
+                  (click)="selectLang(lang.value, lang.flag)" [class.btn-primary]="isCurrentLang(lang.value)">
                   <a>{{ lang.display }}</a>
               </li>
             </ul>
@@ -51,10 +50,6 @@
 			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
 			 viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
 			<switch>
-				<!--<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
-					<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
-					</i:pgfRef>
-				</foreignObject>-->
 				<g i:extraneous="self">
 					<g id="tri_green_bottom">
 						<polygon fill="#3DE89E" points="212,208.804 151.525,208.804 151.525,148.329"/>
@@ -76,27 +71,6 @@
 		</svg>
 	</div>
   <h1>Kevin Liozon</h1>
-  <div class="container">
-    <h4>Translate: Hello World</h4>
-    <div class="btn-group">
-        <button *ngFor="let lang of supportedLanguages"
-            (click)="selectLang(lang.value)"
-            class="btn btn-default" [class.btn-primary]="isCurrentLang(lang.value)">
-            {{ lang.display }}
-        </button>
-    </div>
-    <div>
-        <!--translate with pipe-->
-        <p>
-            Translate With Pipe: <strong>{{ 'hello world' | translate }}</strong>
-        </p>
-
-        <!--reanslate with service-->
-        <p>
-            Translate with Service: <strong>{{ translatedText }}</strong>
-        </p>
-    </div>
-</div>
 </header>
 <router-outlet></router-outlet>
 <footer>

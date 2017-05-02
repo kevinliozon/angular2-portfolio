@@ -30,14 +30,6 @@ export class AboutComponent {
       city: "N10 3NA, London",
       country: "United Kingdom"
     };
-    this.aboutTitles = [
-      "My experience as a Front-End Developer",
-      "My experience as an UX Designer",
-      "Why 'Front-End Architect'?",
-      "Where do I live?",
-      "My favorite tools",
-      "My hobbies"
-    ];
     this.tools = this.ToolService.getTools();
     this.hobbies = this.HobbyService.getHobbies();
     // window.location.hash retrieves the anchor
