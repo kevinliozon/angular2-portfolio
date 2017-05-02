@@ -1,37 +1,40 @@
+<section id="about-start">
+  <h2>{{ 'aboutTitle1' | translate }}</h2>
+  <p>{{ 'aboutText1' | translate }}</p>
+  <a href="about#about-archi">{{ "more" | translate }}</a>
+</section>
 <section id="about-fed">
-  <h2>{{aboutTitles[0]}}</h2>
-  <p>
-    {{ 'aboutFront' | translate }}
-  </p>
+  <h2>{{ 'aboutTitle2' | translate }}</h2>
+  <p>{{ 'aboutText2' | translate }}</p>
   <a href="about#about-archi">See my Front-End skills</a>
 </section>
 <section id="about-ux">
-  <h2>{{aboutTitles[1]}}</h2>
+  <h2>{{ 'aboutTitle3' | translate }}</h2>
   <p>
-    {{ 'aboutUX' | translate }}
+    {{ 'aboutText3' | translate }}
   </p>
   <a href="#">See my UX skills</a>
 </section>
 <main id="about-archi">
-  <h2>{{aboutTitles[2]}}</h2>
+  <h2>{{ 'aboutTitle4' | translate }}</h2>
   <p>
-    {{ 'aboutArchi' | translate }}
+    {{ 'aboutText4' | translate }}
 </p>
 </main>
-<h2>{{aboutTitles[3]}}</h2>
+<h2>{{ 'aboutTitle5' | translate }}</h2>
 <address>
   <p><a href={{details.email}}>Kevin Liozon</a></p>
   <p>{{details.street}}</p>
   <p>{{details.city}}</p>
   <p>{{details.country}}</p>
 </address>
-<h2>{{aboutTitles[4]}}</h2>
+<h2>{{ 'aboutTitle6' | translate }}</h2>
 <ul>
   <li *ngFor="let tool of tools">
     <h3>{{ tool.id }} {{ tool.title }}</h3>
   </li>
 </ul>
-<h2>{{aboutTitles[5]}}</h2>
+<h2>{{ 'aboutTitle7' | translate }}</h2>
 <ul>
   <li *ngFor="let hobby of hobbies">
     <h3>{{ hobby.id }} {{ hobby.title | translate }}</h3>

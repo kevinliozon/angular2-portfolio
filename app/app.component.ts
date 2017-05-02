@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from './translate/translate.service';
-import { Title }     from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -9,42 +9,34 @@ import { Title }     from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  public translatedText: string;
-  public aboutFront: string;
   public supportedLanguages: any[];
+  public currentFlag: string;
 
   constructor(private _translate: TranslateService, private titleService: Title) { }
 
   ngOnInit() {
-      // standing data
-      this.supportedLanguages = [
-        { display: 'English', value: 'eng' },
-        { display: 'Français', value: 'fra' },
-        { display: 'Español', value: 'esp' },
-        { display: 'Italiano', value: 'ita' },
-      ];
-      // set current langage
-      this.selectLang('eng');
+    // standing data
+    this.supportedLanguages = [
+      { display: 'English', value: 'eng', flag: 'assets/img/svg/flags/uk.svg' },
+      { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
+    ];
+    // set current langage
+    this.selectLang('eng', 'assets/img/svg/flags/uk.svg');
   }
 
   isCurrentLang(lang: string) {
-      // check if the selected lang is current lang
-      return lang === this._translate.currentLang;
+    // check if the selected lang is current lang
+    return lang === this._translate.currentLang;
   }
 
-  selectLang(lang: string) {
-      // set current lang;
-      this._translate.use(lang);
-      this.refreshText();
-  }
-
-  refreshText() {
-      // refresh translation when language change
-      this.translatedText = this._translate.instant('hello world');
-      this.aboutFront = this._translate.instant('aboutFront');
+  selectLang(lang: string, flag: string) {
+    // select a lang and set its flag as default
+    this._translate.use(lang);
+    this.currentFlag = flag;
   }
 
   public setTitle( newTitle: string ) {
+    // dynamic tab title
     this.titleService.setTitle( newTitle );
   }
 }
