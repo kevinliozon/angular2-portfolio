@@ -30,8 +30,12 @@
 </address>
 <h2>{{ 'aboutTitle6' | translate }}</h2>
 <ul>
-  <li *ngFor="let tool of tools">
-    <h3>{{ tool.id }} {{ tool.title }}</h3>
+  <li *ngFor="let tool of tools" [hidden]="tool.featured==false">
+    <a href="{{ tool.view }}" target="_blank">
+      <div><img src="{{ tool.image }}" /></div>
+      <h3>{{ tool.title }}</h3>
+      <h5>{{ tool.category }}</h5>
+    </a>
   </li>
 </ul>
 <h2>{{ 'aboutTitle7' | translate }}</h2>
