@@ -41,6 +41,8 @@
 <h2>{{ 'aboutTitle7' | translate }}</h2>
 <ul>
   <li *ngFor="let hobby of hobbies">
-    <h3>{{ hobby.id }} {{ hobby.title | translate }}</h3>
+    <div><img src="{{ hobby.image }}" /></div>
+    <h3>{{ hobby.title }}</h3>
+    <a href="#" *ngIf="hobby.id == '#hobby5'">My Nexus Profile</a>
   </li>
 </ul>

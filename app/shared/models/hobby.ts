@@ -4,7 +4,4 @@ export interface Hobby
   title: string;
   desc: string;
   image: string;
-  alt: string;
-  tag: string;
-  view: string;
 }
