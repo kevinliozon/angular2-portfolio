@@ -2,52 +2,47 @@ import { Skill } from '../models/skill';
 
 
 export let SKILLS: Skill[] = [{
-  "id": "#skill-1",
+  "id": "#skill often",
+  "title": "Angular.js (1, 2 & 4)",
   "featured": true,
-  "title": "Angular 2",
+  "frequent": true,
   "category": "Front-End",
   "desc": "Front end framework",
-  "image": "string",
-  "alt": "string",
-  "tag": "Angular.js"
+  "image": "string"
+},
+{
+  "id": "#skill-2 not often",
+  "title": "iMakr",
+  "featured": true,
+  "frequent": false,
+  "category": "UX",
+  "desc": "A social sharing platform for 3D designers",
+  "image": "string"
 },
 {
   "id": "#skill-2",
-  "featured": true,
   "title": "iMakr",
+  "featured": true,
+  "frequent": true,
   "category": "UX",
   "desc": "A social sharing platform for 3D designers",
-  "image": "string",
-  "alt": "string",
-  "tag": "Front, UX, Symfony, Foundation, Angular.js"
+  "image": "string"
 },
 {
-  "id": "#skill-3",
+  "id": "#skill-2",
+  "title": "iMakr",
   "featured": true,
-  "title": "Digitela",
+  "frequent": true,
   "category": "UX",
   "desc": "A social sharing platform for 3D designers",
-  "image": "string",
-  "alt": "string",
-  "tag": "Front, UX, Symfony, Foundation, Angular.js"
+  "image": "string"
 },
 {
-  "id": "#skill-4",
+  "id": "#skill-23 not often",
+  "title": "iMakr",
   "featured": true,
-  "title": "My Mini Factory",
-  "category": "Front-End",
+  "frequent": false,
+  "category": "Front-end",
   "desc": "A social sharing platform for 3D designers",
-  "image": "string",
-  "alt": "string",
-  "tag": "Front, UX, Symfony, Foundation, Angular.js"
-},
-{
-  "id": "#skill-5",
-  "featured": false,
-  "title": "C2I",
-  "category": "Front-End",
-  "desc": "A social sharing platform for 3D designers",
-  "image": "string",
-  "alt": "string",
-  "tag": "Front, UX, Symfony, Foundation, Angular.js"
+  "image": "string"
 }];

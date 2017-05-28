@@ -8,13 +8,20 @@ import { SkillService } from '../shared/skill.service'
   templateUrl: 'skills.html'
 })
 export class SkillsComponent {
-  
+
   title: string;
   skills: Skill[];
-  // Injection of SkillService
+  frequentSkill: boolean = false; // Should we display the frequent skills?
+
   constructor(private skillService: SkillService) { }
+
   ngOnInit() {
     this.title= "My Skills";
     this.skills = this.skillService.getSkills();
+  }
+
+  // Returns true if we want to display the frequently used skills only
+  isFrequent(value: boolean) {
+    return value ? this.frequentSkill = true : this.frequentSkill = false;
   }
 }

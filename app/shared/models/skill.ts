@@ -1,11 +1,10 @@
 export interface Skill
 {
   id: string;
-  featured: boolean;
   title: string;
+  featured: boolean;
+  frequent: boolean;
   category: string;
   desc: string;
   image: string;
-  alt: string;
-  tag: string;
 }

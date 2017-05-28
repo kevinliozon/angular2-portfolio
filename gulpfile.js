@@ -39,7 +39,7 @@ gulp.task('html', function() {
     .pipe(gulp.dest('dist'));
 });
 
-// Compile and concat Sass
+// Compile and concat Sass into a temporary folder for debugging
 gulp.task('sass', function() {
   return gulp.src('app/**/*.scss')
   .pipe(concat('styles.scss'))
