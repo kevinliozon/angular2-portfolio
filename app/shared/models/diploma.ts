@@ -4,5 +4,5 @@ export interface Diploma
   info: any;
   school: any;
   dates: any;
-  link: string;
+  url: string;
 }

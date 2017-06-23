@@ -6,5 +6,5 @@ export interface Tool
   category: string;
   desc: string;
   image: string;
-  view: string;
+  url: string;
 }

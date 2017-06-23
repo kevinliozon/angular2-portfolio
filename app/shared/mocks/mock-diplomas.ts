@@ -20,7 +20,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2016-08-15",
     "end": "2016-11-14"
   },
-  "link": "https://www.codeschool.com/"
+  "url": "https://www.codeschool.com/"
 },
 {
   "id": "#diploma5",
@@ -41,7 +41,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2016-03-01",
     "end": "2017-01-01"
   },
-  "link": "https://www.codeschool.com/"
+  "url": "https://www.codeschool.com/"
 },
 {
   "id": "#diploma4",
@@ -65,7 +65,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2015-09-01",
     "end": "2016-06-20"
   },
-  "link": "https://en.wikipedia.org/wiki/University_of_Burgundy_-_Franche-Comt%C3%A9"
+  "url": "https://en.wikipedia.org/wiki/University_of_Burgundy_-_Franche-Comt%C3%A9"
 },
 {
   "id": "#diploma3",
@@ -89,7 +89,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2013-09-01",
     "end": "2015-06-01"
   },
-  "link": "https://en.wikipedia.org/wiki/University_of_Montpellier"
+  "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
 },
 {
   "id": "#diploma2",
@@ -113,7 +113,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2012-09-01",
     "end": "2013-06-01"
   },
-  "link": "https://en.wikipedia.org/wiki/University_of_Montpellier"
+  "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
 },
 {
   "id": "#diploma1",
@@ -137,5 +137,5 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2007-09-01",
     "end": "2010-07-01"
   },
-  "link": "http://www.louis-feuillade.com/"
+  "url": "http://www.louis-feuillade.com/"
 }];

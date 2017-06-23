@@ -10,8 +10,8 @@
 
 <ul>
   <li *ngFor="let skill of skills | filter:{category:visible}">
-    <h3 *ngIf="frequentSkill==false">{{ skill.id }} {{ skill.title }}</h3>
+    <h3 *ngIf="frequentSkill==false"><img src="{{ skill.image }}" />{{ skill.title }}</h3>
     <!-- Used frequently only -->
-    <h3 *ngIf="frequentSkill==true && skill.frequent==true">{{ skill.id }} {{ skill.title }}</h3>
+    <h3 *ngIf="frequentSkill==true && skill.frequent==true">{{ skill.image }} {{ skill.title }}</h3>
   </li>
 </ul>

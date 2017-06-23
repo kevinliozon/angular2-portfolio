@@ -2,22 +2,40 @@ import { Tool } from '../models/tool';
 
 
 export let TOOLS: Tool[] = [{
+  "id": "#tool17",
+  "title": "Git",
+  "featured": false,
+  "category": "Collaborative",
+  "desc": "Version Control System",
+  "image": "../../../assets/img/svg/tools/git.svg",
+  "url": "https://en.wikipedia.org/wiki/Git"
+},
+{
+  "id": "#tool16",
+  "title": "Dreamweaver",
+  "featured": false,
+  "category": "IDE",
+  "desc": "IDE developed by Adobe",
+  "image": "../../../assets/img/svg/tools/dreamweaver.svg",
+  "url": "https://en.wikipedia.org/wiki/Adobe_Dreamweaver"
+},
+{
   "id": "#tool15",
   "title": "VirtualBox",
   "featured": true,
   "category": "Virtualization tool",
   "desc": "Tool for taking notes",
   "image": "../../../assets/img/svg/tools/virtualbox.svg",
-  "view": "https://en.wikipedia.org/wiki/VirtualBox"
+  "url": "https://en.wikipedia.org/wiki/VirtualBox"
 },
 {
   "id": "#tool14",
   "title": "Filezilla",
-  "featured": true,
+  "featured": false,
   "category": "FTP Client",
   "desc": "Classic tool for deployment on server",
   "image": "../../../assets/img/svg/tools/filezilla.svg",
-  "view": "https://en.wikipedia.org/wiki/FileZilla"
+  "url": "https://en.wikipedia.org/wiki/FileZilla"
 },
 {
   "id": "#tool13",
@@ -26,16 +44,16 @@ export let TOOLS: Tool[] = [{
   "category": "Project Management",
   "desc": "Tool for taking notes",
   "image": "../../../assets/img/svg/tools/evernote.svg",
-  "view": "https://en.wikipedia.org/wiki/Evernote"
+  "url": "https://en.wikipedia.org/wiki/Evernote"
 },
 {
   "id": "#tool12",
   "title": "Toggl",
-  "featured": true,
+  "featured": false,
   "category": "Project Management",
   "desc": "Project timer tool",
   "image": "../../../assets/img/svg/tools/toggl.svg",
-  "view": "https://en.wikipedia.org/wiki/Toggl"
+  "url": "https://en.wikipedia.org/wiki/Toggl"
 },
 {
   "id": "#tool11",
@@ -44,7 +62,7 @@ export let TOOLS: Tool[] = [{
   "category": "Package Manager",
   "desc": "Package manager for OSX platforms",
   "image": "../../../assets/img/svg/tools/homebrew.svg",
-  "view": "https://en.wikipedia.org/wiki/Homebrew_(package_management_software)"
+  "url": "https://en.wikipedia.org/wiki/Homebrew_(package_management_software)"
 },
 {
   "id": "#tool10",
@@ -53,7 +71,7 @@ export let TOOLS: Tool[] = [{
   "category": "Package Manager",
   "desc": "Default package manager for every project",
   "image": "../../../assets/img/svg/tools/npm.svg",
-  "view": "https://en.wikipedia.org/wiki/Npm_(software)"
+  "url": "https://en.wikipedia.org/wiki/Npm_(software)"
 },
 {
   "id": "#tool9",
@@ -62,25 +80,25 @@ export let TOOLS: Tool[] = [{
   "category": "Collaborative",
   "desc": "Cloud service & Desktop Softwares",
   "image": "../../../assets/img/svg/tools/office.svg",
-  "view": "https://en.wikipedia.org/wiki/Microsoft_Office"
+  "url": "https://en.wikipedia.org/wiki/Microsoft_Office"
 },
 {
   "id": "#tool8",
   "title": "Slack",
-  "featured": true,
+  "featured": false,
   "category": "Collaborative",
   "desc": "Cloud service",
   "image": "../../../assets/img/svg/tools/slack.svg",
-  "view": "https://en.wikipedia.org/wiki/Slack_Technologies"
+  "url": "https://en.wikipedia.org/wiki/Slack_Technologies"
 },
 {
   "id": "#tool7",
   "title": "Trello",
-  "featured": true,
+  "featured": false,
   "category": "Project Management",
   "desc": "Kanban based project management tool",
   "image": "../../../assets/img/svg/tools/trello.svg",
-  "view": "https://en.wikipedia.org/wiki/Trello"
+  "url": "https://en.wikipedia.org/wiki/Trello"
 },
 {
   "id": "#tool6",
@@ -89,7 +107,7 @@ export let TOOLS: Tool[] = [{
   "category": "Collaborative",
   "desc": "Cloud service",
   "image": "../../../assets/img/svg/tools/googledrive.svg",
-  "view": "https://en.wikipedia.org/wiki/Google_Drive"
+  "url": "https://en.wikipedia.org/wiki/Google_Drive"
 },
 {
   "id": "#tool5",
@@ -98,7 +116,7 @@ export let TOOLS: Tool[] = [{
   "category": "Collaborative",
   "desc": "Suite of tools: BitBucket, Jira, Sourcetree and so on",
   "image": "../../../assets/img/svg/tools/atlassian.svg",
-  "view": "https://en.wikipedia.org/wiki/Atlassian"
+  "url": "https://en.wikipedia.org/wiki/Atlassian"
 },
 {
   "id": "#tool4",
@@ -107,7 +125,7 @@ export let TOOLS: Tool[] = [{
   "category": "Collaborative",
   "desc": "Web & Destktop Git UI tool",
   "image": "../../../assets/img/svg/tools/github.svg",
-  "view": "https://en.wikipedia.org/wiki/GitHub"
+  "url": "https://en.wikipedia.org/wiki/GitHub"
 },
 {
   "id": "#tool3",
@@ -116,7 +134,7 @@ export let TOOLS: Tool[] = [{
   "category": "IDE",
   "desc": "Mandatory IDE for iOS development",
   "image": "../../../assets/img/svg/tools/xcode.svg",
-  "view": "https://en.wikipedia.org/wiki/Xcode"
+  "url": "https://en.wikipedia.org/wiki/Xcode"
 },
 {
   "id": "#tool2",
@@ -125,7 +143,7 @@ export let TOOLS: Tool[] = [{
   "category": "IDE",
   "desc": "Other IDE quite useful for Symfony projects",
   "image": "../../../assets/img/svg/tools/phpstorm.svg",
-  "view": "https://en.wikipedia.org/wiki/PhpStorm"
+  "url": "https://en.wikipedia.org/wiki/PhpStorm"
 },
 {
   "id": "#tool1",
@@ -134,5 +152,5 @@ export let TOOLS: Tool[] = [{
   "category": "IDE",
   "desc": "Powerful, flexible and free IDE developed by GitHub",
   "image": "../../../assets/img/svg/tools/atom.svg",
-  "view": "https://en.wikipedia.org/wiki/Atom_(text_editor)"
+  "url": "https://en.wikipedia.org/wiki/Atom_(text_editor)"
 }];

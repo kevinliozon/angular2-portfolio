@@ -7,4 +7,5 @@ export interface Skill
   category: string;
   desc: string;
   image: string;
+  url: string;
 }
