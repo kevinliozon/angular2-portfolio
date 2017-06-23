@@ -2,7 +2,11 @@
 <!-- Filter by category -->
 <button (click)='visible=""'>All Categories</button>
 <button (click)='visible="Front-End"'>Front-End</button>
-<button (click)='visible="UX"'>UX</button>
+<button (click)='visible="Design"'>Design</button>
+<button (click)='visible="Framework"'>Framework</button>
+<button (click)='visible="Javascript"'>Javascript</button>
+<button (click)='visible="CMS"'>CMS</button>
+<button (click)='visible="Basic/Vanilla"'>Basic/Vanilla</button>
 
 <!-- We can also filter by frequency of use -->
 <button (click)='isFrequent(true)' *ngIf="frequentSkill==false">Frequently used only</button>
@@ -12,6 +16,6 @@
   <li *ngFor="let skill of skills | filter:{category:visible}">
     <h3 *ngIf="frequentSkill==false"><img src="{{ skill.image }}" />{{ skill.title }}</h3>
     <!-- Used frequently only -->
-    <h3 *ngIf="frequentSkill==true && skill.frequent==true">{{ skill.image }} {{ skill.title }}</h3>
+    <h3 *ngIf="frequentSkill==true && skill.frequent==true"><img src="{{ skill.image }}" />{{ skill.title }}</h3>
   </li>
 </ul>
