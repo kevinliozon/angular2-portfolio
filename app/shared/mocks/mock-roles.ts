@@ -1,48 +1,157 @@
 import { Role } from '../models/role';
 
-
 export let ROLES: Role[] = [{
-  "id": "#role-1",
-  "featured": true,
-  "title": "Field Support Technician",
-  "company": "Medasys",
+  "id": "#role6",
+  "title": "Front-End Developer & UX Designer",
   "category": "Permanent",
+  "company": {
+    "name": "Surely Group",
+    "logo": "../../../assets/img/svg/companies/surely.svg",
+    "place": "London (UK)",
+    "url": "https://services.surelygroup.com/",
+  },
   "desc": "string",
-  "image": "string",
-  "alt": "string",
-  "date_start": "2016-06-01",
-  "date_end": "2016-06-01",
-  "tag": "string",
-  "page": "string",
-  "view": "string"
+  "dates": {
+    "start": "2016-11-14",
+    "end": ""
+  },
+  "projects": {
+    "project1": {
+      "name": "Lloyds Bank - Connect & Protect",
+      "type": "Mobile app",
+      "techs": "Ionic 2, Sass, Axure RP, Ionic Creator",
+      "url": "http://www.lloydsbank.com/"
+    },
+    "project2": {
+      "name": "Douglas & Gordon",
+      "type": "Mobile app (internal)",
+      "techs": "Ionic 3, Sass, Axure RP",
+      "url": "http://www.douglasandgordon.com/"
+    }
+  }
 },
 {
-  "id": "#role-2",
-  "featured": true,
+  "id": "#role5",
   "title": "Front-End Developer",
-  "company": "DigiTela",
-  "category": "Internship",
+  "category": "Contract",
+  "company": {
+    "name": "Doxy.me",
+    "logo": "../../../assets/img/svg/companies/doxyme.svg",
+    "place": "Provo (USA - Remote)",
+    "url": "https://doxy.me/"
+  },
   "desc": "string",
-  "image": "string",
-  "alt": "string",
-  "date_start": "2016-06-01",
-  "date_end": "2016-06-01",
-  "tag": "string",
-  "page": "string",
-  "view": "string"
+  "dates": {
+    "start": "2016-12-01",
+    "end": "2017-01-10"
+  },
+  "projects": {
+    "project1": {
+      "name": "Doxy.me",
+      "type": "Mobile app",
+      "techs": "Ionic 1, Gulp, Sass",
+      "url": "https://doxy.me/"
+    }
+  }
 },
 {
-  "id": "#role-3",
-  "featured": true,
-  "title": "Field Support Technician",
-  "company": "Medasys",
-  "category": "Contract",
+  "id": "#role4",
+  "title": "Front-End Developer & UX Designer",
+  "category": "Permanent",
+  "company": {
+    "name": "My Mini Factory (iMakr)",
+    "logo": "../../../assets/img/svg/companies/mmf.svg",
+    "place": "London (UK)",
+    "url": "https://www.myminifactory.com/"
+  },
   "desc": "string",
-  "image": "string",
-  "alt": "string",
-  "date_start": "2016-06-01",
-  "date_end": "2016-06-01",
-  "tag": "string",
-  "page": "string",
-  "view": "string"
+  "dates": {
+    "start": "2016-04-01",
+    "end": "2016-11-14"
+  },
+  "projects": {
+    "project1": {
+      "name": "My Mini Factory",
+      "type": "Web app",
+      "techs": "Symfony, Foundation, Illustrator",
+      "url": "https://www.myminifactory.com/"
+    }
+  }
+},
+{
+  "id": "#role3",
+  "title": "Front-End Developer & UX Designer",
+  "category": "Internship",
+  "company": {
+    "name": "iMakr",
+    "logo": "../../../assets/img/svg/companies/imakr.svg",
+    "place": "London (UK)",
+    "url": "https://www.imakr.com/"
+  },
+  "desc": "string",
+  "dates": {
+    "start": "2016-02-14",
+    "end": "2016-03-31"
+  },
+  "projects": {
+    "project1": {
+      "name": "iMakr",
+      "type": "Web app",
+      "techs": "Prestashop, Bootstrap, Illustrator",
+      "url": "https://www.imakr.com/"
+    }
+  }
+},
+{
+  "id": "#role2",
+  "title": "Front-End Developer & UX Designer",
+  "category": "Internship",
+  "company": {
+    "name": "Digitela",
+    "logo": "../../../assets/img/svg/companies/digitela.svg",
+    "place": "Narbonne (France)",
+    "url": "http://www.digitela.fr/"
+  },
+  "desc": "string",
+  "dates": {
+    "start": "2015-03-14",
+    "end": "2015-06-14"
+  },
+  "projects": {
+    "project1": {
+      "name": "Digitela",
+      "type": "Web app",
+      "techs": "Wordpress, Illustrator",
+      "url": "http://www.digitela.fr/"
+    },
+    "project2": {
+      "name": "Ipags",
+      "type": "Web app",
+      "techs": "Wordpress, Illustrator",
+      "url": "http://www.ipags.fr/"
+    },
+    "project3": {
+      "name": "HCE Group",
+      "type": "Web app",
+      "techs": "Wordpress, Illustrator",
+      "url": "http://www.groupe-hce.com/"
+    }
+  }
+},
+{
+  "id": "#role1",
+  "title": "Field Support Technician",
+  "category": "Contract",
+  "company": {
+    "name": "Medasys",
+    "logo": "../../../assets/img/svg/companies/medasys.svg",
+    "place": "Montpellier (France)",
+    "url": "http://www.medasys.fr/index.php?id=1&L=1"
+  },
+  "desc": "string",
+  "dates": {
+    "start": "2012-06-01",
+    "end": "2012-08-01"
+  },
+  "projects": {}
 }];

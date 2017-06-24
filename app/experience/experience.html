@@ -5,6 +5,7 @@
 <button (click)='visible="Internship"'>Internship</button>
 <ul>
   <li *ngFor="let role of roles | filter:{category:visible}">
-    <h3>{{ role.id }} {{ role.title }} {{ role.date_start | date : "MMM yyyy" }}</h3>
+    <img src="{{ role.company.logo }}" />
+    <h3>{{ role.id }} {{ role.title }} {{ role.dates.start | date : "MMM yyyy" }}</h3>
   </li>
 </ul>

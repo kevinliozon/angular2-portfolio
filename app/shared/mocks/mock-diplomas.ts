@@ -1,6 +1,5 @@
 import { Diploma } from '../models/diploma';
 
-
 export let DIPLOMAS: Diploma[] = [{
   "id": "#diploma6",
   "info": {
@@ -14,13 +13,16 @@ export let DIPLOMAS: Diploma[] = [{
   },
   "school": {
     "name": "Nielsen & Norman Group",
-    "image": "../../../assets/img/svg/education/nng.svg"
+    "image": "../../../assets/img/svg/education/nng.svg",
+    "place": "Seattle - London",
+    "country": "USA - UK",
+    "url": "https://www.nngroup.com/"
   },
   "dates": {
     "start": "2016-08-15",
     "end": "2016-11-14"
   },
-  "url": "https://www.codeschool.com/"
+  "projects": {},
 },
 {
   "id": "#diploma5",
@@ -35,13 +37,16 @@ export let DIPLOMAS: Diploma[] = [{
   },
   "school": {
     "name": "CodeSchool",
-    "image": "../../../assets/img/svg/education/codeschool.svg"
+    "image": "../../../assets/img/svg/education/codeschool.svg",
+    "place": "Online",
+    "country": "Online",
+    "url": "https://www.codeschool.com/"
   },
   "dates": {
     "start": "2016-03-01",
     "end": "2017-01-01"
   },
-  "url": "https://www.codeschool.com/"
+  "projects": {}
 },
 {
   "id": "#diploma4",
@@ -59,13 +64,24 @@ export let DIPLOMAS: Diploma[] = [{
     "name": "University of Burgundy - Franche-Comté",
     "place": "Montbéliard",
     "country": "France",
-    "image": "../../../assets/img/svg/education/ubfc.svg"
+    "image": "../../../assets/img/svg/education/ubfc.svg",
+    "url": "https://en.wikipedia.org/wiki/University_of_Burgundy_-_Franche-Comt%C3%A9"
   },
   "dates": {
     "start": "2015-09-01",
     "end": "2016-06-20"
   },
-  "url": "https://en.wikipedia.org/wiki/University_of_Burgundy_-_Franche-Comt%C3%A9"
+  "projects":
+  {
+    "project1": {
+      "name": "E-Ukiyo",
+      "url": ""
+    },
+    "project2": {
+      "name": "C2I Reseaux",
+      "url": ""
+    }
+  }
 },
 {
   "id": "#diploma3",
@@ -83,13 +99,19 @@ export let DIPLOMAS: Diploma[] = [{
     "name": "Institute of Technology",
     "place": "Béziers",
     "country": "France",
-    "image": "../../../assets/img/svg/education/um.svg"
+    "image": "../../../assets/img/svg/education/um.svg",
+    "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
   },
   "dates": {
     "start": "2013-09-01",
     "end": "2015-06-01"
   },
-  "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
+  "projects": {
+    "project1": {
+      "name": "Portfolio",
+      "url": ""
+    }
+  }
 },
 {
   "id": "#diploma2",
@@ -107,13 +129,14 @@ export let DIPLOMAS: Diploma[] = [{
     "name": "Institute of Technology",
     "place": "Montpellier",
     "country": "France",
-    "image": "../../../assets/img/svg/education/um.svg"
+    "image": "../../../assets/img/svg/education/um.svg",
+    "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
   },
   "dates": {
     "start": "2012-09-01",
     "end": "2013-06-01"
   },
-  "url": "https://en.wikipedia.org/wiki/University_of_Montpellier"
+  "projects": {}
 },
 {
   "id": "#diploma1",
@@ -131,11 +154,12 @@ export let DIPLOMAS: Diploma[] = [{
     "name": "Louis Feuillade Highschool",
     "place": "Lunel",
     "country": "France",
-    "image": "../../../assets/img/svg/education/lf.svg"
+    "image": "../../../assets/img/svg/education/lf.svg",
+    "url": "http://www.louis-feuillade.com/"
   },
   "dates": {
     "start": "2007-09-01",
     "end": "2010-07-01"
   },
-  "url": "http://www.louis-feuillade.com/"
+  "projects": {}
 }];
