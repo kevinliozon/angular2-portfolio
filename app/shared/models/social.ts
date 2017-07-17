@@ -1,10 +1,8 @@
-export class Tool
+export class Social
 {
   id: string;
-  title: string;
+  name: string;
   featured: boolean;
-  category: string;
-  desc: string;
   image: string;
   url: string;
 }

@@ -1,4 +1,4 @@
-export interface Diploma
+export class Diploma
 {
   id: string;
   info: any;

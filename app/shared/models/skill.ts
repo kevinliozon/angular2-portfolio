@@ -1,4 +1,4 @@
-export interface Skill
+export class Skill
 {
   id: string;
   title: string;
