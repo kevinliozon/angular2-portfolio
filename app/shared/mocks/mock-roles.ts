@@ -73,7 +73,7 @@ export let ROLES: Role[] = [{
     "project1": {
       "name": "My Mini Factory",
       "type": "Web app",
-      "techs": "Symfony, Foundation, Illustrator",
+      "techs": "Symfony, Foundation, jQuery, Illustrator",
       "url": "https://www.myminifactory.com/"
     }
   }
@@ -97,7 +97,7 @@ export let ROLES: Role[] = [{
     "project1": {
       "name": "iMakr",
       "type": "Web app",
-      "techs": "Prestashop, Bootstrap, Illustrator",
+      "techs": "Prestashop, Bootstrap, jQuery, Illustrator",
       "url": "https://www.imakr.com/"
     }
   }
@@ -114,7 +114,7 @@ export let ROLES: Role[] = [{
   },
   "desc": "string",
   "dates": {
-    "start": "2015-03-14",
+    "start": "2015-04-01",
     "end": "2015-06-14"
   },
   "projects": {

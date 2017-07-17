@@ -1,15 +1,16 @@
 export interface Project
 {
   id: string;
+  name: string;
   featured: boolean;
-  title: string;
+  active: boolean;
   category: string;
+  company: any;
+  client: any;
   desc: string;
-  image: string;
-  alt: string;
-  date: string;
-  tag: string;
-  page: string;
-  view: string;
+  techs: string,
+  images: any;
+  dates: any;
+  url: string;
   github: string;
 }
