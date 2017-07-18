@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent }   from './app.component';
 import { PageNotFoundComponent }   from './not-found.component';
 import { HomeComponent }   from './home/home.component';
+import { FooterComponent } from './shared/components/footer/footer.component'
 import { AboutComponent }   from './about/about.component';
 import { EducationComponent }   from './education/education.component';
 import { ExperienceComponent }   from './experience/experience.component';
@@ -55,6 +56,7 @@ const appRoutes: Routes = [
   [
     AppComponent,
     PageNotFoundComponent,
+    FooterComponent,
     HomeComponent,
     AboutComponent,
     EducationComponent,

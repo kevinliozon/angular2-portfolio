@@ -1,0 +1,12 @@
+<footer>
+  <div *ngFor="let social of socials">
+    <a href="{{social.url}}" target="_blank">
+      <img src="{{social.image}}" alt="{{social.name}}" />
+    </a>
+  </div>
+  <details>
+    <summary>Copyright 2016</summary>
+    <p> by Kevin Liozon. All Rights Reserved.</p>
+    <p>All content and graphics on this web site are the property of Kevin Liozon.</p>
+  </details>
+</footer>

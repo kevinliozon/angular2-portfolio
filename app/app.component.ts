@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { TranslateService } from './translate/translate.service';
 import { Title } from '@angular/platform-browser';
+/* COMPONENTS */
+import { FooterComponent } from './shared/components/footer/footer.component';
+/* SERVICES */
+import { TranslateService } from './translate/translate.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
