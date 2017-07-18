@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 //Components
 import { AppComponent }   from './app.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 import { PageNotFoundComponent }   from './not-found.component';
 import { HomeComponent }   from './home/home.component';
-import { FooterComponent } from './shared/components/footer/footer.component'
 import { AboutComponent }   from './about/about.component';
 import { EducationComponent }   from './education/education.component';
 import { ExperienceComponent }   from './experience/experience.component';
@@ -18,7 +19,7 @@ import { TRANSLATION_PROVIDERS }   from './translate/translation';
 import { TranslateService }   from './translate/translate.service';
 import { TranslatePipe }   from './translate/translate.pipe';
 //filters
-import { FilterPipe } from './shared/filter.pipe'
+import { FilterPipe } from './shared/filter.pipe';
 //Services
 import { ProjectService } from './shared/project.service';
 import { SkillService } from './shared/skill.service';
@@ -26,37 +27,21 @@ import { RoleService } from './shared/role.service';
 import { DiplomaService } from './shared/diploma.service';
 import { ToolService } from './shared/tool.service';
 import { HobbyService } from './shared/hobby.service';
-
-const appRoutes: Routes = [
-  // default route to home on load
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  // links to the components
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'project', component: ProjectComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: '**', component: PageNotFoundComponent }
-];
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   imports:
   [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   declarations:
   [
     AppComponent,
-    PageNotFoundComponent,
+    HeaderComponent,
     FooterComponent,
+    PageNotFoundComponent,
     HomeComponent,
     AboutComponent,
     EducationComponent,
