@@ -3,11 +3,16 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'project-view',
   template: `
-    <h3>{{ project.id }} says:</h3>
-    <p>I, {{ project.title }}</p>
+    <div *ngIf="focusedItem?.id">
+      <h3>{{ focusedItem?.id }} says:</h3>
+      <p>I, {{ focusedItem?.name }}</p>
+    </div>
   `
 })
 
 export class ProjectComponent {
-  @Input() project: any;
+  @Input() public focusedItem: any = null;
+
+  constructor() {}
+
 }

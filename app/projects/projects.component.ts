@@ -11,15 +11,21 @@ import { ProjectService } from '../shared/project.service'
 
 export class ProjectsComponent {
 
-  title: string;
-  projects: Project[];
+  public title: string;
+  public projects: Project[];
+  public focusedItem: any;
 
-  // Injection of ProjectService
   constructor(private router: Router, private projectService: ProjectService) {}
 
   public ngOnInit() {
     this.title = "My Projects";
     this.projects = this.projectService.getProjects();
+  }
+
+  public focusItem(project) {
+    // focus will refer to the id of the selected item
+    //this.focus = project.id;
+    this.focusedItem = project;
   }
 
   public goTo(project) {

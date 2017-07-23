@@ -32,19 +32,18 @@ export class DetailsComponent implements OnInit{
 
   public ngOnInit() {
     /* Compare the id passed from previous page with id
-      of all the objects in the collection */
-      // TODO switch case the new parameter to get the right method
-      switch(this.type) {
-        case 'diploma':
-          this.details = this.diplomaService.resolveDiploma(this.id);
-          break;
-        case 'project':
-          this.details = this.projectService.resolveProject(this.id);
-          break;
-        case 'role':
-          this.details = this.roleService.resolveRole(this.id);
-          break;
-      }
+       of all the objects in the collection */
+    switch(this.type) {
+      case 'diploma':
+        this.details = this.diplomaService.resolveDiploma(this.id);
+        break;
+      case 'project':
+        this.details = this.projectService.resolveProject(this.id);
+        break;
+      case 'role':
+        this.details = this.roleService.resolveRole(this.id);
+        break;
+    }
   }
 
 }
