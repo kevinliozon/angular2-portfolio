@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 // Services
-import { DiplomaService } from '../../diploma.service';
-import { ProjectService } from '../../project.service';
-import { RoleService } from '../../role.service';
+import { DiplomaService } from '../../services/diploma.service';
+import { ProjectService } from '../../services/project.service';
+import { RoleService } from '../../services/role.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

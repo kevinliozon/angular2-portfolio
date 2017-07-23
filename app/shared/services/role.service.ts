@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-/* MODELS */
-import { ROLES } from './mocks/mock-roles';
+/* DATA */
+import { ROLES } from '../mocks/mock-roles';
 
 @Injectable()
 export class RoleService

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 //skills
 import { Skill } from '../shared/models/skill';
-import { SkillService } from '../shared/skill.service'
+import { SkillService } from '../shared/services/skill.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

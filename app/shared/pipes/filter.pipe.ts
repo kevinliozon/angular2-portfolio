@@ -1,8 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-//projects
-import { Project } from './models/project';
-import { PROJECTS } from './mocks/mock-projects';
-import { ProjectService } from './project.service'
 
 @Pipe({
     name: 'filter',

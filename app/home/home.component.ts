@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //projects
 import { Project } from '../shared/models/project';
-import { ProjectService } from '../shared/project.service'
+import { ProjectService } from '../shared/services/project.service'
 //skills
 import { Skill } from '../shared/models/skill';
-import { SkillService } from '../shared/skill.service'
+import { SkillService } from '../shared/services/skill.service'
 //roles
 import { Role } from '../shared/models/role';
-import { RoleService } from '../shared/role.service'
+import { RoleService } from '../shared/services/role.service'
 //diplomas
 import { Diploma } from '../shared/models/diploma';
-import { DiplomaService } from '../shared/diploma.service'
+import { DiplomaService } from '../shared/services/diploma.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

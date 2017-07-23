@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //projects
 import { Project } from '../shared/models/project';
-import { ProjectService } from '../shared/project.service'
+import { ProjectService } from '../shared/services/project.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

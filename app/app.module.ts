@@ -23,14 +23,14 @@ import { TRANSLATION_PROVIDERS } from './translate/translation';
 import { TranslateService } from './translate/translate.service';
 import { TranslatePipe } from './translate/translate.pipe';
 //filters
-import { FilterPipe } from './shared/filter.pipe';
+import { FilterPipe } from './shared/pipes/filter.pipe';
 //Services
-import { ProjectService } from './shared/project.service';
-import { SkillService } from './shared/skill.service';
-import { RoleService } from './shared/role.service';
-import { DiplomaService } from './shared/diploma.service';
-import { ToolService } from './shared/tool.service';
-import { HobbyService } from './shared/hobby.service';
+import { ProjectService } from './shared/services/project.service';
+import { SkillService } from './shared/services/skill.service';
+import { RoleService } from './shared/services/role.service';
+import { DiplomaService } from './shared/services/diploma.service';
+import { ToolService } from './shared/services/tool.service';
+import { HobbyService } from './shared/services/hobby.service';
 
 @NgModule({
   imports:
