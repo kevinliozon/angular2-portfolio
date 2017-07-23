@@ -40,20 +40,21 @@ gulp.task('html', function() {
 });
 
 // Compile and concat Sass into a temporary folder for debugging
-gulp.task('sass', function() {
+gulp.task('debug-sass', function() {
   return gulp.src('app/**/*.scss')
   .pipe(concat('styles.scss'))
   .pipe(sass())
   .pipe(gulp.dest('.tmp'));
 });
 
-// Minify the generated styles.css
-gulp.task('minify-css', function() {
+// Compile into CSS and Minify
+gulp.task('sass', function() {
   return gulp.src([
     'node_modules/bootstrap/dist/css/bootstrap.css',
-    '.tmp/styles.css'
+    'app/**/*.scss'
   ])
-  .pipe(concat('styles.css'))
+  .pipe(concat('styles.scss'))
+  .pipe(sass())
   .pipe(cleanCSS({debug: true}, function(details) {
       console.log(details.name + ': ' + details.stats.originalSize);
       console.log(details.name + ': ' + details.stats.minifiedSize);
@@ -78,9 +79,9 @@ gulp.task('lint', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch('dist/app/**/**/*.js', ['lint']);
-  gulp.watch('app/**/*.scss', ['sass', 'minify-css']);
+  gulp.watch('app/**/*.scss', ['sass']);
   gulp.watch('assets/**/*', ['assets']);
 });
 
 // Default Task
-gulp.task('default', ['watch', 'libs', 'html', 'sass', 'minify-css', 'assets', 'lint']);
+gulp.task('default', ['sass', 'assets', 'lint']);
