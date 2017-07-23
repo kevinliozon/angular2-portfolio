@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //diplomas
-import { Diploma } from '../shared/models/diploma';
-import { DiplomaService } from '../shared/services/diploma.service';
+import { Diploma } from '../models/diploma';
+import { DiplomaService } from '../providers/diploma.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

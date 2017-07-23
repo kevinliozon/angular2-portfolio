@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 //tools
-import { Tool } from '../shared/models/tool';
-import { ToolService } from '../shared/services/tool.service';
+import { Tool } from '../models/tool';
+import { ToolService } from '../providers/tool.service';
 //hobbies
-import { Hobby } from '../shared/models/hobby';
-import { HobbyService } from '../shared/services/hobby.service'
+import { Hobby } from '../models/hobby';
+import { HobbyService } from '../providers/hobby.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

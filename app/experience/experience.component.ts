@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //roles
-import { Role } from '../shared/models/role';
-import { RoleService } from '../shared/services/role.service'
+import { Role } from '../models/role';
+import { RoleService } from '../providers/role.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

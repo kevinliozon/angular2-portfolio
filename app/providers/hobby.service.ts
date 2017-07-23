@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 /* DATA */
-import { HOBBIES } from '../mocks/mock-hobbies';
+import { HOBBIES } from '../shared/data/mock-hobbies';
 
 @Injectable()
 export class HobbyService

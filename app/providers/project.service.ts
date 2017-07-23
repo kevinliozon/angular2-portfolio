@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 /* MODELS */
-import { PROJECTS } from '../mocks/mock-projects';
+import { PROJECTS } from '../shared/data/mock-projects';
 
 @Injectable()
 export class ProjectService

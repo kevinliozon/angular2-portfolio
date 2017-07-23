@@ -25,12 +25,12 @@ import { TranslatePipe } from './translate/translate.pipe';
 //filters
 import { FilterPipe } from './shared/pipes/filter.pipe';
 //Services
-import { ProjectService } from './shared/services/project.service';
-import { SkillService } from './shared/services/skill.service';
-import { RoleService } from './shared/services/role.service';
-import { DiplomaService } from './shared/services/diploma.service';
-import { ToolService } from './shared/services/tool.service';
-import { HobbyService } from './shared/services/hobby.service';
+import { ProjectService } from './providers/project.service';
+import { SkillService } from './providers/skill.service';
+import { RoleService } from './providers/role.service';
+import { DiplomaService } from './providers/diploma.service';
+import { ToolService } from './providers/tool.service';
+import { HobbyService } from './providers/hobby.service';
 
 @NgModule({
   imports:

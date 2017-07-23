@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 /* DATA */
-import { DIPLOMAS } from '../mocks/mock-diplomas';
+import { DIPLOMAS } from '../shared/data/mock-diplomas';
 
 @Injectable()
 

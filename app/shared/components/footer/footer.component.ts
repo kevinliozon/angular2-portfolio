@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 /* MODELS */
-import { SOCIALS } from '../../mocks/mock-socials';
+import { SOCIALS } from '../../data/mock-socials';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

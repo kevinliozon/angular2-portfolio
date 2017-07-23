@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //projects
-import { Project } from '../shared/models/project';
-import { ProjectService } from '../shared/services/project.service'
+import { Project } from '../models/project';
+import { ProjectService } from '../providers/project.service'
 //skills
-import { Skill } from '../shared/models/skill';
-import { SkillService } from '../shared/services/skill.service'
+import { Skill } from '../models/skill';
+import { SkillService } from '../providers/skill.service'
 //roles
-import { Role } from '../shared/models/role';
-import { RoleService } from '../shared/services/role.service'
+import { Role } from '../models/role';
+import { RoleService } from '../providers/role.service'
 //diplomas
-import { Diploma } from '../shared/models/diploma';
-import { DiplomaService } from '../shared/services/diploma.service'
+import { Diploma } from '../models/diploma';
+import { DiplomaService } from '../providers/diploma.service'
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
