@@ -7,7 +7,7 @@
 <button (click)='visible="UX"'>UX</button>
 <button (click)='visible="Portfolio"'>Portfolios</button>
 <ul>
-  <li *ngFor="let project of projects | filter:{category:visible}">
+  <li *ngFor="let project of projects | filter:{category:visible}" (click)="goTo(project)">
     <a (click)="focus=project.id">{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}</a>
   </li>
 </ul>

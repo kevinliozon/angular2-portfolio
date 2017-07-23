@@ -14,7 +14,7 @@ export class EducationComponent implements OnInit{
   // Injection of ProjectService
   public diplomas: Diploma[];
 
-  constructor(private diplomaService: DiplomaService, private router: Router) {}
+  constructor(private router: Router, private diplomaService: DiplomaService) {}
 
   public ngOnInit() {
     this.title= "My Diplomas";
@@ -23,7 +23,7 @@ export class EducationComponent implements OnInit{
 
   public goTo(diploma) {
     // We cannot pass an object directly, only a string
-    this.router.navigate(['details', {id: diploma.id}]);
+    this.router.navigate(['details', {id: diploma.id, type: 'diploma'}]);
   }
 
 }
