@@ -1,7 +1,7 @@
 export class Role
 {
   id: string;
-  title: string;
+  name: string;
   category: string;
   company: any;
   desc: string;

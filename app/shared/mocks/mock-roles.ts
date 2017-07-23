@@ -2,7 +2,7 @@ import { Role } from '../models/role';
 
 export let ROLES: Role[] = [{
   "id": "#role6",
-  "title": "Front-End Developer & UX Designer",
+  "name": "Front-End Developer & UX Designer",
   "category": "Permanent",
   "company": {
     "name": "Surely Group",
@@ -32,7 +32,7 @@ export let ROLES: Role[] = [{
 },
 {
   "id": "#role5",
-  "title": "Front-End Developer",
+  "name": "Front-End Developer",
   "category": "Contract",
   "company": {
     "name": "Doxy.me",
@@ -56,7 +56,7 @@ export let ROLES: Role[] = [{
 },
 {
   "id": "#role4",
-  "title": "Front-End Developer & UX Designer",
+  "name": "Front-End Developer & UX Designer",
   "category": "Permanent",
   "company": {
     "name": "My Mini Factory (iMakr)",
@@ -80,7 +80,7 @@ export let ROLES: Role[] = [{
 },
 {
   "id": "#role3",
-  "title": "Front-End Developer & UX Designer",
+  "name": "Front-End Developer & UX Designer",
   "category": "Internship",
   "company": {
     "name": "iMakr",
@@ -104,7 +104,7 @@ export let ROLES: Role[] = [{
 },
 {
   "id": "#role2",
-  "title": "Front-End Developer & UX Designer",
+  "name": "Front-End Developer & UX Designer",
   "category": "Internship",
   "company": {
     "name": "Digitela",
@@ -140,7 +140,7 @@ export let ROLES: Role[] = [{
 },
 {
   "id": "#role1",
-  "title": "Field Support Technician",
+  "name": "Field Support Technician",
   "category": "Contract",
   "company": {
     "name": "Medasys",
