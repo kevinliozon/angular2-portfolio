@@ -1,7 +1,7 @@
 import { Diploma } from '../models/diploma';
 
 export let DIPLOMAS: Diploma[] = [{
-  "id": "#diploma6",
+  "id": "diploma6",
   "info": {
     "type": "certification",
     "class": "Certification UX NNG",
@@ -26,7 +26,7 @@ export let DIPLOMAS: Diploma[] = [{
   "projects": null,
 },
 {
-  "id": "#diploma5",
+  "id": "diploma5",
   "info": {
     "type": "certification",
     "class": "Certifications CodeSchool",
@@ -51,7 +51,7 @@ export let DIPLOMAS: Diploma[] = [{
   "projects": null
 },
 {
-  "id": "#diploma4",
+  "id": "diploma4",
   "info": {
     "type": "degree",
     "class": "Bachelor's Degree (Licence Pro)",
@@ -86,7 +86,7 @@ export let DIPLOMAS: Diploma[] = [{
   }
 },
 {
-  "id": "#diploma3",
+  "id": "diploma3",
   "info": {
     "type": "degree",
     "class": "Two years university degree in technology (DUT)",
@@ -116,7 +116,7 @@ export let DIPLOMAS: Diploma[] = [{
   }
 },
 {
-  "id": "#diploma2",
+  "id": "diploma2",
   "info": {
     "type": "degree",
     "class": "University Degree (DU)",
@@ -141,7 +141,7 @@ export let DIPLOMAS: Diploma[] = [{
   "projects": null
 },
 {
-  "id": "#diploma1",
+  "id": "diploma1",
   "info": {
     "type": "degree",
     "class": "High-School Degree",

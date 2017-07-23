@@ -31,6 +31,7 @@ import { RoleService } from './shared/role.service';
 import { DiplomaService } from './shared/diploma.service';
 import { ToolService } from './shared/tool.service';
 import { HobbyService } from './shared/hobby.service';
+import { DetailsResolve } from './shared/resolver/details.resolve';
 
 @NgModule({
   imports:
@@ -65,7 +66,8 @@ import { HobbyService } from './shared/hobby.service';
     RoleService,
     DiplomaService,
     ToolService,
-    HobbyService
+    HobbyService,
+    DetailsResolve
   ]
 })
 export class AppModule { }

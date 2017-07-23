@@ -11,23 +11,20 @@ import { DiplomaService } from '../../diploma.service';
 
 export class DetailsComponent implements OnInit{
 
-  private sub: any;
-  public id: string;
-  public details: any;
 
-  constructor(private diplomaService: DiplomaService, private route: ActivatedRoute){
+  diploma;
+
+  constructor(private route: ActivatedRoute){
     // We get the id from the selected item
     // TODO pass a parameter specifying from which page we come from
-    this.sub = this.route.params.subscribe((params) => {
-          this.id = params['id'];
-    });
+
   }
 
   public ngOnInit() {
     /* Compare the id passed from previous page with id
       of all the objects in the collection */
       // TODO switch case the new parameter to get the right method
-    this.details = this.diplomaService.resolveDiploma(this.id);
+    this.diploma = this.route.snapshot.data['diploma'];
   }
 
 }

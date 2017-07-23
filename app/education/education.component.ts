@@ -21,9 +21,4 @@ export class EducationComponent implements OnInit{
     this.diplomas = this.diplomaService.getDiplomas();
   }
 
-  public goTo(diploma) {
-    // We cannot pass an object directly, only a string
-    this.router.navigate(['details', {id: diploma.id}]);
-  }
-
 }

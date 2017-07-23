@@ -27,7 +27,11 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent },
   // Components
-  { path: 'details', component: DetailsComponent },
+  {
+    path: 'details/:id',
+    component: DetailsComponent,
+    resolve: {diploma: 'diploma'}
+  },
   // 404
   { path: '**', component: PageNotFoundComponent }
 ];
