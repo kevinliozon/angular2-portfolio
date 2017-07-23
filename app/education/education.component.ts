@@ -1,20 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 //diplomas
 import { Diploma } from '../shared/models/diploma';
-import { DiplomaService } from '../shared/diploma.service'
+import { DiplomaService } from '../shared/diploma.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'education.html'
 })
-export class EducationComponent {
-  
+export class EducationComponent implements OnInit{
+
   title: string;
   // Injection of ProjectService
-  diplomas: Diploma[];
-  constructor(private diplomaService: DiplomaService) { }
-  ngOnInit() {
+  public diplomas: Diploma[];
+
+  constructor(private diplomaService: DiplomaService, private router: Router) {}
+
+  public ngOnInit() {
     this.title= "My Diplomas";
     this.diplomas = this.diplomaService.getDiplomas();
   }
+
+  public goTo(diploma) {
+    // We cannot pass an object directly, only a string
+    this.router.navigate(['details', {id: diploma.id}]);
+  }
+
 }

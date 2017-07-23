@@ -10,6 +10,7 @@ import { EducationComponent }   from './education/education.component';
 import { ExperienceComponent }   from './experience/experience.component';
 import { ProjectsComponent }   from './projects/projects.component';
 import { SkillsComponent }   from './skills/skills.component';
+import { DetailsComponent }   from './shared/components/details/details.component';
 
 const routes: Routes = [
   // default route to home on load
@@ -18,13 +19,16 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  // links to the components
+  // Pages
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent },
+  // Components
+  { path: 'details', component: DetailsComponent },
+  // 404
   { path: '**', component: PageNotFoundComponent }
 ];
 

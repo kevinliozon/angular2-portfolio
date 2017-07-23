@@ -1,6 +1,7 @@
 <h2>{{ title }}</h2>
 <ul>
-  <li *ngFor="let diploma of diplomas">
-    <h3>{{ diploma.id }} {{ diploma.info.type }} {{ diploma.dates.start | date : "MMM yyyy" }} {{ diploma.projects.project1 }}</h3>
+  <li *ngFor="let diploma of diplomas" (click)="goTo(diploma)">
+    <h3>{{ diploma.info.type }} {{ diploma.info.field }}</h3>
+    <p>{{ diploma.dates.start | date : "MMM yyyy" }} {{ diploma.projects?.project1 }}</p>
   </li>
 </ul>

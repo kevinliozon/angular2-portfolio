@@ -4,7 +4,8 @@ export let DIPLOMAS: Diploma[] = [{
   "id": "#diploma6",
   "info": {
     "type": "certification",
-    "field": "UX certification",
+    "class": "Certification UX NNG",
+    "field": "UX",
     "thumb": "../../../assets/img/thumb/diplomas/nng.png",
     "image": "../../../assets/img/png/diplomas/nng.png",
     "subject1": "Interaction Design (speciality 1)",
@@ -22,13 +23,14 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2016-08-15",
     "end": "2016-11-14"
   },
-  "projects": {},
+  "projects": null,
 },
 {
   "id": "#diploma5",
   "info": {
     "type": "certification",
-    "field": "Dev certifications",
+    "class": "Certifications CodeSchool",
+    "field": "Dev",
     "thumb": "../../../assets/img/svg/education/codeschool.svg",
     "image": "../../../assets/img/svg/education/codeschool.svg",
     "subject1": "Javascript",
@@ -46,7 +48,7 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2016-03-01",
     "end": "2017-01-01"
   },
-  "projects": {}
+  "projects": null
 },
 {
   "id": "#diploma4",
@@ -136,13 +138,13 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2012-09-01",
     "end": "2013-06-01"
   },
-  "projects": {}
+  "projects": null
 },
 {
   "id": "#diploma1",
   "info": {
     "type": "degree",
-    "class": "Baccalaureate",
+    "class": "High-School Degree",
     "field": "Science, speciality biology, option Physics/chemistry",
     "thumb": "../../../assets/img/thumb/diplomas/bac.png",
     "image": "../../../assets/img/png/diplomas/bac.png",
@@ -161,5 +163,5 @@ export let DIPLOMAS: Diploma[] = [{
     "start": "2007-09-01",
     "end": "2010-07-01"
   },
-  "projects": {}
+  "projects": null
 }];
