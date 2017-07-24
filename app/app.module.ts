@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
+import { ProvidersModule } from './providers/providers.module';
 //Pages
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,11 +14,8 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
+import { PageNotFoundComponent } from './not-found/not-found.component';
 //Components
-import { PageNotFoundComponent } from './not-found.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { DetailsComponent } from './shared/components/details/details.component';
 import { ProjectComponent } from './projects/project.component';
 //Translations
 import { TRANSLATION_PROVIDERS } from './translate/translation';
@@ -24,28 +23,18 @@ import { TranslateService } from './translate/translate.service';
 import { TranslatePipe } from './translate/translate.pipe';
 //filters
 import { FilterPipe } from './shared/pipes/filter.pipe';
-//Services
-import { ProjectService } from './providers/project.service';
-import { SkillService } from './providers/skill.service';
-import { RoleService } from './providers/role.service';
-import { DiplomaService } from './providers/diploma.service';
-import { ToolService } from './providers/tool.service';
-import { HobbyService } from './providers/hobby.service';
 
 @NgModule({
-  imports:
-  [
+  imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    ProvidersModule
   ],
-  declarations:
-  [
+  declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
     PageNotFoundComponent,
-    DetailsComponent,
     HomeComponent,
     AboutComponent,
     EducationComponent,
@@ -56,16 +45,13 @@ import { HobbyService } from './providers/hobby.service';
     TranslatePipe,
     FilterPipe
   ],
-  bootstrap:    [ AppComponent ],
-  providers:
-  [ TRANSLATION_PROVIDERS,
+  bootstrap: [
+    AppComponent
+  ],
+  providers: [
+    TRANSLATION_PROVIDERS,
     TranslateService,
-    ProjectService,
-    SkillService,
-    RoleService,
-    DiplomaService,
-    ToolService,
-    HobbyService
   ]
 })
-export class AppModule { }
+
+export class AppModule {  }
