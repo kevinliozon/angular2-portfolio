@@ -15,8 +15,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PageNotFoundComponent } from './not-found/not-found.component';
-//Components
-import { ProjectComponent } from './projects/project.component';
 //Translations
 import { TRANSLATION_PROVIDERS } from './translate/translation';
 import { TranslateService } from './translate/translate.service';
@@ -40,7 +38,6 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     EducationComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ProjectComponent,
     SkillsComponent,
     TranslatePipe,
     FilterPipe

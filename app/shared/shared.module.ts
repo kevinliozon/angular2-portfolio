@@ -7,6 +7,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { DetailsComponent } from "./components/details/details.component";
+import { PreviewComponent } from "./components/preview/preview.component";
 
 @NgModule({
     imports: [
@@ -16,12 +17,14 @@ import { DetailsComponent } from "./components/details/details.component";
     declarations: [
       HeaderComponent,
       FooterComponent,
-      DetailsComponent
+      DetailsComponent,
+      PreviewComponent
     ],
     exports: [
       HeaderComponent,
       FooterComponent,
-      DetailsComponent
+      DetailsComponent,
+      PreviewComponent
     ]
 })
 
