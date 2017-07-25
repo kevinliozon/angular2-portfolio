@@ -1,4 +1,4 @@
-import { Skill } from '../models/skill';
+import { Skill } from '../../models/skill';
 
 
 export let SKILLS: Skill[] = [{

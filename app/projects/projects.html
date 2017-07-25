@@ -3,9 +3,11 @@
 <button (click)='visible="Front-End"'>Front-End</button>
 <button (click)='visible="UX"'>UX</button>
 <button (click)='visible="Portfolio"'>Portfolios</button>
-<ul>
-  <li *ngFor="let project of projects | filter:{category:visible}" (mouseover)="focusItem(project)" (click)="goTo(project)">
-    <a >{{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}</a>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let project of projects | filter:{category:visible}"
+      (mouseover)="focusItem(project)" (click)="goTo(project)"
+      [class.active]="this.focusedItem === project ? true : false">
+    {{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}
   </li>
 </ul>
 <!-- Now we are binding each iteration of project to the child's project property -->

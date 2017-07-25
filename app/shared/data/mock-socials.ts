@@ -1,4 +1,4 @@
-import { Social } from '../models/social';
+import { Social } from '../../models/social';
 
 export let SOCIALS: Social[] = [{
   "id": "#social8",

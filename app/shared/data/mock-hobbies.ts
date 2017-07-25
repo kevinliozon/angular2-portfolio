@@ -1,4 +1,4 @@
-import { Hobby } from '../models/hobby';
+import { Hobby } from '../../models/hobby';
 
 
 export let HOBBIES: Hobby[] = [{

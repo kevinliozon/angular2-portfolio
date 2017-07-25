@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <li class="list-group-item active" *ngFor="let object of collection" (mouseover)="focusItem(project)" (click)="goTo(project)">
+    {{ object.id }} {{ object.title }} {{ object.date | date : "MMM yyyy"}}
+  </li>
+</ul>

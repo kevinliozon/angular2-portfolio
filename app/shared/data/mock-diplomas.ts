@@ -1,4 +1,4 @@
-import { Diploma } from '../models/diploma';
+import { Diploma } from '../../models/diploma';
 
 export let DIPLOMAS: Diploma[] = [{
   "id": "#diploma6",

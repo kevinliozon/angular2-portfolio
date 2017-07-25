@@ -8,6 +8,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { DetailsComponent } from "./components/details/details.component";
 import { PreviewComponent } from "./components/preview/preview.component";
+import { CardComponent } from "./components/card/card.component";
 
 @NgModule({
     imports: [
@@ -18,13 +19,15 @@ import { PreviewComponent } from "./components/preview/preview.component";
       HeaderComponent,
       FooterComponent,
       DetailsComponent,
-      PreviewComponent
+      PreviewComponent,
+      CardComponent
     ],
     exports: [
       HeaderComponent,
       FooterComponent,
       DetailsComponent,
-      PreviewComponent
+      PreviewComponent,
+      CardComponent
     ]
 })
 
