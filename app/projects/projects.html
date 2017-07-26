@@ -1,10 +1,11 @@
 <h2>{{ title }}</h2>
-<button (click)='visible=""'>all</button>
-<button (click)='visible="Front-End"'>Front-End</button>
-<button (click)='visible="UX"'>UX</button>
-<button (click)='visible="Portfolio"'>Portfolios</button>
+<!-- Filter by category -->
+<button *ngFor="let filter of filters" (click)="value = filter">
+  {{ filter }}
+  <span *ngIf="filter === ''">Reset</span>
+</button>
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let project of projects | filter:{category:visible}"
+  <li class="list-group-item" *ngFor="let project of projects | filter:{ category: value }"
       (mouseover)="focusItem(project)" (click)="goTo(project)"
       [class.active]="this.focusedItem === project ? true : false">
     {{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}

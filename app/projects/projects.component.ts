@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //projects
 import { Project } from '../models/project';
-import { ProjectService } from '../providers/project.service'
+import { ProjectService } from '../providers/project.service';
+// Environment
+import { ENVIRONMENT } from '../shared/environment';
 
 @Component({
-  moduleId: module.id.replace("/dist/app/", "/app/"),
+  moduleId: module.id.replace('/dist/app/', '/app/'),
   templateUrl: 'projects.html'
 })
 
@@ -14,11 +16,12 @@ export class ProjectsComponent {
   public title: string;
   public projects: Project[];
   public focusedItem: any;
+  public filters: Array<string> = ENVIRONMENT.FILTERS.projects;
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
   public ngOnInit() {
-    this.title = "My Projects";
+    this.title = 'My Projects';
     this.projects = this.projectService.getProjects();
   }
 
