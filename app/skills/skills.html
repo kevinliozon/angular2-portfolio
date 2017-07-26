@@ -1,21 +1,18 @@
 <h2>{{ title }}</h2>
 <!-- Filter by category -->
-<button (click)='visible=""'>Reset</button>
-<button (click)='visible="Front-End"'>Front-End</button>
-<button (click)='visible="Design"'>Design</button>
-<button (click)='visible="Framework"'>Framework</button>
-<button (click)='visible="Javascript"'>Javascript</button>
-<button (click)='visible="CMS"'>CMS</button>
-<button (click)='visible="Basic/Vanilla"'>Basic/Vanilla</button>
+<button *ngFor="let filter of filters" (click)="value = filter">
+  {{ filter }}
+  <span *ngIf="filter === ''">Reset</span>
+</button>
 <!-- Filter by frequency -->
 <label class="switch">
-  <input type="checkbox" (change)="frequency===true ? frequency=false : frequency=true">
+  <input type="checkbox" (change)="frequency === true ? frequency = false : frequency = true">
   <span class="slider"></span>
 </label>
 <span>Frequently used only</span>
-
+<!-- RESULT -->
 <div class="row">
-  <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{category:visible, frequent:frequency}">
+  <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }">
     <div class="thumbnail">
       <img src="{{ skill.image }}" alt="{{ skill.name }}">
       <div class="caption">

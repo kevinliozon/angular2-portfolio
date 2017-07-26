@@ -1,27 +1,25 @@
 import { Component } from '@angular/core';
-//skills
+// Skills
 import { Skill } from '../models/skill';
-import { SkillService } from '../providers/skill.service'
+import { SkillService } from '../providers/skill.service';
+// Environment
+import { ENVIRONMENT } from '../shared/environment';
 
 @Component({
-  moduleId: module.id.replace("/dist/app/", "/app/"),
+  moduleId: module.id.replace('/dist/app/', '/app/'),
   templateUrl: 'skills.html'
 })
 export class SkillsComponent {
 
-  title: string;
-  skills: Skill[];
-  frequentSkill: boolean = false; // Should we display the frequent skills?
+  public title: string;
+  public skills: Skill[];
+  public filters: Array<string> = ENVIRONMENT.FILTERS.skills;
 
   constructor(private skillService: SkillService) { }
 
   ngOnInit() {
-    this.title= "My Skills";
+    this.title= 'My Skills';
     this.skills = this.skillService.getSkills();
   }
 
-  // Returns true if we want to display the frequently used skills only
-  isFrequent(value: boolean) {
-    return value ? this.frequentSkill = true : this.frequentSkill = false;
-  }
 }
