@@ -1,21 +1,28 @@
 <h2>{{ title }}</h2>
 <!-- Filter by category -->
-<button (click)='visible=""'>All Categories</button>
+<button (click)='visible=""'>Reset</button>
 <button (click)='visible="Front-End"'>Front-End</button>
 <button (click)='visible="Design"'>Design</button>
 <button (click)='visible="Framework"'>Framework</button>
 <button (click)='visible="Javascript"'>Javascript</button>
 <button (click)='visible="CMS"'>CMS</button>
 <button (click)='visible="Basic/Vanilla"'>Basic/Vanilla</button>
+<!-- Filter by frequency -->
+<label class="switch">
+  <input type="checkbox" (change)="frequency===true ? frequency=false : frequency=true">
+  <span class="slider"></span>
+</label>
+<span>Frequently used only</span>
 
-<!-- We can also filter by frequency of use -->
-<button (click)='isFrequent(true)' *ngIf="frequentSkill==false">Frequently used only</button>
-<button (click)='isFrequent(false)' *ngIf="frequentSkill==true">Randomly used</button>
-
-<ul>
-  <li *ngFor="let skill of skills | filter:{category:visible}">
-    <h3 *ngIf="frequentSkill==false"><img src="{{ skill.image }}" />{{ skill.title }}</h3>
-    <!-- Used frequently only -->
-    <h3 *ngIf="frequentSkill==true && skill.frequent==true"><img src="{{ skill.image }}" />{{ skill.title }}</h3>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{category:visible, frequent:frequency}">
+    <div class="thumbnail">
+      <img src="{{ skill.image }}" alt="{{ skill.name }}">
+      <div class="caption">
+        <h3>{{ skill.name }}</h3>
+        <p>{{ skill.desc }}</p>
+        <p><a href="#" class="btn btn-primary" role="button">{{ skill.url }}</a></p>
+      </div>
+    </div>
+  </div>
+</div>

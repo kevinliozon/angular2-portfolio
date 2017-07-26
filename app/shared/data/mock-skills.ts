@@ -3,7 +3,7 @@ import { Skill } from '../../models/skill';
 
 export let SKILLS: Skill[] = [{
   "id": "#skill28",
-  "title": "Angular.js (1, 2 & 4)",
+  "name": "Angular.js (1, 2 & 4)",
   "featured": true,
   "frequent": true,
   "category": "Framework",
@@ -13,7 +13,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill27",
-  "title": "Ionic",
+  "name": "Ionic",
   "featured": true,
   "frequent": true,
   "category": "Framework",
@@ -23,7 +23,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill26",
-  "title": "Apache Cordova",
+  "name": "Apache Cordova",
   "featured": false,
   "frequent": true,
   "category": "Framework",
@@ -33,7 +33,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill25",
-  "title": "Typescript",
+  "name": "Typescript",
   "featured": true,
   "frequent": true,
   "category": "Javascript",
@@ -43,7 +43,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill24",
-  "title": "jQuery",
+  "name": "jQuery",
   "featured": true,
   "frequent": true,
   "category": "Javascript",
@@ -53,7 +53,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill23",
-  "title": "Symfony",
+  "name": "Symfony",
   "featured": true,
   "frequent": true,
   "category": "Framework",
@@ -63,7 +63,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill22",
-  "title": "Sass",
+  "name": "Sass",
   "featured": true,
   "frequent": true,
   "category": "Front-End",
@@ -73,7 +73,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill21",
-  "title": "Less",
+  "name": "Less",
   "featured": false,
   "frequent": false,
   "category": "Front-End",
@@ -83,7 +83,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill20",
-  "title": "Bootstrap",
+  "name": "Bootstrap",
   "featured": true,
   "frequent": true,
   "category": "Front-End",
@@ -93,7 +93,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill19",
-  "title": "Foundation",
+  "name": "Foundation",
   "featured": true,
   "frequent": true,
   "category": "Front-End",
@@ -103,7 +103,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill18",
-  "title": "Gulp.js",
+  "name": "Gulp.js",
   "featured": true,
   "frequent": true,
   "category": "Front-End",
@@ -113,7 +113,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill17",
-  "title": "Compass",
+  "name": "Compass",
   "featured": false,
   "frequent": false,
   "category": "Framework",
@@ -123,7 +123,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill16",
-  "title": "Axure RP",
+  "name": "Axure RP",
   "featured": true,
   "frequent": true,
   "category": "Design",
@@ -133,7 +133,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill15",
-  "title": "Ionic Creator",
+  "name": "Ionic Creator",
   "featured": false,
   "frequent": true,
   "category": "Design",
@@ -143,7 +143,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill14",
-  "title": "Adobe XD",
+  "name": "Adobe XD",
   "featured": false,
   "frequent": false,
   "category": "Design",
@@ -153,7 +153,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill13",
-  "title": "Adobe Illustrator",
+  "name": "Adobe Illustrator",
   "featured": true,
   "frequent": true,
   "category": "Design",
@@ -163,7 +163,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill12",
-  "title": "Adobe Photoshop",
+  "name": "Adobe Photoshop",
   "featured": true,
   "frequent": true,
   "category": "Design",
@@ -173,7 +173,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill11",
-  "title": "Adobe InDesign",
+  "name": "Adobe InDesign",
   "featured": false,
   "frequent": false,
   "category": "Design",
@@ -183,7 +183,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill10",
-  "title": "Adobe Edge Animate",
+  "name": "Adobe Edge Animate",
   "featured": false,
   "frequent": false,
   "category": "Design",
@@ -193,7 +193,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill9",
-  "title": "Adobe Flash/Animate",
+  "name": "Adobe Flash/Animate",
   "featured": false,
   "frequent": false,
   "category": "Design",
@@ -203,7 +203,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill8",
-  "title": "Draw.io",
+  "name": "Draw.io",
   "featured": false,
   "frequent": true,
   "category": "Design",
@@ -213,7 +213,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill7",
-  "title": "Wordpress",
+  "name": "Wordpress",
   "featured": false,
   "frequent": false,
   "category": "CMS",
@@ -223,7 +223,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill6",
-  "title": "Prestashop",
+  "name": "Prestashop",
   "featured": false,
   "frequent": false,
   "category": "CMS",
@@ -233,7 +233,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill5",
-  "title": "Javascript ES6",
+  "name": "Javascript ES6",
   "featured": false,
   "frequent": true,
   "category": "Basic/Vanilla",
@@ -243,7 +243,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill4",
-  "title": "CSS",
+  "name": "CSS",
   "featured": false,
   "frequent": true,
   "category": "Basic/Vanilla",
@@ -253,7 +253,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill3",
-  "title": "HTML",
+  "name": "HTML",
   "featured": false,
   "frequent": true,
   "category": "Basic/Vanilla",
@@ -263,7 +263,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill2",
-  "title": "PHP",
+  "name": "PHP",
   "featured": false,
   "frequent": true,
   "category": "Basic/Vanilla",
@@ -273,7 +273,7 @@ export let SKILLS: Skill[] = [{
 },
 {
   "id": "#skill1",
-  "title": "SQL",
+  "name": "SQL",
   "featured": false,
   "frequent": true,
   "category": "Basic/Vanilla",

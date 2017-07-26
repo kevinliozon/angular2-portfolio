@@ -1,7 +1,7 @@
 export class Skill
 {
   id: string;
-  title: string;
+  name: string;
   featured: boolean;
   frequent: boolean;
   category: string;
