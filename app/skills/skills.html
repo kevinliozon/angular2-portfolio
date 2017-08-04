@@ -13,13 +13,6 @@
 <!-- RESULT -->
 <div class="row">
   <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }">
-    <div class="thumbnail">
-      <img src="{{ skill.image }}" alt="{{ skill.name }}">
-      <div class="caption">
-        <h3>{{ skill.name }}</h3>
-        <p>{{ skill.desc }}</p>
-        <p><a href="#" class="btn btn-primary" role="button">{{ skill.url }}</a></p>
-      </div>
-    </div>
+    <my-card [object]="skill"></my-card>
   </div>
 </div>

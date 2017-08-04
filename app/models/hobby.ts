@@ -1,7 +1,8 @@
 export class Hobby
 {
   id: string;
-  title: string;
+  name: string;
   desc: string;
   image: string;
+  url: string;
 }

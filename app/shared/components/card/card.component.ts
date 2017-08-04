@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -6,13 +6,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: 'card.component.html',
 })
 
-export class CardComponent implements OnInit {
+export class CardComponent {
 
-  @Input() collection: any;
-  @Output() public onUserAction = new EventEmitter();
+  @Input() public object: any = null;
 
   constructor() {  }
-
-  ngOnInit() {}
 
 }

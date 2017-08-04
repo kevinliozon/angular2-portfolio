@@ -3,7 +3,7 @@ import { Tool } from '../../models/tool';
 
 export let TOOLS: Tool[] = [{
   'id': '#tool17',
-  'title': 'Git',
+  'name': 'Git',
   'featured': false,
   'category': 'Collaborative',
   'desc': 'Version Control System',
@@ -12,7 +12,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool16',
-  'title': 'Dreamweaver',
+  'name': 'Dreamweaver',
   'featured': false,
   'category': 'IDE',
   'desc': 'IDE developed by Adobe',
@@ -21,7 +21,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool15',
-  'title': 'VirtualBox',
+  'name': 'VirtualBox',
   'featured': true,
   'category': 'Virtualization tool',
   'desc': 'Tool for taking notes',
@@ -30,7 +30,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool14',
-  'title': 'Filezilla',
+  'name': 'Filezilla',
   'featured': false,
   'category': 'FTP Client',
   'desc': 'Classic tool for deployment on server',
@@ -39,7 +39,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool13',
-  'title': 'Evernote',
+  'name': 'Evernote',
   'featured': false,
   'category': 'Project Management',
   'desc': 'Tool for taking notes',
@@ -48,7 +48,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool12',
-  'title': 'Toggl',
+  'name': 'Toggl',
   'featured': false,
   'category': 'Project Management',
   'desc': 'Project timer tool',
@@ -57,7 +57,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool11',
-  'title': 'Homebrew',
+  'name': 'Homebrew',
   'featured': false,
   'category': 'Package Manager',
   'desc': 'Package manager for OSX platforms',
@@ -66,7 +66,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool10',
-  'title': 'NPM',
+  'name': 'NPM',
   'featured': true,
   'category': 'Package Manager',
   'desc': 'Default package manager for every project',
@@ -75,7 +75,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool9',
-  'title': 'Microsoft Office',
+  'name': 'Microsoft Office',
   'featured': false,
   'category': 'Collaborative',
   'desc': 'Cloud service & Desktop Softwares',
@@ -84,7 +84,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool8',
-  'title': 'Slack',
+  'name': 'Slack',
   'featured': false,
   'category': 'Collaborative',
   'desc': 'Cloud service',
@@ -93,7 +93,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool7',
-  'title': 'Trello',
+  'name': 'Trello',
   'featured': false,
   'category': 'Project Management',
   'desc': 'Kanban based project management tool',
@@ -102,7 +102,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool6',
-  'title': 'Google Drive',
+  'name': 'Google Drive',
   'featured': false,
   'category': 'Collaborative',
   'desc': 'Cloud service',
@@ -111,7 +111,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool5',
-  'title': 'Atlassian',
+  'name': 'Atlassian',
   'featured': true,
   'category': 'Collaborative',
   'desc': 'Suite of tools: BitBucket, Jira, Sourcetree and so on',
@@ -120,7 +120,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool4',
-  'title': 'GitHub',
+  'name': 'GitHub',
   'featured': true,
   'category': 'Collaborative',
   'desc': 'Web & Destktop Git UI tool',
@@ -129,7 +129,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool3',
-  'title': 'xCode',
+  'name': 'xCode',
   'featured': true,
   'category': 'IDE',
   'desc': 'Mandatory IDE for iOS development',
@@ -138,7 +138,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool2',
-  'title': 'PHP Storm',
+  'name': 'PHP Storm',
   'featured': false,
   'category': 'IDE',
   'desc': 'Other IDE quite useful for Symfony projects',
@@ -147,7 +147,7 @@ export let TOOLS: Tool[] = [{
 },
 {
   'id': '#tool1',
-  'title': 'Atom',
+  'name': 'Atom',
   'featured': true,
   'category': 'IDE',
   'desc': 'Powerful, flexible and free IDE developed by GitHub',

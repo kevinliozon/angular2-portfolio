@@ -1,5 +1,8 @@
-<ul class="list-group">
-  <li class="list-group-item active" *ngFor="let object of collection" (mouseover)="focusItem(project)" (click)="goTo(project)">
-    {{ object.id }} {{ object.title }} {{ object.date | date : "MMM yyyy"}}
-  </li>
-</ul>
+<div class="thumbnail">
+  <img src="{{ object.image }}" alt="{{ object.name }}">
+  <div class="caption">
+    <h3>{{ object.name }}</h3>
+    <p>{{ object.desc }}</p>
+    <p><a href="#" class="btn btn-primary" role="button">{{ object.url }}</a></p>
+  </div>
+</div>

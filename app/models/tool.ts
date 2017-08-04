@@ -1,7 +1,7 @@
 export class Tool
 {
   id: string;
-  title: string;
+  name: string;
   featured: boolean;
   category: string;
   desc: string;
