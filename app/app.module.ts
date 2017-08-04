@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { ProvidersModule } from './providers/providers.module';
+import { HttpModule } from '@angular/http';
 //Pages
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -28,7 +29,8 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     FormsModule,
     AppRoutingModule,
     SharedModule,
-    ProvidersModule
+    ProvidersModule,
+    HttpModule
   ],
   declarations: [
     AppComponent,

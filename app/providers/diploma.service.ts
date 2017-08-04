@@ -7,6 +7,8 @@ import { DIPLOMAS } from '../shared/data/mock-diplomas';
 export class DiplomaService
 {
 
+  constructor() { }
+
   public getDiplomas()
   {
     return DIPLOMAS;

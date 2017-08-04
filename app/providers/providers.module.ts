@@ -7,6 +7,7 @@ import { ProjectService } from "./project.service";
 import { RoleService } from "./role.service";
 import { SkillService } from "./skill.service";
 import { ToolService } from "./tool.service";
+import { CodeschoolService } from "./codeschool.service";
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { ToolService } from "./tool.service";
       RoleService,
       DiplomaService,
       ToolService,
-      HobbyService
+      HobbyService,
+      CodeschoolService
     ]
 })
 

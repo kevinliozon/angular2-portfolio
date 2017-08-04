@@ -5,3 +5,15 @@
     <p>{{ diploma.dates.start | date : "MMM yyyy" }} {{ diploma.projects?.project1 }}</p>
   </li>
 </ul>
+<img src="{{ csProfile?.avatar }}" />
+<h3>{{ csProfile?.username }}</h3>
+<p>{{ csProfile?.total_score }}</p>
+<p>{{ csProfile?.member_since | date: "short"}}</p>
+<ul>
+  <li *ngFor="let certif of csCertifs">
+    <a href="{{ certif?.url }}" target="_blank">
+      <img src="{{ certif?.badge }}" />
+      <h3>{{ certif?.title }}</h3>
+    </a>
+  </li>
+</ul>
