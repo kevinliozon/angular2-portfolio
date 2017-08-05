@@ -3,6 +3,6 @@
   <div class="caption">
     <h3>{{ object.name }}</h3>
     <p>{{ object.desc }}</p>
-    <p *ngIf="object.url !== null"><a href="#" class="btn btn-primary" role="button">{{ object.url }}</a></p>
+    <p *ngIf="object.url !== null"><a href="{{ object.url }}" target="_blank" class="btn btn-primary" role="button">More info</a></p>
   </div>
 </div>

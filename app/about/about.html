@@ -35,10 +35,8 @@
   </div>
 </div>
 <h2>{{ 'aboutTitle7' | translate }}</h2>
-<ul>
-  <li *ngFor="let hobby of hobbies">
-    <div><img src="{{ hobby.image }}" /></div>
-    <h3>{{ hobby.title }}</h3>
-    <a href="hobby.url" *ngIf="hobby.url !== null">My Nexus Profile</a>
-  </li>
-</ul>
+<div class="row">
+  <div class="col-sm-6 col-md-4" *ngFor="let hobby of hobbies">
+    <my-card [object]="hobby"></my-card>
+  </div>
+</div>
