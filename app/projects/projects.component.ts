@@ -25,10 +25,9 @@ export class ProjectsComponent {
     this.projects = this.projectService.getProjects();
   }
 
-  public focusItem(project) {
+  public focusItem(itemHovered: any) {
     // focus will refer to the id of the selected item
-    //this.focus = project.id;
-    this.focusedItem = project;
+    this.focusedItem = itemHovered;
   }
 
   public goTo(project) {

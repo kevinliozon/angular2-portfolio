@@ -18,6 +18,8 @@ export class EducationComponent implements OnInit{
   public diplomas: Diploma[];
   public csCertifs: CodeSchoolCertif[];
   public csProfile: CodeSchoolProfile;
+  public selectedType: string = 'overview';
+  public focusedItem: any;
 
   constructor(private router: Router,
               private diplomaService: DiplomaService,
@@ -35,6 +37,11 @@ export class EducationComponent implements OnInit{
         // display in console
         // console.log('Completed!');
       });
+  }
+
+  public focusItem(itemHovered: any) {
+    // focus will refer to the id of the selected item
+    this.focusedItem = itemHovered;
   }
 
   public goTo(diploma) {

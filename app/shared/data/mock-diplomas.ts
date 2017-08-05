@@ -3,7 +3,7 @@ import { Diploma } from '../../models/diploma';
 export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma6',
   'info': {
-    'type': 'certification',
+    'category': 'certification',
     'class': 'Certification UX NNG',
     'field': 'UX',
     'thumb': '../../../assets/img/thumb/diplomas/nng.png',
@@ -28,7 +28,7 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma5',
   'info': {
-    'type': 'certification',
+    'category': 'certification',
     'class': 'Certifications CodeSchool',
     'field': 'Dev',
     'thumb': '../../../assets/img/svg/education/codeschool.svg',
@@ -53,7 +53,7 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma4',
   'info': {
-    'type': 'degree',
+    'category': 'degree',
     'class': 'Bachelor\'s Degree (Licence Pro)',
     'field': 'Webdesign',
     'thumb': '../../../assets/img/thumb/diplomas/lp.png',
@@ -88,7 +88,7 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma3',
   'info': {
-    'type': 'degree',
+    'category': 'degree',
     'class': 'Two years university degree in technology (DUT)',
     'field': 'Web & Multimedia Technologies (MMI)',
     'thumb': '../../../assets/img/thumb/diplomas/mmi.png',
@@ -118,7 +118,7 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma2',
   'info': {
-    'type': 'degree',
+    'category': 'degree',
     'class': 'University Degree (DU)',
     'field': 'Webmaster',
     'thumb': '../../../assets/img/thumb/diplomas/du.png',
@@ -143,7 +143,7 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma1',
   'info': {
-    'type': 'degree',
+    'category': 'degree',
     'class': 'High-School Degree',
     'field': 'Science, speciality biology, option Physics/chemistry',
     'thumb': '../../../assets/img/thumb/diplomas/bac.png',

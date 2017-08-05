@@ -1,19 +1,30 @@
 <h2>{{ title }}</h2>
-<ul>
-  <li *ngFor="let diploma of diplomas" (click)="goTo(diploma)">
-    <h3>{{ diploma.info.type }} {{ diploma.info.field }}</h3>
-    <p>{{ diploma.dates.start | date : "MMM yyyy" }} {{ diploma.projects?.project1 }}</p>
-  </li>
-</ul>
-<img src="{{ csProfile?.avatar }}" />
-<h3>{{ csProfile?.username }}</h3>
-<p>{{ csProfile?.total_score }}</p>
-<p>{{ csProfile?.member_since | date: "short"}}</p>
-<ul>
-  <li *ngFor="let certif of csCertifs">
-    <a href="{{ certif?.url }}" target="_blank">
-      <img src="{{ certif?.badge }}" />
-      <h3>{{ certif?.title }}</h3>
-    </a>
-  </li>
-</ul>
+<button (click)="selectedType='overview'">Overview</button>
+<button (click)="selectedType='codeschool'">Codeschool</button>
+<div [ngSwitch]="selectedType">
+  <div *ngSwitchCase="'overview'">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let diploma of diplomas" (click)="goTo(diploma)"
+          (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
+          [class.active]="this.focusedItem === diploma ? true : false">
+          {{ diploma.info.category }} {{ diploma.info.field }}
+      </li>
+    </ul>
+    <!-- Now we are binding each iteration of project to the child's project property -->
+    <my-preview [focusedItem]="focusedItem"></my-preview>
+  </div>
+  <div *ngSwitchCase="'codeschool'">
+    <img src="{{ csProfile?.avatar }}" />
+    <h3>{{ csProfile?.username }}</h3>
+    <p>{{ csProfile?.total_score }}</p>
+    <p>{{ csProfile?.member_since | date: "short"}}</p>
+    <ul>
+      <li *ngFor="let certif of csCertifs">
+        <a href="{{ certif?.url }}" target="_blank">
+          <img src="{{ certif?.badge }}" />
+          <h3>{{ certif?.title }}</h3>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
