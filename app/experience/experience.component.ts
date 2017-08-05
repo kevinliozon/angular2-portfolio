@@ -12,8 +12,9 @@ import { ENVIRONMENT } from '../shared/environment';
 })
 export class ExperienceComponent implements OnInit {
 
-  title: string;
-  roles: Role[];
+  public title: string;
+  public roles: Role[];
+  public focusedItem: any;
   public filters: Array<string> = ENVIRONMENT.FILTERS.roles;
 
   constructor(private router: Router, private roleService: RoleService) {}
@@ -21,6 +22,11 @@ export class ExperienceComponent implements OnInit {
   ngOnInit() {
     this.title= 'My Roles';
     this.roles = this.roleService.getRoles();
+  }
+
+  public focusItem(itemHovered: any) {
+    // focus will refer to the id of the selected item
+    this.focusedItem = itemHovered;
   }
 
   public goTo(role) {
