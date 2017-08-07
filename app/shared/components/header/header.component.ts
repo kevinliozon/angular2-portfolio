@@ -33,10 +33,10 @@ export class HeaderComponent implements OnInit {
     ];
     // set current langage
     this.selectLang('eng', 'assets/img/svg/flags/uk.svg');
-    this.setHeaderTitleOnrefresh();
+    this.setHeaderTitleOnRefresh();
   }
 
-  private setHeaderTitleOnrefresh() {
+  private setHeaderTitleOnRefresh() {
     // getTitle() is not handled properly
     let firstChar = this.location.path().substr(1).charAt(0).toUpperCase();
     let strRemains = this.location.path().slice(2);
