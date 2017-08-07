@@ -4,24 +4,22 @@ import { Router } from '@angular/router';
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
 // Environment
-import { ENVIRONMENT } from '../shared/environment';
+import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
   templateUrl: 'projects.html'
 })
 
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 
-  public title: string;
   public projects: Project[];
   public focusedItem: any;
-  public filters: Array<string> = ENVIRONMENT.FILTERS.projects;
+  public filters: Array<string> = CONSTANTS.FILTERS.projects;
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
   public ngOnInit() {
-    this.title = 'My Projects';
     this.projects = this.projectService.getProjects();
   }
 

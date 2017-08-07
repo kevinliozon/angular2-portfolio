@@ -1,4 +1,3 @@
-<h2>{{ title }}</h2>
 <button (click)="selectedType='overview'">Overview</button>
 <button (click)="selectedType='codeschool'">Codeschool</button>
 <div [ngSwitch]="selectedType">
@@ -10,21 +9,21 @@
           {{ diploma.info.category }} {{ diploma.info.field }}
       </li>
     </ul>
-    <!-- Now we are binding each iteration of project to the child's project property -->
     <my-preview [focusedItem]="focusedItem"></my-preview>
   </div>
   <div *ngSwitchCase="'codeschool'">
-    <img src="{{ csProfile?.avatar }}" />
-    <h3>{{ csProfile?.username }}</h3>
-    <p>{{ csProfile?.total_score }}</p>
-    <p>{{ csProfile?.member_since | date: "short"}}</p>
-    <ul>
-      <li *ngFor="let certif of csCertifs">
-        <a href="{{ certif?.url }}" target="_blank">
-          <img src="{{ certif?.badge }}" />
-          <h3>{{ certif?.title }}</h3>
-        </a>
-      </li>
-    </ul>
+    <div class="jumbotron">
+      <div class="container">
+        <img src="{{ csProfile?.avatar }}" />
+        <h3>{{ csProfile?.username }}</h3>
+        <p>{{ csProfile?.total_score }}</p>
+        <p>{{ csProfile?.member_since | date: "short"}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
+        <my-card [object]="certif"></my-card>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,4 +1,12 @@
-export const ENVIRONMENT = {
+export const CONSTANTS = {
+  MENU: [
+    {key: 'home', value: 'Home'},
+    {key: 'about', value: 'About Me'},
+    {key: 'projects', value: 'Projects'},
+    {key: 'education', value: 'Education'},
+    {key: 'experience', value: 'Experience'},
+    {key: 'skills', value: 'Skills'}
+  ],
   FILTERS: {
     projects: [
       '',

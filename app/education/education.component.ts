@@ -14,7 +14,6 @@ import { CodeschoolService } from '../providers/codeschool.service';
 })
 export class EducationComponent implements OnInit{
 
-  public title: string = 'Diplomas and Certifications';
   public diplomas: Diploma[];
   public csCertifs: CodeSchoolCertif[];
   public csProfile: CodeSchoolProfile;
@@ -31,12 +30,11 @@ export class EducationComponent implements OnInit{
     .subscribe(data => {
       this.csCertifs = data.courses.completed,
       this.csProfile = data.user
-      },
-      console.error,
-      () => {
-        // display in console
-        // console.log('Completed!');
-      });
+    },
+    console.error,
+    () => {
+      // display in console: console.log('Completed!');
+    });
   }
 
   public focusItem(itemHovered: any) {
