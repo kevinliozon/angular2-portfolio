@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
 
   public supportedLanguages: any[];
   public currentFlag: string;
-  public currentRoute: any;
   public title: any;
   public menu: Array<any> = CONSTANTS.MENU;
 
