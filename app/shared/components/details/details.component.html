@@ -1,6 +1,18 @@
 <h2>DETAILS</h2>
-<p>
+<main *ngIf="type === 'project'">
   {{details.id}}
   {{details?.name}}
   {{details?.info?.class}}
-</p>
+</main>
+<main *ngIf="type === 'education'">
+  {{details.id}}
+  {{details?.name}}
+  {{details?.info?.class}}
+</main>
+<main *ngIf="type === 'role'">
+  {{details.id}}
+  {{details?.name}}
+  <div *ngFor="let project of details.projects">
+    {{ project.name }}
+  </div>
+</main>

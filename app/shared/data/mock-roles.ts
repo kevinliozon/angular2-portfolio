@@ -15,20 +15,20 @@ export let ROLES: Role[] = [{
     'start': '2016-11-14',
     'end': ''
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'Lloyds Bank - Connect & Protect',
       'type': 'Mobile app',
       'techs': 'Ionic 2, Sass, Axure RP, Ionic Creator',
       'url': 'http://www.lloydsbank.com/'
     },
-    'project2': {
+    {
       'name': 'Douglas & Gordon',
       'type': 'Mobile app (internal)',
       'techs': 'Ionic 3, Sass, Axure RP',
       'url': 'http://www.douglasandgordon.com/'
     }
-  }
+  ]
 },
 {
   'id': '#role5',
@@ -45,14 +45,14 @@ export let ROLES: Role[] = [{
     'start': '2016-12-01',
     'end': '2017-01-10'
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'Doxy.me',
       'type': 'Mobile app',
       'techs': 'Ionic 1, Gulp, Sass',
       'url': 'https://doxy.me/'
     }
-  }
+  ]
 },
 {
   'id': '#role4',
@@ -69,14 +69,14 @@ export let ROLES: Role[] = [{
     'start': '2016-04-01',
     'end': '2016-11-14'
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'My Mini Factory',
       'type': 'Web app',
       'techs': 'Symfony, Foundation, jQuery, Illustrator',
       'url': 'https://www.myminifactory.com/'
     }
-  }
+  ]
 },
 {
   'id': '#role3',
@@ -93,14 +93,14 @@ export let ROLES: Role[] = [{
     'start': '2016-02-14',
     'end': '2016-03-31'
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'iMakr',
       'type': 'Web app',
       'techs': 'Prestashop, Bootstrap, jQuery, Illustrator',
       'url': 'https://www.imakr.com/'
     }
-  }
+  ]
 },
 {
   'id': '#role2',
@@ -117,26 +117,26 @@ export let ROLES: Role[] = [{
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'Digitela',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',
       'url': 'http://www.digitela.fr/'
     },
-    'project2': {
+    {
       'name': 'Ipags',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',
       'url': 'http://www.ipags.fr/'
     },
-    'project3': {
+    {
       'name': 'HCE Group',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',
       'url': 'http://www.groupe-hce.com/'
     }
-  }
+  ]
 },
 {
   'id': '#role1',
