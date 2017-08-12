@@ -3,7 +3,7 @@
 <div [ngSwitch]="selectedType">
   <div *ngSwitchCase="'overview'">
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let diploma of diplomas" (click)="goTo(diploma)"
+      <li class="list-group-item" *ngFor="let diploma of diplomas"
           (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
           [class.active]="this.focusedItem === diploma ? true : false">
           {{ diploma.info.category }} {{ diploma.info.field }}
@@ -12,14 +12,7 @@
     <my-preview [focusedItem]="focusedItem"></my-preview>
   </div>
   <div *ngSwitchCase="'codeschool'">
-    <div class="jumbotron">
-      <div class="container">
-        <img src="{{ csProfile?.avatar }}" />
-        <h3>{{ csProfile?.username }}</h3>
-        <p>{{ csProfile?.total_score }}</p>
-        <p>{{ csProfile?.member_since | date: "short"}}</p>
-      </div>
-    </div>
+    <profile-cs [profile]="csProfile"></profile-cs>
     <div class="row">
       <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
         <my-card [object]="certif"></my-card>

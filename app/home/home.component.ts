@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //projects
 import { Project } from '../models/project';
@@ -12,30 +12,28 @@ import { RoleService } from '../providers/role.service'
 //diplomas
 import { Diploma } from '../models/diploma';
 import { DiplomaService } from '../providers/diploma.service'
+//constants
+import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'home.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
-  introContent: any;
-  homeTitles: any;
-  projects: Project[];
-  skills: Skill[];
-  roles: Role[];
-  diplomas: Diploma[];
-  // Injections of services
+  public profile: any = CONSTANTS.PROFILE;
+  public homeTitles: any;
+  public projects: Project[];
+  public skills: Skill[];
+  public roles: Role[];
+  public diplomas: Diploma[];
+
   constructor(private projectService: ProjectService,
               private skillService: SkillService,
               private roleService: RoleService,
               private diplomaService: DiplomaService) { }
-  ngOnInit() {
-    this.introContent = {
-      "title": "A Front-End Architect at your service",
-      "image": "assets/img/png/photo.png",
-      "alt": "My photo would have appeared if you activated Javascript on this browser :-("
-    };
+
+  public ngOnInit() {
     this.homeTitles = [
       "Overview",
       "Some of my works",
