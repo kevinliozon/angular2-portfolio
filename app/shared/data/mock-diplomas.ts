@@ -2,16 +2,18 @@ import { Diploma } from '../../models/diploma';
 
 export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma6',
-  'info': {
-    'category': 'certification',
-    'class': 'Certification UX NNG',
-    'field': 'UX',
+  'name': 'Certification UX NNG',
+  'category': 'certification',
+  'images': {
     'thumb': '../../../assets/img/thumb/diplomas/nng.png',
-    'image': '../../../assets/img/png/diplomas/nng.png',
-    'subject1': 'Interaction Design (speciality 1)',
-    'subject2': 'Webdesign (speciality 2)',
-    'subject3': 'UX management'
+    'image': '../../../assets/img/png/diplomas/nng.png'
   },
+  'subjects': [
+    {'name': 'Interaction Design', 'spe': true},
+    {'name': 'Webdesign', 'spe': true},
+    {'name': 'UX management', 'spe': false},
+    {'name': 'Mobile Design', 'spe': false}
+  ],
   'school': {
     'name': 'Nielsen & Norman Group',
     'image': '../../../assets/img/svg/education/nng.svg',
@@ -27,16 +29,17 @@ export let DIPLOMAS: Diploma[] = [{
 },
 {
   'id': '#diploma5',
-  'info': {
-    'category': 'certification',
-    'class': 'Certifications CodeSchool',
-    'field': 'Dev',
+  'name': 'Certifications CodeSchool',
+  'category': 'certification',
+  'images': {
     'thumb': '../../../assets/img/svg/education/codeschool.svg',
     'image': '../../../assets/img/svg/education/codeschool.svg',
-    'subject1': 'Javascript',
-    'subject2': 'Angular',
-    'subject3': 'Sass'
   },
+  'subjects': [
+    {'name': 'Javascript', 'spe': true},
+    {'name': 'Angular', 'spe': true},
+    {'name': 'Sass', 'spe': true}
+  ],
   'school': {
     'name': 'CodeSchool',
     'image': '../../../assets/img/svg/education/codeschool.svg',
@@ -52,16 +55,17 @@ export let DIPLOMAS: Diploma[] = [{
 },
 {
   'id': '#diploma4',
-  'info': {
-    'category': 'degree',
-    'class': 'Bachelor\'s Degree (Licence Pro)',
-    'field': 'Webdesign',
+  'name': 'Bachelor\'s Degree (Licence Pro)',
+  'category': 'degree',
+  'images': {
     'thumb': '../../../assets/img/thumb/diplomas/lp.png',
-    'image': '../../../assets/img/png/diplomas/lp.png',
-    'subject1': 'Web Dev',
-    'subject2': 'UX Design',
-    'subject3': 'Project Management'
+    'image': '../../../assets/img/png/diplomas/lp.png'
   },
+  'subjects': [
+    {'name': 'Web Dev', 'spe': true},
+    {'name': 'UX Design', 'spe': true},
+    {'name': 'Project Management', 'spe': true}
+  ],
   'school': {
     'name': 'University of Burgundy - Franche-Comté',
     'place': 'Montbéliard',
@@ -73,30 +77,33 @@ export let DIPLOMAS: Diploma[] = [{
     'start': '2015-09-01',
     'end': '2016-06-20'
   },
-  'projects':
-  {
-    'project1': {
+  'projects': [
+    {
       'name': 'E-Ukiyo',
+      'image': '../../../assets/img/svg/projects/c2i.svg',
       'url': ''
     },
-    'project2': {
+    {
       'name': 'C2I Reseaux',
+      'image': '../../../assets/img/svg/projects/eukiyo.svg',
       'url': ''
     }
-  }
+  ]
 },
 {
   'id': '#diploma3',
-  'info': {
-    'category': 'degree',
-    'class': 'Two years university degree in technology (DUT)',
-    'field': 'Web & Multimedia Technologies (MMI)',
+  'name': 'Two years university degree in technology (DUT)',
+  'category': 'degree',
+  'images': {
     'thumb': '../../../assets/img/thumb/diplomas/mmi.png',
-    'image': '../../../assets/img/png/diplomas/mmi.png',
-    'subject1': 'Web Dev (speciality)',
-    'subject2': 'Visual Design',
-    'subject3': 'Information System'
+    'image': '../../../assets/img/png/diplomas/mmi.png'
   },
+  'subjects': [
+    {'name': 'Web Dev', 'spe': true},
+    {'name': 'Visual Design', 'spe': true},,
+    {'name': 'Human-computer interactions', 'spe': true},
+    {'name': 'Information System', 'spe': true}
+  ],
   'school': {
     'name': 'Institute of Technology',
     'place': 'Béziers',
@@ -108,25 +115,27 @@ export let DIPLOMAS: Diploma[] = [{
     'start': '2013-09-01',
     'end': '2015-06-01'
   },
-  'projects': {
-    'project1': {
+  'projects': [
+    {
       'name': 'Portfolio',
+      'image': '../../../assets/img/svg/projects/portfolio1.svg',
       'url': ''
     }
-  }
+  ]
 },
 {
   'id': '#diploma2',
-  'info': {
-    'category': 'degree',
-    'class': 'University Degree (DU)',
-    'field': 'Webmaster',
+  'name': 'University Degree (DU)',
+  'category': 'degree',
+  'images': {
     'thumb': '../../../assets/img/thumb/diplomas/du.png',
-    'image': '../../../assets/img/png/diplomas/du.png',
-    'subject1': 'Web Dev',
-    'subject2': 'Mathematics',
-    'subject3': 'Visual Design'
+    'image': '../../../assets/img/png/diplomas/du.png'
   },
+  'subjects': [
+    {'name': 'Web Dev', 'spe': true},
+    {'name': 'Mathematics', 'spe': false},
+    {'name': 'Visual Design', 'spe': false}
+  ],
   'school': {
     'name': 'Institute of Technology',
     'place': 'Montpellier',
@@ -142,16 +151,17 @@ export let DIPLOMAS: Diploma[] = [{
 },
 {
   'id': '#diploma1',
-  'info': {
-    'category': 'degree',
-    'class': 'High-School Degree',
-    'field': 'Science, speciality biology, option Physics/chemistry',
+  'name': 'High-School Degree',
+  'category': 'degree',
+  'images': {
     'thumb': '../../../assets/img/thumb/diplomas/bac.png',
-    'image': '../../../assets/img/png/diplomas/bac.png',
-    'subject1': 'Biology (speciality)',
-    'subject2': 'Physics/chemistry (option)',
-    'subject3': 'Mathematics'
+    'image': '../../../assets/img/png/diplomas/bac.png'
   },
+  'subjects': [
+    {'name': 'Biology', 'spe': true},
+    {'name': 'Physics/chemistry', 'spe': true},
+    {'name': 'Mathematics', 'spe': false}
+  ],
   'school': {
     'name': 'Louis Feuillade Highschool',
     'place': 'Lunel',

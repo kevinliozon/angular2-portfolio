@@ -1,8 +1,11 @@
 export class Diploma
 {
   id: string;
-  info: any;
+  name: string;
+  category: string;
+  images: any;
+  subjects: Array<any>;
   school: any;
   dates: any;
-  projects: any;
+  projects: Array<any>;
 }

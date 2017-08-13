@@ -6,7 +6,8 @@
       <li class="list-group-item" *ngFor="let diploma of diplomas"
           (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
           [class.active]="this.focusedItem === diploma ? true : false">
-          {{ diploma.info.category }} {{ diploma.info.field }}
+          <img src="{{ diploma.images.thumb }}" alt="{{ diploma.name }}"/>
+          {{ diploma.name }}
       </li>
     </ul>
     <my-preview [focusedItem]="focusedItem"></my-preview>

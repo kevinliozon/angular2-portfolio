@@ -6,5 +6,5 @@ export class Role
   company: any;
   desc: string;
   dates: any;
-  projects: any;
+  projects: Array<any>;
 }
