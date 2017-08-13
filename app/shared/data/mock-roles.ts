@@ -17,12 +17,14 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
+      'id': '#project10',
       'name': 'Lloyds Bank - Connect & Protect',
       'type': 'Mobile app',
       'techs': 'Ionic 2, Sass, Axure RP, Ionic Creator',
       'url': 'http://www.lloydsbank.com/'
     },
     {
+      'id': '#project11',
       'name': 'Douglas & Gordon',
       'type': 'Mobile app (internal)',
       'techs': 'Ionic 3, Sass, Axure RP',
@@ -47,6 +49,7 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
+      'id': '#project9',
       'name': 'Doxy.me',
       'type': 'Mobile app',
       'techs': 'Ionic 1, Gulp, Sass',
@@ -71,6 +74,7 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
+      'id': '#project8',
       'name': 'My Mini Factory',
       'type': 'Web app',
       'techs': 'Symfony, Foundation, jQuery, Illustrator',
@@ -95,6 +99,7 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
+      'id': '#project7',
       'name': 'iMakr',
       'type': 'Web app',
       'techs': 'Prestashop, Bootstrap, jQuery, Illustrator',
@@ -119,18 +124,21 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
+      'id': '#project2',
       'name': 'Digitela',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',
       'url': 'http://www.digitela.fr/'
     },
     {
-      'name': 'Ipags',
+      'id': '#project3',
+      'name': 'Apags',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',
       'url': 'http://www.ipags.fr/'
     },
     {
+      'id': '#project4',
       'name': 'HCE Group',
       'type': 'Web app',
       'techs': 'Wordpress, Illustrator',

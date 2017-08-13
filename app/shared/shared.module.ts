@@ -7,6 +7,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DetailsComponent } from './components/details/details.component';
+import { DetailsModalComponent } from './components/details-modal/details-modal.component';
 import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
 
@@ -19,6 +20,7 @@ import { CardComponent } from './components/card/card.component';
       HeaderComponent,
       FooterComponent,
       DetailsComponent,
+      DetailsModalComponent,
       PreviewComponent,
       CardComponent
     ],
@@ -26,6 +28,7 @@ import { CardComponent } from './components/card/card.component';
       HeaderComponent,
       FooterComponent,
       DetailsComponent,
+      DetailsModalComponent,
       PreviewComponent,
       CardComponent
     ]

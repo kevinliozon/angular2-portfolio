@@ -11,7 +11,8 @@
 <main *ngIf="type === 'role'">
   {{details.id}}
   {{details?.name}}
-  <div *ngFor="let project of details.projects">
+  <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
     {{ project.name }}
   </div>
 </main>
+<my-modal [details]="detailsModal" [type]="typeModal"></my-modal>

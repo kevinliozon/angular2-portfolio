@@ -10,9 +10,7 @@ export let PROJECTS: Project[] = [{
   'client': null,
   'desc': 'Portfolio realised with Angular 2, Sass and Gulp',
   'techs': 'Angular 2, Sass, Gulp, Illustrator',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2017-01-01',
     'end': ''
@@ -33,18 +31,17 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Douglas & Gordon',
-    'logo': ''
+    'logo': '',
+    'url': 'http://www.douglasandgordon.com/'
   },
   'desc': 'An internal CRM mobile app for a West London Real Estate Agent (coming soon)',
   'techs': 'Ionic 3, Sass, AWS, Cordova, xCode, Axure RP',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2017-01-05',
     'end': null
   },
-  'url': 'http://www.douglasandgordon.com/',
+  'url': null,
   'github': null
 },
 {
@@ -60,18 +57,17 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Lloyds Banking Group',
-    'logo': '../../../assets/img/svg/projects/ubfc.svg',
+    'logo': '../../../assets/img/svg/projects/.svg',
+    'url': 'http://www.lloydsbank.com/'
   },
   'desc': 'IoT mobile app for connected objects (coming soon on iOS)',
   'techs': 'Ionic 2, Sass, AWS, Cordova, xCode, Axure RP, Ionic Creator',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2016-11-14',
     'end': null
   },
-  'url': 'http://www.lloydsbank.com/',
+  'url': null,
   'github': null
 },
 {
@@ -80,18 +76,24 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': false,
   'category': 'Mobile App',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': 'Doxy.me',
+    'logo': '../../../assets/img/svg/companies/doxyme.svg',
+    'url': 'https://doxy.me/'
+  },
+  'client': {
+    'name': 'Doxy.me',
+    'logo': '../../../assets/img/svg/companies/doxyme.svg',
+    'url': 'https://doxy.me/'
+  },
   'desc': 'Telemedecine solution',
   'techs': 'Ionic, Gulp, Sass, Cordova',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2016-12-01',
     'end': '2017-01-14'
   },
-  'url': 'https://doxy.me/',
+  'url': null,
   'github': null
 },
 {
@@ -105,12 +107,14 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/mmf.svg',
     'url': 'https://www.myminifactory.com/'
   },
-  'client': null,
+  'client': {
+    'name': 'My Mini Factory (iMakr subsidiary)',
+    'logo': '../../../assets/img/svg/companies/mmf.svg',
+    'url': 'https://www.myminifactory.com/'
+  },
   'desc': 'A social sharing platform for 3D designers',
   'techs': 'Symfony, Foundation, jQuery, Illustrator',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2016-04-01',
     'end': '2016-11-14'
@@ -129,12 +133,14 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/imakr.svg',
     'url': 'https://www.imakr.com/'
   },
-  'client': null,
+  'client': {
+    'name': 'iMakr',
+    'logo': '../../../assets/img/svg/companies/imakr.svg',
+    'url': 'https://www.imakr.com/'
+  },
   'desc': 'E-Commerce platform for 3D printing related products',
   'techs': 'Prestashop, Bootstrap, jQuery, Illustrator',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2016-02-14',
     'end': '2016-03-31'
@@ -155,14 +161,12 @@ export let PROJECTS: Project[] = [{
   },
   'desc': 'Educational contents sharing platform - Student project',
   'techs': 'Wordpress, Illustrator, HTML/CSS',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
-  'url': 'link',
+  'url': null,
   'github': null
 },
 {
@@ -175,14 +179,12 @@ export let PROJECTS: Project[] = [{
   'client': null,
   'desc': 'Artistic contents sharing platform - Student project',
   'techs': 'Wordpress, Illustrator, HTML/CSS',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
-  'url': 'link',
+  'url': null,
   'github': null
 },
 {
@@ -202,9 +204,7 @@ export let PROJECTS: Project[] = [{
   },
   'desc': 'Artistic contents sharing platform',
   'techs': 'Wordpress, Illustrator, HTML/CSS',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -229,9 +229,7 @@ export let PROJECTS: Project[] = [{
   },
   'desc': 'Artistic contents sharing platform',
   'techs': 'Wordpress, Illustrator, HTML/CSS',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -253,9 +251,7 @@ export let PROJECTS: Project[] = [{
   'client': null,
   'desc': 'Corporate website',
   'techs': 'Wordpress, Illustrator, HTML/CSS',
-  'images': {
-    'image1': '../../../assets/img/svg/projects/digitela_old.svg'
-  },
+  'images': [''],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -273,9 +269,7 @@ export let PROJECTS: Project[] = [{
   'client': null,
   'desc': 'First portfolio realised during my first year at the institute of technology (may not work because of Flash)',
   'techs': 'Flash, Illustrator, HTML/CSS',
-  'images': {
-    'image1': ''
-  },
+  'images': [''],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'

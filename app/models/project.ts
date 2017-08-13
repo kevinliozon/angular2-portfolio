@@ -9,7 +9,7 @@ export class Project
   client: any;
   desc: string;
   techs: string;
-  images: any;
+  images: Array<string>;
   dates: any;
   url: string;
   github: string;

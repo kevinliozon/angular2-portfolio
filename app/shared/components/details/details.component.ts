@@ -17,6 +17,8 @@ export class DetailsComponent implements OnInit{
   public id: string;
   public type: string;
   public details: any;
+  public detailsModal: any = {};
+  public typeModal: any = {};
 
   constructor(private route: ActivatedRoute,
               private diplomaService: DiplomaService,
@@ -42,6 +44,21 @@ export class DetailsComponent implements OnInit{
         break;
       case 'role':
         this.details = this.roleService.resolveRole(this.id);
+        break;
+    }
+  }
+
+  public openModal(id, type) {
+    this.typeModal = type;
+    switch(type) {
+      case 'diploma':
+        this.detailsModal = this.diplomaService.resolveDiploma(id);
+        break;
+      case 'project':
+        this.detailsModal = this.projectService.resolveProject(id);
+        break;
+      case 'role':
+        this.detailsModal = this.roleService.resolveRole(id);
         break;
     }
   }
