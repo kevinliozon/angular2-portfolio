@@ -10,7 +10,45 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://services.surelygroup.com/',
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': [
+    {
+      'name': 'Ionic',
+      'logo': '../../../assets/img/svg/skills/ionic.svg'
+    },
+    {
+      'name': 'Typescript',
+      'logo': '../../../assets/img/svg/skills/typescript.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'Axure RP',
+      'logo': '../../../assets/img/svg/skills/axurerp.svg'
+    },
+    {
+      'name': 'Cordova',
+      'logo': '../../../assets/img/svg/skills/cordova.svg'
+    },
+    {
+      'name': 'Ionic Creator',
+      'logo': '../../../assets/img/svg/skills/ioniccreator.svg'
+    },
+    {
+      'name': 'Draw.io',
+      'logo': '../../../assets/img/svg/skills/drawio.svg'
+    }
+  ],
   'dates': {
     'start': '2016-11-14',
     'end': ''
@@ -18,17 +56,11 @@ export let ROLES: Role[] = [{
   'projects': [
     {
       'id': '#project10',
-      'name': 'Lloyds Bank - Connect & Protect',
-      'type': 'Mobile app',
-      'techs': 'Ionic 2, Sass, Axure RP, Ionic Creator',
-      'url': 'http://www.lloydsbank.com/'
+      'name': 'Lloyds Bank - Connect & Protect'
     },
     {
       'id': '#project11',
-      'name': 'Douglas & Gordon',
-      'type': 'Mobile app (internal)',
-      'techs': 'Ionic 3, Sass, Axure RP',
-      'url': 'http://www.douglasandgordon.com/'
+      'name': 'Douglas & Gordon (CRM)'
     }
   ]
 },
@@ -42,7 +74,25 @@ export let ROLES: Role[] = [{
     'place': 'Provo (USA - Remote)',
     'url': 'https://doxy.me/'
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': [
+    {
+      'name': 'Ionic',
+      'logo': '../../../assets/img/svg/skills/ionic.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Gulp',
+      'logo': '../../../assets/img/svg/skills/gulp.svg'
+    },
+    {
+      'name': 'Cordova',
+      'logo': '../../../assets/img/svg/skills/cordova.svg'
+    }
+  ],
   'dates': {
     'start': '2016-12-01',
     'end': '2017-01-10'
@@ -50,10 +100,7 @@ export let ROLES: Role[] = [{
   'projects': [
     {
       'id': '#project9',
-      'name': 'Doxy.me',
-      'type': 'Mobile app',
-      'techs': 'Ionic 1, Gulp, Sass',
-      'url': 'https://doxy.me/'
+      'name': 'Doxy.me'
     }
   ]
 },
@@ -67,7 +114,33 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.myminifactory.com/'
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': [
+    {
+      'name': 'Symfony',
+      'logo': '../../../assets/img/svg/skills/symfony.svg'
+    },
+    {
+      'name': 'Foundation',
+      'logo': '../../../assets/img/svg/skills/foundation.svg'
+    },
+    {
+      'name': 'Jquery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'dates': {
     'start': '2016-04-01',
     'end': '2016-11-14'
@@ -76,9 +149,6 @@ export let ROLES: Role[] = [{
     {
       'id': '#project8',
       'name': 'My Mini Factory',
-      'type': 'Web app',
-      'techs': 'Symfony, Foundation, jQuery, Illustrator',
-      'url': 'https://www.myminifactory.com/'
     }
   ]
 },
@@ -92,7 +162,37 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.imakr.com/'
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': [
+    {
+      'name': 'Prestashop',
+      'logo': '../../../assets/img/svg/skills/prestashop.svg'
+    },
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Bootstrap',
+      'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+    },
+    {
+      'name': 'Jquery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'dates': {
     'start': '2016-02-14',
     'end': '2016-03-31'
@@ -100,10 +200,7 @@ export let ROLES: Role[] = [{
   'projects': [
     {
       'id': '#project7',
-      'name': 'iMakr',
-      'type': 'Web app',
-      'techs': 'Prestashop, Bootstrap, jQuery, Illustrator',
-      'url': 'https://www.imakr.com/'
+      'name': 'iMakr'
     }
   ]
 },
@@ -117,7 +214,25 @@ export let ROLES: Role[] = [{
     'place': 'Narbonne (France)',
     'url': 'http://www.digitela.fr/'
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -125,10 +240,7 @@ export let ROLES: Role[] = [{
   'projects': [
     {
       'id': '#project2',
-      'name': 'Digitela',
-      'type': 'Web app',
-      'techs': 'Wordpress, Illustrator',
-      'url': 'http://www.digitela.fr/'
+      'name': 'Digitela'
     },
     {
       'id': '#project3',
@@ -156,7 +268,8 @@ export let ROLES: Role[] = [{
     'place': 'Montpellier (France)',
     'url': 'http://www.medasys.fr/index.php?id=1&L=1'
   },
-  'desc': 'string',
+  'desc': '',
+  'techs': null,
   'dates': {
     'start': '2012-06-01',
     'end': '2012-08-01'

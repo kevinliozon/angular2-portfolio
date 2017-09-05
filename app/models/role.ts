@@ -5,6 +5,7 @@ export class Role
   category: string;
   company: any;
   desc: string;
+  techs: Array<any>;
   dates: any;
   projects: Array<any>;
 }

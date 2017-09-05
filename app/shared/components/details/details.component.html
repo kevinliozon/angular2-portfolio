@@ -1,18 +1,18 @@
 <h2>DETAILS</h2>
-<main *ngIf="type === 'project'">
-  {{details.id}}
-  {{details?.name}}
-  {{details?.info?.class}}
-</main>
-<main *ngIf="type === 'diploma'">
+<main>
   {{details.id}}
   {{details.name}}
-</main>
-<main *ngIf="type === 'role'">
-  {{details.id}}
-  {{details?.name}}
-  <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
-    {{ project.name }}
+  {{details.category}}
+  <div *ngIf="type === 'project' || type === 'role'">
+    <div class="" *ngFor="let tech of details.techs">
+      <img src="{{tech.logo}}" alt="tech.name" />
+      {{ tech.name }}
+    </div>
+  </div>
+  <div *ngIf="type === 'role' || type === 'diploma'" class="">
+    <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
+      {{ project.name }}
+    </div>
   </div>
 </main>
 <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>

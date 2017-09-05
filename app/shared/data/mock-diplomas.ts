@@ -79,11 +79,13 @@ export let DIPLOMAS: Diploma[] = [{
   },
   'projects': [
     {
+      'id': '#project5',
       'name': 'E-Ukiyo',
       'image': '../../../assets/img/svg/projects/c2i.svg',
       'url': ''
     },
     {
+      'id': '#project6',
       'name': 'C2I Reseaux',
       'image': '../../../assets/img/svg/projects/eukiyo.svg',
       'url': ''
@@ -117,6 +119,7 @@ export let DIPLOMAS: Diploma[] = [{
   },
   'projects': [
     {
+      'id': '#project1',
       'name': 'Portfolio',
       'image': '../../../assets/img/svg/projects/portfolio1.svg',
       'url': ''

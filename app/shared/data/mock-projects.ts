@@ -9,7 +9,28 @@ export let PROJECTS: Project[] = [{
   'company': null,
   'client': null,
   'desc': 'Portfolio realised with Angular 2, Sass and Gulp',
-  'techs': 'Angular 2, Sass, Gulp, Illustrator',
+  'techs': [
+    {
+      'name': 'Angular',
+      'logo': '../../../assets/img/svg/skills/angular.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Gulp',
+      'logo': '../../../assets/img/svg/skills/gulp.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2017-01-01',
@@ -35,7 +56,36 @@ export let PROJECTS: Project[] = [{
     'url': 'http://www.douglasandgordon.com/'
   },
   'desc': 'An internal CRM mobile app for a West London Real Estate Agent (coming soon)',
-  'techs': 'Ionic 3, Sass, AWS, Cordova, xCode, Axure RP',
+  'techs': [
+    {
+      'name': 'Ionic',
+      'logo': '../../../assets/img/svg/skills/ionic.svg'
+    },
+    {
+      'name': 'Typescript',
+      'logo': '../../../assets/img/svg/skills/typescript.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'Axure RP',
+      'logo': '../../../assets/img/svg/skills/axurerp.svg'
+    },
+    {
+      'name': 'Cordova',
+      'logo': '../../../assets/img/svg/skills/cordova.svg'
+    },
+  ],
   'images': [''],
   'dates': {
     'start': '2017-01-05',
@@ -61,7 +111,48 @@ export let PROJECTS: Project[] = [{
     'url': 'http://www.lloydsbank.com/'
   },
   'desc': 'IoT mobile app for connected objects (coming soon on iOS)',
-  'techs': 'Ionic 2, Sass, AWS, Cordova, xCode, Axure RP, Ionic Creator',
+  'techs': [
+    {
+      'name': 'Ionic',
+      'logo': '../../../assets/img/svg/skills/ionic.svg'
+    },
+    {
+      'name': 'Typescript',
+      'logo': '../../../assets/img/svg/skills/typescript.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'Axure RP',
+      'logo': '../../../assets/img/svg/skills/axurerp.svg'
+    },
+    {
+      'name': 'Cordova',
+      'logo': '../../../assets/img/svg/skills/cordova.svg'
+    },
+    {
+      'name': 'AWS',
+      'logo': '../../../assets/img/svg/skills/aws.svg'
+    },
+    {
+      'name': 'Ionic Creator',
+      'logo': '../../../assets/img/svg/skills/ioniccreator.svg'
+    },
+    {
+      'name': 'Draw.io',
+      'logo': '../../../assets/img/svg/skills/drawio.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2016-11-14',
@@ -87,7 +178,24 @@ export let PROJECTS: Project[] = [{
     'url': 'https://doxy.me/'
   },
   'desc': 'Telemedecine solution',
-  'techs': 'Ionic, Gulp, Sass, Cordova',
+  'techs': [
+    {
+      'name': 'Ionic',
+      'logo': '../../../assets/img/svg/skills/ionic.svg'
+    },
+    {
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Gulp',
+      'logo': '../../../assets/img/svg/skills/gulp.svg'
+    },
+    {
+      'name': 'Cordova',
+      'logo': '../../../assets/img/svg/skills/cordova.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2016-12-01',
@@ -113,7 +221,32 @@ export let PROJECTS: Project[] = [{
     'url': 'https://www.myminifactory.com/'
   },
   'desc': 'A social sharing platform for 3D designers',
-  'techs': 'Symfony, Foundation, jQuery, Illustrator',
+  'techs': [
+    {
+      'name': 'Symfony',
+      'logo': '../../../assets/img/svg/skills/symfony.svg'
+    },
+    {
+      'name': 'Foundation',
+      'logo': '../../../assets/img/svg/skills/foundation.svg'
+    },
+    {
+      'name': 'Jquery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2016-04-01',
@@ -139,7 +272,32 @@ export let PROJECTS: Project[] = [{
     'url': 'https://www.imakr.com/'
   },
   'desc': 'E-Commerce platform for 3D printing related products',
-  'techs': 'Prestashop, Bootstrap, jQuery, Illustrator',
+  'techs': [
+    {
+      'name': 'Prestashop',
+      'logo': '../../../assets/img/svg/skills/prestashop.svg'
+    },
+    {
+      'name': 'Bootstrap',
+      'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+    },
+    {
+      'name': 'Jquery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2016-02-14',
@@ -160,7 +318,24 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/projects/ubfc.svg',
   },
   'desc': 'Educational contents sharing platform - Student project',
-  'techs': 'Wordpress, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2015-11-01',
@@ -178,7 +353,24 @@ export let PROJECTS: Project[] = [{
   'company': null,
   'client': null,
   'desc': 'Artistic contents sharing platform - Student project',
-  'techs': 'Wordpress, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2015-11-01',
@@ -203,7 +395,24 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/projects/hce.svg',
   },
   'desc': 'Artistic contents sharing platform',
-  'techs': 'Wordpress, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2015-04-01',
@@ -228,7 +437,24 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/projects/apags.svg',
   },
   'desc': 'Artistic contents sharing platform',
-  'techs': 'Wordpress, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2015-04-01',
@@ -250,7 +476,24 @@ export let PROJECTS: Project[] = [{
   },
   'client': null,
   'desc': 'Corporate website',
-  'techs': 'Wordpress, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2015-04-01',
@@ -268,7 +511,24 @@ export let PROJECTS: Project[] = [{
   'company': null,
   'client': null,
   'desc': 'First portfolio realised during my first year at the institute of technology (may not work because of Flash)',
-  'techs': 'Flash, Illustrator, HTML/CSS',
+  'techs': [
+    {
+      'name': 'Flash',
+      'logo': '../../../assets/img/svg/skills/flash.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
   'images': [''],
   'dates': {
     'start': '2014-12-10',

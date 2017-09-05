@@ -8,7 +8,7 @@ export class Project
   company: any;
   client: any;
   desc: string;
-  techs: string;
+  techs: Array<any>;
   images: Array<string>;
   dates: any;
   url: string;
