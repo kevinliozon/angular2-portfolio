@@ -15,10 +15,10 @@ import { CONSTANTS } from '../../../shared/constants';
 
 export class HeaderComponent implements OnInit {
 
-  public supportedLanguages: any[];
+  public supportedLanguages: Array<any>;
   public currentFlag: string;
   public title: any;
-  public menu: Array<any> = CONSTANTS.MENU;
+  public menu: any = CONSTANTS.MENU.ENG;
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
@@ -51,12 +51,36 @@ export class HeaderComponent implements OnInit {
     // select a lang and set its flag as default
     this._translate.use(lang);
     this.currentFlag = flag;
+    // Translate menu and main title
+    switch(lang) {
+      case 'eng':
+        //update menu labels
+        this.menu = CONSTANTS.MENU.ENG;
+        //tab and header title become the correspondant one in the other language
+        for(let tabActiveMenu of CONSTANTS.MENU.FRA) {
+          for(let tabNewMenu of CONSTANTS.MENU.ENG) {
+            if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
+              this.setTitle(tabNewMenu.value)
+            }
+          }
+        }
+        break;
+      case 'fra':
+        this.menu = CONSTANTS.MENU.FRA;
+        for(let tabActiveMenu of CONSTANTS.MENU.ENG) {
+          for(let tabNewMenu of CONSTANTS.MENU.FRA) {
+            if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
+              this.setTitle(tabNewMenu.value)
+            }
+          }
+        }
+        break;
+    }
   }
 
   public setTitle(newTitle: string) {
-    // dynamic tab title
-    this.titleService.setTitle(newTitle);
-    this.title = this.titleService.getTitle();
+    this.titleService.setTitle(newTitle); // dynamic tab title
+    this.title = this.titleService.getTitle(); // dynamic header title
   }
 
 }

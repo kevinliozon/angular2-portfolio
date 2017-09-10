@@ -26,6 +26,10 @@ export const LANG_FRA_TRANS = {
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
     'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
+    'homeText0': `Bonjour! Mon nom est Kévin, Front-End Developer & UX Designer.
+                  En tant que dévelopeur les technologies Angular et Ionic sont ma
+                  spécialité. En tant que designer, le Design d'interaction (IxD)
+                  est mon domaine de prédilection.`,
     /*** ABOUT ME ***/
     // Titles
     'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],

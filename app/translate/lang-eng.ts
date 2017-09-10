@@ -26,6 +26,9 @@ export const LANG_ENG_TRANS = {
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
     'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
+    'homeText0': `Hi! My name is Kevin, Front-End Developer & UX Designer.
+                  As a developer Angular and Ionic technologies are my speciality.
+                  While as a designer, it would be the field of Interaction Design (IxD).`,
     /*** ABOUT ME ***/
     // Titles
     'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],
@@ -49,6 +52,6 @@ export const LANG_ENG_TRANS = {
     'aboutText2': `I try to keep updated about the latest UX reports and methodologies too.
                   The Nielsen & Norman Group is my main reference by the way.
                   My favorite field is definitely Interaction Design (IxD).
-                  Because it makes sense, as a developer, to test the viability of the interactions first,
-                  through prototypes, before implementing anything.`
+                  Because it makes sense, as a developer, to test the viability of
+                  the interactions first, through prototypes, before implementing anything.`
 };
