@@ -1,17 +1,5 @@
 <main id="home-intro">
   <profile-main [profile]="profile"></profile-main>
-  <h2>{{homeTitles[0]}}</h2>
-  <figure class="photo">
-    <figcaption>
-      <h3>title</h3>
-      <p>
-        Hi there! Thanks for having a look at my <strong>portfolio</strong>!
-        My name is <strong>Kevin</strong> and I am willing to help you, as much as I can, figuring out who I am exactly.
-        Am I <strong>Front-End Developer</strong> or <strong>UX Designer</strong>? That would be too easy to classify myself this way...
-        Then I invite you to ask me directly if you want to hear more about it!
-      </p>
-    </figcaption>
-  </figure>
   <div id="home-question">
     <q>I want to hear more about your experience as...</q>
     <a [routerLink]="['../about']" fragment="about-fed">Developer</a>
@@ -20,16 +8,16 @@
   </div>
 </main>
 <section id="home-projects">
-  <h2>{{homeTitles[1]}}</h2>
+  <h2>{{ 'homeTitle0' | translate }}</h2>
   <ul>
     <li *ngFor="let project of projects">
-      <h3 *ngIf="project.featured === true">{{project.name}}</h3>
+      <img *ngIf="project.client !== null" [src]="project.client.logo" [alt]="project.client.name">
     </li>
   </ul>
-  <a href="#">See the rest</a>
+  <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 </section>
 <section id="home-skills">
-  <h2>{{homeTitles[2]}}</h2>
+  <h2>{{ 'homeTitle1' | translate }}</h2>
   <ul>
     <li *ngFor="let skill of skills">
       <h3 *ngIf="skill.featured === true">{{skill.name}}</h3>
@@ -38,7 +26,7 @@
   <a href="#">See the rest</a>
 </section>
 <section id="home-milestones">
-  <h2>{{homeTitles[3]}}</h2>
+  <h2>{{ 'homeTitle2' | translate }}</h2>
   <ul>
     <li *ngFor="let diploma of diplomas">
       <h3>{{diploma.id}}</h3>

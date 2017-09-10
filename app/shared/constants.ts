@@ -6,7 +6,12 @@ export const CONSTANTS = {
       fed: 'Angular & Ionic',
       ux: 'Interaction & UI design'
     },
-    image: 'assets/img/png/photo.png'
+    image: 'assets/img/png/photo.png',
+    email: 'mailto:kevinliozonpro@gmail.com',
+    street: '2 Indigo Mews, Ashton Street',
+    postcode: 'E14 9PN',
+    city: 'London',
+    country: 'United Kingdom'
   },
   MENU: [
     {key: 'home', value: 'Home'},

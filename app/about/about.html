@@ -1,42 +1,49 @@
-<section id="about-start">
+<main id="about-start">
+  <h2>{{ 'aboutTitle0' | translate }}</h2>
+  <p>{{ 'aboutText0' | translate }}</p>
+</main>
+<section id="about-fed">
   <h2>{{ 'aboutTitle1' | translate }}</h2>
   <p>{{ 'aboutText1' | translate }}</p>
-  <a href="about#about-archi">{{ "more" | translate }}</a>
-</section>
-<section id="about-fed">
-  <h2>{{ 'aboutTitle2' | translate }}</h2>
-  <p>{{ 'aboutText2' | translate }}</p>
-  <a href="about#about-archi">See my Front-End skills</a>
+  <a href="about#about-archi">{{ 'skills' | translate }}</a>
 </section>
 <section id="about-ux">
-  <h2>{{ 'aboutTitle3' | translate }}</h2>
-  <p>
-    {{ 'aboutText3' | translate }}
-  </p>
-  <a href="#">See my UX skills</a>
+  <h2>{{ 'aboutTitle2' | translate }}</h2>
+  <p>{{ 'aboutText2' | translate }}</p>
+  <a href="about#about-archi">{{ 'skills' | translate }}</a>
 </section>
-<main id="about-archi">
+<section id="about-achiev">
+  <h2>{{ 'aboutTitle3' | translate }}</h2>
+  <ul>
+    <li *ngFor="let project of projects">
+      <h3 *ngIf="project.featured === true">{{project.name}}</h3>
+    </li>
+  </ul>
+  <a href="about#about-archi">{{ 'skills' | translate }}</a>
+</section>
+<section id="about-place">
   <h2>{{ 'aboutTitle4' | translate }}</h2>
-  <p>
-    {{ 'aboutText4' | translate }}
-</p>
-</main>
-<h2>{{ 'aboutTitle5' | translate }}</h2>
-<address>
-  <p><a href={{details.email}}>Kevin Liozon</a></p>
-  <p>{{details.street}}</p>
-  <p>{{details.city}}</p>
-  <p>{{details.country}}</p>
-</address>
-<h2>{{ 'aboutTitle6' | translate }}</h2>
-<div class="row">
-  <div class="col-sm-6 col-md-4"  *ngFor="let tool of tools">
-    <my-card [object]="tool" *ngIf="tool.featured"></my-card>
+  <address>
+    <p><a href={{details.email}}>Kevin Liozon</a></p>
+    <p>{{details.street}}</p>
+    <p>{{details.postcode}}</p>
+    <p>{{details.city}}</p>
+    <p>{{details.country}}</p>
+  </address>
+</section>
+<section id="about-tools">
+  <h2>{{ 'aboutTitle5' | translate }}</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-4"  *ngFor="let tool of tools">
+      <my-card [object]="tool" *ngIf="tool.featured"></my-card>
+    </div>
   </div>
-</div>
-<h2>{{ 'aboutTitle7' | translate }}</h2>
-<div class="row">
-  <div class="col-sm-6 col-md-4" *ngFor="let hobby of hobbies">
-    <my-card [object]="hobby"></my-card>
+</section>
+<section id="about-hobbies">
+  <h2>{{ 'aboutTitle6' | translate }}</h2>
+  <div class="row">
+    <div class="col-sm-6 col-md-4" *ngFor="let hobby of hobbies">
+      <my-card [object]="hobby"></my-card>
+    </div>
   </div>
-</div>
+</section>

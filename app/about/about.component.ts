@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 //tools
 import { Tool } from '../models/tool';
@@ -6,36 +6,38 @@ import { ToolService } from '../providers/tool.service';
 //hobbies
 import { Hobby } from '../models/hobby';
 import { HobbyService } from '../providers/hobby.service'
+//projects
+import { Project } from '../models/project';
+import { ProjectService } from '../providers/project.service'
+//constants
+import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'about.html'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
 
-  details: any;
-  aboutTitles: any;
-  tools: Tool[];
-  hobbies: Hobby[];
+  public details: any = CONSTANTS.PROFILE;
+  public tools: Array<Tool>;
+  public hobbies: Array<Hobby>;
+  public projects: Array<Project>;
 
-  constructor(private ToolService: ToolService,
-              private HobbyService: HobbyService,
+  constructor(private toolService: ToolService,
+              private hobbyService: HobbyService,
+              private projectService: ProjectService,
               private route: ActivatedRoute) { }
 
-  ngOnInit()
+  public ngOnInit()
   {
-    this.details = {
-      email: "mailto:kevinliozonpro@gmail.com",
-      street: "25 Church Crescent",
-      city: "N10 3NA, London",
-      country: "United Kingdom"
-    };
-    this.tools = this.ToolService.getTools();
-    this.hobbies = this.HobbyService.getHobbies();
+    this.tools = this.toolService.getTools();
+    this.hobbies = this.hobbyService.getHobbies();
+    this.projects = this.projectService.getProjects();
     // window.location.hash retrieves the anchor
     // then scroll down to correct level
     setTimeout(() => {
       document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
     });
   }
+
 }

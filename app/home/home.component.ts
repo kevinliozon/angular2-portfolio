@@ -22,11 +22,10 @@ import { CONSTANTS } from '../shared/constants';
 export class HomeComponent implements OnInit{
 
   public profile: any = CONSTANTS.PROFILE;
-  public homeTitles: any;
-  public projects: Project[];
-  public skills: Skill[];
-  public roles: Role[];
-  public diplomas: Diploma[];
+  public projects: Array<Project>;
+  public skills: Array<Skill>;
+  public roles: Array<Role>;
+  public diplomas: Array<Diploma>;
 
   constructor(private projectService: ProjectService,
               private skillService: SkillService,
@@ -34,12 +33,6 @@ export class HomeComponent implements OnInit{
               private diplomaService: DiplomaService) { }
 
   public ngOnInit() {
-    this.homeTitles = [
-      "Overview",
-      "Some of my works",
-      "My Top 10 technologies",
-      "Milestones"
-    ];
     this.projects = this.projectService.getProjects();
     this.skills = this.skillService.getSkills();
     this.roles = this.roleService.getRoles();

@@ -52,7 +52,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Douglas & Gordon',
-    'logo': '',
+    'logo': '../../../assets/img/svg/projects/dng.svg',
     'url': 'http://www.douglasandgordon.com/'
   },
   'desc': 'An internal CRM mobile app for a West London Real Estate Agent (coming soon)',
@@ -107,7 +107,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Lloyds Banking Group',
-    'logo': '../../../assets/img/svg/projects/.svg',
+    'logo': '../../../assets/img/svg/projects/lloyds.svg',
     'url': 'http://www.lloydsbank.com/'
   },
   'desc': 'IoT mobile app for connected objects (coming soon on iOS)',
@@ -315,7 +315,7 @@ export let PROJECTS: Project[] = [{
   'company': null,
   'client': {
     'name': 'Université de Bourgogne-Franche-Comté',
-    'logo': '../../../assets/img/svg/projects/ubfc.svg',
+    'logo': '../../../assets/img/svg/education/ubfc.svg',
   },
   'desc': 'Educational contents sharing platform - Student project',
   'techs': [
@@ -392,7 +392,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Haute Coiffure et Esthétique',
-    'logo': '../../../assets/img/svg/projects/hce.svg',
+    'logo': '../../../assets/img/png/projects/hce.png',
   },
   'desc': 'Artistic contents sharing platform',
   'techs': [

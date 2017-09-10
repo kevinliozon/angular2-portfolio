@@ -15,10 +15,16 @@ gulp.task("libs", function() {
   return gulp.src([
       'jquery/dist/jquery.min.js',
       'bootstrap/dist/js/bootstrap.min.js'
-  ], {cwd: "node_modules/**"})
-  .pipe(concat('vendors.min.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest("dist/lib"));
+    ], {cwd: 'node_modules/**'})
+    .pipe(concat('vendors.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/lib'));
+});
+
+// Import fonts glyphicons
+gulp.task("fonts", function() {
+  return gulp.src('node_modules/bootstrap/fonts/**')
+    .pipe(gulp.dest('dist/fonts'));
 });
 
 // Move Html files to /dist and modify index.html
