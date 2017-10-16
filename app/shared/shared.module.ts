@@ -10,11 +10,13 @@ import { DetailsComponent } from './components/details/details.component';
 import { DetailsModalComponent } from './components/details-modal/details-modal.component';
 import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
+import { TranslateModule } from '../translate/translate.module';
 
 @NgModule({
     imports: [
       CommonModule,
-      AppRoutingModule
+      AppRoutingModule,
+      TranslateModule
     ],
     declarations: [
       HeaderComponent,

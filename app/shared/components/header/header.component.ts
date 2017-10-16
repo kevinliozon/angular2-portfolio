@@ -37,9 +37,11 @@ export class HeaderComponent implements OnInit {
 
   private setHeaderTitleOnRefresh() {
     // getTitle() is not handled properly
-    let firstChar = this.location.path().substr(1).charAt(0).toUpperCase();
-    let strRemains = this.location.path().slice(2);
-    this.title = firstChar + strRemains;
+    if (!this.location.path().includes('details')) {
+      let firstChar = this.location.path().substr(1).charAt(0).toUpperCase();
+      let strRemains = this.location.path().slice(2);
+      this.title = firstChar + strRemains;
+    } else this.title = 'Details';
   }
 
   public isCurrentLang(lang: string) {

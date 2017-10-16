@@ -1,7 +1,7 @@
 export const LANG_ENG_NAME = 'eng';
 const titles = {
   'homePage': [
-    'Some clients',
+    'I have worked for them',
     'My main skills',
     'Last achievements',
     'Milestones'
@@ -53,5 +53,42 @@ export const LANG_ENG_TRANS = {
                   The Nielsen & Norman Group is my main reference by the way.
                   My favorite field is definitely Interaction Design (IxD).
                   Because it makes sense, as a developer, to test the viability of
-                  the interactions first, through prototypes, before implementing anything.`
+                  the interactions first, through prototypes, before implementing anything.`,
+    /*** PROJECTS ***/
+    //texts
+    '#projectDescHce': `Showcase WordPress website for a consortium of southern
+                        France hairdressers and estheticians. I designed the interface
+                        (zonings, mockups) but I have not developed it.`,
+    '#projectDescPortfolioV1': `First portfolio realised during my first year at the
+                              institute of technology. It is animated with Flash and CSS3.
+                              You may have to activate Flash depending on your browser`,
+    '#projectDescPortfolio2': `Animated portfolio with Edge Animate (based on jQuery)
+                              and CSS3. It has been realised during my year of bachelor`,
+    '#projectDescPortfolio3': `This portfolio has been realised on Angular 2 with
+                              Bootstrap 3 and Gulp.js.`,
+    '#projectDescDigitela': `Corporate website.`,
+    '#projectDescApags': `Website for an association related to cancer research`,
+    '#projectDescEukiyo': `Artistic contents sharing platform - Student project.`,
+    '#projectDescC2I': `Educational contents sharing platform - Student project`,
+    '#projectDescImakr': `E-Commerce platform for 3D printing industry related products`,
+    '#projectDescMMF': `A 3D printed contents/models sharing platform for 3D designers
+                        and enthusiasts`,
+    '#projectDescDoxy': `Telemedecine solution.`,
+    '#projectDescDnG': `An internal CRM mobile app for a West London Real Estate Agent (UAT)`,
+    '#projectDescLloyds': `IoT mobile app for connected objects (UAT)`,
+    /*** ROLES ***/
+    //texts
+    '#roleDescSurely': `blabla`,
+    '#roleDescDoxy': `blabla`,
+    '#roleDescImakr2': `blabla`,
+    '#roleDescImakr1': `blabla`,
+    '#roleDescDigitela': `blabla`,
+    '#roleDescMedasys': `blabla`,
+    /*** HOBBIES ***/
+    //name
+    '#hobbyName': ``,
+    /*** DIPLOMAS ***/
+    //name
+    '#diplomaName': ``,
+
 };

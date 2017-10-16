@@ -28,16 +28,23 @@ export class AboutComponent implements OnInit{
               private projectService: ProjectService,
               private route: ActivatedRoute) { }
 
-  public ngOnInit()
-  {
+  public ngOnInit() {
     this.tools = this.toolService.getTools();
     this.hobbies = this.hobbyService.getHobbies();
     this.projects = this.projectService.getProjects();
-    // window.location.hash retrieves the anchor
-    // then scroll down to correct level
-    setTimeout(() => {
-      document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
-    });
+    this.scrollTo();
+  }
+
+  /**
+   * window.location.hash retrieves the anchor
+   * then scroll down to correct level
+   */
+  private scrollTo() {
+    if (!!window.location.hash) {
+      setTimeout(() => {
+        document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
+      }, 500);
+    }
   }
 
 }

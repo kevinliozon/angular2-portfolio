@@ -3,6 +3,7 @@
   {{details.id}}
   {{details.name}}
   {{details.category}}
+  {{ details.desc | translate }}
   <div *ngIf="type === 'project' || type === 'role'">
     <div class="" *ngFor="let tech of details.techs">
       <img src="{{tech.logo}}" alt="tech.name" />

@@ -1,14 +1,14 @@
 import { Project } from '../../models/project';
 
 export let PROJECTS: Project[] = [{
-  'id': '#project12',
+  'id': '#project13',
   'name': 'This Portfolio',
   'featured': true,
   'active': true,
   'category': 'Portfolio',
   'company': null,
   'client': null,
-  'desc': 'Portfolio realised with Angular 2, Sass and Gulp',
+  'desc': '#projectDescPortfolio3',
   'techs': [
     {
       'name': 'Angular',
@@ -40,7 +40,7 @@ export let PROJECTS: Project[] = [{
   'github': 'https://github.com/kevinliozon/angular2-portfolio'
 },
 {
-  'id': '#project11',
+  'id': '#project12',
   'name': 'Douglas & Gordon',
   'featured': true,
   'active': false,
@@ -55,7 +55,7 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/projects/dng.svg',
     'url': 'http://www.douglasandgordon.com/'
   },
-  'desc': 'An internal CRM mobile app for a West London Real Estate Agent (coming soon)',
+  'desc': '#projectDescDnG',
   'techs': [
     {
       'name': 'Ionic',
@@ -95,7 +95,7 @@ export let PROJECTS: Project[] = [{
   'github': null
 },
 {
-  'id': '#project10',
+  'id': '#project11',
   'name': 'Lloyds Bank - Connect & Protect',
   'featured': true,
   'active': false,
@@ -110,7 +110,7 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/projects/lloyds.svg',
     'url': 'http://www.lloydsbank.com/'
   },
-  'desc': 'IoT mobile app for connected objects (coming soon on iOS)',
+  'desc': '#projectDescLloyds',
   'techs': [
     {
       'name': 'Ionic',
@@ -162,7 +162,7 @@ export let PROJECTS: Project[] = [{
   'github': null
 },
 {
-  'id': '#project9',
+  'id': '#project10',
   'name': 'Doxy.me',
   'featured': false,
   'active': false,
@@ -177,7 +177,7 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/doxyme.svg',
     'url': 'https://doxy.me/'
   },
-  'desc': 'Telemedecine solution',
+  'desc': '#projectDescDoxy',
   'techs': [
     {
       'name': 'Ionic',
@@ -205,7 +205,7 @@ export let PROJECTS: Project[] = [{
   'github': null
 },
 {
-  'id': '#project8',
+  'id': '#project9',
   'name': 'My Mini Factory',
   'featured': true,
   'active': true,
@@ -220,7 +220,7 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/mmf.svg',
     'url': 'https://www.myminifactory.com/'
   },
-  'desc': 'A social sharing platform for 3D designers',
+  'desc': '#projectDescMMF',
   'techs': [
     {
       'name': 'Symfony',
@@ -256,7 +256,7 @@ export let PROJECTS: Project[] = [{
   'github': null
 },
 {
-  'id': '#project7',
+  'id': '#project8',
   'name': 'iMakr',
   'featured': true,
   'active': true,
@@ -271,7 +271,7 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/imakr.svg',
     'url': 'https://www.imakr.com/'
   },
-  'desc': 'E-Commerce platform for 3D printing related products',
+  'desc': '#projectDescImakr',
   'techs': [
     {
       'name': 'Prestashop',
@@ -307,6 +307,49 @@ export let PROJECTS: Project[] = [{
   'github': null
 },
 {
+  'id': '#project7',
+  'name': 'Portfolio V2',
+  'featured': false,
+  'active': true,
+  'category': 'Portfolio',
+  'company': null,
+  'client': null,
+  'desc': '#projectDescPortfolioV2',
+  'techs': [
+    {
+      'name': 'Edge Animate',
+      'logo': '../../../assets/img/svg/skills/flash.svg'
+    },
+    {
+      'name': 'jQuery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Illustrator',
+      'logo': '../../../assets/img/svg/skills/illustrator.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    },
+    {
+      'name': 'HTML',
+      'logo': '../../../assets/img/svg/skills/html.svg'
+    }
+  ],
+  'images': [''],
+  'dates': {
+    'start': '2014-12-10',
+    'end': '2015-03-01'
+  },
+  'url': null,
+  'github': null
+},
+{
   'id': '#project6',
   'name': 'C2I Réseaux',
   'featured': false,
@@ -317,7 +360,7 @@ export let PROJECTS: Project[] = [{
     'name': 'Université de Bourgogne-Franche-Comté',
     'logo': '../../../assets/img/svg/education/ubfc.svg',
   },
-  'desc': 'Educational contents sharing platform - Student project',
+  'desc': '#projectDescC2I',
   'techs': [
     {
       'name': 'Wordpress',
@@ -352,7 +395,7 @@ export let PROJECTS: Project[] = [{
   'category': 'Web App',
   'company': null,
   'client': null,
-  'desc': 'Artistic contents sharing platform - Student project',
+  'desc': '#projectDescEukiyo',
   'techs': [
     {
       'name': 'Wordpress',
@@ -394,7 +437,7 @@ export let PROJECTS: Project[] = [{
     'name': 'Haute Coiffure et Esthétique',
     'logo': '../../../assets/img/png/projects/hce.png',
   },
-  'desc': 'Artistic contents sharing platform',
+  'desc': '#projectDescHce',
   'techs': [
     {
       'name': 'Wordpress',
@@ -436,7 +479,7 @@ export let PROJECTS: Project[] = [{
     'name': 'Association Pour l\'Amélioration Globale de la Santé',
     'logo': '../../../assets/img/svg/projects/apags.svg',
   },
-  'desc': 'Artistic contents sharing platform',
+  'desc': '#projectDescApags',
   'techs': [
     {
       'name': 'Wordpress',
@@ -474,8 +517,12 @@ export let PROJECTS: Project[] = [{
     'logo': '../../../assets/img/svg/companies/digitela.svg',
     'url': 'http://www.digitela.fr/'
   },
-  'client': null,
-  'desc': 'Corporate website',
+  'client': {
+    'name': 'Digitela',
+    'logo': '../../../assets/img/svg/companies/digitela.svg',
+    'url': 'http://www.digitela.fr/'
+  },
+  'desc': '#projectDescDigitela',
   'techs': [
     {
       'name': 'Wordpress',
@@ -510,7 +557,7 @@ export let PROJECTS: Project[] = [{
   'category': 'Portfolio',
   'company': null,
   'client': null,
-  'desc': 'First portfolio realised during my first year at the institute of technology (may not work because of Flash)',
+  'desc': '#projectDescPortfolioV1',
   'techs': [
     {
       'name': 'Flash',
@@ -534,6 +581,6 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': 'link',
-  'github': 'string'
+  'url': null,
+  'github': null
 }];

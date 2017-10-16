@@ -10,7 +10,7 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://services.surelygroup.com/',
   },
-  'desc': '',
+  'desc': '#roleDescSurely',
   'techs': [
     {
       'name': 'Ionic',
@@ -74,7 +74,7 @@ export let ROLES: Role[] = [{
     'place': 'Provo (USA - Remote)',
     'url': 'https://doxy.me/'
   },
-  'desc': '',
+  'desc': '#roleDescDoxy',
   'techs': [
     {
       'name': 'Ionic',
@@ -114,7 +114,7 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.myminifactory.com/'
   },
-  'desc': '',
+  'desc': '#roleDescImakr2',
   'techs': [
     {
       'name': 'Symfony',
@@ -162,7 +162,7 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.imakr.com/'
   },
-  'desc': '',
+  'desc': '#roleDescImakr1',
   'techs': [
     {
       'name': 'Prestashop',
@@ -214,7 +214,7 @@ export let ROLES: Role[] = [{
     'place': 'Narbonne (France)',
     'url': 'http://www.digitela.fr/'
   },
-  'desc': '',
+  'desc': '#roleDescDigitela',
   'techs': [
     {
       'name': 'Wordpress',
@@ -268,7 +268,7 @@ export let ROLES: Role[] = [{
     'place': 'Montpellier (France)',
     'url': 'http://www.medasys.fr/index.php?id=1&L=1'
   },
-  'desc': '',
+  'desc': '#roleDescMedasys',
   'techs': null,
   'dates': {
     'start': '2012-06-01',

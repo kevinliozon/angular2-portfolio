@@ -1,14 +1,14 @@
 export const LANG_FRA_NAME = 'fra';
 const titles = {
   'homePage': [
-    'Quelques clients',
+    'J\'ai travaillé pour eux',
     'Mes compétences principales',
     'Mes outils favoris',
     'Jalons'
   ],
   'aboutPage': [
     'Mes débuts',
-    'Front-End Developer',
+    'Dévelopeur Front-End',
     'UX Designer',
     'Mes principaux challenges',
     'Où me trouver',
@@ -55,6 +55,30 @@ export const LANG_FRA_TRANS = {
                   est ma référence principale d'ailleurs. Mon domaine favoris est clairement
                   le Design d'Interaction (IxD). Parce qu'il me semble évident, en tant
                   que dévelopeur, de tester la viabilité des interaction en premier,
-                  au travers de prototypes, avant d'implémenter quoique ce soit.`
+                  au travers de prototypes, avant d'implémenter quoique ce soit.`,
+    /*** PROJECTS ***/
+    //texts
+    '#projectDescHce': `Site vitrine réalisé sous WordPress pour une association de
+                        coiffeuses et esthéticiennes du Sud de la France. J'ai réalisé
+                        l'interface (zonings) mais je ne l'ai pas développé.`,
+    '#projectDescPortfolioV1': `Premier portfolio, réalisé durant ma première année d'IUT.
+                                Réalisé sous Flash et CSS3 pour les animations.
+                                (Il se peut que vous ayez à activer Flash en fonction
+                                de votre navigateur).`,
+    '#projectDescPortfolio2': `Portfolio animé avec Edge Animate (basé sur jQuery) et CSS3.
+                              A été réalisé durant mon année de licence professionnelle.`,
+    '#projectDescPortfolio3': `Ce portfolio a été réalisé sur Angular, Bootstrap 3 et Gulp.js.`,
+    '#projectDescDigitela': `Site d'entreprise.`,
+    '#projectDescApags': `Site pour une association liée à la recherche contre le cancer.`,
+    '#projectDescEukiyo': `Plate-forme de partage de contenus artistiques -  Projet étudiant`,
+    '#projectDescC2I': `Plate-forme de partage de contenus éducatifs -  Projet étudiant`,
+    '#projectDescImakr': `Plate-forme E-Commerce pour produits liés à l'industrie de
+                          l'imprimerie 3D`,
+    '#projectDescMMF': `Plate-forme de partage de contenus et modèles liés à l'imprimerie 3D
+                        pour designers et passionnés.`,
+    '#projectDescDoxy': `Solution télé-médicale.`,
+    '#projectDescDnG': `Application mobile CRM interne pour une agence immobilière de
+                        l'Ouest de Londres (En cours de test utilisateur).`,
+    '#projectDescLloyds': `Application mobile d'objets connectés (En cours de test utilisateur).`,
 
 };
