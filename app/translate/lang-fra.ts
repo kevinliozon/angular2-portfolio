@@ -80,5 +80,41 @@ export const LANG_FRA_TRANS = {
     '#projectDescDnG': `Application mobile CRM interne pour une agence immobilière de
                         l'Ouest de Londres (En cours de test utilisateur).`,
     '#projectDescLloyds': `Application mobile d'objets connectés (En cours de test utilisateur).`,
+    /*** ROLES ***/
+    //texts
+    '#roleDescSurely': `En tant que développeur frontend et designer d'interaction, mon rôle est
+                        de produire des prototypes d'applications ainsi que des éléments
+                        graphiques. Puis implémenter ces designs, une fois validés,
+                        grâce au framework mobile hybrid Ionic. Basé sur les technologies
+                        Cordova et Angular.`,
+    '#roleDescDoxy': `Mon rôle était de corrigés certains problèmes liés à l'aspect
+                      frontend et Xcode, ainsi qu'installer certains plugins Cordova.`,
+    '#roleDescMmf': `MyMiniFactory est la filiale d'iMakr, pour lesquels j'ai travaillé
+                    précédement. Mon rôle cette fois a été d'intégrer le design que j'ai produits
+                    quelques temps auparavant dans la plate-forme Symfony grâce aux technologies
+                    Foundation et jQuery. J'étais aussi chargé de la création et optimisation
+                    des contenus graphiques.`,
+    '#roleDescImakr': `Durant ma période comme Frontend developer et UX designer à iMakr,
+                      j'ai eu à produire les nouveaux designs pour les sites de
+                      l'entreprise et de sa filiale MyMiniFactory. Puis implémenter celui
+                      d'iMakr dans sa plate-forme Prestashop dédiée grâce aux technologies
+                      Bootstrap et jQuery.`,
+    '#roleDescDigitela': `Ma première experience professionelle en tant que développeur
+                        et designer. Je travaillais essentiellement sur les maquettes
+                        ainsi que la conception des sites de nos clients avec Wordpress.
+                        Ma tâche principale aura été de définir l'identité graphique
+                        du site de mon employeur.`,
+    '#roleDescMedasys': `Ma mission était de répondre aux problématiques rencontrées
+                        par le personnel médical du CHU de Montpellier lors du déploiement
+                        du nouveau SIH DxCare. Cela aura été ma première prise de conscience
+                        à propos du dégré d'impact que peut avoir l'UX sur la
+                        productivité d'une équipe.`,
+    /*** HOBBIES ***/
+    //name
+    '#hobbyModding': `Modding`,
+    '#hobbyScuba': `Plongée`,
+    '#hobbyHistLit': `Histoire & Litterature`,
+    '#hobbyWindsurf': `Planche à Voile`,
+    '#hobbyHockey': `Hockey sur glace`,
 
 };

@@ -78,15 +78,36 @@ export const LANG_ENG_TRANS = {
     '#projectDescLloyds': `IoT mobile app for connected objects (UAT)`,
     /*** ROLES ***/
     //texts
-    '#roleDescSurely': `blabla`,
-    '#roleDescDoxy': `blabla`,
-    '#roleDescImakr2': `blabla`,
-    '#roleDescImakr1': `blabla`,
-    '#roleDescDigitela': `blabla`,
-    '#roleDescMedasys': `blabla`,
+    '#roleDescSurely': `As Frontend Developer and interaction designer, my role is
+                        first and foremost to produce prototypes of applications
+                        as well as UI assets. Then implementing these designs, once validated,
+                        thanks to the hybrid mobile framework Ionic,
+                        built upon Cordova and Angular.`,
+    '#roleDescDoxy': `My role was to fix frontend and Xcode related issues as well
+                      as setting up Cordova plugins.`,
+    '#roleDescMmf': `MyMiniFactory is the subsidiary of iMakr, which I worked for
+                    previously. My role this time was to implement the design I
+                    produced earlier into its Symfony platform with Foundation and jQuery.
+                    From time to time I had to create/improve UI contents.`,
+    '#roleDescImakr': `During my time as Frontend developer and UX designer in iMakr,
+                      I had to produce the new designs for the websites of the
+                      company and its subsidiary MyMiniFactory. Then implementing the
+                      iMakr's one into its Prestashop platform with Bootstrap and jQuery.`,
+    '#roleDescDigitela': `My first professional experience as a developer and a designer.
+                        I was mostly working on the mockups and the conception of our
+                        clients' websites with Wordpress. My main task has been to
+                        define the graphical identity of my company's website.`,
+    '#roleDescMedasys': `I helped the medical staffs of the University Hospital of
+                        Montpellier (France), during the deployment of the new HIS
+                        software DxCare. It has been one of my first awareness about how
+                        user experience could have an impact on the workflow of a team.`,
     /*** HOBBIES ***/
     //name
-    '#hobbyName': ``,
+    '#hobbyModding': `Modding`,
+    '#hobbyScuba': `Scuba-Diving`,
+    '#hobbyHistLit': `History & Literature`,
+    '#hobbyWindsurf': `Windsurf`,
+    '#hobbyHockey': `Ice Hockey`,
     /*** DIPLOMAS ***/
     //name
     '#diplomaName': ``,

@@ -106,7 +106,7 @@ export let ROLES: Role[] = [{
 },
 {
   'id': '#role4',
-  'name': 'Front-End Developer & UX Designer',
+  'name': 'Full-Stack Developer',
   'category': 'Permanent',
   'company': {
     'name': 'My Mini Factory (iMakr)',
@@ -114,7 +114,7 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.myminifactory.com/'
   },
-  'desc': '#roleDescImakr2',
+  'desc': '#roleDescMmf',
   'techs': [
     {
       'name': 'Symfony',
@@ -129,10 +129,6 @@ export let ROLES: Role[] = [{
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
-      'name': 'Illustrator',
-      'logo': '../../../assets/img/svg/skills/illustrator.svg'
-    },
-    {
       'name': 'Photoshop',
       'logo': '../../../assets/img/svg/skills/photoshop.svg'
     },
@@ -142,7 +138,7 @@ export let ROLES: Role[] = [{
     }
   ],
   'dates': {
-    'start': '2016-04-01',
+    'start': '2016-06-01',
     'end': '2016-11-14'
   },
   'projects': [
@@ -162,7 +158,7 @@ export let ROLES: Role[] = [{
     'place': 'London (UK)',
     'url': 'https://www.imakr.com/'
   },
-  'desc': '#roleDescImakr1',
+  'desc': '#roleDescImakr',
   'techs': [
     {
       'name': 'Prestashop',
@@ -195,7 +191,7 @@ export let ROLES: Role[] = [{
   ],
   'dates': {
     'start': '2016-02-14',
-    'end': '2016-03-31'
+    'end': '2016-06-01'
   },
   'projects': [
     {
