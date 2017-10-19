@@ -7,7 +7,7 @@
           (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
           [class.active]="this.focusedItem === diploma ? true : false">
           <img src="{{ diploma.images.thumb }}" alt="{{ diploma.name }}"/>
-          {{ diploma.name }}
+          {{ diploma.name | translate }}
       </li>
     </ul>
     <my-preview [focusedItem]="focusedItem"></my-preview>

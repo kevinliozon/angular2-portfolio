@@ -1,7 +1,7 @@
 <h2>DETAILS</h2>
 <main>
   {{details.id}}
-  {{details.name}}
+  {{details.name | translate}}
   {{details.category}}
   {{ details.desc | translate }}
   <div *ngIf="type === 'project' || type === 'role'">

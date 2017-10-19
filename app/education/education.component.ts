@@ -12,19 +12,19 @@ import { CodeschoolService } from '../providers/codeschool.service';
   moduleId: module.id.replace("/dist/app/", "/app/"),
   templateUrl: 'education.html'
 })
-export class EducationComponent implements OnInit{
+export class EducationComponent implements OnInit {
 
   public diplomas: Diploma[];
   public csCertifs: CodeSchoolCertif[];
   public csProfile: CodeSchoolProfile;
-  public selectedType: string = 'overview';
+  public selectedType = 'overview';
   public focusedItem: any;
 
   constructor(private router: Router,
               private diplomaService: DiplomaService,
               private codeschoolService: CodeschoolService) { }
 
-  public ngOnInit() {
+  ngOnInit() {
     this.diplomas = this.diplomaService.getDiplomas();
     this.codeschoolService.getCodeschoolProfile()
     .subscribe(data => {
@@ -32,9 +32,7 @@ export class EducationComponent implements OnInit{
       this.csProfile = data.user
     },
     console.error,
-    () => {
-      // display in console: console.log('Completed!');
-    });
+    () => { });
   }
 
   public focusItem(itemHovered: any) {

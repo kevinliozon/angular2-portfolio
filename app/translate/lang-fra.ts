@@ -36,6 +36,7 @@ export const LANG_FRA_TRANS = {
     'aboutTitle2': titles.aboutPage[2], 'aboutTitle3': titles.aboutPage[3],
     'aboutTitle4': titles.aboutPage[4], 'aboutTitle5': titles.aboutPage[5],
     'aboutTitle6': titles.aboutPage[6],
+    // Texts
     'aboutText0': `Ce qui m'a ammené à me diriger vers la voie de la conception et du design
                   d'applications remonte à quand j'étais technicien support de terrain
                   au CHU de Montpellier, durant le déploiement de leur nouveau logiciel de
@@ -57,7 +58,7 @@ export const LANG_FRA_TRANS = {
                   que dévelopeur, de tester la viabilité des interaction en premier,
                   au travers de prototypes, avant d'implémenter quoique ce soit.`,
     /*** PROJECTS ***/
-    //texts
+    // Descs
     '#projectDescHce': `Site vitrine réalisé sous WordPress pour une association de
                         coiffeuses et esthéticiennes du Sud de la France. J'ai réalisé
                         l'interface (zonings) mais je ne l'ai pas développé.`,
@@ -81,7 +82,7 @@ export const LANG_FRA_TRANS = {
                         l'Ouest de Londres (En cours de test utilisateur).`,
     '#projectDescLloyds': `Application mobile d'objets connectés (En cours de test utilisateur).`,
     /*** ROLES ***/
-    //texts
+    // Descs
     '#roleDescSurely': `En tant que développeur frontend et designer d'interaction, mon rôle est
                         de produire des prototypes d'applications ainsi que des éléments
                         graphiques. Puis implémenter ces designs, une fois validés,
@@ -110,11 +111,18 @@ export const LANG_FRA_TRANS = {
                         à propos du dégré d'impact que peut avoir l'UX sur la
                         productivité d'une équipe.`,
     /*** HOBBIES ***/
-    //name
+    // Names
     '#hobbyModding': `Modding`,
     '#hobbyScuba': `Plongée`,
     '#hobbyHistLit': `Histoire & Litterature`,
     '#hobbyWindsurf': `Planche à Voile`,
     '#hobbyHockey': `Hockey sur glace`,
-
+    /*** DIPLOMAS ***/
+    // Names
+    '#diplomaNng': `Certification UX NNG`,
+    '#diplomaCs': `Certifications CodeSchool`,
+    '#diplomaLp': `Licence professionelle Webdesign`,
+    '#diplomaDut': `DUT Métiers du Multimedia et de l'Internet`,
+    '#diplomaDu': `Diplôme Universitaire Webmaster`,
+    '#diplomaBac': `Bac Scientifique`,
 };
