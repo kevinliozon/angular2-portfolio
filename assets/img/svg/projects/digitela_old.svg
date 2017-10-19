@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 730 170" style="enable-background:new 0 0 730 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#162034;}
+	.st1{fill:#1D71B8;}
+	.st2{font-family:'SpaceAgePro';}
+	.st3{font-size:120px;}
+	.st4{display:none;}
+	.st5{fill:#F6F6F6;}
+	.st6{fill:#9D9D9C;stroke:#B2B2B2;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:#B2B2B2;}
+	.st8{font-size:34px;}
+	.st9{display:none;fill:#B2B2B2;}
+</style>
+<g id="fond">
+	<rect class="st0" width="730" height="170"/>
+</g>
+<g id="Logo">
+	<g>
+		<text transform="matrix(1 0 0 1 298.9595 98.3311)" class="st1 st2 st3">TELA</text>
+		<text transform="matrix(1 0 0 1 33.4824 98.3311)" class="st4 st2 st3">DIGI</text>
+		<text transform="matrix(1 0 0 1 33.4824 98.3311)" class="st5 st2 st3">DIGI</text>
+	</g>
+</g>
+<g id="Base_Line">
+	<g>
+		<line class="st6" x1="41.4" y1="133.1" x2="690.8" y2="133.1"/>
+		<text id="ALL_INCLUSIVE_WEB_SERVICE_1_" transform="matrix(1.014 0 0 1 40.1372 128.4067)" class="st7 st2 st8">ALL INCLUSIVE WEB SERvICE</text>
+		<text id="All_Inclusive_Web_Service_2_" transform="matrix(1.0125 0 0 1 44.6226 128.5693)" class="st9 st2 st8">All Inclusive web service</text>
+		<line class="st6" x1="41.1" y1="102.3" x2="690.6" y2="102.3"/>
+	</g>
+</g>
+</svg>
