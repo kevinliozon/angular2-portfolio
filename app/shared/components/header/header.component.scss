@@ -1,10 +1,13 @@
 header {
-  .dropdown {
-    .dropdown-toggle {
-      text-align: center;
-      height: $headerHeight;
-      img {
-        @include square(14px);
+  .nav {
+    margin-right: $bigIndent;
+    .dropdown {
+      .dropdown-toggle {
+        text-align: center;
+        height: $headerHeight;
+        img {
+          @include square(14px);
+        }
       }
     }
   }
