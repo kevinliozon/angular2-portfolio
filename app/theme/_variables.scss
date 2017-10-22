@@ -13,11 +13,20 @@ $light: #F1F1F1;
  */
 
 /**
+ * [$headerHeight description]
+ * @type {[type]}
+ */
+
+$imgMd: 50px;
+
+/**
  * Containers
  */
 
 $headerHeight: 50px;
+$smallIndent: 5px;
 $baseIndent: 15px;
+$bigIndent: 30px;
 
 /**
  * Mixins

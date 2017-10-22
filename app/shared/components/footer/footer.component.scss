@@ -1,1 +1,21 @@
-
+footer {
+  margin-top: 300px;
+  background-color: $primary;
+  .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $baseIndent;
+    .icn-social {
+      margin: 0 auto;
+      padding: $baseIndent;
+    }
+  }
+  .footer-copyright {
+    padding-bottom: $bigIndent;
+    color: $light;
+    text-align: center;
+    p {
+      margin-bottom: $smallIndent;
+    }
+  }
+}
