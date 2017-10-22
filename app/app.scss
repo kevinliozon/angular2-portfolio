@@ -1,25 +1,10 @@
-// Overwrite default font path from bootstrap
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-       url('fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-       url('fonts/glyphicons-halflings-regular.woff') format('woff'),
-       url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-       url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
-h2 {
-  color: red;
-}
-h5 {
-  color: orange;
-}
-img {
-  width: 10%;
-}
-ul, ol {
-  li {
-    list-style: none;
-  }
-}
+/**
+ * Partials Import
+ * Variables partial should always be imported first first
+ */
+@import 'theme/variables';
+@import 'theme/containers';
+@import 'theme/titles';
+@import 'theme/fonts';
+@import 'theme/lists';
+@import 'theme/images';

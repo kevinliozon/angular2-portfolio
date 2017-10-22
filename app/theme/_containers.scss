@@ -1,0 +1,10 @@
+.container-dual {
+  display: flex;
+  .container-select {
+    padding-right: 0;
+  }
+  .container-preview {
+    background-color: $dark;
+    color: $light;
+  }
+}

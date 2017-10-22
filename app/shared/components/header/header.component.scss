@@ -1,0 +1,15 @@
+header {
+  .dropdown {
+    .dropdown-toggle {
+      text-align: center;
+      height: $headerHeight;
+      img {
+        @include square(14px);
+      }
+    }
+  }
+  .page-header {
+    margin-top: 80px;
+    padding-left: $baseIndent;
+  }
+}

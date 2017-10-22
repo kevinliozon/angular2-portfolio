@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, style, transition, animate, group } from '@angular/core';
 import { Router } from '@angular/router';
 //roles
 import { Role } from '../models/role';
@@ -8,7 +8,22 @@ import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
-  templateUrl: 'experience.html'
+  templateUrl: 'experience.html',
+  animations: [trigger(
+    'openClose',
+    [
+      transition(":enter", [
+        style({ opacity: 0 }),
+        animate('1000ms', style({ opacity: 1 }))
+      ]),
+      transition(":leave", [
+        animate('1000ms', style({ opacity: 0 }))
+      ])
+    ])],
+    host: {
+        '[@openClose]': 'true',
+        'style': 'display: block;'
+    },
 })
 export class ExperienceComponent implements OnInit {
 
