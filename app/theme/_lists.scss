@@ -8,6 +8,9 @@ ul, ol {
       &:first-child, &:last-child {
         @extend .no-radius;
       }
+      &.active {
+        background-color: $primary;
+      }
     }
   }
 }
