@@ -1,16 +1,22 @@
-ul, ol {
+ul,
+ol {
   li {
     list-style: none;
   }
-  &.list-group {
-    margin-bottom: 0;
-    .list-group-item {
-      &:first-child, &:last-child {
-        @extend .no-radius;
-      }
-      &.active {
-        background-color: $primary;
-      }
+}
+
+.list-group {
+  margin-bottom: 0;
+
+  .list-group-item {
+
+    &:first-child,
+    &:last-child {
+      @extend %no-radius;
+    }
+
+    &.active {
+      background-color: $primary;
     }
   }
 }

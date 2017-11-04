@@ -14,10 +14,10 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
-          <li *ngFor="let tab of menu" routerLinkActive="active">
+          <li class="nav-route" *ngFor="let tab of menu" routerLinkActive="active">
             <a [routerLink]="[tab.key]" (click)="setTitle(tab.value)">{{ tab.value }}</a>
           </li>
-          <li class="dropdown">
+          <li class="dropdown nav-lang">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <img src="{{ currentFlag }}" /><span class="caret"></span>
             </a>

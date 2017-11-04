@@ -1,21 +1,25 @@
 footer {
-  margin-top: 300px;
   background-color: $primary;
+  margin-top: 300px;
+
   .footer-social {
     display: flex;
     flex-wrap: wrap;
-    padding: $baseIndent;
+    padding: $base-indent;
+
     .icn-social {
       margin: 0 auto;
-      padding: $baseIndent;
+      padding: $base-indent;
     }
   }
+
   .footer-copyright {
-    padding-bottom: $bigIndent;
     color: $light;
+    padding-bottom: $big-indent;
     text-align: center;
+
     p {
-      margin-bottom: $smallIndent;
+      margin-bottom: $small-indent;
     }
   }
 }

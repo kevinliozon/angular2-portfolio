@@ -1,23 +1,24 @@
-<div class="container-fluid no-padding" [@openClose]="'true'">
-  <!-- Filter by category -->
-  <button *ngFor="let filter of filters" (click)="value = filter">
-    {{ filter }}
-    <span *ngIf="filter === ''">Reset</span>
-  </button>
-  <div class="row container-dual">
+<div class="container-stretch" [@openClose]="'true'">
+  <section class="container-filters">
+    <!-- Filter by category -->
+    <button class="btn btn-primary" *ngFor="let filter of filters" (click)="value = filter">
+      {{ filter }}
+      <span *ngIf="filter === ''">All</span>
+    </button>
+  </section>
+  <section class="row container-dual">
     <div class="col-xs-4 container-select">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let role of roles | filter:{ category: value }"
             (mouseover)="focusItem(role)" (click)="goTo(role)"
-            [class.active]="this.focusedItem === role ? true : false">
+            [class.active]="this.focusedItem === role">
             <img [src]="role.company.logo">
             {{ role.id }} {{ role.name }} {{ role.dates.start | date : "MMM yyyy" }}
         </li>
       </ul>
     </div>
-    <div class="col-xs-8 container-preview">
-      <!-- Now we are binding each iteration of project to the child's project property -->
+    <article class="col-xs-8 container-preview">
       <my-preview [focusedItem]="focusedItem"></my-preview>
-    </div>
-  </div>
+    </article>
+  </section>
 </div>
