@@ -42,9 +42,18 @@ $big-indent: 30px;
  */
 
 // Container
+
 %no-padding { padding: 0; }
+
 %no-margin { margin: 0; }
 
+%block-half-centred {
+  margin: 0 auto;
+  width: 50%;
+}
+
 // Borders
+
 %no-radius { border-radius: 0; }
+
 %no-border { border: 0; }

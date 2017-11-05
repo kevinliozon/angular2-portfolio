@@ -1,0 +1,23 @@
+.container-filters {
+  margin-bottom: $base-indent;
+
+  >.btn-group {
+    @extend %block-half-centred;
+  }
+
+  .btn-group {
+    &:not(:last-child) {
+      border-right: 1px solid $light;
+    }
+  }
+
+  .btn {
+    @extend %no-radius;
+    background-color: $alt;
+    color: $light;
+
+    &.selected {
+      background-color: $primary;
+    }
+  }
+}

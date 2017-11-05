@@ -11,6 +11,7 @@ import { DetailsModalComponent } from './components/details-modal/details-modal.
 import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
 import { TranslateModule } from '../translate/translate.module';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { TranslateModule } from '../translate/translate.module';
       DetailsComponent,
       DetailsModalComponent,
       PreviewComponent,
-      CardComponent
+      CardComponent,
+      FiltersComponent
     ],
     exports: [
       HeaderComponent,
@@ -32,7 +34,8 @@ import { TranslateModule } from '../translate/translate.module';
       DetailsComponent,
       DetailsModalComponent,
       PreviewComponent,
-      CardComponent
+      CardComponent,
+      FiltersComponent
     ]
 })
 

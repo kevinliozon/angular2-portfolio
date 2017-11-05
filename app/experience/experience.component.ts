@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 //roles
 import { Role } from '../models/role';
 import { RoleService } from '../providers/role.service';
-// Environment
-import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
@@ -29,7 +27,7 @@ export class ExperienceComponent implements OnInit {
 
   public roles: Role[];
   public focusedItem: any;
-  public filters: Array<string> = CONSTANTS.FILTERS.roles;
+  public value = '';
 
   constructor(private router: Router, private roleService: RoleService) {}
 
@@ -45,6 +43,10 @@ export class ExperienceComponent implements OnInit {
   public goTo(role) {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: role.id, type: 'role'}]);
+  }
+
+  public filterFor(filter) {
+      this.value = filter;
   }
 
 }

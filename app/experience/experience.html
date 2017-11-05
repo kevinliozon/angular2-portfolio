@@ -1,11 +1,7 @@
 <div class="container-stretch" [@openClose]="'true'">
-  <section class="container-filters">
-    <!-- Filter by category -->
-    <button class="btn btn-primary" *ngFor="let filter of filters" (click)="value = filter">
-      {{ filter }}
-      <span *ngIf="filter === ''">All</span>
-    </button>
-  </section>
+
+  <my-filters [page]="'experience'" (selectFilter)="filterFor($event)"></my-filters>
+
   <section class="row container-dual">
     <div class="col-xs-4 container-select">
       <ul class="list-group">
@@ -21,4 +17,5 @@
       <my-preview [focusedItem]="focusedItem"></my-preview>
     </article>
   </section>
+
 </div>

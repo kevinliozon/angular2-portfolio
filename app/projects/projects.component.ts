@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 //projects
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
-// Environment
-import { CONSTANTS } from '../shared/constants';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
@@ -15,11 +13,11 @@ export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
   public focusedItem: any;
-  public filters: Array<string> = CONSTANTS.FILTERS.projects;
+  public value = '';
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
-  public ngOnInit() {
+  ngOnInit() {
     this.projects = this.projectService.getProjects();
   }
 
@@ -31,6 +29,10 @@ export class ProjectsComponent implements OnInit {
   public goTo(project) {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: project.id, type: 'project'}]);
+  }
+
+  public filterFor(filter) {
+      this.value = filter;
   }
 
 }
