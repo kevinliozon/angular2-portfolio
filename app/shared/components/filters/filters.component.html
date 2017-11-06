@@ -3,7 +3,7 @@
     <div class="btn-group btn-group-justified">
         <div class="btn-group" *ngFor="let filter of filters; let i = index">
             <!-- we need to double wrap btn-group for buttons -->
-            <button class="btn" (click)="onSelect(filter)" [class.selected]="selectedFilter === filters[i]">
+            <button class="btn" (click)="onSelect(filter)" [class.selected]="isSelected(filters[i])">
                 {{ filter }}
                 <span *ngIf="filter === ''">All</span>
             </button>

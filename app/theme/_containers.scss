@@ -1,5 +1,6 @@
 .container-stretch {
   @extend %no-padding;
+  position: relative;
 }
 
 .container-dual {

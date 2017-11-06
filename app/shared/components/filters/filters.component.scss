@@ -1,11 +1,14 @@
 .container-filters {
-  margin-bottom: $base-indent;
+  margin-bottom: $big-indent;
 
   >.btn-group {
     @extend %block-half-centred;
+    box-shadow: 0 6px 20px $grey;
   }
 
   .btn-group {
+    box-shadow: $dark;
+
     &:not(:last-child) {
       border-right: 1px solid $light;
     }
@@ -13,11 +16,13 @@
 
   .btn {
     @extend %no-radius;
-    background-color: $alt;
+    background-color: $grey;
     color: $light;
+    transition: 0.4s;
 
-    &.selected {
+    &.selected, &:focus {
       background-color: $primary;
+      transform: scaleY(1.1);
     }
   }
 }

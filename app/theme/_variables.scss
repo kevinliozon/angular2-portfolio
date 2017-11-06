@@ -6,6 +6,7 @@ $primary: #66cc99;
 $secondary: #6699cc;
 $alt: #62b2b0;
 $dark: #303030;
+$grey: #707070;
 $light: #fcfcfc;
 
 /**
@@ -35,6 +36,19 @@ $big-indent: 30px;
 @mixin square($value) {
   width: $value;
   height: $value;
+}
+
+@mixin position($type, $top, $right, $bottom, $left) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin vertical-align($height) {
+  height: $height;
+  line-height: $height / 2;
 }
 
 /**

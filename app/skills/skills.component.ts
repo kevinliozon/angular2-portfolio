@@ -22,6 +22,10 @@ export class SkillsComponent implements OnInit{
     this.skills = this.skillService.getSkills();
   }
 
+  /**
+   * Affect the value to the filter
+   * @param filter
+   */
   public filterFor(filter) {
       this.value = filter;
   }

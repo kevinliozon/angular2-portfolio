@@ -14,10 +14,13 @@ export class FiltersComponent implements OnInit{
     @Output() public selectFilter = new EventEmitter();
 
     public filters: Array<string>;
-    public selectedFilter: string = '';
+    public selectedFilter = '';
 
     constructor() {  }
 
+    /**
+     * Generate the filters relevant to the page
+     */
     ngOnInit() {
         const filters = CONSTANTS.FILTERS || null;
         switch(this.page) {
@@ -33,9 +36,22 @@ export class FiltersComponent implements OnInit{
         }
     }
 
+    /**
+     * Set the selected filter and emit value to parent
+     * @param filter
+     */
     public onSelect(filter) {
         this.selectedFilter = filter;
         this.selectFilter.emit(filter);
+    }
+
+    /**
+     * Check if this filter is the selected one to highlight it
+     * @param filter
+     * @returns {boolean}
+     */
+    public isSelected(filter) {
+        return this.selectedFilter === filter;
     }
 
 }
