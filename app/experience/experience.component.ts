@@ -3,25 +3,14 @@ import { Router } from '@angular/router';
 //roles
 import { Role } from '../models/role';
 import { RoleService } from '../providers/role.service';
+//animations
+import { routeTrans } from '../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
   templateUrl: 'experience.html',
-  animations: [trigger(
-    'openClose',
-    [
-      transition(":enter", [
-        style({ opacity: 0 }),
-        animate('1000ms', style({ opacity: 1 }))
-      ]),
-      transition(":leave", [
-        animate('1000ms', style({ opacity: 0 }))
-      ])
-    ])],
-    host: {
-        '[@openClose]': 'true',
-        'style': 'display: block;'
-    },
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 export class ExperienceComponent implements OnInit {
 

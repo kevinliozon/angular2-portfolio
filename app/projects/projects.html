@@ -1,11 +1,14 @@
-<my-filters [page]="'projects'" (selectFilter)="filterFor($event)"></my-filters>
+<div class="container-stretch" [@routeTrans]="'true'">
 
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let project of projects | filter:{ category: value }"
-      (mouseover)="focusItem(project)" (click)="goTo(project)"
-      [class.active]="this.focusedItem === project ? true : false">
-    {{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}
-  </li>
-</ul>
-<!-- Now we are binding each iteration of project to the child's project property -->
-<my-preview [focusedItem]="focusedItem"></my-preview>
+    <my-filters [page]="'projects'" (selectFilter)="filterFor($event)"></my-filters>
+
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let project of projects | filter:{ category: value }"
+          (mouseover)="focusItem(project)" (click)="goTo(project)"
+          [class.active]="this.focusedItem === project ? true : false">
+        {{ project.id }} {{ project.title }} {{ project.date | date : "MMM yyyy"}}
+      </li>
+    </ul>
+    <!-- Now we are binding each iteration of project to the child's project property -->
+    <my-preview [focusedItem]="focusedItem"></my-preview>
+</div>

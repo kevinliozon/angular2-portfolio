@@ -1,14 +1,18 @@
-<my-filters [page]="'skills'" (selectFilter)="filterFor($event)"></my-filters>
+<div class="container-stretch" [@routeTrans]="'true'">
 
-<!-- Filter by frequency -->
-<label class="switch">
-  <input type="checkbox" (change)="!!frequency ? frequency = false : frequency = true">
-  <span class="slider"></span>
-</label>
-<span>Frequently used only</span>
-<!-- RESULT -->
-<div class="row">
-  <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }">
-    <my-card [object]="skill"></my-card>
-  </div>
+    <my-filters [page]="'skills'" (selectFilter)="filterFor($event)"></my-filters>
+
+    <!-- Filter by frequency -->
+    <label class="switch">
+      <input type="checkbox" (change)="!!frequency ? frequency = false : frequency = true">
+      <span class="slider"></span>
+    </label>
+    <span>Frequently used only</span>
+    <!-- RESULT -->
+    <div class="row">
+      <div class="col-sm-6 col-md-4" *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }">
+        <my-card [object]="skill"></my-card>
+      </div>
+    </div>
+
 </div>

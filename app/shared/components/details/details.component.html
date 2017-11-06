@@ -1,19 +1,23 @@
-<h2>DETAILS</h2>
-<main>
-  {{details.id}}
-  {{details.name | translate}}
-  {{details.category}}
-  {{ details.desc | translate }}
-  <div *ngIf="type === 'project' || type === 'role'">
-    <div class="" *ngFor="let tech of details.techs">
-      <img src="{{tech.logo}}" alt="tech.name" />
-      {{ tech.name }}
+<div class="container-stretch" [@routeTrans]="'true'">
+
+  <h2>DETAILS</h2>
+  <main>
+    {{details.id}}
+    {{details.name | translate}}
+    {{details.category}}
+    {{ details.desc | translate }}
+    <div *ngIf="type === 'project' || type === 'role'">
+      <div class="" *ngFor="let tech of details.techs">
+        <img src="{{tech.logo}}" alt="tech.name" />
+        {{ tech.name }}
+      </div>
     </div>
-  </div>
-  <div *ngIf="type === 'role' || type === 'diploma'" class="">
-    <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
-      {{ project.name }}
+    <div *ngIf="type === 'role' || type === 'diploma'" class="">
+      <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
+        {{ project.name }}
+      </div>
     </div>
-  </div>
-</main>
-<my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+  </main>
+  <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+
+</div>

@@ -4,11 +4,15 @@ import { ActivatedRoute } from '@angular/router';
 import { DiplomaService } from '../../../providers/diploma.service';
 import { ProjectService } from '../../../providers/project.service';
 import { RoleService } from '../../../providers/role.service';
+//animations
+import { routeTrans } from '../../components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   selector: 'my-details',
-  templateUrl: 'details.component.html'
+  templateUrl: 'details.component.html',
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 
 export class DetailsComponent implements OnInit{

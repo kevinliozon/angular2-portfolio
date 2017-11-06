@@ -11,10 +11,14 @@ import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service'
 //constants
 import { CONSTANTS } from '../shared/constants';
+//animations
+import { routeTrans } from '../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
-  templateUrl: 'about.html'
+  templateUrl: 'about.html',
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 export class AboutComponent implements OnInit{
 

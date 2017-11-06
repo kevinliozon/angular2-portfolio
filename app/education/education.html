@@ -1,22 +1,24 @@
-<button (click)="selectedType='overview'">Overview</button>
-<button (click)="selectedType='codeschool'">Codeschool</button>
-<div [ngSwitch]="selectedType">
-  <div *ngSwitchCase="'overview'">
-    <ul class="list-group">
-      <li class="list-group-item" *ngFor="let diploma of diplomas"
-          (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
-          [class.active]="this.focusedItem === diploma ? true : false">
-          <img src="{{ diploma.images.thumb }}" alt="{{ diploma.name }}"/>
-          {{ diploma.name | translate }}
-      </li>
-    </ul>
-    <my-preview [focusedItem]="focusedItem"></my-preview>
-  </div>
-  <div *ngSwitchCase="'codeschool'">
-    <profile-cs [profile]="csProfile"></profile-cs>
-    <div class="row">
-      <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
-        <my-card [object]="certif"></my-card>
+<div class="container-stretch" [@routeTrans]="'true'">
+  <button (click)="selectedType='overview'">Overview</button>
+  <button (click)="selectedType='codeschool'">Codeschool</button>
+  <div [ngSwitch]="selectedType">
+    <div *ngSwitchCase="'overview'">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let diploma of diplomas"
+            (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
+            [class.active]="this.focusedItem === diploma ? true : false">
+            <img src="{{ diploma.images.thumb }}" alt="{{ diploma.name }}"/>
+            {{ diploma.name | translate }}
+        </li>
+      </ul>
+      <my-preview [focusedItem]="focusedItem"></my-preview>
+    </div>
+    <div *ngSwitchCase="'codeschool'">
+      <profile-cs [profile]="csProfile"></profile-cs>
+      <div class="row">
+        <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
+          <my-card [object]="certif"></my-card>
+        </div>
       </div>
     </div>
   </div>

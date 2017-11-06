@@ -14,10 +14,14 @@ import { Diploma } from '../models/diploma';
 import { DiplomaService } from '../providers/diploma.service'
 //constants
 import { CONSTANTS } from '../shared/constants';
+//animations
+import { routeTrans } from '../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 export class HomeComponent implements OnInit{
 

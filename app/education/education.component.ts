@@ -7,10 +7,14 @@ import { CodeSchoolProfile } from '../models/codeschool-profile';
 /* Services */
 import { DiplomaService } from '../providers/diploma.service';
 import { CodeschoolService } from '../providers/codeschool.service';
+//animations
+import { routeTrans } from '../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
-  templateUrl: 'education.html'
+  templateUrl: 'education.html',
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 export class EducationComponent implements OnInit {
 

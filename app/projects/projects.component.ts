@@ -3,10 +3,14 @@ import { Router } from '@angular/router';
 //projects
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
+//animations
+import { routeTrans } from '../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
-  templateUrl: 'projects.html'
+  templateUrl: 'projects.html',
+  animations: [routeTrans],
+  host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 
 export class ProjectsComponent implements OnInit {
