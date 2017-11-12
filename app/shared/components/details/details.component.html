@@ -12,6 +12,7 @@
         {{ tech.name }}
       </div>
     </div>
+    <!-- TODO add shields - breaks filters -->
     <div *ngIf="type === 'role' || type === 'diploma'" class="">
       <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
         {{ project.name }}

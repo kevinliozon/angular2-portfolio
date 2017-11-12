@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 
 export class PreviewComponent {
 
-  @Input() public focusedItem: any = null;
+  @Input() public focusedItem: any;
 
   constructor() {  }
 

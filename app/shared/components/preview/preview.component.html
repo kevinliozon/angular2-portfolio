@@ -1,4 +1,20 @@
-<div *ngIf="focusedItem?.id">
-  <h3>{{ focusedItem?.id }} says:</h3>
-  <p>I, {{ focusedItem?.name }}</p>
+<div class="content-preview" *ngIf="!!focusedItem">
+
+  <h3>{{ focusedItem.name | translate }}</h3>
+
+  <div *ngIf="focusedItem.company || focusedItem.school">
+    <h4>
+      <span>{{ "at" | translate }}</span>&nbsp;{{ focusedItem.company.name || focusedItem.school.name | translate }}
+    </h4>
+  </div>
+
+
+  <div *ngIf="focusedItem.project">
+    <h4>
+      <span>{{ "for" | translate }}</span>&nbsp;{{ focusedItem.project.name | translate }}
+    </h4>
+  </div>
+
+  <!-- TODO slice after 100 char -->
+  <p>{{ focusedItem.desc | translate }}</p>
 </div>

@@ -22,6 +22,8 @@ export const LANG_ENG_TRANS = {
     'skills': 'Skills',
     'git': 'Git Repo',
     'url': 'Link',
+    'at': 'at',
+    'for': 'for',
     /*** HOME ***/
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],

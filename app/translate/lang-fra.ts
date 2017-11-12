@@ -22,6 +22,8 @@ export const LANG_FRA_TRANS = {
     'skills': 'Compétences',
     'git': 'Dépôt Git',
     'url': 'Lien',
+    'at': 'à',
+    'for': 'pour',
     /*** HOME ***/
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],

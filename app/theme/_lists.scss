@@ -16,7 +16,8 @@ ol {
     }
 
     &.active {
-      background-color: $primary;
+      @extend %no-border;
+      background-color: $grey;
     }
   }
 }

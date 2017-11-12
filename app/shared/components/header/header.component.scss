@@ -31,9 +31,24 @@ header > .navbar {
 .nav {
   margin-right: $big-indent;
 
-  .nav-route > a {
-    height: 100%;
-    line-height: 37px;
+  .nav-route {
+
+    > a {
+      font-size: $font-small;
+      height: 100%;
+      line-height: 46px;
+      background: linear-gradient(to bottom, white 50%, $primary 50%);
+      background-size: 100% 200%;
+      transition: 0.5s ease;
+    }
+
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      background-position: 0 -100%;
+      color: $light;
+      font-weight: bold;
+    }
   }
 
   .nav-lang {
@@ -48,10 +63,10 @@ header > .navbar {
   }
 }
 
+
 // Title
 .page-header {
   background-color: $secondary;
-  color: $light;
   padding-left: $base-indent;
   padding-top: $header-height;
 }

@@ -13,6 +13,16 @@ $light: #fcfcfc;
  * Fonts
  */
 
+$font-nano: 1rem;
+$font-small: 1.2rem;
+$font-base: 1.6rem;
+$font-big: 1.8rem;
+$font-macro: 2.2rem;
+$font-mega: 2.6rem;
+$font-tera: 3rem;
+
+
+
 /**
  * [$header-height description]
  * @type {[type]}
@@ -33,6 +43,16 @@ $big-indent: 30px;
  * Mixins
  */
 
+@mixin special-font($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin highlight($bg-color, $font-color) {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
 @mixin square($value) {
   width: $value;
   height: $value;
@@ -46,6 +66,7 @@ $big-indent: 30px;
   left: $left;
 }
 
+// center vertically
 @mixin vertical-align($height) {
   height: $height;
   line-height: $height / 2;

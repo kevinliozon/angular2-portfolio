@@ -8,3 +8,20 @@
        url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
        url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+// Default browser font size is 10px
+html {
+
+  body {
+    color: $dark;
+    font-family: sans-serif, Georgia;
+    font-size: 62.5%; // 1em = 10px
+
+    main,
+    section,
+    article {
+      font-size: $font-base;
+    }
+  }
+}
+
