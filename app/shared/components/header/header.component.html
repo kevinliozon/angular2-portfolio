@@ -24,7 +24,7 @@
             <ul class="dropdown-menu">
               <!--languages-->
               <li *ngFor="let lang of supportedLanguages"
-                  (click)="selectLang(lang.value, lang.flag)" [class.btn-primary]="isCurrentLang(lang.value)">
+                  (click)="selectLang(lang.value, lang.flag)" [class.selected]="isCurrentLang(lang.value)">
                   <a>{{ lang.display }}</a>
               </li>
             </ul>

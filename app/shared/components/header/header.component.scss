@@ -34,12 +34,12 @@ header > .navbar {
   .nav-route {
 
     > a {
+      background: linear-gradient(to bottom, $light 50%, $primary 50%);
+      background-size: 100% 200%;
       font-size: $font-small;
       height: 100%;
       line-height: 46px;
-      background: linear-gradient(to bottom, white 50%, $primary 50%);
-      background-size: 100% 200%;
-      transition: 0.5s ease;
+      transition: 0.4s ease;
     }
 
     &.active > a,
@@ -52,14 +52,58 @@ header > .navbar {
   }
 
   .nav-lang {
-    > img {
-      @include square(14px);
-    }
+    width: 100px;
 
     > .dropdown-toggle {
       height: 100%;
       text-align: center;
     }
+
+    img {
+      height: 100%;
+      width: 20px;
+    }
+
+    .caret {
+      @extend %block-centred;
+    }
+
+    .dropdown-menu {
+      @extend %no-padding;
+      @extend %no-radius;
+      min-width: 0;
+      width: 100px;
+      text-align: center;
+      display: block;
+      transform-origin: 0% top 0; // for scaling from top to bottom
+      transition: 0.4s ease;
+      cursor: pointer;
+
+      li a {
+        padding: 15px 20px;
+      }
+
+      .selected {
+        background-color: $primary;
+        &:hover > a {
+          color: $dark;
+        }
+        a {
+          color: $light;
+        }
+      }
+    }
+
+    .dropdown-menu:not(.open) {
+      @include anim-dropdown(0);
+    }
+
+    &.open {
+      .dropdown-menu {
+        @include anim-dropdown(1);
+      }
+    }
+
   }
 }
 
