@@ -19,12 +19,13 @@ export class HeaderComponent implements OnInit {
   public currentFlag: string;
   public title: any;
   public menu: any = CONSTANTS.MENU.ENG;
+  public pageHasChanged = false;
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
               private location: Location) {  }
 
-  public ngOnInit() {
+  ngOnInit() {
     // standing data
     this.supportedLanguages = [
       { display: 'English', value: 'eng', flag: 'assets/img/svg/flags/uk.svg' },
@@ -83,6 +84,10 @@ export class HeaderComponent implements OnInit {
   public setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle); // dynamic tab title
     this.title = this.titleService.getTitle(); // dynamic header title
+
+    // animation flag
+    this.pageHasChanged = !this.pageHasChanged;
+    setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // duration
   }
 
 }

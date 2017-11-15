@@ -98,10 +98,8 @@ header > .navbar {
       @include anim-dropdown(0);
     }
 
-    &.open {
-      .dropdown-menu {
-        @include anim-dropdown(1);
-      }
+    &.open > .dropdown-menu {
+      @include anim-dropdown(1);
     }
 
   }
@@ -113,4 +111,13 @@ header > .navbar {
   background-color: $secondary;
   padding-left: $base-indent;
   padding-top: $header-height;
+
+  h1 {
+    text-indent: 0;
+    transition: 1s ease;
+  }
+
+  &.title-has-changed > h1 {
+    text-indent: -9999px;
+  }
 }
