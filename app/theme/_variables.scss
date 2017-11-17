@@ -58,6 +58,12 @@ $big-indent: 30px;
   height: $value;
 }
 
+@mixin round($value) {
+  border-radius: 50%;
+  width: $value;
+  height: $value;
+}
+
 @mixin position($type, $top, $right, $bottom, $left) {
   position: $type;
   top: $top;
@@ -79,8 +85,8 @@ $big-indent: 30px;
 
 @mixin triangle($dir, $color, $base, $height) {
   $tip: $height solid $color;
-  @include square(0);
-  position: absolute;
+
+  @include square($base);
   border: $base solid transparent;
   border-#{$dir}: none; // border concerned disappear
   @if $dir == 'top' {

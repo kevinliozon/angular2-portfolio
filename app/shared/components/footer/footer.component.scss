@@ -5,21 +5,45 @@ footer {
   .footer-social {
     display: flex;
     flex-wrap: wrap;
-    padding: $base-indent;
+    padding: $big-indent $base-indent;
 
     .icn-social {
-      margin: 0 auto;
-      padding: $base-indent;
+      @include round(90px);
+      background-color: $light;
+      box-shadow: 0 3px 3px;
+      cursor: pointer;
+      margin: 10px auto 0;
+      padding: 20px; // image size / 2
+      transition: all 0.4s ease;
+    }
+
+    .icn-social:hover {
+      margin-top: 5px;
+      box-shadow: 0 6px 6px;
+    }
+
+    img {
+      @extend %block-centred;
     }
   }
 
   .footer-copyright {
     color: $light;
-    padding-bottom: $big-indent;
+    font-size: $font-small;
+    padding: $big-indent 0;
     text-align: center;
 
     p {
       margin-bottom: $small-indent;
     }
   }
+
+  .triangle {
+    @include triangle('bottom', $light, 50px, 30px);
+    position: absolute;
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
+  }
+
 }

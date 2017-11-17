@@ -138,8 +138,15 @@ header > .navbar {
 
   .triangle {
     @include triangle('bottom', $secondary, 50px, 30px);
+    position: absolute;
     margin: 0 auto;
     left: 25%;
     right: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .nav-route > a {
+    font-size: $font-small;
   }
 }

@@ -33,3 +33,13 @@ html {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  html body {
+    main,
+    section,
+    article {
+      font-size: $font-small;
+    }
+  }
+}
+

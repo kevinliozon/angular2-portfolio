@@ -2,5 +2,5 @@ img {
   width: 10%;
 }
 .img-md {
-  width: $img-md;
+  @include square($img-md);
 }
