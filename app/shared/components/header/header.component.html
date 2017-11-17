@@ -1,16 +1,17 @@
 <header>
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <!-- Burger menu -->
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" [routerLink]="'home'" (click)="setTitle('Home')">
-          <img class="header-logo" src="assets/img/svg/perso/monogram.svg" alt="Kevin Liozon">
-          <span class="header-label">Kevin Liozon</span>
-        </a>
+        <h2 class="navbar-brand">
+          <a [routerLink]="'home'" (click)="setTitle('Home')">
+            <img class="header-logo" src="assets/img/svg/perso/monogram.svg" alt="Kevin Liozon">
+            <span class="header-label">Kevin Liozon</span>
+          </a>
+        </h2>
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
@@ -31,9 +32,9 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>
-  <div class="page-header" [class.title-has-changed]="pageHasChanged">
+  <section class="page-header" [class.title-has-changed]="pageHasChanged">
     <h1>{{ title }}</h1>
-  </div>
+    <div class="triangle"></div>
+  </section>
 </header>

@@ -19,7 +19,7 @@ $font-base: 1.6rem;
 $font-big: 1.8rem;
 $font-macro: 2.2rem;
 $font-mega: 2.6rem;
-$font-tera: 3rem;
+$font-tera: 3.2rem;
 
 
 
@@ -75,6 +75,23 @@ $big-indent: 30px;
 @mixin anim-dropdown($value) {
   transform: scaleY($value);
   opacity: $value;
+}
+
+@mixin triangle($dir, $color, $base, $height) {
+  $tip: $height solid $color;
+  @include square(0);
+  position: absolute;
+  border: $base solid transparent;
+  border-#{$dir}: none; // border concerned disappear
+  @if $dir == 'top' {
+    border-bottom: $tip;
+  } @else if $dir == 'bottom' {
+    border-top: $tip;
+  } @else if $dir == 'right' {
+    border-left: $tip;
+  } @else if $dir == 'left' {
+    border-right: $tip;
+  }
 }
 
 /**

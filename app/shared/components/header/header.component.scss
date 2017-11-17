@@ -12,17 +12,20 @@ header > .navbar {
 
 // Logo
 .navbar-brand {
-  .header-logo,
-  .header-label {
-    display: inline-block;
-    height: 100%;
+  @extend %no-margin;
+  @include special-font($font-big, $grey);
+
+  a {
+    text-decoration: none;
   }
 
   .header-logo {
     width: 50px;
+    height: 100%;
   }
 
   .header-label {
+    color: $grey;
     margin-left: $base-indent;
   }
 }
@@ -34,12 +37,13 @@ header > .navbar {
   .nav-route {
 
     > a {
+      @include special-font($font-base, $grey);
       background: linear-gradient(to bottom, $light 50%, $primary 50%);
       background-size: 100% 200%;
-      font-size: $font-small;
+      font-family: 'Roboto', sans-serif;
       height: 100%;
       line-height: 46px;
-      transition: 0.4s ease;
+      transition: 0.25s ease;
     }
 
     &.active > a,
@@ -105,19 +109,37 @@ header > .navbar {
   }
 }
 
+// Burger Menu
+.navbar .navbar-toggle {
+  border: none;
+  margin: 20px;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
 
 // Title
 .page-header {
   background-color: $secondary;
-  padding-left: $base-indent;
-  padding-top: $header-height;
+  padding: $header-height 0 0 $big-indent;
+  margin-bottom: 50px;
+  position: relative;
 
   h1 {
     text-indent: 0;
-    transition: 1s ease;
+    transition: 0.25s ease;
   }
 
   &.title-has-changed > h1 {
     text-indent: -9999px;
+  }
+
+  .triangle {
+    @include triangle('bottom', $secondary, 50px, 30px);
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
   }
 }
