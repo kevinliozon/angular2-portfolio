@@ -2,6 +2,11 @@
 header > .navbar {
   background-color: $light;
   box-shadow: 0 2px 10px $dark;
+
+  .navbar-collapse {
+    padding-right: 0; // remove in burger menu
+    max-height: 75%;
+  }
 }
 
 // Cell height
@@ -32,7 +37,7 @@ header > .navbar {
 
 // Menu
 .nav {
-  margin-right: $big-indent;
+  margin-right: 0;
 
   .nav-route {
 
@@ -54,65 +59,67 @@ header > .navbar {
       font-weight: bold;
     }
   }
+}
 
-  .nav-lang {
-    width: 100px;
+.nav-lang {
+  width: 100px;
 
-    > .dropdown-toggle {
-      height: 100%;
-      text-align: center;
-    }
-
-    img {
-      height: 100%;
-      width: 20px;
-    }
-
-    .caret {
-      @extend %block-centred;
-    }
-
-    .dropdown-menu {
-      @extend %no-padding;
-      @extend %no-radius;
-      min-width: 0;
-      width: 100px;
-      text-align: center;
-      display: block;
-      transform-origin: 0% top 0; // for scaling from top to bottom
-      transition: 0.4s ease;
-      cursor: pointer;
-
-      li a {
-        padding: 15px 20px;
-      }
-
-      .selected {
-        background-color: $primary;
-        &:hover > a {
-          color: $dark;
-        }
-        a {
-          color: $light;
-        }
-      }
-    }
-
-    .dropdown-menu:not(.open) {
-      @include anim-dropdown(0);
-    }
-
-    &.open > .dropdown-menu {
-      @include anim-dropdown(1);
-    }
-
+  > .dropdown-toggle {
+    height: 100%;
+    text-align: center;
   }
+
+  img {
+    height: 100%;
+    width: 20px;
+  }
+
+  .caret {
+    @extend %block-centred;
+  }
+
+  .dropdown-menu {
+    @extend %no-padding;
+    @extend %no-radius;
+    min-width: 0;
+    width: 100px;
+    text-align: center;
+    display: block;
+    transform-origin: 0% top 0; // for scaling from top to bottom
+    transition: 0.4s ease;
+    cursor: pointer;
+
+    li a {
+      padding: 15px 20px;
+    }
+
+    .selected {
+      background-color: $primary;
+      &:hover > a {
+        color: $dark;
+      }
+      a {
+        color: $light;
+      }
+    }
+  }
+
+  .dropdown-menu:not(.open) {
+    @include anim-dropdown(0);
+  }
+
+  &.open > .dropdown-menu {
+    @include anim-dropdown(1);
+  }
+
 }
 
 // Burger Menu
 .navbar .navbar-toggle {
   border: none;
   margin: 20px;
+  box-sizing: content-box;
+  height: 20px;
 
   &:hover {
     background-color: transparent;
@@ -148,5 +155,29 @@ header > .navbar {
 @media screen and (max-width: 1024px) {
   .nav .nav-route > a {
     font-size: $font-small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-top: 0;
+    .nav-route > a {
+      font-size: $font-base;
+      text-align: center;
+    }
+  }
+  .nav-lang {
+    width: auto;
+    img {
+      height: auto;
+    }
+    .caret {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 20px;
+    margin-left: -30px;
   }
 }

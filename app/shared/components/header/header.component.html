@@ -1,11 +1,29 @@
 <header>
+
   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+        <!-- Burger menu -->
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
-          <!-- Burger menu -->
           <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
+
+        <!-- Languages xs -->
+        <div class="dropdown nav-lang navbar-toggle visible-xs-block">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="{{ currentFlag }}" /><span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- Dropdown lang-->
+            <li *ngFor="let lang of supportedLanguages"
+                (click)="selectLang(lang.value, lang.flag)" [class.selected]="isCurrentLang(lang.value)">
+              <a>{{ lang.display }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Logo -->
         <h2 class="navbar-brand">
           <a [routerLink]="'home'" (click)="setTitle('Home')">
             <img class="header-logo" src="assets/img/svg/perso/monogram.svg" alt="Kevin Liozon">
@@ -15,26 +33,33 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
+
+          <!-- Nav -->
           <li class="nav-route" *ngFor="let tab of menu" routerLinkActive="active">
             <a [routerLink]="[tab.key]" (click)="setTitle(tab.value)">{{ tab.value }}</a>
           </li>
-          <li class="dropdown nav-lang">
+
+          <!-- Languages -->
+          <li class="dropdown nav-lang hidden-xs">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <img src="{{ currentFlag }}" /><span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <!--languages-->
+              <!-- Dropdown lang-->
               <li *ngFor="let lang of supportedLanguages"
                   (click)="selectLang(lang.value, lang.flag)" [class.selected]="isCurrentLang(lang.value)">
                   <a>{{ lang.display }}</a>
               </li>
             </ul>
           </li>
+
         </ul>
       </div>
   </nav>
+
   <section class="page-header" [class.title-has-changed]="pageHasChanged">
     <h1>{{ title }}</h1>
     <div class="triangle"></div>
   </section>
+
 </header>
