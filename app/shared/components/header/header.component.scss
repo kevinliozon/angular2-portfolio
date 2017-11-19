@@ -126,7 +126,6 @@ header > .navbar {
   }
 }
 
-
 // Title
 .page-header {
   background-color: $secondary;
@@ -145,10 +144,8 @@ header > .navbar {
 
   .triangle {
     @include triangle('bottom', $secondary, 50px, 30px);
-    position: absolute;
-    margin: 0 auto;
-    left: 25%;
-    right: 25%;
+    @extend %triangles-plugged;
+    bottom: -49px;
   }
 }
 

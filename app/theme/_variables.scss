@@ -125,3 +125,10 @@ $big-indent: 30px;
 %no-radius { border-radius: 0; }
 
 %no-border { border: 0; }
+
+%triangles-plugged {
+  position: absolute;
+  margin: 0 auto;
+  left: 25%;
+  right: 25%;
+}

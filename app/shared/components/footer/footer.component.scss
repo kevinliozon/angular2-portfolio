@@ -1,6 +1,7 @@
 footer {
   background-color: $primary;
   margin-top: 300px;
+  position: relative;
 
   .footer-social {
     display: flex;
@@ -40,10 +41,8 @@ footer {
 
   .triangle {
     @include triangle('bottom', $light, 50px, 30px);
-    position: absolute;
-    margin: 0 auto;
-    left: 25%;
-    right: 25%;
+    @extend %triangles-plugged;
+    top: -1px;
   }
 
 }

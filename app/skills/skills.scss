@@ -56,3 +56,18 @@
     transition: .4s;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container-toggle {
+    position: static;
+    margin: 40px auto;
+    .toggle, .label-toggle {
+      float: none;
+      display: block;
+    }
+    .label-toggle {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   public supportedLanguages: Array<any>;
   public currentFlag: string;
   public title: any;
-  public menu: any = CONSTANTS.MENU.ENG;
+  public menu = CONSTANTS.MENU.ENG;
   public pageHasChanged = false;
 
   constructor(private titleService: Title,
@@ -31,29 +31,47 @@ export class HeaderComponent implements OnInit {
       { display: 'English', value: 'eng', flag: 'assets/img/svg/flags/uk.svg' },
       { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
     ];
-    // set current langage
+    // set current language
     this.selectLang('eng', 'assets/img/svg/flags/uk.svg');
     this.setHeaderTitleOnRefresh();
   }
 
+  /**
+   * On refresh, retrieve the file's name and returns it with uppercase for first letter
+   * If name is 'about' it becomes 'About Me', if 'details' it returns 'Details'
+   */
   private setHeaderTitleOnRefresh() {
+    let path = this.location.path();
+
     // getTitle() is not handled properly
-    if (!this.location.path().includes('details')) {
-      let firstChar = this.location.path().substr(1).charAt(0).toUpperCase();
-      let strRemains = this.location.path().slice(2);
-      this.title = firstChar + strRemains;
+    if (!path.includes('details' && 'about')) {
+      let firstChar = path.substr(1).charAt(0).toUpperCase();
+      let strRemains = path.slice(2);
+
+      this.title = firstChar + strRemains || 'Home';
+    } else if (path.includes('about')) {
+        this.title = 'About Me';
     } else this.title = 'Details';
   }
 
-  public isCurrentLang(lang: string) {
-    // check if the selected lang is current lang
+  /**
+   * Check if the selected lang is current lang
+   * @param {string} lang
+   * @returns {boolean}
+   */
+  public isCurrentLang(lang: string): boolean {
     return lang === this._translate.currentLang;
   }
 
+  /**
+   * Select a lang and set its flag as default
+   * @param {string} lang
+   * @param {string} flag
+   */
   public selectLang(lang: string, flag: string) {
-    // select a lang and set its flag as default
     this._translate.use(lang);
     this.currentFlag = flag;
+
     // Translate menu and main title
     switch(lang) {
       case 'eng':
@@ -68,6 +86,7 @@ export class HeaderComponent implements OnInit {
           }
         }
         break;
+
       case 'fra':
         this.menu = CONSTANTS.MENU.FRA;
         for(let tabActiveMenu of CONSTANTS.MENU.ENG) {
@@ -81,11 +100,16 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  /**
+   * Update title in tab and in page header
+   * Specify the page has changed with a flag to trigger the transition
+   * @param {string} newTitle
+   */
   public setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle); // dynamic tab title
     this.title = this.titleService.getTitle(); // dynamic header title
 
-    // animation flag
+    // animation trigger
     this.pageHasChanged = !this.pageHasChanged;
     setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // duration
   }
