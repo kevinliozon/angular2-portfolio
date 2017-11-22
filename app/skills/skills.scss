@@ -71,3 +71,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container-toggle {
+    @include position(absolute, 0, 0, auto, auto);
+    margin: 0 auto;
+    .toggle, .label-toggle {
+      float: left;
+      display: inline-block;
+    }
+    .label-toggle {
+      width: 50%;
+    }
+  }
+}
