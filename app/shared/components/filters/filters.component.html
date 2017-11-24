@@ -28,21 +28,18 @@
     <div class="modal-dialog">
 
         <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Filters</h4>
-            </div>
-            <div *ngFor="let filter of filters; let i = index">
+        <section class="modal-content modal-filters">
+            <header class="modal-header" data-dismiss="modal">
+                <button type="button" class="close">&times;</button>
+                <h4 class="modal-title">Filter by category</h4>
+            </header>
+            <div class="modal-btn-group" *ngFor="let filter of filters; let i = index">
                 <button class="btn" (click)="onSelect(filter)" [class.selected]="isSelected(filters[i])">
                     {{ filter }}
                     <span *ngIf="filter === ''">All</span>
                 </button>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+        </section>
 
     </div>
 </div>
