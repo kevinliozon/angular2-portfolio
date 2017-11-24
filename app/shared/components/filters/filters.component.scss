@@ -1,37 +1,52 @@
 .container-filters {
   margin-bottom: $big-indent;
 
-  >.btn-group {
-    @extend %block-half-centred;
-    box-shadow: 0 6px 20px $grey;
-    min-width: 650px;
-  }
-
-  .btn-group {
-    box-shadow: $dark;
-
-    &:not(:last-child) {
-      border-right: 1px solid $light;
-    }
-  }
-
   .btn {
     @extend %no-radius;
     background-color: $grey;
     color: $light;
     transition: 0.4s;
+  }
 
-    &.selected, &:focus {
-      background-color: $primary;
-      transform: scaleY(1.1);
+  // Over xs
+  .filters-wrap {
+    @extend %block-half-centred;
+    box-shadow: 0 6px 20px $grey;
+    min-width: 650px;
+
+    // Animation
+    .btn {
+      &.selected, &:focus {
+        background-color: $primary;
+        transform: scaleY(1.1);
+      }
     }
   }
 
-  .glyphicon {
-    font-size: $font-mega;
+  .filters-group {
+    box-shadow: $dark;
+    // last filter has no border on its right
+    &:not(:last-child) {
+      border-right: 1px solid $light;
+    }
   }
 
-  .btn-modal {
+  // Below xs
+  .filters-wrap-alt {
     text-align: center;
+
+    .btn {
+      margin: 0 10px;
+    }
+
+    // Animation
+    .btn:hover {
+      background-color: $primary;
+      transform: scaleY(1.1);
+    }
+
+    .glyphicon {
+      font-size: $font-mega;
+    }
   }
 }

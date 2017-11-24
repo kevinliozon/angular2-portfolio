@@ -1,8 +1,8 @@
 <!-- Filter by category -->
 <section class="container-filters">
     <!-- If res over xs -->
-    <div class="btn-group btn-group-justified hidden-xs">
-        <div class="btn-group" *ngFor="let filter of filters; let i = index">
+    <div class="btn-group btn-group-justified filters-wrap hidden-xs">
+        <div class="btn-group filters-group" *ngFor="let filter of filters; let i = index">
             <!-- we need to double wrap btn-group for buttons -->
             <button class="btn" (click)="onSelect(filter)" [class.selected]="isSelected(filters[i])">
                 {{ filter }}
@@ -11,7 +11,7 @@
         </div>
     </div>
     <!-- If res below xs -->
-    <div class="btn-modal visible-xs-block">
+    <div class="filters-wrap-alt visible-xs-block">
         <!-- Reset -->
         <button type="button" class="btn btn-default" (click)="onSelect('')">
             <span class="glyphicon glyphicon-remove"></span>

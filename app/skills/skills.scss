@@ -1,10 +1,8 @@
 .container-toggle {
   @include position(absolute, 0, 0, auto, auto);
 
-  .label-toggle {
-    @include vertical-align(34px);
+  .toggle-label {
     float: left;
-    margin-left: $small-indent;
     width: 50%;
   }
 }
@@ -20,16 +18,16 @@
 }
 
 // Input
-.input-toggle {
+.toggle-input {
   display: none; // Hide default HTML checkbox
 
   &:checked {
 
-    + .btn-toggle {
+    + .toggle-btn {
       background-color: $primary;
     }
 
-    + .btn-toggle::before {;
+    + .toggle-btn::before {;
       -ms-transform: translateX(26px);
       -webkit-transform: translateX(26px);
       transform: translateX(26px);
@@ -40,7 +38,7 @@
 }
 
 // The slider
-.btn-toggle {
+.toggle-btn {
   @include position(absolute, 0, 0, 0, 0);
   background-color: $grey;
   cursor: pointer;
@@ -61,11 +59,11 @@
   .container-toggle {
     position: static;
     margin: 40px auto;
-    .toggle, .label-toggle {
+    .toggle, .toggle-label {
       float: none;
       display: block;
     }
-    .label-toggle {
+    .toggle-label {
       text-align: center;
       width: 100%;
     }
@@ -76,11 +74,11 @@
   .container-toggle {
     @include position(absolute, 0, 0, auto, auto);
     margin: 0 auto;
-    .toggle, .label-toggle {
+    .toggle, .toggle-label {
       float: left;
       display: inline-block;
     }
-    .label-toggle {
+    .toggle-label {
       width: 50%;
     }
   }

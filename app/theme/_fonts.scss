@@ -9,32 +9,39 @@
        url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
+// Google Fonts - Robot & Roboto Slab
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
 // Default browser font size is 10px
-html {
+body {
+  color: $dark;
+  font-family: 'Roboto Slab', serif;
+  font-size: 62.5%; // 1em = 10px
 
-  body {
-    color: $dark;
-    font-family: 'Roboto Slab', serif;
-    font-size: 62.5%; // 1em = 10px
-
-    @for $i from 1 through 6 {
-      h#{$i} {
-        font-family: 'Roboto', sans-serif;
-      }
+  // Titles
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-family: 'Roboto', sans-serif;
     }
+  }
 
-    main,
-    section,
-    article {
-      font-size: $font-base;
-    }
+  // Containers
+  main,
+  section,
+  article {
+    font-size: $font-base;
+  }
+
+  // Filters
+  .toggle-label,
+  .filters-group .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-small;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  html body {
+  body {
     main,
     section,
     article {
