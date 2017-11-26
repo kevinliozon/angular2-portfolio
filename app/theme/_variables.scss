@@ -132,3 +132,15 @@ $big-indent: 30px;
   left: 25%;
   right: 25%;
 }
+
+%btn-filter {
+  border-radius: 0;
+  background-color: $grey;
+  color: $light;
+  transition: 0.4s;
+}
+
+%btn-filter-anim {
+  background-color: $primary;
+  transform: scaleY(1.1);
+}

@@ -1,52 +1,70 @@
 .container-filters {
   margin-bottom: $big-indent;
+}
+
+// Over xs
+.wrap-filters {
+  @extend %block-half-centred;
+  box-shadow: 0 6px 20px $grey;
+  min-width: 650px;
 
   .btn {
-    @extend %no-radius;
-    background-color: $grey;
-    color: $light;
-    transition: 0.4s;
-  }
-
-  // Over xs
-  .filters-wrap {
-    @extend %block-half-centred;
-    box-shadow: 0 6px 20px $grey;
-    min-width: 650px;
+    @extend %btn-filter;
 
     // Animation
-    .btn {
-      &.selected, &:focus {
-        background-color: $primary;
-        transform: scaleY(1.1);
-      }
+    &.selected, &:focus {
+      @extend %btn-filter-anim;
     }
   }
+}
 
-  .filters-group {
-    box-shadow: $dark;
-    // last filter has no border on its right
-    &:not(:last-child) {
-      border-right: 1px solid $light;
-    }
+.btn-group--filters {
+  box-shadow: $dark;
+
+  // last filter has no border on its right
+  &:not(:last-child) {
+    border-right: 1px solid $light;
   }
 
-  // Below xs
-  .filters-wrap-alt {
-    text-align: center;
-
-    .btn {
-      margin: 0 10px;
-    }
+  .btn {
+    @extend %btn-filter;
 
     // Animation
-    .btn:hover {
-      background-color: $primary;
-      transform: scaleY(1.1);
+    &.selected, &:focus {
+      @extend %btn-filter-anim;
     }
+  }
+}
 
-    .glyphicon {
-      font-size: $font-mega;
+// Below xs
+.wrap-filters-alt {
+  text-align: center;
+
+  .btn {
+    @extend %btn-filter;
+    margin: 0 10px;
+
+    // Animation
+    &:hover {
+      @extend %btn-filter-anim;
+    }
+  }
+
+  .glyphicon {
+    font-size: $font-mega;
+  }
+}
+
+// Modal
+.modal-filters {
+  text-align: center;
+  margin-top: 50%;
+
+  .btn-group {
+    padding: 20px 0;
+
+    .btn {
+      font-size: $font-big;
     }
   }
 }
