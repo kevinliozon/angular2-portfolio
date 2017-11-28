@@ -10,8 +10,8 @@
 
     .icn-social {
       @include round(90px);
+      @include drop-shadow(false, 0px, 3px, 3px, $grey);
       background-color: $light;
-      box-shadow: 0 3px 3px;
       cursor: pointer;
       margin: 10px auto 0;
       padding: 20px; // image size / 2
@@ -19,8 +19,8 @@
     }
 
     .icn-social:hover {
+      @include drop-shadow(false, 0px, 6px, 6px, $grey);
       transform: translateY(-5px);
-      box-shadow: 0 6px 6px;
     }
 
     img {

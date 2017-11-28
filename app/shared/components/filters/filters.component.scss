@@ -5,7 +5,7 @@
 // Over xs
 .wrap-filters {
   @extend %block-half-centred;
-  box-shadow: 0 6px 20px $grey;
+  @include drop-shadow(false, 0px, 6px, 20px, $grey);
   min-width: 650px;
 
   .btn {
@@ -19,7 +19,7 @@
 }
 
 .btn-group--filters {
-  box-shadow: $dark;
+  box-shadow: $grey;
 
   // last filter has no border on its right
   &:not(:last-child) {

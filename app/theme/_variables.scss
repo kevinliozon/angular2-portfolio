@@ -100,6 +100,18 @@ $big-indent: 30px;
   }
 }
 
+@mixin drop-shadow($isInset, $hor, $ver, $blur, $color) {
+  @if $isInset == true {
+    -webkit-box-shadow: inset $hor $ver $blur $color;
+    -moz-box-shadow: inset $hor $ver $blur $color;
+    box-shadow: inset $hor $ver $blur $color;
+  } @else if $isInset == false {
+    -webkit-box-shadow: $hor $ver $blur $color;
+    -moz-box-shadow: $hor $ver $blur $color;
+    box-shadow: $hor $ver $blur $color;
+  }
+}
+
 /**
  * General
  */

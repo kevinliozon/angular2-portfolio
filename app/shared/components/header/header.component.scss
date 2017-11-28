@@ -1,7 +1,7 @@
 // Container
 .main-header > .navbar {
+  @include drop-shadow(false, 0px, 2px, 10px, $grey);
   background-color: $light;
-  box-shadow: 0 2px 10px $dark;
 
   .navbar-collapse {
     padding-right: 0; // remove in burger menu
