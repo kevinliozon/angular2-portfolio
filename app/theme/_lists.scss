@@ -6,9 +6,14 @@ ol {
 }
 
 .list-group {
+  height: 100%;
   margin-bottom: 0;
 
   .list-group-item {
+    @extend %no-border;
+    background-color: $grey;
+    color: $light;
+    padding: $base-indent;
 
     &:first-child,
     &:last-child {
@@ -16,8 +21,26 @@ ol {
     }
 
     &.active {
-      @extend %no-border;
-      background-color: $grey;
+      background-color: $light;
+      color: $grey;
     }
+  }
+}
+
+figure {
+  .icn-list {
+    @include round(50px);
+    padding: 12px; // image size / 2
+    @include drop-shadow(false, 0px, 3px, 3px, $grey);
+    background-color: $light;
+    img {
+      @include square($img-sm);
+    }
+  }
+}
+
+figcaption {
+  h3 {
+    margin-top: 0;
   }
 }

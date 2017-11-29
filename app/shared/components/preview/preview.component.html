@@ -6,6 +6,7 @@
     <h4>
       <span>{{ "at" | translate }}</span>&nbsp;{{ focusedItem.company.name || focusedItem.school.name | translate }}
     </h4>
+    <p>{{ focusedItem.dates.start | date : "MMM yyyy" }}</p>
   </div>
 
 

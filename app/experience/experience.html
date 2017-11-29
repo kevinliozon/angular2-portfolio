@@ -8,12 +8,19 @@
         <li class="list-group-item" *ngFor="let role of roles | filter:{ category: value }"
             (mouseover)="focusItem(role)" (click)="goTo(role)"
             [class.active]="this.focusedItem === role">
-            <img [src]="role.company.logo">
-            {{ role.id }} {{ role.name }} {{ role.dates.start | date : "MMM yyyy" }}
+            <figure class="row">
+              <div class="icn-list col-xs-4">
+                <img [src]="role.company.logo">
+              </div>
+              <figcaption class="col-xs-8">
+                <h3>{{ role.name }}</h3>
+                {{ role.company.name }}
+              </figcaption>
+            </figure>
         </li>
       </ul>
     </div>
-    <article class="col-xs-8 container-preview">
+    <article class="col-xs-8 container-preview hidden-xs">
       <my-preview [focusedItem]="focusedItem"></my-preview>
     </article>
   </section>
