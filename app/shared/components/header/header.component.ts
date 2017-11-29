@@ -23,7 +23,9 @@ export class HeaderComponent implements OnInit {
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
-              private location: Location) {  }
+              private location: Location) {
+      this.toggleMenuJq();
+  }
 
   ngOnInit() {
     // standing data
@@ -37,11 +39,22 @@ export class HeaderComponent implements OnInit {
   }
 
   /**
+   * Following jQuery for toggling burger menu
+   */
+  private toggleMenuJq() {
+    $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).collapse('hide');
+        }
+    });
+  }
+
+  /**
    * On refresh, retrieve the file's name and returns it with uppercase for first letter
    * If name is 'about' it becomes 'About Me', if 'details' it returns 'Details'
    */
   private setHeaderTitleOnRefresh() {
-    let path = this.location.path();
+    let path = <any>this.location.path();
 
     // getTitle() is not handled properly
     if (!path.includes('details' && 'about')) {

@@ -126,6 +126,27 @@
   }
 }
 
+.navbar-toggle {
+
+  // burger menu
+  .icon-bar {
+    transition: all 0.3s ease-in;
+  }
+
+  // anim burger menu
+  &:not(.collapsed) {
+    .icn-burger-top {
+      transform: rotate(45deg) translateY(5px);
+    }
+    .icn-burger-mid {
+      display: none;
+    }
+    .icn-burger-bot {
+      transform: rotate(-45deg) translateY(-4px);
+    }
+  }
+}
+
 // Title
 .page-header {
   background-color: $secondary;
