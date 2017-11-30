@@ -44,3 +44,9 @@ figcaption {
     margin-top: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .icn-list {
+    margin-bottom: 15px;
+  }
+}

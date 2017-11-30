@@ -115,20 +115,13 @@
 }
 
 // Burger Menu
-.navbar .navbar-toggle {
+
+.navbar-toggle {
   border: none;
   margin: 20px;
   box-sizing: content-box;
   height: 20px;
 
-  &:hover {
-    background-color: transparent;
-  }
-}
-
-.navbar-toggle {
-
-  // burger menu
   .icon-bar {
     transition: all 0.3s ease-in;
   }
@@ -145,6 +138,11 @@
       transform: rotate(-45deg) translateY(-4px);
     }
   }
+}
+
+// overwrite default highlight
+.navbar .navbar-toggle:hover {
+  background-color: transparent;
 }
 
 // Title

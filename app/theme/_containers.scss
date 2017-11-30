@@ -20,3 +20,24 @@ body {
     color: $grey;
   }
 }
+
+/* RESPONSIVE CENTERING */
+@media (max-width: 768px) {
+  .text-center-xs { text-align: center; }
+  .block-center-xs { margin: 0 auto; }
+}
+
+@media (min-width: 768px) {
+  .text-center-sm { text-align: center; }
+  .block-center-sm { margin: 0 auto; }
+}
+
+@media (min-width: 992px) {
+  .text-center-md { text-align: center; }
+  .block-center-md { margin: 0 auto; }
+}
+
+@media (min-width: 1200px) {
+  .text-center-lg { text-align: center; }
+  .block-center-lg { margin: 0 auto; }
+}
