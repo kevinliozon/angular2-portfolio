@@ -1,20 +1,24 @@
 <div class="content-preview" *ngIf="!!focusedItem">
 
+  <!-- NAME -->
   <h3>{{ focusedItem.name | translate }}</h3>
 
+  <!-- IF company or diploma -->
   <div *ngIf="focusedItem.company || focusedItem.school">
     <h4>
-      <span>{{ "at" | translate }}</span>&nbsp;{{ focusedItem.company.name || focusedItem.school.name | translate }}
+      <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
+      <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
+      <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
     </h4>
     <p>{{ focusedItem.dates.start | date : "MMM yyyy" }}</p>
   </div>
 
-
-  <div *ngIf="focusedItem.project">
-    <h4>
-      <span>{{ "for" | translate }}</span>&nbsp;{{ focusedItem.project.name | translate }}
-    </h4>
-  </div>
+  <!-- IF project or diploma -->
+  <h4 *ngIf="focusedItem.project || focusedItem.school">
+    <span class="content-prefix">{{ "for" | translate }}</span>&nbsp;
+    <span *ngIf="focusedItem.project">{{ focusedItem.project.name | translate }}</span>
+    <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
+  </h4>
 
   <!-- TODO slice after 100 char -->
   <p>{{ focusedItem.desc | translate }}</p>

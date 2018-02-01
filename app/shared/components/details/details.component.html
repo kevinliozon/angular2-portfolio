@@ -2,13 +2,13 @@
 
   <h2>DETAILS</h2>
   <main>
-    {{details.id}}
-    {{details.name | translate}}
-    {{details.category}}
+    {{ details.id }}
+    {{ details.name }}
+    {{ details.category }}
     {{ details.desc | translate }}
     <div *ngIf="type === 'project' || type === 'role'">
       <div class="" *ngFor="let tech of details.techs">
-        <img src="{{tech.logo}}" alt="tech.name" />
+        <img [src]="tech.logo" [alt]="tech.name" />
         {{ tech.name }}
       </div>
     </div>

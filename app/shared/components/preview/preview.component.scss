@@ -1,7 +1,7 @@
 .content-preview {
   width: 60%;
 
-  h4 span {
+  h4 > .content-prefix {
     font-size: $font-small;
   }
 }

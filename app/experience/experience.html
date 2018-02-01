@@ -8,9 +8,8 @@
         <li class="list-group-item row" *ngFor="let role of roles | filter:{ category: value }"
             (mouseover)="focusItem(role)" (click)="goTo(role)"
             [class.active]="this.focusedItem === role">
-            <figure class="col-xs-12">
-
-                <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0  col-md-3">
+            <figure>
+                <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0 col-md-3">
                     <div class="icn-list block-center-xs">
                       <img [src]="role.company.logo">
                     </div>

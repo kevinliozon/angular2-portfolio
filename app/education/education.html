@@ -1,19 +1,33 @@
 <div class="container-stretch" [@routeTrans]="'true'">
+
+  <!-- SWITCH -->
   <button (click)="selectedType='overview'">Overview</button>
   <button (click)="selectedType='codeschool'">Codeschool</button>
-  <div [ngSwitch]="selectedType">
-    <div *ngSwitchCase="'overview'">
+
+  <main class="row container-dual" [ngSwitch]="selectedType">
+
+    <!-- ACADEMIC -->
+    <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let diploma of diplomas"
+        <li class="list-group-item row" *ngFor="let diploma of diplomas"
             (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
             [class.active]="this.focusedItem === diploma ? true : false">
-            <img src="{{ diploma.images.thumb }}" alt="{{ diploma.name }}"/>
-            {{ diploma.name | translate }}
+          <figure>
+            <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0 col-md-3">
+              <div class="icn-list block-center-xs">
+                <img [src]="diploma.images.thumb" [alt]="diploma.name"/>
+              </div>
+            </div>
+            <figcaption class="text-center-xs col-xs-offset-2 col-xs-8 col-sm-offset-0 col-md-9">
+              <h3>{{ diploma.name }}</h3>
+            </figcaption>
+          </figure>
         </li>
       </ul>
-      <my-preview [focusedItem]="focusedItem"></my-preview>
     </div>
-    <div *ngSwitchCase="'codeschool'">
+
+    <!-- CERTIFS -->
+    <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'codeschool'">
       <profile-cs [profile]="csProfile"></profile-cs>
       <div class="row">
         <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
@@ -21,5 +35,12 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- PREVIEW -->
+    <article class="col-xs-8 container-preview hidden-xs">
+      <my-preview [focusedItem]="focusedItem"></my-preview>
+    </article>
+
+  </main>
+
 </div>
