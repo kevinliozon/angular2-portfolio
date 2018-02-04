@@ -21,6 +21,23 @@ body {
   }
 }
 
+.wrap-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrap-ellipsis-one-line {
+  @extend .wrap-ellipsis;
+  white-space: nowrap;
+}
+
+.wrap-ellipsis-two-lines {
+  @extend .wrap-ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 /* RESPONSIVE CENTERING */
 @media (max-width: 768px) {
   .text-center-xs { text-align: center; }

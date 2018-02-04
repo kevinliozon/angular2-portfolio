@@ -3,28 +3,28 @@
   <my-filters [page]="'experience'" (selectFilter)="filterFor($event)"></my-filters>
 
   <main class="row container-dual">
-    <div class="col-xs-12 col-sm-4 container-select">
+    <div class="col-xs-12 col-sm-4 container-select block-center-xs">
+
       <ul class="list-group">
-        <li class="list-group-item row" *ngFor="let role of roles | filter:{ category: value }"
+        <li class="list-group-item" *ngFor="let role of roles | filter:{ category: value }"
             (mouseover)="focusItem(role)" (click)="goTo(role)"
             [class.active]="this.focusedItem === role">
-            <figure>
-                <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0 col-md-3">
-                    <div class="icn-list block-center-xs">
-                      <img [src]="role.company.logo">
-                    </div>
-                </div>
-                <figcaption class="text-center-xs col-xs-offset-2 col-xs-8 col-sm-offset-0 col-md-9">
-                  <h3>{{ role.name }}</h3>
-                  {{ role.company.name }}
-                </figcaption>
-            </figure>
+
+            <label class="text-center-xs wrap-ellipsis-one-line">
+                <img class="list-icn block-center-xs" [src]="role.company.logo" [alt]="role.company.name"/>
+                <span class="list-label text-center-xs">
+                    {{ role.name }} - {{ role.company.name }}
+                </span>
+            </label>
+
         </li>
       </ul>
     </div>
+
     <article class="col-xs-8 container-preview hidden-xs">
       <my-preview [focusedItem]="focusedItem"></my-preview>
     </article>
+
   </main>
 
 </div>

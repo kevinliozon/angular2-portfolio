@@ -4,24 +4,22 @@
   <button (click)="selectedType='overview'">Overview</button>
   <button (click)="selectedType='codeschool'">Codeschool</button>
 
+
   <main class="row container-dual" [ngSwitch]="selectedType">
 
     <!-- ACADEMIC -->
     <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
       <ul class="list-group">
-        <li class="list-group-item row" *ngFor="let diploma of diplomas"
+
+        <li class="list-group-item" *ngFor="let diploma of diplomas"
             (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
             [class.active]="this.focusedItem === diploma ? true : false">
-          <figure>
-            <div class="col-xs-offset-4 col-xs-4 col-sm-offset-0 col-md-3">
-              <div class="icn-list block-center-xs">
-                <img [src]="diploma.images.thumb" [alt]="diploma.name"/>
-              </div>
-            </div>
-            <figcaption class="text-center-xs col-xs-offset-2 col-xs-8 col-sm-offset-0 col-md-9">
-              <h3>{{ diploma.name }}</h3>
-            </figcaption>
-          </figure>
+
+          <label class="text-center-xs wrap-ellipsis-one-line">
+            <img class="list-icn block-center-xs" [src]="diploma.images.thumb" [alt]="diploma.name"/>
+            <span class="list-label text-center-xs">{{ diploma.name }}</span>
+          </label>
+
         </li>
       </ul>
     </div>
@@ -35,6 +33,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- PREVIEW -->
     <article class="col-xs-8 container-preview hidden-xs">

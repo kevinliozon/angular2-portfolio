@@ -13,7 +13,7 @@ ol {
     @extend %no-border;
     background-color: $grey;
     color: $light;
-    padding: $base-indent;
+    padding: 10px;
 
     &:first-child,
     &:last-child {
@@ -27,8 +27,13 @@ ol {
   }
 }
 
-figure {
-  .icn-list {
+.list-group-item {
+
+  label {
+    display: block;
+  }
+
+  .list-icn {
     @include round(50px);
     padding: 12px; // image size / 2
     @include drop-shadow(false, 0px, 3px, 3px, $grey);
@@ -39,14 +44,18 @@ figure {
   }
 }
 
-figcaption {
-  h3 {
-    margin-top: 0;
+@media (max-width: 768px) {
+  .list-icn {
+    margin-bottom: 15px;
+  }
+  .list-label {
+    display: block;
   }
 }
 
-@media (max-width: 768px) {
-  .icn-list {
-    margin-bottom: 15px;
+@media (min-width: 768px) {
+  .list-label,
+  .list-icn {
+    margin-left: 20px;
   }
 }
