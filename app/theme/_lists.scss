@@ -10,11 +10,6 @@ ol {
   min-height: 400px; // Prevent footer overlapping preview description when not enough item
 
   .list-group-item {
-    @extend %no-border;
-    background-color: $grey;
-    color: $light;
-    padding: 15px;
-
     &:first-child,
     &:last-child {
       @extend %no-radius;
@@ -28,6 +23,10 @@ ol {
 }
 
 .list-group-item {
+  @extend %no-border;
+  background-color: $grey;
+  color: $light;
+  padding: 15px;
 
   label {
     display: block;
@@ -51,6 +50,9 @@ ol {
   }
   .list-label {
     display: block;
+  }
+  .list-group-item > label {
+    height: auto;
   }
 }
 
