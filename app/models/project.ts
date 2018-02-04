@@ -2,6 +2,7 @@ export class Project
 {
   id: string;
   name: string;
+  image: string;
   featured: boolean;
   active: boolean;
   category: string;

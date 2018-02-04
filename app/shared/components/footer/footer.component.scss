@@ -1,6 +1,5 @@
 .main-footer {
   background-color: $primary;
-  margin-top: 300px;
   position: relative;
 
   .footer-social {
@@ -10,7 +9,7 @@
 
     .icn-social {
       @include round(90px);
-      @include drop-shadow(false, 0px, 3px, 3px, $grey);
+      @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
       background-color: $light;
       cursor: pointer;
       margin: 10px auto 0;
@@ -19,7 +18,7 @@
     }
 
     .icn-social:hover {
-      @include drop-shadow(false, 0px, 6px, 6px, $grey);
+      @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
       transform: translateY(-5px);
     }
 
@@ -45,4 +44,12 @@
     top: -1px;
   }
 
+}
+
+.footer-backdrop {
+  @include drop-shadow(false, 0px, -10px, 30px, 0px, $light);
+  margin-top: 20px;
+  position: relative;
+  background: $light;
+  height: 50px;
 }

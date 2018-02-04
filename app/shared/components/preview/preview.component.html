@@ -4,14 +4,11 @@
   <h3>{{ focusedItem.name | translate }}</h3>
 
   <!-- IF company or diploma -->
-  <div *ngIf="focusedItem.company || focusedItem.school">
-    <h4>
-      <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
-      <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
-      <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
-    </h4>
-    <p>{{ focusedItem.dates.start | date : "MMM yyyy" }}</p>
-  </div>
+  <h4 *ngIf="focusedItem.company || focusedItem.school">
+    <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
+    <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
+    <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
+  </h4>
 
   <!-- IF project or diploma -->
   <h4 *ngIf="focusedItem.project || focusedItem.school">
@@ -20,6 +17,10 @@
     <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
   </h4>
 
-  <!-- TODO slice after 100 char -->
-  <p>{{ focusedItem.desc | translate }}</p>
+  <!-- DATE -->
+  <p>{{ focusedItem.dates.start | date : "MMM yyyy" }}</p>
+
+  <!-- DESC -->
+  <p>{{ focusedItem.desc | translate | slice:0:200 }}...</p>
+
 </div>

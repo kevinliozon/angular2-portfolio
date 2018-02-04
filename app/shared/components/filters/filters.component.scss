@@ -5,7 +5,7 @@
 // Over xs
 .wrap-filters {
   @extend %block-half-centred;
-  @include drop-shadow(false, 0px, 6px, 20px, $grey);
+  @include drop-shadow(false, 0px, 6px, 20px, 0px, $grey);
   min-width: 650px;
 
   .btn {

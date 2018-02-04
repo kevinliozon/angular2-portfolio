@@ -3,6 +3,7 @@ import { Project } from '../../models/project';
 export let PROJECTS: Project[] = [{
   'id': '#project13',
   'name': 'This Portfolio',
+  'image': '../../../assets/img/svg/projects/portfoliov3.svg',
   'featured': true,
   'active': true,
   'category': 'Portfolio',
@@ -42,6 +43,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project12',
   'name': 'Douglas & Gordon',
+  'image': '../../../assets/img/svg/projects/dng.svg',
   'featured': true,
   'active': false,
   'category': 'Mobile App',
@@ -97,6 +99,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project11',
   'name': 'Lloyds Bank - Connect & Protect',
+  'image': '../../../assets/img/svg/projects/lloyds.svg',
   'featured': true,
   'active': false,
   'category': 'Mobile App',
@@ -164,6 +167,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project10',
   'name': 'Doxy.me',
+  'image': '../../../assets/img/svg/companies/doxyme.svg',
   'featured': false,
   'active': false,
   'category': 'Mobile App',
@@ -207,6 +211,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project9',
   'name': 'My Mini Factory',
+  'image': '../../../assets/img/svg/companies/mmf.svg',
   'featured': true,
   'active': true,
   'category': 'Web App',
@@ -258,6 +263,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project8',
   'name': 'iMakr',
+  'image': '../../../assets/img/svg/companies/imakr.svg',
   'featured': true,
   'active': true,
   'category': 'Web App',
@@ -309,6 +315,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project7',
   'name': 'Portfolio V2',
+  'image': '../../../assets/img/svg/projects/portfoliov2.svg',
   'featured': false,
   'active': true,
   'category': 'Portfolio',
@@ -346,12 +353,13 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': null,
+  'url': 'https://kevinliozon.com/portfoliov2',
   'github': null
 },
 {
   'id': '#project6',
   'name': 'C2I Réseaux',
+  'image': '../../../assets/img/svg/education/ubfc.svg',
   'featured': false,
   'active': true,
   'category': 'Web App',
@@ -384,12 +392,13 @@ export let PROJECTS: Project[] = [{
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
-  'url': null,
+  'url': 'https://kevinliozon.com/c2i_reseau',
   'github': null
 },
 {
   'id': '#project5',
   'name': 'E-Ukiyo',
+  'image': '../../../assets/img/svg/projects/eukiyo.svg',
   'featured': false,
   'active': true,
   'category': 'Web App',
@@ -419,12 +428,13 @@ export let PROJECTS: Project[] = [{
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
-  'url': null,
+  'url': 'https://kevinliozon.com/e-ukiyo',
   'github': null
 },
 {
   'id': '#project4',
   'name': 'HCE',
+  'image': '../../../assets/img/png/projects/hce.png',
   'featured': false,
   'active': false,
   'category': 'Web App',
@@ -461,12 +471,13 @@ export let PROJECTS: Project[] = [{
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
-  'url': 'link',
+  'url': 'http://reseau-beaute.com/',
   'github': null
 },
 {
   'id': '#project3',
   'name': 'APAGS',
+  'image': '../../../assets/img/svg/projects/apags.svg',
   'featured': false,
   'active': false,
   'category': 'Web App',
@@ -509,6 +520,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project2',
   'name': 'Digitela',
+  'image': '../../../assets/img/svg/companies/digitela.svg',
   'featured': false,
   'active': true,
   'category': 'Web App',
@@ -552,6 +564,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project1',
   'name': 'Portfolio V1',
+  'image': '../../../assets/img/svg/projects/portfoliov1.svg',
   'featured': false,
   'active': true,
   'category': 'Portfolio',
@@ -581,6 +594,6 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': null,
+  'url': 'https://kevinliozon.com/portfoliov1',
   'github': null
 }];

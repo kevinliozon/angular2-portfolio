@@ -100,15 +100,15 @@ $big-indent: 30px;
   }
 }
 
-@mixin drop-shadow($isInset, $hor, $ver, $blur, $color) {
+@mixin drop-shadow($isInset, $hor, $ver, $blur, $spread, $color) {
   @if $isInset == true {
-    -webkit-box-shadow: inset $hor $ver $blur $color;
-    -moz-box-shadow: inset $hor $ver $blur $color;
-    box-shadow: inset $hor $ver $blur $color;
+    -webkit-box-shadow: inset $hor $ver $blur $spread $color;
+    -moz-box-shadow: inset $hor $ver $blur $spread $color;
+    box-shadow: inset $hor $ver $blur $spread $color;
   } @else if $isInset == false {
-    -webkit-box-shadow: $hor $ver $blur $color;
-    -moz-box-shadow: $hor $ver $blur $color;
-    box-shadow: $hor $ver $blur $color;
+    -webkit-box-shadow: $hor $ver $blur $spread $color;
+    -moz-box-shadow: $hor $ver $blur $spread $color;
+    box-shadow: $hor $ver $blur $spread $color;
   }
 }
 
