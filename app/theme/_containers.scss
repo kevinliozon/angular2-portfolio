@@ -2,6 +2,11 @@ body {
   background-color: $light;
 }
 
+.wrap-center {
+  @extend .container;
+  margin: auto;
+}
+
 .container-stretch {
   @extend %no-padding;
   position: relative;

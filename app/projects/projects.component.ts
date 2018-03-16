@@ -23,13 +23,22 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
+    this.focusedItem = this.projects[0]; // 1st item is selected on load
   }
 
+  /**
+   * Detect hovered item
+   * @param itemHovered
+   */
   public focusItem(itemHovered: any) {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
 
+  /**
+   * Navigate to selected item
+   * @param project
+   */
   public goTo(project) {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: project.id, type: 'project'}]);

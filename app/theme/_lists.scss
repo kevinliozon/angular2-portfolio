@@ -22,6 +22,11 @@ ol {
   }
 }
 
+.list-group-item,
+.list-group-item * {
+  cursor: pointer;
+}
+
 .list-group-item {
   @extend %no-border;
   background-color: $grey;

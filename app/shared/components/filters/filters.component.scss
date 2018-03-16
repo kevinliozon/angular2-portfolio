@@ -3,10 +3,10 @@
 }
 
 // Over xs
-.wrap-filters {
+.wrap-filters,
+.wrap-switch {
   @extend %block-half-centred;
   @include drop-shadow(false, 0px, 6px, 20px, 0px, $grey);
-  min-width: 650px;
 
   .btn {
     @extend %btn-filter;
@@ -16,6 +16,10 @@
       @extend %btn-filter-anim;
     }
   }
+}
+
+.wrap-filters {
+  min-width: 650px;
 }
 
 .btn-group--filters {

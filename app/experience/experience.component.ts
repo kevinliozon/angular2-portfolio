@@ -22,13 +22,22 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit() {
     this.roles = this.roleService.getRoles();
+    this.focusedItem = this.roles[0]; // 1st item is selected on load
   }
 
+  /**
+   * Detect hovered item
+   * @param itemHovered
+   */
   public focusItem(itemHovered: any) {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
 
+  /**
+   * Navigate to selected item
+   * @param role
+   */
   public goTo(role) {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: role.id, type: 'role'}]);

@@ -21,7 +21,7 @@ export class EducationComponent implements OnInit {
   public diplomas: Diploma[];
   public csCertifs: CodeSchoolCertif[];
   public csProfile: CodeSchoolProfile;
-  public selectedType = 'overview';
+  public category = 'overview';
   public focusedItem: any;
 
   constructor(private router: Router,
@@ -29,7 +29,13 @@ export class EducationComponent implements OnInit {
               private codeschoolService: CodeschoolService) { }
 
   ngOnInit() {
+
+    // Diplomas
     this.diplomas = this.diplomaService.getDiplomas();
+    this.focusedItem = this.diplomas[0]; // 1st item is selected on load
+    this.category = 'overview';
+
+    // Certifs
     this.codeschoolService.getCodeschoolProfile()
     .subscribe(data => {
       this.csCertifs = data.courses.completed,
@@ -39,14 +45,31 @@ export class EducationComponent implements OnInit {
     () => { });
   }
 
+  /**
+   * Detect hovered item
+   * @param itemHovered
+   */
   public focusItem(itemHovered: any) {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
 
+  /**
+   * Navigate to selected item
+   * @param diploma
+   */
   public goTo(diploma) {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: diploma.id, type: 'diploma'}]);
+  }
+
+  /**
+   * Check if this category is the selected one to highlight it
+   * @param categoryActive
+   * @returns {boolean}
+   */
+  public isSelected(categoryActive) {
+      return categoryActive === this.category;
   }
 
 }

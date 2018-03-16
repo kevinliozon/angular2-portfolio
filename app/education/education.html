@@ -1,11 +1,19 @@
 <div class="container-stretch" [@routeTrans]="'true'">
 
-  <!-- SWITCH -->
-  <button (click)="selectedType='overview'">Overview</button>
-  <button (click)="selectedType='codeschool'">Codeschool</button>
+  <!-- Filter by category -->
+  <section class="container-filters">
+    <!-- If res over xs -->
+    <div class="btn-group btn-group-justified wrap-switch">
+      <div class="btn-group btn-group--filters">
+        <button class="btn" (click)="category = 'overview'" [class.selected]="isSelected('overview')">Overview</button>
+      </div>
+      <div class="btn-group btn-group--filters">
+        <button class="btn" (click)="category = 'codeschool'" [class.selected]="isSelected('codeschool')">Codeschool</button>
+      </div>
+    </div>
+  </section>
 
-
-  <main class="row container-dual" [ngSwitch]="selectedType">
+  <main class="row container-dual" [ngSwitch]="category">
 
     <!-- ACADEMIC -->
     <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
@@ -25,18 +33,16 @@
     </div>
 
     <!-- CERTIFS -->
-    <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'codeschool'">
+    <div class="col-xs-12 container-select" *ngSwitchCase="'codeschool'">
       <profile-cs [profile]="csProfile"></profile-cs>
-      <div class="row">
-        <div class="col-sm-6 col-md-4" *ngFor="let certif of csCertifs">
-          <my-card [object]="certif"></my-card>
-        </div>
+      <div class="row wrap-center">
+        <my-card class="col-xs-6 col-md-4" *ngFor="let certif of csCertifs" [object]="certif"></my-card>
       </div>
     </div>
 
 
     <!-- PREVIEW -->
-    <article class="col-xs-8 container-preview hidden-xs">
+    <article class="col-xs-8 container-preview hidden-xs" *ngIf="category === 'overview'">
       <my-preview [focusedItem]="focusedItem"></my-preview>
     </article>
 
