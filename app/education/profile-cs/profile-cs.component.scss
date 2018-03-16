@@ -3,5 +3,10 @@
   height: 200px;
   margin: auto auto 30px;
   min-width: 300px;
-  width: 31%;
+  width: 50%;
+
+  .card-image > img {
+    @include position(absolute, 25%, auto, auto, 25%);
+    margin: 0;
+  }
 }
