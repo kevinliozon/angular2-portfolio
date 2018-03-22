@@ -70,15 +70,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  // Return line for toggle
   .container-toggle {
-    @include position(absolute, 0, 0, auto, auto);
-    margin: 0 auto;
-    .toggle, .toggle-label {
-      float: left;
-      display: inline-block;
-    }
-    .toggle-label {
-      width: 50%;
-    }
+    display: block;
+    position: relative;
+    width: 80px;
   }
 }

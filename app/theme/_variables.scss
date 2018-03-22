@@ -7,6 +7,7 @@ $secondary: #6699cc;
 $alt: #62b2b0;
 $dark: #303030;
 $grey: #707070;
+$light-grey: #f0f0f0;
 $light: #fcfcfc;
 
 /**
@@ -36,9 +37,11 @@ $img-big: 75px;
  */
 
 $header-height: 75px;
+$card-height: 150px;
 $small-indent: 5px;
 $base-indent: 15px;
 $big-indent: 30px;
+$padding-sm: 10px;
 
 /**
  * Mixins

@@ -1,14 +1,61 @@
 .card-reg {
-    height: 150px;
+    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+    background: linear-gradient(to right, $dark 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 0;
+    border-radius: 0;
+    height: $card-height;
+    transform-origin: left 0% 0; // for scaling from top to bottom
+    transition: 0.15s ease;
+
+    &:hover,
+    &:focus {
+        background-position: left bottom;
+
+        * {
+            color: $light;
+        }
+
+        .card-link {
+
+            a {
+                color: $light;
+            }
+
+            span {
+                display: inline;
+            }
+        }
+    }
 
     .card-image,
     .card-info {
         height: 100%;
         padding: 0 20px;
+    }
 
-        img {
-            @include square($img-big);
-            margin-top: calc(#{$img-big} / 2);
+    .card-info {
+        h3 {
+            font-size: $font-big;
+            margin-top: $padding-sm;
+        }
+
+        p {
+            font-size: $font-small;
+        }
+    }
+
+    .card-link {
+        @include position(absolute, auto, 20px, $small-indent, auto);
+
+        a {
+            color: $dark;
+            text-decoration: none;
+        }
+
+        span {
+            display: none;
         }
     }
 }
