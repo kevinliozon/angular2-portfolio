@@ -1,14 +1,14 @@
-.card {
-    padding: 0;
+.card-reg {
     height: 150px;
 
     .card-image,
     .card-info {
         height: 100%;
+        padding: 0 20px;
 
         img {
+            @include square($img-big);
             margin-top: calc(#{$img-big} / 2);
-            width: $img-big;
         }
     }
 }

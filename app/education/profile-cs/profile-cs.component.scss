@@ -1,9 +1,9 @@
 .card-profile {
-  @extend .card;
+  @extend .card-reg;
   height: 200px;
   margin: auto auto 30px;
   min-width: 300px;
-  width: 50%;
+  width: 33%;
 
   .card-image > img {
     @include position(absolute, 25%, auto, auto, 25%);

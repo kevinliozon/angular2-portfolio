@@ -1,10 +1,17 @@
-<div class="thumbnail">
-  <img src="{{ object.image || object.badge }}" alt="{{ object.name || object.title }}">
-  <div class="caption">
-    <h3>{{ object.name || object.title | translate }}</h3>
-    <p *ngIf="object.desc">{{ object.desc }}</p>
-    <p *ngIf="object.url !== null">
-      <a href="{{ object.url }}" target="_blank" class="btn btn-primary" role="button">More info</a>
-    </p>
+<section class="card-reg thumbnail">
+  <div class="row">
+    <div class="card-image col-xs-4">
+      <img [src]="object.image || object.badge" alt="{{ object.name || object.title }}">
+    </div>
+    <div class="card-info col-xs-8">
+      <div class="caption">
+        <h3>{{ object.name || object.title | translate }}</h3>
+        <p *ngIf="object.desc">{{ object.desc }}</p>
+        <p *ngIf="object.url !== null">
+          <a href="{{ object.url }}" target="_blank" class="btn btn-primary" role="button">More info</a>
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
