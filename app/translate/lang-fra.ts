@@ -1,4 +1,6 @@
 export const LANG_FRA_NAME = 'fra';
+
+
 const titles = {
   'homePage': [
     'J\'ai travaillé pour eux',
@@ -16,6 +18,8 @@ const titles = {
     'Mes hobbies'
   ]
 }
+
+
 export const LANG_FRA_TRANS = {
     /*** COMMON ***/
     'more': 'Détails',
@@ -24,6 +28,8 @@ export const LANG_FRA_TRANS = {
     'url': 'Lien',
     'at': 'à',
     'for': 'pour',
+
+
     /*** HOME ***/
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
@@ -32,6 +38,8 @@ export const LANG_FRA_TRANS = {
                   En tant que dévelopeur les technologies Angular et Ionic sont ma
                   spécialité. En tant que designer, le Design d'interaction (IxD)
                   est mon domaine de prédilection.`,
+
+
     /*** ABOUT ME ***/
     // Titles
     'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],
@@ -59,6 +67,8 @@ export const LANG_FRA_TRANS = {
                   le Design d'Interaction (IxD). Parce qu'il me semble évident, en tant
                   que dévelopeur, de tester la viabilité des interaction en premier,
                   au travers de prototypes, avant d'implémenter quoique ce soit.`,
+
+
     /*** PROJECTS ***/
     // Descs
     '#projectDescHce': `Site vitrine réalisé sous WordPress pour une association de
@@ -112,13 +122,23 @@ export const LANG_FRA_TRANS = {
                         du nouveau SIH DxCare. Cela aura été ma première prise de conscience
                         à propos du dégré d'impact que peut avoir l'UX sur la
                         productivité d'une équipe.`,
+
+
     /*** HOBBIES ***/
     // Names
     '#hobbyModding': `Modding`,
     '#hobbyScuba': `Plongée`,
-    '#hobbyHistLit': `Histoire & Litterature`,
+    '#hobbyCulture': `Histoire & Litterature`,
     '#hobbyWindsurf': `Planche à Voile`,
     '#hobbyHockey': `Hockey sur glace`,
+    // Descs
+    '#hobbyDescModding': `Premiers pas en tant que dev en créant des scripts grâce aux toolsets`,
+    '#hobbyDescScuba': `Pratique depuis longtemps. Mes plongées favorites ont eu lieu à Malte.`,
+    '#hobbyDescCulture': `Connaître le passé et le présent aide à entrependre le futur.`,
+    '#hobbyDescWindsurf': `Plutôt difficile à pratiquer sur Londres...`,
+    '#hobbyDescHockey': `Suis la NHL depuis mon enfance. Fan des Red Wings malgré qu'ils ne soient plus ce qu'ils étaient.`,
+
+
     /*** DIPLOMAS ***/
     // Names
     '#diplomaNng': `Certification UX NNG`,

@@ -1,5 +1,5 @@
 .card-reg {
-    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+    @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
     background: linear-gradient(to right, $dark 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -8,6 +8,7 @@
     height: $card-height;
     transform-origin: left 0% 0; // for scaling from top to bottom
     transition: 0.15s ease;
+    position: relative;
 
     &:hover,
     &:focus {
@@ -33,6 +34,12 @@
     .card-info {
         height: 100%;
         padding: 0 20px;
+    }
+
+    .card-image {
+        .img-round {
+            @include position(absolute, 25%, auto, 25%, auto);
+        }
     }
 
     .card-info {

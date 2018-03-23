@@ -1,18 +1,22 @@
-<div class="container-fluid" [@routeTrans]="'true'">
+<div class="container" [@routeTrans]="'true'">
+
   <main id="about-start">
     <h2>{{ 'aboutTitle0' | translate }}</h2>
     <p>{{ 'aboutText0' | translate }}</p>
   </main>
+
   <section id="about-fed">
     <h2>{{ 'aboutTitle1' | translate }}</h2>
     <p>{{ 'aboutText1' | translate }}</p>
     <a href="about#about-archi">{{ 'skills' | translate }}</a>
   </section>
+
   <section id="about-ux">
     <h2>{{ 'aboutTitle2' | translate }}</h2>
     <p>{{ 'aboutText2' | translate }}</p>
     <a href="about#about-archi">{{ 'skills' | translate }}</a>
   </section>
+
   <section id="about-achiev">
     <h2>{{ 'aboutTitle3' | translate }}</h2>
     <ul>
@@ -22,6 +26,7 @@
     </ul>
     <a href="about#about-archi">{{ 'skills' | translate }}</a>
   </section>
+
   <section id="about-place">
     <h2>{{ 'aboutTitle4' | translate }}</h2>
     <address>
@@ -32,20 +37,24 @@
       <p>{{details.country}}</p>
     </address>
   </section>
+
   <section id="about-tools">
     <h2>{{ 'aboutTitle5' | translate }}</h2>
     <div class="row">
-      <div class="col-sm-6 col-md-4"  *ngFor="let tool of tools">
-        <my-card [object]="tool" *ngIf="tool.featured"></my-card>
-      </div>
+      <my-card
+        class="col-xs-12 col-sm-4 col-md-3"
+        *ngFor="let tool of tools"
+        [hidden]="!tool.featured"
+        [object]="tool">
+      </my-card>
     </div>
   </section>
+
   <section id="about-hobbies">
     <h2>{{ 'aboutTitle6' | translate }}</h2>
     <div class="row">
-      <div class="col-sm-6 col-md-4" *ngFor="let hobby of hobbies">
-        <my-card [object]="hobby"></my-card>
-      </div>
+      <my-card class="col-xs-12 col-sm-4 col-md-3" *ngFor="let hobby of hobbies" [object]="hobby"></my-card>
     </div>
   </section>
+
 </div>

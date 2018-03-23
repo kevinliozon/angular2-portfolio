@@ -8,15 +8,17 @@
           <input class="toggle-input" type="checkbox" (change)="!!frequency ? frequency = false : frequency = true">
           <span class="toggle-btn"></span>
         </label>
-        <span class="toggle-label">Favorites</span>
+        <span class="toggle-label">Regularly</span>
     </div>
 
     <!-- RESULT -->
     <main class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-3" *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }">
-            <my-card [object]="skill"></my-card>
-          </div>
+            <my-card
+                class="col-xs-12 col-sm-4 col-md-3"
+                *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }"
+                [object]="skill">
+            </my-card>
         </div>
     </main>
 

@@ -5,29 +5,34 @@ export let HOBBIES: Hobby[] = [{
   'id': '#hobby5',
   'name': '#hobbyModding',
   'image': '../../../assets/img/svg/hobbies/nexus.svg',
+  'desc': '#hobbyDescModding',
   'url': '#'
 },
 {
   'id': '#hobby4',
   'name': '#hobbyScuba',
   'image': '../../../assets/img/svg/hobbies/scubadiving.svg',
+  'desc': '#hobbyDescScuba',
   'url': null
 },
 {
   'id': '#hobby3',
-  'name': '#hobbyHistLit',
+  'name': '#hobbyCulture',
   'image': '../../../assets/img/svg/hobbies/history.svg',
+  'desc': '#hobbyDescCulture',
   'url': null
 },
 {
   'id': '#hobby2',
   'name': '#hobbyWindsurf',
   'image': '../../../assets/img/svg/hobbies/windsurf.svg',
+  'desc': '#hobbyDescWindsurf',
   'url': null
 },
 {
   'id': '#hobby1',
   'name': '#hobbyHockey',
   'image': '../../../assets/img/svg/hobbies/hockey.svg',
+  'desc': '#hobbyDescHockey',
   'url': null
 }];

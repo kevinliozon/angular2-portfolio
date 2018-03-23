@@ -10,7 +10,6 @@ img {
 .img-round {
   @include round($img-big);
   @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
-  margin-top: calc(#{$img-big} / 2);
   background-color: $light;
   padding: calc(#{$img-md} / 4);
 

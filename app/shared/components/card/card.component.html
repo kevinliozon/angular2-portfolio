@@ -1,6 +1,6 @@
-<section class="card-reg thumbnail">
-  <div class="row">
+<article class="card-reg thumbnail">
 
+  <div class="row">
 
     <div class="card-image col-xs-4">
       <div class="img-round">
@@ -14,7 +14,7 @@
 
         <h3>{{ object.name || object.title | translate }}</h3>
 
-        <p *ngIf="object.desc">{{ object.desc }}</p>
+        <p *ngIf="object.desc">{{ object.desc | translate }}</p>
 
         <div class="card-link" *ngIf="object.url !== null">
           <a href="{{ object.url }}" target="_blank" role="button">
@@ -26,6 +26,6 @@
       </div>
     </div>
 
-
   </div>
-</section>
+
+</article>

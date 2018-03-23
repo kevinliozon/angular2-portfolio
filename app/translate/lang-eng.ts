@@ -1,4 +1,5 @@
 export const LANG_ENG_NAME = 'eng';
+
 const titles = {
   'homePage': [
     'I have worked for them',
@@ -16,6 +17,7 @@ const titles = {
     'My hobbies'
   ]
 }
+
 export const LANG_ENG_TRANS = {
     /*** COMMON ***/
     'more': 'More',
@@ -24,6 +26,8 @@ export const LANG_ENG_TRANS = {
     'url': 'Link',
     'at': 'at',
     'for': 'for',
+
+
     /*** HOME ***/
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
@@ -31,6 +35,8 @@ export const LANG_ENG_TRANS = {
     'homeText0': `Hi! My name is Kevin, Front-End Developer & UX Designer.
                   As a developer Angular and Ionic technologies are my speciality.
                   While as a designer, it would be the field of Interaction Design (IxD).`,
+
+
     /*** ABOUT ME ***/
     // Titles
     'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],
@@ -57,6 +63,8 @@ export const LANG_ENG_TRANS = {
                   My favorite field is definitely Interaction Design (IxD).
                   Because it makes sense, as a developer, to test the viability of
                   the interactions first, through prototypes, before implementing anything.`,
+
+
     /*** PROJECTS ***/
     // Descs
     '#projectDescHce': `Showcase WordPress website for a consortium of southern
@@ -104,13 +112,23 @@ export const LANG_ENG_TRANS = {
                         Montpellier (France), during the deployment of the new HIS
                         software DxCare. It has been one of my first awareness about how
                         user experience could have an impact on the workflow of a team.`,
+
+
     /*** HOBBIES ***/
     // Names
     '#hobbyModding': `Modding`,
     '#hobbyScuba': `Scuba-Diving`,
-    '#hobbyHistLit': `History & Literature`,
+    '#hobbyCulture': `Cultural Stuffs`,
     '#hobbyWindsurf': `Windsurf`,
     '#hobbyHockey': `Ice Hockey`,
+    // Descs
+    '#hobbyDescModding': `First steps as a dev by creating event scripts via toolsets.`,
+    '#hobbyDescScuba': `Practicing for a long time. My favorite spot has been Malta.`,
+    '#hobbyDescCulture': `Knowing the past and the present helps getting properly into the future.`,
+    '#hobbyDescWindsurf': `Quite difficult to practice in London though...`,
+    '#hobbyDescHockey': `NHL follower since my childhood. Red Wings fan despite they are actually terrible.`,
+
+
     /*** DIPLOMAS ***/
     // Names
     '#diplomaNng': `NNG UX Certification`,
@@ -119,5 +137,4 @@ export const LANG_ENG_TRANS = {
     '#diplomaDut': `Web & Multimedia Technologies two-years University Degree`,
     '#diplomaDu': `Webmaster University Degree`,
     '#diplomaBac': `Science High-School Degree`,
-
 };
