@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 // skills
 import { Skill } from '../models/skill';
 import { SkillService } from '../providers/skill.service';
@@ -36,8 +35,7 @@ export class AboutComponent implements OnInit{
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,
               private projectService: ProjectService,
-              private skillService: SkillService,
-              private route: ActivatedRoute) { }
+              private skillService: SkillService) { }
 
   public ngOnInit() {
     this.tools = this.toolService.getTools() || [];
@@ -45,7 +43,6 @@ export class AboutComponent implements OnInit{
     this.projects = this.projectService.getProjects() || [];
     this.skills = this.skillService.getSkills() || [];
     this.filterSkills(this.skills);
-
     this.scrollTo();
   }
 
@@ -61,14 +58,18 @@ export class AboutComponent implements OnInit{
     }
   }
 
-  private filterSkills(skills) {
-          for(let skill of skills) {
-            if(skill.category === 'Framework') {
-                this.skillsDev.push(skill);
-            } else if(skill.category === 'Design') {
-                this.skillsDesign.push(skill);
-            }
-          }
+  /**
+   * Filters skills depending on wether or not they are associated to design or dev
+   * @param skills
+   */
+  private filterSkills(skills): void {
+    for(let skill of skills) {
+      if (skill.category === 'Framework') {
+          this.skillsDev.push(skill);
+      } else if (skill.category === 'Design') {
+          this.skillsDesign.push(skill);
+      }
+    }
   }
 
 }
