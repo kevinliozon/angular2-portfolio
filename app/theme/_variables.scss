@@ -116,6 +116,14 @@ $padding-sm: 10px;
   }
 }
 
+@mixin flex-layout($hasWrap, $justif, $alignContent, $alignItems) {
+  display: flex;
+  flex-wrap: $hasWrap;
+  justify-content: $justif;
+  align-content: $alignContent;
+  align-items: $alignItems;
+}
+
 /**
  * General
  */

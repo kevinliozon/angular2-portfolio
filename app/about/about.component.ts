@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+// skills
+import { Skill } from '../models/skill';
+import { SkillService } from '../providers/skill.service';
 //tools
 import { Tool } from '../models/tool';
 import { ToolService } from '../providers/tool.service';
@@ -8,7 +11,7 @@ import { Hobby } from '../models/hobby';
 import { HobbyService } from '../providers/hobby.service'
 //projects
 import { Project } from '../models/project';
-import { ProjectService } from '../providers/project.service'
+import { ProjectService } from '../providers/project.service';
 //constants
 import { CONSTANTS } from '../shared/constants';
 //animations
@@ -26,16 +29,23 @@ export class AboutComponent implements OnInit{
   public tools: Array<Tool>;
   public hobbies: Array<Hobby>;
   public projects: Array<Project>;
+  public skills: Array<Skill>;
+  public skillsDev: Array<Skill> = [];
+  public skillsDesign: Array<Skill> = [];
 
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,
               private projectService: ProjectService,
+              private skillService: SkillService,
               private route: ActivatedRoute) { }
 
   public ngOnInit() {
-    this.tools = this.toolService.getTools();
-    this.hobbies = this.hobbyService.getHobbies();
-    this.projects = this.projectService.getProjects();
+    this.tools = this.toolService.getTools() || [];
+    this.hobbies = this.hobbyService.getHobbies() || [];
+    this.projects = this.projectService.getProjects() || [];
+    this.skills = this.skillService.getSkills() || [];
+    this.filterSkills(this.skills);
+
     this.scrollTo();
   }
 
@@ -43,12 +53,22 @@ export class AboutComponent implements OnInit{
    * window.location.hash retrieves the anchor
    * then scroll down to correct level
    */
-  private scrollTo() {
+  private scrollTo(): void {
     if (!!window.location.hash) {
       setTimeout(() => {
         document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
       }, 500);
     }
+  }
+
+  private filterSkills(skills) {
+          for(let skill of skills) {
+            if(skill.category === 'Framework') {
+                this.skillsDev.push(skill);
+            } else if(skill.category === 'Design') {
+                this.skillsDesign.push(skill);
+            }
+          }
   }
 
 }

@@ -1,41 +1,69 @@
 <div class="container" [@routeTrans]="'true'">
 
-  <main id="about-start">
-    <h2>{{ 'aboutTitle0' | translate }}</h2>
-    <p>{{ 'aboutText0' | translate }}</p>
+  <main>
+    <article id="about-start" class="jumbotron wrap-jumbo">
+      <h2>{{ 'aboutTitle0' | translate }}</h2>
+      <p>{{ 'aboutText0' | translate }}</p>
+
+      <h4>{{ 'aboutTitle7' | translate }}</h4>
+
+      <div class="img-group">
+        <div
+          class="img img-round"
+          *ngFor="let skill of skillsDev; let i=index"
+          [hidden]="i > 4"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          [title]="skill.desc">
+            <img [src]="skill.image" alt="{{ skill.name }}">
+        </div>
+      </div>
+    </article>
+
+    <article id="about-fed" class="jumbotron wrap-jumbo">
+      <h2>{{ 'aboutTitle1' | translate }}</h2>
+      <p>{{ 'aboutText1' | translate }}</p>
+
+      <h4>{{ 'aboutTitle7' | translate }}</h4>
+
+      <div class="img-group">
+        <div
+          class="img img-round"
+          *ngFor="let skill of skillsDesign; let i=index"
+          [hidden]="i > 4"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          [title]="skill.desc">
+            <img [src]="skill.image" alt="{{ skill.name }}">
+        </div>
+      </div>
+    </article>
+
+    <article id="about-ux" class="jumbotron wrap-jumbo">
+      <h2>{{ 'aboutTitle2' | translate }}</h2>
+      <p>{{ 'aboutText2' | translate }}</p>
+    </article>
   </main>
 
-  <section id="about-fed">
-    <h2>{{ 'aboutTitle1' | translate }}</h2>
-    <p>{{ 'aboutText1' | translate }}</p>
-    <a href="about#about-archi">{{ 'skills' | translate }}</a>
-  </section>
-
-  <section id="about-ux">
-    <h2>{{ 'aboutTitle2' | translate }}</h2>
-    <p>{{ 'aboutText2' | translate }}</p>
-    <a href="about#about-archi">{{ 'skills' | translate }}</a>
+  <section id="about-place" class="jumbotron wrap-jumbo">
+    <h2>{{ 'aboutTitle4' | translate }}</h2>
+    <address>
+      <p><a href={{details.email}}>Kevin Liozon</a></p>
+      <p>{{details.city}}</p>
+      <p>{{details.country}}</p>
+    </address>
   </section>
 
   <section id="about-achiev">
     <h2>{{ 'aboutTitle3' | translate }}</h2>
-    <ul>
-      <li *ngFor="let project of projects">
-        <h3 *ngIf="project.featured === true">{{project.name}}</h3>
-      </li>
-    </ul>
-    <a href="about#about-archi">{{ 'skills' | translate }}</a>
-  </section>
-
-  <section id="about-place">
-    <h2>{{ 'aboutTitle4' | translate }}</h2>
-    <address>
-      <p><a href={{details.email}}>Kevin Liozon</a></p>
-      <p>{{details.street}}</p>
-      <p>{{details.postcode}}</p>
-      <p>{{details.city}}</p>
-      <p>{{details.country}}</p>
-    </address>
+    <div class="row">
+      <my-card
+        class="col-xs-12 col-sm-4 col-md-3"
+        *ngFor="let project of projects"
+        [object]="project"
+        [hidden]="project.featured !== true">
+      </my-card>
+    </div>
   </section>
 
   <section id="about-tools">

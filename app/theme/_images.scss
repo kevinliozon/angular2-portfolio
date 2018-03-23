@@ -6,6 +6,14 @@ img {
   @include square($img-md);
 }
 
+.img-group {
+  @include flex-layout(wrap, flex-start, flex-start, flex-start);
+
+  .img {
+    margin: 10px
+  }
+}
+
 // Rounded containe for images
 .img-round {
   @include round($img-big);
