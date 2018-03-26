@@ -14,7 +14,7 @@ $light: #fcfcfc;
  * Fonts
  */
 
-$font-nano: 1rem;
+$font-micro: 1rem;
 $font-small: 1.2rem;
 $font-base: 1.6rem;
 $font-big: 1.8rem;
@@ -37,9 +37,10 @@ $img-mega: 100px;
 
 $header-height: 75px;
 $card-height: 200px;
-$small-indent: 5px;
-$base-indent: 15px;
-$big-indent: 30px;
+$gap-sm: 5px;
+$gap-reg: 15px;
+$gap-md: 30px;
+$gap-big: 45px;
 $padding-sm: 10px;
 
 /**

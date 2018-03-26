@@ -2,19 +2,33 @@ img {
   width: 10%;
 }
 
+.img {
+  display: block;
+}
+
 .img-group {
   @include flex-layout(wrap, flex-start, flex-start, flex-start);
 
   .img {
-    margin: 10px
+    margin: 10px;
   }
 }
 
 // Rounded containe for images
 .img-round {
-  @include round($img-big);
+  @include round($img-mega);
   @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
   background-color: $light;
+  padding: calc(#{$img-mega} / 4);
+
+  img {
+    @include square($img-md);
+  }
+}
+
+.img-round--sm {
+  @extend .img-round;
+  @include round($img-big);
   padding: calc(#{$img-md} / 4);
 
   img {
@@ -24,15 +38,33 @@ img {
 
 .img-round-link {
   @extend .img-round;
-  @include round($img-mega);
   transition: all 0.4s ease;
+}
 
-  &:hover {
-    @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
-    transform: translateY(-5px);
-  }
+.img-label {
+  font-size: $font-micro;
+  font-weight: bold;
+  margin: auto;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: calc(#{$img-big} + 15px);
+}
 
-  img {
-    @include square($img-big);
+.img-wrap {
+  min-height: 150px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    .img-round-link {
+      @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
+      transform: translateY(-5px);
+    }
+
+    .img-label {
+      opacity: 1;
+    }
   }
 }

@@ -1,9 +1,8 @@
-<main class="jumbotron">
-  <div class="container">
-    <img src="{{ profile.image }}" alt="{{ profile.name }}" />
-    <h3>{{ profile.name }}</h3>
-    <p>{{ profile.title }}</p>
-    <p>{{ age }}</p>
+<figure>
+  <img [src]="profile.image" [alt]="profile.name" />
+  <figcaption>
+    <h2>{{ profile.name }}</h2>
+    <h4>{{ profile.title }} - {{ age }}</h4>
     <p>{{ 'homeText0' | translate }}</p>
-  </div>
-</main>
+  </figcaption>
+</figure>

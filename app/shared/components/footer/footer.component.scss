@@ -6,17 +6,17 @@
     @include flex-layout(wrap, space-around, space-around, flex-start);
     width: 75%;
     margin: auto;
-    padding: $big-indent $base-indent;
+    padding: $gap-big $gap-reg $gap-md;
   }
 
   .footer-copyright {
     color: $light;
     font-size: $font-small;
-    padding: $big-indent 0;
+    padding: $gap-md 0;
     text-align: center;
 
     p {
-      margin-bottom: $small-indent;
+      margin-bottom: $gap-sm;
     }
   }
 

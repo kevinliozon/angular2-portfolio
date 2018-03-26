@@ -54,7 +54,7 @@
     }
 
     .card-link {
-        @include position(absolute, auto, 20px, $small-indent, auto);
+        @include position(absolute, auto, 20px, $gap-sm, auto);
 
         a {
             color: $dark;

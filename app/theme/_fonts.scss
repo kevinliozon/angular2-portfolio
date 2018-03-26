@@ -10,7 +10,7 @@
 }
 
 // Google Fonts - Robot & Roboto Slab
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,300i,400,400i,700,700i');
 
 // Default browser font size is 10px
 body {
@@ -21,7 +21,8 @@ body {
   // Titles
   @for $i from 1 through 6 {
     h#{$i},
-    label {
+    label,
+    .img-label {
       font-family: 'Roboto', sans-serif;
     }
   }
@@ -50,4 +51,3 @@ body {
     }
   }
 }
-

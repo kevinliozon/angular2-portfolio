@@ -1,6 +1,6 @@
-<div class="container-stretch" [@routeTrans]="'true'">
+<div class="container" [@routeTrans]="'true'">
 
-  <main id="home-intro">
+  <main id="home-intro" class="jumbotron wrap-jumbo">
     <profile-main [profile]="profile"></profile-main>
     <div id="home-question">
       <q>I want to hear more about your experience as...</q>
@@ -10,43 +10,47 @@
     </div>
   </main>
 
-  <section class="container">
+  <section id="home-projects">
+    <h2>{{ 'homeTitle0' | translate }}</h2>
 
-    <section id="home-projects">
-      <h2>{{ 'homeTitle0' | translate }}</h2>
-
-      <div class="img-group">
-        <a class="img img-round-link" *ngFor="let project of projects" [hidden]="project.client === null" [href]="project.client?.url" target="_blank">
+    <div class="img-group">
+      <div class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null">
+        <span class="img img-round">
             <img [src]="project.client?.logo" [alt]="project.client?.name">
-        </a>
+        </span>
+        <div class="img-label">{{ project.client?.name }}</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="home-skills">
-      <h2>{{ 'homeTitle1' | translate }}</h2>
-      <ul>
-        <li *ngFor="let skill of skills">
-          <h3 *ngIf="skill.featured === true">{{skill.name}}</h3>
-        </li>
-      </ul>
-      <a href="#">See the rest</a>
-    </section>
+  <section id="home-skills">
+    <h2>{{ 'homeTitle1' | translate }}</h2>
 
-    <section id="home-milestones">
-      <h2>{{ 'homeTitle2' | translate }}</h2>
-      <ul>
-        <li *ngFor="let diploma of diplomas">
-          <h3>{{diploma.id}}</h3>
-        </li>
-      </ul>
-      <ul>
-        <li *ngFor="let role of roles">
-          <h3>{{role.name}}</h3>
-        </li>
-      </ul>
-      <a href="#">See the rest</a>
-    </section>
+    <div class="img-group">
+      <div class="img-wrap" *ngFor="let skill of skills" [hidden]="skill.featured === false">
+        <span class="img img-round">
+            <img [src]="skill.image" [alt]="skill.name">
+        </span>
+        <div class="img-label">{{ skill.name }}</div>
+      </div>
+    </div>
+  </section>
 
+  <section id="home-milestones">
+    <h2>{{ 'homeTitle2' | translate }}</h2>
+
+
+
+    <!--<ul>-->
+      <!--<li *ngFor="let diploma of diplomas">-->
+        <!--<h3>{{diploma.id}}</h3>-->
+      <!--</li>-->
+    <!--</ul>-->
+    <!--<ul>-->
+      <!--<li *ngFor="let role of roles">-->
+        <!--<h3>{{role.name}}</h3>-->
+      <!--</li>-->
+    <!--</ul>-->
   </section>
 
 </div>

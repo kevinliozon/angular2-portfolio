@@ -5,8 +5,10 @@
   <div class="triangle"></div>
 
   <section class="footer-social">
-      <a *ngFor="let social of socials" class="img img-round-link" [href]="social.url" target="_blank">
-        <img [src]="social.image" [alt]="social.name">
+      <a class="img-wrap" *ngFor="let social of socials" [href]="social.url" target="_blank">
+          <span class="img img-round-link">
+              <img [src]="social.image" [alt]="social.name">
+          </span>
       </a>
   </section>
 

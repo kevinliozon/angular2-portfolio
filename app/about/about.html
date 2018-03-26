@@ -8,14 +8,11 @@
       <h4>{{ 'aboutTitle7' | translate }}</h4>
 
       <div class="img-group">
-        <div
-          class="img img-round"
-          *ngFor="let skill of skillsDev; let i=index"
-          [hidden]="i > 4"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          [title]="skill.desc">
-            <img [src]="skill.image" alt="{{ skill.name }}">
+        <div class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
+          <span class="img img-round" *ngIf="i < 5">
+              <img [src]="skill.image" [alt]="skill.name">
+          </span>
+          <div class="img-label">{{ skill.name }}</div>
         </div>
       </div>
     </article>
@@ -27,14 +24,11 @@
       <h4>{{ 'aboutTitle7' | translate }}</h4>
 
       <div class="img-group">
-        <div
-          class="img img-round"
-          *ngFor="let skill of skillsDesign; let i=index"
-          [hidden]="i > 4"
-          data-toggle="tooltip"
-          data-placement="bottom"
-          [title]="skill.desc">
-            <img [src]="skill.image" alt="{{ skill.name }}">
+        <div class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
+          <span class="img img-round" *ngIf="i < 5">
+              <img [src]="skill.image" [alt]="skill.name">
+          </span>
+          <div class="img-label">{{ skill.name }}</div>
         </div>
       </div>
     </article>
