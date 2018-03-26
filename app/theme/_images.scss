@@ -22,6 +22,15 @@ img {
   padding: calc(#{$img-md} / 4);
 
   img {
-    @extend .img-md;
+    @include square($img-md);
+  }
+}
+
+.img-round-link {
+  @extend .img-round;
+  @include round($img-mega);
+
+  img {
+    @include square($img-big);
   }
 }

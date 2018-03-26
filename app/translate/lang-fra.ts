@@ -1,12 +1,11 @@
 export const LANG_FRA_NAME = 'fra';
 
-
 const titles = {
   'homePage': [
-    'J\'ai travaillé pour eux',
-    'Mes compétences principales',
-    'Mes outils favoris',
-    'Jalons'
+    'Quelques marques pour lesquelles j\'ai travaillé',
+    'Compétences clés',
+    'Derniers projets',
+    'Progression'
   ],
   'aboutPage': [
     'Motivé à rester à jour',

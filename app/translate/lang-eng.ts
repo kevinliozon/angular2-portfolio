@@ -2,9 +2,9 @@ export const LANG_ENG_NAME = 'eng';
 
 const titles = {
   'homePage': [
-    'I have worked for them',
-    'My main skills',
-    'Last achievements',
+    'Some brands I have worked for',
+    'Main skills',
+    'Last projects',
     'Milestones'
   ],
   'aboutPage': [
