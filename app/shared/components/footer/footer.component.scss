@@ -3,28 +3,10 @@
   position: relative;
 
   .footer-social {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex-layout(wrap, space-around, space-around, flex-start);
+    width: 75%;
+    margin: auto;
     padding: $big-indent $base-indent;
-
-    .icn-social {
-      @include round(90px);
-      @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
-      background-color: $light;
-      cursor: pointer;
-      margin: 10px auto 0;
-      padding: 20px; // image size / 2
-      transition: all 0.4s ease;
-    }
-
-    .icn-social:hover {
-      @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
-      transform: translateY(-5px);
-    }
-
-    img {
-      @extend %block-centred;
-    }
   }
 
   .footer-copyright {
@@ -43,7 +25,6 @@
     @extend %triangles-plugged;
     top: -1px;
   }
-
 }
 
 .footer-backdrop {

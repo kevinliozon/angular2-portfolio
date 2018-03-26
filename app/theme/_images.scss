@@ -2,10 +2,6 @@ img {
   width: 10%;
 }
 
-.img-md {
-  @include square($img-md);
-}
-
 .img-group {
   @include flex-layout(wrap, flex-start, flex-start, flex-start);
 
@@ -29,6 +25,12 @@ img {
 .img-round-link {
   @extend .img-round;
   @include round($img-mega);
+  transition: all 0.4s ease;
+
+  &:hover {
+    @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
+    transform: translateY(-5px);
+  }
 
   img {
     @include square($img-big);
