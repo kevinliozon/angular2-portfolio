@@ -1,16 +1,18 @@
-<article class="card-profile thumbnail">
-  <div class="row">
-    <div class="card-image col-xs-4">
-      <img [src]="profile.avatar">
-    </div>
-    <div class="card-info col-xs-8">
-      <div class="caption">
-        <h3>Report card</h3>
-        <h4>ID: {{ profile.username }}</h4>
-        <p>{{ profile.total_score }} points</p>
-        <p>Since {{ profile.member_since | date: "dd/MM/yyyy"}}</p>
-      </div>
-    </div>
-  </div>
-</article>
+<div class="row">
 
+  <figure class="col-xs-12 col-sm-4 img-jumbo">
+    <img [src]="profile.organism.image">
+  </figure>
+
+  <div class="col-xs-12 col-sm-8 content-jumbo">
+    <h2>Report card</h2>
+    <h4>ID: {{ profile.username }}</h4>
+    <p>{{ profile.total_score }} points</p>
+    <p>Since {{ profile.member_since | date: "dd/MM/yyyy"}}</p>
+  </div>
+
+  <footer class="col-xs-12 btn-jumbo">
+    <a class="btn btn-primary" [href]="profile.organism.url" target="_blank" role="button">{{ "more" | translate }}</a>
+  </footer>
+
+</div>

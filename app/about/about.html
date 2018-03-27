@@ -1,52 +1,101 @@
 <div class="container" [@routeTrans]="'true'">
 
-  <main>
-    <article id="about-start" class="jumbotron wrap-jumbo">
-      <h2>{{ 'aboutTitle0' | translate }}</h2>
-      <p>{{ 'aboutText0' | translate }}</p>
-
-      <h4>{{ 'aboutTitle7' | translate }}</h4>
-
-      <div class="img-group">
-        <div class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
-          <span class="img img-round" *ngIf="i < 5">
-              <img [src]="skill.image" [alt]="skill.name">
-          </span>
-          <div class="img-label">{{ skill.name }}</div>
-        </div>
-      </div>
-    </article>
+  <main class="wrap-articles">
 
     <article id="about-fed" class="jumbotron wrap-jumbo">
-      <h2>{{ 'aboutTitle1' | translate }}</h2>
-      <p>{{ 'aboutText1' | translate }}</p>
+      <div class="row">
 
-      <h4>{{ 'aboutTitle7' | translate }}</h4>
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header>
+            <h2>{{ 'aboutTitle0' | translate }}</h2>
+          </header>
 
-      <div class="img-group">
-        <div class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
-          <span class="img img-round" *ngIf="i < 5">
-              <img [src]="skill.image" [alt]="skill.name">
-          </span>
-          <div class="img-label">{{ skill.name }}</div>
-        </div>
+          <p>{{ 'aboutText0' | translate }}</p>
+
+          <h4>{{ 'aboutTitle7' | translate }}</h4>
+          <footer class="img-group">
+            <div class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
+              <span class="img img-round" *ngIf="i < 5">
+                  <img [src]="skill.image" [alt]="skill.name">
+              </span>
+              <div class="img-label" *ngIf="i < 5">{{ skill.name }}</div>
+            </div>
+          </footer>
+        </section>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+        </figure>
+
       </div>
     </article>
 
+
     <article id="about-ux" class="jumbotron wrap-jumbo">
-      <h2>{{ 'aboutTitle2' | translate }}</h2>
-      <p>{{ 'aboutText2' | translate }}</p>
+      <div class="row">
+
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header>
+            <h2>{{ 'aboutTitle1' | translate }}</h2>
+          </header>
+          <p>{{ 'aboutText1' | translate }}</p>
+
+          <h4>{{ 'aboutTitle7' | translate }}</h4>
+          <footer class="img-group">
+            <div class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
+              <span class="img img-round" *ngIf="i < 5">
+                  <img [src]="skill.image" [alt]="skill.name">
+              </span>
+              <div class="img-label" *ngIf="i < 5">{{ skill.name }}</div>
+            </div>
+          </footer>
+        </section>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+        </figure>
+
+      </div>
+    </article>
+
+
+    <article id="about-other" class="jumbotron wrap-jumbo">
+      <div class="row">
+
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header>
+            <h2>{{ 'aboutTitle2' | translate }}</h2>
+          </header>
+          <p>{{ 'aboutText2' | translate }}</p>
+        </section>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+        </figure>
+
+      </div>
+    </article>
+
+
+    <article id="about-place" class="jumbotron wrap-jumbo">
+      <div class="row">
+
+        <div class="content-jumbo col-xs-12 col-sm-8">
+          <h2>{{ 'aboutTitle4' | translate }}</h2>
+          <address>
+            <p><a href={{details.email}}>Kevin Liozon</a></p>
+            <p>{{details.city}}</p>
+            <p>{{details.country}}</p>
+          </address>
+        </div>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+        </figure>
+
+      </div>
     </article>
   </main>
-
-  <section id="about-place" class="jumbotron wrap-jumbo">
-    <h2>{{ 'aboutTitle4' | translate }}</h2>
-    <address>
-      <p><a href={{details.email}}>Kevin Liozon</a></p>
-      <p>{{details.city}}</p>
-      <p>{{details.country}}</p>
-    </address>
-  </section>
 
   <section id="about-achiev">
     <h2>{{ 'aboutTitle3' | translate }}</h2>

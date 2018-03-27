@@ -59,14 +59,14 @@ export class AboutComponent implements OnInit{
   }
 
   /**
-   * Filters skills depending on wether or not they are associated to design or dev
+   * Filters skills depending on whether or not they are associated to design or dev
    * @param skills
    */
   private filterSkills(skills): void {
     for(let skill of skills) {
-      if (skill.category === 'Framework') {
+      if ((skill.category === 'Framework' || skill.category === 'Front-End') && skill.featured === true) {
           this.skillsDev.push(skill);
-      } else if (skill.category === 'Design') {
+      } else if (skill.category === 'Design' && skill.featured === true) {
           this.skillsDesign.push(skill);
       }
     }

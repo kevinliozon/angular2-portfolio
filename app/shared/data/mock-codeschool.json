@@ -3,7 +3,12 @@
     "username": "kevinliozon",
     "member_since": "2016-03-16T18:13:27.962Z",
     "total_score": 163580,
-    "avatar": "http://gravatar.com/avatar/630062204d6b862c86dfdbc75c068e88.jpg?s=80\u0026r=pg"
+    "avatar": "http://gravatar.com/avatar/630062204d6b862c86dfdbc75c068e88.jpg?s=80\u0026r=pg",
+    "organism": {
+      "name": "Codeschool",
+      "image": "../../../assets/img/svg/education/codeschool.svg",
+      "url": "https://www.codeschool.com/users/kevinliozon"
+    }
   },
   "courses": {
     "completed": [{

@@ -124,6 +124,14 @@ $padding-sm: 10px;
   align-items: $alignItems;
 }
 
+@mixin transform($tansformation) {
+  -webkit-transform: $tansformation;
+  -moz-transform: $tansformation;
+  -ms-transform: $tansformation;
+  -o-transform: $tansformation;
+  transform: $tansformation;
+}
+
 /**
  * General
  */

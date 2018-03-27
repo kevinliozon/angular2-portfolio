@@ -13,38 +13,41 @@
     </div>
   </section>
 
-  <main class="row container-dual" [ngSwitch]="category">
+  <main [ngSwitch]="category">
 
     <!-- ACADEMIC -->
-    <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
-      <ul class="list-group">
+    <section class="row container-dual">
+      <div class="col-xs-12 col-sm-4 container-select" *ngSwitchCase="'overview'">
+        <ul class="list-group">
 
-        <li class="list-group-item" *ngFor="let diploma of diplomas"
-            (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
-            [class.active]="this.focusedItem === diploma ? true : false">
+          <li class="list-group-item" *ngFor="let diploma of diplomas"
+              (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
+              [class.active]="this.focusedItem === diploma ? true : false">
 
-          <label class="text-center-xs wrap-ellipsis-one-line">
-            <img class="list-icn block-center-xs" [src]="diploma.images.thumb" [alt]="diploma.name"/>
-            <span class="list-label text-center-xs">{{ diploma.name }}</span>
-          </label>
+            <label class="text-center-xs wrap-ellipsis-one-line">
+              <img class="list-icn block-center-xs" [src]="diploma.images.thumb" [alt]="diploma.name"/>
+              <span class="list-label text-center-xs">{{ diploma.name }}</span>
+            </label>
 
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PREVIEW -->
+      <article class="col-xs-8 container-preview hidden-xs" *ngIf="category === 'overview'">
+        <my-preview [focusedItem]="focusedItem"></my-preview>
+      </article>
+    </section>
 
     <!-- CERTIFS -->
-    <div class="col-xs-12 container-select" *ngSwitchCase="'codeschool'">
-      <profile-cs [profile]="csProfile"></profile-cs>
+    <section class="container" *ngSwitchCase="'codeschool'">
+      <article class="jumbotron wrap-jumbo--sm">
+        <profile-cs [profile]="csProfile"></profile-cs>
+      </article>
       <div class="row wrap-center">
-        <my-card class="col-xs-6 col-md-4" *ngFor="let certif of csCertifs" [object]="certif"></my-card>
+        <my-card class="col-xs-12 col-sm-4 col-md-3" *ngFor="let certif of csCertifs" [object]="certif"></my-card>
       </div>
-    </div>
-
-
-    <!-- PREVIEW -->
-    <article class="col-xs-8 container-preview hidden-xs" *ngIf="category === 'overview'">
-      <my-preview [focusedItem]="focusedItem"></my-preview>
-    </article>
+    </section>
 
   </main>
 

@@ -22,7 +22,8 @@ body {
   @for $i from 1 through 6 {
     h#{$i},
     label,
-    .img-label {
+    .img-label,
+    .btn {
       font-family: 'Roboto', sans-serif;
     }
   }

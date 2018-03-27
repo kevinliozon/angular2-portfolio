@@ -3,7 +3,7 @@ import { Skill } from '../../models/skill';
 
 export let SKILLS: Skill[] = [{
   'id': '#skill28',
-  'name': 'Angular.js (1, 2 & 4)',
+  'name': 'Angular.js',
   'featured': true,
   'frequent': true,
   'category': 'Framework',
@@ -37,7 +37,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Javascript',
-  'desc': 'Javascript superset developed by Microsoft',
+  'desc': 'Javascript superset',
   'image': '../../../assets/img/svg/skills/typescript.svg',
   'url': 'https://en.wikipedia.org/wiki/TypeScript'
 },
@@ -47,7 +47,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Javascript',
-  'desc': 'Popular Javascript library',
+  'desc': 'Javascript library',
   'image': '../../../assets/img/svg/skills/jquery.svg',
   'url': 'https://en.wikipedia.org/wiki/JQuery'
 },
@@ -94,8 +94,8 @@ export let SKILLS: Skill[] = [{
 {
   'id': '#skill19',
   'name': 'Foundation',
-  'featured': true,
-  'frequent': true,
+  'featured': false,
+  'frequent': false,
   'category': 'Front-End',
   'desc': 'Front-End Framework',
   'image': '../../../assets/img/svg/skills/foundation.svg',
@@ -135,7 +135,7 @@ export let SKILLS: Skill[] = [{
   'id': '#skill15',
   'name': 'Ionic Creator',
   'featured': false,
-  'frequent': true,
+  'frequent': false,
   'category': 'Design',
   'desc': 'Ionic oriented prototyping tool',
   'image': '../../../assets/img/svg/skills/ioniccreator.svg',
@@ -144,7 +144,7 @@ export let SKILLS: Skill[] = [{
 {
   'id': '#skill14',
   'name': 'Adobe XD',
-  'featured': false,
+  'featured': true,
   'frequent': false,
   'category': 'Design',
   'desc': 'Prototyping & Wireframing tool',
@@ -174,7 +174,7 @@ export let SKILLS: Skill[] = [{
 {
   'id': '#skill11',
   'name': 'Adobe InDesign',
-  'featured': false,
+  'featured': true,
   'frequent': false,
   'category': 'Design',
   'desc': 'Publishing software',
@@ -265,7 +265,7 @@ export let SKILLS: Skill[] = [{
   'id': '#skill2',
   'name': 'PHP',
   'featured': false,
-  'frequent': true,
+  'frequent': false,
   'category': 'Vanilla',
   'desc': 'Server side language',
   'image': '../../../assets/img/svg/skills/php.svg',
@@ -275,7 +275,7 @@ export let SKILLS: Skill[] = [{
   'id': '#skill1',
   'name': 'SQL',
   'featured': false,
-  'frequent': true,
+  'frequent': false,
   'category': 'Vanilla',
   'desc': 'Database language',
   'image': '../../../assets/img/svg/skills/sql.svg',

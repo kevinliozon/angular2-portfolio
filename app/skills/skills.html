@@ -1,4 +1,4 @@
-<div class="container" [@routeTrans]="'true'">
+<div class="container-stretch" [@routeTrans]="'true'">
 
     <my-filters [page]="'skills'" (selectFilter)="filterFor($event)"></my-filters>
 
@@ -12,12 +12,14 @@
     </div>
 
     <!-- RESULT -->
-    <main class="row">
-        <my-card
-            class="col-xs-12 col-sm-4 col-md-3"
-            *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }"
-            [object]="skill">
-        </my-card>
+    <main class="container">
+        <div class="row">
+            <my-card
+                class="col-xs-12 col-sm-4 col-md-3"
+                *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }"
+                [object]="skill">
+            </my-card>
+        </div>
     </main>
 
 </div>

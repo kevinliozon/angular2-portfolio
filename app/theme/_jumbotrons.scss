@@ -4,6 +4,12 @@
     background-color: $light;
     border-radius: 0;
   }
+
+  &.wrap-jumbo--sm {
+    @extend .wrap-jumbo;
+    max-width: 50%;
+    margin: auto auto 30px;
+  }
 }
 
 .img-jumbo {
@@ -11,6 +17,18 @@
 
   img {
     width: 75%;
+  }
+}
+
+.btn-jumbo {
+  .btn {
+    float: right;
+  }
+}
+
+.btn-group-jumbo {
+  .btn {
+    margin: auto 10px;
   }
 }
 

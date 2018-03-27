@@ -1,13 +1,21 @@
-<figure class="row">
+<div class="row">
 
-  <figcaption class="col-xs-12 col-sm-8">
+  <section class="col-xs-12 col-sm-8 content-jumbo">
     <h2>{{ profile.name }}</h2>
     <h4>{{ profile.title }} - {{ age }}</h4>
     <p>{{ 'homeText0' | translate }}</p>
-  </figcaption>
+  </section>
 
-  <div class="col-xs-12 col-sm-4 img-jumbo">
+  <figure class="col-xs-12 col-sm-4 img-jumbo">
     <img class="img--flip" [src]="profile.image" [alt]="profile.name">
-  </div>
+  </figure>
 
-</figure>
+  <p class="col-xs-12">Want to hear more about my...</p>
+
+  <footer class="col-xs-12 btn-group-jumbo">
+    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-fed">Experience as Dev</a>
+    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-ux">Experience in UX</a>
+    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-archi">Projects</a>
+  </footer>
+
+</div>

@@ -7,6 +7,16 @@ body {
   margin: auto;
 }
 
+.wrap-articles {
+  .wrap-jumbo:nth-child(even) {
+    @include drop-shadow(false, -3px, 3px, 3px, 0px, $grey);
+
+    .content-jumbo {
+      float: right;
+    }
+  }
+}
+
 .container-stretch {
   @extend %no-padding;
   position: relative;

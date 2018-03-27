@@ -2,24 +2,18 @@
 
   <main id="home-intro" class="jumbotron wrap-jumbo">
     <profile-main [profile]="profile"></profile-main>
-    <div id="home-question">
-      <q>I want to hear more about your experience as...</q>
-      <a [routerLink]="['../about']" fragment="about-fed">Developer</a>
-      <a [routerLink]="['../about']" fragment="about-ux">Designer</a>
-      <a [routerLink]="['../about']" fragment="about-archi">Architect</a>
-    </div>
   </main>
 
   <section id="home-projects">
     <h2>{{ 'homeTitle0' | translate }}</h2>
 
     <div class="img-group">
-      <div class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null">
+      <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null">
         <span class="img img-round">
             <img [src]="project.client?.logo" [alt]="project.client?.name">
         </span>
-        <div class="img-label">{{ project.client?.name }}</div>
-      </div>
+        <figcaption class="img-label">{{ project.client?.name }}</figcaption>
+      </figure>
     </div>
   </section>
 
