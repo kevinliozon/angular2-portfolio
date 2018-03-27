@@ -51,6 +51,11 @@ img {
   width: calc(#{$img-big} + 15px);
 }
 
+.img--flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .img-wrap {
   min-height: 150px;
 
@@ -66,5 +71,11 @@ img {
     .img-label {
       opacity: 1;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-group {
+    justify-content: center;
   }
 }

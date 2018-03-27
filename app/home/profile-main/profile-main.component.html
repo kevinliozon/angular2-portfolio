@@ -1,8 +1,13 @@
-<figure>
-  <img [src]="profile.image" [alt]="profile.name" />
-  <figcaption>
+<figure class="row">
+
+  <figcaption class="col-xs-12 col-sm-8">
     <h2>{{ profile.name }}</h2>
     <h4>{{ profile.title }} - {{ age }}</h4>
     <p>{{ 'homeText0' | translate }}</p>
   </figcaption>
+
+  <div class="col-xs-12 col-sm-4 img-jumbo">
+    <img class="img--flip" [src]="profile.image" [alt]="profile.name">
+  </div>
+
 </figure>

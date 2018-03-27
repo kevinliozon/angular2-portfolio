@@ -66,3 +66,9 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .card-reg {
+        @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+    }
+}

@@ -5,3 +5,20 @@
     border-radius: 0;
   }
 }
+
+.img-jumbo {
+  text-align: center;
+
+  img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron.wrap-jumbo {
+    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+  }
+  .img-jumbo img {
+    width: 50%;
+  }
+}
