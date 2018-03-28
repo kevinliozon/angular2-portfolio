@@ -1,5 +1,11 @@
-.btn:focus {
-  outline: none;
+.btn {
+  &:focus {
+    outline: none;
+  }
+
+  &:visited {
+    color: $light;
+  }
 }
 
 .btn-reg {

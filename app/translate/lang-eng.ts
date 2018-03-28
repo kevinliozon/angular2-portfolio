@@ -32,9 +32,16 @@ export const LANG_ENG_TRANS = {
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
     'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
-    'homeText0': `Hi! My name is Kevin, Front-End Developer & UX Designer.
-                  As a developer Angular and Ionic technologies are my speciality.
-                  While as a designer, it would be the field of Interaction Design (IxD).`,
+    // Texts
+    'homeText0': `Hi! My name is Kevin. As a developer, Angular and Ionic technologies are my speciality.
+                  While as a designer, it would be the field of Interaction as well as UI Design.`,
+    'homeText1': `I live in London since February 2016. Here, I had the opportunity to work
+                  with great professionals from all around the world while sharpening my business acumen.`,
+    'homeText2': 'Want to hear more about my:',
+    //Buttons
+    'homeBtn0': 'Dev Practices',
+    'homeBtn1': 'UX Practices',
+    'homeBtn2': 'Projects',
 
 
     /*** ABOUT ME ***/

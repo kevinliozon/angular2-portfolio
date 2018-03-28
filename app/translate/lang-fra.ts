@@ -33,10 +33,18 @@ export const LANG_FRA_TRANS = {
     // Titles
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
     'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
-    'homeText0': `Bonjour! Mon nom est Kévin, Front-End Developer & UX Designer.
-                  En tant que dévelopeur les technologies Angular et Ionic sont ma
-                  spécialité. En tant que designer, le Design d'interaction (IxD)
-                  est mon domaine de prédilection.`,
+    // Texts
+    'homeText0': `Salut! Je m'appelle Kevin. En tant que dévelopeur, les technologies 
+                  Angular et Ionic sont ma spécialité. Alors qu'en tant que designer, les domaines du 
+                  design d'interaction et d'interface sont mes domaine de prédilection.`,
+    'homeText1': `Je vis sur Londres depuis Février 2016. Sur place, j'ai eu l'opportunité de
+                  travailler avec des personnes venues des quatre coins du globe en même temps que j'affûtais
+                  mon relationnel avec les clients et mes collègues.`,
+    'homeText2': 'En savoir plus à propos de mes:',
+    //Buttons
+    'homeBtn0': 'Pratiques Dev',
+    'homeBtn1': 'Pratiques UX',
+    'homeBtn2': 'Projets',
 
 
     /*** ABOUT ME ***/
