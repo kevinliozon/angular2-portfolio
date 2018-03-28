@@ -55,7 +55,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Douglas & Gordon',
     'logo': '../../../assets/img/svg/projects/dng.svg',
-    'url': 'http://www.douglasandgordon.com/'
+    'url': 'http://www.douglasandgordon.com/',
+    'featured': true
   },
   'desc': '#projectDescDnG',
   'techs': [
@@ -111,7 +112,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Lloyds Banking Group',
     'logo': '../../../assets/img/svg/projects/lloyds.svg',
-    'url': 'http://www.lloydsbank.com/'
+    'url': 'http://www.lloydsbank.com/',
+    'featured': true
   },
   'desc': '#projectDescLloyds',
   'techs': [
@@ -179,7 +181,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Doxy.me',
     'logo': '../../../assets/img/svg/companies/doxyme.svg',
-    'url': 'https://doxy.me/'
+    'url': 'https://doxy.me/',
+    'featured': false
   },
   'desc': '#projectDescDoxy',
   'techs': [
@@ -216,14 +219,15 @@ export let PROJECTS: Project[] = [{
   'active': true,
   'category': 'Web App',
   'company': {
-    'name': 'My Mini Factory (iMakr subsidiary)',
+    'name': 'My Mini Factory',
     'logo': '../../../assets/img/svg/companies/mmf.svg',
     'url': 'https://www.myminifactory.com/'
   },
   'client': {
-    'name': 'My Mini Factory (iMakr subsidiary)',
+    'name': 'My Mini Factory',
     'logo': '../../../assets/img/svg/companies/mmf.svg',
-    'url': 'https://www.myminifactory.com/'
+    'url': 'https://www.myminifactory.com/',
+    'featured': true
   },
   'desc': '#projectDescMMF',
   'techs': [
@@ -275,7 +279,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'iMakr',
     'logo': '../../../assets/img/svg/companies/imakr.svg',
-    'url': 'https://www.imakr.com/'
+    'url': 'https://www.imakr.com/',
+    'featured': true
   },
   'desc': '#projectDescImakr',
   'techs': [
@@ -367,6 +372,7 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Université de Bourgogne-Franche-Comté',
     'logo': '../../../assets/img/svg/education/ubfc.svg',
+    'featured': true
   },
   'desc': '#projectDescC2I',
   'techs': [
@@ -446,6 +452,7 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Haute Coiffure et Esthétique',
     'logo': '../../../assets/img/png/projects/hce.png',
+    'featured': false
   },
   'desc': '#projectDescHce',
   'techs': [
@@ -489,6 +496,7 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Association Pour l\'Amélioration Globale de la Santé',
     'logo': '../../../assets/img/svg/projects/apags.svg',
+    'featured': false
   },
   'desc': '#projectDescApags',
   'techs': [
@@ -532,7 +540,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Digitela',
     'logo': '../../../assets/img/svg/companies/digitela.svg',
-    'url': 'http://www.digitela.fr/'
+    'url': 'http://www.digitela.fr/',
+    'featured': false
   },
   'desc': '#projectDescDigitela',
   'techs': [

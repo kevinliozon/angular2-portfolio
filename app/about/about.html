@@ -14,12 +14,12 @@
 
           <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
-            <div class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
+            <figure class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
               <span class="img img-round" *ngIf="i < 5">
                   <img [src]="skill.image" [alt]="skill.name">
               </span>
-              <div class="img-label" *ngIf="i < 5">{{ skill.name }}</div>
-            </div>
+              <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
+            </figure>
           </footer>
         </section>
 
@@ -42,12 +42,12 @@
 
           <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
-            <div class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
+            <figure class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
               <span class="img img-round" *ngIf="i < 5">
                   <img [src]="skill.image" [alt]="skill.name">
               </span>
-              <div class="img-label" *ngIf="i < 5">{{ skill.name }}</div>
-            </div>
+              <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
+            </figure>
           </footer>
         </section>
 

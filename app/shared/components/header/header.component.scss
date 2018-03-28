@@ -198,3 +198,14 @@
     margin-left: -30px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .header-label {
+    display: none;
+  }
+
+  .nav-lang,
+  .navbar-toggle {
+    margin: 20px 5px
+  }
+}

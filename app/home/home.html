@@ -8,7 +8,7 @@
     <h2>{{ 'homeTitle0' | translate }}</h2>
 
     <div class="img-group">
-      <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null">
+      <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
         <span class="img img-round">
             <img [src]="project.client?.logo" [alt]="project.client?.name">
         </span>
@@ -21,12 +21,12 @@
     <h2>{{ 'homeTitle1' | translate }}</h2>
 
     <div class="img-group">
-      <div class="img-wrap" *ngFor="let skill of skills" [hidden]="skill.featured === false">
+      <figure class="img-wrap" *ngFor="let skill of skills" [hidden]="!skill.featured || !skill.frequent">
         <span class="img img-round">
             <img [src]="skill.image" [alt]="skill.name">
         </span>
-        <div class="img-label">{{ skill.name }}</div>
-      </div>
+        <figcaption class="img-label">{{ skill.name }}</figcaption>
+      </figure>
     </div>
   </section>
 
