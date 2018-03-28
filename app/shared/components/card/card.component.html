@@ -2,29 +2,25 @@
 
   <div class="row">
 
-    <div class="card-image col-xs-4">
-      <div class="img img-round--sm">
-        <img [src]="object.image || object.badge" alt="{{ object.name || object.title }}">
-      </div>
-    </div>
+    <section class="card-image col-xs-4">
+      <figure class="img img-round--sm">
+        <img [src]="object.image || object.badge" [alt]="object.name || object.title">
+      </figure>
+    </section>
 
 
-    <div class="card-info col-xs-8">
-      <div class="caption">
-
-        <h3>{{ object.name || object.title | translate }}</h3>
+    <section class="card-info col-xs-8">
+        <header>
+          <h3>{{ object.name || object.title | translate }}</h3>
+        </header>
 
         <p *ngIf="object.desc">{{ object.desc | translate }}</p>
 
-        <div class="card-link" *ngIf="object.url !== null">
-          <a href="{{ object.url }}" target="_blank" role="button">
-            More info
-            <span>>>></span>
-          </a>
-        </div>
+    </section>
 
-      </div>
-    </div>
+    <footer class="card-link" *ngIf="object.url !== null">
+      <a class="btn-card" [href]="object.url" target="_blank" role="button">More info</a>
+    </footer>
 
   </div>
 

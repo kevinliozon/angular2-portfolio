@@ -2,19 +2,23 @@
   outline: none;
 }
 
-.btn-primary {
+.btn-reg {
+  @extend .btn;
   @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
   background-color: $grey;
   border: none;
   border-radius: 0px;
+  color: $light;
   min-width: 100px;
   padding: 10px;
   transition: 0.3s ease-in;
+}
+
+.btn-primary {
+  @extend .btn-reg;
 
   &:hover,
   &:active {
-    @include drop-shadow(false, 5px, 5px, 3px, 0px, $grey);
-    @include transform(translateX(-3px));
-    background-color: $primary;
+    @include btn-anim();
   }
 }

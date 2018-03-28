@@ -6,40 +6,14 @@
     border: 0;
     border-radius: 0;
     height: $card-height;
+    position: relative;
     transform-origin: left 0% 0; // for scaling from top to bottom
     transition: 0.15s ease;
-    position: relative;
-
-    &:hover,
-    &:focus {
-        background-position: left bottom;
-
-        * {
-            color: $light;
-        }
-
-        .card-link {
-
-            a {
-                color: $light;
-            }
-
-            span {
-                display: inline;
-            }
-        }
-    }
 
     .card-image,
-    .card-info {
-        height: 100%;
-        padding: 0 20px;
-    }
-
-    .card-image {
-        .img-round {
-            @include position(absolute, 25%, auto, 25%, auto);
-        }
+    .card-info,
+    .card-link {
+        padding: 20px;
     }
 
     .card-info {
@@ -54,15 +28,25 @@
     }
 
     .card-link {
-        @include position(absolute, auto, 20px, $gap-sm, auto);
+        @include position(absolute, auto, 0px, 0px, auto);
 
-        a {
-            color: $dark;
-            text-decoration: none;
+        .btn-card {
+            @extend .btn-reg;
+            float: right;
         }
+    }
 
-        span {
-            display: none;
+    &:hover,
+    &:focus {
+        background-position: left bottom;
+        color: $light;
+
+        .btn-card {
+            @include btn-anim();
+
+            &:hover {
+                color: $light;
+            }
         }
     }
 }
@@ -70,5 +54,10 @@
 @media screen and (max-width: 768px) {
     .card-reg {
         @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+        height: auto;
+
+        .card-link {
+            @include position(relative, auto, 0px, 0px, auto);
+        }
     }
 }

@@ -124,12 +124,20 @@ $padding-sm: 10px;
   align-items: $alignItems;
 }
 
+// ANIMS
+
 @mixin transform($tansformation) {
   -webkit-transform: $tansformation;
   -moz-transform: $tansformation;
   -ms-transform: $tansformation;
   -o-transform: $tansformation;
   transform: $tansformation;
+}
+
+@mixin btn-anim() {
+  @include drop-shadow(false, 5px, 5px, 3px, 0px, $grey);
+  @include transform(translateX(-3px));
+  background-color: $primary;
 }
 
 /**

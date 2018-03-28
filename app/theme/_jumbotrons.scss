@@ -27,8 +27,9 @@
 }
 
 .btn-group-jumbo {
+  @include flex-layout(wrap, flex-start, flex-start, flex-start);
   .btn {
-    margin: auto 10px;
+    margin: 10px;
   }
 }
 
@@ -38,5 +39,14 @@
   }
   .img-jumbo img {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn-group-jumbo {
+    @include flex-layout(wrap, center, flex-start, flex-start);
+    .btn {
+      width: 100%;
+    }
   }
 }
