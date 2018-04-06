@@ -22,6 +22,10 @@ body {
   position: relative;
 }
 
+.wrap-stretch {
+  margin-bottom: $gap-tera;
+}
+
 .container-dual {
   display: flex;
   margin-right: 0;

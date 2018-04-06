@@ -236,7 +236,7 @@ export let SKILLS: Skill[] = [{
   'name': 'Javascript ES6',
   'featured': false,
   'frequent': true,
-  'category': 'Vanilla',
+  'category': 'Javascript',
   'desc': 'Asynchroneous web language',
   'image': '../../../assets/img/svg/skills/javascript.svg',
   'url': 'https://en.wikipedia.org/wiki/JavaScript'
@@ -246,7 +246,7 @@ export let SKILLS: Skill[] = [{
   'name': 'CSS',
   'featured': false,
   'frequent': true,
-  'category': 'Vanilla',
+  'category': 'Front-End',
   'desc': 'Stylesheet language',
   'image': '../../../assets/img/svg/skills/css.svg',
   'url': 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets'
@@ -256,7 +256,7 @@ export let SKILLS: Skill[] = [{
   'name': 'HTML',
   'featured': false,
   'frequent': true,
-  'category': 'Vanilla',
+  'category': 'Front-End',
   'desc': 'Markup language',
   'image': '../../../assets/img/svg/skills/html.svg',
   'url': 'https://en.wikipedia.org/wiki/HTML'
@@ -266,7 +266,7 @@ export let SKILLS: Skill[] = [{
   'name': 'PHP',
   'featured': false,
   'frequent': false,
-  'category': 'Vanilla',
+  'category': 'Back-End',
   'desc': 'Server side language',
   'image': '../../../assets/img/svg/skills/php.svg',
   'url': 'https://en.wikipedia.org/wiki/PHP'
@@ -276,7 +276,7 @@ export let SKILLS: Skill[] = [{
   'name': 'SQL',
   'featured': false,
   'frequent': false,
-  'category': 'Vanilla',
+  'category': 'Back-End',
   'desc': 'Database language',
   'image': '../../../assets/img/svg/skills/sql.svg',
   'url': 'https://en.wikipedia.org/wiki/SQL'

@@ -47,11 +47,11 @@ export const CONSTANTS = {
     skills: [
       '',
       'Front-End',
+      'Back-End',
       'Design',
       'Framework',
       'Javascript',
-      'CMS',
-      'Vanilla'
+      'CMS'
     ]
   }
 }
