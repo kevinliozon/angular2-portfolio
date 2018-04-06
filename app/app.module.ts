@@ -20,7 +20,7 @@ import { PageNotFoundComponent } from './not-found/not-found.component';
 //Components
 import { ProfileCsComponent } from './education/profile-cs/profile-cs.component';
 import { ProfileMainComponent } from './home/profile-main/profile-main.component';
-//filters
+//Pipes
 import { FilterPipe } from './shared/pipes/filter.pipe';
 
 @NgModule({

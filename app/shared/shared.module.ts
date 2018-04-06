@@ -12,6 +12,8 @@ import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
 import { TranslateModule } from '../translate/translate.module';
 import { FiltersComponent } from './components/filters/filters.component';
+// Pipes
+import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
 @NgModule({
     imports: [
@@ -26,7 +28,8 @@ import { FiltersComponent } from './components/filters/filters.component';
       DetailsModalComponent,
       PreviewComponent,
       CardComponent,
-      FiltersComponent
+      FiltersComponent,
+      EllipsisPipe
     ],
     exports: [
       HeaderComponent,

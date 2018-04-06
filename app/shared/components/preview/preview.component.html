@@ -18,9 +18,12 @@
   </h4>
 
   <!-- DATE -->
-  <p>{{ focusedItem.dates.start | date : "MMM yyyy" }}</p>
+  <p>{{ focusedItem.dates.start | date : "MMM yyyy" }} <span class="content-prefix">{{ "to" | translate }}</span>
+    <span *ngIf="focusedItem.dates.end">{{ focusedItem.dates.end | date : "MMM yyyy" }}</span>
+    <span *ngIf="focusedItem.dates.end === null">{{ "present" | translate }}</span>
+  </p>
 
   <!-- DESC -->
-  <p>{{ focusedItem.desc | translate | slice:0:200 }}...</p>
+  <p>{{ focusedItem.desc | translate | ellipsis:200 }}</p>
 
 </div>

@@ -14,7 +14,7 @@
           <h3>{{ object.name || object.title | translate }}</h3>
         </header>
 
-        <p *ngIf="object.desc">{{ object.desc | translate }}</p>
+        <p *ngIf="object.desc">{{ object.desc | translate | ellipsis:100 }}</p>
 
     </section>
 

@@ -26,6 +26,8 @@ export const LANG_ENG_TRANS = {
     'url': 'Link',
     'at': 'at',
     'for': 'for',
+    'to': 'to',
+    'present': 'present',
 
 
     /*** HOME ***/
@@ -68,25 +70,58 @@ export const LANG_ENG_TRANS = {
     /*** PROJECTS ***/
     // Descs
     '#projectDescHce': `Showcase WordPress website for a consortium of southern
-                        France hairdressers and estheticians. I designed the interface
-                        (zonings, mockups) but I have not developed it.`,
+                        France hairdressers and estheticians. I only designed the interface
+                        (zonings, mockups).`,
     '#projectDescPortfolioV1': `First portfolio realised during my first year at the
                               institute of technology. It is animated with Flash and CSS3.
-                              You may have to activate Flash depending on your browser`,
-    '#projectDescPortfolio2': `Animated portfolio with Edge Animate (based on jQuery)
-                              and CSS3. It has been realised during my year of bachelor`,
-    '#projectDescPortfolio3': `This portfolio has been realised on Angular 2 with
-                              Bootstrap 3 and Gulp.js.`,
+                              Flash was not already "dead" at the time and I always wanted to
+                              create a website entirely based on flash. Today I would not reuse such design
+                              but it has been an exciting experience though!
+                              Note: You may have to activate Flash depending on your browser`,
+    '#projectDescPortfolioV2': `Animated portfolio with Edge Animate and CSS3 and realised during my year as bachelor. 
+                              Edge has been the failed attempt from Adobe to replace Flash by a jQuery based
+                              technology. Indeed it was surprisingly working well on every browser since it was
+                              using Javascript. Unfortunately the failure of this tech was mostly related to marketing 
+                              and learning curve reasons.
+                              However I really liked using it and made me realise of all the possibilities offered
+                              by Javascript at the time (2015)`,
+    '#projectDescPortfolio3': `This portfolio has been realised on Angular 2 with Bootstrap 3 and Gulp.js. 
+                              It has been a very long and enlightening project because I was using it for training 
+                              at Angular best practices. Practices I was later applying within the scope of my 
+                              full-time role's projects. Most of the UI assets are mine, especially
+                              the ones not related to any company/software logos. When I started (Oct 2016), Angular
+                              was still under Beta Release Candidate version. Bootstrap 3 was the only stable option
+                              as CSS framework. Next version step will be to migrate the project to the latest
+                              Angular and to use Angular Material instead of bootstrap.`,
     '#projectDescDigitela': `Corporate website.`,
-    '#projectDescApags': `Website for an association related to cancer research`,
+    '#projectDescApags': `Website for an association related to cancer research. It has been my first web project
+                         for an external client. It was for my internship during my sophomore year at the institute of
+                         technology. I had a lot of autonomy for the design and the communication with my employer and
+                         the client has been great. Unfortunately the association has been dismantled for financial
+                         reasons and the website does not exist anymore. I just have the mockups left.`,
     '#projectDescEukiyo': `Artistic contents sharing platform - Student project.`,
     '#projectDescC2I': `Educational contents sharing platform - Student project`,
     '#projectDescImakr': `E-Commerce platform for 3D printing industry related products`,
     '#projectDescMMF': `A 3D printed contents/models sharing platform for 3D designers
                         and enthusiasts`,
-    '#projectDescDoxy': `Telemedecine solution.`,
+    '#projectDescDoxy': `Doxy.me is an innovative telemedecine based in Provo (USA - Utah) aiming to offer
+                         the best possible experience to the patient and doctors using this solution.
+                         I have been under contract as an Angular/Ionic consultant.`,
     '#projectDescDnG': `An internal CRM mobile app for a West London Real Estate Agent (UAT)`,
     '#projectDescLloyds': `IoT mobile app for connected objects (UAT)`,
+    '#projectDescEis': `Endeavour Insurance Services is a specialist in placement of delegated authority and open
+                        market business in North America and Europe.
+                        My role in this projects has to serve three purposes. First and foremost implementing a new
+                        design for their portal dedicated to brokers and underwriters. Then refactoring many issues
+                        related to the front-end architecture of the project (misuse of bootstrap and inefficient
+                        stylesheets). These changes have a long term goal of being reused client's portal projects. 
+                        Finally I have to pursue the evolutions required by the client.`,
+    '#projectDescMsa': `MS Amlin is an important commercial insurer operating in the Lloyd's of London and part of the
+                        japanese MS & AD holding.
+                        My role on this project has mostly been to fix UI issues, refactoring some templates as well as
+                        creating new ones.`,
+
+
     /*** ROLES ***/
     // Descs
     '#roleDescSurely': `As Frontend Developer and interaction designer, my role is

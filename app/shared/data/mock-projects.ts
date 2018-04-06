@@ -1,7 +1,7 @@
 import { Project } from '../../models/project';
 
 export let PROJECTS: Project[] = [{
-  'id': '#project13',
+  'id': '#project15',
   'name': 'This Portfolio',
   'image': '../../../assets/img/svg/projects/portfoliov3.svg',
   'featured': true,
@@ -35,10 +35,108 @@ export let PROJECTS: Project[] = [{
   'images': [''],
   'dates': {
     'start': '2017-01-01',
-    'end': ''
+    'end': null
   },
   'url': 'https://kevinliozon.com/',
   'github': 'https://github.com/kevinliozon/angular2-portfolio'
+},
+{
+  'id': '#project14',
+  'name': 'EIS Broker Portal',
+  'image': '../../../assets/img/png/projects/eis.png',
+  'featured': true,
+  'active': true,
+  'category': 'Web App',
+  'company': {
+      'name': 'Surely Group',
+      'logo': '',
+      'url': 'https://services.surelygroup.com/'
+  },
+  'client': {
+      'name': 'Endeavour Insurance Service',
+      'logo': '../../../assets/img/png/projects/eis.png',
+      'url': 'https://www.endeavouris.com/',
+      'featured': true
+  },
+  'desc': '#projectDescEis',
+  'techs': [
+      {
+          'name': 'Symfony',
+          'logo': '../../../assets/img/svg/skills/symfony.svg'
+      },
+      {
+          'name': 'Bootstrap',
+          'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+      },
+      {
+          'name': 'Jquery',
+          'logo': '../../../assets/img/svg/skills/jquery.svg'
+      },
+      {
+          'name': 'SASS',
+          'logo': '../../../assets/img/svg/skills/sass.svg'
+      },
+      {
+          'name': 'Gulp',
+          'logo': '../../../assets/img/svg/skills/gulp.svg'
+      }
+  ],
+  'images': [''],
+  'dates': {
+      'start': '2017-11-15',
+      'end': null
+  },
+  'url': 'https://www.eisportal.com/login',
+  'github': null
+},
+{
+  'id': '#project13',
+  'name': 'MS Amlin',
+  'image': '../../../assets/img/png/projects/msamlin.png',
+  'featured': false,
+  'active': false,
+  'category': 'Mobile App',
+  'company': {
+      'name': 'Surely Group',
+      'logo': '',
+      'url': 'https://services.surelygroup.com/'
+  },
+  'client': {
+      'name': 'MS Amlin',
+      'logo': '../../../assets/img/png/companies/msamlin.png',
+      'url': 'https://www.msamlin.com/en/index.html',
+      'featured': true
+  },
+  'desc': '#projectDescMsa',
+  'techs': [
+      {
+          'name': 'Symfony',
+          'logo': '../../../assets/img/svg/skills/symfony.svg'
+      },
+      {
+          'name': 'Bootstrap',
+          'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+      },
+      {
+          'name': 'Jquery',
+          'logo': '../../../assets/img/svg/skills/jquery.svg'
+      },
+      {
+          'name': 'SASS',
+          'logo': '../../../assets/img/svg/skills/sass.svg'
+      },
+      {
+          'name': 'Gulp',
+          'logo': '../../../assets/img/svg/skills/gulp.svg'
+      }
+  ],
+  'images': [''],
+  'dates': {
+      'start': '2017-10-15',
+      'end': '2017-11-15'
+  },
+  'url': 'https://www.msamlin.com/en/index.html',
+  'github': null
 },
 {
   'id': '#project12',

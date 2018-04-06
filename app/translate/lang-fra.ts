@@ -27,6 +27,8 @@ export const LANG_FRA_TRANS = {
     'url': 'Lien',
     'at': 'à',
     'for': 'pour',
+    'to': 'à',
+    'present': 'aujourd\'hui',
 
 
     /*** HOME ***/
@@ -78,7 +80,7 @@ export const LANG_FRA_TRANS = {
                                 Réalisé sous Flash et CSS3 pour les animations.
                                 (Il se peut que vous ayez à activer Flash en fonction
                                 de votre navigateur).`,
-    '#projectDescPortfolio2': `Portfolio animé avec Edge Animate (basé sur jQuery) et CSS3.
+    '#projectDescPortfolioV2': `Portfolio animé avec Edge Animate (basé sur jQuery) et CSS3.
                               A été réalisé durant mon année de licence professionnelle.`,
     '#projectDescPortfolio3': `Ce portfolio a été réalisé sur Angular, Bootstrap 3 et Gulp.js.`,
     '#projectDescDigitela': `Site d'entreprise.`,
