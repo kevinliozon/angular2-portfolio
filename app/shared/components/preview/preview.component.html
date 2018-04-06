@@ -1,29 +1,31 @@
-<div class="content-preview" *ngIf="!!focusedItem">
+<article class="content-preview" *ngIf="!!focusedItem">
 
-  <!-- NAME -->
-  <h3>{{ focusedItem.name | translate }}</h3>
+  <header>
+    <!-- NAME -->
+    <h3>{{ focusedItem.name | translate }}</h3>
 
-  <!-- IF company or diploma -->
-  <h4 *ngIf="focusedItem.company || focusedItem.school">
-    <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
-    <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
-    <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
-  </h4>
+    <!-- IF company or diploma -->
+    <h4 *ngIf="focusedItem.company || focusedItem.school">
+      <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
+      <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
+      <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
+    </h4>
 
-  <!-- IF project or diploma -->
-  <h4 *ngIf="focusedItem.project || focusedItem.school">
-    <span class="content-prefix">{{ "for" | translate }}</span>&nbsp;
-    <span *ngIf="focusedItem.project">{{ focusedItem.project.name | translate }}</span>
-    <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
-  </h4>
+    <!-- IF project -->
+    <h4 *ngIf="focusedItem.client">
+      <span class="content-prefix">{{ "for" | translate }}</span>&nbsp;
+      {{ focusedItem.client.name | translate }}
+    </h4>
+  </header>
 
   <!-- DATE -->
-  <p>{{ focusedItem.dates.start | date : "MMM yyyy" }} <span class="content-prefix">{{ "to" | translate }}</span>
-    <span *ngIf="focusedItem.dates.end">{{ focusedItem.dates.end | date : "MMM yyyy" }}</span>
-    <span *ngIf="focusedItem.dates.end === null">{{ "present" | translate }}</span>
+  <p>
+    {{ focusedItem.dates.start | date : "MMM yyyy" }}
+    <span class="content-prefix">{{ "to" | translate }}</span>
+    {{ (focusedItem.dates.end | date : "MMM yyyy") || ("present" | translate) }}
   </p>
 
   <!-- DESC -->
   <p>{{ focusedItem.desc | translate | ellipsis:200 }}</p>
 
-</div>
+</article>

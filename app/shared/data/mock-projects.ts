@@ -103,7 +103,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
       'name': 'MS Amlin',
-      'logo': '../../../assets/img/png/companies/msamlin.png',
+      'logo': '../../../assets/img/png/projects/msamlin.png',
       'url': 'https://www.msamlin.com/en/index.html',
       'featured': true
   },

@@ -3,8 +3,8 @@
   <my-filters [page]="'experience'" (selectFilter)="filterFor($event)"></my-filters>
 
   <main class="row container-dual">
-    <div class="col-xs-12 col-sm-4 container-select block-center-xs">
 
+    <section class="col-xs-12 col-sm-4 container-select block-center-xs">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let role of roles | filter:{ category: value }"
             (mouseover)="focusItem(role)" (click)="goTo(role)"
@@ -16,14 +16,12 @@
                     {{ role.name }} - {{ role.company.name }}
                 </span>
             </label>
-
         </li>
       </ul>
-    </div>
+    </section>
 
-    <article class="col-xs-8 container-preview hidden-xs">
-      <my-preview [focusedItem]="focusedItem"></my-preview>
-    </article>
+    <!-- PREVIEW -->
+    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem"></my-preview>
 
   </main>
 

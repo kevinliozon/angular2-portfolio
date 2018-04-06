@@ -34,9 +34,11 @@
       </div>
 
       <!-- PREVIEW -->
-      <article class="col-xs-8 container-preview hidden-xs" *ngIf="category === 'overview'">
-        <my-preview [focusedItem]="focusedItem"></my-preview>
-      </article>
+      <my-preview
+        class="col-xs-8 container-preview hidden-xs"
+        *ngIf="category === 'overview'"
+        [focusedItem]="focusedItem">
+      </my-preview>
     </section>
 
     <!-- CERTIFS -->
