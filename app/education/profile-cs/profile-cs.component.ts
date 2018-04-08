@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ProfileCsComponent {
 
   @Input() public profile: any;
+  @Input() public certifs: any;
 
   constructor() {  }
 

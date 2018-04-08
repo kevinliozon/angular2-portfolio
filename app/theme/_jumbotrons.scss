@@ -20,6 +20,18 @@
   }
 }
 
+
+.wrap-jumbo:nth-child(even) {
+  // refers to parent
+  .wrap-articles & {
+    @include drop-shadow(false, -3px, 3px, 3px, 0px, $grey);
+
+    .content-jumbo {
+      float: right;
+    }
+  }
+}
+
 .btn-jumbo {
   .btn {
     float: right;
@@ -34,11 +46,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .jumbotron.wrap-jumbo {
-    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
-  }
-  .img-jumbo img {
-    width: 50%;
+  .container {
+    .jumbotron {
+      &.wrap-jumbo {
+        @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+      }
+
+      &.wrap-jumbo--sm {
+        max-width: 80%;
+      }
+    }
+    .img-jumbo img {
+      width: 50%;
+    }
   }
 }
 

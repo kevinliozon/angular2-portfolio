@@ -43,12 +43,15 @@
 
     <!-- CERTIFS -->
     <section class="container" *ngSwitchCase="'codeschool'">
+
       <article class="jumbotron wrap-jumbo--sm">
-        <profile-cs [profile]="csProfile"></profile-cs>
+        <profile-cs class="row" [profile]="csProfile" [certifs]="csCertifs"></profile-cs>
       </article>
-      <div class="row wrap-center">
+
+      <section class="row wrap-center">
         <my-card class="col-xs-12 col-sm-4 col-md-3" *ngFor="let certif of csCertifs" [object]="certif"></my-card>
-      </div>
+      </section>
+
     </section>
 
   </main>
