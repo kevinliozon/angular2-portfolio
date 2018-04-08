@@ -5,18 +5,20 @@
     <h4>{{ profile.title }} - {{ age }}</h4>
     <p>{{ 'homeText0' | translate }}</p>
     <p>{{ 'homeText1' | translate }}</p>
+    <p>{{ 'homeText2' | translate }}</p>
   </section>
 
   <figure class="col-xs-12 col-sm-4 img-jumbo">
-    <img class="img--flip" [src]="profile.image" [alt]="profile.name">
+    <img class="img--flip" [src]="profile.images.avatar" [alt]="profile.name">
   </figure>
 
-  <h4 class="col-xs-12">{{ 'homeText2' | translate }}</h4>
+  <h4 class="col-xs-12">{{ 'homeText3' | translate }}</h4>
 
   <footer class="col-xs-12 btn-group-jumbo">
     <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-fed">{{ 'homeBtn0' | translate }}</a>
     <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-ux">{{ 'homeBtn1' | translate }}</a>
     <a class="btn btn-primary" [routerLink]="['../projects']">{{ 'homeBtn2' | translate }}</a>
+    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-contact">{{ 'homeBtn3' | translate }}</a>
   </footer>
 
 </div>

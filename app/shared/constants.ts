@@ -2,11 +2,13 @@ export const CONSTANTS = {
   PROFILE: {
     name: 'Kevin Liozon',
     title: 'Front-End Developer & UX Designer',
-    expertise: {
-      fed: 'Angular & Ionic',
-      ux: 'Interaction & UI design'
+    images: {
+        avatar: 'assets/img/svg/perso/photo.svg',
+        dev: 'assets/img/svg/perso/dev.svg',
+        design: 'assets/img/svg/perso/design.svg',
+        story: 'assets/img/svg/perso/light.svg',
+        place: 'assets/img/svg/perso/london.svg'
     },
-    image: 'assets/img/png/photo.png',
     email: 'mailto:kevinliozonpro@gmail.com',
     street: '2 Indigo Mews, Ashton Street',
     postcode: 'E14 9PN',

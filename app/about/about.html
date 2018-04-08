@@ -24,7 +24,7 @@
         </section>
 
         <figure class="col-xs-12 col-sm-4 img-jumbo">
-          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+          <img [src]="details.images.dev">
         </figure>
 
       </div>
@@ -52,14 +52,14 @@
         </section>
 
         <figure class="col-xs-12 col-sm-4 img-jumbo">
-          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+          <img [src]="details.images.design">
         </figure>
 
       </div>
     </article>
 
 
-    <article id="about-other" class="jumbotron wrap-jumbo">
+    <article id="about-story" class="jumbotron wrap-jumbo">
       <div class="row">
 
         <section class="content-jumbo col-xs-12 col-sm-8">
@@ -70,18 +70,18 @@
         </section>
 
         <figure class="col-xs-12 col-sm-4 img-jumbo">
-          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+          <img [src]="details.images.story">
         </figure>
 
       </div>
     </article>
 
 
-    <article id="about-place" class="jumbotron wrap-jumbo">
+    <article id="about-contact" class="jumbotron wrap-jumbo">
       <div class="row">
 
         <div class="content-jumbo col-xs-12 col-sm-8">
-          <h2>{{ 'aboutTitle4' | translate }}</h2>
+          <h2>{{ 'aboutTitle3' | translate }}</h2>
           <address>
             <p><a href={{details.email}}>Kevin Liozon</a></p>
             <p>{{details.city}}</p>
@@ -90,7 +90,7 @@
         </div>
 
         <figure class="col-xs-12 col-sm-4 img-jumbo">
-          <img src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png">
+          <img [src]="details.images.place">
         </figure>
 
       </div>
@@ -98,7 +98,7 @@
   </main>
 
   <section id="about-achiev">
-    <h2>{{ 'aboutTitle3' | translate }}</h2>
+    <h2>{{ 'aboutTitle4' | translate }}</h2>
     <div class="row">
       <my-card
         class="col-xs-12 col-sm-4 col-md-3"

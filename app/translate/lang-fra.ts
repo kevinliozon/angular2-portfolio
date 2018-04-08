@@ -8,11 +8,11 @@ const titles = {
     'Progression'
   ],
   'aboutPage': [
-    'Motivé à rester à jour',
-    'Une conscience pour le design',
+    'Une veille technologique constante',
+    'Un œil pour le design',
     'Pourquoi l\'UX m\'importe'  ,
+    'Comment prendre contact',
     'Mes principaux challenges',
-    'Où je vis',
     'Mes outils habituels',
     'Mes hobbies'
   ]
@@ -47,6 +47,7 @@ export const LANG_FRA_TRANS = {
     'homeBtn0': 'Pratiques Dev',
     'homeBtn1': 'Pratiques UX',
     'homeBtn2': 'Projets',
+    'homeBtn3': 'Coordonnées',
 
 
     /*** ABOUT ME ***/
@@ -128,12 +129,14 @@ export const LANG_FRA_TRANS = {
 
     /*** HOBBIES ***/
     // Names
+    '#hobbyCollect': `Collections`,
     '#hobbyModding': `Modding`,
     '#hobbyScuba': `Plongée`,
     '#hobbyCulture': `Histoire & Litterature`,
     '#hobbyWindsurf': `Planche à Voile`,
     '#hobbyHockey': `Hockey sur glace`,
     // Descs
+    '#hobbyDescCollect': `Collectionne dans plusieurs domaines depuis mon enfance et surtout les cartes à échanger.`,
     '#hobbyDescModding': `Premiers pas en tant que dev en créant des scripts grâce aux toolsets`,
     '#hobbyDescScuba': `Pratique depuis longtemps. Mes plongées favorites ont eu lieu à Malte.`,
     '#hobbyDescCulture': `Connaître le passé et le présent aide à entrependre le futur.`,

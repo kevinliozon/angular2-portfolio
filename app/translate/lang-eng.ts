@@ -10,9 +10,9 @@ const titles = {
   'aboutPage': [
     'An enthusiasm for frontend techs',
     'An awareness for design',
-    'Why do I care about UX?',
+    'Why do I care about UX',
+    'How to reach me',
     'My main achievements',
-    'Where I live',
     'My usual tools',
     'My hobbies'
   ]
@@ -35,15 +35,18 @@ export const LANG_ENG_TRANS = {
     'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
     'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
     // Texts
-    'homeText0': `Hi! My name is Kevin. As a developer, Angular and Ionic technologies are my speciality.
-                  While as a designer, it would be the field of Interaction as well as UI Design.`,
-    'homeText1': `I live in London since February 2016. Here, I had the opportunity to work
+    'homeText0': `Hi! My name is Kevin. I am a Front-End developer specialised into Angular and Ionic technologies.
+                  I am also a NN/g certified UX designer specialised into the field of Interaction as well as UI Design.`,
+    'homeText1': `My expertise as a developer and as a designer are both issued from my academic background and
+                  especially my professional experiences in these fields.`,
+    'homeText2': `I live in London since February 2016. Here, I had the opportunity to work
                   with great professionals from all around the world while sharpening my business acumen.`,
-    'homeText2': 'Want to hear more about my:',
+    'homeText3': 'Want to hear more about my:',
     //Buttons
     'homeBtn0': 'Dev Practices',
     'homeBtn1': 'UX Practices',
     'homeBtn2': 'Projects',
+    'homeBtn3': 'Details',
 
 
     /*** ABOUT ME ***/
@@ -55,14 +58,17 @@ export const LANG_ENG_TRANS = {
     // Texts
     'aboutText0': `The first techs I learned were HTML, CSS, JavaScript, SQL and PHP. I slightly decided 
                   to focus more on frontend technologies and to lean towards sophisticated JS frameworks as well as CSS
-                  pre-processors like Sass.`,
-    'aboutText1': `I try to keep updated about the latest UX reports and practices.
+                  pre-processors like Sass. I usually rely on the official documentation of Angular and Ionic to stay
+                  up to date. When I need to learn a new technology, CodeSchool is my go to
+                  solution as a starting point.`,
+    'aboutText1': `I try to keep informed about the latest UX reports and practices.
                   The ones advocated by the Nielsen & Norman Group are my main reference.
+                  I follow also the documentations from UXPin and Smashing Magazine.
                   My favorite fields are definitely Interaction and Interface Design.
                   I use these skills to build user-centred and consistent interfaces.`,
-    'aboutText2': `It dates back from when I was support technician at the University Hospital of Montpellier.
+    'aboutText2': `It dates back from when I was software support technician at the University Hospital of Montpellier.
                   The change from a previous Hospital Information System software to a new one
-                  had seriously damaged the productivity of the different medical staffs.
+                  had seriously slowed down the productivity of the different medical staffs.
                   Mainly because of the messy and inconsistent new interface. That is why I give so much
                   importance to the detail as well as the user experience since.`,
 
@@ -88,11 +94,11 @@ export const LANG_ENG_TRANS = {
     '#projectDescPortfolio3': `This portfolio has been realised on Angular 2 with Bootstrap 3 and Gulp.js. 
                               It has been a very long and enlightening project because I was using it for training 
                               at Angular best practices. Practices I was later applying within the scope of my 
-                              full-time role's projects. Most of the UI assets are mine, especially
-                              the ones not related to any company/software logos. When I started (Oct 2016), Angular
-                              was still under Beta Release Candidate version. Bootstrap 3 was the only stable option
-                              as CSS framework. Next version step will be to migrate the project to the latest
-                              Angular and to use Angular Material instead of bootstrap.`,
+                              full-time role's projects. Most of the UI assets are mine and done in SVG format. Especially
+                              the ones not related to any company/software logos. When I started it, Angular
+                              was still under Beta Release Candidate version. Bootstrap 3 was the "safest" option
+                              as CSS framework. Next step will be to migrate the project to the latest
+                              Angular version and to use Angular Material instead of bootstrap.`,
     '#projectDescDigitela': `Corporate website.`,
     '#projectDescApags': `Website for an association related to cancer research. It has been my first web project
                          for an external client. It was for my internship during my sophomore year at the institute of
@@ -151,12 +157,14 @@ export const LANG_ENG_TRANS = {
 
     /*** HOBBIES ***/
     // Names
+    '#hobbyCollect': `Collectibles`,
     '#hobbyModding': `Modding`,
     '#hobbyScuba': `Scuba-Diving`,
     '#hobbyCulture': `Cultural Stuffs`,
     '#hobbyWindsurf': `Windsurf`,
     '#hobbyHockey': `Ice Hockey`,
     // Descs
+    '#hobbyDescCollect': `Collecting in various domains for many years, especially trading cards.`,
     '#hobbyDescModding': `First steps as a dev by creating event scripts via toolsets.`,
     '#hobbyDescScuba': `Practicing for a long time. My favorite spot has been Malta.`,
     '#hobbyDescCulture': `Knowing the past and the present helps getting properly into the future.`,

@@ -1,12 +1,20 @@
 import { Hobby } from '../../models/hobby';
 
 
-export let HOBBIES: Hobby[] = [{
+export let HOBBIES: Hobby[] = [
+{
+  'id': '#hobby6',
+  'name': '#hobbyCollect',
+  'image': '../../../assets/img/svg/hobbies/collect.svg',
+  'desc': '#hobbyDescCollect',
+  'url': null
+},
+{
   'id': '#hobby5',
   'name': '#hobbyModding',
   'image': '../../../assets/img/svg/hobbies/nexus.svg',
   'desc': '#hobbyDescModding',
-  'url': '#'
+  'url': 'https://www.nexusmods.com/users/681806'
 },
 {
   'id': '#hobby4',
