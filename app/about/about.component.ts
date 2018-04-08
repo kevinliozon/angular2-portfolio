@@ -53,7 +53,7 @@ export class AboutComponent implements OnInit{
   private scrollTo(): void {
     if (!!window.location.hash) {
       setTimeout(() => {
-        document.querySelector(window.location.hash).scrollIntoView({block: "end", behavior: "smooth"});
+        document.querySelector(window.location.hash).scrollIntoView({block: "start", behavior: "smooth"});
       }, 500);
     }
   }

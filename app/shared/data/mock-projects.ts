@@ -43,7 +43,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project14',
   'name': 'EIS Broker Portal',
-  'image': '../../../assets/img/png/projects/eis.png',
+  'image': '../../../assets/img/svg/companies/eis.svg',
   'featured': true,
   'active': true,
   'category': 'Web App',
@@ -54,7 +54,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
       'name': 'Endeavour Insurance Service',
-      'logo': '../../../assets/img/png/projects/eis.png',
+      'logo': '../../../assets/img/svg/companies/eis.svg',
       'url': 'https://www.endeavouris.com/',
       'featured': true
   },
@@ -92,7 +92,7 @@ export let PROJECTS: Project[] = [{
 {
   'id': '#project13',
   'name': 'MS Amlin',
-  'image': '../../../assets/img/png/projects/msamlin.png',
+  'image': '../../../assets/img/svg/companies/msamlin.svg',
   'featured': false,
   'active': false,
   'category': 'Mobile App',
@@ -103,7 +103,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
       'name': 'MS Amlin',
-      'logo': '../../../assets/img/png/projects/msamlin.png',
+      'logo': '../../../assets/img/svg/companies/msamlin.svg',
       'url': 'https://www.msamlin.com/en/index.html',
       'featured': true
   },
