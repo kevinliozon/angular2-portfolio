@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
   /**
    * Following jQuery for toggling burger menu
    */
-  private toggleMenuJq() {
+  private toggleMenuJq(): void {
     $(document).on('click','.navbar-collapse.in',function(e) {
         if( $(e.target).is('a') ) {
             $(this).collapse('hide');
@@ -118,13 +118,18 @@ export class HeaderComponent implements OnInit {
    * Specify the page has changed with a flag to trigger the transition
    * @param {string} newTitle
    */
-  public setTitle(newTitle: string) {
+  public setTitle(newTitle: string): void {
     this.titleService.setTitle(newTitle); // dynamic tab title
     this.title = this.titleService.getTitle(); // dynamic header title
 
     // animation trigger
     this.pageHasChanged = !this.pageHasChanged;
     setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // duration
+  }
+
+  public changeFont(): void {
+    let body = document.getElementsByTagName('body')[0];
+    body.classList.toggle("font-big");
   }
 
 }

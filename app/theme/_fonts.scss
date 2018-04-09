@@ -35,6 +35,20 @@ body {
     font-size: $font-base;
   }
 
+  .jumbotron {
+    p {
+      font-size: $font-big;
+    }
+  }
+
+  &.font-big {
+    .jumbotron {
+      p {
+        font-size: $font-macro;
+      }
+    }
+  }
+
   // Filters
   .toggle-label,
   .btn-group--filters .btn {
