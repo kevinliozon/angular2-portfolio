@@ -62,11 +62,9 @@
 
     <div class="triangle"></div>
 
-    <div class="btn-font">
-      <button class="btn dropdown-toggle" role="button" (click)="changeFont()">
-        a/A
-      </button>
-    </div>
+    <button class="btn btn-font dropdown-toggle" role="button" (click)="changeFont()" [class.selected]="fontHasChanged">
+      a / <span class="btn-label-big">a</span>
+    </button>
 
   </section>
 

@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   public title: any;
   public menu = CONSTANTS.MENU.ENG;
   public pageHasChanged = false;
+  public fontHasChanged = false;
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
@@ -130,6 +131,7 @@ export class HeaderComponent implements OnInit {
   public changeFont(): void {
     let body = document.getElementsByTagName('body')[0];
     body.classList.toggle("font-big");
+    this.fontHasChanged = !this.fontHasChanged;
   }
 
 }

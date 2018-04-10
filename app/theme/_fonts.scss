@@ -31,8 +31,10 @@ body {
   // Containers
   main,
   section,
-  article {
+  article,
+  p {
     font-size: $font-base;
+    font-weight: 200;
   }
 
   .jumbotron {
@@ -42,7 +44,8 @@ body {
   }
 
   &.font-big {
-    .jumbotron {
+    .jumbotron,
+    .content-preview {
       p {
         font-size: $font-macro;
       }
