@@ -7,8 +7,36 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProfileMainComponent implements OnInit {
 
-  public age: any;
   @Input() public profile: any;
+  public age: any;
+  public profileBtn: Array<any> = [{
+    name: 'homeBtn0',
+    route: '../about',
+    href: '',
+    class: 'btn btn-primary',
+    fragment: 'about-fed'
+  },
+  {
+    name: 'homeBtn1',
+    route: '../about',
+    href: '',
+    class: 'btn btn-primary',
+    fragment: 'about-ux'
+  },
+  {
+    name: 'homeBtn2',
+    route: '../projects',
+    href: '',
+    class: 'btn btn-primary',
+    fragment: null
+  },
+  {
+    name: 'homeBtn3',
+    route: '../about',
+    href: '',
+    class: 'btn btn-primary',
+    fragment: 'about-contact'
+  }];
 
   constructor() {  }
 

@@ -15,10 +15,14 @@
   <h4 class="col-xs-12">{{ 'homeText3' | translate }}</h4>
 
   <footer class="col-xs-12 btn-group-jumbo">
-    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-fed">{{ 'homeBtn0' | translate }}</a>
-    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-ux">{{ 'homeBtn1' | translate }}</a>
-    <a class="btn btn-primary" [routerLink]="['../projects']">{{ 'homeBtn2' | translate }}</a>
-    <a class="btn btn-primary" [routerLink]="['../about']" fragment="about-contact">{{ 'homeBtn3' | translate }}</a>
+    <a
+      *ngFor="let btn of profileBtn"
+      [class]="btn.class"
+      [routerLink]="[btn.route]"
+      [fragment]="btn.fragment">
+        {{ btn.name | translate }}
+    </a>
+    <a class="btn btn-primary" href="../assets/cv_kevinliozon_en.pdf">CV</a>
   </footer>
 
 </div>
