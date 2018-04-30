@@ -38,6 +38,7 @@ img {
 
 .img-round-link {
   @extend .img-round;
+  cursor: pointer;
   transition: all 0.4s ease;
 }
 

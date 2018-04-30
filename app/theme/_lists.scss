@@ -35,6 +35,8 @@ ol {
 
   label {
     display: block;
+    font-size: $font-small;
+    font-weight: normal;
     height: calc(#{$img-md} + 5px); // we add 5 pixels for preventing the shadow to be cut (overflow: hidden)
   }
 

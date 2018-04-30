@@ -1,7 +1,7 @@
 import { Project } from '../../models/project';
 
 export let PROJECTS: Project[] = [{
-  'id': '#project15',
+  'id': '#project16',
   'name': 'This Portfolio',
   'image': '../../../assets/img/svg/projects/portfoliov3.svg',
   'featured': true,
@@ -41,6 +41,52 @@ export let PROJECTS: Project[] = [{
   'github': 'https://github.com/kevinliozon/angular2-portfolio'
 },
 {
+  'id': '#project15',
+  'name': 'Surely Group',
+  'image': '../../../assets/img/svg/companies/surely.svg',
+  'featured': true,
+  'active': true,
+  'category': 'Web App',
+  'company': {
+    'name': 'Surely Group Ltd',
+    'logo': '../../../assets/img/svg/companies/surely.svg',
+    'url': 'https://surelygroup.com/',
+    'role': 'Front-End Developer & UI Designer'
+  },
+  'client': {
+    'name': 'Surely Group Ltd',
+    'logo': '../../../assets/img/svg/companies/surely.svg',
+    'url': 'https://surelygroup.com/',
+    'featured': true
+  },
+  'desc': '#projectDescSurely',
+  'techs': [
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+    },
+    {
+      'name': 'PHP',
+      'logo': '../../../assets/img/svg/skills/php.svg'
+    },
+    {
+      'name': 'Javascript',
+      'logo': '../../../assets/img/svg/skills/javascript.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    }
+  ],
+  'images': [''],
+  'dates': {
+    'start': '2018-04-13',
+    'end': '2018-04-20'
+  },
+  'url': 'https://www.eisportal.com/login',
+  'github': null
+},
+{
   'id': '#project14',
   'name': 'EIS Broker Portal',
   'image': '../../../assets/img/svg/companies/eis.svg',
@@ -49,8 +95,9 @@ export let PROJECTS: Project[] = [{
   'category': 'Web App',
   'company': {
       'name': 'Surely Group',
-      'logo': '',
-      'url': 'https://services.surelygroup.com/'
+      'logo': '../../../assets/img/svg/companies/surely.svg',
+      'url': 'https://surelygroup.com/',
+      'role': 'Front-End Developer & UI Designer'
   },
   'client': {
       'name': 'Endeavour Insurance Service',
@@ -95,11 +142,12 @@ export let PROJECTS: Project[] = [{
   'image': '../../../assets/img/svg/companies/msamlin.svg',
   'featured': false,
   'active': false,
-  'category': 'Mobile App',
+  'category': 'Web App',
   'company': {
       'name': 'Surely Group',
       'logo': '',
-      'url': 'https://services.surelygroup.com/'
+      'url': 'https://services.surelygroup.com/',
+      'role': 'Front-End Developer'
   },
   'client': {
       'name': 'MS Amlin',
@@ -147,8 +195,9 @@ export let PROJECTS: Project[] = [{
   'category': 'Mobile App',
   'company': {
     'name': 'Surely Group',
-    'logo': '',
-    'url': 'https://services.surelygroup.com/'
+    'logo': '../../../assets/img/svg/companies/surely.svg',
+    'url': 'https://surelygroup.com/',
+    'role': 'Front-End Developer & UX Designer'
   },
   'client': {
     'name': 'Douglas & Gordon',
@@ -205,7 +254,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'Surely Group',
     'logo': '../../../assets/img/svg/companies/surely.svg',
-    'url': 'https://services.surelygroup.com/'
+    'url': 'https://services.surelygroup.com/',
+    'role': 'Front-End Developer & UX Designer'
   },
   'client': {
     'name': 'Lloyds Banking Group',
@@ -274,7 +324,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'Doxy.me',
     'logo': '../../../assets/img/svg/companies/doxyme.svg',
-    'url': 'https://doxy.me/'
+    'url': 'https://doxy.me/',
+    'role': 'Front-End Consultant'
   },
   'client': {
     'name': 'Doxy.me',
@@ -319,7 +370,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'My Mini Factory',
     'logo': '../../../assets/img/svg/companies/mmf.svg',
-    'url': 'https://www.myminifactory.com/'
+    'url': 'https://www.myminifactory.com/',
+    'role': 'Front-End Developer & UX Designer'
   },
   'client': {
     'name': 'My Mini Factory',
@@ -372,7 +424,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'iMakr',
     'logo': '../../../assets/img/svg/companies/imakr.svg',
-    'url': 'https://www.imakr.com/'
+    'url': 'https://www.imakr.com/',
+    'role': 'Front-End Developer & UX Designer'
   },
   'client': {
     'name': 'iMakr',
@@ -483,8 +536,12 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/illustrator.svg'
     },
     {
-      'name': 'Photoshop',
-      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+      'name': 'InDesign',
+      'logo': '../../../assets/img/svg/skills/indesign.svg'
+    },
+    {
+      'name': 'Axure RP',
+      'logo': '../../../assets/img/svg/skills/axurerp.svg'
     },
     {
       'name': 'CSS',
@@ -523,6 +580,10 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/photoshop.svg'
     },
     {
+      'name': 'InDesign',
+      'logo': '../../../assets/img/svg/skills/indesign.svg'
+    },
+    {
       'name': 'CSS',
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
@@ -545,7 +606,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'Digitela',
     'logo': '../../../assets/img/svg/companies/digitela.svg',
-    'url': 'http://www.digitela.fr/'
+    'url': 'http://www.digitela.fr/',
+    'role': 'UI Designer'
   },
   'client': {
     'name': 'Haute Coiffure et Esthétique',
@@ -589,7 +651,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'Digitela',
     'logo': '../../../assets/img/svg/companies/digitela.svg',
-    'url': 'http://www.digitela.fr/'
+    'url': 'http://www.digitela.fr/',
+    'role': 'Front-End Developer & UX Designer'
   },
   'client': {
     'name': 'Association Pour l\'Amélioration Globale de la Santé',
@@ -633,7 +696,8 @@ export let PROJECTS: Project[] = [{
   'company': {
     'name': 'Digitela',
     'logo': '../../../assets/img/svg/companies/digitela.svg',
-    'url': 'http://www.digitela.fr/'
+    'url': 'http://www.digitela.fr/',
+    'role': 'Front-End Developer & UI Designer'
   },
   'client': {
     'name': 'Digitela',

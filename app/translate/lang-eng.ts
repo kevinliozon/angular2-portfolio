@@ -19,165 +19,195 @@ const titles = {
 }
 
 export const LANG_ENG_TRANS = {
-    /*** COMMON ***/
-    'more': 'More',
-    'skills': 'Skills',
-    'git': 'Git Repo',
-    'url': 'Link',
-    'at': 'at',
-    'for': 'for',
-    'to': 'to',
-    'present': 'present',
+  /*** COMMON ***/
+  'more': 'More',
+  'skills': 'Skills',
+  'git': 'Git Repo',
+  'url': 'Link',
+  'at': 'at',
+  'for': 'for',
+  'to': 'to',
+  'as': 'as',
+  'present': 'present',
 
 
-    /*** HOME ***/
-    // Titles
-    'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
-    'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
-    // Texts
-    'homeText0': `Hi! My name is Kevin. I am a Front-End developer specialised into Angular and Ionic technologies.
-                  I am also a NN/g certified UX designer specialised into the field of Interaction as well as UI Design.`,
-    'homeText1': `My expertise as a developer and as a designer are both issued from my academic background and
-                  especially my professional experiences in these fields.`,
-    'homeText2': `I live in London since February 2016. Here, I had the opportunity to work
-                  with great professionals from all around the world while sharpening my business acumen.`,
-    'homeText3': 'Want to hear more about my:',
-    //Buttons
-    'homeBtn0': 'Dev Practices',
-    'homeBtn1': 'UX Practices',
-    'homeBtn2': 'Projects',
-    'homeBtn3': 'Details',
+  /*** HOME ***/
+  // Titles
+  'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
+  'homeTitle2': titles.homePage[2], 'homeTitle3': titles.homePage[3],
+  // Texts
+  'homeText0': `Hi! My name is Kevin. I am a Front-End developer specialised into Angular and Ionic technologies.
+                I am also a NN/g certified UX designer specialised into the field of Interaction as well as UI Design.`,
+  'homeText1': `My expertise as a developer and as a designer are both issued from my academic background and
+                especially my professional experiences in these fields.`,
+  'homeText2': `I live in London since February 2016. Here, I had the opportunity to work
+                with great professionals from all around the world while sharpening my business acumen.`,
+  'homeText3': 'Want to hear more about my:',
+  //Buttons
+  'homeBtn0': 'Dev Practices',
+  'homeBtn1': 'UX Practices',
+  'homeBtn2': 'Projects',
+  'homeBtn3': 'Details',
 
 
-    /*** ABOUT ME ***/
-    // Titles
-    'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],
-    'aboutTitle2': titles.aboutPage[2], 'aboutTitle3': titles.aboutPage[3],
-    'aboutTitle4': titles.aboutPage[4], 'aboutTitle5': titles.aboutPage[5],
-    'aboutTitle6': titles.aboutPage[6], 'aboutTitle7': 'Some related skills:',
-    // Texts
-    'aboutText0': `The first techs I learned were HTML, CSS, JavaScript, SQL and PHP. I slightly decided 
-                  to focus more on frontend technologies and to lean towards sophisticated JS frameworks as well as CSS
-                  pre-processors like Sass. I usually rely on the official documentation of Angular and Ionic to stay
-                  up to date. When I need to learn a new technology, CodeSchool is my go to
-                  solution as a starting point.`,
-    'aboutText1': `I try to keep informed about the latest UX reports and practices.
-                  The ones advocated by the Nielsen & Norman Group are my main reference.
-                  I follow also the documentations from UXPin and Smashing Magazine.
-                  My favorite fields are definitely Interaction and Interface Design.
-                  I use these skills to build user-centred and consistent interfaces.`,
-    'aboutText2': `It dates back from when I was software support technician at the University Hospital of Montpellier.
-                  The change from a previous Hospital Information System software to a new one
-                  had seriously slowed down the productivity of the different medical staffs.
-                  Mainly because of the messy and inconsistent new interface. That is why I give so much
-                  importance to the detail as well as the user experience since.`,
+  /*** ABOUT ME ***/
+  // Titles
+  'aboutTitle0': titles.aboutPage[0], 'aboutTitle1': titles.aboutPage[1],
+  'aboutTitle2': titles.aboutPage[2], 'aboutTitle3': titles.aboutPage[3],
+  'aboutTitle4': titles.aboutPage[4], 'aboutTitle5': titles.aboutPage[5],
+  'aboutTitle6': titles.aboutPage[6], 'aboutTitle7': 'Some related skills:',
+  // Texts
+  'aboutText0': `The first techs I learned were HTML, CSS, JavaScript, SQL and PHP. I slightly decided 
+                to focus more on frontend technologies and to lean towards sophisticated JS frameworks as well as CSS
+                pre-processors like Sass. I usually rely on the official documentation of Angular and Ionic to stay
+                up to date. When I need to learn a new technology, CodeSchool is my go to
+                solution as a starting point.`,
+  'aboutText1': `I try to keep informed about the latest UX reports and practices.
+                The ones advocated by the Nielsen & Norman Group are my main reference.
+                I follow also the documentations from UXPin and Smashing Magazine.
+                My favorite fields are definitely Interaction and Interface Design.
+                I use these skills to build user-centred and consistent interfaces.`,
+  'aboutText2': `It dates back from when I was software support technician at the University Hospital of Montpellier.
+                The change from a previous Hospital Information System software to a new one
+                had seriously slowed down the productivity of the different medical staffs.
+                Mainly because of the messy and inconsistent new interface. That is why I give so much
+                importance to the detail as well as the user experience since.`,
 
 
-    /*** PROJECTS ***/
-    // Descs
-    '#projectDescHce': `Showcase WordPress website for a consortium of southern
-                        France hairdressers and estheticians. I only designed the interface
-                        (zonings, mockups).`,
-    '#projectDescPortfolioV1': `First portfolio realised during my first year at the
-                              institute of technology. It is animated with Flash and CSS3.
-                              Flash was not already "dead" at the time and I always wanted to
-                              create a website entirely based on flash. Today I would not reuse such design
-                              but it has been an exciting experience though!
-                              Note: You may have to activate Flash depending on your browser`,
-    '#projectDescPortfolioV2': `Animated portfolio with Edge Animate and CSS3 and realised during my year as bachelor. 
-                              Edge has been the failed attempt from Adobe to replace Flash by a jQuery based
-                              technology. Indeed it was surprisingly working well on every browser since it was
-                              using Javascript. Unfortunately the failure of this tech was mostly related to marketing 
-                              and learning curve reasons.
-                              However I really liked using it and made me realise of all the possibilities offered
-                              by Javascript at the time (2015)`,
-    '#projectDescPortfolio3': `This portfolio has been realised on Angular 2 with Bootstrap 3 and Gulp.js. 
-                              It has been a very long and enlightening project because I was using it for training 
-                              at Angular best practices. Practices I was later applying within the scope of my 
-                              full-time role's projects. Most of the UI assets are mine and done in SVG format. Especially
-                              the ones not related to any company/software logos. When I started it, Angular
-                              was still under Beta Release Candidate version. Bootstrap 3 was the "safest" option
-                              as CSS framework. Next step will be to migrate the project to the latest
-                              Angular version and to use Angular Material instead of bootstrap.`,
-    '#projectDescDigitela': `Corporate website.`,
-    '#projectDescApags': `Website for an association related to cancer research. It has been my first web project
-                         for an external client. It was for my internship during my sophomore year at the institute of
-                         technology. I had a lot of autonomy for the design and the communication with my employer and
-                         the client has been great. Unfortunately the association has been dismantled for financial
-                         reasons and the website does not exist anymore. I just have the mockups left.`,
-    '#projectDescEukiyo': `Artistic contents sharing platform - Student project.`,
-    '#projectDescC2I': `Educational contents sharing platform - Student project`,
-    '#projectDescImakr': `E-Commerce platform for 3D printing industry related products`,
-    '#projectDescMMF': `A 3D printed contents/models sharing platform for 3D designers
-                        and enthusiasts`,
-    '#projectDescDoxy': `Doxy.me is an innovative telemedecine based in Provo (USA - Utah) aiming to offer
-                         the best possible experience to the patient and doctors using this solution.
-                         I have been under contract as an Angular/Ionic consultant.`,
-    '#projectDescDnG': `An internal CRM mobile app for a West London Real Estate Agent (UAT)`,
-    '#projectDescLloyds': `IoT mobile app for connected objects (UAT)`,
-    '#projectDescEis': `Endeavour Insurance Services is a specialist in placement of delegated authority and open
-                        market business in North America and Europe.
-                        My role in this projects has to serve three purposes. First and foremost implementing a new
-                        design for their portal dedicated to brokers and underwriters. Then refactoring many issues
-                        related to the front-end architecture of the project (misuse of bootstrap and inefficient
-                        stylesheets). These changes have a long term goal of being reused client's portal projects. 
-                        Finally I have to pursue the evolutions required by the client.`,
-    '#projectDescMsa': `MS Amlin is an important commercial insurer operating in the Lloyd's of London and part of the
-                        japanese MS & AD holding.
-                        My role on this project has mostly been to fix UI issues, refactoring some templates as well as
-                        creating new ones.`,
+  /*** PROJECTS ***/
+  // Descs
+  '#projectDescHce': `Showcase WordPress website for an association of southern France hairdressers and estheticians. 
+                      I served as UI designer, producing zonings, mockups and UI assets with Illustrator and Photoshop.
+                      I had a lot of autonomy and could even work remotely from time to time.`,
+  '#projectDescPortfolioV1': `First portfolio realised during my first year at the institute of technology. It was 
+                              made with Flash and CSS3. Flash was not already "dead" at the time and I always 
+                              wanted to create a website entirely based on it. Today the design may sound awkward
+                              but at least I managed to make it through!`,
+  '#projectDescPortfolioV2': `My second portfolio, made during my year as bachelor with Edge Animate and CSS3. At the 
+                              time Edge was an attempt by Adobe to replace Flash by a jQuery based technology. It is 
+                              still working pretty well on every browsers. Unfortunately the reason why they stopped 
+                              developing Edge was mostly related to marketing and learning curve reasons. However I 
+                              really liked using it and made me realise of all the possibilities offered by jQuery at 
+                              the time`,
+  '#projectDescPortfolio3': `This portfolio has been realised with Angular 2, Bootstrap 3 and Gulp.js. It has been a 
+                             long and enlightening side project because I was using it for training at Angular best 
+                             practices. Most of the UI assets are mine and done in SVG format. When I started it, 
+                             Angular was still in Beta RC2 version. Bootstrap 3 was the "safest" option as CSS framework. 
+                             Next step will be to migrate the project to the latest Angular version and to use 
+                             Angular Material instead of bootstrap.`,
+  '#projectDescDigitela':  `Corporate website of my first company. I was working on it in parallel of the clients' 
+                            projects when I had spare time. It was based on wordpress and the design was pretty basic 
+                            without that much of content. My role has been to rebuild the information architecture. 
+                            Then create a graphical identity to the site via the conception of UI assets with 
+                            Illustrator and Photoshop. Before implementing everything in the WordPress platform.`,
+  '#projectDescApags': `Website for an association related to cancer research. It has been my first web project for an 
+                        external client. It was for my internship during my sophomore year at the institute of 
+                        technology. I had a lot of autonomy for the design and the communication with my employer and 
+                        the client has been great. Unfortunately the association has been dismantled for financial 
+                        reasons and the website does not exist anymore. I just have the mockups left.`,
+  '#projectDescEukiyo': `E-Ukiyo is an artistic/media contents sharing platform I created as an individual student project during 
+                        my bachelor year in Webdesign. I first presented the designs to a jury, composed of my teachers.
+                        Then I developed it with Wordpress. The platform offers many profiles of users and artists
+                        can upload their works. The name refers to the japanese artworks called ukiyo-e and the aim
+                        was to attract mostly designers specialised into japanese and japonist art. However I prefered
+                        to cancel this project due to personal reasons.`,
+  '#projectDescC2I': `C2I Réseaux is an educational contents sharing platform made for student project in group.
+                      It was supposed to allow teachers involved into the C2I (Internet & Computing Certicate)
+                      to share their contents (courses, videos conference, podcasts) between themselves and
+                      with the students. I cumulated both the roles of project manager and front-end dev in this project.
+                      The project was buil on Wordpress but has unfortunately been cancelledbecause of budget
+                      restrictions.`,
+  '#projectDescImakr': `Rebuilding iMakr's E-Commerce platform has been my very first project after I arrived in London.
+                        This website is selling 3D printing industry related products and they wanted to revamp
+                        the overall design to make it more accessible to newcomers in this industry. Also it was 
+                        necessary to make the navigation and checkout process easier for the professionals.
+                        My role has been first and foremost to create a new design and present my ideas via
+                        complete mockups for each pages and components. Then turning them into prototypes by using
+                        local HTML/CSS/jQuery pages. Once agreed I ended up starting to develop.`,
+  '#projectDescMMF': `MyMiniFactory, a subsidiary of iMakr, aims to provide 3D printed contents/models sharing platform 
+                      for 3D designers and passionates. This application was more complex than iMakr's one because
+                      the site is supposed to offer lot more interactions with the different contents and user
+                      profiles. My role has been similar to my contribution to iMakr. Creating new designs,
+                      mocking-up/prototyping my ideas for each page and component. Before starting the development.`,
+  '#projectDescDoxy': `Doxy.me is an innovative telemedecine solution of which the company is based 
+                      in Provo (USA - Utah). This app aims to offer the best possible experience to the patient and 
+                      doctors. I have worked remotely for them as an Angular/Ionic consultant.`,
+  '#projectDescDnG': `An iOS ERP app for a Central London Real Estate Agent. The app is built with the framework Ionic 
+                      in a way it communicates with their desktop ERP through a common API. It has been developed in way 
+                      to handle different user profiles and rights. I had to intervene into the design process, 
+                      especially the latest phases and obviously in taking the responsability of building the front-end 
+                      structure (templates, components, stylesheets) from scratch.`,
+  '#projectDescLloyds': `An IoT app for iOS. It has been my first mobile app project built with the framework Ionic.
+                         Its purpose is offering the possibility to gather the data from many connected objects
+                         and display them within one hub application. It offers also the ability to scan many online
+                         items such as tablets, wifi routers and so on in the aim to register them and pre-filling the 
+                         relevant info: photo, notes, mac address and value. Offline items can also be added.`,
+  '#projectDescEis': `Endeavour Insurance Services is a specialist in placement of delegated authority and open
+                      market business in North America and Europe. My role had to serve three purposes. First 
+                      implementing a new design for their portal dedicated to brokers and underwriters. Then fixing 
+                      many issues related to the old front-end implementation (misuse of bootstrap and stylesheets). 
+                      Finally I had to keep on with the evolutions required by the client.`,
+  '#projectDescMsa': `MS Amlin is an important commercial insurer operating in the Lloyd's of London and part of the
+                      japanese MS & AD holding. My role on this project has mostly been to fix UI issues, refactoring
+                      some templates as well as creating new ones.`,
+  '#projectDescSurely': `Regarding an upcoming Hackathon in which my company was due to participate I had to to work
+                        on its new website. Albeit the project was already running for 3 months before I started being 
+                        involved, it had become necessary to finish it within a short scope. As a result I took
+                        the responsability to finish the project. However I not only ended up adding the missing
+                        contents and styling the pages but also reorganising the way the info were displayed
+                        (everything was hard coded, no usage of posts). I also installed the plugins for SEO (Yoast) and
+                        migrations (All-In-One) as well as created one for the Analytics.`,
 
 
-    /*** ROLES ***/
-    // Descs
-    '#roleDescSurely': `As Frontend Developer and interaction designer, my role is
-                        first and foremost to produce prototypes of applications
-                        as well as UI assets. Then implementing these designs, once validated,
-                        thanks to the hybrid mobile framework Ionic,
-                        built upon Cordova and Angular.`,
-    '#roleDescDoxy': `My role was to fix frontend and Xcode related issues as well
-                      as setting up Cordova plugins.`,
-    '#roleDescMmf': `MyMiniFactory is the subsidiary of iMakr, which I worked for
-                    previously. My role this time was to implement the design I
-                    produced earlier into its Symfony platform with Foundation and jQuery.
-                    From time to time I had to create/improve UI contents.`,
-    '#roleDescImakr': `During my time as Frontend developer and UX designer in iMakr,
-                      I had to produce the new designs for the websites of the
-                      company and its subsidiary MyMiniFactory. Then implementing the
-                      iMakr's one into its Prestashop platform with Bootstrap and jQuery.`,
-    '#roleDescDigitela': `My first professional experience as a developer and a designer.
-                        I was mostly working on the mockups and the conception of our
-                        clients' websites with Wordpress. My main task has been to
-                        define the graphical identity of my company's website.`,
-    '#roleDescMedasys': `I helped the medical staffs of the University Hospital of
-                        Montpellier (France), during the deployment of the new HIS
-                        software DxCare. It has been one of my first awareness about how
-                        user experience could have an impact on the workflow of a team.`,
+  /*** ROLES ***/
+  // Descs
+  '#roleDescSurely': `As Frontend Developer and interaction designer, my role is first and foremost to produce 
+                      prototypes of applications as well as UI assets. Then implementing these designs, once validated,
+                      thanks to the hybrid mobile framework Ionic,
+                      built upon Cordova and Angular.`,
+  '#roleDescDoxy': `I have been hired as consultant to review their existing Ionic 1 app and to give guidelines
+                    about what could be done to make the project more maintainable .`,
+  '#roleDescMmf': `MyMiniFactory is the subsidiary of iMakr, which I worked for
+                  previously. My role this time was to implement the design I
+                  produced earlier into its Symfony platform with Foundation and jQuery.
+                  From time to time I had to create/improve UI contents.`,
+  '#roleDescImakr': `During my time as Frontend developer and UX designer in iMakr,
+                    I had to produce the new designs for the websites of the
+                    company and its subsidiary MyMiniFactory. Then implementing the
+                    iMakr's one into its Prestashop platform with Bootstrap and jQuery.`,
+  '#roleDescDigitela': `My first professional experience as a developer and a designer.
+                      I was mostly working on the mockups and the conception of our
+                      clients' websites with Wordpress. My main task has been to
+                      define the graphical identity of my company's website.`,
+  '#roleDescMedasys': `I helped the medical staffs of the University Hospital of
+                      Montpellier (France), during the deployment of the new HIS
+                      software DxCare. It has been one of my first awareness about how
+                      user experience could have an impact on the workflow of a team.`,
 
 
-    /*** HOBBIES ***/
-    // Names
-    '#hobbyCollect': `Collectibles`,
-    '#hobbyModding': `Modding`,
-    '#hobbyScuba': `Scuba-Diving`,
-    '#hobbyCulture': `Cultural Stuffs`,
-    '#hobbyWindsurf': `Windsurf`,
-    '#hobbyHockey': `Ice Hockey`,
-    // Descs
-    '#hobbyDescCollect': `Collecting in various domains for many years, especially trading cards.`,
-    '#hobbyDescModding': `First steps as a dev by creating event scripts via toolsets.`,
-    '#hobbyDescScuba': `Practicing for a long time. My favorite spot has been Malta.`,
-    '#hobbyDescCulture': `Knowing the past and the present helps getting properly into the future.`,
-    '#hobbyDescWindsurf': `Quite difficult to practice in London though...`,
-    '#hobbyDescHockey': `NHL follower since my childhood. Red Wings fan despite they are actually terrible.`,
+  /*** HOBBIES ***/
+  // Names
+  '#hobbyCollect': `Collectibles`,
+  '#hobbyModding': `Modding`,
+  '#hobbyScuba': `Scuba-Diving`,
+  '#hobbyCulture': `Cultural Stuffs`,
+  '#hobbyWindsurf': `Windsurf`,
+  '#hobbyHockey': `Ice Hockey`,
+  // Descs
+  '#hobbyDescCollect': `Collecting in various domains for many years, especially trading cards.`,
+  '#hobbyDescModding': `First steps as a dev by creating event scripts via toolsets.`,
+  '#hobbyDescScuba': `Practicing for a long time. My favorite spot has been Malta.`,
+  '#hobbyDescCulture': `Knowing the past and the present helps getting properly into the future.`,
+  '#hobbyDescWindsurf': `Quite difficult to practice in London though...`,
+  '#hobbyDescHockey': `NHL follower since my childhood. Red Wings fan despite their terrible results.`,
 
 
-    /*** DIPLOMAS ***/
-    // Names
-    '#diplomaNng': `NNG UX Certification`,
-    '#diplomaCs': `CodeSchool Certifications `,
-    '#diplomaLp': `Webdesign Bachelor's Degree`,
-    '#diplomaDut': `Web & Multimedia Technologies two-years University Degree`,
-    '#diplomaDu': `Webmaster University Degree`,
-    '#diplomaBac': `Science High-School Degree`,
+  /*** DIPLOMAS ***/
+  // Names
+  '#diplomaNng': `NNG UX Certification`,
+  '#diplomaCs': `CodeSchool Certifications`,
+  '#diplomaLp': `Webdesign Bachelor's Degree`,
+  '#diplomaDut': `Web & Multimedia Technologies two-years University Degree`,
+  '#diplomaDu': `Webmaster University Degree`,
+  '#diplomaBac': `Science High-School Degree`,
 };

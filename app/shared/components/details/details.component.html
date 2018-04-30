@@ -1,24 +1,35 @@
-<div class="container-stretch" [@routeTrans]="'true'">
+<div class="container" [@routeTrans]="'true'">
 
-  <h2>DETAILS</h2>
+  <header>
+    <h2>{{ details.name }}</h2>
+    <h4>{{ details.category }}</h4>
+    <h4 *ngIf="type === 'project'">
+      {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;{{ details.company.name }}
+    </h4>
+  </header>
+
   <main>
-    {{ details.id }}
-    {{ details.name }}
-    {{ details.category }}
-    {{ details.desc | translate }}
-    <div *ngIf="type === 'project' || type === 'role'">
-      <div class="" *ngFor="let tech of details.techs">
-        <img [src]="tech.logo" [alt]="tech.name" />
-        {{ tech.name }}
-      </div>
-    </div>
-    <!-- TODO add shields - breaks filters -->
-    <div *ngIf="type === 'role' || type === 'diploma'" class="">
-      <div *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
-        {{ project.name }}
-      </div>
-    </div>
+    <p>{{ details.desc | translate }}</p>
   </main>
+
+  <section class="img-group" *ngIf="type === 'project' || type === 'role'">
+    <figure class="img-wrap" *ngFor="let tech of details.techs">
+      <span class="img img-round">
+          <img [src]="tech.logo" [alt]="tech.name">
+      </span>
+      <figcaption class="img-label">{{ tech.name }}</figcaption>
+    </figure>
+  </section>
+
+  <section class="img-group" *ngIf="type === 'role' || type === 'diploma'">
+    <figure class="img-wrap" *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
+      <span class="img img-round-link">
+          <img [src]="project.image" [alt]="project.name">
+      </span>
+      <figcaption class="img-label">{{ project.name }}</figcaption>
+    </figure>
+  </section>
+
   <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
 
 </div>

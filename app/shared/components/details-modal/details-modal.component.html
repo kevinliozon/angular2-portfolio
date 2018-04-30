@@ -3,18 +3,23 @@
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{details.name}}</h4>
-      </div>
+    <section class="modal-content">
+
+      <header class="modal-header" data-dismiss="modal">
+        <button type="button" class="close">&times;</button>
+        <h4 class="modal-title">{{ details.name }}</h4>
+      </header>
+
       <div class="modal-body">
-        <p>{{details.desc}}</p>
+        <h5>{{ details.category }}</h5>
+        <p>{{ details.desc | translate }}</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">More</button>
+      </footer>
+
+    </section>
 
   </div>
 </div>
