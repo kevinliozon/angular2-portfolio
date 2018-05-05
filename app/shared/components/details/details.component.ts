@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 // Services
 import { DiplomaService } from '../../../providers/diploma.service';
 import { ProjectService } from '../../../providers/project.service';
 import { RoleService } from '../../../providers/role.service';
+import { ModalService } from "../../../providers/modal.service";
 //animations
 import { routeTrans } from '../../components/animations/route-transition';
 
@@ -27,11 +28,12 @@ export class DetailsComponent implements OnInit{
   constructor(private route: ActivatedRoute,
               private diplomaService: DiplomaService,
               private projectService: ProjectService,
-              private roleService: RoleService){
+              private roleService: RoleService,
+              private modalService: ModalService) {
     // We get the id and the type from the selected item
     this.sub = this.route.params.subscribe((params) => {
-          this.id = params['id'];
-          this.type = params['type'];
+      this.id = params['id'];
+      this.type = params['type'];
     });
   }
 
@@ -51,19 +53,15 @@ export class DetailsComponent implements OnInit{
     }
   }
 
-  public openModal(id, type) {
-    this.typeModal = type;
-    switch(type) {
-      case 'diploma':
-        this.detailsModal = this.diplomaService.resolveDiploma(id);
-        break;
-      case 'project':
-        this.detailsModal = this.projectService.resolveProject(id);
-        break;
-      case 'role':
-        this.detailsModal = this.roleService.resolveRole(id);
-        break;
-    }
+  /**
+   * Open modal
+   * Resolve the item to display thanks to its id and type
+   *
+   * @param id
+   * @param type
+   */
+  public openModal(id, type): void {
+    this.detailsModal = this.modalService.openModal(id, type);
   }
 
 }
