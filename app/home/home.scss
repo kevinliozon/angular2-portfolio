@@ -1,0 +1,15 @@
+.wrap-home {
+  .img-group {
+    @include flex-layout(wrap, space-around, flex-start, flex-start);
+    margin: auto;
+    width: 75%;
+
+    header {
+      text-align: center;
+    }
+
+    .img-wrap {
+      margin: auto $gap-big;
+    }
+  }
+}

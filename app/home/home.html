@@ -1,33 +1,25 @@
-<div class="container" [@routeTrans]="'true'">
+<div class="container wrap-home" [@routeTrans]="'true'">
 
   <main id="home-intro" class="jumbotron wrap-jumbo">
     <profile-main [profile]="profile"></profile-main>
   </main>
 
-  <section id="home-projects">
-    <h2>{{ 'homeTitle0' | translate }}</h2>
+  <section id="home-projects" class="img-group">
+    <header><h2>{{ 'homeTitle0' | translate }}</h2></header>
 
-    <div class="img-group">
-      <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
-        <span class="img img-round">
-            <img [src]="project.client?.logo" [alt]="project.client?.name">
-        </span>
-        <figcaption class="img-label">{{ project.client?.name }}</figcaption>
-      </figure>
-    </div>
+    <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
+      <a [href]="project.url" target="_blank"><img class="img img-brand" [src]="project.client?.logo" [alt]="project.client?.name"></a>
+      <figcaption class="img-label">{{ project.client?.name }}</figcaption>
+    </figure>
   </section>
 
-  <section id="home-skills">
-    <h2>{{ 'homeTitle1' | translate }}</h2>
+  <section id="home-skills" class="img-group">
+    <header><h2>{{ 'homeTitle1' | translate }}</h2></header>
 
-    <div class="img-group">
-      <figure class="img-wrap" *ngFor="let skill of skills" [hidden]="!skill.featured || !skill.frequent">
-        <span class="img img-round">
-            <img [src]="skill.image" [alt]="skill.name">
-        </span>
-        <figcaption class="img-label">{{ skill.name }}</figcaption>
-      </figure>
-    </div>
+    <figure class="img-wrap" *ngFor="let skill of skills" [hidden]="!skill.featured || !skill.frequent">
+      <img class="img img-float" [src]="skill.image" [alt]="skill.name">
+      <figcaption class="img-label">{{ skill.name }}</figcaption>
+    </figure>
   </section>
 
   <section id="home-milestones">

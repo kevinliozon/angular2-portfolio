@@ -29,7 +29,6 @@ export class DetailsComponent implements OnInit{
               private projectService: ProjectService,
               private roleService: RoleService){
     // We get the id and the type from the selected item
-    // TODO pass a parameter specifying from which page we come from
     this.sub = this.route.params.subscribe((params) => {
           this.id = params['id'];
           this.type = params['type'];

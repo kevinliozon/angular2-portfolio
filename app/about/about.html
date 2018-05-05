@@ -15,9 +15,7 @@
           <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
             <figure class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
-              <span class="img img-round" *ngIf="i < 5">
-                  <img [src]="skill.image" [alt]="skill.name">
-              </span>
+              <img class="img img-float" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
             </figure>
           </footer>
@@ -43,9 +41,7 @@
           <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
             <figure class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
-              <span class="img img-round" *ngIf="i < 5">
-                  <img [src]="skill.image" [alt]="skill.name">
-              </span>
+              <img class="img img-float" *ngIf="i < 5" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
             </figure>
           </footer>

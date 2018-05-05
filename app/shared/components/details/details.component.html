@@ -13,15 +13,17 @@
   </main>
 
   <section class="img-group" *ngIf="type === 'project' || type === 'role'">
+    <header><h5>Skills involved</h5></header>
+
     <figure class="img-wrap" *ngFor="let tech of details.techs">
-      <span class="img img-round">
-          <img [src]="tech.logo" [alt]="tech.name">
-      </span>
+      <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
       <figcaption class="img-label">{{ tech.name }}</figcaption>
     </figure>
   </section>
 
   <section class="img-group" *ngIf="type === 'role' || type === 'diploma'">
+    <header><h5>Projects</h5></header>
+
     <figure class="img-wrap" *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
       <span class="img img-round-link">
           <img [src]="project.image" [alt]="project.name">
