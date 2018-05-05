@@ -30,6 +30,16 @@
     </figure>
   </section>
 
+  <section class="container">
+    <div class="row">
+      <my-card
+        class="col-xs-12 col-sm-4 col-md-3"
+        *ngFor="let project of details.projects"
+        [object]="project">
+      </my-card>
+    </div>
+  </section>
+
   <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
 
 </div>

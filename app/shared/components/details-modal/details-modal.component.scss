@@ -1,0 +1,29 @@
+.modal-body {
+
+  .img-modal {
+    float: left;
+    margin: 0 $gap-reg $gap-reg 0;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .img-wrap,
+  .img-label {
+    display: inline-block;
+
+    .img {
+      @include square($img-md);
+      margin: auto;
+    }
+  }
+
+  .img-wrap {
+    min-height: auto;
+  }
+
+  .img-label {
+    margin-top: $gap-sm;
+  }
+}

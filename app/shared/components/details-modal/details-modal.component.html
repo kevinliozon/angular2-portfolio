@@ -11,13 +11,26 @@
       </header>
 
       <div class="modal-body">
-        <h5>{{ details.category }}</h5>
-        <p>{{ details.desc | translate }}</p>
-      </div>
+        <figure>
+          <span class="img img-modal img-round">
+            <img [src]="details.image" [alt]="details.name">
+          </span>
+          <figcaption>
+            <h5>{{ details.category }}</h5>
+            <p>{{ details.desc | translate }}</p>
+          </figcaption>
+        </figure>
 
-      <footer class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">More</button>
-      </footer>
+        <section class="img-group">
+
+          <h5>Skills involved</h5>
+
+          <figure class="img-wrap" *ngFor="let tech of details.techs">
+            <img class="img" [src]="tech.logo" [alt]="tech.name">
+            <figcaption class="img-label">{{ tech.name }}</figcaption>
+          </figure>
+        </section>
+      </div>
 
     </section>
 

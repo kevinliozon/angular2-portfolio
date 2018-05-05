@@ -9,6 +9,11 @@ img {
 .img-group {
   @include flex-layout(wrap, flex-start, flex-start, flex-start);
 
+  h5 {
+    width: 100%;
+    margin: $gap-md 0;
+  }
+
   .img {
     margin: 10px;
   }
