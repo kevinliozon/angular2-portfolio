@@ -22,7 +22,6 @@ import { ProfileCsComponent } from './education/profile-cs/profile-cs.component'
 import { ProfileMainComponent } from './home/profile-main/profile-main.component';
 //Pipes
 import { FilterPipe } from './shared/pipes/filter.pipe';
-import { ModalService } from "./providers/modal.service";
 
 @NgModule({
   imports: [
@@ -50,9 +49,7 @@ import { ModalService } from "./providers/modal.service";
   bootstrap: [
     AppComponent
   ],
-  providers: [
-    ModalService
-  ]
+  providers: []
 })
 
 export class AppModule {  }

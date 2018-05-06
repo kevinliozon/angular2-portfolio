@@ -1,8 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-// Services
-import { DiplomaService } from '../../../providers/diploma.service';
-import { ProjectService } from '../../../providers/project.service';
-import { RoleService } from '../../../providers/role.service';
+import { Component, Input } from '@angular/core';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -10,15 +6,11 @@ import { RoleService } from '../../../providers/role.service';
   templateUrl: 'details-modal.component.html'
 })
 
-export class DetailsModalComponent implements OnInit{
+export class DetailsModalComponent {
 
   @Input() public details: any;
   @Input() public type: any;
 
-  constructor(private diplomaService: DiplomaService,
-              private projectService: ProjectService,
-              private roleService: RoleService){  }
-
-  public ngOnInit() {  }
+  constructor() {}
 
 }

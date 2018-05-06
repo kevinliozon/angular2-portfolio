@@ -1,25 +1,28 @@
 <div class="container-stretch wrap-stretch" [@routeTrans]="'true'">
 
-    <my-filters [page]="'skills'" (selectFilter)="filterFor($event)"></my-filters>
+  <my-filters [page]="'skills'" (selectFilter)="filterFor($event)"></my-filters>
 
-    <!-- Filter by frequency -->
-    <div class="container-toggle">
-        <label class="toggle">
-          <input class="toggle-input" type="checkbox" (change)="!!frequency ? frequency = false : frequency = true">
-          <span class="toggle-btn"></span>
-        </label>
-        <span class="toggle-label">Regularly</span>
+  <!-- Filter by frequency -->
+  <div class="container-toggle">
+    <label class="toggle">
+      <input class="toggle-input" type="checkbox" (change)="!!frequency ? frequency = false : frequency = true">
+      <span class="toggle-btn"></span>
+    </label>
+    <span class="toggle-label">Regularly</span>
+  </div>
+
+  <!-- RESULT -->
+  <main class="container">
+    <div class="row">
+      <my-card
+        class="col-xs-12 col-sm-4 col-md-3"
+        *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }"
+        [object]="skill"
+        (moreInfo)="openModal($event, 'skill')">
+      </my-card>
     </div>
+  </main>
 
-    <!-- RESULT -->
-    <main class="container">
-        <div class="row">
-            <my-card
-                class="col-xs-12 col-sm-4 col-md-3"
-                *ngFor="let skill of skills | filter:{ category: value, frequent: frequency }"
-                [object]="skill">
-            </my-card>
-        </div>
-    </main>
+  <my-modal [details]="detailsModal"></my-modal>
 
 </div>

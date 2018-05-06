@@ -5,9 +5,7 @@ import { TOOLS } from '../shared/data/mock-tools';
 @Injectable()
 export class ToolService
 {
-  public getTools()
-  {
+  public getTools(): any {
     return TOOLS;
   }
-
 }

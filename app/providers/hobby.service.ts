@@ -5,9 +5,7 @@ import { HOBBIES } from '../shared/data/mock-hobbies';
 @Injectable()
 export class HobbyService
 {
-  public getHobbies()
-  {
+  public getHobbies(): any {
     return HOBBIES;
   }
-
 }

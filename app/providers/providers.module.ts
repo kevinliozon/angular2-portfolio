@@ -8,6 +8,8 @@ import { RoleService } from "./role.service";
 import { SkillService } from "./skill.service";
 import { ToolService } from "./tool.service";
 import { CodeschoolService } from "./codeschool.service";
+import { ModalService } from "./modal.service";
+import { ResolveByIdService } from "./resolve-by-id.service";
 
 @NgModule({
     imports: [
@@ -20,7 +22,9 @@ import { CodeschoolService } from "./codeschool.service";
       DiplomaService,
       ToolService,
       HobbyService,
-      CodeschoolService
+      CodeschoolService,
+      ModalService,
+      ResolveByIdService
     ]
 })
 

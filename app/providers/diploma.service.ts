@@ -6,20 +6,7 @@ import { DIPLOMAS } from '../shared/data/mock-diplomas';
 
 export class DiplomaService
 {
-
-  constructor() { }
-
-  public getDiplomas()
-  {
+  public getDiplomas(): any {
     return DIPLOMAS;
   }
-
-  public resolveDiploma(id) {
-    for (let diploma of DIPLOMAS) {
-      if (id === diploma.id) {
-        return diploma;
-      }
-    }
-  }
-
 }

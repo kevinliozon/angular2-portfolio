@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 // Services
-import { DiplomaService } from '../../../providers/diploma.service';
-import { ProjectService } from '../../../providers/project.service';
-import { RoleService } from '../../../providers/role.service';
 import { ModalService } from "../../../providers/modal.service";
+import { ResolveByIdService } from "../../../providers/resolve-by-id.service";
 //animations
 import { routeTrans } from '../../components/animations/route-transition';
 
@@ -26,10 +24,8 @@ export class DetailsComponent implements OnInit{
   public typeModal: any = {};
 
   constructor(private route: ActivatedRoute,
-              private diplomaService: DiplomaService,
-              private projectService: ProjectService,
-              private roleService: RoleService,
-              private modalService: ModalService) {
+              private modalService: ModalService,
+              private resolveByIdService: ResolveByIdService) {
     // We get the id and the type from the selected item
     this.sub = this.route.params.subscribe((params) => {
       this.id = params['id'];
@@ -38,19 +34,8 @@ export class DetailsComponent implements OnInit{
   }
 
   public ngOnInit() {
-    /* Compare the id passed from previous page with id
-       of all the objects in the collection */
-    switch(this.type) {
-      case 'diploma':
-        this.details = this.diplomaService.resolveDiploma(this.id);
-        break;
-      case 'project':
-        this.details = this.projectService.resolveProject(this.id);
-        break;
-      case 'role':
-        this.details = this.roleService.resolveRole(this.id);
-        break;
-    }
+    // Compare the id passed from previous page with id of all the objects in the collection
+    this.details = this.resolveByIdService.resolveById(this.id, this.type);
   }
 
   /**

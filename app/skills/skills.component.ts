@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 // Skills
 import { Skill } from '../models/skill';
 import { SkillService } from '../providers/skill.service';
+//services
+import { ModalService } from "../providers/modal.service";
 //animations
 import { routeTrans } from '../shared/components/animations/route-transition';
 
@@ -15,8 +17,10 @@ export class SkillsComponent implements OnInit{
 
   public skills: Skill[];
   public value = '';
+  public detailsModal: any = {};
 
-  constructor(private skillService: SkillService) { }
+  constructor(private skillService: SkillService,
+              private modalService: ModalService) { }
 
   ngOnInit() {
     this.skills = this.skillService.getSkills();
@@ -28,6 +32,16 @@ export class SkillsComponent implements OnInit{
    */
   public filterFor(filter) {
       this.value = filter;
+  }
+
+  /**
+   * Open modal
+   * Resolve the item to display thanks to its id and type
+   *
+   * @param info
+   */
+  public openModal($event, type): any {
+    this.detailsModal = this.modalService.openModal($event, type)
   }
 
 }

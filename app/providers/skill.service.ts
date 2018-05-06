@@ -5,9 +5,7 @@ import { SKILLS } from '../shared/data/mock-skills';
 @Injectable()
 export class SkillService
 {
-  public getSkills()
-  {
+  public getSkills(): any {
     return SKILLS;
   }
-
 }
