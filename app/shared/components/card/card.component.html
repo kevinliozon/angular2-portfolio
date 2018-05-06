@@ -14,14 +14,19 @@
           <h3>{{ object.name || object.title | translate }}</h3>
         </header>
 
-        <p *ngIf="object.desc">{{ object.desc | translate | ellipsis:100 }}</p>
-
+        <p *ngIf="object.desc">{{ object.desc | translate | ellipsis:75 }}</p>
     </section>
 
     <footer class="card-link" *ngIf="object.url !== null">
-      <a class="btn-card" [href]="object.url" target="_blank" role="button">More info</a>
+      <!--<a class="btn-card" [href]="object.url" target="_blank" role="button">More info</a>-->
+      <a class="btn-card"
+         role="button"
+         data-toggle="modal"
+         data-target="#myModal"
+         (click)="getMoreInfo(object.id)">
+            More info
+      </a>
     </footer>
-
   </div>
 
 </article>

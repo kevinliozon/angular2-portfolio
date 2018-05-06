@@ -13,6 +13,8 @@ import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
 //constants
 import { CONSTANTS } from '../shared/constants';
+//services
+import { ModalService } from "../providers/modal.service";
 //animations
 import { routeTrans } from '../shared/components/animations/route-transition';
 
@@ -31,11 +33,13 @@ export class AboutComponent implements OnInit{
   public skills: Array<Skill>;
   public skillsDev: Array<Skill> = [];
   public skillsDesign: Array<Skill> = [];
+  public detailsModal: any = {};
 
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,
               private projectService: ProjectService,
-              private skillService: SkillService) { }
+              private skillService: SkillService,
+              private modalService: ModalService) { }
 
   public ngOnInit() {
     this.tools = this.toolService.getTools() || [];
@@ -70,6 +74,16 @@ export class AboutComponent implements OnInit{
           this.skillsDesign.push(skill);
       }
     }
+  }
+
+  /**
+   * Open modal
+   * Resolve the item to display thanks to its id and type
+   *
+   * @param info
+   */
+  public openModal($event, type): any {
+    this.detailsModal = this.modalService.openModal($event, type)
   }
 
 }

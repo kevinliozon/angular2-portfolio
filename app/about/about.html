@@ -100,7 +100,8 @@
         class="col-xs-12 col-sm-4 col-md-3"
         *ngFor="let project of projects"
         [object]="project"
-        [hidden]="project.featured !== true">
+        [hidden]="project.featured !== true"
+        (moreInfo)="openModal($event, 'project')">
       </my-card>
     </div>
   </section>
@@ -112,7 +113,8 @@
         class="col-xs-12 col-sm-4 col-md-3"
         *ngFor="let tool of tools"
         [hidden]="!tool.featured"
-        [object]="tool">
+        [object]="tool"
+        (moreInfo)="openModal($event, 'project')">
       </my-card>
     </div>
   </section>
@@ -123,5 +125,7 @@
       <my-card class="col-xs-12 col-sm-4 col-md-3" *ngFor="let hobby of hobbies" [object]="hobby"></my-card>
     </div>
   </section>
+
+  <my-modal [details]="detailsModal"></my-modal>
 
 </div>

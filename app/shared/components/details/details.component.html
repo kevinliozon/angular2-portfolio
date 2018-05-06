@@ -24,7 +24,12 @@
   <section class="img-group" *ngIf="type === 'role' || type === 'diploma'">
     <header><h5>Projects</h5></header>
 
-    <figure class="img-wrap" *ngFor="let project of details.projects" data-toggle="modal" data-target="#myModal" (click)="openModal(project.id, 'project')">
+    <figure
+      class="img-wrap"
+      *ngFor="let project of details.projects"
+      data-toggle="modal"
+      data-target="#myModal"
+      (click)="openModal(project.id, 'project')">
       <span class="img img-round-link">
           <img [src]="project.image" [alt]="project.name">
       </span>
@@ -42,6 +47,6 @@
     </div>
   </section>
 
-  <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+  <my-modal [details]="detailsModal"></my-modal>
 
 </div>
