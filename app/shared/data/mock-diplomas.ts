@@ -3,7 +3,7 @@ import { Diploma } from '../../models/diploma';
 export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma6',
   'name': '#diplomaNng',
-  'category': 'certification',
+  'category': 'Certification',
   'images': {
     'thumb': '../../../assets/img/thumb/diplomas/nng.png',
     'image': '../../../assets/img/png/diplomas/nng.png'
@@ -18,7 +18,7 @@ export let DIPLOMAS: Diploma[] = [{
     'name': 'Nielsen & Norman Group',
     'image': '../../../assets/img/svg/education/nng.svg',
     'place': 'Seattle - London',
-    'country': 'USA - UK',
+    'country': 'USA & UK',
     'url': 'https://www.nngroup.com/'
   },
   'dates': {
@@ -30,15 +30,18 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma5',
   'name': '#diplomaCs',
-  'category': 'certification',
+  'category': 'Certification',
   'images': {
     'thumb': '../../../assets/img/svg/education/codeschool.svg',
     'image': '../../../assets/img/svg/education/codeschool.svg',
   },
   'subjects': [
-    {'name': 'Javascript', 'spe': true},
-    {'name': 'Angular', 'spe': true},
-    {'name': 'Sass', 'spe': true}
+    {'name': 'Javascript', 'spe': false},
+    {'name': 'Angular', 'spe': false},
+    {'name': 'Sass', 'spe': false},
+    {'name': 'PHP', 'spe': false},
+    {'name': 'RegEx', 'spe': false},
+    {'name': 'UX', 'spe': false}
   ],
   'school': {
     'name': 'CodeSchool',
@@ -56,22 +59,26 @@ export let DIPLOMAS: Diploma[] = [{
 {
   'id': '#diploma4',
   'name': '#diplomaLp',
-  'category': 'degree',
+  'category': 'Bachelor\'s Degree',
   'images': {
     'thumb': '../../../assets/img/thumb/diplomas/lp.png',
     'image': '../../../assets/img/png/diplomas/lp.png'
   },
   'subjects': [
-    {'name': 'Web Dev', 'spe': true},
+    {'name': 'Front-End Dev', 'spe': true},
     {'name': 'UX Design', 'spe': true},
-    {'name': 'Project Management', 'spe': true}
+    {'name': 'UI Design', 'spe': true},
+    {'name': 'IT Management', 'spe': true},
+    {'name': 'Back-End Dev', 'spe': false},
+    {'name': 'Visual Design', 'spe': false},
+    {'name': 'Communication', 'spe': false}
   ],
   'school': {
     'name': 'University of Burgundy - Franche-Comté',
     'place': 'Montbéliard',
     'country': 'France',
     'image': '../../../assets/img/svg/education/ubfc.svg',
-    'url': 'https://en.wikipedia.org/wiki/University_of_Burgundy_-_Franche-Comt%C3%A9'
+    'url': 'http://www.ubfc.fr/'
   },
   'dates': {
     'start': '2015-09-01',
@@ -82,36 +89,47 @@ export let DIPLOMAS: Diploma[] = [{
       'id': '#project5',
       'name': 'E-Ukiyo',
       'image': '../../../assets/img/svg/projects/c2i.svg',
-      'url': ''
+      'url': 'https://kevinliozon.com/c2i_reseau/'
     },
     {
       'id': '#project6',
       'name': 'C2I Reseaux',
       'image': '../../../assets/img/svg/projects/eukiyo.svg',
-      'url': ''
+      'url': 'https://kevinliozon.com/e_ukiyo/en/'
+    },
+    {
+      'id': '#project7',
+      'name': 'Portfolio V2',
+      'image': '../../../assets/img/svg/projects/portfoliov2.svg',
+      'url': 'https://kevinliozon.com/portfolio2'
     }
   ]
 },
 {
   'id': '#diploma3',
   'name': '#diplomaDut',
-  'category': 'degree',
+  'category': 'University Degree',
   'images': {
     'thumb': '../../../assets/img/thumb/diplomas/mmi.png',
     'image': '../../../assets/img/png/diplomas/mmi.png'
   },
   'subjects': [
-    {'name': 'Web Dev', 'spe': true},
-    {'name': 'Visual Design', 'spe': true},,
-    {'name': 'Human-computer interactions', 'spe': true},
-    {'name': 'Information System', 'spe': true}
+    {'name': 'Front-End Dev', 'spe': true},
+    {'name': 'Back-End Dev', 'spe': true},
+    {'name': 'UI Design', 'spe': true},
+    {'name': 'IT management', 'spe': true},
+    {'name': 'Interaction Design', 'spe': false},
+    {'name': 'Visual Design', 'spe': false},
+    {'name': 'Software Dev', 'spe': false},
+    {'name': 'Motion Design & FX', 'spe': false},
+    {'name': 'Communication', 'spe': false}
   ],
   'school': {
     'name': 'Institute of Technology',
     'place': 'Béziers',
     'country': 'France',
     'image': '../../../assets/img/svg/education/um.svg',
-    'url': 'https://en.wikipedia.org/wiki/University_of_Montpellier'
+    'url': 'https://www.umontpellier.fr/'
   },
   'dates': {
     'start': '2013-09-01',
@@ -120,42 +138,52 @@ export let DIPLOMAS: Diploma[] = [{
   'projects': [
     {
       'id': '#project1',
-      'name': 'Portfolio',
-      'image': '../../../assets/img/svg/projects/portfolio1.svg',
-      'url': ''
+      'name': 'Portfolio V1',
+      'image': '../../../assets/img/svg/projects/portfoliov1.svg',
+      'url': 'https://kevinliozon.com/portfolio1'
     }
   ]
 },
 {
   'id': '#diploma2',
   'name': '#diplomaDu',
-  'category': 'degree',
+  'category': 'University Degree',
   'images': {
     'thumb': '../../../assets/img/thumb/diplomas/du.png',
     'image': '../../../assets/img/png/diplomas/du.png'
   },
   'subjects': [
-    {'name': 'Web Dev', 'spe': true},
-    {'name': 'Mathematics', 'spe': false},
-    {'name': 'Visual Design', 'spe': false}
+    {'name': 'Front-End Dev', 'spe': true},
+    {'name': 'Back-End Dev', 'spe': true},
+    {'name': 'Maths', 'spe': false},
+    {'name': 'Visual Design', 'spe': false},
+    {'name': 'Management', 'spe': false},
+    {'name': 'Communication', 'spe': false}
   ],
   'school': {
     'name': 'Institute of Technology',
     'place': 'Montpellier',
     'country': 'France',
     'image': '../../../assets/img/svg/education/um.svg',
-    'url': 'https://en.wikipedia.org/wiki/University_of_Montpellier'
+    'url': 'https://www.umontpellier.fr/'
   },
   'dates': {
     'start': '2012-09-01',
     'end': '2013-06-01'
   },
-  'projects': null
+  'projects': [
+    {
+      'id': '#project0',
+      'name': 'IUT Montpellier',
+      'image': '../../../assets/img/png/projects/iut_montpellier.png',
+      'url': 'https://kevinliozon.com/iut_montpellier'
+    }
+  ]
 },
 {
   'id': '#diploma1',
   'name': '#diplomaBac',
-  'category': 'degree',
+  'category': 'Highschool Degree',
   'images': {
     'thumb': '../../../assets/img/thumb/diplomas/bac.png',
     'image': '../../../assets/img/png/diplomas/bac.png'

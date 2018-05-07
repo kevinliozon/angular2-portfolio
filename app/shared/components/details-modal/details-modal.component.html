@@ -18,7 +18,7 @@
           <figcaption>
             <h5>{{ details.category }}</h5>
             <!-- If PROJECT -->
-            <h5 *ngIf="type === 'project'">
+            <h5 *ngIf="type === 'project' && details.company">
               {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
               <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
             </h5>

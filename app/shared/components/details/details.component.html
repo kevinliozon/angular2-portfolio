@@ -1,57 +1,100 @@
-<div class="container" [@routeTrans]="'true'">
+<div class="container row" [@routeTrans]="'true'">
 
-  <header>
-    <h2>{{ details.name }}</h2>
-    <h4>{{ details.category }}</h4>
-    <!-- If PROJECT -->
-    <h4 *ngIf="type === 'project'">
-      {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
-      <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-    </h4>
-    <!-- If ROLE -->
-    <h4 *ngIf="type === 'role'">
-      {{ 'at' | translate }}&nbsp;
-      <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-    </h4>
-  </header>
+  <div class="col-xs-5">
 
-  <main>
-    <p>{{ details.desc | translate }}</p>
-  </main>
+    <header>
+      <h2>{{ details.name | translate }}</h2>
+      <h4>{{ details.category }}</h4>
+      <!-- If PROJECT -->
+      <h4 *ngIf="type === 'project' && details.company">
+        {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+        <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+      </h4>
+      <!-- If ROLE -->
+      <h4 *ngIf="type === 'role'">
+        {{ 'at' | translate }}&nbsp;
+        <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+      </h4>
+      <!-- If DIPLOMA -->
+      <h4 *ngIf="type === 'diploma'">
+        {{ 'at' | translate }}&nbsp;
+        <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
+        {{ 'in' | translate }} {{ details.school.country }}
+      </h4>
 
-  <section class="img-group" *ngIf="type === 'project' || type === 'role'">
-    <header><h5>Skills involved</h5></header>
+      <p>
+        {{ details.dates.start | date : "MMM yyyy" }}
+        <span class="content-prefix">{{ "to" | translate }}</span>
+        {{ (details.dates.end | date : "MMM yyyy") || ("present" | translate) }}
+      </p>
+    </header>
 
-    <figure class="img-wrap" *ngFor="let tech of details.techs">
-      <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
-      <figcaption class="img-label">{{ tech.name }}</figcaption>
-    </figure>
-  </section>
+    <main>
+      <p>{{ details.desc | translate }}</p>
+    </main>
 
-  <section class="img-group" *ngIf="type === 'role' || type === 'diploma'">
-    <header><h5>Projects</h5></header>
+    <!-- If PROJECT OR ROLE -->
+    <section class="img-group" *ngIf="type !== 'diploma'">
+      <header><h5>Skills involved</h5></header>
 
-    <figure
-      class="img-wrap"
-      *ngFor="let project of details.projects"
-      data-toggle="modal"
-      data-target="#myModal"
-      (click)="openModal(project.id, 'project')">
-      <span class="img img-round-link">
-          <img [src]="project.image" [alt]="project.name">
-      </span>
-      <figcaption class="img-label">{{ project.name }}</figcaption>
-    </figure>
-  </section>
+      <figure class="img-wrap" *ngFor="let tech of details.techs">
+        <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
+        <figcaption class="img-label">{{ tech.name }}</figcaption>
+      </figure>
+    </section>
 
-  <section class="btn-group-jumbo">
-    <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
-      {{ 'See Live' | translate }}
-    </a>
-    <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
-      Github
-    </a>
-  </section>
+    <!-- If DIPLOMA -->
+    <section class="img-group" *ngIf="type === 'diploma'">
+      <header><h5>Subjects</h5></header>
+
+      <ul>
+        <li *ngFor="let subject of details.subjects">{{ subject.name }}</li>
+      </ul>
+    </section>
+
+    <!-- If DIPLOMA OR ROLE -->
+    <section class="img-group" *ngIf="type !== 'project' && details.projects">
+      <header><h5>Projects</h5></header>
+
+      <figure
+        class="img-wrap"
+        *ngFor="let project of details.projects"
+        data-toggle="modal"
+        data-target="#myModal"
+        (click)="openModal(project.id, 'project')">
+        <span class="img img-round-link">
+            <img [src]="project.image" [alt]="project.name">
+        </span>
+        <figcaption class="img-label">{{ project.name }}</figcaption>
+      </figure>
+    </section>
+
+    <section class="btn-group-jumbo">
+      <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
+        {{ 'See Live' | translate }}
+      </a>
+      <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
+        Github
+      </a>
+    </section>
+
+  </div>
+
+  <div class="col-xs-7">
+    <span class="img img-round" *ngIf="type !== 'diploma'">
+      <img [src]="details.image" [alt]="details.name">
+    </span>
+    <span class="img img-round" *ngIf="type === 'diploma'">
+      <img [src]="details.school.image" [alt]="details.school.name">
+    </span>
+
+    <!--<section class="img-group">
+      <div *ngFor="let image of details.images">
+        <img [src]="image" alt="Gallery image of {{ details.school.name }}">
+      </div>
+    </section>-->
+
+  </div>
 
   <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
 

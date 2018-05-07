@@ -25,6 +25,7 @@ export const LANG_ENG_TRANS = {
   'git': 'Git Repo',
   'url': 'Link',
   'at': 'at',
+  'in': 'in',
   'for': 'for',
   'to': 'to',
   'as': 'as',
@@ -209,5 +210,5 @@ export const LANG_ENG_TRANS = {
   '#diplomaLp': `Webdesign Bachelor's Degree`,
   '#diplomaDut': `Web & Multimedia Technologies two-years University Degree`,
   '#diplomaDu': `Webmaster University Degree`,
-  '#diplomaBac': `Science High-School Degree`,
+  '#diplomaBac': `High-School Degree of Science`,
 };

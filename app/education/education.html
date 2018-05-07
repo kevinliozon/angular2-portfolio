@@ -22,11 +22,11 @@
 
           <li class="list-group-item" *ngFor="let diploma of diplomas"
               (mouseover)="focusItem(diploma)" (click)="goTo(diploma)"
-              [class.active]="this.focusedItem === diploma ? true : false">
+              [class.active]="focusedItem === diploma ? true : false">
 
             <label class="text-center-xs wrap-ellipsis-one-line">
-              <img class="list-icn block-center-xs" [src]="diploma.images.thumb" [alt]="diploma.name"/>
-              <span class="list-label text-center-xs">{{ diploma.name }}</span>
+              <img class="list-icn block-center-xs" [src]="diploma.school.image" [alt]="diploma.name"/>
+              <span class="list-label text-center-xs">{{ diploma.name | translate }}</span>
             </label>
 
           </li>

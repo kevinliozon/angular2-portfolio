@@ -26,6 +26,7 @@ export const LANG_FRA_TRANS = {
   'git': 'Dépôt Git',
   'url': 'Lien',
   'at': 'à',
+  'in': 'en',
   'for': 'pour',
   'to': 'à',
   'as': 'comme',
