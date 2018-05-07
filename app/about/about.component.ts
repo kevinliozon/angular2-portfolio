@@ -34,6 +34,7 @@ export class AboutComponent implements OnInit{
   public skillsDev: Array<Skill> = [];
   public skillsDesign: Array<Skill> = [];
   public detailsModal: any = {};
+  public typeModal: string;
 
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,
@@ -83,6 +84,7 @@ export class AboutComponent implements OnInit{
    * @param info
    */
   public openModal($event, type): any {
+    this.typeModal = type;
     this.detailsModal = this.modalService.openModal($event, type)
   }
 

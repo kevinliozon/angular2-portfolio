@@ -17,11 +17,20 @@
           </span>
           <figcaption>
             <h5>{{ details.category }}</h5>
+            <!-- If PROJECT -->
+            <h5 *ngIf="type === 'project'">
+              {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+              <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+            </h5>
+            <!-- If ROLE -->
+            <h5 *ngIf="type === 'role'">
+              {{ 'at' | translate }}&nbsp;<a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+            </h5>
             <p>{{ details.desc | translate }}</p>
           </figcaption>
         </figure>
 
-        <section class="img-group">
+        <section class="img-group" *ngIf="hasSkillsInvolved()">
           <header><h5>Skills involved</h5></header>
 
           <figure class="img-wrap" *ngFor="let tech of details.techs">
@@ -30,6 +39,20 @@
           </figure>
         </section>
       </div>
+
+      <footer class="modal-footer btn-group-jumbo">
+        <!-- If not a skill -->
+        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type !== 'skill'" target="_blank">
+          {{ 'See Live' | translate }}
+        </a>
+        <!-- If a skill -->
+        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type === 'skill'" target="_blank">
+          {{ 'Learn More' | translate }}
+        </a>
+        <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
+          Github
+        </a>
+      </footer>
 
     </section>
 

@@ -3,8 +3,15 @@
   <header>
     <h2>{{ details.name }}</h2>
     <h4>{{ details.category }}</h4>
+    <!-- If PROJECT -->
     <h4 *ngIf="type === 'project'">
-      {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;{{ details.company.name }}
+      {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+      <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+    </h4>
+    <!-- If ROLE -->
+    <h4 *ngIf="type === 'role'">
+      {{ 'at' | translate }}&nbsp;
+      <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
     </h4>
   </header>
 
@@ -37,16 +44,15 @@
     </figure>
   </section>
 
-  <section class="container">
-    <div class="row">
-      <my-card
-        class="col-xs-12 col-sm-4 col-md-3"
-        *ngFor="let project of details.projects"
-        [object]="project">
-      </my-card>
-    </div>
+  <section class="btn-group-jumbo">
+    <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
+      {{ 'See Live' | translate }}
+    </a>
+    <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
+      Github
+    </a>
   </section>
 
-  <my-modal [details]="detailsModal"></my-modal>
+  <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
 
 </div>

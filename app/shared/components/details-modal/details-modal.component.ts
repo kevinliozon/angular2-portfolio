@@ -9,8 +9,14 @@ import { Component, Input } from '@angular/core';
 export class DetailsModalComponent {
 
   @Input() public details: any;
-  @Input() public type: any;
+  @Input() public type: string = '';
 
-  constructor() {}
+  constructor() {
+    console.log(this.type);
+  }
+
+  public hasSkillsInvolved(): boolean {
+    return (this.type === 'role' || this.type === 'project') ? true : false;
+  }
 
 }

@@ -21,7 +21,7 @@ export class DetailsComponent implements OnInit{
   public type: string;
   public details: any;
   public detailsModal: any = {};
-  public typeModal: any = {};
+  public typeModal: string;
 
   constructor(private route: ActivatedRoute,
               private modalService: ModalService,
@@ -46,6 +46,7 @@ export class DetailsComponent implements OnInit{
    * @param type
    */
   public openModal(id, type): void {
+    this.typeModal = type;
     this.detailsModal = this.modalService.openModal(id, type);
   }
 

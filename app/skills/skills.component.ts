@@ -18,6 +18,7 @@ export class SkillsComponent implements OnInit{
   public skills: Skill[];
   public value = '';
   public detailsModal: any = {};
+  public typeModal: string;
 
   constructor(private skillService: SkillService,
               private modalService: ModalService) { }
@@ -41,6 +42,7 @@ export class SkillsComponent implements OnInit{
    * @param info
    */
   public openModal($event, type): any {
+    this.typeModal = type;
     this.detailsModal = this.modalService.openModal($event, type)
   }
 
