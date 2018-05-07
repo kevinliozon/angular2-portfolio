@@ -47,6 +47,18 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.wrap-img-txt {
+  .img-round {
+    float: left;
+    margin: 0 $gap-reg $gap-reg 0;
+  }
+
+  p,
+  header {
+    text-align: justify;
+  }
+}
+
 /* RESPONSIVE CENTERING */
 @media (max-width: 768px) {
   .text-center-xs { text-align: center; }

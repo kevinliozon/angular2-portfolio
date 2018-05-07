@@ -1,17 +1,34 @@
-export class Project
-{
+import { Date } from './shared/date';
+import { Image } from './shared/image';
+import { Tech } from './shared/tech';
+
+export interface Company {
+  name: string;
+  logo: string;
+  url: string;
+  role: string;
+}
+
+export interface Client {
+  name: string;
+  logo: string;
+  url: string;
+  featured: boolean;
+}
+
+export interface Project {
   id: string;
   name: string;
   image: string;
   featured: boolean;
   active: boolean;
   category: string;
-  company: any;
-  client: any;
+  company: Company;
+  client: Client;
   desc: string;
-  techs: Array<any>;
-  images: Array<string>;
-  dates: any;
+  techs: Array<Tech>;
+  gallery: Array<Image>;
+  dates: Date;
   url: string;
   github: string;
 }

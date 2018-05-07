@@ -7,8 +7,18 @@ export let PROJECTS: Project[] = [{
   'featured': true,
   'active': true,
   'category': 'Portfolio',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'role': null,
+  },
+  'client': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'featured': null,
+  },
   'desc': '#projectDescPortfolio3',
   'techs': [
     {
@@ -32,7 +42,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/photoshop.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2017-01-01',
     'end': null
@@ -78,7 +92,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2018-04-13',
     'end': '2018-04-20'
@@ -94,16 +112,16 @@ export let PROJECTS: Project[] = [{
   'active': true,
   'category': 'Web App',
   'company': {
-      'name': 'Surely Group',
-      'logo': '../../../assets/img/svg/companies/surely.svg',
-      'url': 'https://surelygroup.com/',
-      'role': 'Front-End Developer & UI Designer'
+    'name': 'Surely Group',
+    'logo': '../../../assets/img/svg/companies/surely.svg',
+    'url': 'https://surelygroup.com/',
+    'role': 'Front-End Developer & UI Designer'
   },
   'client': {
-      'name': 'Endeavour Insurance Service',
-      'logo': '../../../assets/img/svg/companies/eis.svg',
-      'url': 'https://www.endeavouris.com/',
-      'featured': true
+    'name': 'Endeavour Insurance Service',
+    'logo': '../../../assets/img/svg/companies/eis.svg',
+    'url': 'https://www.endeavouris.com/',
+    'featured': true
   },
   'desc': '#projectDescEis',
   'techs': [
@@ -128,7 +146,11 @@ export let PROJECTS: Project[] = [{
           'logo': '../../../assets/img/svg/skills/gulp.svg'
       }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
       'start': '2017-11-15',
       'end': null
@@ -144,16 +166,16 @@ export let PROJECTS: Project[] = [{
   'active': false,
   'category': 'Web App',
   'company': {
-      'name': 'Surely Group',
-      'logo': '',
-      'url': 'https://services.surelygroup.com/',
-      'role': 'Front-End Developer'
+    'name': 'Surely Group',
+    'logo': '',
+    'url': 'https://services.surelygroup.com/',
+    'role': 'Front-End Developer'
   },
   'client': {
-      'name': 'MS Amlin',
-      'logo': '../../../assets/img/svg/companies/msamlin.svg',
-      'url': 'https://www.msamlin.com/en/index.html',
-      'featured': true
+    'name': 'MS Amlin',
+    'logo': '../../../assets/img/svg/companies/msamlin.svg',
+    'url': 'https://www.msamlin.com/en/index.html',
+    'featured': true
   },
   'desc': '#projectDescMsa',
   'techs': [
@@ -178,7 +200,11 @@ export let PROJECTS: Project[] = [{
           'logo': '../../../assets/img/svg/skills/gulp.svg'
       }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
       'start': '2017-10-15',
       'end': '2017-11-15'
@@ -236,7 +262,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     },
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2017-01-05',
     'end': null
@@ -306,7 +336,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/drawio.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2016-11-14',
     'end': null
@@ -352,7 +386,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2016-12-01',
     'end': '2017-01-14'
@@ -406,7 +444,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2016-04-01',
     'end': '2016-11-14'
@@ -460,7 +502,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2016-02-14',
     'end': '2016-03-31'
@@ -475,8 +521,18 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Portfolio',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'role': null,
+  },
+  'client': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'featured': null,
+  },
   'desc': '#projectDescPortfolioV2',
   'techs': [
     {
@@ -504,7 +560,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/html.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'
@@ -519,11 +579,17 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Web App',
-  'company': null,
+  'company': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'role': null,
+  },
   'client': {
     'name': 'Université de Bourgogne-Franche-Comté',
     'logo': '../../../assets/img/svg/education/ubfc.svg',
-    'featured': true
+    'featured': true,
+    'url': 'http://www.ubfc.fr/',
   },
   'desc': '#projectDescC2I',
   'techs': [
@@ -548,7 +614,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2015-11-01',
     'end': '2016-01-20'
@@ -563,8 +633,18 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Web App',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'role': null,
+  },
+  'client': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'featured': null,
+  },
   'desc': '#projectDescEukiyo',
   'techs': [
     {
@@ -588,7 +668,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2015-11-01',
     'end': '2016-01-20'
@@ -612,7 +696,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Haute Coiffure et Esthétique',
     'logo': '../../../assets/img/png/projects/hce.png',
-    'featured': false
+    'featured': false,
+    'url': 'http://reseau-beaute.com/',
   },
   'desc': '#projectDescHce',
   'techs': [
@@ -633,7 +718,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -657,7 +746,8 @@ export let PROJECTS: Project[] = [{
   'client': {
     'name': 'Association Pour l\'Amélioration Globale de la Santé',
     'logo': '../../../assets/img/svg/projects/apags.svg',
-    'featured': false
+    'featured': false,
+    'url': null,
   },
   'desc': '#projectDescApags',
   'techs': [
@@ -678,7 +768,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -724,7 +818,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -739,8 +837,18 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Portfolio',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'role': null,
+  },
+  'client': {
+    'name': null,
+    'logo': null,
+    'url': null,
+    'featured': null,
+  },
   'desc': '#projectDescPortfolioV1',
   'techs': [
     {
@@ -760,7 +868,11 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'images': [''],
+  'gallery': [{
+    'image': '',
+    'name': '',
+    'alt': '',
+  }],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'

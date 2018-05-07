@@ -4,10 +4,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma6',
   'name': '#diplomaNng',
   'category': 'Certification',
-  'images': {
-    'thumb': '../../../assets/img/thumb/diplomas/nng.png',
-    'image': '../../../assets/img/png/diplomas/nng.png'
-  },
+  'gallery': [{
+    'image': '../../../assets/img/png/diplomas/nng.png',
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Interaction Design', 'spe': true},
     {'name': 'Webdesign', 'spe': true},
@@ -31,10 +32,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma5',
   'name': '#diplomaCs',
   'category': 'Certification',
-  'images': {
-    'thumb': '../../../assets/img/svg/education/codeschool.svg',
+  'gallery': [{
     'image': '../../../assets/img/svg/education/codeschool.svg',
-  },
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Javascript', 'spe': false},
     {'name': 'Angular', 'spe': false},
@@ -60,10 +62,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma4',
   'name': '#diplomaLp',
   'category': 'Bachelor\'s Degree',
-  'images': {
-    'thumb': '../../../assets/img/thumb/diplomas/lp.png',
-    'image': '../../../assets/img/png/diplomas/lp.png'
-  },
+  'gallery': [{
+    'image': '../../../assets/img/png/diplomas/lp.png',
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
     {'name': 'UX Design', 'spe': true},
@@ -109,10 +112,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma3',
   'name': '#diplomaDut',
   'category': 'University Degree',
-  'images': {
-    'thumb': '../../../assets/img/thumb/diplomas/mmi.png',
-    'image': '../../../assets/img/png/diplomas/mmi.png'
-  },
+  'gallery': [{
+    'image': '../../../assets/img/png/diplomas/mmi.png',
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
     {'name': 'Back-End Dev', 'spe': true},
@@ -148,10 +152,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma2',
   'name': '#diplomaDu',
   'category': 'University Degree',
-  'images': {
-    'thumb': '../../../assets/img/thumb/diplomas/du.png',
-    'image': '../../../assets/img/png/diplomas/du.png'
-  },
+  'gallery': [{
+    'image': '../../../assets/img/png/diplomas/du.png',
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
     {'name': 'Back-End Dev', 'spe': true},
@@ -184,10 +189,11 @@ export let DIPLOMAS: Diploma[] = [{
   'id': '#diploma1',
   'name': '#diplomaBac',
   'category': 'Highschool Degree',
-  'images': {
-    'thumb': '../../../assets/img/thumb/diplomas/bac.png',
-    'image': '../../../assets/img/png/diplomas/bac.png'
-  },
+  'gallery': [{
+    'image': '../../../assets/img/png/diplomas/bac.png',
+    'name': '',
+    'alt': '',
+  }],
   'subjects': [
     {'name': 'Biology', 'spe': true},
     {'name': 'Physics/chemistry', 'spe': true},

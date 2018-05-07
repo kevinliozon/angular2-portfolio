@@ -1,46 +1,52 @@
-<div class="container row" [@routeTrans]="'true'">
+<div class="wrap-details row" [@routeTrans]="'true'">
 
   <div class="col-xs-5">
 
-    <header>
-      <h2>{{ details.name | translate }}</h2>
-      <h4>{{ details.category }}</h4>
-      <!-- If PROJECT -->
-      <h4 *ngIf="type === 'project' && details.company">
-        {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
-        <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-      </h4>
-      <!-- If ROLE -->
-      <h4 *ngIf="type === 'role'">
-        {{ 'at' | translate }}&nbsp;
-        <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-      </h4>
-      <!-- If DIPLOMA -->
-      <h4 *ngIf="type === 'diploma'">
-        {{ 'at' | translate }}&nbsp;
-        <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
-        {{ 'in' | translate }} {{ details.school.country }}
-      </h4>
+    <header class="wrap-img-txt">
+      <span class="img img-round">
+        <img *ngIf="type === 'project'" [src]="details.image" [alt]="details.name">
+        <img *ngIf="type === 'role'" [src]="details.company.logo" [alt]="details.company.name">
+        <img *ngIf="type === 'diploma'" [src]="details.school.image" [alt]="details.school.name">
+      </span>
+      <div class="details-headings">
+        <h2>{{ details.name | translate }}</h2>
+        <h4>{{ details.category }}</h4>
+        <!-- If PROJECT -->
+        <h4 *ngIf="type === 'project' && details.company">
+          {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+          <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+        </h4>
+        <!-- If ROLE -->
+        <h4 *ngIf="type === 'role'">
+          {{ 'at' | translate }}&nbsp;
+          <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+        </h4>
+        <!-- If DIPLOMA -->
+        <h4 *ngIf="type === 'diploma'">
+          {{ 'at' | translate }}&nbsp;
+          <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
+          {{ 'in' | translate }} {{ details.school.country }}
+        </h4>
 
-      <p>
-        {{ details.dates.start | date : "MMM yyyy" }}
-        <span class="content-prefix">{{ "to" | translate }}</span>
-        {{ (details.dates.end | date : "MMM yyyy") || ("present" | translate) }}
-      </p>
+        <p>
+          {{ details.dates.start | date : "MMM yyyy" }}
+          <span class="content-prefix">{{ "to" | translate }}</span>
+          {{ (details.dates.end | date : "MMM yyyy") || ("present" | translate) }}
+        </p>
+      </div>
     </header>
 
     <main>
       <p>{{ details.desc | translate }}</p>
     </main>
 
-    <!-- If PROJECT OR ROLE -->
-    <section class="img-group" *ngIf="type !== 'diploma'">
-      <header><h5>Skills involved</h5></header>
-
-      <figure class="img-wrap" *ngFor="let tech of details.techs">
-        <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
-        <figcaption class="img-label">{{ tech.name }}</figcaption>
-      </figure>
+    <section class="btn-group-jumbo">
+      <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
+        {{ 'See Live' | translate }}
+      </a>
+      <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
+        Github
+      </a>
     </section>
 
     <!-- If DIPLOMA -->
@@ -69,24 +75,19 @@
       </figure>
     </section>
 
-    <section class="btn-group-jumbo">
-      <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
-        {{ 'See Live' | translate }}
-      </a>
-      <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
-        Github
-      </a>
+    <!-- If PROJECT OR ROLE -->
+    <section class="img-group" *ngIf="type !== 'diploma'">
+      <header><h5>Skills involved</h5></header>
+
+      <figure class="img-wrap" *ngFor="let tech of details.techs">
+        <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
+        <figcaption class="img-label">{{ tech.name }}</figcaption>
+      </figure>
     </section>
 
   </div>
 
   <div class="col-xs-7">
-    <span class="img img-round" *ngIf="type !== 'diploma'">
-      <img [src]="details.image" [alt]="details.name">
-    </span>
-    <span class="img img-round" *ngIf="type === 'diploma'">
-      <img [src]="details.school.image" [alt]="details.school.name">
-    </span>
 
     <!--<section class="img-group">
       <div *ngFor="let image of details.images">
