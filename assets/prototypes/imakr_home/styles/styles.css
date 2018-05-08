@@ -1,0 +1,194 @@
+/* MAIN PARAMETERS AND CONTAINERS */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+body
+{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.container
+{
+	width:100%;
+	padding: 0 20vw 0 20vw;
+}
+.container #hometop
+{
+	width:40%;
+	text-align: center;
+	color: rgb(82, 86, 89);
+}
+.container #homegrid
+{
+	width:63%;
+	padding:10px 1%;
+}
+/* SLOGAN AREA */
+.container #hometop h1
+{
+	width:100%;
+	padding:50px 22.5%;
+	font-size:4vw;
+}
+.container #hometop p
+{
+	width:100%;	
+	padding:0 22.5% 50px;
+	font-size:1.5vw;
+}
+/* FLEXIBLE ROWS */
+.container #homegrid .homegrid_row
+{
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height:auto;
+	text-align: center;
+	font-weight:bold;
+}
+/* COLUMNS */
+.container #homegrid .homegrid_row .homegrid_colx4
+{
+	width:20%;
+	margin: 10px 1%;
+	position:relative;
+	font-size: 1.5vw;
+}
+.container #homegrid .homegrid_row .homegrid_colx3
+{
+	width:27.4%;
+	margin: 10px 1%;
+	font-size: 2vw;
+	position:relative;
+}
+.container #homegrid .homegrid_row .homegrid_colx2
+{
+	width:41.8%;
+	height:80px;
+	background-color: #E76120;
+	margin: 10px 1.2%;
+	position:relative;
+	font-size: 1.5vw;
+}
+/* IMAGES */
+.container #homegrid .homegrid_row .homegrid_colx4 a img, 
+.container #homegrid .homegrid_row .homegrid_colx3 a img
+{
+	width:100%;
+}
+/* TITLES */
+.container #homegrid .homegrid_row .homegrid_colx4 a h3
+{
+	position:absolute;
+	top: 42%;
+	width:100%;
+	color:white;
+}
+.container #homegrid .homegrid_row .homegrid_colx3 a h3
+{
+	position:absolute;
+	top: 42%;
+	width:100%;
+	color:white;
+}
+.container #homegrid .homegrid_row .homegrid_colx2 a h3
+{
+	position:absolute;
+	top: 30%;
+	width:100%;
+	color:white;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 900px) 
+{
+	.container #hometop h1
+	{
+		padding:50px 15%;
+		font-size:5vw;
+	}
+	.container #hometop p
+	{	
+		padding:0 18% 50px;
+		font-size:2.5vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx4
+	{
+		width:40%;
+		font-size: 2.5vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx3
+	{
+		width:41%;
+		font-size: 3vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx2
+	{
+		width:83.4%;
+		height:80px;
+		font-size: 2.5vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx2 a h3
+	{
+		top: 40%;
+	}
+}
+@media screen and (max-width: 500px) 
+{
+	.container #hometop h1
+	{
+		padding:50px 2%;
+		font-size:6vw;
+	}
+	.container #hometop p
+	{	
+		padding:0 15% 50px;
+		font-size:3.5vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx4
+	{
+		width:80%;
+		font-size: 4vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx3
+	{
+		width:80%;
+		font-size: 5vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx2
+	{
+		width:80%;
+		height:80px;
+		font-size: 4vw;
+	}
+	.container #homegrid .homegrid_row .homegrid_colx2 a h3
+	{
+		top: 40%;
+	}
+}
+/* ANIMATION */
+.container #homegrid .homegrid_row .homegrid_colx4:hover:nth-child(n), 
+.container #homegrid .homegrid_row .homegrid_colx3:hover:nth-child(n), 
+.container #homegrid .homegrid_row .homegrid_colx2:hover:nth-child(n)
+{
+	animation-name: anim_hover_homegrid;
+	animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+	transform-origin: 25% 25%;
+	-moz-transform-origin: 25% 25%;
+	-webkit-transform-origin: 25% 25%;
+}
+@keyframes anim_hover_homegrid
+{
+	0%	{
+			transform: scale(1.0);
+			-moz-transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			-o-transform: scale(1.0);
+			-ms-transform: scale(1.0);
+		}	
+	100%{
+			transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+		}
+}

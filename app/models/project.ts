@@ -28,6 +28,7 @@ export interface Project {
   desc: string;
   techs: Array<Tech>;
   gallery: Array<Image>;
+  prototypes: Array<string>;
   dates: Date;
   url: string;
   github: string;
