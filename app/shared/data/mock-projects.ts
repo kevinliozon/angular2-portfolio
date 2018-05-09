@@ -100,24 +100,14 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'gallery': [{
-    'image': '../../../assets/img/png/projects/surely/about.png',
-    'name': 'About Us page',
-    'alt': 'Image of ',
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2018-04-13',
     'end': '2018-04-20'
   },
-  'url': 'https://www.eisportal.com/login',
+  'url': 'https://surelygroup.com/',
   'github': null
 },
 {
@@ -501,33 +491,30 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/mmf/mmf_header1.png',
+    'name': 'Header V1',
+    'alt': 'Image of first version for header',
   },
   {
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/mmf/mmf_header2.png',
+    'name': 'Header V2',
+    'alt': 'Image of second version for header',
   },
   {
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/mmf/mmf_logo.png',
+    'name': 'Logo',
+    'alt': 'Image of logo',
   },
   {
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/mmf/mmf_sections.png',
+    'name': 'Random Sections',
+    'alt': 'Image of random sections',
   }],
   'prototypes': [{
     'name': '',
     'url': '',
   }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'docs': null,
   'dates': {
     'start': '2016-04-01',
     'end': '2016-11-14'
@@ -582,9 +569,64 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/imakr/imakr_home.png',
+    'name': 'Home Page',
+    'alt': 'Image of home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_home_top.png',
+    'name': 'Home Page top section',
+    'alt': 'Image of top section of home',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_home_bottom.png',
+    'name': 'Home Page bottom section',
+    'alt': 'Image of bottom section of home',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_home_full.png',
+    'name': 'Full Home Page',
+    'alt': 'Image of full home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_home_zoning.png',
+    'name': 'Zoning Home Page',
+    'alt': 'Image of zoning for home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_buy.png',
+    'name': 'Products Page',
+    'alt': 'Image of products page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_checkout.png',
+    'name': 'Checkout Page',
+    'alt': 'Image of checkout page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_mockup_cart.png',
+    'name': 'Cart',
+    'alt': 'Image of cart section',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_mockup_menu.jpg',
+    'name': 'Mockup Menu',
+    'alt': 'Image of mockup for menu',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_mockup_menu_hovered.jpg',
+    'name': 'Mockup Menu Hovered',
+    'alt': 'Image of mockup for menu hovered',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_menu.png',
+    'name': 'Menu',
+    'alt': 'Image of Menu',
+  },
+  {
+    'image': '../../../assets/img/png/projects/imakr/imakr_mockup_grid.png',
+    'name': 'Mockup Grid',
+    'alt': 'Image of mockup of grid',
   }],
   'prototypes': [{
     'name': '',
@@ -729,10 +771,7 @@ export let PROJECTS: Project[] = [{
     'name': 'Sitemap',
     'alt': 'Image of sitemap',
   }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
+  'prototypes': null,
   'docs': [{
     'name': 'Mockup',
     'url': '../../../assets/docs/c2i/mockup_c2i.pdf',
@@ -759,18 +798,8 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Web App',
-  'company': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'role': null,
-  },
-  'client': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'featured': null,
-  },
+  'company': null,
+  'client': null,
   'desc': '#projectDescEukiyo',
   'techs': [
     {
@@ -795,14 +824,71 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_bg1.png',
+    'name': 'Background Samourai',
+    'alt': 'Background with samourai',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_bg2.png',
+    'name': 'Background Tokugawas Mons',
+    'alt': 'Background with Tokugawas Mons',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_bg3.jpg',
+    'name': 'Background Castles Abstract',
+    'alt': 'Background with castles arranged in an abstract way',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_home.png',
+    'name': 'Mockup Home Page',
+    'alt': 'Image of mockup for home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_images.png',
+    'name': 'Mockup Images Page',
+    'alt': 'Image of Mockup for images Page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_menu_mobile.png',
+    'name': 'Mockup menu mobile',
+    'alt': 'Image of Mockup for menu on mobile',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_mobile.png',
+    'name': 'Mockup page mobile',
+    'alt': 'Image of Mockup for page on mobile',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_login.png',
+    'name': 'Mockup login page',
+    'alt': 'Image of mockup for login page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_mockup_uploads.png',
+    'name': 'Mockup uploads page',
+    'alt': 'Image of mockup for uploads page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_zoning_home.png',
+    'name': 'Zoning home page',
+    'alt': 'Image of zoning for home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_zoning_page.png',
+    'name': 'Zoning regular page',
+    'alt': 'Image of zoning for regular page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_zoning_page_mobile.png',
+    'name': 'Zoning regular page mobile',
+    'alt': 'Image of zoning for regular page on mobile',
+  },
+  {
+    'image': '../../../assets/img/png/projects/eukiyo/eukiyo_zoning_menu_mobile.png',
+    'name': 'Zoning menu mobile',
+    'alt': 'Image of zoning for menu on mobile',
   }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
+  'prototypes': null,
   'docs': [{
     'name': 'Mockups',
     'url': '../../../assets/docs/eukiyo/mockup_eukiyo.pdf',
@@ -815,13 +901,13 @@ export let PROJECTS: Project[] = [{
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
-  'url': 'https://kevinliozon.com/e-ukiyo',
+  'url': 'https://kevinliozon.com/e_ukiyo',
   'github': null
 },
 {
   'id': '#project4',
   'name': 'HCE',
-  'image': '../../../assets/img/png/projects/hce.png',
+  'image': '../../../assets/img/png/projects/hce/hce.png',
   'featured': false,
   'active': false,
   'category': 'Web App',
@@ -833,7 +919,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Haute Coiffure et Esthétique',
-    'logo': '../../../assets/img/png/projects/hce.png',
+    'logo': '../../../assets/img/png/projects/hce/hce.png',
     'featured': false,
     'url': 'http://reseau-beaute.com/',
   },
@@ -857,18 +943,27 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/hce/hce_mockup.png',
+    'name': 'Zoning',
+    'alt': 'Image of zoning',
+  },
+  {
+    'image': '../../../assets/img/png/projects/hce/hce_home.png',
+    'name': 'Home Page',
+    'alt': 'Image of home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/hce/hce_header1.png',
+    'name': 'Header Background',
+    'alt': 'Image of Header Background',
+  },
+  {
+    'image': '../../../assets/img/png/projects/hce/hce_header2.png',
+    'name': 'Header Background',
+    'alt': 'Image of Header Background',
   }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
@@ -915,14 +1010,36 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
+    'image': '../../../assets/img/png/projects/apags/apags_mockup_home.png',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/apags/apags_mockup_page.png',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/apags/apags_zoning_home1.png',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/apags/apags_zoning_home2.png',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/apags/apags_zoning_page1.png',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/apags/apags_zoning_page2.png',
     'name': '',
     'alt': 'Image of ',
   }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
+  'prototypes': null,
   'docs': [{
     'name': 'Mockups',
     'url': '../../../assets/docs/apags/mockup_apags.pdf',
@@ -973,14 +1090,71 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '../../../assets/img/png/projects/',
-    'name': '',
-    'alt': 'Image of ',
+    'image': '../../../assets/img/png/projects/digitela/digitela_home.png',
+    'name': 'Home Page',
+    'alt': 'Image of home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_home_full.png',
+    'name': 'Full Home Page',
+    'alt': 'Image of full home page',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_pancart.png',
+    'name': 'Pancart',
+    'alt': 'Image of pancart',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_subsc.png',
+    'name': 'Subscription Offer',
+    'alt': 'Image of subscription offer',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_subsc2.png',
+    'name': 'Subscription Offer',
+    'alt': 'Image of subscription offer',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_resp.jpg',
+    'name': 'Responsive Design',
+    'alt': 'Image of responsive design',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_resp2.png',
+    'name': 'Responsive Design',
+    'alt': 'Image of responsive design',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_training.png',
+    'name': 'Training offer',
+    'alt': 'Image of training offer',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_services.png',
+    'name': 'Services',
+    'alt': 'Image of services',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_slogan.png',
+    'name': 'Slogan',
+    'alt': 'Image of slogan',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_webmarketing1.png',
+    'name': 'Webmarketing offer',
+    'alt': 'Image of webmarketing offer',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_webmarketing2.png',
+    'name': 'Webmarketing offer',
+    'alt': 'Image of webmarketing offer',
+  },
+  {
+    'image': '../../../assets/img/png/projects/digitela/digitela_crm.png',
+    'name': 'CRM offer',
+    'alt': 'Image of crm offer',
   }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
+  'prototypes': null,
   'docs': [{
     'name': 'Sliders',
     'url': '../../../assets/docs/digitela/sliders_digitela.pdf',
@@ -999,18 +1173,8 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Portfolio',
-  'company': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'role': null,
-  },
-  'client': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'featured': null,
-  },
+  'company': null,
+  'client': null,
   'desc': '#projectDescPortfolioV1',
   'techs': [
     {
@@ -1030,19 +1194,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'

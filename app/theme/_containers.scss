@@ -59,6 +59,16 @@ body {
   }
 }
 
+.wrap-confidential {
+  p {
+    color: $info;
+    font-size: $font-macro;
+    font-style: italic;
+    margin: $gap-reg auto 0;
+    width: 75%;
+  }
+}
+
 /* RESPONSIVE CENTERING */
 @media (max-width: 768px) {
   .text-center-xs { text-align: center; }

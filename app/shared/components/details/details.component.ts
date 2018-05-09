@@ -49,5 +49,20 @@ export class DetailsComponent implements OnInit{
     this.typeModal = type;
     this.detailsModal = this.modalService.openModal(id, type);
   }
+  
+  /**
+   * Galleries, Docs and Prototypes are not visible if project is confidential
+   * @returns {any}
+   */
+  public isConfidential(): boolean {
+    let confidentialInfo = ['#project15', '#project14', '#project13', '#project12', '#project11', '#project10'];
+    
+    for (let confidential of confidentialInfo) {
+      if(this.details.id === confidential) {
+        console.log('true', this.details.id);
+        return true;
+      }
+    }
+  }
 
 }
