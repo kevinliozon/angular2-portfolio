@@ -43,9 +43,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2017-01-01',
@@ -93,9 +101,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': '../../../assets/img/png/projects/surely/about.png',
+    'name': 'About Us page',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2018-04-13',
@@ -147,9 +163,17 @@ export let PROJECTS: Project[] = [{
       }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
       'start': '2017-11-15',
@@ -201,9 +225,17 @@ export let PROJECTS: Project[] = [{
       }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
       'start': '2017-10-15',
@@ -263,9 +295,17 @@ export let PROJECTS: Project[] = [{
     },
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2017-01-05',
@@ -337,9 +377,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2016-11-14',
@@ -387,9 +435,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2016-12-01',
@@ -445,9 +501,32 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/',
+    'name': '',
+    'alt': 'Image of ',
+  },
+  {
+    'image': '../../../assets/img/png/projects/',
+    'name': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': '',
+    'url': '',
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2016-04-01',
@@ -503,9 +582,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': '',
+    'url': '',
+  }],
+  'docs': [{
+    'name': 'Mockup Homepage',
+    'url': '../../../assets/docs/imakr/homepage.pdf',
   }],
   'dates': {
     'start': '2016-02-14',
@@ -561,9 +648,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2014-12-10',
@@ -615,9 +710,40 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': '../../../assets/img/png/projects/c2i/logoc2i.png',
+    'name': 'Logo',
+    'alt': 'Image of logo',
+  },
+  {
+    'image': '../../../assets/img/png/projects/c2i/icones.png',
+    'name': 'Icones',
+    'alt': 'Image of icones',
+  },
+  {
+    'image': '../../../assets/img/png/projects/c2i/logo_picto.png',
+    'name': 'Visuals',
+    'alt': 'Image of visuals',
+  },
+  {
+    'image': '../../../assets/img/png/projects/c2i/sitemap.png',
+    'name': 'Sitemap',
+    'alt': 'Image of sitemap',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': 'Mockup',
+    'url': '../../../assets/docs/c2i/mockup_c2i.pdf',
+  },
+  {
+    'name': 'Specs',
+    'url': '../../../assets/docs/c2i/specs_c2i.pdf',
+  },
+  {
+    'name': 'Slides',
+    'url': '../../../assets/docs/c2i/slides_project_group.pdf',
   }],
   'dates': {
     'start': '2015-11-01',
@@ -669,9 +795,21 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': 'Mockups',
+    'url': '../../../assets/docs/eukiyo/mockup_eukiyo.pdf',
+  },
+  {
+    'name': 'Slides',
+    'url': '../../../assets/docs/eukiyo/slides_eukiyo.pdf',
   }],
   'dates': {
     'start': '2015-11-01',
@@ -719,9 +857,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2015-04-01',
@@ -769,15 +915,23 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': 'Mockups',
+    'url': '../../../assets/docs/apags/mockup_apags.pdf',
   }],
   'dates': {
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
-  'url': 'link',
+  'url': null,
   'github': null
 },
 {
@@ -819,9 +973,17 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
+    'image': '../../../assets/img/png/projects/',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': 'Sliders',
+    'url': '../../../assets/docs/digitela/sliders_digitela.pdf',
   }],
   'dates': {
     'start': '2015-04-01',
@@ -869,14 +1031,22 @@ export let PROJECTS: Project[] = [{
     }
   ],
   'gallery': [{
-    'image': '',
-    'name': '',
-    'alt': '',
+    'image': null,
+    'name': null,
+    'alt': null,
+  }],
+  'prototypes': [{
+    'name': null,
+    'url': null,
+  }],
+  'docs': [{
+    'name': null,
+    'url': null,
   }],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': 'https://kevinliozon.com/portfoliov1',
+  'url': 'https://kevinliozon.com/portfolio1',
   'github': null
 }];

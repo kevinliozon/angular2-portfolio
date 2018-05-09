@@ -90,9 +90,24 @@
   <div class="col-xs-7">
 
     <section class="img-group">
+      <header><h5>Images</h5></header>
       <div *ngFor="let image of details.gallery">
         <img class="img-thumbnail" [src]="image.image" alt="Gallery image of {{ details.school.name }}">
       </div>
+    </section>
+
+    <section class="btn-group-jumbo">
+      <header><h5>Prototypes</h5></header>
+      <a *ngFor="let prototype of details.prototypes" class="btn btn-primary" [routerLink]="[prototype.url]">
+        {{ prototype.name | translate }}
+      </a>
+    </section>
+
+    <section class="btn-group-jumbo">
+      <header><h5>Docs</h5></header>
+      <a *ngFor="let doc of details.docs" class="btn btn-primary" [routerLink]="[doc.url]">
+        {{ doc.name | translate }}
+      </a>
     </section>
 
   </div>
