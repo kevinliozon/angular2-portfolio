@@ -7,18 +7,8 @@ export let PROJECTS: Project[] = [{
   'featured': true,
   'active': true,
   'category': 'Portfolio',
-  'company': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'role': null,
-  },
-  'client': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'featured': null,
-  },
+  'company': null,
+  'client': null,
   'desc': '#projectDescPortfolio3',
   'techs': [
     {
@@ -42,19 +32,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/photoshop.svg'
     }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2017-01-01',
     'end': null
@@ -181,8 +161,8 @@ export let PROJECTS: Project[] = [{
   'category': 'Web App',
   'company': {
     'name': 'Surely Group',
-    'logo': '',
-    'url': 'https://services.surelygroup.com/',
+    'logo': '../../../assets/img/svg/companies/surely.svg',
+    'url': 'https://surelygroup.com/',
     'role': 'Front-End Developer'
   },
   'client': {
@@ -689,19 +669,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/html.svg'
     }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'
@@ -1011,33 +981,33 @@ export let PROJECTS: Project[] = [{
   ],
   'gallery': [{
     'image': '../../../assets/img/png/projects/apags/apags_mockup_home.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Mockup Home Page',
+    'alt': 'Image of mockup for home page',
   },
   {
     'image': '../../../assets/img/png/projects/apags/apags_mockup_page.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Mockup Regular Page',
+    'alt': 'Image of mockup for regular page',
   },
   {
     'image': '../../../assets/img/png/projects/apags/apags_zoning_home1.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Zoning Home Page 1',
+    'alt': 'Image of zoning for home page',
   },
   {
     'image': '../../../assets/img/png/projects/apags/apags_zoning_home2.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Zoning Home Page 2',
+    'alt': 'Image of zoning for home page',
   },
   {
     'image': '../../../assets/img/png/projects/apags/apags_zoning_page1.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Zoning Regular Page 1',
+    'alt': 'Image of zoning for regular page',
   },
   {
     'image': '../../../assets/img/png/projects/apags/apags_zoning_page2.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Zoning Regular Page 2',
+    'alt': 'Image of zoning for regular page',
   }],
   'prototypes': null,
   'docs': [{
@@ -1202,5 +1172,59 @@ export let PROJECTS: Project[] = [{
     'end': '2015-03-01'
   },
   'url': 'https://kevinliozon.com/portfolio1',
+  'github': null
+},
+{
+  'id': '#project0',
+  'name': 'IUT Montpellier',
+  'image': '../../../assets/img/png/projects/iut_montpellier/iut_montpellier.png',
+  'featured': false,
+  'active': false,
+  'category': 'Web App',
+  'company': null,
+  'client': null,
+  'desc': '#projectDescIutMtp',
+  'techs': [
+    {
+      'name': 'HTML',
+      'logo': '../../../assets/img/svg/skills/html.svg'
+    },
+    {
+      'name': 'CSS',
+      'logo': '../../../assets/img/svg/skills/css.svg'
+    },
+    {
+      'name': 'PHP',
+      'logo': '../../../assets/img/svg/skills/php.svg'
+    },
+    {
+      'name': 'Photoshop',
+      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+    }
+  ],
+  'gallery': [{
+    'image': '../../../assets/img/png/projects/iut_montpellier/iut_montpellier.png',
+    'name': 'Logo',
+    'alt': 'Image of logo',
+  },
+  {
+    'image': '../../../assets/img/png/projects/iut_montpellier/sitemap.png',
+    'name': 'Sitemap',
+    'alt': 'Image of sitemap',
+  }],
+  'prototypes': null,
+  'docs': [{
+    'name': 'Specs',
+    'url': '../../../assets/docs/iut_montpellier/iut_specs.pdf',
+  },
+  {
+    'name': 'Slides',
+    'url': '../../../assets/docs/iut_montpellier/iut_slides.pdf',
+  }],
+  'dates': {
+    'start': '2014-12-10',
+    'end': '2015-03-01'
+  },
+  'url': 'https://kevinliozon.com/iut_montpellier/accueil/accueil.html',
   'github': null
 }];
