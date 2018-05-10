@@ -6,8 +6,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'Certification',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/nng.png',
-    'name': '',
-    'alt': '',
+    'name': 'NNG Certification Diploma',
+    'alt': 'Image of Nielsen and Norman Group certification diploma',
   }],
   'subjects': [
     {'name': 'Interaction Design', 'spe': true},
@@ -34,8 +34,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'Certification',
   'gallery': [{
     'image': '../../../assets/img/svg/education/codeschool.svg',
-    'name': '',
-    'alt': '',
+    'name': 'Codeschool Logo',
+    'alt': 'Image of Codeschool logo',
   }],
   'subjects': [
     {'name': 'Javascript', 'spe': false},
@@ -64,8 +64,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'Bachelor\'s Degree',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/lp.png',
-    'name': '',
-    'alt': '',
+    'name': 'Image of Bachelor\'s Degree Diploma',
+    'alt': 'Image of bachelor\'s degree diploma',
   }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
@@ -87,26 +87,24 @@ export let DIPLOMAS: Diploma[] = [{
     'start': '2015-09-01',
     'end': '2016-06-20'
   },
-  'projects': [
-    {
-      'id': '#project5',
-      'name': 'E-Ukiyo',
-      'image': '../../../assets/img/svg/projects/c2i.svg',
-      'url': 'https://kevinliozon.com/c2i_reseau/'
-    },
-    {
-      'id': '#project6',
-      'name': 'C2I Reseaux',
-      'image': '../../../assets/img/svg/projects/eukiyo.svg',
-      'url': 'https://kevinliozon.com/e_ukiyo/en/'
-    },
-    {
-      'id': '#project7',
-      'name': 'Portfolio V2',
-      'image': '../../../assets/img/svg/projects/portfoliov2.svg',
-      'url': 'https://kevinliozon.com/portfolio2'
-    }
-  ]
+  'projects': [{
+    'id': '#project5',
+    'name': 'E-Ukiyo',
+    'image': '../../../assets/img/svg/projects/c2i.svg',
+    'url': 'https://kevinliozon.com/c2i_reseau/'
+  },
+  {
+    'id': '#project6',
+    'name': 'C2I Reseaux',
+    'image': '../../../assets/img/svg/projects/eukiyo.svg',
+    'url': 'https://kevinliozon.com/e_ukiyo/en/'
+  },
+  {
+    'id': '#project7',
+    'name': 'Portfolio V2',
+    'image': '../../../assets/img/svg/projects/portfoliov2.svg',
+    'url': 'https://kevinliozon.com/portfolio2'
+  }]
 },
 {
   'id': '#diploma3',
@@ -115,7 +113,7 @@ export let DIPLOMAS: Diploma[] = [{
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/mmi.png',
     'name': '',
-    'alt': '',
+    'alt': 'Image of ',
   }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
@@ -154,8 +152,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'University Degree',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/du.png',
-    'name': '',
-    'alt': '',
+    'name': 'University Degree Diploma',
+    'alt': 'Image of university degree diploma',
   }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
@@ -166,7 +164,7 @@ export let DIPLOMAS: Diploma[] = [{
     {'name': 'Communication', 'spe': false}
   ],
   'school': {
-    'name': 'Institute of Technology',
+    'name': 'Institute of Technology of Montpellier',
     'place': 'Montpellier',
     'country': 'France',
     'image': '../../../assets/img/svg/education/um.svg',
@@ -176,14 +174,12 @@ export let DIPLOMAS: Diploma[] = [{
     'start': '2012-09-01',
     'end': '2013-06-01'
   },
-  'projects': [
-    {
-      'id': '#project0',
-      'name': 'IUT Montpellier',
-      'image': '../../../assets/img/png/projects/iut_montpellier.png',
-      'url': 'https://kevinliozon.com/iut_montpellier'
-    }
-  ]
+  'projects': [{
+    'id': '#project0',
+    'name': 'IUT Montpellier',
+    'image': '../../../assets/img/png/projects/iut_montpellier/iut_montpellier.png',
+    'url': 'https://kevinliozon.com/iut_montpellier'
+  }]
 },
 {
   'id': '#diploma1',
@@ -191,8 +187,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'Highschool Degree',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/bac.png',
-    'name': '',
-    'alt': '',
+    'name': 'Baccalauréat Diploma',
+    'alt': 'Image of Baccalauréat Diploma',
   }],
   'subjects': [
     {'name': 'Biology', 'spe': true},

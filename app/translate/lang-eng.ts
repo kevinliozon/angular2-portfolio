@@ -116,15 +116,15 @@ export const LANG_ENG_TRANS = {
                       It was supposed to allow teachers involved into the C2I (Internet & Computing Certicate)
                       to share their contents (courses, videos conference, podcasts) between themselves and
                       with the students. I cumulated both the roles of project manager and front-end dev in this project.
-                      The project was buil on Wordpress but has unfortunately been cancelledbecause of budget
-                      restrictions.`,
+                      It was built on Wordpress but has unfortunately been cancelled because of the merging of
+                      the regions Burgundy and Franche-Comté and therefore of their respective universities.`,
   '#projectDescImakr': `Rebuilding iMakr's E-Commerce platform has been my very first project after I arrived in London.
                         This website is selling 3D printing industry related products and they wanted to revamp
                         the overall design to make it more accessible to newcomers in this industry. Also it was 
                         necessary to make the navigation and checkout process easier for the professionals.
-                        My role has been first and foremost to create a new design and present my ideas via
-                        complete mockups for each pages and components. Then turning them into prototypes by using
-                        local HTML/CSS/jQuery pages. Once agreed I ended up starting to develop.`,
+                        My role has been to create a new design and present my ideas via complete mockups for each pages
+                        and components. Then turning them into prototypes by using local HTML/CSS/jQuery pages.
+                        Once agreed I ended up starting to develop.`,
   '#projectDescMMF': `MyMiniFactory, a subsidiary of iMakr, aims to provide 3D printed contents/models sharing platform 
                       for 3D designers and passionates. This application was more complex than iMakr's one because
                       the site is supposed to offer lot more interactions with the different contents and user
@@ -151,13 +151,17 @@ export const LANG_ENG_TRANS = {
   '#projectDescMsa': `MS Amlin is an important commercial insurer operating in the Lloyd's of London and part of the
                       japanese MS & AD holding. My role on this project has mostly been to fix UI issues, refactoring
                       some templates as well as creating new ones.`,
-  '#projectDescSurely': `Regarding an upcoming Hackathon in which my company was due to participate I had to to work
+  '#projectDescSurely': `Regarding an upcoming event in which my company was due to participate I had to to work
                         on its new website. Albeit the project was already running for 3 months before I started being 
                         involved, it had become necessary to finish it within a short scope. As a result I took
-                        the responsability to finish the project. However I not only ended up adding the missing
-                        contents and styling the pages but also reorganising the way the info were displayed
-                        (everything was hard coded, no usage of posts). I also installed the plugins for SEO (Yoast) and
-                        migrations (All-In-One) as well as created one for the Analytics.`,
+                        had to finish the project and match the deadline. I ended up adding the missing
+                        contents and styles for the pages. I also reorganised the way the info was displayed
+                        (everything was hard coded, no usage of posts). Finally I installed the plugins for SEO and
+                        migrations, as well as created one for the Analytics.`,
+  '#projectDescIutMtp': `My first web project as a student. The purpose was to create a new website dedicated to
+                        presenting the institute of technology of Montpellier. I was in first year of computing sciences
+                        and it was around 2 years before the release of HTML 5 and we were a group of 3. This may
+                        look a bit old and basic by today standards but it was a great achievement for us at the time.`,
 
 
   /*** ROLES ***/

@@ -630,18 +630,8 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': true,
   'category': 'Portfolio',
-  'company': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'role': null,
-  },
-  'client': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'featured': null,
-  },
+  'company': null,
+  'client': null,
   'desc': '#projectDescPortfolioV2',
   'techs': [
     {
@@ -687,10 +677,10 @@ export let PROJECTS: Project[] = [{
   'active': true,
   'category': 'Web App',
   'company': {
-    'name': null,
-    'logo': null,
-    'url': null,
-    'role': null,
+    'name': 'Université de Bourgogne-Franche-Comté',
+    'logo': '../../../assets/img/svg/education/ubfc.svg',
+    'url': 'https://kevinliozon.com/c2i_reseau',
+    'role': 'Project Manager & Front-End Dev'
   },
   'client': {
     'name': 'Université de Bourgogne-Franche-Comté',
@@ -1181,8 +1171,18 @@ export let PROJECTS: Project[] = [{
   'featured': false,
   'active': false,
   'category': 'Web App',
-  'company': null,
-  'client': null,
+  'company': {
+    'name': 'Institute of Technology of Montpellier',
+    'logo': '../../../assets/img/svg/education/um.svg',
+    'url': 'http://iut-montpellier-sete.edu.umontpellier.fr/',
+    'role': 'Full Stack Dev'
+  },
+  'client': {
+    'name': 'Institute of Technology of Montpellier',
+    'logo': '../../../assets/img/svg/education/um.svg',
+    'featured': false,
+    'url': 'http://iut-montpellier-sete.edu.umontpellier.fr/'
+  },
   'desc': '#projectDescIutMtp',
   'techs': [
     {
