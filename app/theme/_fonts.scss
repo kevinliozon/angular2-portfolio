@@ -45,9 +45,16 @@ body {
 
   &.font-big {
     .jumbotron,
-    .content-preview {
+    .content-preview,
+    .wrap-details {
       p {
         font-size: $font-macro;
+      }
+    }
+
+    .modal-body {
+      p {
+        font-size: $font-big;
       }
     }
   }

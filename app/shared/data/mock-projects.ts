@@ -666,7 +666,7 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': 'https://kevinliozon.com/portfoliov2',
+  'url': 'https://kevinliozon.com/portfolio2',
   'github': null
 },
 {

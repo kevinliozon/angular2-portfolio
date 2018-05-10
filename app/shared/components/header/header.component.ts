@@ -6,7 +6,6 @@ import { TranslateService } from '../../../translate/translate.service';
 /* CONSTANTS */
 import { CONSTANTS } from '../../../shared/constants';
 
-
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   selector: 'my-header',
@@ -18,14 +17,15 @@ export class HeaderComponent implements OnInit {
   public supportedLanguages: Array<any>;
   public currentFlag: string;
   public title: any;
-  public menu = CONSTANTS.MENU.ENG;
+  public menu = CONSTANTS.MENU;
   public pageHasChanged = false;
   public fontHasChanged = false;
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
               private location: Location) {
-      this.toggleMenuJq();
+    this.toggleMenuJq();
+    this.selectLang(); // set current language
   }
 
   ngOnInit() {
@@ -34,8 +34,6 @@ export class HeaderComponent implements OnInit {
       { display: 'English', value: 'eng', flag: 'assets/img/svg/flags/uk.svg' },
       { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
     ];
-    // set current language
-    this.selectLang('eng', 'assets/img/svg/flags/uk.svg');
     this.setHeaderTitleOnRefresh();
   }
 
@@ -54,18 +52,19 @@ export class HeaderComponent implements OnInit {
    * On refresh, retrieve the file's name and returns it with uppercase for first letter
    * If name is 'about' it becomes 'About Me', if 'details' it returns 'Details'
    */
-  private setHeaderTitleOnRefresh() {
-    let path = <any>this.location.path();
+  private setHeaderTitleOnRefresh(): void {
+    let path = <any>this.location.path(); // The url
 
     // getTitle() is not handled properly
-    if (!path.includes('details' && 'about')) {
+    if (path.includes('about')) {
+      this.title = 'About Me';
+    } else if (path.includes('details')) {
+      this.title = 'Details';
+    } else {
       let firstChar = path.substr(1).charAt(0).toUpperCase();
       let strRemains = path.slice(2);
-
       this.title = firstChar + strRemains || 'Home';
-    } else if (path.includes('about')) {
-        this.title = 'About Me';
-    } else this.title = 'Details';
+    }
   }
 
   /**
@@ -82,7 +81,7 @@ export class HeaderComponent implements OnInit {
    * @param {string} lang
    * @param {string} flag
    */
-  public selectLang(lang: string, flag: string) {
+  public selectLang(lang: string = 'eng', flag: string = 'assets/img/svg/flags/uk.svg'): void {
     this._translate.use(lang);
     this.currentFlag = flag;
 
@@ -91,7 +90,7 @@ export class HeaderComponent implements OnInit {
       case 'eng':
         //update menu labels
         this.menu = CONSTANTS.MENU.ENG;
-        //tab and header title become the correspondant one in the other language
+        //tab and header title become the matching one in the other language
         for(let tabActiveMenu of CONSTANTS.MENU.FRA) {
           for(let tabNewMenu of CONSTANTS.MENU.ENG) {
             if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
@@ -127,7 +126,10 @@ export class HeaderComponent implements OnInit {
     this.pageHasChanged = !this.pageHasChanged;
     setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // duration
   }
-
+  
+  /**
+   * Toggle the class .font-big to body to increase or reduce font size across the app
+   */
   public changeFont(): void {
     let body = document.getElementsByTagName('body')[0];
     body.classList.toggle("font-big");

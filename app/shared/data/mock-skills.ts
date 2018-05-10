@@ -215,7 +215,7 @@ export let SKILLS: Skill[] = [{
   'id': '#skill7',
   'name': 'Wordpress',
   'featured': false,
-  'frequent': false,
+  'frequent': true,
   'category': 'CMS',
   'desc': 'My first CMS using PHP and MySQL',
   'image': '../../../assets/img/svg/skills/wordpress.svg',
