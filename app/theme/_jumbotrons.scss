@@ -38,11 +38,9 @@
   }
 }
 
-.btn-group-jumbo {
-  @include flex-layout(wrap, flex-start, flex-start, flex-start);
-  .btn {
-    margin: 10px;
-  }
+.btn-group--jumbo {
+  @extend .btn-group-line;
+  @include flex-layout(wrap, flex-start, stretch, stretch);
 }
 
 @media screen and (max-width: 768px) {

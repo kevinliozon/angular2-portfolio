@@ -119,7 +119,7 @@ $padding-sm: 10px;
   }
 }
 
-@mixin flex-layout($hasWrap, $justif, $alignContent, $alignItems) {
+@mixin flex-layout($hasWrap: nowrap, $justif: flex-start, $alignContent: stretch, $alignItems: stretch) {
   display: flex;
   flex-wrap: $hasWrap;
   justify-content: $justif;

@@ -12,6 +12,7 @@ import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
 import { TranslateModule } from '../translate/translate.module';
 import { FiltersComponent } from './components/filters/filters.component';
+import { GalleryModalComponent } from "./components/gallery-modal/gallery-modal.component";
 // Pipes
 import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
@@ -26,6 +27,7 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
       FooterComponent,
       DetailsComponent,
       DetailsModalComponent,
+      GalleryModalComponent,
       PreviewComponent,
       CardComponent,
       FiltersComponent,
@@ -36,6 +38,7 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
       FooterComponent,
       DetailsComponent,
       DetailsModalComponent,
+      GalleryModalComponent,
       PreviewComponent,
       CardComponent,
       FiltersComponent

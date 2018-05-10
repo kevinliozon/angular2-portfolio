@@ -1,4 +1,9 @@
-.modal-body {
+.modal-details {
+
+  .modal-content {
+    min-height: 40rem;
+  }
+
   .img-wrap,
   .img-label {
     display: inline-block;
@@ -11,5 +16,9 @@
 
   .img-label {
     margin-top: $gap-sm;
+  }
+
+  .modal-footer {
+    @include position(absolute, auto, 0px, 0px, 0px);
   }
 }

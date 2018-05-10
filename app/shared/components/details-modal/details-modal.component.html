@@ -1,5 +1,4 @@
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="myModal" class="modal modal-details fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -40,7 +39,7 @@
         </section>
       </div>
 
-      <footer class="modal-footer btn-group-jumbo">
+      <footer class="modal-footer btn-group--modal" *ngIf="details.url || details.github">
         <!-- If not a skill -->
         <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type !== 'skill'" target="_blank">
           {{ 'See Live' | translate }}

@@ -21,6 +21,7 @@ export class DetailsComponent implements OnInit{
   public type: string;
   public details: any;
   public detailsModal: any = {};
+  public imageModal: any = {};
   public typeModal: string;
 
   constructor(private route: ActivatedRoute,

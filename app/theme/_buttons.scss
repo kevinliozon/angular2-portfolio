@@ -65,3 +65,13 @@
     font-size: $font-big;
   }
 }
+
+.btn-group-line {
+  .btn {
+    margin: 10px;
+  }
+
+  header {
+    width: 100%;
+  }
+}

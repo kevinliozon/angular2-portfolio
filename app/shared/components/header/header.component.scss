@@ -119,9 +119,13 @@
 
 .navbar-toggle {
   border: none;
-  margin: 20px;
+  margin: 20px 0px 20px 20px;
   box-sizing: content-box;
   height: 20px;
+
+  &:not(.nav-lang) {
+    padding-right: 40px;
+  }
 
   .icon-bar {
     transition: all 0.3s ease-in;

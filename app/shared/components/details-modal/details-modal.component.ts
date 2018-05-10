@@ -11,10 +11,14 @@ export class DetailsModalComponent {
   @Input() public details: any;
   @Input() public type: string = '';
 
-  constructor() {
-    console.log(this.type);
-  }
-
+  constructor() { }
+  
+  /**
+   * Check if the project is a role or a project
+   * If yes it means they have skills associated
+   *
+   * @returns {boolean}
+   */
   public hasSkillsInvolved(): boolean {
     return (this.type === 'role' || this.type === 'project') ? true : false;
   }
