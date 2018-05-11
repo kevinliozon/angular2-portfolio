@@ -5,6 +5,8 @@ import { Location } from '@angular/common';
 import { TranslateService } from '../../../translate/translate.service';
 /* CONSTANTS */
 import { CONSTANTS } from '../../../shared/constants';
+/* JQUERY */
+import * as $ from 'jquery';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -17,7 +19,7 @@ export class HeaderComponent implements OnInit {
   public supportedLanguages: Array<any>;
   public currentFlag: string;
   public title: any;
-  public menu = CONSTANTS.MENU;
+  public menu = CONSTANTS;
   public pageHasChanged = false;
   public fontHasChanged = false;
 
@@ -36,15 +38,15 @@ export class HeaderComponent implements OnInit {
     ];
     this.setHeaderTitleOnRefresh();
   }
-
+  
   /**
    * Following jQuery for toggling burger menu
    */
   private toggleMenuJq(): void {
     $(document).on('click','.navbar-collapse.in',function(e) {
-        if( $(e.target).is('a') ) {
-            $(this).collapse('hide');
-        }
+      if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+      }
     });
   }
 
