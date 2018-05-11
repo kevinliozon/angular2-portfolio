@@ -35,5 +35,15 @@
     <!-- build:vendors -->
     <script src="dist/lib/vendors.min.js"></script>
     <!-- endbuild -->
+    <script>
+      /**
+       * For Bootstrap dropdown
+       */
+      $(document).on('click','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+              $(this).collapse('hide');
+          }
+      });
+    </script>
   </body>
 </html>

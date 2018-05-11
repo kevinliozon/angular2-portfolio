@@ -4,9 +4,7 @@ import { Location } from '@angular/common';
 /* SERVICES */
 import { TranslateService } from '../../../translate/translate.service';
 /* CONSTANTS */
-import { CONSTANTS } from '../../../shared/constants';
-/* JQUERY */
-import * as $ from 'jquery';
+import { MENUS } from '../../../shared/constants/menus';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -19,14 +17,13 @@ export class HeaderComponent implements OnInit {
   public supportedLanguages: Array<any>;
   public currentFlag: string;
   public title: any;
-  public menu = CONSTANTS;
+  public menu: Array<any>;
   public pageHasChanged = false;
   public fontHasChanged = false;
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
               private location: Location) {
-    this.toggleMenuJq();
     this.selectLang(); // set current language
   }
 
@@ -37,17 +34,6 @@ export class HeaderComponent implements OnInit {
       { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
     ];
     this.setHeaderTitleOnRefresh();
-  }
-  
-  /**
-   * Following jQuery for toggling burger menu
-   */
-  private toggleMenuJq(): void {
-    $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-      }
-    });
   }
 
   /**
@@ -91,10 +77,10 @@ export class HeaderComponent implements OnInit {
     switch(lang) {
       case 'eng':
         //update menu labels
-        this.menu = CONSTANTS.MENU.ENG;
+        this.menu = MENUS.ENG || null;
         //tab and header title become the matching one in the other language
-        for(let tabActiveMenu of CONSTANTS.MENU.FRA) {
-          for(let tabNewMenu of CONSTANTS.MENU.ENG) {
+        for(let tabActiveMenu of MENUS.FRA) {
+          for(let tabNewMenu of MENUS.ENG) {
             if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
               this.setTitle(tabNewMenu.value)
             }
@@ -103,9 +89,9 @@ export class HeaderComponent implements OnInit {
         break;
 
       case 'fra':
-        this.menu = CONSTANTS.MENU.FRA;
-        for(let tabActiveMenu of CONSTANTS.MENU.ENG) {
-          for(let tabNewMenu of CONSTANTS.MENU.FRA) {
+        this.menu = MENUS.FRA || null;
+        for(let tabActiveMenu of MENUS.ENG) {
+          for(let tabNewMenu of MENUS.FRA) {
             if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
               this.setTitle(tabNewMenu.value)
             }

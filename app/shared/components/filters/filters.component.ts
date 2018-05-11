@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 // Environment
-import { CONSTANTS } from '../../constants';
+import { FILTERS } from '../../constants/filters';
 
 @Component({
     moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -22,7 +22,7 @@ export class FiltersComponent implements OnInit{
      * Generate the filters relevant to the page
      */
     ngOnInit() {
-        const filters = CONSTANTS.FILTERS || null;
+        const filters = FILTERS || null;
         switch(this.page) {
             case 'experience':
                 this.filters = filters.roles;

@@ -12,7 +12,7 @@ import { HobbyService } from '../providers/hobby.service'
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
 //constants
-import { CONSTANTS } from '../shared/constants';
+import { PROFILE } from '../shared/constants/profile';
 //services
 import { ModalService } from "../providers/modal.service";
 //animations
@@ -26,7 +26,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
 })
 export class AboutComponent implements OnInit{
 
-  public details: any = CONSTANTS.PROFILE;
+  public details: any = PROFILE;
   public tools: Array<Tool>;
   public hobbies: Array<Hobby>;
   public projects: Array<Project>;

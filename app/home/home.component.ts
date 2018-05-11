@@ -13,7 +13,7 @@ import { RoleService } from '../providers/role.service'
 import { Diploma } from '../models/diploma';
 import { DiplomaService } from '../providers/diploma.service'
 //constants
-import { CONSTANTS } from '../shared/constants';
+import { PROFILE } from '../shared/constants/profile';
 //animations
 import { routeTrans } from '../shared/components/animations/route-transition';
 
@@ -25,7 +25,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
 })
 export class HomeComponent implements OnInit{
 
-  public profile: any = CONSTANTS.PROFILE;
+  public profile = PROFILE;
   public projects: Array<Project>;
   public skills: Array<Skill>;
   public roles: Array<Role>;
