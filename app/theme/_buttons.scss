@@ -70,8 +70,14 @@
   .btn {
     margin: 10px;
   }
+}
 
-  header {
-    width: 100%;
+@media screen and (max-width: 500px) {
+  .btn-group--details,
+  .btn-group--jumbo {
+    @include flex-layout(wrap, center, flex-start, flex-start);
+    .btn {
+      width: 100%;
+    }
   }
 }

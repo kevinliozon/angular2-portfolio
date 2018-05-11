@@ -12,9 +12,8 @@
     <img class="img--flip" [src]="profile.images.avatar" [alt]="profile.name">
   </figure>
 
-  <h4 class="col-xs-12">{{ 'homeText3' | translate }}</h4>
-
   <footer class="col-xs-12 btn-group btn-group--jumbo">
+    <header><h4>{{ 'homeText3' | translate }}</h4></header>
     <a
       *ngFor="let btn of profileBtn"
       [class]="btn.class"

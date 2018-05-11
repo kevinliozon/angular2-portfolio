@@ -30,8 +30,9 @@ export const LANG_ENG_TRANS = {
   'to': 'to',
   'as': 'as',
   'present': 'present',
-
-
+  'more-info': 'More Info',
+  
+  
   /*** HOME ***/
   // Titles
   'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],

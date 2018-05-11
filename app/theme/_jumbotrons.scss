@@ -43,6 +43,9 @@
   @include flex-layout(wrap, flex-start, stretch, stretch);
 }
 
+/**
+  Media Queries
+ */
 @media screen and (max-width: 768px) {
   .container {
     .jumbotron {
@@ -56,15 +59,6 @@
     }
     .img-jumbo img {
       width: 50%;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .btn-group-jumbo {
-    @include flex-layout(wrap, center, flex-start, flex-start);
-    .btn {
-      width: 100%;
     }
   }
 }

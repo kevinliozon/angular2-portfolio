@@ -18,7 +18,6 @@ const titles = {
   ]
 }
 
-
 export const LANG_FRA_TRANS = {
   /*** COMMON ***/
   'more': 'Détails',
@@ -31,8 +30,9 @@ export const LANG_FRA_TRANS = {
   'to': 'à',
   'as': 'comme',
   'present': 'aujourd\'hui',
+  'more-info': 'Infos',
 
-
+  
   /*** HOME ***/
   // Titles
   'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],

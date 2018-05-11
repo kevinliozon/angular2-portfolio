@@ -17,3 +17,30 @@
     }
   }
 }
+
+.btn-group--details {
+  @extend .btn-group-line;
+  margin: $gap-reg auto;
+}
+
+/**
+  Media Queries
+ */
+@media screen and (max-width: 768px) {
+  .wrap-details {
+    padding: $gap-md;
+  }
+
+  .wrap-img-txt .img-round {
+    margin: auto auto $gap-big;
+    float: none;
+  }
+
+  .details-headings {
+    clear: both;
+  }
+
+  .btn-group--details {
+    text-align: center;
+  }
+}

@@ -12,8 +12,8 @@
 
           <p>{{ 'aboutText0' | translate }}</p>
 
-          <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
+            <header><h4>{{ 'aboutTitle7' | translate }}</h4></header>
             <figure class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
               <img class="img img-float" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
@@ -38,8 +38,8 @@
           </header>
           <p>{{ 'aboutText1' | translate }}</p>
 
-          <h4>{{ 'aboutTitle7' | translate }}</h4>
           <footer class="img-group">
+            <header><h4>{{ 'aboutTitle7' | translate }}</h4></header>
             <figure class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
               <img class="img img-float" *ngIf="i < 5" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
@@ -93,42 +93,36 @@
     </article>
   </main>
 
-  <section id="about-achiev">
-    <h2>{{ 'aboutTitle4' | translate }}</h2>
-    <div class="row">
-      <my-card
-        class="col-xs-12 col-sm-4 col-md-3"
-        *ngFor="let project of projects"
-        [object]="project"
-        [hidden]="project.featured !== true"
-        (moreInfo)="openModal($event, 'project')">
-      </my-card>
-    </div>
+  <section id="about-achiev" class="wrap-cards row">
+    <header><h2>{{ 'aboutTitle4' | translate }}</h2></header>
+    <my-card
+      class="col-xs-12 col-sm-4 col-md-3"
+      *ngFor="let project of projects"
+      [object]="project"
+      [hidden]="project.featured !== true"
+      (moreInfo)="openModal($event, 'project')">
+    </my-card>
   </section>
 
-  <section id="about-tools">
-    <h2>{{ 'aboutTitle5' | translate }}</h2>
-    <div class="row">
-      <my-card
-        class="col-xs-12 col-sm-4 col-md-3"
-        *ngFor="let tool of tools"
-        [hidden]="!tool.featured"
-        [object]="tool"
-        (moreInfo)="openModal($event, 'tool')">
-      </my-card>
-    </div>
+  <section id="about-tools" class="wrap-cards row">
+    <header><h2>{{ 'aboutTitle5' | translate }}</h2></header>
+    <my-card
+      class="col-xs-12 col-sm-4 col-md-3"
+      *ngFor="let tool of tools"
+      [hidden]="!tool.featured"
+      [object]="tool"
+      (moreInfo)="openModal($event, 'tool')">
+    </my-card>
   </section>
 
-  <section id="about-hobbies">
-    <h2>{{ 'aboutTitle6' | translate }}</h2>
-    <div class="row">
-      <my-card
-        class="col-xs-12 col-sm-4 col-md-3"
-        *ngFor="let hobby of hobbies"
-        [object]="hobby"
-        (moreInfo)="openModal($event, 'hobby')">
-      </my-card>
-    </div>
+  <section id="about-hobbies" class="wrap-cards row">
+    <header><h2>{{ 'aboutTitle6' | translate }}</h2></header>
+    <my-card
+      class="col-xs-12 col-sm-4 col-md-3"
+      *ngFor="let hobby of hobbies"
+      [object]="hobby"
+      (moreInfo)="openModal($event, 'hobby')">
+    </my-card>
   </section>
 
   <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>

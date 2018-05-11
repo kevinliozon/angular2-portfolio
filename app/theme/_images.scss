@@ -9,11 +9,6 @@ img {
 .img-group {
   @include flex-layout(wrap, flex-start, flex-start, flex-start);
 
-  header {
-    width: 100%;
-    margin: $gap-md 0;
-  }
-
   .img {
     margin: 10px;
   }
@@ -86,6 +81,9 @@ img {
   }
 }
 
+/**
+  Media Queries
+ */
 @media screen and (max-width: 768px) {
   .img-group {
     justify-content: center;

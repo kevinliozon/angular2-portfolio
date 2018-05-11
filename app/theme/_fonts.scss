@@ -18,16 +18,6 @@ body {
   font-family: 'Roboto Slab', serif;
   font-size: 62.5%; // 1em = 10px
 
-  // Titles
-  @for $i from 1 through 6 {
-    h#{$i},
-    label,
-    .img-label,
-    .btn {
-      font-family: 'Roboto', sans-serif;
-    }
-  }
-
   // Containers
   main,
   section,
@@ -67,6 +57,9 @@ body {
   }
 }
 
+/**
+  Media Queries
+ */
 @media screen and (max-width: 1024px) {
   body {
     main,

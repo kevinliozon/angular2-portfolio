@@ -57,6 +57,11 @@ body {
   header {
     text-align: justify;
   }
+
+  .wrap-dates {
+    @extend .text-center-xs;
+    font-style: italic;
+  }
 }
 
 .wrap-confidential {
@@ -67,6 +72,10 @@ body {
     margin: $gap-reg auto 0;
     width: 75%;
   }
+}
+
+.wrap-cards {
+  margin: $gap-big auto;
 }
 
 /* RESPONSIVE CENTERING */

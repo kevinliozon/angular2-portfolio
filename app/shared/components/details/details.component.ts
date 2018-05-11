@@ -60,7 +60,6 @@ export class DetailsComponent implements OnInit{
     
     for (let confidential of confidentialInfo) {
       if(this.details.id === confidential) {
-        console.log('true', this.details.id);
         return true;
       }
     }

@@ -22,7 +22,8 @@ $font-base: 1.6rem;
 $font-big: 1.8rem;
 $font-macro: 2.2rem;
 $font-mega: 2.6rem;
-$font-tera: 3.2rem;
+$font-giga: 3rem;
+$font-tera: 4rem;
 
 /**
  * Images
@@ -37,14 +38,14 @@ $img-mega: 100px;
  * Containers
  */
 
-$header-height: 75px;
-$card-height: 200px;
-$gap-sm: 5px;
-$gap-reg: 15px;
-$gap-md: 30px;
-$gap-big: 45px;
+$header-height: 7.5rem;
+$card-height: 20rem;
+$gap-sm: 0.5rem;
+$gap-reg: 1.5rem;
+$gap-md: 3rem;
+$gap-big: 4.5rem;
 $gap-tera: 40vh;
-$padding-sm: 10px;
+$padding-sm: 1rem;
 
 /**
  * Mixins
