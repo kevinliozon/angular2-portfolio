@@ -6,7 +6,7 @@
   }
 
   .img-gallery {
-    @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
+    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
     @include flex-layout(wrap, flex-start, stretch, center);
     cursor: pointer;
     height: $img-mega;

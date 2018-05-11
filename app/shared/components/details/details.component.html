@@ -68,7 +68,7 @@
         data-toggle="modal"
         data-target="#myModal"
         (click)="openModal(project.id, 'project')">
-        <span class="img img-round-link">
+        <span class="img img-round img-link">
             <img [src]="project.image" [alt]="project.name">
         </span>
         <figcaption class="img-label">{{ project.name }}</figcaption>
@@ -91,14 +91,15 @@
 
     <section class="img-group" *ngIf="details.gallery">
       <header><h5>Images</h5></header>
-      <figure
-        class="img img-gallery"
-        *ngFor="let image of details.gallery"
-        data-toggle="modal"
-        data-target="#galleryModal"
-        (click)="imageModal = image">
+      <div class="img-wrap" *ngFor="let image of details.gallery">
+        <figure
+          class="img img-gallery img-link"
+          data-toggle="modal"
+          data-target="#galleryModal"
+          (click)="imageModal = image">
           <img [src]="image.image" [alt]="image.alt">
-      </figure>
+        </figure>
+      </div>
     </section>
 
     <section class="btn-group--jumbo" *ngIf="details.prototypes">

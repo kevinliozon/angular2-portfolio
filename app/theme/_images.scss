@@ -49,8 +49,7 @@ img {
   }
 }
 
-.img-round-link {
-  @extend .img-round;
+.img-link {
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -66,8 +65,7 @@ img {
 }
 
 .img--flip {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  @include transform(scaleX(-1));
 }
 
 .img-wrap {
@@ -77,9 +75,9 @@ img {
   &:focus {
     text-decoration: none;
 
-    .img-round-link {
+    .img-link {
       @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
-      transform: translateY(-5px);
+      @include transform(translateY(-5px));
     }
 
     .img-label {

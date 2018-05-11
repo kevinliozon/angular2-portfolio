@@ -111,43 +111,33 @@ export let PROJECTS: Project[] = [{
   },
   'desc': '#projectDescEis',
   'techs': [
-      {
-          'name': 'Symfony',
-          'logo': '../../../assets/img/svg/skills/symfony.svg'
-      },
-      {
-          'name': 'Bootstrap',
-          'logo': '../../../assets/img/svg/skills/bootstrap.svg'
-      },
-      {
-          'name': 'Jquery',
-          'logo': '../../../assets/img/svg/skills/jquery.svg'
-      },
-      {
-          'name': 'SASS',
-          'logo': '../../../assets/img/svg/skills/sass.svg'
-      },
-      {
-          'name': 'Gulp',
-          'logo': '../../../assets/img/svg/skills/gulp.svg'
-      }
+    {
+      'name': 'Symfony',
+      'logo': '../../../assets/img/svg/skills/symfony.svg'
+    },
+    {
+      'name': 'Bootstrap',
+      'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+    },
+    {
+      'name': 'Jquery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'SASS',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
+    },
+    {
+      'name': 'Gulp',
+      'logo': '../../../assets/img/svg/skills/gulp.svg'
+    }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
-      'start': '2017-11-15',
-      'end': null
+    'start': '2017-11-15',
+    'end': null
   },
   'url': 'https://www.eisportal.com/login',
   'github': null
@@ -194,19 +184,9 @@ export let PROJECTS: Project[] = [{
           'logo': '../../../assets/img/svg/skills/gulp.svg'
       }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
       'start': '2017-10-15',
       'end': '2017-11-15'
@@ -264,19 +244,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     },
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2017-01-05',
     'end': null
@@ -346,19 +316,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/drawio.svg'
     }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2016-11-14',
     'end': null
@@ -404,19 +364,9 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     }
   ],
-  'gallery': [{
-    'image': null,
-    'name': null,
-    'alt': null,
-  }],
-  'prototypes': [{
-    'name': null,
-    'url': null,
-  }],
-  'docs': [{
-    'name': null,
-    'url': null,
-  }],
+  'gallery': null,
+  'prototypes': null,
+  'docs': null,
   'dates': {
     'start': '2016-12-01',
     'end': '2017-01-14'
@@ -491,8 +441,12 @@ export let PROJECTS: Project[] = [{
     'alt': 'Image of random sections',
   }],
   'prototypes': [{
-    'name': '',
-    'url': '',
+    'name': 'Home Page',
+    'url': 'https://kevinliozon.com/prototypes/mmf_homepage_alpha/index.html',
+  },
+  {
+    'name': 'Grid',
+    'url': 'https://kevinliozon.com/prototypes/mmf_bootstrap_grid/index.html',
   }],
   'docs': null,
   'dates': {
@@ -609,8 +563,8 @@ export let PROJECTS: Project[] = [{
     'alt': 'Image of mockup of grid',
   }],
   'prototypes': [{
-    'name': '',
-    'url': '',
+    'name': 'Home Page',
+    'url': 'https://kevinliozon.com/prototypes/imakr_homepage_alpha/index.html',
   }],
   'docs': [{
     'name': 'Mockup Homepage',

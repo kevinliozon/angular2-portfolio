@@ -212,7 +212,7 @@ export const LANG_ENG_TRANS = {
   '#diplomaNng': `NNG UX Certification`,
   '#diplomaCs': `CodeSchool Certifications`,
   '#diplomaLp': `Webdesign Bachelor's Degree`,
-  '#diplomaDut': `Web & Multimedia Technologies two-years University Degree`,
+  '#diplomaDut': `Web & Multimedia Technologies Two-years University Degree`,
   '#diplomaDu': `Webmaster University Degree`,
   '#diplomaBac': `High-School Degree of Science`,
 };

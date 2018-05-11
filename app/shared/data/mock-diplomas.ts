@@ -64,7 +64,7 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'Bachelor\'s Degree',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/lp.png',
-    'name': 'Image of Bachelor\'s Degree Diploma',
+    'name': 'Bachelor\'s Degree Diploma',
     'alt': 'Image of bachelor\'s degree diploma',
   }],
   'subjects': [
@@ -112,8 +112,8 @@ export let DIPLOMAS: Diploma[] = [{
   'category': 'University Degree',
   'gallery': [{
     'image': '../../../assets/img/png/diplomas/mmi.png',
-    'name': '',
-    'alt': 'Image of ',
+    'name': 'Diploma of Higher Education',
+    'alt': 'Image of diploma of higher education',
   }],
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
