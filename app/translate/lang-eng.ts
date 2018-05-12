@@ -21,7 +21,6 @@ const titles = {
 export const LANG_ENG_TRANS = {
   /*** COMMON ***/
   'more': 'More',
-  'skills': 'Skills',
   'git': 'Git Repo',
   'url': 'Link',
   'at': 'at',
@@ -31,7 +30,15 @@ export const LANG_ENG_TRANS = {
   'as': 'as',
   'present': 'present',
   'more-info': 'More Info',
-  
+
+  /*** RECURRENT TITLES ***/
+  'skills': 'Skills',
+  'projects': 'Projects',
+  'subjects': 'Some subjects',
+  'gallery': 'Gallery',
+
+  /*** DISCLAIMERS ***/
+  'confidential': 'This project is under confidentiality clause. Images, Prototypes and Docs cannot be disclosed.',
   
   /*** HOME ***/
   // Titles

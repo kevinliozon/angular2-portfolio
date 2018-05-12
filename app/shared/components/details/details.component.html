@@ -52,18 +52,23 @@
       </a>
     </section>
 
+
     <!-- If DIPLOMA -->
     <section class="img-group" *ngIf="type === 'diploma'">
-      <header><h5>Subjects</h5></header>
+      <header><h5>{{ 'subjects' | translate }}</h5></header>
 
       <ul>
-        <li *ngFor="let subject of details.subjects">{{ subject.name }}</li>
+        <li class="label-bold" *ngFor="let subject of details.subjects" [hidden]="!subject.spe">{{ subject.name }}</li>
+      </ul>
+      <ul>
+        <li *ngFor="let subject of details.subjects" [hidden]="subject.spe">{{ subject.name }}</li>
       </ul>
     </section>
 
+
     <!-- If DIPLOMA OR ROLE -->
     <section class="img-group" *ngIf="type !== 'project' && details.projects">
-      <header><h5>Projects</h5></header>
+      <header><h5>{{ 'projects' | translate }}</h5></header>
 
       <figure
         class="img-wrap"
@@ -78,9 +83,10 @@
       </figure>
     </section>
 
+
     <!-- If PROJECT OR ROLE -->
     <section class="img-group" *ngIf="type !== 'diploma'">
-      <header><h5>Skills involved</h5></header>
+      <header><h5>{{ 'skills' | translate }}</h5></header>
 
       <figure class="img-wrap" *ngFor="let tech of details.techs">
         <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
@@ -90,10 +96,11 @@
 
   </div>
 
+
   <div class="col-xs-12 col-md-7" *ngIf="!isConfidential()">
 
     <section class="img-group" *ngIf="details.gallery">
-      <header><h5>Images</h5></header>
+      <header><h5>{{ 'gallery' | translate }}</h5></header>
       <div class="img-wrap" *ngFor="let image of details.gallery">
         <figure
           class="img img-gallery img-link"
@@ -122,7 +129,7 @@
   </div>
 
   <div class="col-xs-12 col-md-7 wrap-confidential" *ngIf="isConfidential()">
-    <p>This project is under confidentiality clause. Images, Prototypes and Docs cannot be disclosed.</p>
+    <p>{{ 'confidential' | translate }}</p>
   </div>
 
   <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>

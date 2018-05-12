@@ -123,7 +123,7 @@ export let DIPLOMAS: Diploma[] = [{
     {'name': 'Interaction Design', 'spe': false},
     {'name': 'Visual Design', 'spe': false},
     {'name': 'Software Dev', 'spe': false},
-    {'name': 'Motion Design & FX', 'spe': false},
+    {'name': 'Motion Design', 'spe': false},
     {'name': 'Communication', 'spe': false}
   ],
   'school': {
@@ -158,7 +158,6 @@ export let DIPLOMAS: Diploma[] = [{
   'subjects': [
     {'name': 'Front-End Dev', 'spe': true},
     {'name': 'Back-End Dev', 'spe': true},
-    {'name': 'Maths', 'spe': false},
     {'name': 'Visual Design', 'spe': false},
     {'name': 'Management', 'spe': false},
     {'name': 'Communication', 'spe': false}

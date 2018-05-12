@@ -21,7 +21,6 @@ const titles = {
 export const LANG_FRA_TRANS = {
   /*** COMMON ***/
   'more': 'Détails',
-  'skills': 'Compétences',
   'git': 'Dépôt Git',
   'url': 'Lien',
   'at': 'à',
@@ -32,7 +31,16 @@ export const LANG_FRA_TRANS = {
   'present': 'aujourd\'hui',
   'more-info': 'Infos',
 
-  
+  /*** RECURRENT TITLES ***/
+  'skills': 'Compétences',
+  'projects': 'Projets',
+  'subjects': 'Quelques matières',
+  'gallery': 'Gallerie',
+
+  /*** DISCLAIMERS ***/
+  'confidential': `Ce projet est soumis à une clause de confidentialité. 
+                   Aucune image, prototype ou documentation ne peut être dévoilée.`,
+
   /*** HOME ***/
   // Titles
   'homeTitle0': titles.homePage[0], 'homeTitle1': titles.homePage[1],
