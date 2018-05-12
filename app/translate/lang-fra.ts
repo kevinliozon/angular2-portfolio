@@ -11,10 +11,10 @@ const titles = {
     'Une veille technologique constante',
     'Un œil pour le design',
     'Pourquoi l\'UX m\'importe'  ,
-    'Comment prendre contact',
-    'Mes principaux challenges',
-    'Mes outils habituels',
-    'Mes hobbies'
+    'Prendre contact?',
+    'Travaux notables',
+    'Outils de travail',
+    'Centres d\'intérêt'
   ]
 }
 

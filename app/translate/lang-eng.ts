@@ -11,10 +11,10 @@ const titles = {
     'An enthusiasm for frontend techs',
     'An awareness for design',
     'Why do I care about UX',
-    'How to reach me',
-    'My main achievements',
-    'My usual tools',
-    'My hobbies'
+    'Ways to reach me',
+    'Notable works',
+    'Toolbox',
+    'Hobbies'
   ]
 }
 
