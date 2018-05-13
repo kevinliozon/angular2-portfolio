@@ -128,6 +128,14 @@ $padding-sm: 1rem;
   align-items: $alignItems;
 }
 
+@mixin border($top, $right, $bottom, $left, $color, $radius) {
+  border-top: $top solid $color;
+  border-right: $right solid $color;
+  border-bottom: $bottom solid $color;
+  border-left: $left solid $color;
+  border-radius: $radius;
+}
+
 // ANIMS
 
 @mixin transform($tansformation) {

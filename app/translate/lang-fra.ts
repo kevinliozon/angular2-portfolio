@@ -35,6 +35,7 @@ export const LANG_FRA_TRANS = {
   'Experience': 'Expérience',
   'Skills': 'Compétences',
   'Details': 'Détails',
+  'Cookie policy': 'Politique de cookies',
 
   /*** RECURRENT TITLES ***/
   'skills': 'Compétences',

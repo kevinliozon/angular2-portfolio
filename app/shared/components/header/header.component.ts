@@ -66,6 +66,8 @@ export class HeaderComponent implements OnInit {
       this.title = MENUS[1].value;
     } else if (path.includes('details')) {
       this.title = 'Details';
+    } else if (path.includes('cookie-policy')) {
+      this.title = 'Cookie policy';
     } else {
       let firstChar = path.substr(1).charAt(0).toUpperCase();
       let strRemains = path.slice(2);

@@ -35,6 +35,7 @@ export const LANG_ENG_TRANS = {
   'Experience': 'Experience',
   'Skills': 'Skills',
   'Details': 'Details',
+  'Cookie policy': 'Cookie policy',
 
   /*** RECURRENT TITLES ***/
   'skills': 'Skills',

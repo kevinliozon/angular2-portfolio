@@ -74,8 +74,22 @@ body {
   }
 }
 
-.wrap-cards {
+.wrap-cards,
+.wrap-reg {
   margin: $gap-big auto;
+}
+
+.wrap-reg {
+
+  ul {
+    padding: 0px;
+
+    > li {
+      list-style: circle;
+      list-style-position:inside;
+      text-indent: 0px;
+    }
+  }
 }
 
 /* RESPONSIVE CENTERING */

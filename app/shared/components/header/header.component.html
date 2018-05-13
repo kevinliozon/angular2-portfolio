@@ -41,13 +41,20 @@
 
           <!-- Languages -->
           <li class="dropdown nav-lang hidden-xs">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <img src="{{ currentFlag }}" /><span class="caret"></span>
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false">
+                <img [src]="currentFlag" /><span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <!-- Dropdown lang-->
               <li *ngFor="let lang of supportedLanguages"
-                  (click)="selectLang(lang.value, lang.flag)" [class.selected]="isCurrentLang(lang.value)">
+                  (click)="selectLang(lang.value, lang.flag)"
+                  [class.selected]="isCurrentLang(lang.value)">
                   <a>{{ lang.display }}</a>
               </li>
             </ul>

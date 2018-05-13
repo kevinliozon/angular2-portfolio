@@ -36,8 +36,11 @@ body {
   &.font-big {
     .jumbotron,
     .content-preview,
-    .wrap-details {
-      p {
+    .wrap-details,
+    .wrap-reg {
+      p,
+      ul,
+      .grid-table-cell {
         font-size: $font-macro;
       }
     }

@@ -9,6 +9,7 @@ import { ExperienceComponent }   from './experience/experience.component';
 import { ProjectsComponent }   from './projects/projects.component';
 import { SkillsComponent }   from './skills/skills.component';
 import { DetailsComponent }   from './shared/components/details/details.component';
+import { CookiePolicyPage } from './cookie-policy/cookie-policy';
 
 const routes: Routes = [
   // default route to home on load
@@ -17,14 +18,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  // Pages
+  // In menu
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent },
-  // Components
+  // Others
+  { path: 'cookie-policy', component: CookiePolicyPage },
   { path: 'details', component: DetailsComponent },
   // 404
   { path: '**', component: PageNotFoundComponent }
