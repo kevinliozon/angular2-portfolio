@@ -34,7 +34,7 @@ export class DetailsComponent implements OnInit{
     });
   }
 
-  public ngOnInit() {
+  ngOnInit() {
     // Compare the id passed from previous page with id of all the objects in the collection
     this.details = this.resolveByIdService.resolveById(this.id, this.type);
   }

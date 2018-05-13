@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 /* SERVICES */
 import { TranslateService } from '../../../translate/translate.service';
+import { CookieService } from '../../../providers/cookie.service';
 /* CONSTANTS */
 import { MENUS } from '../../../shared/constants/menus';
 
@@ -23,9 +24,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(private titleService: Title,
               private _translate: TranslateService,
-              private location: Location) {
-    this.selectLang(); // set current language
-  }
+              private location: Location,
+              private cookieService: CookieService) { }
 
   ngOnInit() {
     // standing data
@@ -33,7 +33,25 @@ export class HeaderComponent implements OnInit {
       { display: 'English', value: 'eng', flag: 'assets/img/svg/flags/uk.svg' },
       { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
     ];
+    this.sessionLanguage();
     this.setHeaderTitleOnRefresh();
+  }
+
+  /**
+   * Make selected language persistent even after refresh
+   */
+  private sessionLanguage(): void {
+    switch(this.cookieService.getCookie('language')) {
+      case 'eng':
+        this.selectLang(this.supportedLanguages[0].value, this.supportedLanguages[0].flag);
+        break;
+      case 'fra':
+        this.selectLang(this.supportedLanguages[1].value, this.supportedLanguages[1].flag);
+        break;
+      default:
+        this.selectLang(this.supportedLanguages[0].value, this.supportedLanguages[0].flag);
+        break;
+    }
   }
 
   /**
@@ -45,7 +63,7 @@ export class HeaderComponent implements OnInit {
 
     // getTitle() is not handled properly
     if (path.includes('about')) {
-      this.title = 'About Me';
+      this.title = MENUS[1].value;
     } else if (path.includes('details')) {
       this.title = 'Details';
     } else {
@@ -69,35 +87,21 @@ export class HeaderComponent implements OnInit {
    * @param {string} lang
    * @param {string} flag
    */
-  public selectLang(lang: string = 'eng', flag: string = 'assets/img/svg/flags/uk.svg'): void {
+  public selectLang(lang: string, flag: string): void {
     this._translate.use(lang);
     this.currentFlag = flag;
 
-    // Translate menu and main title
-    switch(lang) {
-      case 'eng':
-        //update menu labels
-        this.menu = MENUS.ENG || null;
-        //tab and header title become the matching one in the other language
-        for(let tabActiveMenu of MENUS.FRA) {
-          for(let tabNewMenu of MENUS.ENG) {
-            if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
-              this.setTitle(tabNewMenu.value)
-            }
-          }
-        }
-        break;
 
-      case 'fra':
-        this.menu = MENUS.FRA || null;
-        for(let tabActiveMenu of MENUS.ENG) {
-          for(let tabNewMenu of MENUS.FRA) {
-            if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
-              this.setTitle(tabNewMenu.value)
-            }
-          }
+    this.cookieService.setCookie('language', lang, 7);
+    //update menu labels
+    this.menu = MENUS || null;
+    //tab and header title become the matching one in the other language
+    for(let tabActiveMenu of MENUS) {
+      for(let tabNewMenu of MENUS) {
+        if(this.title === tabActiveMenu.value && tabActiveMenu.key === tabNewMenu.key) {
+          this.setTitle(tabNewMenu.value)
         }
-        break;
+      }
     }
   }
 

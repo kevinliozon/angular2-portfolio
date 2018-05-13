@@ -11,12 +11,11 @@ import { SOCIALS } from '../../data/mock-socials';
 export class FooterComponent {
 
   public socials: any = SOCIALS;
-  
-  get currentYear(): string {
+  get currentYear(): any {
     return this.getCurrentYear();
   }
 
-  constructor(){}
+  constructor(){ }
   
   /**
    * returns present year

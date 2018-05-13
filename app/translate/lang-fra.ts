@@ -20,26 +20,40 @@ const titles = {
 
 export const LANG_FRA_TRANS = {
   /*** COMMON ***/
-  'more': 'Détails',
-  'git': 'Dépôt Git',
-  'url': 'Lien',
   'at': 'à',
   'in': 'en',
   'for': 'pour',
   'to': 'à',
   'as': 'comme',
   'present': 'aujourd\'hui',
-  'more-info': 'Infos',
+
+  /*** Main Titles ***/
+  'Home': 'Accueil',
+  'About me': 'Bio',
+  'Projects': 'Projets',
+  'Education': 'Dîplomes',
+  'Experience': 'Expérience',
+  'Skills': 'Compétences',
+  'Details': 'Détails',
 
   /*** RECURRENT TITLES ***/
   'skills': 'Compétences',
   'projects': 'Projets',
   'subjects': 'Quelques matières',
   'gallery': 'Gallerie',
+  
+  /*** BUTTONS ***/
+  'agree': 'J\'accepte',
+  'why': 'Pourquoi',
+  'more-info': 'Infos',
+  'more': 'Détails',
+  'url': 'Lien',
 
   /*** DISCLAIMERS ***/
   'confidential': `Ce projet est soumis à une clause de confidentialité. 
                    Aucune image, prototype ou documentation ne peut être dévoilée.`,
+  'cookie': `J'utilise les cookies afin d'améliorer votre navigation et votre expérience sur mon portfolio.
+             Cependant j'ai besoin de votre permission en premier.`,
 
   /*** HOME ***/
   // Titles

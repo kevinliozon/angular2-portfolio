@@ -10,6 +10,7 @@ import { ToolService } from "./tool.service";
 import { CodeschoolService } from "./codeschool.service";
 import { ModalService } from "./modal.service";
 import { ResolveByIdService } from "./resolve-by-id.service";
+import { CookieService } from './cookie.service';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { ResolveByIdService } from "./resolve-by-id.service";
       HobbyService,
       CodeschoolService,
       ModalService,
-      ResolveByIdService
+      ResolveByIdService,
+      CookieService
     ]
 })
 

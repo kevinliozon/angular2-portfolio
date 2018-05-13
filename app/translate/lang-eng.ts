@@ -20,25 +20,39 @@ const titles = {
 
 export const LANG_ENG_TRANS = {
   /*** COMMON ***/
-  'more': 'More',
-  'git': 'Git Repo',
-  'url': 'Link',
   'at': 'at',
   'in': 'in',
   'for': 'for',
   'to': 'to',
   'as': 'as',
   'present': 'present',
-  'more-info': 'More Info',
+
+  /*** Main Titles ***/
+  'Home': 'Home',
+  'About me': 'About me',
+  'Projects': 'Projects',
+  'Education': 'Education',
+  'Experience': 'Experience',
+  'Skills': 'Skills',
+  'Details': 'Details',
 
   /*** RECURRENT TITLES ***/
   'skills': 'Skills',
   'projects': 'Projects',
   'subjects': 'Some subjects',
   'gallery': 'Gallery',
+  
+  /*** BUTTONS ***/
+  'agree': 'I agree',
+  'why': 'Why',
+  'more-info': 'More Info',
+  'more': 'More',
+  'url': 'Link',
 
   /*** DISCLAIMERS ***/
   'confidential': 'This project is under confidentiality clause. Images, Prototypes and Docs cannot be disclosed.',
+  'cookie': `I use cookies to ease your journey and experience on this portfolio.
+            However I need your consent beforehand.`,
   
   /*** HOME ***/
   // Titles
