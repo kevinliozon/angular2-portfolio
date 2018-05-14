@@ -1,139 +1,140 @@
-<div class="container-fluid wrap-details row" [@routeTrans]="'true'">
-
-  <div class="col-xs-12 col-md-5">
-
-    <header class="wrap-img-txt">
-      <figure>
-        <div class="img img-round">
-          <img *ngIf="type === 'project'" [src]="details.image" [alt]="details.name">
-          <img *ngIf="type === 'role'" [src]="details.company.logo" [alt]="details.company.name">
-          <img *ngIf="type === 'diploma'" [src]="details.school.image" [alt]="details.school.name">
-        </div>
-
-        <figcaption class="details-headings">
-          <h2>{{ details.name | translate }}</h2>
-          <h4>{{ details.category }}</h4>
-          <!-- If PROJECT -->
-          <h4 *ngIf="type === 'project' && details.company">
-            {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
-            <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-          </h4>
-          <!-- If ROLE -->
-          <h4 *ngIf="type === 'role'">
-            {{ 'at' | translate }}&nbsp;
-            <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
-          </h4>
-          <!-- If DIPLOMA -->
-          <h4 *ngIf="type === 'diploma'">
-            {{ 'at' | translate }}&nbsp;
-            <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
-            {{ 'in' | translate }} {{ details.school.country }}
-          </h4>
-
-          <p class="wrap-dates text-center-xs">
-            {{ details.dates.start | date : "MMM yyyy" }}
-            <span class="content-prefix">{{ "to" | translate }}</span>
-            {{ (details.dates.end | date : "MMM yyyy") || ("present" | translate) }}
-          </p>
-        </figcaption>
-      </figure>
-    </header>
-
-    <main>
-      <p>{{ details.desc | translate }}</p>
-    </main>
-
-    <section class="btn-group--details">
-      <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
-        {{ 'See Live' | translate }}
-      </a>
-      <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
-        Github
-      </a>
-    </section>
-
-
-    <!-- If DIPLOMA -->
-    <section class="img-group" *ngIf="type === 'diploma'">
-      <header><h5>{{ 'subjects' | translate }}</h5></header>
-
-      <ul>
-        <li class="label-bold" *ngFor="let subject of details.subjects" [hidden]="!subject.spe">{{ subject.name }}</li>
-      </ul>
-      <ul>
-        <li *ngFor="let subject of details.subjects" [hidden]="subject.spe">{{ subject.name }}</li>
-      </ul>
-    </section>
-
-
-    <!-- If DIPLOMA OR ROLE -->
-    <section class="img-group" *ngIf="type !== 'project' && details.projects">
-      <header><h5>{{ 'projects' | translate }}</h5></header>
-
-      <figure
-        class="img-wrap"
-        *ngFor="let project of details.projects"
-        data-toggle="modal"
-        data-target="#myModal"
-        (click)="openModal(project.id, 'project')">
-        <span class="img img-round img-link">
-            <img [src]="project.image" [alt]="project.name">
-        </span>
-        <figcaption class="img-label">{{ project.name }}</figcaption>
-      </figure>
-    </section>
-
-
-    <!-- If PROJECT OR ROLE -->
-    <section class="img-group" *ngIf="type !== 'diploma'">
-      <header><h5>{{ 'skills' | translate }}</h5></header>
-
-      <figure class="img-wrap" *ngFor="let tech of details.techs">
-        <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
-        <figcaption class="img-label">{{ tech.name }}</figcaption>
-      </figure>
-    </section>
-
-  </div>
-
-
-  <div class="col-xs-12 col-md-7" *ngIf="!isConfidential()">
-
-    <section class="img-group" *ngIf="details.gallery">
-      <header><h5>{{ 'gallery' | translate }}</h5></header>
-      <div class="img-wrap" *ngFor="let image of details.gallery">
-        <figure
-          class="img img-gallery img-link"
-          data-toggle="modal"
-          data-target="#galleryModal"
-          (click)="imageModal = image">
-          <img [src]="image.image" [alt]="image.alt">
+<div class="container-fluid wrap-details" [@routeTrans]="'true'">
+  <div class="row">
+    <div class="col-xs-12 col-md-5">
+  
+      <header class="wrap-img-txt">
+        <figure>
+          <div class="img img-round">
+            <img *ngIf="type === 'project'" [src]="details.image" [alt]="details.name">
+            <img *ngIf="type === 'role'" [src]="details.company.logo" [alt]="details.company.name">
+            <img *ngIf="type === 'diploma'" [src]="details.school.image" [alt]="details.school.name">
+          </div>
+  
+          <figcaption class="details-headings">
+            <h2>{{ details.name | translate }}</h2>
+            <h4>{{ details.category }}</h4>
+            <!-- If PROJECT -->
+            <h4 *ngIf="type === 'project' && details.company">
+              {{ 'as' | translate }}&nbsp;{{ details.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+              <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+            </h4>
+            <!-- If ROLE -->
+            <h4 *ngIf="type === 'role'">
+              {{ 'at' | translate }}&nbsp;
+              <a [href]="details.company.url" target="_blank">{{ details.company.name }}</a>
+            </h4>
+            <!-- If DIPLOMA -->
+            <h4 *ngIf="type === 'diploma'">
+              {{ 'at' | translate }}&nbsp;
+              <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
+              {{ 'in' | translate }} {{ details.school.country }}
+            </h4>
+  
+            <p class="wrap-dates text-center-xs">
+              {{ details.dates.start | date : "MMM yyyy" }}
+              <span class="content-prefix">{{ "to" | translate }}</span>
+              {{ (details.dates.end | date : "MMM yyyy") || ("present" | translate) }}
+            </p>
+          </figcaption>
         </figure>
-      </div>
-    </section>
-
-    <section class="btn-group--details" *ngIf="details.prototypes">
-      <header><h5>Prototypes</h5></header>
-      <a *ngFor="let prototype of details.prototypes" [href]="prototype.url" class="btn btn-primary" target="_blank">
-        {{ prototype.name }}
-      </a>
-    </section>
-
-    <section class="btn-group--details" *ngIf="details.docs">
-      <header><h5>Docs</h5></header>
-      <a *ngFor="let doc of details.docs" [href]="doc.url" class="btn btn-primary" target="_blank">
-        {{ doc.name }}
-      </a>
-    </section>
-
+      </header>
+  
+      <main>
+        <p>{{ details.desc | translate }}</p>
+      </main>
+  
+      <section class="btn-group--details">
+        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url" target="_blank">
+          {{ 'See Live' | translate }}
+        </a>
+        <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
+          Github
+        </a>
+      </section>
+  
+  
+      <!-- If DIPLOMA -->
+      <section class="img-group" *ngIf="type === 'diploma'">
+        <header><h5>{{ 'subjects' | translate }}</h5></header>
+  
+        <ul>
+          <li class="label-bold" *ngFor="let subject of details.subjects" [hidden]="!subject.spe">{{ subject.name }}</li>
+        </ul>
+        <ul>
+          <li *ngFor="let subject of details.subjects" [hidden]="subject.spe">{{ subject.name }}</li>
+        </ul>
+      </section>
+  
+  
+      <!-- If DIPLOMA OR ROLE -->
+      <section class="img-group" *ngIf="type !== 'project' && details.projects">
+        <header><h5>{{ 'projects' | translate }}</h5></header>
+  
+        <figure
+          class="img-wrap"
+          *ngFor="let project of details.projects"
+          data-toggle="modal"
+          data-target="#myModal"
+          (click)="openModal(project.id, 'project')">
+          <span class="img img-round img-link">
+              <img [src]="project.image" [alt]="project.name">
+          </span>
+          <figcaption class="img-label">{{ project.name }}</figcaption>
+        </figure>
+      </section>
+  
+  
+      <!-- If PROJECT OR ROLE -->
+      <section class="img-group" *ngIf="type !== 'diploma'">
+        <header><h5>{{ 'skills' | translate }}</h5></header>
+  
+        <figure class="img-wrap" *ngFor="let tech of details.techs">
+          <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
+          <figcaption class="img-label">{{ tech.name }}</figcaption>
+        </figure>
+      </section>
+  
+    </div>
+  
+  
+    <div class="col-xs-12 col-md-7" *ngIf="!isConfidential()">
+  
+      <section class="img-group" *ngIf="details.gallery">
+        <header><h5>{{ 'gallery' | translate }}</h5></header>
+        <div class="img-wrap" *ngFor="let image of details.gallery">
+          <figure
+            class="img img-gallery img-link"
+            data-toggle="modal"
+            data-target="#galleryModal"
+            (click)="imageModal = image">
+            <img [src]="image.image" [alt]="image.alt">
+          </figure>
+        </div>
+      </section>
+  
+      <section class="btn-group--details" *ngIf="details.prototypes">
+        <header><h5>Prototypes</h5></header>
+        <a *ngFor="let prototype of details.prototypes" [href]="prototype.url" class="btn btn-primary" target="_blank">
+          {{ prototype.name }}
+        </a>
+      </section>
+  
+      <section class="btn-group--details" *ngIf="details.docs">
+        <header><h5>Docs</h5></header>
+        <a *ngFor="let doc of details.docs" [href]="doc.url" class="btn btn-primary" target="_blank">
+          {{ doc.name }}
+        </a>
+      </section>
+  
+    </div>
+  
+    <div class="col-xs-12 col-md-7 wrap-confidential" *ngIf="isConfidential()">
+      <p>{{ 'confidential' | translate }}</p>
+    </div>
+  
+    <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+  
+    <gallery-modal [pic]="imageModal"></gallery-modal>
+    
   </div>
-
-  <div class="col-xs-12 col-md-7 wrap-confidential" *ngIf="isConfidential()">
-    <p>{{ 'confidential' | translate }}</p>
-  </div>
-
-  <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
-
-  <gallery-modal [pic]="imageModal"></gallery-modal>
-
 </div>

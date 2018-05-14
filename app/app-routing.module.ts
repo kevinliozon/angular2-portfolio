@@ -11,6 +11,7 @@ import { SkillsComponent }   from './skills/skills.component';
 import { DetailsComponent }   from './shared/components/details/details.component';
 import { CookiePolicyPage } from './cookie-policy/cookie-policy';
 import { SitemapPage } from './sitemap/sitemap';
+import { TermsConditionsPage } from './terms-conditions/terms-conditions';
 
 const routes: Routes = [
   // default route to home on load
@@ -29,6 +30,7 @@ const routes: Routes = [
   // Others
   { path: 'cookie-policy', component: CookiePolicyPage },
   { path: 'sitemap', component: SitemapPage },
+  { path: 'terms-conditions', component: TermsConditionsPage },
   { path: 'details', component: DetailsComponent },
   // 404
   { path: '**', component: PageNotFoundComponent }

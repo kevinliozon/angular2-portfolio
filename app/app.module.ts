@@ -18,6 +18,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PageNotFoundComponent } from './not-found/not-found.component';
 import { CookiePolicyPage } from './cookie-policy/cookie-policy';
 import { SitemapPage } from './sitemap/sitemap';
+import { TermsConditionsPage } from './terms-conditions/terms-conditions';
 //Components
 import { ProfileCsComponent } from './education/profile-cs/profile-cs.component';
 import { ProfileMainComponent } from './home/profile-main/profile-main.component';
@@ -45,6 +46,7 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     SkillsComponent,
     CookiePolicyPage,
     SitemapPage,
+    TermsConditionsPage,
     ProfileCsComponent,
     ProfileMainComponent,
     FilterPipe

@@ -9,6 +9,7 @@ export const MENUS = {
   ],
   SUB:[
     {key: 'cookie-policy', value: 'Cookie policy'},
-    {key: 'sitemap', value: 'Sitemap'}
+    {key: 'sitemap', value: 'Sitemap'},
+    {key: 'terms-conditions', value: 'Terms & conditions'}
   ]
 };

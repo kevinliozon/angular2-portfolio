@@ -46,6 +46,8 @@ export class HeaderTitleService {
       this.headerTitle = 'Details';
     } else if (path.includes('cookie-policy')) {
       this.headerTitle = MENUS.SUB[0].value;
+    } else if (path.includes('terms-conditions')) {
+      this.headerTitle = MENUS.SUB[2].value;
     } else {
       let firstChar = path.substr(1).charAt(0).toUpperCase();
       let strRemains = path.slice(2);

@@ -33,8 +33,8 @@
 
   .nav-route {
     display: inline-block;
-    width: 12rem;
     font-size: $font-base;
+    margin: auto $gap-sm $gap-sm;
 
     a {
       color: $light;

@@ -36,6 +36,7 @@ export const LANG_FRA_TRANS = {
   'Skills': 'Compétences',
   'Details': 'Détails',
   'Cookie policy': 'Politique de cookies',
+  'Terms & conditions': 'Termes & conditions',
 
   /*** RECURRENT TITLES ***/
   'skills': 'Compétences',
