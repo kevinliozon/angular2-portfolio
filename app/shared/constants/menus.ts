@@ -5,7 +5,8 @@ export const MENUS = {
     {key: 'projects', value: 'Projects'},
     {key: 'education', value: 'Education'},
     {key: 'experience', value: 'Experience'},
-    {key: 'skills', value: 'Skills'}
+    {key: 'skills', value: 'Skills'},
+    {key: 'stats', value: 'Stats'}
   ],
   SUB:[
     {key: 'cookie-policy', value: 'Cookie policy'},

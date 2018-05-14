@@ -12,6 +12,7 @@ import { DetailsComponent }   from './shared/components/details/details.componen
 import { CookiePolicyPage } from './cookie-policy/cookie-policy';
 import { SitemapPage } from './sitemap/sitemap';
 import { TermsConditionsPage } from './terms-conditions/terms-conditions';
+import { StatsPage } from './stats/stats';
 
 const routes: Routes = [
   // default route to home on load
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent },
+  { path: 'stats', component: StatsPage },
   // Others
   { path: 'cookie-policy', component: CookiePolicyPage },
   { path: 'sitemap', component: SitemapPage },
