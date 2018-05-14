@@ -11,6 +11,12 @@
       </figure>
     </a>
   </section>
+  
+  <ul class="navbar-footer">
+    <li class="nav-route" *ngFor="let tab of subMenu" routerLinkActive="active">
+      <a [routerLink]="[tab.key]" (click)="setTitle(tab.value)">{{ tab.value | translate }}</a>
+    </li>
+  </ul>
 
   <section class="footer-copyright">
     <p>&copy; Kevin Liozon - MIT License - {{ currentYear }}</p>

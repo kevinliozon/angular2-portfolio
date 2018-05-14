@@ -12,7 +12,7 @@
   .footer-copyright {
     color: $light;
     font-size: $font-small;
-    padding: $gap-md 0;
+    padding: $gap-md 0 $gap-mega;
     text-align: center;
 
     p {
@@ -24,6 +24,31 @@
     @include triangle('bottom', $light, 50px, 30px);
     @extend %triangles-plugged;
     top: -1px;
+  }
+}
+
+.navbar-footer {
+  text-align: center;
+  padding: 0px;
+
+  .nav-route {
+    display: inline-block;
+    width: 12rem;
+    font-size: $font-base;
+
+    a {
+      color: $light;
+      text-decoration: underline;
+
+      &:hover {
+        color: $info;
+      }
+    }
+
+    &.active > a {
+      text-shadow: 1.5px 1.5px $grey;
+      text-decoration: none;
+    }
   }
 }
 

@@ -10,6 +10,7 @@ import { ProjectsComponent }   from './projects/projects.component';
 import { SkillsComponent }   from './skills/skills.component';
 import { DetailsComponent }   from './shared/components/details/details.component';
 import { CookiePolicyPage } from './cookie-policy/cookie-policy';
+import { SitemapPage } from './sitemap/sitemap';
 
 const routes: Routes = [
   // default route to home on load
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   // Others
   { path: 'cookie-policy', component: CookiePolicyPage },
+  { path: 'sitemap', component: SitemapPage },
   { path: 'details', component: DetailsComponent },
   // 404
   { path: '**', component: PageNotFoundComponent }
