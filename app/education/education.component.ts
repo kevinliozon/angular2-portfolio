@@ -31,8 +31,8 @@ export class EducationComponent implements OnInit {
   ngOnInit() {
     // Diplomas
     this.diplomas = this.diplomaService.getDiplomas();
-    this.focusedItem = this.diplomas[0]; // 1st item is selected on load
     this.category = 'overview';
+    this.focusedItem = this.diplomas[0]; // 1st item is selected on load
 
     // Certifs
     this.codeschoolService.getCodeschoolProfile()
@@ -48,18 +48,9 @@ export class EducationComponent implements OnInit {
    * Detect hovered item
    * @param itemHovered
    */
-  public focusItem(itemHovered: any): void {
+  public focusItem(itemHovered): void {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
-  }
-
-  /**
-   * Navigate to selected item
-   * @param diploma
-   */
-  public goTo(diploma): void {
-    // We cannot pass an object directly, only a string
-    this.router.navigate(['details', {id: diploma.id, type: 'diploma'}]);
   }
 
   /**

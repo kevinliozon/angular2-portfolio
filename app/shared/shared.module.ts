@@ -14,6 +14,7 @@ import { CardComponent } from './components/card/card.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { GalleryModalComponent } from "./components/gallery-modal/gallery-modal.component";
 import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
+import { ListPreviewComponent } from './components/list-preview/list-preview.component';
 // Pipes
 import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
@@ -33,7 +34,8 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
       CardComponent,
       FiltersComponent,
       EllipsisPipe,
-      CookieBannerComponent
+      CookieBannerComponent,
+      ListPreviewComponent
     ],
     exports: [
       HeaderComponent,
@@ -44,7 +46,8 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
       PreviewComponent,
       CardComponent,
       FiltersComponent,
-      CookieBannerComponent
+      CookieBannerComponent,
+      ListPreviewComponent
     ]
 })
 

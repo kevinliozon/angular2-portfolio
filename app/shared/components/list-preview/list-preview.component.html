@@ -1,0 +1,12 @@
+<ul class="list-group" *ngIf="type === 'diploma'">
+  <li class="list-group-item"
+    *ngFor="let object of objects"
+    (mouseover)="focusItem(object)"
+    (click)="goTo(object.id)"
+    [class.active]="focusedItemId === object.id">
+      <label class="text-center-xs wrap-ellipsis-one-line">
+        <img class="list-icn block-center-xs" [src]="object.school.image" [alt]="object.name"/>
+        <span class="list-label text-center-xs">{{ object.name | translate }}</span>
+      </label>
+  </li>
+</ul>
