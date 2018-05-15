@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 //projects
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service';
@@ -12,40 +11,36 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-
 export class ProjectsComponent implements OnInit {
 
   public projects: Project[];
   public focusedItem: any;
-  public value = '';
+  public filterValue = '';
 
-  constructor(private router: Router, private projectService: ProjectService) {}
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
     this.projects = this.projectService.getProjects();
-    this.focusedItem = this.projects[0]; // 1st item is selected on load
   }
 
   /**
    * Detect hovered item
+   *
    * @param itemHovered
    */
-  public focusItem(itemHovered: any) {
+  public focusItem(itemHovered: any): void {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
-
+  
   /**
-   * Navigate to selected item
-   * @param project
+   * Capture the filter selected in filters component
+   * Will be passed to list items component
+   *
+   * @param filter
    */
-  public goTo(project) {
-    // We cannot pass an object directly, only a string
-    this.router.navigate(['details', {id: project.id, type: 'project'}]);
-  }
-
-  public filterFor(filter) {
-      this.value = filter;
+  public filterFor(filter: string): void {
+    this.filterValue = filter;
   }
 
 }

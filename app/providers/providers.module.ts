@@ -14,22 +14,22 @@ import { CookieService } from './cookie.service';
 import { HeaderTitleService } from './header-title.service';
 
 @NgModule({
-    imports: [
-      CommonModule
-    ],
-    providers: [
-      ProjectService,
-      SkillService,
-      RoleService,
-      DiplomaService,
-      ToolService,
-      HobbyService,
-      CodeschoolService,
-      ModalService,
-      ResolveByIdService,
-      CookieService,
-      HeaderTitleService
-    ]
+  imports: [
+    CommonModule
+  ],
+  providers: [
+    ProjectService,
+    SkillService,
+    RoleService,
+    DiplomaService,
+    ToolService,
+    HobbyService,
+    CodeschoolService,
+    ModalService,
+    ResolveByIdService,
+    CookieService,
+    HeaderTitleService
+  ]
 })
 
 export class ProvidersModule {  }

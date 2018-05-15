@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { ProvidersModule } from './providers/providers.module';
 import { HttpModule } from '@angular/http';
 import { TranslateModule } from './translate/translate.module';
+import { PipesModule } from './shared/pipes/pipes.module';
 //Pages
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,8 +23,6 @@ import { TermsConditionsPage } from './terms-conditions/terms-conditions';
 //Components
 import { ProfileCsComponent } from './education/profile-cs/profile-cs.component';
 import { ProfileMainComponent } from './home/profile-main/profile-main.component';
-//Pipes
-import { FilterPipe } from './shared/pipes/filter.pipe';
 
 @NgModule({
   imports: [
@@ -33,7 +32,8 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     SharedModule,
     ProvidersModule,
     HttpModule,
-    TranslateModule
+    TranslateModule,
+    PipesModule
   ],
   declarations: [
     AppComponent,
@@ -49,7 +49,6 @@ import { FilterPipe } from './shared/pipes/filter.pipe';
     TermsConditionsPage,
     ProfileCsComponent,
     ProfileMainComponent,
-    FilterPipe
   ],
   bootstrap: [
     AppComponent

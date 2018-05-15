@@ -1,5 +1,4 @@
-import { Component, OnInit, trigger, style, transition, animate, group } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 //roles
 import { Role } from '../models/role';
 import { RoleService } from '../providers/role.service';
@@ -16,35 +15,32 @@ export class ExperienceComponent implements OnInit {
 
   public roles: Role[];
   public focusedItem: any;
-  public value = '';
+  public filterValue = '';
 
-  constructor(private router: Router, private roleService: RoleService) {}
+  constructor(private roleService: RoleService) {}
 
   ngOnInit() {
     this.roles = this.roleService.getRoles();
-    this.focusedItem = this.roles[0]; // 1st item is selected on load
   }
 
   /**
    * Detect hovered item
+   *
    * @param itemHovered
    */
-  public focusItem(itemHovered: any) {
+  public focusItem(itemHovered: any): void {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
-
+  
   /**
-   * Navigate to selected item
-   * @param role
+   * Capture the filter selected in filters component
+   * Will be passed to list items component
+   *
+   * @param filter
    */
-  public goTo(role) {
-    // We cannot pass an object directly, only a string
-    this.router.navigate(['details', {id: role.id, type: 'role'}]);
-  }
-
-  public filterFor(filter) {
-      this.value = filter;
+  public filterFor(filter: string): void {
+    this.filterValue = filter;
   }
 
 }

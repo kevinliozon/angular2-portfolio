@@ -1,30 +1,12 @@
 <div class="container-stretch" [@routeTrans]="'true'">
-
   <my-filters [page]="'projects'" (selectFilter)="filterFor($event)"></my-filters>
 
   <main class="row container-dual">
-
     <section class="col-xs-12 col-sm-4 container-select block-center-xs">
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let project of projects | filter:{ category: value }"
-          (mouseover)="focusItem(project)" (click)="goTo(project)"
-          [class.active]="this.focusedItem === project ? true : false">
-
-          <label class="text-center-xs wrap-ellipsis-one-line">
-            <img class="list-icn block-center-xs" [src]="project.image" [alt]="project.name"/>
-            <span class="list-label text-center-xs">
-              {{ project.name }}
-              <span *ngIf="!!project.client">&nbsp;- {{ project.client.name }}</span>
-            </span>
-          </label>
-
-        </li>
-      </ul>
+      <my-list-preview [objects]="projects" [type]="'project'" [filterValue]="filterValue" (focusedItem)="focusItem($event)"></my-list-preview>
     </section>
 
     <!-- PREVIEW -->
-    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem"></my-preview>
-
+    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem" [type]="'project'"></my-preview>
   </main>
-
 </div>

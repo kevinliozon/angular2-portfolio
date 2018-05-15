@@ -1,28 +1,12 @@
 <div class="container-stretch" [@routeTrans]="'true'">
-
   <my-filters [page]="'experience'" (selectFilter)="filterFor($event)"></my-filters>
 
   <main class="row container-dual">
-
     <section class="col-xs-12 col-sm-4 container-select block-center-xs">
-      <ul class="list-group">
-        <li class="list-group-item" *ngFor="let role of roles | filter:{ category: value }"
-            (mouseover)="focusItem(role)" (click)="goTo(role)"
-            [class.active]="this.focusedItem === role">
-
-            <label class="text-center-xs wrap-ellipsis-one-line">
-                <img class="list-icn block-center-xs" [src]="role.company.logo" [alt]="role.company.name"/>
-                <span class="list-label text-center-xs">
-                    {{ role.name }} - {{ role.company.name }}
-                </span>
-            </label>
-        </li>
-      </ul>
+      <my-list-preview [objects]="roles" [type]="'role'" [filterValue]="filterValue" (focusedItem)="focusItem($event)"></my-list-preview>
     </section>
 
     <!-- PREVIEW -->
-    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem"></my-preview>
-
+    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem" [type]="'role'"></my-preview>
   </main>
-
 </div>

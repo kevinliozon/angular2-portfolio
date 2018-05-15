@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,36 +11,32 @@ export class ListPreviewComponent implements OnInit {
 
   @Input() public objects: any;
   @Input() public type: string;
-  @Input() public focusedItemId: any;
+  @Input() public filterValue = '';
   @Output() public focusedItem = new EventEmitter();
+  public focusedItemId: any;
 
   constructor(private router: Router) {  }
   
   ngOnInit() {
+    this.focusedItemId = this.objects[0].id; // 1st item is selected on load
   }
   
   /**
-   * Detect hovered item
+   * Emit the focused object to parent view to populate the preview
+   *
    * @param itemHovered
    */
   public focusItem(itemHovered: any): void {
-    // focus will refer to the id of the selected item
-    this.focusedItemId = itemHovered.id;
+    this.focusedItemId = itemHovered.id; // focus will refer to the id of the selected item
     this.focusedItem.emit(itemHovered);
   }
-
+  
   /**
-   * Emit the id of the object to parent view
-   * to populate the modal
+   * Navigates to the details page of the selected object
+   * passes its id and type
    *
-   * @param id
-   * @returns {any}
+   * @param objectId
    */
-  /*public getMoreInfo(id): any {
-    this.moreInfo.emit(id);
-  }*/
-  
-  
   public goTo(objectId): void {
     // We cannot pass an object directly, only a string
     this.router.navigate(['details', {id: objectId, type: this.type}]);

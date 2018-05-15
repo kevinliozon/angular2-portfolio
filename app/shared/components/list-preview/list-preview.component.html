@@ -4,9 +4,46 @@
     (mouseover)="focusItem(object)"
     (click)="goTo(object.id)"
     [class.active]="focusedItemId === object.id">
+
       <label class="text-center-xs wrap-ellipsis-one-line">
         <img class="list-icn block-center-xs" [src]="object.school.image" [alt]="object.name"/>
-        <span class="list-label text-center-xs">{{ object.name | translate }}</span>
+        <span class="list-label text-center-xs">
+          {{ object.name | translate }}
+        </span>
       </label>
+
+  </li>
+</ul>
+
+<ul class="list-group" *ngIf="type === 'role'">
+  <li class="list-group-item" *ngFor="let object of objects | filter:{ category: filterValue }"
+      (mouseover)="focusItem(object)"
+      (click)="goTo(object.id)"
+      [class.active]="focusedItemId === object.id">
+
+    <label class="text-center-xs wrap-ellipsis-one-line">
+      <img class="list-icn block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
+      <span class="list-label text-center-xs">
+        {{ object.name }} - {{ object.company.name }}
+      </span>
+    </label>
+
+  </li>
+</ul>
+
+<ul class="list-group" *ngIf="type === 'project'">
+  <li class="list-group-item" *ngFor="let object of objects | filter:{ category: filterValue }"
+      (mouseover)="focusItem(object)"
+      (click)="goTo(object.id)"
+      [class.active]="focusedItemId === object.id">
+
+    <label class="text-center-xs wrap-ellipsis-one-line">
+      <img class="list-icn block-center-xs" [src]="object.image" [alt]="object.name"/>
+      <span class="list-label text-center-xs">
+        {{ object.name }}
+        <span *ngIf="object.client">&nbsp;- {{ object.client.name }}</span>
+      </span>
+    </label>
+
   </li>
 </ul>

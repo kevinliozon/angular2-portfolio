@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
   and in app.module for navigation in header */
 import { AppRoutingModule } from '../app-routing.module';
 import { TranslateModule } from '../translate/translate.module';
+import { PipesModule } from './pipes/pipes.module';
 // Components
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,14 +16,13 @@ import { FiltersComponent } from './components/filters/filters.component';
 import { GalleryModalComponent } from "./components/gallery-modal/gallery-modal.component";
 import { CookieBannerComponent } from './components/cookie-banner/cookie-banner.component';
 import { ListPreviewComponent } from './components/list-preview/list-preview.component';
-// Pipes
-import { EllipsisPipe } from './pipes/ellipsis.pipe';
 
 @NgModule({
     imports: [
       CommonModule,
       AppRoutingModule,
-      TranslateModule
+      TranslateModule,
+      PipesModule
     ],
     declarations: [
       HeaderComponent,
@@ -33,7 +33,6 @@ import { EllipsisPipe } from './pipes/ellipsis.pipe';
       PreviewComponent,
       CardComponent,
       FiltersComponent,
-      EllipsisPipe,
       CookieBannerComponent,
       ListPreviewComponent
     ],

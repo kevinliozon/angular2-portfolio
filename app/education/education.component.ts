@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 /* Models */
 import { Diploma } from '../models/diploma';
 import { CodeSchoolCertif } from '../models/codeschool-certif';
@@ -24,15 +23,13 @@ export class EducationComponent implements OnInit {
   public category = 'overview';
   public focusedItem: any;
 
-  constructor(private router: Router,
-              private diplomaService: DiplomaService,
+  constructor(private diplomaService: DiplomaService,
               private codeschoolService: CodeschoolService) { }
 
   ngOnInit() {
     // Diplomas
     this.diplomas = this.diplomaService.getDiplomas();
     this.category = 'overview';
-    this.focusedItem = this.diplomas[0]; // 1st item is selected on load
 
     // Certifs
     this.codeschoolService.getCodeschoolProfile()
@@ -46,15 +43,17 @@ export class EducationComponent implements OnInit {
 
   /**
    * Detect hovered item
+   *
    * @param itemHovered
    */
-  public focusItem(itemHovered): void {
+  public focusItem(itemHovered: any): void {
     // focus will refer to the id of the selected item
     this.focusedItem = itemHovered;
   }
 
   /**
    * Check if this category is the selected one to highlight it
+   *
    * @param categoryActive
    * @returns {boolean}
    */
