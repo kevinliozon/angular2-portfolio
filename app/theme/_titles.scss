@@ -37,12 +37,9 @@ h5 {
   font-size: $font-big;
 }
 
-header {
-  .img-group &,
-  .btn-group-line & {
-    width: 100%;
-    margin: $gap-md 0px;
-  }
+.header-sub {
+  width: 100%;
+  margin: $gap-md 0px;
 }
 
 /**

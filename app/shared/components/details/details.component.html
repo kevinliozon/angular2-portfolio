@@ -27,7 +27,8 @@
             <h4 *ngIf="type === 'diploma'">
               {{ 'at' | translate }}&nbsp;
               <a [href]="details.school.url" target="_blank">{{ details.school.name }}</a>&nbsp;
-              {{ 'in' | translate }} {{ details.school.country }}
+              <span *ngIf="focusedItem.school.country != 'Online'">{{ 'in' | translate }}</span>
+              {{ details.school.country }}
             </h4>
   
             <p class="wrap-dates text-center-xs">
@@ -55,7 +56,7 @@
   
       <!-- If DIPLOMA -->
       <section class="img-group" *ngIf="type === 'diploma'">
-        <header><h5>{{ 'subjects' | translate }}</h5></header>
+        <header class="header-sub"><h5>{{ 'subjects' | translate }}</h5></header>
   
         <ul>
           <li class="label-bold" *ngFor="let subject of details.subjects" [hidden]="!subject.spe">{{ subject.name }}</li>
@@ -68,7 +69,7 @@
   
       <!-- If DIPLOMA OR ROLE -->
       <section class="img-group" *ngIf="type !== 'project' && details.projects">
-        <header><h5>{{ 'projects' | translate }}</h5></header>
+        <header class="header-sub"><h5>{{ 'projects' | translate }}</h5></header>
   
         <figure
           class="img-wrap"
@@ -86,7 +87,7 @@
   
       <!-- If PROJECT OR ROLE -->
       <section class="img-group" *ngIf="type !== 'diploma'">
-        <header><h5>{{ 'skills' | translate }}</h5></header>
+        <header class="header-sub"><h5>{{ 'skills' | translate }}</h5></header>
   
         <figure class="img-wrap" *ngFor="let tech of details.techs">
           <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
@@ -100,7 +101,7 @@
     <div class="col-xs-12 col-md-7" *ngIf="!isConfidential()">
   
       <section class="img-group" *ngIf="details.gallery">
-        <header><h5>{{ 'gallery' | translate }}</h5></header>
+        <header class="header-sub"><h5>{{ 'gallery' | translate }}</h5></header>
         <div class="img-wrap" *ngFor="let image of details.gallery">
           <figure
             class="img img-gallery img-link"
@@ -113,14 +114,14 @@
       </section>
   
       <section class="btn-group--details" *ngIf="details.prototypes">
-        <header><h5>Prototypes</h5></header>
+        <header class="header-sub"><h5>Prototypes</h5></header>
         <a *ngFor="let prototype of details.prototypes" [href]="prototype.url" class="btn btn-primary" target="_blank">
           {{ prototype.name }}
         </a>
       </section>
   
       <section class="btn-group--details" *ngIf="details.docs">
-        <header><h5>Docs</h5></header>
+        <header class="header-sub"><h5>Docs</h5></header>
         <a *ngFor="let doc of details.docs" [href]="doc.url" class="btn btn-primary" target="_blank">
           {{ doc.name }}
         </a>

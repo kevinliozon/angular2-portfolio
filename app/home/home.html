@@ -5,7 +5,7 @@
   </main>
 
   <section id="home-projects" class="img-group">
-    <header><h2>{{ 'homeTitle0' | translate }}</h2></header>
+    <header class="header-sub"><h2>{{ 'homeTitle0' | translate }}</h2></header>
 
     <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
       <a [href]="project.url" target="_blank"><img class="img img-brand" [src]="project.client?.logo" [alt]="project.client?.name"></a>
@@ -14,7 +14,7 @@
   </section>
 
   <section id="home-skills" class="img-group">
-    <header><h2>{{ 'homeTitle1' | translate }}</h2></header>
+    <header class="header-sub"><h2>{{ 'homeTitle1' | translate }}</h2></header>
 
     <figure class="img-wrap" *ngFor="let skill of skills" [hidden]="!skill.featured || !skill.frequent">
       <img class="img img-float" [src]="skill.image" [alt]="skill.name">

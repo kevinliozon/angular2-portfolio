@@ -26,6 +26,8 @@ export const LANG_FRA_TRANS = {
   'to': 'à',
   'as': 'comme',
   'present': 'aujourd\'hui',
+  'some': 'Quelques',
+  'subjects': 'Matières',
 
   /*** Main Titles ***/
   'Home': 'Accueil',
@@ -41,7 +43,7 @@ export const LANG_FRA_TRANS = {
   /*** RECURRENT TITLES ***/
   'skills': 'Compétences',
   'projects': 'Projets',
-  'subjects': 'Quelques matières',
+  'subjects': 'Matières',
   'gallery': 'Gallerie',
   
   /*** BUTTONS ***/

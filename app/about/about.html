@@ -13,7 +13,7 @@
           <p>{{ 'aboutText0' | translate }}</p>
 
           <footer class="img-group">
-            <header><h4>{{ 'aboutTitle7' | translate }}</h4></header>
+            <header class="header-sub"><h4>{{ 'aboutTitle7' | translate }}</h4></header>
             <figure class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
               <img class="img img-float" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
@@ -39,7 +39,7 @@
           <p>{{ 'aboutText1' | translate }}</p>
 
           <footer class="img-group">
-            <header><h4>{{ 'aboutTitle7' | translate }}</h4></header>
+            <header class="header-sub"><h4>{{ 'aboutTitle7' | translate }}</h4></header>
             <figure class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
               <img class="img img-float" *ngIf="i < 5" [src]="skill.image" [alt]="skill.name">
               <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>

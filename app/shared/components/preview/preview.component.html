@@ -1,4 +1,6 @@
-<article class="content-preview" *ngIf="!!focusedItem">
+<article class="wrap-preview" *ngIf="!!focusedItem">
+
+  <h2>Preview</h2>
   
   <header class="wrap-img-txt">
     <figure>
@@ -9,25 +11,29 @@
       </div>
       
       <figcaption class="details-headings">
-        <h2>{{ focusedItem.name | translate }}</h2>
+        <h3>{{ focusedItem.name | translate }}</h3>
         <h4>{{ focusedItem.category }}</h4>
         <!-- If PROJECT -->
         <h4 *ngIf="type === 'project' && focusedItem.company">
-          {{ 'as' | translate }}&nbsp;{{ focusedItem.company.role }}&nbsp;{{ 'at' | translate }}&nbsp;
+          <span class="content-prefix">{{ 'as' | translate }}</span>&nbsp;
+          {{ focusedItem.company.role }}&nbsp;
+          <span class="content-prefix">{{ 'at' | translate }}</span>
           <a [href]="focusedItem.company.url" target="_blank">{{ focusedItem.company.name }}</a>
         </h4>
         <!-- If ROLE -->
         <h4 *ngIf="type === 'role'">
-          {{ 'at' | translate }}&nbsp;
+          <span class="content-prefix">{{ 'at' | translate }}</span>
           <a [href]="focusedItem.company.url" target="_blank">{{ focusedItem.company.name }}</a>
         </h4>
         <!-- If DIPLOMA -->
         <h4 *ngIf="type === 'diploma'">
-          {{ 'at' | translate }}&nbsp;
+          <span class="content-prefix">{{ 'at' | translate }}</span>
           <a [href]="focusedItem.school.url" target="_blank">{{ focusedItem.school.name }}</a>&nbsp;
-          {{ 'in' | translate }} {{ focusedItem.school.country }}
+          <span class="content-prefix" *ngIf="focusedItem.school.country != 'Online'">{{ 'in' | translate }}</span>
+          {{ focusedItem.school.country }}
         </h4>
-        
+
+        <!-- DATE -->
         <p class="wrap-dates text-center-xs">
           {{ focusedItem.dates.start | date : "MMM yyyy" }}
           <span class="content-prefix">{{ "to" | translate }}</span>
@@ -37,34 +43,26 @@
     </figure>
   </header>
 
-  <header>
-    
-    
-    <!-- NAME -->
-    <h3>{{ focusedItem.name | translate }}</h3>
-
-    <!-- IF company or diploma -->
-    <h4 *ngIf="focusedItem.company || focusedItem.school">
-      <span class="content-prefix">{{ "at" | translate }}</span>&nbsp;
-      <span *ngIf="focusedItem.company">{{ focusedItem.company.name | translate }}</span>
-      <span *ngIf="focusedItem.school">{{ focusedItem.school.name | translate }}</span>
-    </h4>
-
-    <!-- IF project -->
-    <h4 *ngIf="focusedItem.client">
-      <span class="content-prefix">{{ "for" | translate }}</span>&nbsp;
-      {{ focusedItem.client.name | translate }}
-    </h4>
-  </header>
-
-  <!-- DATE -->
-  <p>
-    {{ focusedItem.dates.start | date : "MMM yyyy" }}
-    <span class="content-prefix">{{ "to" | translate }}</span>
-    {{ (focusedItem.dates.end | date : "MMM yyyy") || ("present" | translate) }}
-  </p>
-
   <!-- DESC -->
-  <p>{{ focusedItem.desc | translate | ellipsis:200 }}</p>
+  <p *ngIf="type !== 'diploma'">{{ focusedItem.desc | translate | ellipsis:350 }}</p>
+
+  <!-- If DIPLOMA -->
+  <div *ngIf="type === 'diploma' && focusedItem.subjects">
+    <header class="header-sub"><h5>{{ 'some' | translate }} {{ 'subjects' | translate | lowercase }}</h5></header>
+    <ul>
+      <li *ngFor="let subject of focusedItem.subjects; let i=index" [hidden]="i > 3">{{ subject.name }}</li>
+      <li>...</li>
+    </ul>
+  </div>
+
+  <!-- If PROJECT OR PROJECT -->
+  <section class="img-group" *ngIf="type !== 'diploma' && focusedItem.techs">
+    <header class="header-sub"><h5>{{ 'some' | translate }} {{ 'skills' | translate | lowercase }}</h5></header>
+
+    <figure class="img-wrap" *ngFor="let tech of focusedItem.techs; let i=index" [hidden]="i > 3">
+      <img class="img img-float" [src]="tech.logo" [alt]="tech.name">
+      <figcaption class="img-label">{{ tech.name }}</figcaption>
+    </figure>
+  </section>
 
 </article>

@@ -18,7 +18,8 @@ export class ListPreviewComponent implements OnInit {
   constructor(private router: Router) {  }
   
   ngOnInit() {
-    this.focusedItemId = this.objects[0].id; // 1st item is selected on load
+    this.focusedItemId = this.objects[0].id; // 1st item is hovered on load
+    this.focusItem(this.objects[0]); // 1st item is previewed on load
   }
   
   /**

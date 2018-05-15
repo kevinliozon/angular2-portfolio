@@ -57,7 +57,7 @@ export class EducationComponent implements OnInit {
    * @param categoryActive
    * @returns {boolean}
    */
-  public isSelected(categoryActive): boolean {
+  public isSelected(categoryActive: string): boolean {
       return categoryActive === this.category;
   }
 

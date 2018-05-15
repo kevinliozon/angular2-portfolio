@@ -26,6 +26,8 @@ export const LANG_ENG_TRANS = {
   'to': 'to',
   'as': 'as',
   'present': 'present',
+  'some': 'Some',
+  'subjects': 'Subjects',
 
   /*** Main Titles ***/
   'Home': 'Home',
@@ -41,7 +43,7 @@ export const LANG_ENG_TRANS = {
   /*** RECURRENT TITLES ***/
   'skills': 'Skills',
   'projects': 'Projects',
-  'subjects': 'Some subjects',
+  'subjects': 'Subjects',
   'gallery': 'Gallery',
   
   /*** BUTTONS ***/
