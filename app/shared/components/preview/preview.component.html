@@ -15,8 +15,8 @@
         <h4>{{ focusedItem.category }}</h4>
         <!-- If PROJECT -->
         <h4 *ngIf="type === 'project' && focusedItem.company">
-          <span class="content-prefix">{{ 'as' | translate }}</span>&nbsp;
-          {{ focusedItem.company.role }}&nbsp;
+          <span class="content-prefix">{{ 'as' | translate }}</span>
+          {{ focusedItem.company.role }}
           <span class="content-prefix">{{ 'at' | translate }}</span>
           <a [href]="focusedItem.company.url" target="_blank">{{ focusedItem.company.name }}</a>
         </h4>

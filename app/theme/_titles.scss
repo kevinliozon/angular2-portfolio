@@ -42,6 +42,10 @@ h5 {
   margin: $gap-md 0px;
 }
 
+h4 > .content-prefix {
+  font-size: $font-small;
+}
+
 /**
   Media Queries
  */
