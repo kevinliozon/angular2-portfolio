@@ -52,6 +52,7 @@
   .grid-list-cell {
     border-right: 0px;
     flex-wrap: wrap;
+    padding-right: $gap-reg;
 
     > .grid-list-icn,
     > .grid-list-label {
