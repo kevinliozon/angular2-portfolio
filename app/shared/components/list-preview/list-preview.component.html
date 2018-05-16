@@ -13,7 +13,7 @@
       <img class="img img-float block-center-xs" [src]="object.school.image" [alt]="object.name"/>
     </div>
 
-    <figcaption class="grid-list-label wrap-ellipsis-one-line">
+    <figcaption class="grid-list-label ellipsis-one-line">
       <h5>
         {{ object.name | translate }}
         <!-- SCHOOL -->
@@ -43,7 +43,7 @@
       <img *ngIf="type === 'role'" class="img img-float block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
     </div>
 
-    <figcaption class="grid-list-label wrap-ellipsis-one-line">
+    <figcaption class="grid-list-label ellipsis-one-line">
       <h5>
         {{ object.name | translate }}
         <!-- PROJECT CLIENT -->

@@ -1,6 +1,11 @@
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
+
+  * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .ellipsis-one-line {

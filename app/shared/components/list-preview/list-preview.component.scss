@@ -11,7 +11,7 @@
   @include transition(all, 0.2s, ease-in, 0s);
   background-color: $light-grey;
   color: $grey;
-  padding: 15px;
+  padding: $gap-reg $gap-big $gap-reg $gap-reg;
 
   h5 > span {
     font-size: $font-small;
@@ -61,6 +61,11 @@
     > .grid-list-label {
       padding: $gap-md 0px 0px;
       text-align: center;
+      white-space: normal;
+
+      * {
+        overflow: visible;
+      }
 
       h5 > span {
         display: block;

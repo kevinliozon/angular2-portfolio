@@ -32,7 +32,7 @@ export class FooterComponent {
     this.headerTitleService.setTitle(newTitle); // dynamic tab title
     
     // animation trigger
-    document.getElementById("main-header").scrollIntoView({block: "start", behavior: "smooth"});
+    document.getElementById("anchor-top").scrollIntoView({block: "start", behavior: "smooth"});
   }
   
   /**
