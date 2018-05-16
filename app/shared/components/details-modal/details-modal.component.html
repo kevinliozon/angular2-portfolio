@@ -26,7 +26,9 @@
           </figcaption>
         </figure>
 
-        <p>{{ details.desc | translate }}</p>
+        <section>
+          <p>{{ details.desc | translate }}</p>
+        </section>
 
         <section class="img-group" *ngIf="hasSkillsInvolved()">
           <header class="header-sub"><h5>Skills involved</h5></header>
