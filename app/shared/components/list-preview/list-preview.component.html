@@ -1,49 +1,59 @@
-<ul class="list-group" *ngIf="type === 'diploma'">
-  <li class="list-group-item"
+<!-- DIPLOMA LIST -->
+
+<div class="grid-list" *ngIf="type === 'diploma'">
+  <figure
+    class="grid-list-cell"
     *ngFor="let object of objects"
     (mouseover)="focusItem(object)"
     (click)="goTo(object.id)"
     [class.active]="focusedItemId === object.id">
 
-      <label class="text-center-xs wrap-ellipsis-one-line">
-        <img class="list-icn block-center-xs" [src]="object.school.image" [alt]="object.name"/>
-        <span class="list-label text-center-xs">
-          {{ object.name | translate }}
-        </span>
-      </label>
+    <div class="grid-list-icn">
+      <!-- PROJECT LOGO -->
+      <img class="img img-float block-center-xs" [src]="object.school.image" [alt]="object.name"/>
+    </div>
 
-  </li>
-</ul>
+    <figcaption class="grid-list-label wrap-ellipsis-one-line">
+      <h5>
+        {{ object.name | translate }}
+        <!-- SCHOOL -->
+        <span>{{ 'at' | translate }} {{ object.school.name | translate }}</span>
+      </h5>
+    </figcaption>
 
-<ul class="list-group" *ngIf="type === 'role'">
-  <li class="list-group-item" *ngFor="let object of objects | filter:{ category: filterValue }"
-      (mouseover)="focusItem(object)"
-      (click)="goTo(object.id)"
-      [class.active]="focusedItemId === object.id">
+    <div class="grid-list-arrows" [class.active]="focusedItemId === object.id"> >>> </div>
 
-    <label class="text-center-xs wrap-ellipsis-one-line">
-      <img class="list-icn block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
-      <span class="list-label text-center-xs">
-        {{ object.name }} - {{ object.company.name }}
-      </span>
-    </label>
+  </figure>
+</div>
 
-  </li>
-</ul>
+<!-- PROJECT OR ROLE LIST -->
 
-<ul class="list-group" *ngIf="type === 'project'">
-  <li class="list-group-item" *ngFor="let object of objects | filter:{ category: filterValue }"
-      (mouseover)="focusItem(object)"
-      (click)="goTo(object.id)"
-      [class.active]="focusedItemId === object.id">
+<div class="grid-list" *ngIf="type === 'project' || type === 'role'">
+  <figure
+    class="grid-list-cell"
+    *ngFor="let object of objects | filter:{ category: filterValue }"
+    (mouseover)="focusItem(object)"
+    (click)="goTo(object.id)"
+    [class.active]="focusedItemId === object.id">
 
-    <label class="text-center-xs wrap-ellipsis-one-line">
-      <img class="list-icn block-center-xs" [src]="object.image" [alt]="object.name"/>
-      <span class="list-label text-center-xs">
-        {{ object.name }}
-        <span *ngIf="object.client">&nbsp;- {{ object.client.name }}</span>
-      </span>
-    </label>
+    <div class="grid-list-icn">
+      <!-- PROJECT LOGO -->
+      <img *ngIf="type === 'project'" class="img img-float block-center-xs" [src]="object.image" [alt]="object.name"/>
+      <!-- ROLE LOGO -->
+      <img *ngIf="type === 'role'" class="img img-float block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
+    </div>
 
-  </li>
-</ul>
+    <figcaption class="grid-list-label wrap-ellipsis-one-line">
+      <h5>
+        {{ object.name | translate }}
+        <!-- PROJECT CLIENT -->
+        <span *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
+        <!-- ROLE COMPANY  -->
+        <span *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
+      </h5>
+    </figcaption>
+
+    <div class="grid-list-arrows" [class.active]="focusedItemId === object.id"> >>> </div>
+
+  </figure>
+</div>

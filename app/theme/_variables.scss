@@ -147,6 +147,14 @@ $padding-sm: 1rem;
   transform: $tansformation;
 }
 
+@mixin transition($prop, $dur, $timing, $delay, $others...) {
+  -webkit-transition: $prop $dur $timing $delay, $others;
+  -moz-transition: $prop $dur $timing $delay, $others;
+  -ms-transition: $prop $dur $timing $delay, $others;
+  -o-transition: $prop $dur $timing $delay, $others;
+  transition: $prop $dur $timing $delay, $others;
+}
+
 @mixin btn-anim() {
   @include drop-shadow(false, 5px, 5px, 3px, 0px, $grey);
   @include transform(translateX(-3px));

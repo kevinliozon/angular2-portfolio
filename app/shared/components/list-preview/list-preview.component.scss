@@ -1,59 +1,74 @@
-.card-reg {
-  @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
-  background: linear-gradient(to right, $dark 50%, transparent 50%) right bottom/200% 100%;
-  border: 0;
-  border-radius: 0;
-  height: $card-height;
-  margin: auto auto 20px;
-  max-width: 300px;
-  position: relative;
-  transform-origin: left 0% 0; // for scaling from top to bottom
-  transition: 0.15s ease;
+.grid-list {
+  border-top: 0.5px solid $grey;
+  cursor: pointer;
+  margin-bottom: 0;
+  min-height: 400px; // Prevent footer overlapping preview description when not enough item
+}
 
-  &.active,
-  &:focus {
-    background-position: left bottom;
-    color: $light;
+.grid-list-cell {
+  @include flex-layout(nowrap, flex-start, stretch, center);
+  @include border(0px, 0.5px, 0.5px, 0px, $grey, 0px);
+  @include transition(all, 0.2s, ease-in, 0s);
+  background-color: $light-grey;
+  color: $grey;
+  padding: 15px;
 
-    .btn-card {
-      @include btn-anim();
+  h5 > span {
+    font-size: $font-small;
+    font-weight: normal;
+  }
 
-      &:hover {
-        color: $light;
-      }
+  &.active {
+    border-right: 0px;
+    background-color: $light;
+
+    h5 {
+      font-weight: bold;
     }
   }
 }
 
-.card-info {
-  h3 {
-    font-size: $font-base;
-    margin-top: $padding-sm;
-  }
-
-  p {
-    font-size: $font-small;
+.grid-list-icn {
+  .img-float {
+    @include square($img-md);
   }
 }
 
-.card-image,
-.card-info,
-.card-link {
-  padding: 20px;
+.grid-list-label {
+  padding-left: $gap-md;
 }
 
-.card-link {
-  @include position(absolute, auto, auto, 0px, auto);
-  width: 100%;
+.grid-list-arrows {
+  @include transition(all, 0.2s, ease-in, 0.2s);
+  opacity: 0;
 
-  .btn-card {
-    @extend .btn-primary;
-    float: right;
+  &.active {
+    @include transform(translateX($gap-reg));
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .card-reg {
-    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+@media (max-width: 768px) {
+  .grid-list-cell {
+    border-right: 0px;
+    flex-wrap: wrap;
+
+    > .grid-list-icn,
+    > .grid-list-label {
+      width: 100%;
+    }
+
+    > .grid-list-label {
+      padding: $gap-md 0px 0px;
+      text-align: center;
+
+      h5 > span {
+        display: block;
+      }
+    }
+
+    > .grid-list-arrows {
+      display: none;
+    }
   }
 }

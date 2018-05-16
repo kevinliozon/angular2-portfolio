@@ -12,14 +12,14 @@ img {
   .img {
     margin: 10px;
   }
+}
 
-  .img-float {
-    @include square($img-big);
-  }
+.img-float {
+  @include square($img-big);
+}
 
-  .img-brand {
-    @include square($img-mega);
-  }
+.img-brand {
+  @include square($img-mega);
 }
 
 // Rounded containe for images
