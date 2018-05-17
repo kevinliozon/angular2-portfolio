@@ -27,7 +27,6 @@ export const LANG_ENG_TRANS = {
   'as': 'as',
   'present': 'present',
   'some': 'Some',
-  'subjects': 'Subjects',
 
   /*** Main Titles ***/
   'Home': 'Home',

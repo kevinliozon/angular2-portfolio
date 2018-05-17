@@ -27,7 +27,6 @@ export const LANG_FRA_TRANS = {
   'as': 'comme',
   'present': 'aujourd\'hui',
   'some': 'Quelques',
-  'subjects': 'Matières',
 
   /*** Main Titles ***/
   'Home': 'Accueil',
