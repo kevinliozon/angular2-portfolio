@@ -298,12 +298,5 @@ export let ROLES: Role[] = [{
     'start': '2012-06-01',
     'end': '2012-08-01'
   },
-  'projects': [
-    {
-      'id': null,
-      'name': null,
-      'image': null,
-      'url': null,
-    },
-  ]
+  'projects': null,
 }];
