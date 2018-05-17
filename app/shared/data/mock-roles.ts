@@ -277,7 +277,7 @@ export let ROLES: Role[] = [{
     {
       'id': '#project4',
       'name': 'HCE Group',
-      'image': '../../../assets/img/png/projects/hce.png',
+      'image': '../../../assets/img/png/projects/hce/hce.png',
       'url': 'http://reseau-beaute.com/',
     }
   ]

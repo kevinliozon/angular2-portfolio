@@ -1179,6 +1179,6 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
-  'url': 'https://kevinliozon.com/iut_montpellier/accueil/accueil.html',
+  'url': 'https://kevinliozon.com/iut_montpellier/Accueil.html',
   'github': null
 }];
