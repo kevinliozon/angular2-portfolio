@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { TOOLS } from '../shared/data/mock-tools';
 
 @Injectable()
-export class ToolService
-{
+export class ToolService {
   public getTools(): any {
     return TOOLS;
   }

@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { ROLES } from '../shared/data/mock-roles';
 
 @Injectable()
-export class RoleService
-{
+export class RoleService {
   public getRoles(): any {
     return ROLES;
   }

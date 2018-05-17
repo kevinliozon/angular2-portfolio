@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CookieService {
-
-  constructor() { }
   
   /**
    * Parse the cookie to return the value associated to the name passed

@@ -12,6 +12,7 @@ import { ModalService } from './modal.service';
 import { ResolveByIdService } from './resolve-by-id.service';
 import { CookieService } from './cookie.service';
 import { HeaderTitleService } from './header-title.service';
+import { RouteScrollTopService } from './route-scrolltop.service';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { HeaderTitleService } from './header-title.service';
     ModalService,
     ResolveByIdService,
     CookieService,
-    HeaderTitleService
+    HeaderTitleService,
+    RouteScrollTopService
   ]
 })
 

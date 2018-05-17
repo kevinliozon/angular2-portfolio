@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { HOBBIES } from '../shared/data/mock-hobbies';
 
 @Injectable()
-export class HobbyService
-{
+export class HobbyService {
   public getHobbies(): any {
     return HOBBIES;
   }

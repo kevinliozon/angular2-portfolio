@@ -8,8 +8,7 @@ import { SKILLS } from '../shared/data/mock-skills';
 import { TOOLS } from '../shared/data/mock-tools';
 
 @Injectable()
-export class ResolveByIdService
-{
+export class ResolveByIdService {
   /**
    * Use the id to retrieve the correct object
    * depending on the type

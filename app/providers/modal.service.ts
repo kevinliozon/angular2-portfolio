@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { ResolveByIdService } from "./resolve-by-id.service";
 
 @Injectable()
-export class ModalService
-{
+export class ModalService {
 
   constructor(private resolveByIdService: ResolveByIdService) {}
 

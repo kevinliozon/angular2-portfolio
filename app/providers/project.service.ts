@@ -3,8 +3,7 @@ import { Injectable } from '@angular/core';
 import { PROJECTS } from '../shared/data/mock-projects';
 
 @Injectable()
-export class ProjectService
-{
+export class ProjectService {
   public getProjects(): any {
     return PROJECTS;
   }

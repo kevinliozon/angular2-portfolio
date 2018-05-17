@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from "@angular/router";
+import { RouteScrollTopService } from './providers/route-scrolltop.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -8,15 +8,10 @@ import { NavigationEnd, Router } from "@angular/router";
 })
 export class AppComponent implements OnInit {
 
-  constructor(private router: Router) {  }
+  constructor(private scrollTopService: RouteScrollTopService) {  }
   
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }// animation trigger
-      document.getElementById("anchor-top").scrollIntoView({block: "start", behavior: "smooth"});
-    });
+    this.scrollTopService.scrollTopNav();
   }
 
 }
