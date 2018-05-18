@@ -13,7 +13,7 @@
   color: $grey;
   padding: $gap-reg $gap-big $gap-reg $gap-reg;
 
-  h5 > span {
+  h5 > .sub-label {
     font-size: $font-small;
     font-weight: normal;
   }
@@ -68,7 +68,7 @@
         overflow: visible;
       }
 
-      h5 > span {
+      h5 > .sub-label {
         display: block;
       }
     }

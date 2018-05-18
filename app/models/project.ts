@@ -32,6 +32,7 @@ export interface Project {
   prototypes: Array<Resource>
   docs: Array<Resource>
   dates: Date
+  confidentiality: string
   url: string
   github: string
 }

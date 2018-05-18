@@ -11,8 +11,12 @@
       </div>
       
       <figcaption class="details-headings">
-        <h3>{{ focusedItem.name | translate }}</h3>
+  
+        <h3 *ngIf="!focusedItem.confidentiality">{{ focusedItem.name | translate }}</h3>
+        <h3 *ngIf="focusedItem.confidentiality">{{ focusedItem.confidentiality | translate }}</h3>
+        
         <h4>{{ focusedItem.category }}</h4>
+        
         <!-- If PROJECT -->
         <h4 *ngIf="type === 'project' && focusedItem.company">
           <span class="content-prefix">{{ 'as' | translate }}</span>

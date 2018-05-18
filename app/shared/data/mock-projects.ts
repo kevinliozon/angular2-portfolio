@@ -39,6 +39,7 @@ export let PROJECTS: Project[] = [{
     'start': '2017-01-01',
     'end': null
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/',
   'github': 'https://github.com/kevinliozon/angular2-portfolio'
 },
@@ -87,13 +88,14 @@ export let PROJECTS: Project[] = [{
     'start': '2018-04-13',
     'end': '2018-04-20'
   },
+  'confidentiality': null,
   'url': 'https://surelygroup.com/',
   'github': null
 },
 {
   'id': '#project14',
   'name': 'EIS Broker Portal',
-  'image': '../../../assets/img/svg/companies/eis.svg',
+  'image': '../../../assets/img/svg/projects/insurance.svg',
   'featured': true,
   'active': true,
   'category': 'Web App',
@@ -105,7 +107,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Endeavour Insurance Service',
-    'logo': '../../../assets/img/svg/companies/eis.svg',
+    'logo': '../../../assets/img/svg/projects/insurance.svg',
     'url': 'https://www.endeavouris.com/',
     'featured': true
   },
@@ -139,13 +141,14 @@ export let PROJECTS: Project[] = [{
     'start': '2017-11-15',
     'end': null
   },
-  'url': 'https://www.eisportal.com/login',
+  'confidentiality': 'Lloyd\'s of London insurer',
+  'url': null, //'https://www.eisportal.com/login'
   'github': null
 },
 {
   'id': '#project13',
   'name': 'MS Amlin',
-  'image': '../../../assets/img/svg/companies/msamlin.svg',
+  'image': '../../../assets/img/svg/projects/insurance.svg',
   'featured': false,
   'active': false,
   'category': 'Web App',
@@ -157,7 +160,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'MS Amlin',
-    'logo': '../../../assets/img/svg/companies/msamlin.svg',
+    'logo': '../../../assets/img/svg/projects/insurance.svg',
     'url': 'https://www.msamlin.com/en/index.html',
     'featured': true
   },
@@ -191,13 +194,14 @@ export let PROJECTS: Project[] = [{
       'start': '2017-10-15',
       'end': '2017-11-15'
   },
-  'url': 'https://www.msamlin.com/en/index.html',
+  'confidentiality': 'Lloyd\'s of London insurer',
+  'url': null, //'https://www.msamlin.com/en/index.html'
   'github': null
 },
 {
   'id': '#project12',
   'name': 'Douglas & Gordon',
-  'image': '../../../assets/img/svg/projects/dng.svg',
+  'image': '../../../assets/img/svg/projects/real_estate.svg',
   'featured': true,
   'active': false,
   'category': 'Mobile App',
@@ -209,7 +213,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Douglas & Gordon',
-    'logo': '../../../assets/img/svg/projects/dng.svg',
+    'logo': '../../../assets/img/svg/projects/real_estate.svg',
     'url': 'http://www.douglasandgordon.com/',
     'featured': true
   },
@@ -251,13 +255,14 @@ export let PROJECTS: Project[] = [{
     'start': '2017-01-05',
     'end': null
   },
+  'confidentiality': 'Central London real estate agency',
   'url': null,
   'github': null
 },
 {
   'id': '#project11',
   'name': 'Lloyds Bank - Connect & Protect',
-  'image': '../../../assets/img/svg/projects/lloyds.svg',
+  'image': '../../../assets/img/svg/projects/bank.svg',
   'featured': true,
   'active': false,
   'category': 'Mobile App',
@@ -269,7 +274,7 @@ export let PROJECTS: Project[] = [{
   },
   'client': {
     'name': 'Lloyds Banking Group',
-    'logo': '../../../assets/img/svg/projects/lloyds.svg',
+    'logo': '../../../assets/img/svg/projects/bank.svg',
     'url': 'http://www.lloydsbank.com/',
     'featured': true
   },
@@ -323,6 +328,7 @@ export let PROJECTS: Project[] = [{
     'start': '2016-11-14',
     'end': null
   },
+  'confidentiality': 'An UK\'s Big Four Banks',
   'url': null,
   'github': null
 },
@@ -371,6 +377,7 @@ export let PROJECTS: Project[] = [{
     'start': '2016-12-01',
     'end': '2017-01-14'
   },
+  'confidentiality': null,
   'url': null,
   'github': null
 },
@@ -453,6 +460,7 @@ export let PROJECTS: Project[] = [{
     'start': '2016-04-01',
     'end': '2016-11-14'
   },
+  'confidentiality': null,
   'url': 'https://www.myminifactory.com/',
   'github': null
 },
@@ -574,6 +582,7 @@ export let PROJECTS: Project[] = [{
     'start': '2016-02-14',
     'end': '2016-03-31'
   },
+  'confidentiality': null,
   'url': 'https://www.imakr.com/',
   'github': null
 },
@@ -677,6 +686,7 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/portfolio2',
   'github': null
 },
@@ -759,6 +769,7 @@ export let PROJECTS: Project[] = [{
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/c2i_reseau',
   'github': null
 },
@@ -872,6 +883,7 @@ export let PROJECTS: Project[] = [{
     'start': '2015-11-01',
     'end': '2016-01-20'
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/e_ukiyo',
   'github': null
 },
@@ -939,6 +951,7 @@ export let PROJECTS: Project[] = [{
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
+  'confidentiality': null,
   'url': 'http://reseau-beaute.com/',
   'github': null
 },
@@ -1019,6 +1032,7 @@ export let PROJECTS: Project[] = [{
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
+  'confidentiality': null,
   'url': null,
   'github': null
 },
@@ -1134,6 +1148,7 @@ export let PROJECTS: Project[] = [{
     'start': '2015-04-01',
     'end': '2015-06-14'
   },
+  'confidentiality': null,
   'url': 'http://www.digitela.fr/',
   'github': null
 },
@@ -1204,6 +1219,7 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/portfolio1',
   'github': null
 },
@@ -1268,6 +1284,7 @@ export let PROJECTS: Project[] = [{
     'start': '2014-12-10',
     'end': '2015-03-01'
   },
+  'confidentiality': null,
   'url': 'https://kevinliozon.com/iut_montpellier/Accueil.html',
   'github': null
 }];

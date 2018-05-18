@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#66CC99;}
+	.st1{fill:#62B2B0;}
+	.st2{fill:#6699CC;}
+	.st3{fill:#4C7399;}
+	.st4{fill:#EAEAEA;}
+	.st5{fill:#C1C1C1;}
+	.st6{fill:#CC9D14;}
+</style>
+<g id="walls">
+	<rect x="74.9" y="161" class="st0" width="166.2" height="86.8"/>
+	<rect x="175.2" y="131.1" class="st0" width="65.9" height="103.3"/>
+	<polygon class="st1" points="215.2,154.9 175.2,179 175.1,131.1 256,131 	"/>
+	<polygon class="st1" points="145.3,198.4 74.9,198.4 74.9,179 175.2,179 	"/>
+</g>
+<g id="glasses">
+	<rect x="74.9" y="198.4" class="st2" width="166.2" height="49.4"/>
+	<polygon class="st3" points="74.9,198.4 74.9,247.9 145.3,198.4 	"/>
+	
+		<rect x="51.7" y="221.7" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 299.537 146.7751)" class="st4" width="49.4" height="3"/>
+	
+		<rect x="214.9" y="221.7" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 462.7487 -16.4365)" class="st4" width="49.4" height="3"/>
+	
+		<rect x="104.1" y="221.7" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 351.9445 94.3677)" class="st4" width="49.4" height="3"/>
+	
+		<rect x="161" y="221.7" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 408.8439 37.4683)" class="st4" width="49.4" height="3"/>
+	<rect x="196.2" y="154.5" class="st2" width="24" height="22.6"/>
+	<polygon class="st3" points="196.2,154.6 196.2,166.6 215.6,154.6 	"/>
+	<polygon class="st5" points="74.9,247.9 74.9,198.4 77.9,198.4 77.9,245.9 	"/>
+	<polygon class="st5" points="127.3,211 127.3,198.4 130.3,198.4 130.3,208.9 	"/>
+</g>
+<g id="roof">
+	<g>
+		<polygon class="st6" points="175.2,179 9,179 175.2,92.1 		"/>
+		<line class="st6" x1="175.2" y1="92.1" x2="9" y2="179"/>
+	</g>
+	<g>
+		<polygon class="st6" points="175.2,140.1 292,140.1 175.2,92.1 		"/>
+		<path class="st6" d="M292,140.1"/>
+	</g>
+</g>
+<g id="shield">
+	<path class="st2" d="M144.9,99.3l-4.9,12.4c-6.4,16.2-19.5,36.3-35.5,43.2l-12.3,5.3l-12.4-4.9c-16.2-6.4-28.7-26.1-35.6-42.1
+		L38.8,101l0-37.8L91,47.1L145.4,62L144.9,99.3z"/>
+	<path class="st1" d="M131.7,99.8l-3.7,9.4c-4.8,12.2-14.7,27.4-26.8,32.6l-9.3,4l-9.4-3.7c-12.2-4.8-21.7-19.7-26.9-31.8l-4-9.3
+		l0-28.5L91,60.4L132,71.7L131.7,99.8z"/>
+</g>
+</svg>

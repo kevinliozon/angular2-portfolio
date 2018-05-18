@@ -17,7 +17,7 @@
       <h5>
         {{ object.name | translate }}
         <!-- SCHOOL -->
-        <span>{{ 'at' | translate }} {{ object.school.name | translate }}</span>
+        <span class="sub-label">{{ 'at' | translate }} {{ object.school.name | translate }}</span>
       </h5>
     </figcaption>
 
@@ -45,11 +45,12 @@
 
     <figcaption class="grid-list-label ellipsis-one-line">
       <h5>
-        {{ object.name | translate }}
+        <span *ngIf="!object.confidentiality">{{ object.name | translate }}</span>
+        <span *ngIf="object.confidentiality">{{ object.confidentiality | translate }}</span>
         <!-- PROJECT CLIENT -->
-        <span *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
+        <span class="sub-label" *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
         <!-- ROLE COMPANY  -->
-        <span *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
+        <span class="sub-label" *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
       </h5>
     </figcaption>
 
