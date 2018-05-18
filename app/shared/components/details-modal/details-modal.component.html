@@ -41,13 +41,17 @@
       </div>
 
       <footer class="modal-footer btn-group--modal" *ngIf="details.url || details.github">
-        <!-- If not a skill -->
-        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type !== 'skill'" target="_blank">
-          {{ 'See Live' | translate }}
+        <!-- If a project -->
+        <a class="btn btn-primary" (click)="goTo(details.id)" *ngIf="type === 'project'" data-dismiss="modal">
+          {{ 'Learn More' | translate }}
         </a>
         <!-- If a skill -->
         <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type === 'skill'" target="_blank">
           {{ 'Learn More' | translate }}
+        </a>
+        <!-- If not a skill -->
+        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type !== 'skill'" target="_blank">
+          {{ 'See Live' | translate }}
         </a>
         <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">
           Github

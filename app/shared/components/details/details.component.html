@@ -135,7 +135,7 @@
       <p>{{ 'confidential' | translate }}</p>
     </div>
   
-    <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+    <my-modal [details]="detailsModal" [type]="typeModal" (goToProject)="updateContent($event)"></my-modal>
   
     <gallery-modal [pic]="imageModal"></gallery-modal>
     

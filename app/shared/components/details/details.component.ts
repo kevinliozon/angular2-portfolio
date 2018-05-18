@@ -46,13 +46,14 @@ export class DetailsComponent implements OnInit{
    * @param id
    * @param type
    */
-  public openModal(id, type): void {
+  public openModal(id: string, type: string): void {
     this.typeModal = type;
     this.detailsModal = this.modalService.openModal(id, type);
   }
   
   /**
    * Galleries, Docs and Prototypes are not visible if project is confidential
+   *
    * @returns {any}
    */
   public isConfidential(): boolean {
@@ -63,6 +64,18 @@ export class DetailsComponent implements OnInit{
         return true;
       }
     }
+  }
+  
+  /**
+   * Update the content of the details page by retrieving project Id from modal
+   *
+   * @param projectId
+   */
+  public updateContent(projectId: string): void {
+    this.id = projectId;
+    this.type = 'project';
+    this.details = this.resolveByIdService.resolveById(projectId, 'project');
+    document.getElementById('anchor-top').scrollIntoView({block: 'start', behavior: 'smooth'});
   }
 
 }
