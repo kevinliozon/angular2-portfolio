@@ -1,42 +1,49 @@
-<div class="container wrap-home" [@routeTrans]="'true'">
+<div class="wrap-home" [@routeTrans]="'true'">
 
-  <main id="home-intro" class="jumbotron wrap-jumbo">
+  <main id="home-intro" class="container jumbotron wrap-jumbo">
     <profile-main [profile]="profile"></profile-main>
   </main>
 
-  <section id="home-projects" class="img-group">
+  <section class="container-fluid">
+    <div class="img-group">
     <header class="header-sub"><h2>{{ 'homeTitle0' | translate }}</h2></header>
 
     <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
-      <a [href]="project.url" target="_blank"><img class="img img-brand" [src]="project.client?.logo" [alt]="project.client?.name"></a>
+      <a class="img img-round--big img-link" [href]="project.url" target="_blank"><img [src]="project.client?.logo" [alt]="project.client?.name"></a>
       <figcaption class="img-label">{{ project.client?.name }}</figcaption>
     </figure>
+    </div>
   </section>
 
-  <section id="home-skills" class="img-group">
+  <section id="home-contact" class="container jumbotron wrap-jumbo">
+    <div class="row">
+
+      <div class="content-jumbo col-xs-12 col-sm-8">
+        <h2>{{ 'aboutTitle3' | translate }}</h2>
+        <address>
+          <p><a href={{profile.email}}>Kevin Liozon</a></p>
+          <p>{{profile.city}}</p>
+          <p>{{profile.country}}</p>
+        </address>
+        <p>{{ 'homeText4' | translate }}</p>
+      </div>
+
+      <figure class="col-xs-12 col-sm-4 img-jumbo">
+        <img [src]="profile.images.place">
+      </figure>
+
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="img-group">
     <header class="header-sub"><h2>{{ 'homeTitle1' | translate }}</h2></header>
 
     <figure class="img-wrap" *ngFor="let skill of skills" [hidden]="!skill.featured || !skill.frequent">
       <img class="img img-float" [src]="skill.image" [alt]="skill.name">
       <figcaption class="img-label">{{ skill.name }}</figcaption>
     </figure>
-  </section>
-
-  <section id="home-milestones">
-    <h2>{{ 'homeTitle2' | translate }}</h2>
-
-
-
-    <!--<ul>-->
-      <!--<li *ngFor="let diploma of diplomas">-->
-        <!--<h3>{{diploma.id}}</h3>-->
-      <!--</li>-->
-    <!--</ul>-->
-    <!--<ul>-->
-      <!--<li *ngFor="let role of roles">-->
-        <!--<h3>{{role.name}}</h3>-->
-      <!--</li>-->
-    <!--</ul>-->
+    </div>
   </section>
 
 </div>

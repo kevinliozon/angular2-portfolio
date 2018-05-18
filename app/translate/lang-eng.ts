@@ -69,6 +69,7 @@ export const LANG_ENG_TRANS = {
   'homeText2': `I live in London since February 2016. Here, I had the opportunity to work
                 with great professionals from all around the world while sharpening my business acumen.`,
   'homeText3': 'Want to hear more about my:',
+  'homeText4': `texthere`,
   //Buttons
   'homeBtn0': 'Dev Practices',
   'homeBtn1': 'UX Practices',

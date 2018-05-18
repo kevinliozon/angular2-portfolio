@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 //projects
 import { Project } from '../models/project';
 import { ProjectService } from '../providers/project.service'

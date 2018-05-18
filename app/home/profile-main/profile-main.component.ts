@@ -32,10 +32,10 @@ export class ProfileMainComponent implements OnInit {
   },
   {
     name: 'homeBtn3',
-    route: '../about',
+    route: './',
     href: '',
     class: 'btn btn-primary',
-    fragment: 'about-contact'
+    fragment: 'home-contact'
   }];
 
   constructor() {  }

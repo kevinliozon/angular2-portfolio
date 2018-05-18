@@ -22,6 +22,16 @@ img {
   @include square($img-mega);
 }
 
+.img-label {
+  font-size: $font-micro;
+  font-weight: bold;
+  margin: auto;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.4s ease;
+  width: calc(#{$img-big} + 15px);
+}
+
 // Rounded containe for images
 .img-round {
   @include round($img-mega);
@@ -44,19 +54,24 @@ img {
   }
 }
 
+.img-round--big {
+  @extend .img-round;
+  @include round($img-giga);
+  padding: calc(#{$img-mega} / 4);
+
+  img {
+    @include square($img-mega);
+  }
+
+  + .img-label {
+    font-size: $font-base;
+    width: calc(#{$img-giga} + 15px);
+  }
+}
+
 .img-link {
   cursor: pointer;
   transition: all 0.4s ease;
-}
-
-.img-label {
-  font-size: $font-micro;
-  font-weight: bold;
-  margin: auto;
-  opacity: 0;
-  text-align: center;
-  transition: all 0.4s ease;
-  width: calc(#{$img-big} + 15px);
 }
 
 .img--flip {
