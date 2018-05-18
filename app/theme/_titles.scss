@@ -7,11 +7,6 @@
   }
 }
 
-@for $i from 2 through 6 {
-  h#{$i} {
-  }
-}
-
 h1 {
   @include special-font($font-tera, $light);
 }

@@ -613,9 +613,66 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/html.svg'
     }
   ],
-  'gallery': null,
+  'gallery': [{
+    'image': '../../../assets/img/png/projects/portfolio2/background.png',
+    'name': 'Background',
+    'alt': 'Image of background',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/bulb.png',
+    'name': 'Bulb asset',
+    'alt': 'Image of bulb asset',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/engine_order_telegraph_adobe.png',
+    'name': 'Design skills',
+    'alt': 'Image of design skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/engine_order_telegraph_web.png',
+    'name': 'Dev skills',
+    'alt': 'Image of dev skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/engine_order_telegraph_others.png',
+    'name': 'Other skills',
+    'alt': 'Image of other skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/gears_pendulum.png',
+    'name': 'Gears and pendulum asset',
+    'alt': 'Image of gears and pendulum asset',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/gears.png',
+    'name': 'Gears & fans assets',
+    'alt': 'Image of gears and fans assets',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/modding.png',
+    'name': 'Modding asset',
+    'alt': 'Image of modding asset',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/printed_portfolio.png',
+    'name': 'Printed portfolio asset',
+    'alt': 'Image of printed portfolio asset',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/sonar.png',
+    'name': 'Sonar asset',
+    'alt': 'Image of sonar asset',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio2/video.png',
+    'name': 'Video asset',
+    'alt': 'Image of video asset',
+  }],
   'prototypes': null,
-  'docs': null,
+  'docs': [{
+    'name': 'CV',
+    'url': '../../../assets/docs/portfolio2/cv.pdf',
+  }],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'
@@ -1108,9 +1165,41 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/css.svg'
     }
   ],
-  'gallery': null,
+  'gallery': [{
+    'image': '../../../assets/img/png/projects/portfolio1/background.png',
+    'name': 'Background',
+    'alt': 'Image of brackground',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio1/ability_development.png',
+    'name': 'Dev skills',
+    'alt': 'Image of dev skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio1/ability_infographics.png',
+    'name': 'Design skills',
+    'alt': 'Image of design skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio1/ability_video.png',
+    'name': 'Motion design skills',
+    'alt': 'Image of motion design skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio1/ability_other.png',
+    'name': 'Other skills',
+    'alt': 'Image of other skills',
+  },
+  {
+    'image': '../../../assets/img/png/projects/portfolio1/coming_soon.png',
+    'name': 'Coming soon disclaimer',
+    'alt': 'Image of coming soon disclaimer',
+  }],
   'prototypes': null,
-  'docs': null,
+  'docs': [{
+    'name': 'Printed',
+    'url': '../../../assets/docs/portfolio1/portfolio.pdf',
+  }],
   'dates': {
     'start': '2014-12-10',
     'end': '2015-03-01'
