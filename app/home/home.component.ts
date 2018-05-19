@@ -5,12 +5,6 @@ import { ProjectService } from '../providers/project.service'
 //skills
 import { Skill } from '../models/skill';
 import { SkillService } from '../providers/skill.service'
-//roles
-import { Role } from '../models/role';
-import { RoleService } from '../providers/role.service'
-//diplomas
-import { Diploma } from '../models/diploma';
-import { DiplomaService } from '../providers/diploma.service'
 //constants
 import { PROFILE } from '../shared/constants/profile';
 //animations
@@ -22,23 +16,18 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
 
   public profile = PROFILE;
   public projects: Array<Project>;
   public skills: Array<Skill>;
-  public roles: Array<Role>;
-  public diplomas: Array<Diploma>;
 
   constructor(private projectService: ProjectService,
-              private skillService: SkillService,
-              private roleService: RoleService,
-              private diplomaService: DiplomaService) { }
+              private skillService: SkillService) { }
 
-  public ngOnInit() {
-    this.projects = this.projectService.getProjects();
-    this.skills = this.skillService.getSkills();
-    this.roles = this.roleService.getRoles();
-    this.diplomas = this.diplomaService.getDiplomas();
+  ngOnInit() {
+    this.projects = this.projectService.getProjects() || [];
+    this.skills = this.skillService.getSkills() || [];
   }
+  
 }

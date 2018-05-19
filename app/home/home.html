@@ -9,30 +9,75 @@
     <header class="header-sub"><h2>{{ 'homeTitle0' | translate }}</h2></header>
 
     <figure class="img-wrap" *ngFor="let project of projects" [hidden]="project.client === null || !project.client?.featured">
-      <a class="img img-round--big img-link" [href]="project.url" target="_blank"><img [src]="project.client?.logo" [alt]="project.client?.name"></a>
-      <figcaption class="img-label">{{ project.client?.name }}</figcaption>
+      <a class="img img-round--big img-link" [href]="project.url" *ngIf="!project.confidentiality" target="_blank">
+        <img [src]="project.client?.logo" [alt]="project.client?.name">
+      </a>
+      <span class="img img-round--big" *ngIf="project.confidentiality">
+        <img [src]="project.client?.logo" [alt]="project.client?.name">
+      </span>
+      
+      <figcaption class="img-label">
+        <span *ngIf="!project.confidentiality">{{ project.client?.name | translate }}</span>
+        <span *ngIf="project.confidentiality">{{ project.confidentiality | translate }}</span>
+      </figcaption>
     </figure>
     </div>
   </section>
-
-  <section id="home-contact" class="container jumbotron wrap-jumbo">
-    <div class="row">
-
-      <div class="content-jumbo col-xs-12 col-sm-8">
-        <h2>{{ 'aboutTitle3' | translate }}</h2>
-        <address>
-          <p><a href={{profile.email}}>Kevin Liozon</a></p>
-          <p>{{profile.city}}</p>
-          <p>{{profile.country}}</p>
-        </address>
-        <p>{{ 'homeText4' | translate }}</p>
+  
+  <section class="wrap-articles">
+  
+    <article id="about-experiences" class="container jumbotron wrap-jumbo">
+      <div class="row">
+        
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header><h2>{{ 'homeTitle2' | translate }}</h2></header>
+          
+          <p>{{ 'homeText4' | translate }}</p>
+        </section>
+        
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img [src]="profile.images.experiences">
+        </figure>
+  
+        <footer class="col-xs-12 btn-group btn-group--jumbo">
+          <a class="btn btn-primary" [routerLink]="['../experience']">{{ 'more-info' | translate }}</a>
+        </footer>
+      
       </div>
-
-      <figure class="col-xs-12 col-sm-4 img-jumbo">
-        <img [src]="profile.images.place">
-      </figure>
-
-    </div>
+    </article>
+  
+    <article id="home-contact" class="container jumbotron wrap-jumbo">
+      <div class="row">
+  
+        <div class="content-jumbo col-xs-12 col-sm-8">
+          <header><h2>{{ 'homeTitle3' | translate }}</h2></header>
+          
+          <p>{{ 'homeText5' | translate }}</p>
+          
+          <footer class="img-group">
+            <figure class="img-wrap">
+              <a class="img img-round img-link" href="https://www.linkedin.com/in/kevin-liozon-39117bb3" target="_blank">
+                <img src="../../../assets/img/svg/socials/linkedin.svg" alt="LinkedIn icon">
+              </a>
+              <figcaption class="img-label">Linkedin</figcaption>
+            </figure>
+    
+            <figure class="img-wrap">
+              <a class="img img-round img-link" [href]="profile.email">
+                <img [src]="profile.images.email" alt="Gmail icon">
+              </a>
+              <figcaption class="img-label">Email</figcaption>
+            </figure>
+          </footer>
+        </div>
+  
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img [src]="profile.images.place">
+        </figure>
+  
+      </div>
+    </article>
+    
   </section>
 
   <section class="container">

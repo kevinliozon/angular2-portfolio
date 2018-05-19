@@ -25,6 +25,17 @@ export class DetailsModalComponent {
   }
   
   /**
+   * Check if link should redirect to a live website or to further doc
+   * If no returns nothing (therefore remove the link)
+   *
+   * @returns {string}
+   */
+  public hasUrl(): string {
+    return !this.details.url ? '' :
+      (this.type === 'skill' || this.type === 'tool') ? 'info' : 'live';
+  }
+  
+  /**
    * Navigates to the project details page of the selected object
    * passes its id
    *

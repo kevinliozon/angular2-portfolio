@@ -8,9 +8,6 @@ import { ToolService } from '../providers/tool.service';
 //hobbies
 import { Hobby } from '../models/hobby';
 import { HobbyService } from '../providers/hobby.service'
-//projects
-import { Project } from '../models/project';
-import { ProjectService } from '../providers/project.service';
 //constants
 import { PROFILE } from '../shared/constants/profile';
 //services
@@ -29,7 +26,6 @@ export class AboutComponent implements OnInit{
   public details: any = PROFILE;
   public tools: Array<Tool>;
   public hobbies: Array<Hobby>;
-  public projects: Array<Project>;
   public skills: Array<Skill>;
   public skillsDev: Array<Skill> = [];
   public skillsDesign: Array<Skill> = [];
@@ -38,14 +34,12 @@ export class AboutComponent implements OnInit{
 
   constructor(private toolService: ToolService,
               private hobbyService: HobbyService,
-              private projectService: ProjectService,
               private skillService: SkillService,
               private modalService: ModalService) { }
 
   public ngOnInit() {
     this.tools = this.toolService.getTools() || [];
     this.hobbies = this.hobbyService.getHobbies() || [];
-    this.projects = this.projectService.getProjects() || [];
     this.skills = this.skillService.getSkills() || [];
     this.filterSkills(this.skills);
     this.scrollTo();

@@ -141,7 +141,7 @@ export let PROJECTS: Project[] = [{
     'start': '2017-11-15',
     'end': null
   },
-  'confidentiality': 'Lloyd\'s of London insurer',
+  'confidentiality': 'A Lloyd\'s of London insurer',
   'url': null, //'https://www.eisportal.com/login'
   'github': null
 },
@@ -194,7 +194,7 @@ export let PROJECTS: Project[] = [{
       'start': '2017-10-15',
       'end': '2017-11-15'
   },
-  'confidentiality': 'Lloyd\'s of London insurer',
+  'confidentiality': 'A Lloyd\'s of London insurer',
   'url': null, //'https://www.msamlin.com/en/index.html'
   'github': null
 },
@@ -255,7 +255,7 @@ export let PROJECTS: Project[] = [{
     'start': '2017-01-05',
     'end': null
   },
-  'confidentiality': 'Central London real estate agency',
+  'confidentiality': 'A Central London real estate agency',
   'url': null,
   'github': null
 },
@@ -328,7 +328,7 @@ export let PROJECTS: Project[] = [{
     'start': '2016-11-14',
     'end': null
   },
-  'confidentiality': 'An UK\'s Big Four Banks',
+  'confidentiality': 'An UK\'s Big Four Bank',
   'url': null,
   'github': null
 },
@@ -398,7 +398,7 @@ export let PROJECTS: Project[] = [{
     'name': 'My Mini Factory',
     'logo': '../../../assets/img/svg/companies/mmf.svg',
     'url': 'https://www.myminifactory.com/',
-    'featured': true
+    'featured': false
   },
   'desc': '#projectDescMMF',
   'techs': [

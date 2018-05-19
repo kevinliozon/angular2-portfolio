@@ -41,17 +41,17 @@
         </section>
       </div>
 
-      <footer class="modal-footer btn-group--modal" *ngIf="details.url || details.github">
+      <footer class="modal-footer btn-group--modal" *ngIf="details.url || details.github || type === 'project'">
         <!-- If a project -->
         <a class="btn btn-primary" (click)="goTo(details.id)" *ngIf="type === 'project'" data-dismiss="modal">
           {{ 'Learn More' | translate }}
         </a>
         <!-- If a skill -->
-        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type === 'skill'" target="_blank">
+        <a class="btn btn-primary" [href]="details.url" *ngIf="hasUrl() === 'info'" target="_blank">
           {{ 'Learn More' | translate }}
         </a>
         <!-- If not a skill -->
-        <a class="btn btn-primary" [href]="details.url" *ngIf="details.url && type !== 'skill'" target="_blank">
+        <a class="btn btn-primary" [href]="details.url" *ngIf="hasUrl() === 'live'" target="_blank">
           {{ 'See Live' | translate }}
         </a>
         <a class="btn btn-primary" [href]="details.github" *ngIf="details.github" target="_blank">

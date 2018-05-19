@@ -4,16 +4,14 @@ const titles = {
   'homePage': [
     'Some brands I have worked for',
     'Main skills',
-    'Last projects',
-    'Milestones'
+    'Overview of my experiences',
+    'Want to reach me?'
   ],
   'aboutPage': [
-    'An enthusiasm for frontend techs',
-    'An awareness for design',
-    'Why do I care about UX',
-    'Ways to reach me',
-    'Notable works',
+    'Performant frontend techs serve the user',
+    'A design driven approach',
     'Toolbox',
+    'Workflow and process',
     'Hobbies'
   ]
 }
@@ -69,7 +67,12 @@ export const LANG_ENG_TRANS = {
   'homeText2': `I live in London since February 2016. Here, I had the opportunity to work
                 with great professionals from all around the world while sharpening my business acumen.`,
   'homeText3': 'Want to hear more about my:',
-  'homeText4': `texthere`,
+  'homeText4': `I worked with clients from various industries: banking, insurance, 3D printing, healthcare, real
+               estate... I know the expectations in terms of design may vary a lot from one to another
+               regarding their respective cultures (corporate, national…). I have also been involved into the conception
+               of products related to IoT, insurtech, e-commerce and content-sharing among others. The diversity of
+               these experiences helped me for broadening my ability to adapt to any kind of project.`,
+  'homeText5': `I am available in London area. For any request, the best way to contact me is via LinkedIn or Email:`,
   //Buttons
   'homeBtn0': 'Dev Practices',
   'homeBtn1': 'UX Practices',
@@ -89,16 +92,14 @@ export const LANG_ENG_TRANS = {
                 pre-processors like Sass. I usually rely on the official documentation of Angular and Ionic to stay
                 up to date. When I need to learn a new technology, CodeSchool is my go to
                 solution as a starting point.`,
-  'aboutText1': `I try to keep informed about the latest UX reports and practices.
-                The ones advocated by the Nielsen & Norman Group are my main reference.
-                I follow also the documentations from UXPin and Smashing Magazine.
-                My favorite fields are definitely Interaction and Interface Design.
-                I use these skills to build user-centred and consistent interfaces.`,
-  'aboutText2': `It dates back from when I was software support technician at the University Hospital of Montpellier.
-                The change from a previous Hospital Information System software to a new one
-                had seriously slowed down the productivity of the different medical staffs.
-                Mainly because of the messy and inconsistent new interface. That is why I give so much
-                importance to the detail as well as the user experience since.`,
+  'aboutText1': `I try to keep informed about the latest UX reports and practices. The ones advocated by the Nielsen &
+                Norman Group are my main reference. I follow also the documentations from UXPin and Smashing Magazine.
+                My favorite fields are definitely Interaction and Interface Design. I use these skills to build
+                user-centred and consistent interfaces.`,
+  'aboutText2': `I believe having an agreed and tested design (as much as possible) before any implementation is key.
+                Assumptions and guessings based on a proper interpretation of a client’s need can help in certain
+                situations and if they are not overused. I also consider having the right tools for any task or project
+                is an investment worth if we aim to deliver a product of quality and to avoid delays.`,
 
 
   /*** PROJECTS ***/

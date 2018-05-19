@@ -53,39 +53,10 @@
 
       </div>
     </article>
-
-
-    <article id="about-story" class="jumbotron wrap-jumbo">
-      <div class="row">
-
-        <section class="content-jumbo col-xs-12 col-sm-8">
-          <header>
-            <h2>{{ 'aboutTitle2' | translate }}</h2>
-          </header>
-          <p>{{ 'aboutText2' | translate }}</p>
-        </section>
-
-        <figure class="col-xs-12 col-sm-4 img-jumbo">
-          <img [src]="details.images.story">
-        </figure>
-
-      </div>
-    </article>
   </main>
 
-  <section id="about-achiev" class="wrap-cards row">
-    <header><h2>{{ 'aboutTitle4' | translate }}</h2></header>
-    <my-card
-      class="col-xs-12 col-sm-4 col-md-3"
-      *ngFor="let project of projects"
-      [object]="project"
-      [hidden]="project.featured !== true"
-      (moreInfo)="openModal($event, 'project')">
-    </my-card>
-  </section>
-
   <section id="about-tools" class="wrap-cards row">
-    <header><h2>{{ 'aboutTitle5' | translate }}</h2></header>
+    <header><h2>{{ 'aboutTitle2' | translate }}</h2></header>
     <my-card
       class="col-xs-12 col-sm-4 col-md-3"
       *ngFor="let tool of tools"
@@ -94,9 +65,27 @@
       (moreInfo)="openModal($event, 'tool')">
     </my-card>
   </section>
+  
+  
+  <article id="about-experiences" class="jumbotron wrap-jumbo">
+    <div class="row">
+      
+      <section class="content-jumbo col-xs-12 col-sm-8">
+        <header>
+          <h2>{{ 'aboutTitle3' | translate }}</h2>
+        </header>
+        <p>{{ 'aboutText2' | translate }}</p>
+      </section>
+      
+      <figure class="col-xs-12 col-sm-4 img-jumbo">
+        <img [src]="details.images.process">
+      </figure>
+    
+    </div>
+  </article>
 
   <section id="about-hobbies" class="wrap-cards row">
-    <header><h2>{{ 'aboutTitle6' | translate }}</h2></header>
+    <header><h2>{{ 'aboutTitle4' | translate }}</h2></header>
     <my-card
       class="col-xs-12 col-sm-4 col-md-3"
       *ngFor="let hobby of hobbies"
