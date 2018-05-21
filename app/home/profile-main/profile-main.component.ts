@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CookieService } from '../../providers/cookie.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -38,13 +39,20 @@ export class ProfileMainComponent implements OnInit {
     fragment: 'home-contact'
   }];
 
-  constructor() {  }
+  constructor(private cookieService: CookieService) { }
 
   public ngOnInit() {
     let today = Date.now();
     let birthday = new Date('1991-03-11');
     let ageDate = new Date(today - birthday.getTime())
     this.age = Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+  
+  /**
+   * Make selected language persistent even after refresh
+   */
+  public sessionBtn(): string {
+    return this.cookieService.getCookie('language');
   }
 
 }

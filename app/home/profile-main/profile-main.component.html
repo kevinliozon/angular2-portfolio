@@ -21,7 +21,8 @@
       [fragment]="btn.fragment">
         {{ btn.name | translate }}
     </a>
-    <a class="btn btn-primary" href="../assets/cv_kevinliozon_en.pdf">CV</a>
+    <a class="btn btn-primary" href="../assets/cv_kevinliozon_en.pdf" *ngIf="sessionBtn() === 'eng'" target="_blank">CV</a>
+    <a class="btn btn-primary" href="../assets/cv_kevinliozon_fr.pdf" *ngIf="sessionBtn() === 'fra'" target="_blank">CV</a>
   </footer>
 
 </div>

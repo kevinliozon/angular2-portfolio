@@ -17,7 +17,7 @@ export class HeaderTitleService {
    * @param newTitle
    * @returns {string}
    */
-  public setTitle(newTitle): string {
+  public setTitle(newTitle: string): string {
     this.titleService.setTitle(newTitle); // dynamic tab title
     this.headerTitle = this.titleService.getTitle();
     return this.headerTitle; // dynamic header title
@@ -28,7 +28,7 @@ export class HeaderTitleService {
    *
    * @returns {string}
    */
-  public getTitle():string {
+  public getTitle(): string {
     return this.headerTitle;
   }
   

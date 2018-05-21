@@ -7,7 +7,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Framework',
-  'desc': 'Front-End framework',
+  'desc': '#skillAngular',
   'image': '../../../assets/img/svg/skills/angular.svg',
   'url': 'https://en.wikipedia.org/wiki/AngularJS'
 },
@@ -17,7 +17,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Framework',
-  'desc': 'Hybrid mobile app framework',
+  'desc': '#skillIonic',
   'image': '../../../assets/img/svg/skills/ionic.svg',
   'url': 'https://en.wikipedia.org/wiki/Ionic_(mobile_app_framework)'
 },
@@ -27,7 +27,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'Framework',
-  'desc': 'Hybrid mobile app framework',
+  'desc': '#skillCordova',
   'image': '../../../assets/img/svg/skills/cordova.svg',
   'url': 'https://en.wikipedia.org/wiki/Apache_Cordova'
 },
@@ -37,7 +37,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Javascript',
-  'desc': 'Javascript superset',
+  'desc': '#skillTypescript',
   'image': '../../../assets/img/svg/skills/typescript.svg',
   'url': 'https://en.wikipedia.org/wiki/TypeScript'
 },
@@ -47,7 +47,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Javascript',
-  'desc': 'Javascript library',
+  'desc': '#skillJquery',
   'image': '../../../assets/img/svg/skills/jquery.svg',
   'url': 'https://en.wikipedia.org/wiki/JQuery'
 },
@@ -57,7 +57,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Framework',
-  'desc': 'An open source PHP framework',
+  'desc': '#skillSymfony',
   'image': '../../../assets/img/svg/skills/symfony.svg',
   'url': 'https://en.wikipedia.org/wiki/Symfony'
 },
@@ -67,7 +67,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Front-End',
-  'desc': 'CSS pre-processor',
+  'desc': '#skillSass',
   'image': '../../../assets/img/svg/skills/sass.svg',
   'url': 'https://en.wikipedia.org/wiki/Sass_(stylesheet_language)'
 },
@@ -77,7 +77,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Front-End',
-  'desc': 'CSS pre-processor',
+  'desc': '#skillLess',
   'image': '../../../assets/img/svg/skills/less.svg',
   'url': 'https://en.wikipedia.org/wiki/Less_(stylesheet_language)'
 },
@@ -87,7 +87,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Front-End',
-  'desc': 'Front-End Framework',
+  'desc': '#skillBootstrap',
   'image': '../../../assets/img/svg/skills/bootstrap.svg',
   'url': 'https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)'
 },
@@ -97,7 +97,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Front-End',
-  'desc': 'Front-End Framework',
+  'desc': '#skillFoundation',
   'image': '../../../assets/img/svg/skills/foundation.svg',
   'url': 'https://en.wikipedia.org/wiki/Foundation_(framework)'
 },
@@ -107,7 +107,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Front-End',
-  'desc': 'Javascript compiler',
+  'desc': '#skillGulp',
   'image': '../../../assets/img/svg/skills/gulp.svg',
   'url': 'https://en.wikipedia.org/wiki/Gulp.js'
 },
@@ -117,7 +117,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Framework',
-  'desc': 'CSS Framework',
+  'desc': '#skillCompass',
   'image': '../../../assets/img/svg/skills/compass.svg',
   'url': 'http://compass-style.org/'
 },
@@ -127,7 +127,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Design',
-  'desc': 'Prototyping & Wireframing tool',
+  'desc': '#skillAxure',
   'image': '../../../assets/img/svg/skills/axurerp.svg',
   'url': 'https://en.wikipedia.org/wiki/Axure_RP'
 },
@@ -137,7 +137,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Design',
-  'desc': 'Ionic oriented prototyping tool',
+  'desc': '#skillCreator',
   'image': '../../../assets/img/svg/skills/ioniccreator.svg',
   'url': 'http://ionic.io/products/creator'
 },
@@ -147,7 +147,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': false,
   'category': 'Design',
-  'desc': 'Prototyping & Wireframing tool',
+  'desc': '#skillXd',
   'image': '../../../assets/img/svg/skills/xd.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_Experience_Design'
 },
@@ -157,7 +157,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Design',
-  'desc': 'Vector graphics editor',
+  'desc': '#skillIllus',
   'image': '../../../assets/img/svg/skills/illustrator.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_Illustrator'
 },
@@ -167,7 +167,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': true,
   'category': 'Design',
-  'desc': 'Raster graphics editor',
+  'desc': '#skillPhotoshop',
   'image': '../../../assets/img/svg/skills/photoshop.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_Photoshop'
 },
@@ -177,7 +177,7 @@ export let SKILLS: Skill[] = [{
   'featured': true,
   'frequent': false,
   'category': 'Design',
-  'desc': 'Publishing software',
+  'desc': '#skillIndesign',
   'image': '../../../assets/img/svg/skills/indesign.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_InDesign'
 },
@@ -187,7 +187,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Design',
-  'desc': 'Web Development tool',
+  'desc': '#skillEdge',
   'image': '../../../assets/img/svg/skills/edgeanimate.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_Edge_Animate'
 },
@@ -197,7 +197,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Design',
-  'desc': 'Vector graphics and web animation tool',
+  'desc': '#skillFlash',
   'image': '../../../assets/img/svg/skills/flash.svg',
   'url': 'https://en.wikipedia.org/wiki/Adobe_Animate'
 },
@@ -207,7 +207,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'Design',
-  'desc': 'For diagrams and technical design documentation',
+  'desc': '#skillDrawio',
   'image': '../../../assets/img/svg/skills/drawio.svg',
   'url': 'https://www.draw.io/'
 },
@@ -217,7 +217,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'CMS',
-  'desc': 'My first CMS using PHP and MySQL',
+  'desc': '#skillWp',
   'image': '../../../assets/img/svg/skills/wordpress.svg',
   'url': 'https://en.wikipedia.org/wiki/WordPress'
 },
@@ -227,7 +227,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'CMS',
-  'desc': 'An E-Commerce oriented CMS using PHP, MySQL and Smarty',
+  'desc': '#skillPresta',
   'image': '../../../assets/img/svg/skills/prestashop.svg',
   'url': 'https://en.wikipedia.org/wiki/PrestaShop'
 },
@@ -237,7 +237,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'Javascript',
-  'desc': 'Asynchroneous web language',
+  'desc': '#skillJs',
   'image': '../../../assets/img/svg/skills/javascript.svg',
   'url': 'https://en.wikipedia.org/wiki/JavaScript'
 },
@@ -247,7 +247,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'Front-End',
-  'desc': 'Stylesheet language',
+  'desc': '#skillCss',
   'image': '../../../assets/img/svg/skills/css.svg',
   'url': 'https://en.wikipedia.org/wiki/Cascading_Style_Sheets'
 },
@@ -257,7 +257,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': true,
   'category': 'Front-End',
-  'desc': 'Markup language',
+  'desc': '#skillHtml',
   'image': '../../../assets/img/svg/skills/html.svg',
   'url': 'https://en.wikipedia.org/wiki/HTML'
 },
@@ -267,7 +267,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Back-End',
-  'desc': 'Server side language',
+  'desc': '#skillPhp',
   'image': '../../../assets/img/svg/skills/php.svg',
   'url': 'https://en.wikipedia.org/wiki/PHP'
 },
@@ -277,7 +277,7 @@ export let SKILLS: Skill[] = [{
   'featured': false,
   'frequent': false,
   'category': 'Back-End',
-  'desc': 'Database language',
+  'desc': '#skillSql',
   'image': '../../../assets/img/svg/skills/sql.svg',
   'url': 'https://en.wikipedia.org/wiki/SQL'
 }];
