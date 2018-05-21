@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CookieService } from '../../providers/cookie.service';
+import { CookieService } from '../../../providers/cookie.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),

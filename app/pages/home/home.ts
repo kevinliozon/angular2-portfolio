@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 //projects
-import { Project } from '../models/project';
-import { ProjectService } from '../providers/project.service'
+import { Project } from '../../models/project';
+import { ProjectService } from '../../providers/project.service'
 //skills
-import { Skill } from '../models/skill';
-import { SkillService } from '../providers/skill.service'
+import { Skill } from '../../models/skill';
+import { SkillService } from '../../providers/skill.service'
 //constants
-import { PROFILE } from '../shared/constants/profile';
+import { PROFILE } from '../../shared/constants/profile';
 //animations
-import { routeTrans } from '../shared/components/animations/route-transition';
+import { routeTrans } from '../../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -16,7 +16,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-export class HomeComponent implements OnInit {
+export class HomePage implements OnInit {
 
   public profile = PROFILE;
   public projects: Array<Project>;

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 //roles
-import { Role } from '../models/role';
-import { RoleService } from '../providers/role.service';
+import { Role } from '../../models/role';
+import { RoleService } from '../../providers/role.service';
 //animations
-import { routeTrans } from '../shared/components/animations/route-transition';
+import { routeTrans } from '../../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
@@ -11,7 +11,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-export class ExperienceComponent implements OnInit {
+export class ExperiencePage implements OnInit {
 
   public roles: Role[];
   public focusedItem: any;

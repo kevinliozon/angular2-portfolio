@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 // skills
-import { Skill } from '../models/skill';
-import { SkillService } from '../providers/skill.service';
+import { Skill } from '../../models/skill';
+import { SkillService } from '../../providers/skill.service';
 //tools
-import { Tool } from '../models/tool';
-import { ToolService } from '../providers/tool.service';
+import { Tool } from '../../models/tool';
+import { ToolService } from '../../providers/tool.service';
 //hobbies
-import { Hobby } from '../models/hobby';
-import { HobbyService } from '../providers/hobby.service'
+import { Hobby } from '../../models/hobby';
+import { HobbyService } from '../../providers/hobby.service'
 //constants
-import { PROFILE } from '../shared/constants/profile';
+import { PROFILE } from '../../shared/constants/profile';
 //services
-import { ModalService } from "../providers/modal.service";
+import { ModalService } from '../../providers/modal.service';
 //animations
-import { routeTrans } from '../shared/components/animations/route-transition';
+import { routeTrans } from '../../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -21,7 +21,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-export class AboutComponent implements OnInit{
+export class AboutPage implements OnInit{
 
   public details: any = PROFILE;
   public tools: Array<Tool>;

@@ -10,19 +10,19 @@ import { TranslateModule } from './translate/translate.module';
 import { PipesModule } from './shared/pipes/pipes.module';
 //Pages
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { SkillsComponent } from './skills/skills.component';
-import { PageNotFoundComponent } from './not-found/not-found.component';
-import { CookiePolicyPage } from './cookie-policy/cookie-policy';
-import { SitemapPage } from './sitemap/sitemap';
-import { TermsConditionsPage } from './terms-conditions/terms-conditions';
+import { HomePage } from './pages/home/home';
+import { AboutPage } from './pages/about/about';
+import { EducationPage } from './pages/education/education';
+import { ExperiencePage } from './pages/experience/experience';
+import { ProjectsPage } from './pages/projects/projects';
+import { SkillsPage } from './pages/skills/skills';
+import { NotFoundPage } from './pages/not-found/not-found';
+import { CookiePolicyPage } from './pages/cookie-policy/cookie-policy';
+import { SitemapPage } from './pages/sitemap/sitemap';
+import { TermsConditionsPage } from './pages/terms-conditions/terms-conditions';
 //Components
-import { ProfileCsComponent } from './education/profile-cs/profile-cs.component';
-import { ProfileMainComponent } from './home/profile-main/profile-main.component';
+import { ProfileCsComponent } from './pages/education/profile-cs/profile-cs.component';
+import { ProfileMainComponent } from './pages/home/profile-main/profile-main.component';
 
 @NgModule({
   imports: [
@@ -37,13 +37,13 @@ import { ProfileMainComponent } from './home/profile-main/profile-main.component
   ],
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
-    HomeComponent,
-    AboutComponent,
-    EducationComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-    SkillsComponent,
+    NotFoundPage,
+    HomePage,
+    AboutPage,
+    EducationPage,
+    ExperiencePage,
+    ProjectsPage,
+    SkillsPage,
     CookiePolicyPage,
     SitemapPage,
     TermsConditionsPage,

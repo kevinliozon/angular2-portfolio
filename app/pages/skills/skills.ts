@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 // Skills
-import { Skill } from '../models/skill';
-import { SkillService } from '../providers/skill.service';
+import { Skill } from '../../models/skill';
+import { SkillService } from '../../providers/skill.service';
 //services
-import { ModalService } from "../providers/modal.service";
+import { ModalService } from "../../providers/modal.service";
 //animations
-import { routeTrans } from '../shared/components/animations/route-transition';
+import { routeTrans } from '../../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace('/dist/app/', '/app/'),
@@ -13,7 +13,7 @@ import { routeTrans } from '../shared/components/animations/route-transition';
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
-export class SkillsComponent implements OnInit{
+export class SkillsPage implements OnInit {
 
   public skills: Skill[];
   public value = '';
@@ -45,5 +45,5 @@ export class SkillsComponent implements OnInit{
     this.typeModal = type;
     this.detailsModal = this.modalService.openModal($event, type)
   }
-
+  
 }
