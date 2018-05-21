@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { GoogleAnalyticsService } from '../../../providers/googleAnalytics.service';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
@@ -12,7 +13,7 @@ export class DetailsModalComponent {
   @Input() public type: string = '';
   @Output() public goToProject = new EventEmitter();
 
-  constructor() { }
+  constructor(private googleAnalyticsService: GoogleAnalyticsService) { }
   
   /**
    * Check if the project is a role or a project
@@ -42,6 +43,11 @@ export class DetailsModalComponent {
    * @param {string} projectId
    */
   public goTo(projectId: string): void {
+    this.googleAnalyticsService.captureCustomEvent(
+      'navigation',
+      `Navigate to details page for ${this.type}`,
+      `${this.details.name}`,
+      3);
     this.goToProject.emit(projectId);
   }
 

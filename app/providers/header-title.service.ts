@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Location } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
+/* Constants */
 import { MENUS } from '../shared/constants/menus';
+/* Services */
+import { GoogleAnalyticsService } from './googleAnalytics.service';
 
 @Injectable()
 export class HeaderTitleService {
@@ -10,7 +13,8 @@ export class HeaderTitleService {
   
   constructor(private titleService: Title,
               private location: Location,
-              private router: Router) { }
+              private router: Router,
+              private googleAnalyticsService: GoogleAnalyticsService) { }
   
   /**
    * Use the value passed as title for browser tab
@@ -78,6 +82,8 @@ export class HeaderTitleService {
       let strRemains = path.slice(2);
       this.headerTitle = firstChar + strRemains || 'Home';
     }
+    
+    this.googleAnalyticsService.captureRouterEvent(this.headerTitle);
   }
   
 }

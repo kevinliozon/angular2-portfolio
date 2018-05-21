@@ -13,6 +13,7 @@ import { ResolveByIdService } from './resolve-by-id.service';
 import { CookieService } from './cookie.service';
 import { HeaderTitleService } from './header-title.service';
 import { RouteScrollTopService } from './route-scrolltop.service';
+import { GoogleAnalyticsService } from './googleAnalytics.service';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { RouteScrollTopService } from './route-scrolltop.service';
     ResolveByIdService,
     CookieService,
     HeaderTitleService,
-    RouteScrollTopService
+    RouteScrollTopService,
+    GoogleAnalyticsService
   ]
 })
 

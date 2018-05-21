@@ -8,7 +8,8 @@ import { RouteScrollTopService } from './providers/route-scrolltop.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private scrollTopService: RouteScrollTopService) {  }
+  constructor(private scrollTopService: RouteScrollTopService) {
+  }
   
   ngOnInit() {
     this.scrollTopService.scrollTopNav();

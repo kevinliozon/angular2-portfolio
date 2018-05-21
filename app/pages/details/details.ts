@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ModalService } from '../../providers/modal.service';
 import { ResolveByIdService } from '../../providers/resolve-by-id.service';
 import { HeaderTitleService } from '../../providers/header-title.service';
+import { GoogleAnalyticsService } from '../../providers/googleAnalytics.service';
 //animations
 import { routeTrans } from '../../shared/components/animations/route-transition';
 
@@ -28,7 +29,8 @@ export class DetailsPage implements OnInit{
   constructor(private route: ActivatedRoute,
               private modalService: ModalService,
               private resolveByIdService: ResolveByIdService,
-              private headerTitleService: HeaderTitleService) {
+              private headerTitleService: HeaderTitleService,
+              private googleAnalyticsService: GoogleAnalyticsService) {
     // We get the id and the type from the selected item
     this.sub = this.route.params.subscribe((params) => {
       this.id = params['id'];
@@ -74,10 +76,15 @@ export class DetailsPage implements OnInit{
    *
    * @param projectId
    */
-  public updateContent(projectId: string): void {
+  public updateContent(project: any): void {
     this.id = projectId;
     this.type = 'project';
-    this.details = this.resolveByIdService.resolveById(projectId, 'project');
+    this.googleAnalyticsService.captureCustomEvent(
+      'navigation',
+      `Update details page to ${this.type}`,
+      `${this.project.name}`,
+      4);
+    this.details = this.resolveByIdService.resolveById(project.id, 'project');
     document.getElementById('anchor-top').scrollIntoView({block: 'start', behavior: 'smooth'});
   }
 
