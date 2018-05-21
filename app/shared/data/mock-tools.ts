@@ -1,4 +1,4 @@
-import { Tool } from '../../models/tool';
+import { Tool } from '../../interfaces/tool.interface';
 
 
 export let TOOLS: Tool[] = [{

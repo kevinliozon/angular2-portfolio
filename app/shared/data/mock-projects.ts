@@ -1,4 +1,4 @@
-import { Project } from '../../models/project';
+import { Project } from '../../interfaces/project.interface';
 
 export let PROJECTS: Project[] = [{
   'id': '#project16',

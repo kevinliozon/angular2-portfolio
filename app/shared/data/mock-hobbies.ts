@@ -1,4 +1,4 @@
-import { Hobby } from '../../models/hobby';
+import { Hobby } from '../../interfaces/hobby.interface';
 
 
 export let HOBBIES: Hobby[] = [

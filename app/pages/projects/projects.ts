@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //projects
-import { Project } from '../../models/project';
+import { Project } from '../../interfaces/project.interface';
 import { ProjectService } from '../../providers/project.service';
 //animations
 import { routeTrans } from '../../shared/components/animations/route-transition';

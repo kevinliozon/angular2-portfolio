@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 //projects
-import { Project } from '../../models/project';
+import { Project } from '../../interfaces/project.interface';
 import { ProjectService } from '../../providers/project.service'
 //skills
-import { Skill } from '../../models/skill';
+import { Skill } from '../../interfaces/skill.interface';
 import { SkillService } from '../../providers/skill.service'
 //constants
 import { PROFILE } from '../../shared/constants/profile';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // Skills
-import { Skill } from '../../models/skill';
+import { Skill } from '../../interfaces/skill.interface';
 import { SkillService } from '../../providers/skill.service';
 //services
 import { ModalService } from '../../providers/modal.service';

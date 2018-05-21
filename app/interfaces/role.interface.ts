@@ -1,6 +1,6 @@
-import { Date } from './shared/date';
-import { Tech } from './shared/tech';
-import { Project } from './shared/project';
+import { Date } from './shared/date.interface';
+import { Tech } from './shared/tech.interface';
+import { Project } from './shared/project.interface';
 
 export interface Company {
   name: string

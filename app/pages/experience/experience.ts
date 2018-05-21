@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //roles
-import { Role } from '../../models/role';
+import { Role } from '../../interfaces/role.interface';
 import { RoleService } from '../../providers/role.service';
 //animations
 import { routeTrans } from '../../shared/components/animations/route-transition';

@@ -1,6 +1,6 @@
-import { Date } from './shared/date';
-import { Image } from './shared/image';
-import { Project } from './shared/project';
+import { Date } from './shared/date.interface';
+import { Image } from './shared/image.interface';
+import { Project } from './shared/project.interface';
 
 export interface Subject {
   name: string

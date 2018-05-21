@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 /* Models */
-import { Diploma } from '../../models/diploma';
-import { CodeSchoolCertif } from '../../models/codeschool-certif';
-import { CodeSchoolProfile } from '../../models/codeschool-profile';
+import { Diploma } from '../../interfaces/diploma.interface';
+import { CodeSchoolCertif } from '../../interfaces/codeschool-certif.interface';
+import { CodeSchoolProfile } from '../../interfaces/codeschool-profile.interface';
 /* Services */
 import { DiplomaService } from '../../providers/diploma.service';
 import { CodeschoolService } from '../../providers/codeschool.service';

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 // skills
-import { Skill } from '../../models/skill';
+import { Skill } from '../../interfaces/skill.interface';
 import { SkillService } from '../../providers/skill.service';
 //tools
-import { Tool } from '../../models/tool';
+import { Tool } from '../../interfaces/tool.interface';
 import { ToolService } from '../../providers/tool.service';
 //hobbies
-import { Hobby } from '../../models/hobby';
+import { Hobby } from '../../interfaces/hobby.interface';
 import { HobbyService } from '../../providers/hobby.service'
 //constants
 import { PROFILE } from '../../shared/constants/profile';

@@ -1,7 +1,7 @@
-import { Date } from './shared/date';
-import { Image } from './shared/image';
-import { Tech } from './shared/tech';
-import { Resource } from "./shared/resource";
+import { Date } from './shared/date.interface';
+import { Image } from './shared/image.interface';
+import { Tech } from './shared/tech.interface';
+import { Resource } from "./shared/resource.interface";
 
 export interface Company {
   name: string
