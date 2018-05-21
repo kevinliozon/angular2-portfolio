@@ -8,7 +8,6 @@ import { PipesModule } from './pipes/pipes.module';
 // Components
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DetailsComponent } from './components/details/details.component';
 import { DetailsModalComponent } from './components/details-modal/details-modal.component';
 import { PreviewComponent } from './components/preview/preview.component';
 import { CardComponent } from './components/card/card.component';
@@ -27,7 +26,6 @@ import { ListPreviewComponent } from './components/list-preview/list-preview.com
     declarations: [
       HeaderComponent,
       FooterComponent,
-      DetailsComponent,
       DetailsModalComponent,
       GalleryModalComponent,
       PreviewComponent,
@@ -39,7 +37,6 @@ import { ListPreviewComponent } from './components/list-preview/list-preview.com
     exports: [
       HeaderComponent,
       FooterComponent,
-      DetailsComponent,
       DetailsModalComponent,
       GalleryModalComponent,
       PreviewComponent,

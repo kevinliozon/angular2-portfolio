@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 // Services
-import { ModalService } from "../../../providers/modal.service";
-import { ResolveByIdService } from "../../../providers/resolve-by-id.service";
+import { ModalService } from '../../providers/modal.service';
+import { ResolveByIdService } from '../../providers/resolve-by-id.service';
 //animations
-import { routeTrans } from '../../components/animations/route-transition';
+import { routeTrans } from '../../shared/components/animations/route-transition';
 
 @Component({
   moduleId: module.id.replace("/dist/app/", "/app/"),
   selector: 'my-details',
-  templateUrl: 'details.component.html',
+  templateUrl: 'details.html',
   animations: [routeTrans],
   host: { '[@routeTrans]': 'true' } // attach the fade in animation to the host (root) element of this component
 })
 
-export class DetailsComponent implements OnInit{
+export class DetailsPage implements OnInit{
 
   private sub: any;
   public id: string;

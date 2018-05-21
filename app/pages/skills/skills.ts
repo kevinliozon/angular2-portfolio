@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Skill } from '../../models/skill';
 import { SkillService } from '../../providers/skill.service';
 //services
-import { ModalService } from "../../providers/modal.service";
+import { ModalService } from '../../providers/modal.service';
 //animations
 import { routeTrans } from '../../shared/components/animations/route-transition';
 

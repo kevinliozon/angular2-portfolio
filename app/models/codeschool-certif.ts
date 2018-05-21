@@ -1,5 +1,5 @@
 export interface CodeSchoolCertif {
-  title: string;
-  url: string;
-  badge: string;
+  title: string
+  url: string
+  badge: string
 }

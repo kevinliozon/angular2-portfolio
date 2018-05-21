@@ -20,6 +20,7 @@ import { NotFoundPage } from './pages/not-found/not-found';
 import { CookiePolicyPage } from './pages/cookie-policy/cookie-policy';
 import { SitemapPage } from './pages/sitemap/sitemap';
 import { TermsConditionsPage } from './pages/terms-conditions/terms-conditions';
+import { DetailsPage } from './pages/details/details';
 //Components
 import { ProfileCsComponent } from './pages/education/profile-cs/profile-cs.component';
 import { ProfileMainComponent } from './pages/home/profile-main/profile-main.component';
@@ -47,6 +48,7 @@ import { ProfileMainComponent } from './pages/home/profile-main/profile-main.com
     CookiePolicyPage,
     SitemapPage,
     TermsConditionsPage,
+    DetailsPage,
     ProfileCsComponent,
     ProfileMainComponent,
   ],
