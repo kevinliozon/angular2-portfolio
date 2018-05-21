@@ -30,13 +30,6 @@ export class ProfileMainComponent implements OnInit {
     href: '',
     class: 'btn btn-primary',
     fragment: null
-  },
-  {
-    name: 'homeBtn3',
-    route: './',
-    href: '',
-    class: 'btn btn-primary',
-    fragment: 'home-contact'
   }];
 
   constructor(private cookieService: CookieService) { }
@@ -44,7 +37,7 @@ export class ProfileMainComponent implements OnInit {
   public ngOnInit() {
     let today = Date.now();
     let birthday = new Date('1991-03-11');
-    let ageDate = new Date(today - birthday.getTime())
+    let ageDate = new Date(today - birthday.getTime());
     this.age = Math.abs(ageDate.getUTCFullYear() - 1970);
   }
   

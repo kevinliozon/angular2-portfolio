@@ -12,8 +12,8 @@
   
           <figcaption class="details-headings">
             
-            <h2 *ngIf="!details.confidentiality">{{ details.name | translate }}</h2>
-            <h2 *ngIf="details.confidentiality">{{ details.confidentiality | translate }}</h2>
+            <h2 *ngIf="!isConfidential()">{{ details.name | translate }}</h2>
+            <h2 *ngIf="isConfidential()">{{ details.confidentiality | translate }}</h2>
             
             <h4>{{ details.category }}</h4>
             

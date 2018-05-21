@@ -5,7 +5,7 @@
     class="grid-list-cell"
     *ngFor="let object of objects"
     (mouseover)="focusItem(object)"
-    (click)="goTo(object.id)"
+    (click)="goTo(object)"
     [class.active]="focusedItemId === object.id">
 
     <div class="grid-list-icn">
