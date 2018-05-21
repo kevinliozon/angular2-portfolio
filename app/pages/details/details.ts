@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 // Services
 import { ModalService } from '../../providers/modal.service';
 import { ResolveByIdService } from '../../providers/resolve-by-id.service';
+import { HeaderTitleService } from '../../providers/header-title.service';
 //animations
 import { routeTrans } from '../../shared/components/animations/route-transition';
 
@@ -26,7 +27,8 @@ export class DetailsPage implements OnInit{
 
   constructor(private route: ActivatedRoute,
               private modalService: ModalService,
-              private resolveByIdService: ResolveByIdService) {
+              private resolveByIdService: ResolveByIdService,
+              private headerTitleService: HeaderTitleService) {
     // We get the id and the type from the selected item
     this.sub = this.route.params.subscribe((params) => {
       this.id = params['id'];
@@ -37,6 +39,7 @@ export class DetailsPage implements OnInit{
   ngOnInit() {
     // Compare the id passed from previous page with id of all the objects in the collection
     this.details = this.resolveByIdService.resolveById(this.id, this.type);
+    this.headerTitleService.setTitle('Details');
   }
 
   /**

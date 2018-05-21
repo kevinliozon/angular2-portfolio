@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private headerTitleService: HeaderTitleService,
               private _translate: TranslateService,
-              private cookieService: CookieService) { }
+              private cookieService: CookieService,) { }
 
   ngOnInit() {
     // standing data
@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
       { display: 'Français', value: 'fra', flag: 'assets/img/svg/flags/fr.svg' }
     ];
     this.sessionLanguage();
+    this.headerTitleService.setHeaderTitleOnReturn();
     this.headerTitleService.setHeaderTitleOnRefresh();
   }
 
@@ -81,9 +82,8 @@ export class HeaderComponent implements OnInit {
    * @returns {string}
    */
   public setTitle(newTitle: string): string {
-    // animation trigger
-    this.pageHasChanged = !this.pageHasChanged;
-    setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // duration
+    this.pageHasChanged = !this.pageHasChanged; // make disappear previous title
+    setTimeout(() => this.pageHasChanged = !this.pageHasChanged, 500); // make appear new title with delay
     
     return this.headerTitleService.setTitle(newTitle); // dynamic tab title
   }

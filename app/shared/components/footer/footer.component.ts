@@ -30,9 +30,7 @@ export class FooterComponent {
    */
   public setTitle(newTitle: string): void {
     this.headerTitleService.setTitle(newTitle); // dynamic tab title
-    
-    // animation trigger
-    document.getElementById("anchor-top").scrollIntoView({block: "start", behavior: "smooth"});
+    document.getElementById('anchor-top').scrollIntoView({block: 'start', behavior: 'smooth'});
   }
   
   /**

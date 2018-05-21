@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Location } from '@angular/common';
+import { NavigationEnd, Router } from "@angular/router";
 import { MENUS } from '../shared/constants/menus';
 
 @Injectable()
@@ -8,7 +9,8 @@ export class HeaderTitleService {
   public headerTitle: string;
   
   constructor(private titleService: Title,
-              private location: Location) { }
+              private location: Location,
+              private router: Router) { }
   
   /**
    * Use the value passed as title for browser tab
@@ -33,10 +35,33 @@ export class HeaderTitleService {
   }
   
   /**
-   * On refresh, retrieve the file's name and returns it with uppercase for first letter
-   * If name is 'about' it becomes 'About Me', if 'details' it returns 'Details'
+   * On refresh, changes title in header
    */
   public setHeaderTitleOnRefresh(): void {
+    this.setHeaderTitle();
+  }
+  
+  /**
+   * On return, changes title in header
+   */
+  public setHeaderTitleOnReturn(): void {
+    this.router.events
+      .filter(event => event instanceof NavigationEnd)
+      .subscribe(e => {
+        this.setHeaderTitle();
+        this.previousUrl = e.url;
+      });
+  }
+  
+  /**
+   * Retrieves the file's name and replaces it with uppercase for first letter
+   * If 'about' -> 'About Me'
+   * If 'details' -> 'Details'
+   * If 'cookie-policy' -> 'Cookies Policy'
+   * If 'terms-conditions' -> 'Terms & Conditions'
+   *
+   */
+  private setHeaderTitle(): void {
     let path = <any>this.location.path(); // The url
     
     // this.location.getTitle() method is not handled properly
