@@ -7,3 +7,5 @@ dist
 typings
 npm-debug.log
 .idea
+.idea/workspace.xml
+.idea/tasks.xml

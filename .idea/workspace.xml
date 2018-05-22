@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42487e8b-2c3a-42d8-83f0-61d26a59a424" name="Default" comment="" />
+    <list default="true" id="42487e8b-2c3a-42d8-83f0-61d26a59a424" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/shared/data/mock-projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/shared/data/mock-projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/shared/data/mock-roles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/shared/data/mock-roles.ts" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,8 +31,8 @@
       <file leaf-file-name="lang-fra.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/translate/lang-fra.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -35,17 +40,35 @@
       <file leaf-file-name="mock-skills.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/shared/data/mock-skills.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="293">
+              <caret line="280" column="59" lean-forward="true" selection-start-line="280" selection-start-column="59" selection-end-line="280" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mock-projects.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mock-projects.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/shared/data/mock-projects.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="576" column="5" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
+            <state relative-caret-position="231">
+              <caret line="254" column="5" selection-start-line="254" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-roles.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/data/mock-roles.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -53,8 +76,8 @@
       <file leaf-file-name="mock-diplomas.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/shared/data/mock-diplomas.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="2" />
+            <state relative-caret-position="416">
+              <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -79,10 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>git</find>
-      <find>&quot;</find>
-      <find>menu</find>
-      <find>settitle</find>
       <find>Location</find>
       <find>od</find>
       <find>title</find>
@@ -109,6 +128,10 @@
       <find>aws</find>
       <find>nng</find>
       <find>com/iut</find>
+      <find>word</find>
+      <find>jquer</find>
+      <find>jquery</find>
+      <find>wordpress.svg</find>
     </findStrings>
     <replaceStrings>
       <replace>base-indent</replace>
@@ -126,6 +149,8 @@
       <replace>'alt': 'Image of '</replace>
       <replace>'url': '../../../assets/docs/'</replace>
       <replace>'</replace>
+      <replace>wp.svg</replace>
+      <replace>jQuery</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/theme/_fonts.scss" />
         <option value="$PROJECT_DIR$/app/cookie-policy/cookie-policy.scss" />
         <option value="$PROJECT_DIR$/app/cookie-policy/cookie-policy.ts" />
         <option value="$PROJECT_DIR$/app/sitemap/sitemap.ts" />
@@ -159,7 +183,6 @@
         <option value="$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.scss" />
         <option value="$PROJECT_DIR$/app/shared/components/animations/route-transition.ts" />
         <option value="$PROJECT_DIR$/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/app/shared/data/mock-roles.ts" />
         <option value="$PROJECT_DIR$/app/models/shared/confidentiality.ts" />
         <option value="$PROJECT_DIR$/app/models/project.ts" />
         <option value="$PROJECT_DIR$/app/shared/components/preview/preview.component.html" />
@@ -185,6 +208,8 @@
         <option value="$PROJECT_DIR$/app/shared/data/mock-skills.ts" />
         <option value="$PROJECT_DIR$/app/shared/data/mock-diplomas.ts" />
         <option value="$PROJECT_DIR$/app/shared/data/mock-projects.ts" />
+        <option value="$PROJECT_DIR$/app/shared/data/mock-roles.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -237,12 +262,6 @@
               <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -310,22 +329,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
               <item name="pipes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="translate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -451,25 +454,26 @@
       <workItem from="1526969844483" duration="26000" />
       <workItem from="1526970929109" duration="351000" />
       <workItem from="1526974845541" duration="1132000" />
-      <workItem from="1527015416171" duration="2234000" />
+      <workItem from="1527015416171" duration="4237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396590000" />
+    <option name="totallyTimeSpent" value="398593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50625" side_tool="true" weight="0.22733423" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49375" visible="true" weight="0.2571042" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49375" visible="true" weight="0.2571042" />
       <window_info id="Gulp" order="4" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19513889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19513889" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -500,7 +504,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/terms-conditions/terms-conditions.ts" />
     <entry file="file://$PROJECT_DIR$/app/shared/components/details/details.component.ts" />
     <entry file="file://$PROJECT_DIR$/app/experience/experience.component.ts" />
     <entry file="file://$PROJECT_DIR$/app/experience/experience.html" />
@@ -578,13 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-roles.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4122">
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -679,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/translate/lang-fra.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -728,22 +724,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/data/mock-skills.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="293">
+          <caret line="280" column="59" lean-forward="true" selection-start-line="280" selection-start-column="59" selection-end-line="280" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/data/mock-diplomas.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="2" />
+        <state relative-caret-position="416">
+          <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/shared/data/mock-projects.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="576" column="5" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
+        <state relative-caret-position="231">
+          <caret line="254" column="5" selection-start-line="254" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-roles.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

@@ -41,12 +41,48 @@ export let ROLES: Role[] = [{
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     },
     {
+      'name': 'Symfony',
+      'logo': '../../../assets/img/svg/skills/symfony.svg'
+    },
+    {
+      'name': 'Wordpress',
+      'logo': '../../../assets/img/svg/skills/wp.svg'
+    },
+    {
       'name': 'Ionic Creator',
       'logo': '../../../assets/img/svg/skills/ioniccreator.svg'
     },
     {
+      'name': 'Ionic Pro',
+      'logo': '../../../assets/img/svg/skills/ioniccloud.svg'
+    },
+    {
       'name': 'Draw.io',
       'logo': '../../../assets/img/svg/skills/drawio.svg'
+    },
+    {
+      'name': 'D3.js',
+      'logo': '../../../assets/img/svg/skills/d3.svg'
+    },
+    {
+      'name': 'Google Developers',
+      'logo': '../../../assets/img/svg/skills/googledev.svg'
+    },
+    {
+      'name': 'Gulp',
+      'logo': '../../../assets/img/svg/skills/gulp.svg'
+    },
+    {
+      'name': 'jQuery',
+      'logo': '../../../assets/img/svg/skills/jquery.svg'
+    },
+    {
+      'name': 'Sketch',
+      'logo': '../../../assets/img/svg/skills/sketch.svg'
+    },
+    {
+      'name': 'AWS',
+      'logo': '../../../assets/img/svg/skills/aws.svg'
     }
   ],
   'dates': {
@@ -149,7 +185,7 @@ export let ROLES: Role[] = [{
       'logo': '../../../assets/img/svg/skills/foundation.svg'
     },
     {
-      'name': 'Jquery',
+      'name': 'jQuery',
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
@@ -192,14 +228,14 @@ export let ROLES: Role[] = [{
     },
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Bootstrap',
       'logo': '../../../assets/img/svg/skills/bootstrap.svg'
     },
     {
-      'name': 'Jquery',
+      'name': 'jQuery',
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
@@ -242,7 +278,7 @@ export let ROLES: Role[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',

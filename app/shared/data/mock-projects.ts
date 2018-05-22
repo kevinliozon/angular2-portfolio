@@ -66,7 +66,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'PHP',
@@ -122,7 +122,7 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/bootstrap.svg'
     },
     {
-      'name': 'Jquery',
+      'name': 'jQuery',
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
@@ -132,6 +132,14 @@ export let PROJECTS: Project[] = [{
     {
       'name': 'Gulp',
       'logo': '../../../assets/img/svg/skills/gulp.svg'
+    },
+    {
+      'name': 'D3.js',
+      'logo': '../../../assets/img/svg/skills/d3.svg'
+    },
+    {
+      'name': 'Google Developers',
+      'logo': '../../../assets/img/svg/skills/googledev.svg'
     }
   ],
   'gallery': null,
@@ -165,28 +173,26 @@ export let PROJECTS: Project[] = [{
     'featured': true
   },
   'desc': '#projectDescMsa',
-  'techs': [
-      {
-          'name': 'Symfony',
-          'logo': '../../../assets/img/svg/skills/symfony.svg'
-      },
-      {
-          'name': 'Bootstrap',
-          'logo': '../../../assets/img/svg/skills/bootstrap.svg'
-      },
-      {
-          'name': 'Jquery',
-          'logo': '../../../assets/img/svg/skills/jquery.svg'
-      },
-      {
-          'name': 'SASS',
-          'logo': '../../../assets/img/svg/skills/sass.svg'
-      },
-      {
-          'name': 'Gulp',
-          'logo': '../../../assets/img/svg/skills/gulp.svg'
-      }
-  ],
+  'techs': [{
+    'name': 'Symfony',
+    'logo': '../../../assets/img/svg/skills/symfony.svg'
+  },
+  {
+    'name': 'Bootstrap',
+    'logo': '../../../assets/img/svg/skills/bootstrap.svg'
+  },
+  {
+    'name': 'jQuery',
+    'logo': '../../../assets/img/svg/skills/jquery.svg'
+  },
+  {
+    'name': 'SASS',
+    'logo': '../../../assets/img/svg/skills/sass.svg'
+  },
+  {
+    'name': 'Gulp',
+    'logo': '../../../assets/img/svg/skills/gulp.svg'
+  }],
   'gallery': null,
   'prototypes': null,
   'docs': null,
@@ -236,8 +242,8 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/illustrator.svg'
     },
     {
-      'name': 'Photoshop',
-      'logo': '../../../assets/img/svg/skills/photoshop.svg'
+      'name': 'Sketch',
+      'logo': '../../../assets/img/svg/skills/sketch.svg'
     },
     {
       'name': 'Axure RP',
@@ -247,6 +253,10 @@ export let PROJECTS: Project[] = [{
       'name': 'Cordova',
       'logo': '../../../assets/img/svg/skills/cordova.svg'
     },
+    {
+      'name': 'Draw.io',
+      'logo': '../../../assets/img/svg/skills/drawio.svg'
+    }
   ],
   'gallery': null,
   'prototypes': null,
@@ -315,6 +325,10 @@ export let PROJECTS: Project[] = [{
     {
       'name': 'Ionic Creator',
       'logo': '../../../assets/img/svg/skills/ioniccreator.svg'
+    },
+    {
+      'name': 'Ionic Pro',
+      'logo': '../../../assets/img/svg/skills/ioniccloud.svg'
     },
     {
       'name': 'Draw.io',
@@ -411,7 +425,7 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/foundation.svg'
     },
     {
-      'name': 'Jquery',
+      'name': 'jQuery',
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
@@ -494,7 +508,7 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/bootstrap.svg'
     },
     {
-      'name': 'Jquery',
+      'name': 'jQuery',
       'logo': '../../../assets/img/svg/skills/jquery.svg'
     },
     {
@@ -713,7 +727,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',
@@ -728,8 +742,8 @@ export let PROJECTS: Project[] = [{
       'logo': '../../../assets/img/svg/skills/axurerp.svg'
     },
     {
-      'name': 'CSS',
-      'logo': '../../../assets/img/svg/skills/css.svg'
+      'name': 'Sass',
+      'logo': '../../../assets/img/svg/skills/sass.svg'
     }
   ],
   'gallery': [{
@@ -786,7 +800,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',
@@ -910,7 +924,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',
@@ -978,7 +992,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',
@@ -1059,7 +1073,7 @@ export let PROJECTS: Project[] = [{
   'techs': [
     {
       'name': 'Wordpress',
-      'logo': '../../../assets/img/svg/skills/wordpress.svg'
+      'logo': '../../../assets/img/svg/skills/wp.svg'
     },
     {
       'name': 'Illustrator',
