@@ -302,6 +302,8 @@ export const LANG_FRA_TRANS = {
   '#skillD3': `Une librairies Javascript permettant d'afficher des données tiers sous plusieurs formats graphiques
               (camemberts, graphs...). J'ai dû apprendre à m'en servir pour pouvoir utiliser la librairie dc.js qui
               repose sur les librairie d3.js et crossfilters.js.`,
+  '#skillGdev': `Éventail d'API et d'outils mis à disposition par Google. J'ai surtout été amené à utiliser Google
+                Analytics/Charts/Fonts dans mes projets.`,
 
 
   /*** DIPLOMAS ***/

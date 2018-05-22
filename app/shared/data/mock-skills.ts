@@ -2,7 +2,7 @@ import { Skill } from '../../interfaces/skill.interface';
 
 
 export let SKILLS: Skill[] = [{
-  'id': '#skill32',
+  'id': '#skill33',
   'name': 'D3.js',
   'featured': false,
   'frequent': false,
@@ -12,7 +12,7 @@ export let SKILLS: Skill[] = [{
   'url': 'https://d3js.org/'
 },
 {
-  'id': '#skill31',
+  'id': '#skill32',
   'name': 'Sketch',
   'featured': false,
   'frequent': false,
@@ -22,7 +22,7 @@ export let SKILLS: Skill[] = [{
   'url': 'https://www.sketchapp.com/'
 },
 {
-  'id': '#skill30',
+  'id': '#skill31',
   'name': 'Amazon Web Services',
   'featured': false,
   'frequent': false,
@@ -30,6 +30,16 @@ export let SKILLS: Skill[] = [{
   'desc': '#skillAws',
   'image': '../../../assets/img/svg/skills/aws.svg',
   'url': 'https://aws.amazon.com/'
+},
+{
+  'id': '#skill30',
+  'name': 'Google Developers',
+  'featured': false,
+  'frequent': false,
+  'category': 'Back-End',
+  'desc': '#skillGdev',
+  'image': '../../../assets/img/svg/skills/googledev.eps',
+  'url': 'https://developers.google.com/'
 },
 {
   'id': '#skill29',

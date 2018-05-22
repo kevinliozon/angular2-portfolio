@@ -282,9 +282,10 @@ export const LANG_ENG_TRANS = {
   '#skillSql': `One of the most popular database language I used alongside of PHP.`,
   '#skillSketch': `Simplified version of Illustrator using a great ecosystem of third party plugins.`,
   '#skillAws': `Cloud services platform I used to implement storage and analytics to an Ionic app.`,
-  '#skillIonCloud': `Cloud services platform offering a great library of services and test tools for Ionic apps.`,
+  '#skillIonCloud': `Cloud services platform offering a great library of API, services and test tools for Ionic apps.`,
   '#skillD3': `A javascript library offering many chart interfaces (pie/bar chart...) to display data. I especially
               learned it to use dc.js which combines d3.js and crossfilters.js.`,
+  '#skillGdev': `Suite of API & tools from Google. I mostly used Google Analytics/Charts/Fonts in previous projects`,
 
 
   /*** DIPLOMAS ***/
