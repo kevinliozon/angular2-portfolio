@@ -38,7 +38,7 @@ export let SKILLS: Skill[] = [{
   'frequent': false,
   'category': 'Back-End',
   'desc': '#skillGdev',
-  'image': '../../../assets/img/svg/skills/googledev.eps',
+  'image': '../../../assets/img/svg/skills/googledev.svg',
   'url': 'https://developers.google.com/'
 },
 {

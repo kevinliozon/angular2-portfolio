@@ -10,7 +10,7 @@ export let DIPLOMAS: Diploma[] = [{
     'alt': 'Image of Nielsen and Norman Group certification diploma',
   },
   {
-    'image': '../../../assets/img/thumb/diplomas/nng.png',
+    'image': '../../../assets/img/png/diplomas/nngcertif.png',
     'name': 'NNG Certification Diploma',
     'alt': 'Image of Nielsen and Norman Group certification diploma',
   }],
@@ -108,7 +108,7 @@ export let DIPLOMAS: Diploma[] = [{
     'id': '#project7',
     'name': 'Portfolio V2',
     'image': '../../../assets/img/svg/projects/portfoliov2.svg',
-    'url': 'https://kevinliozon.com/portfolio2'
+    'url': 'https://kevinliozon.com/projects/portfolio2'
   }]
 },
 {
@@ -147,7 +147,7 @@ export let DIPLOMAS: Diploma[] = [{
       'id': '#project1',
       'name': 'Portfolio V1',
       'image': '../../../assets/img/svg/projects/portfoliov1.svg',
-      'url': 'https://kevinliozon.com/portfolio1'
+      'url': 'https://kevinliozon.com/projects/portfolio1'
     }
   ]
 },
@@ -171,7 +171,7 @@ export let DIPLOMAS: Diploma[] = [{
     'name': 'Institute of Technology of Montpellier',
     'place': 'Montpellier',
     'country': 'France',
-    'image': '../../../assets/img/svg/education/um.svg',
+    'image': '../../../assets/img/svg/education/iutmtp.svg',
     'url': 'https://www.umontpellier.fr/'
   },
   'dates': {
@@ -181,8 +181,8 @@ export let DIPLOMAS: Diploma[] = [{
   'projects': [{
     'id': '#project0',
     'name': 'IUT Montpellier',
-    'image': '../../../assets/img/png/projects/iut_montpellier/iut_montpellier.png',
-    'url': 'https://kevinliozon.com/iut_montpellier'
+    'image': '../../../assets/img/svg/education/iutmtp.svg',
+    'url': 'https://kevinliozon.com/projects/iut_montpellier/Accueil.html'
   }]
 },
 {

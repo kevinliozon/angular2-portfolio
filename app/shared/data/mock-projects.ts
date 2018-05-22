@@ -687,7 +687,7 @@ export let PROJECTS: Project[] = [{
     'end': '2015-03-01'
   },
   'confidentiality': null,
-  'url': 'https://kevinliozon.com/portfolio2',
+  'url': 'https://kevinliozon.com/projects/portfolio2',
   'github': null
 },
 {
@@ -1220,25 +1220,25 @@ export let PROJECTS: Project[] = [{
     'end': '2015-03-01'
   },
   'confidentiality': null,
-  'url': 'https://kevinliozon.com/portfolio1',
+  'url': 'https://kevinliozon.com/projects/portfolio1',
   'github': null
 },
 {
   'id': '#project0',
   'name': 'IUT Montpellier',
-  'image': '../../../assets/img/png/projects/iut_montpellier/iut_montpellier.png',
+  'image': '../../../assets/img/svg/education/iutmtp.svg',
   'featured': false,
   'active': false,
   'category': 'Web App',
   'company': {
     'name': 'Institute of Technology of Montpellier',
-    'logo': '../../../assets/img/svg/education/um.svg',
+    'logo': '../../../assets/img/svg/education/iutmtp.svg',
     'url': 'http://iut-montpellier-sete.edu.umontpellier.fr/',
     'role': 'Full Stack Dev'
   },
   'client': {
     'name': 'Institute of Technology of Montpellier',
-    'logo': '../../../assets/img/svg/education/um.svg',
+    'logo': '../../../assets/img/svg/education/iutmtp.svg',
     'featured': false,
     'url': 'http://iut-montpellier-sete.edu.umontpellier.fr/'
   },
@@ -1285,6 +1285,6 @@ export let PROJECTS: Project[] = [{
     'end': '2015-03-01'
   },
   'confidentiality': null,
-  'url': 'https://kevinliozon.com/iut_montpellier/Accueil.html',
+  'url': 'https://kevinliozon.com/projects/iut_montpellier/Accueil.html',
   'github': null
 }];
