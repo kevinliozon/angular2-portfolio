@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42487e8b-2c3a-42d8-83f0-61d26a59a424" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lang-eng.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/translate/lang-eng.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lang-fra.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/translate/lang-fra.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-skills.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/data/mock-skills.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-266">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-projects.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/shared/data/mock-projects.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="576" column="5" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-diplomas.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/data/mock-diplomas.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-79">
+              <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mock-tools.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/shared/data/mock-tools.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>git</find>
+      <find>&quot;</find>
+      <find>menu</find>
+      <find>settitle</find>
+      <find>Location</find>
+      <find>od</find>
+      <find>title</find>
+      <find>categor</find>
+      <find>hce</find>
+      <find>digit</find>
+      <find>llo</find>
+      <find>featured:</find>
+      <find>'featured': true</find>
+      <find>ms</find>
+      <find>insurer</find>
+      <find>diplom</find>
+      <find>role</find>
+      <find>estat</find>
+      <find>indes</find>
+      <find>gulp</find>
+      <find>proje</find>
+      <find>live</find>
+      <find>select</find>
+      <find>jqu</find>
+      <find>see live</find>
+      <find>msamlin.png</find>
+      <find>png</find>
+      <find>aws</find>
+      <find>nng</find>
+      <find>com/iut</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>base-indent</replace>
+      <replace>big-indent</replace>
+      <replace>small-indent</replace>
+      <replace>header-height</replace>
+      <replace>toggle</replace>
+      <replace>btn-toggle</replace>
+      <replace>wrap-filters</replace>
+      <replace>center</replace>
+      <replace>category</replace>
+      <replace>Certification</replace>
+      <replace>gallery</replace>
+      <replace>'image': '../../../assets/img/png/projects/</replace>
+      <replace>'alt': 'Image of '</replace>
+      <replace>'url': '../../../assets/docs/'</replace>
+      <replace>'</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/theme/_fonts.scss" />
+        <option value="$PROJECT_DIR$/app/cookie-policy/cookie-policy.scss" />
+        <option value="$PROJECT_DIR$/app/cookie-policy/cookie-policy.ts" />
+        <option value="$PROJECT_DIR$/app/sitemap/sitemap.ts" />
+        <option value="$PROJECT_DIR$/app/providers/providers.module.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/header/header.component.html" />
+        <option value="$PROJECT_DIR$/app/shared/components/footer/footer.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/footer/footer.component.html" />
+        <option value="$PROJECT_DIR$/app/theme/_variables.scss" />
+        <option value="$PROJECT_DIR$/app/shared/components/cookie-banner/cookie-banner.component.scss" />
+        <option value="$PROJECT_DIR$/app/sitemap/sitemap.html" />
+        <option value="$PROJECT_DIR$/app/cookie-policy/cookie-policy.html" />
+        <option value="$PROJECT_DIR$/app/terms-conditions/terms-conditions.ts" />
+        <option value="$PROJECT_DIR$/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/app/shared/constants/menus.ts" />
+        <option value="$PROJECT_DIR$/app/terms-conditions/terms-conditions.html" />
+        <option value="$PROJECT_DIR$/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/app/education/education.html" />
+        <option value="$PROJECT_DIR$/app/shared/components/preview/preview.component.ts" />
+        <option value="$PROJECT_DIR$/app/education/education.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.scss" />
+        <option value="$PROJECT_DIR$/app/shared/components/animations/route-transition.ts" />
+        <option value="$PROJECT_DIR$/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/data/mock-roles.ts" />
+        <option value="$PROJECT_DIR$/app/models/shared/confidentiality.ts" />
+        <option value="$PROJECT_DIR$/app/models/project.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/preview/preview.component.html" />
+        <option value="$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.scss" />
+        <option value="$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.html" />
+        <option value="$PROJECT_DIR$/app/shared/constants/profile.ts" />
+        <option value="$PROJECT_DIR$/app/about/about.html" />
+        <option value="$PROJECT_DIR$/app/home/home.html" />
+        <option value="$PROJECT_DIR$/app/home/home.scss" />
+        <option value="$PROJECT_DIR$/app/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/app/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.html" />
+        <option value="$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/footer/footer.component.scss" />
+        <option value="$PROJECT_DIR$/app/shared/components/details/details.component.html" />
+        <option value="$PROJECT_DIR$/app/translate/lang-fra.ts" />
+        <option value="$PROJECT_DIR$/app/translate/lang-eng.ts" />
+        <option value="$PROJECT_DIR$/app/home/profile-main/profile-main.component.html" />
+        <option value="$PROJECT_DIR$/app/home/profile-main/profile-main.component.ts" />
+        <option value="$PROJECT_DIR$/app/providers/cookie.service.ts" />
+        <option value="$PROJECT_DIR$/app/shared/components/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/app/providers/header-title.service.ts" />
+        <option value="$PROJECT_DIR$/app/shared/data/mock-skills.ts" />
+        <option value="$PROJECT_DIR$/app/shared/data/mock-diplomas.ts" />
+        <option value="$PROJECT_DIR$/app/shared/data/mock-projects.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="card" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="details-modal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="preview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="pipes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="translate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angular2-portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angular2-portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models/shared" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/shared/components/list-preview" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/shared/components/cookie-banner" />
+      <recent name="$PROJECT_DIR$/app/shared/components/filters" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42487e8b-2c3a-42d8-83f0-61d26a59a424" name="Default" comment="" />
+      <created>1509762553058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509762553058</updated>
+      <workItem from="1509762555661" duration="581000" />
+      <workItem from="1509763145674" duration="102000" />
+      <workItem from="1509763255262" duration="1673000" />
+      <workItem from="1509764950825" duration="155000" />
+      <workItem from="1509765114383" duration="753000" />
+      <workItem from="1509766013270" duration="6242000" />
+      <workItem from="1509872978780" duration="12720000" />
+      <workItem from="1509975095014" duration="2302000" />
+      <workItem from="1509981449827" duration="2264000" />
+      <workItem from="1509987498306" duration="8796000" />
+      <workItem from="1510415918192" duration="4609000" />
+      <workItem from="1510456601451" duration="3789000" />
+      <workItem from="1510511606827" duration="2734000" />
+      <workItem from="1510692498000" duration="17881000" />
+      <workItem from="1510864033394" duration="12031000" />
+      <workItem from="1510949791399" duration="11169000" />
+      <workItem from="1511037459652" duration="10121000" />
+      <workItem from="1511338132872" duration="1480000" />
+      <workItem from="1511382134683" duration="4976000" />
+      <workItem from="1511468243295" duration="341000" />
+      <workItem from="1511510880848" duration="1562000" />
+      <workItem from="1511652857545" duration="7037000" />
+      <workItem from="1511721249180" duration="1628000" />
+      <workItem from="1511856932135" duration="670000" />
+      <workItem from="1511941492705" duration="2981000" />
+      <workItem from="1511985769989" duration="5082000" />
+      <workItem from="1514136125866" duration="605000" />
+      <workItem from="1517376603326" duration="2483000" />
+      <workItem from="1517387792677" duration="334000" />
+      <workItem from="1517446349250" duration="4269000" />
+      <workItem from="1517531192756" duration="14000" />
+      <workItem from="1517531240281" duration="627000" />
+      <workItem from="1517532275794" duration="4082000" />
+      <workItem from="1517683843795" duration="17616000" />
+      <workItem from="1517866686773" duration="6155000" />
+      <workItem from="1521010624148" duration="1002000" />
+      <workItem from="1521183201707" duration="3056000" />
+      <workItem from="1521278256816" duration="2129000" />
+      <workItem from="1521707544643" duration="982000" />
+      <workItem from="1522876010176" duration="1001000" />
+      <workItem from="1523091068278" duration="22531000" />
+      <workItem from="1523299912488" duration="5466000" />
+      <workItem from="1523732749563" duration="598000" />
+      <workItem from="1524001819257" duration="2527000" />
+      <workItem from="1524086924478" duration="1334000" />
+      <workItem from="1524390781690" duration="31000" />
+      <workItem from="1524404010360" duration="3664000" />
+      <workItem from="1524415465112" duration="3426000" />
+      <workItem from="1524480124095" duration="384000" />
+      <workItem from="1524555334707" duration="1550000" />
+      <workItem from="1524568872633" duration="4244000" />
+      <workItem from="1524645698922" duration="143000" />
+      <workItem from="1524656004760" duration="3406000" />
+      <workItem from="1524746192457" duration="8000" />
+      <workItem from="1524746238756" duration="3433000" />
+      <workItem from="1524816163498" duration="2617000" />
+      <workItem from="1524922133655" duration="1653000" />
+      <workItem from="1524933871334" duration="3166000" />
+      <workItem from="1525074283791" duration="267000" />
+      <workItem from="1525516233034" duration="22070000" />
+      <workItem from="1525599772388" duration="1511000" />
+      <workItem from="1525604838815" duration="33837000" />
+      <workItem from="1525808172894" duration="6448000" />
+      <workItem from="1525997413944" duration="3227000" />
+      <workItem from="1526129841303" duration="42494000" />
+      <workItem from="1526344282808" duration="8067000" />
+      <workItem from="1526508183678" duration="2888000" />
+      <workItem from="1526591263800" duration="3852000" />
+      <workItem from="1526670859612" duration="39971000" />
+      <workItem from="1526969844483" duration="26000" />
+      <workItem from="1526970929109" duration="351000" />
+      <workItem from="1526974845541" duration="1132000" />
+      <workItem from="1527015416171" duration="2234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="396590000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50625" side_tool="true" weight="0.22733423" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49375" visible="true" weight="0.2571042" />
+      <window_info id="Gulp" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19513889" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/translate/lang-fra.ts</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/terms-conditions/terms-conditions.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/details/details.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/experience/experience.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/experience/experience.html" />
+    <entry file="file://$PROJECT_DIR$/app/education/education.html" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/education/education.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/animations/route-transition.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sitemap/sitemap.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/footer/footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="34" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/shared/image.ts" />
+    <entry file="file://$PROJECT_DIR$/app/models/shared/confidentiality.ts" />
+    <entry file="file://$PROJECT_DIR$/app/models/project.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/preview/preview.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/terms-conditions/terms-conditions.html" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/list-preview/list-preview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-roles.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4122">
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/card/card.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="86" lean-forward="true" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/preview/preview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-socials.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/theme/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/home.scss" />
+    <entry file="file://$PROJECT_DIR$/app/about/about.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/details-modal/details-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/footer/footer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/footer/footer.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/constants/profile.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/details/details.component.html" />
+    <entry file="file://$PROJECT_DIR$/app/home/home.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/home/home.html" />
+    <entry file="file://$PROJECT_DIR$/app/translate/lang-eng.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/constants/menus.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/translate/lang-fra.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about/about.html" />
+    <entry file="file://$PROJECT_DIR$/app/providers/cookie.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/components/header/header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/providers/header-title.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/profile-main/profile-main.component.html" />
+    <entry file="file://$PROJECT_DIR$/app/home/profile-main/profile-main.component.ts" />
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-tools.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/details/details.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#113#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-skills.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-diplomas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/shared/data/mock-projects.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="576" column="5" selection-start-line="576" selection-start-column="5" selection-end-line="576" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
