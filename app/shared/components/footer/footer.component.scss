@@ -3,7 +3,7 @@
   position: relative;
 
   .footer-social {
-    @include flex-layout(wrap, space-around, space-around, flex-start);
+    @include flex-layout(wrap, space-evenly, space-around, center);
     width: 75%;
     margin: auto;
     padding: $gap-big $gap-reg $gap-md;

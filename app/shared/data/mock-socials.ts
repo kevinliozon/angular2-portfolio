@@ -21,13 +21,13 @@ export let SOCIALS: Social[] = [{
   'image': '../../../assets/img/svg/education/codeschool.svg',
   'url': 'https://www.codeschool.com/users/2480786'
 },
-{
+/*{
   'id': '#social5',
   'name': 'Stack Share',
   'featured': true,
   'image': '../../../assets/img/svg/socials/stackshare.svg',
   'url': 'https://stackshare.io/kevinliozon'
-},
+},*/
 {
   'id': '#social4',
   'name': 'Stack Overflow',
@@ -49,10 +49,10 @@ export let SOCIALS: Social[] = [{
   'image': '../../../assets/img/svg/socials/gplus.svg',
   'url': 'https://plus.google.com/109841184709381994491'
 },
-{
+/*{
   'id': '#social1',
   'name': 'Facebook',
   'featured': false,
   'image': '../../../assets/img/svg/socials/fb.svg',
   'url': 'https://www.facebook.com/liozonkevin'
-}];
+}*/];

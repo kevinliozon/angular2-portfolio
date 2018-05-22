@@ -2,6 +2,46 @@ import { Skill } from '../../interfaces/skill.interface';
 
 
 export let SKILLS: Skill[] = [{
+  'id': '#skill32',
+  'name': 'D3.js',
+  'featured': false,
+  'frequent': false,
+  'category': 'Framework',
+  'desc': '#skillD3',
+  'image': '../../../assets/img/svg/skills/d3.svg',
+  'url': 'https://d3js.org/'
+},
+{
+  'id': '#skill31',
+  'name': 'Sketch',
+  'featured': false,
+  'frequent': false,
+  'category': 'Design',
+  'desc': '#skillSketch',
+  'image': '../../../assets/img/svg/skills/sketch.svg',
+  'url': 'https://www.sketchapp.com/'
+},
+{
+  'id': '#skill30',
+  'name': 'Amazon Web Services',
+  'featured': false,
+  'frequent': false,
+  'category': 'Back-End',
+  'desc': '#skillAws',
+  'image': '../../../assets/img/svg/skills/aws.svg',
+  'url': 'https://aws.amazon.com/'
+},
+{
+  'id': '#skill29',
+  'name': 'Ionic Pro',
+  'featured': false,
+  'frequent': false,
+  'category': 'Back-End',
+  'desc': '#skillIonCloud',
+  'image': '../../../assets/img/svg/skills/ioniccloud.svg',
+  'url': 'https://ionicframework.com/pro'
+},
+{
   'id': '#skill28',
   'name': 'Angular.js',
   'featured': true,
@@ -218,7 +258,7 @@ export let SKILLS: Skill[] = [{
   'frequent': true,
   'category': 'CMS',
   'desc': '#skillWp',
-  'image': '../../../assets/img/svg/skills/wordpress.svg',
+  'image': '../../../assets/img/svg/skills/wp.svg',
   'url': 'https://en.wikipedia.org/wiki/WordPress'
 },
 {

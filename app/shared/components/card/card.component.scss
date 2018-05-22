@@ -1,5 +1,6 @@
 .card-reg {
   @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
+  @include transition(all, 0.15s, ease, 0s);
   background: linear-gradient(to right, $dark 50%, transparent 50%) right bottom/200% 100%;
   border: 0;
   border-radius: 0;
@@ -8,7 +9,6 @@
   max-width: 300px;
   position: relative;
   transform-origin: left 0% 0; // for scaling from top to bottom
-  transition: 0.15s ease;
 
   &.active,
   &:focus {

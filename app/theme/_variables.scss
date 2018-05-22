@@ -89,7 +89,7 @@ $padding-sm: 1rem;
 }
 
 @mixin anim-dropdown($value) {
-  transform: scaleY($value);
+  @include transform(scaleY($value));
   opacity: $value;
 }
 
@@ -196,13 +196,13 @@ $padding-sm: 1rem;
 }
 
 %btn-filter {
+  @include transition(all, 0.4s, ease, 0s);
   border-radius: 0;
   background-color: $grey;
   color: $light;
-  transition: 0.4s;
 }
 
 %btn-filter-anim {
+  @include transform(scaleY(1.1));
   background-color: $primary;
-  transform: scaleY(1.1);
 }

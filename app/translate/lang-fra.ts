@@ -294,6 +294,14 @@ export const LANG_FRA_TRANS = {
   '#skillPhp': `Même si je suis intégrateur web, j'ai déjà été amené à utiliser ce langage à plusieurs reprises et cela
                 m'a servi quand j'ai eu à apprendre Typescript qui a une syntaxe similaire.`,
   '#skillSql': `Un des langages de base de données les plus populaire.`,
+  '#skillSketch': `Une version simplifée d'Illustrator exploitant une vaste librairie de plugins tiers.`,
+  '#skillAws': `Plate-forme de services cloud que j'ai utilisée pour intégrer des services de stockage de données et
+                d'analytics dans une application Ionic`,
+  '#skillIonCloud': `Plate-forme de services cloud offrant une librairie de services et d'outils de test pour
+                    applications Ionic.`,
+  '#skillD3': `Une librairies Javascript permettant d'afficher des données tiers sous plusieurs formats graphiques
+              (camemberts, graphs...). J'ai dû apprendre à m'en servir pour pouvoir utiliser la librairie dc.js qui
+              repose sur les librairie d3.js et crossfilters.js.`,
 
 
   /*** DIPLOMAS ***/

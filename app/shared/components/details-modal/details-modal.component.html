@@ -43,7 +43,7 @@
 
       <footer class="modal-footer btn-group--modal" *ngIf="details.url || details.github || type === 'project'">
         <!-- If a project -->
-        <a class="btn btn-primary" (click)="goTo(details.id)" *ngIf="type === 'project'" data-dismiss="modal">
+        <a class="btn btn-primary" (click)="goTo(details)" *ngIf="type === 'project'" data-dismiss="modal">
           {{ 'Learn More' | translate }}
         </a>
         <!-- If a skill -->

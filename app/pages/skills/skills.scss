@@ -28,10 +28,8 @@
   + .toggle-btn {
     background-color: $primary;
 
-    &::before {;
-      -ms-transform: translateX(26px);
-      -webkit-transform: translateX(26px);
-      transform: translateX(26px);
+    &::before {
+      @include transform(translateX(26px));
     }
   }
 }
@@ -39,18 +37,16 @@
 // The slider
 .toggle-btn {
   @include position(absolute, 0, 0, 0, 0);
+  @include transition(all, 0.4s, ease, 0s);
   background-color: $grey;
   cursor: pointer;
-  -webkit-transition: .4s;
-  transition: .4s;
 
   &::before {
     @include position(absolute, auto, auto, 4px, 4px);
     @include square(26px);
+    @include transition(all, 0.4s, ease, 0s);
     content: '';
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
   }
 }
 

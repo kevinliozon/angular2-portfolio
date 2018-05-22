@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 // Services
 import { ResolveByIdService } from './resolve-by-id.service';
-import { GoogleAnalyticsService } from './providers/googleAnalytics.service';
 
 @Injectable()
 export class ModalService {

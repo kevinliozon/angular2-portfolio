@@ -42,13 +42,13 @@ export class DetailsModalComponent {
    *
    * @param {string} projectId
    */
-  public goTo(projectId: string): void {
+  public goTo(project: any): void {
     this.googleAnalyticsService.captureCustomEvent(
       'navigation',
       `Navigate to details page for ${this.type}`,
-      `${this.details.name}`,
+      `${project.name}`,
       3);
-    this.goToProject.emit(projectId);
+    this.goToProject.emit(project);
   }
 
 }

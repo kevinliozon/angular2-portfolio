@@ -23,12 +23,12 @@ img {
 }
 
 .img-label {
+  @include transition(all, 0.4s, ease, 0s);
   font-size: $font-micro;
   font-weight: bold;
   margin: auto;
   opacity: 0;
   text-align: center;
-  transition: all 0.4s ease;
   width: calc(#{$img-big} + 15px);
 }
 
@@ -70,8 +70,8 @@ img {
 }
 
 .img-link {
+  @include transition(all, 0.4s, ease, 0s);
   cursor: pointer;
-  transition: all 0.4s ease;
 }
 
 .img--flip {

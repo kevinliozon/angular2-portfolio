@@ -74,15 +74,15 @@ export class DetailsPage implements OnInit{
   /**
    * Update the content of the details page by retrieving project Id from modal
    *
-   * @param projectId
+   * @param project
    */
   public updateContent(project: any): void {
-    this.id = projectId;
+    this.id = project.id;
     this.type = 'project';
     this.googleAnalyticsService.captureCustomEvent(
       'navigation',
       `Update details page to ${this.type}`,
-      `${this.project.name}`,
+      `${project.name}`,
       4);
     this.details = this.resolveByIdService.resolveById(project.id, 'project');
     document.getElementById('anchor-top').scrollIntoView({block: 'start', behavior: 'smooth'});
