@@ -1,0 +1,21 @@
+.wrap-preview {
+  position: fixed;
+  padding-left: $gap-big;
+  width: 40%;
+
+  h2 {
+    margin: 0px auto $gap-reg;
+  }
+
+  .img-float {
+    width: $img-md;
+  }
+
+  .img-label {
+    width: calc(#{$img-md} + 15px);
+  }
+
+  .header-sub {
+    margin: $gap-sm 0px;
+  }
+}

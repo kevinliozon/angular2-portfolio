@@ -1,0 +1,26 @@
+.modal-content {
+  border: 0px;
+  border-radius: 0px;
+
+  .modal-header {
+    background-color: $secondary;
+    border-bottom: 0px;
+
+    h3,
+    .close {
+      color: $light;
+      opacity: 1;
+    }
+  }
+
+  .btn-group--modal {
+    @extend .btn-group-line;
+    @include flex-layout(wrap, flex-end, stretch, stretch);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+    margin: 10%;
+  }
+}

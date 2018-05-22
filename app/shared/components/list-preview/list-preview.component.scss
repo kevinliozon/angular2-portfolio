@@ -1,0 +1,80 @@
+.grid-list {
+  border-top: 0.5px solid $grey;
+  cursor: pointer;
+  margin-bottom: 0;
+  min-height: 400px; // Prevent footer overlapping preview description when not enough item
+}
+
+.grid-list-cell {
+  @include flex-layout(nowrap, flex-start, stretch, center);
+  @include border(0px, 0.5px, 0.5px, 0px, $grey, 0px);
+  @include transition(all, 0.2s, ease-in, 0s);
+  background-color: $light-grey;
+  color: $grey;
+  padding: $gap-reg $gap-big $gap-reg $gap-reg;
+
+  h5 > .sub-label {
+    font-size: $font-small;
+    font-weight: normal;
+  }
+
+  &.active {
+    border-right: 0px;
+    background-color: $light;
+
+    h5 {
+      font-weight: bold;
+    }
+  }
+}
+
+.grid-list-icn {
+  .img-float {
+    @include square($img-md);
+  }
+}
+
+.grid-list-label {
+  padding-left: $gap-md;
+}
+
+.grid-list-arrows {
+  @include transition(all, 0.2s, ease-in, 0.2s);
+  opacity: 0;
+
+  &.active {
+    @include transform(translateX($gap-reg));
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-list-cell {
+    border-right: 0px;
+    flex-wrap: wrap;
+    padding-right: $gap-reg;
+
+    > .grid-list-icn,
+    > .grid-list-label {
+      width: 100%;
+    }
+
+    > .grid-list-label {
+      padding: $gap-md 0px 0px;
+      text-align: center;
+      white-space: normal;
+
+      * {
+        overflow: visible;
+      }
+
+      h5 > .sub-label {
+        display: block;
+      }
+    }
+
+    > .grid-list-arrows {
+      display: none;
+    }
+  }
+}

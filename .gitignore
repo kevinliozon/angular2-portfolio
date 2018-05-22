@@ -6,3 +6,4 @@ dist
 .tmp
 typings
 npm-debug.log
+.idea

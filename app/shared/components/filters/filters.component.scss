@@ -1,0 +1,74 @@
+.container-filters {
+  margin-bottom: $gap-md;
+}
+
+// Over xs
+.wrap-filters,
+.wrap-switch {
+  @extend %block-half-centred;
+  @include drop-shadow(false, 0px, 6px, 20px, 0px, $grey);
+
+  .btn {
+    @extend %btn-filter;
+
+    // Animation
+    &.selected, &:focus {
+      @extend %btn-filter-anim;
+    }
+  }
+}
+
+.wrap-filters {
+  min-width: 650px;
+}
+
+.btn-group--filters {
+  box-shadow: $grey;
+
+  // last filter has no border on its right
+  &:not(:last-child) {
+    border-right: 1px solid $light;
+  }
+
+  .btn {
+    @extend %btn-filter;
+
+    // Animation
+    &.selected, &:focus {
+      @extend %btn-filter-anim;
+    }
+  }
+}
+
+// Below xs
+.wrap-filters--alt {
+  text-align: center;
+
+  .btn {
+    @extend %btn-filter;
+    margin: 0 10px;
+
+    // Animation
+    &:hover {
+      @extend %btn-filter-anim;
+    }
+  }
+
+  .glyphicon {
+    font-size: $font-mega;
+  }
+}
+
+// Modal
+.modal-filters {
+  text-align: center;
+  margin-top: 50%;
+
+  .btn-group {
+    padding: 20px 0;
+
+    .btn {
+      font-size: $font-big;
+    }
+  }
+}

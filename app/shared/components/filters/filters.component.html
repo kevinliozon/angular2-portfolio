@@ -1,0 +1,45 @@
+<!-- Filter by category -->
+<section class="container-filters">
+    <!-- If res over xs -->
+    <div class="btn-group btn-group-justified wrap-filters hidden-xs">
+        <div class="btn-group btn-group--filters" *ngFor="let filter of filters; let i = index">
+            <!-- we need to double wrap btn-group for buttons -->
+            <button class="btn" (click)="onSelect(filter)" [class.selected]="isSelected(filters[i])">
+                {{ filter }}
+                <span *ngIf="filter === ''">All</span>
+            </button>
+        </div>
+    </div>
+    <!-- If res below xs -->
+    <div class="wrap-filters--alt visible-xs-block">
+        <!-- Reset -->
+        <button type="button" class="btn btn-default" (click)="onSelect('')">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <!-- Call Modal -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#filtersModal">
+            <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="filtersModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <section class="modal-content modal-filters">
+            <header class="modal-header" data-dismiss="modal">
+                <button type="button" class="close">&times;</button>
+                <h4 class="modal-title">Filter by category</h4>
+            </header>
+            <div class="btn-group btn-group--filters" *ngFor="let filter of filters; let i = index">
+                <button class="btn" (click)="onSelect(filter)" [class.selected]="isSelected(filters[i])">
+                    {{ filter }}
+                    <span *ngIf="filter === ''">All</span>
+                </button>
+            </div>
+        </section>
+
+    </div>
+</div>

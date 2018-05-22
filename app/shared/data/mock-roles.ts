@@ -1,4 +1,4 @@
-import { Role } from '../../models/role';
+import { Role } from '../../interfaces/role.interface';
 
 export let ROLES: Role[] = [{
   'id': '#role6',
@@ -55,12 +55,34 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
-      'id': '#project10',
-      'name': 'Lloyds Bank - Connect & Protect'
+      'id': '#project15',
+      'name': 'Surely Group',
+      'image': '../../../assets/img/svg/companies/surely.svg',
+      'url': null,
+    },
+    {
+      'id': '#project14',
+      'name': 'EIS Portal',
+      'image': '../../../assets/img/svg/companies/eis.svg',
+      'url': null,
+    },
+    {
+      'id': '#project13',
+      'name': 'MS Amlin',
+      'image': '../../../assets/img/svg/companies/msamlin.svg',
+      'url': null,
+    },
+    {
+      'id': '#project12',
+      'name': 'Douglas & Gordon (CRM)',
+      'image': '../../../assets/img/svg/projects/dng.svg',
+      'url': null,
     },
     {
       'id': '#project11',
-      'name': 'Douglas & Gordon (CRM)'
+      'name': 'Lloyd\'s Connect & Protect',
+      'image': '../../../assets/img/svg/projects/lloyds.svg',
+      'url': null,
     }
   ]
 },
@@ -99,8 +121,10 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
-      'id': '#project9',
-      'name': 'Doxy.me'
+      'id': '#project10',
+      'name': 'Doxy.me',
+      'image': '../../../assets/img/svg/companies/doxyme.svg',
+      'url': null,
     }
   ]
 },
@@ -143,8 +167,10 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
-      'id': '#project8',
+      'id': '#project9',
       'name': 'My Mini Factory',
+      'image': '../../../assets/img/svg/companies/mmf.svg',
+      'url': null,
     }
   ]
 },
@@ -195,8 +221,10 @@ export let ROLES: Role[] = [{
   },
   'projects': [
     {
-      'id': '#project7',
-      'name': 'iMakr'
+      'id': '#project8',
+      'name': 'iMakr',
+      'image': '../../../assets/img/svg/companies/imakr.svg',
+      'url': null,
     }
   ]
 },
@@ -236,21 +264,21 @@ export let ROLES: Role[] = [{
   'projects': [
     {
       'id': '#project2',
-      'name': 'Digitela'
+      'name': 'Digitela',
+      'image': '../../../assets/img/svg/companies/digitela.svg',
+      'url': 'http://www.digitela.fr/',
     },
     {
       'id': '#project3',
       'name': 'Apags',
-      'type': 'Web app',
-      'techs': 'Wordpress, Illustrator',
-      'url': 'http://www.ipags.fr/'
+      'image': '../../../assets/img/svg/projects/apags.svg',
+      'url': null,
     },
     {
       'id': '#project4',
       'name': 'HCE Group',
-      'type': 'Web app',
-      'techs': 'Wordpress, Illustrator',
-      'url': 'http://www.groupe-hce.com/'
+      'image': '../../../assets/img/png/projects/hce/hce.png',
+      'url': 'http://reseau-beaute.com/',
     }
   ]
 },
@@ -270,5 +298,5 @@ export let ROLES: Role[] = [{
     'start': '2012-06-01',
     'end': '2012-08-01'
   },
-  'projects': null
+  'projects': null,
 }];

@@ -2,500 +2,970 @@
   "user": {
     "username": "kevinliozon",
     "member_since": "2016-03-16T18:13:27.962Z",
-    "total_score": 163580,
-    "avatar": "http://gravatar.com/avatar/630062204d6b862c86dfdbc75c068e88.jpg?s=80\u0026r=pg"
+    "total_score": 263880,
+    "avatar": "http://gravatar.com/avatar/630062204d6b862c86dfdbc75c068e88.jpg?s=80&r=pg",
+    "organism": {
+      "name": "Codeschool",
+      "image": "../../../assets/img/svg/education/codeschool.svg",
+      "url": "https://www.codeschool.com/users/kevinliozon"
+    }
   },
   "courses": {
-    "completed": [{
-      "title": "Shaping Up With AngularJS",
-      "url": "http://www.codeschool.com/courses/shaping-up-with-angularjs",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png"
-    }, {
-      "title": "Git Real",
-      "url": "http://www.codeschool.com/courses/git-real",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png"
-    }, {
-      "title": "Accelerating Through Angular",
-      "url": "http://www.codeschool.com/courses/accelerating-through-angular",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png"
-    }, {
-      "title": "Blasting Off with Bootstrap",
-      "url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png"
-    }, {
-      "title": "ES2015: The Shape of JavaScript to Come",
-      "url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png"
-    }, {
-      "title": "Assembling Sass Part 2",
-      "url": "http://www.codeschool.com/courses/assembling-sass-part-2",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/177/completed-assembling-sass-part-2-f0396c24666f2e57291fcb591d5660e6.png"
-    }, {
-      "title": "Assembling Sass",
-      "url": "http://www.codeschool.com/courses/assembling-sass",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png"
-    }, {
-      "title": "Journey Into Mobile",
-      "url": "http://www.codeschool.com/courses/journey-into-mobile",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png"
-    }, {
-      "title": "CSS Cross-Country",
-      "url": "http://www.codeschool.com/courses/css-cross-country",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png"
-    }, {
-      "title": "Try Git",
-      "url": "http://www.codeschool.com/courses/try-git",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png"
-    }, {
-      "title": "jQuery: The Return Flight",
-      "url": "http://www.codeschool.com/courses/jquery-the-return-flight",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png"
-    }, {
-      "title": "Try jQuery",
-      "url": "http://www.codeschool.com/courses/try-jquery",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png"
-    }, {
-      "title": "JavaScript Road Trip Part 3",
-      "url": "http://www.codeschool.com/courses/javascript-road-trip-part-3",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png"
-    }, {
-      "title": "JavaScript Road Trip Part 2",
-      "url": "http://www.codeschool.com/courses/javascript-road-trip-part-2",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png"
-    }, {
-      "title": "JavaScript Road Trip Part 1",
-      "url": "http://www.codeschool.com/courses/javascript-road-trip-part-1",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png"
-    }],
-    "in_progress": [{
-      "title": "Git Real 2",
-      "url": "http://www.codeschool.com/courses/git-real-2",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/252/completed-git-real-2-70d7411574c89345143dd795086378c9.png"
-    }, {
-      "title": "Front-end Foundations",
-      "url": "http://www.codeschool.com/courses/front-end-foundations",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/448/course-complete-81fb30908f005de5c75e5376d041f05f.png"
-    }, {
-      "title": "App Evolution With Swift",
-      "url": "http://www.codeschool.com/courses/app-evolution-with-swift",
-      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/587/app-evolution-with-swift-b8f38def617f774e6f7cb4e3e845b146.png"
-    }]
+    "completed": [
+      {
+        "title": "Fundamentals of Design",
+        "url": "http://www.codeschool.com/courses/fundamentals-of-design",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/277/completed-fundamentals-of-design-b9f4f4d4ff73f8a9fdff2043a223404e.png"
+      },
+      {
+        "title": "Front-end Formations",
+        "url": "http://www.codeschool.com/courses/front-end-formations",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/315/completed-front-end-formations-165329e44a56cd6d401c0c60369d368e.png"
+      },
+      {
+        "title": "Front-end Foundations",
+        "url": "http://www.codeschool.com/courses/front-end-foundations",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/448/course-complete-81fb30908f005de5c75e5376d041f05f.png"
+      },
+      {
+        "title": "Close Encounters With PHP",
+        "url": "http://www.codeschool.com/courses/close-encounters-with-php",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/680/close-encounters-with-php-2537a20d039051c88403a2a8d937cc6c.png"
+      },
+      {
+        "title": "Try PHP",
+        "url": "http://www.codeschool.com/courses/try-php",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/679/try-php-749a67b4c361bb990b9a8606bfe19245.png"
+      },
+      {
+        "title": "Adventures in Web Animations",
+        "url": "http://www.codeschool.com/courses/adventures-in-web-animations",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/525/adventures-in-web-animations-ddb801dc0f6e1c033511311fa0eddece.png"
+      },
+      {
+        "title": "You, Me & SVG",
+        "url": "http://www.codeschool.com/courses/you-me-svg",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/618/you-me-svg-bafffdf6009ac4f5fd37d68e116f70d2.png"
+      },
+      {
+        "title": "Cracking the Case With Flexbox",
+        "url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/674/cracking-the-case-with-flexbox-bd5a2fab4f22076828152007da4ded45.png"
+      },
+      {
+        "title": "Breaking the Ice With Regular Expressions",
+        "url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/524/breaking-the-ice-with-regular-expressions-07f250b8acc97e47f862e00b1f5115b2.png"
+      },
+      {
+        "title": "JavaScript Best Practices",
+        "url": "http://www.codeschool.com/courses/javascript-best-practices",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/435/completed-javascript-best-practices-320e73d2694215bc24264e74a2f76528.png"
+      },
+      {
+        "title": "Shaping Up With AngularJS",
+        "url": "http://www.codeschool.com/courses/shaping-up-with-angularjs",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png"
+      },
+      {
+        "title": "Git Real",
+        "url": "http://www.codeschool.com/courses/git-real",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png"
+      },
+      {
+        "title": "Accelerating Through Angular",
+        "url": "http://www.codeschool.com/courses/accelerating-through-angular",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png"
+      },
+      {
+        "title": "Blasting Off with Bootstrap",
+        "url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png"
+      },
+      {
+        "title": "ES2015: The Shape of JavaScript to Come",
+        "url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png"
+      },
+      {
+        "title": "Assembling Sass Part 2",
+        "url": "http://www.codeschool.com/courses/assembling-sass-part-2",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/177/completed-assembling-sass-part-2-f0396c24666f2e57291fcb591d5660e6.png"
+      },
+      {
+        "title": "Assembling Sass",
+        "url": "http://www.codeschool.com/courses/assembling-sass",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png"
+      },
+      {
+        "title": "Journey Into Mobile",
+        "url": "http://www.codeschool.com/courses/journey-into-mobile",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png"
+      },
+      {
+        "title": "CSS Cross-Country",
+        "url": "http://www.codeschool.com/courses/css-cross-country",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png"
+      },
+      {
+        "title": "Try Git",
+        "url": "http://www.codeschool.com/courses/try-git",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png"
+      },
+      {
+        "title": "jQuery: The Return Flight",
+        "url": "http://www.codeschool.com/courses/jquery-the-return-flight",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png"
+      },
+      {
+        "title": "Try jQuery",
+        "url": "http://www.codeschool.com/courses/try-jquery",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png"
+      },
+      {
+        "title": "JavaScript Road Trip Part 3",
+        "url": "http://www.codeschool.com/courses/javascript-road-trip-part-3",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png"
+      },
+      {
+        "title": "JavaScript Road Trip Part 2",
+        "url": "http://www.codeschool.com/courses/javascript-road-trip-part-2",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png"
+      },
+      {
+        "title": "JavaScript Road Trip Part 1",
+        "url": "http://www.codeschool.com/courses/javascript-road-trip-part-1",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png"
+      }
+    ],
+    "in_progress": [
+      {
+        "title": "Try Python",
+        "url": "http://www.codeschool.com/courses/try-python",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/596/try-python-d2bdf771d5ce179c7b198432f349d481.png"
+      },
+      {
+        "title": "The Elements of Web Design",
+        "url": "http://www.codeschool.com/courses/the-elements-of-web-design",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/635/completed-the-elements-of-web-design-c6915faeadf0e4d230f10419b05eb3d7.png"
+      },
+      {
+        "title": "Unmasking HTML Emails",
+        "url": "http://www.codeschool.com/courses/unmasking-html-emails",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/505/course-complete-ff3bc01bb1609ae6d0d0c4057c9822d9.png"
+      },
+      {
+        "title": "Git Real 2",
+        "url": "http://www.codeschool.com/courses/git-real-2",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/252/completed-git-real-2-70d7411574c89345143dd795086378c9.png"
+      },
+      {
+        "title": "App Evolution With Swift",
+        "url": "http://www.codeschool.com/courses/app-evolution-with-swift",
+        "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/587/app-evolution-with-swift-b8f38def617f774e6f7cb4e3e845b146.png"
+      }
+    ]
   },
-  "badges": [{
-    "name": "Level 1 on App Evolution With Swift",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/588/level-1-on-app-evolution-with-swift-5abead6e17afa8a733e029e8bcfceef6.png",
-    "course_url": "http://www.codeschool.com/courses/app-evolution-with-swift"
-  }, {
-    "name": "Mobile Maven",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/584/mobile-maven-50fbe55af7a771048363d4ca774eb346.png",
-    "course_url": null
-  }, {
-    "name": "Completed Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }, {
-    "name": "Level 1 on Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/393/level-1-on-shaping-up-with-angularjs-2f5667cc62303ce2416d902fcf6c5ffc.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }, {
-    "name": "Level 5 on Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/397/level-5-on-shaping-up-with-angularjs-b17ca2086d841080f3456bb1284ecb60.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }, {
-    "name": "Level 4 on Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/396/level-4-on-shaping-up-with-angularjs-77764ec8afba15dfd9908531db51d784.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }, {
-    "name": "Adventurer",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/532/adventurer-2b3c43359d7f3f9962ddee6f44874b25.png",
-    "course_url": null
-  }, {
-    "name": "Level 3 on Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/395/level-3-on-shaping-up-with-angularjs-80d76a75bfe1e5fa60359ce1cea02ceb.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }, {
-    "name": "Completed Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 7 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/457/level-7-on-git-real-2f0bd90419daeb525867098ccb24350a.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 6 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/131/level-6-on-git-real-8c4a8570b4ff32ff6937c0361843829d.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 5 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/130/level-5-on-git-real-e3eb99951842d9a67515385ca4bb6e97.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 4 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/129/level-4-on-git-real-7d1b8286719e6d2d9808015690490824.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 3 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/128/level-3-on-git-real-27b162952118559cd3f033adfd14e1bb.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 5 on Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/644/level-5-on-accelerating-through-angular-3ef2eee6f806d07ffe0749f0bc866547.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 4 on Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/643/level-4-on-accelerating-through-angular-7a63c07139596b7acd896903cdc743d1.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 3 on Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/642/level-3-on-accelerating-through-angular-0666345752352b7e145f92dc2474ae88.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 2 on Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/641/level-2-on-accelerating-through-angular-443fedc56af23bc7b194ccd7ed83393a.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 1 on Accelerating Through Angular",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/640/level-1-on-accelerating-through-angular-f87cd49c2f19e94a2d9bc28ded170132.png",
-    "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
-  }, {
-    "name": "Level 1 Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/476/level-1-complete-de745560878ebb460fba573e79046c16.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "Course Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "Level 5 Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/480/level-5-complete-3bc853e52fc4af239ae004ed75a41da1.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "Level 4 Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/479/level-4-complete-719708db6ba12cdbd47795ebfe506ad5.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "Level 3 Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/478/level-3-complete-5922abd3533c5749d4d23bca6ad592ff.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "Level 2 Complete",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/477/level-2-complete-9d11a00ae92516cc3221911fbd15a67f.png",
-    "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
-  }, {
-    "name": "ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 6 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/581/level-6-on-es2015-the-shape-of-javascript-to-come-c0b66591f29bed56c59e03b4f0124b34.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 5 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/580/level-5-on-es2015-the-shape-of-javascript-to-come-f7673bf7abc648391e2fc05327ff2097.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 4 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/579/level-4-on-es2015-the-shape-of-javascript-to-come-3f5eed1d9ae0ef681ad9741c2233da74.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 3 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/578/level-3-on-es2015-the-shape-of-javascript-to-come-aec2427850a8b1d270e049084c9c38ab.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 2 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/577/level-2-on-es2015-the-shape-of-javascript-to-come-cf4097ec806c462c1b6597e9ab80ba5f.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Level 2 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/127/level-2-on-git-real-e54555a4dc93b7f888de65aadde81ecf.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Level 1 on Git Real",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/126/level-1-on-git-real-408eb3872930209fd4b302fb2f2ccb3c.png",
-    "course_url": "http://www.codeschool.com/courses/git-real"
-  }, {
-    "name": "Completed Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/177/completed-assembling-sass-part-2-f0396c24666f2e57291fcb591d5660e6.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Level 5 on Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/182/level-5-on-assembling-sass-part-2-67649e1a251a8fbfc462421f8eeec59c.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Level 4 on Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/181/level-4-on-assembling-sass-part-2-d39942e239c5c97729c1c2bc303b3a0e.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Wayfarer",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/498/wayfarer-40cc9baa2715dd61a6feef3bd57b93b7.png",
-    "course_url": null
-  }, {
-    "name": "Level 3 on Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/180/level-3-on-assembling-sass-part-2-aebc68cb616b52aec9bf07f47823ecc8.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Level 2 on Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/179/level-2-on-assembling-sass-part-2-dcb45398b4b5d89ca9064af0521ad32d.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Level 1 on Assembling Sass Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/178/level-1-on-assembling-sass-part-2-4e2c92173d4863bed99b94f3fc2aa218.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
-  }, {
-    "name": "Completed Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 7 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/469/level-7-on-assembling-sass-a45355224abb5ba48ba9cf20627fcb03.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 6 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/154/level-6-on-assembling-sass-7d1cb73ece12d81db076041f07d110c7.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 5 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/151/level-5-on-assembling-sass-1c3dcf00411a59a52cb46787aaca979e.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 4 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/150/level-4-on-assembling-sass-f6d35714434c4df2d09943fa0bd095c6.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 3 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/149/level-3-on-assembling-sass-fd9d6769a18ab08e2fc22455eb3d86a4.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 2 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/148/level-2-on-assembling-sass-2b06e13b1b37bd8bdf0c3452693d3209.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Level 1 on Assembling Sass",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/147/level-1-on-assembling-sass-02ebd3581dddac8a59c6a6d922c35a7f.png",
-    "course_url": "http://www.codeschool.com/courses/assembling-sass"
-  }, {
-    "name": "Completed Journey into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 5 on Journey Into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/455/level-5-on-journey-into-mobile-0534b5640af3447293cfbda0e911f835.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 4 on Journey into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/106/level-4-on-journey-into-mobile-b1604a6c2640a14ecef6d93885c57fbc.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 3 on Journey into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/105/level-3-on-journey-into-mobile-d179708d37f471ca87f3e3db0a8f1fe8.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 2 on Journey into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/104/level-2-on-journey-into-mobile-520441dac8d2b9fe4deae674e7f1ecb7.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 1 on Journey into Mobile",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/103/level-1-on-journey-into-mobile-38943a0dda8082a17e2bcc254325e729.png",
-    "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
-  }, {
-    "name": "Level 8 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/462/level-8-on-css-cross-country-9e2ff4f365747a7f619c4632b8f447d6.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Completed CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 7 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/47/level-7-on-css-cross-country-5a39ca2a094961f9c82b71f7ddbccbfb.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 6 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/46/level-6-on-css-cross-country-f6a27acffa789bf7725fc9f046fc4254.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 5 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/45/level-5-on-css-cross-country-b7ef43220bbf0447349b8fb10fb71f34.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 4 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/44/level-4-on-css-cross-country-812c700bf5d3aa4abce2eeb1187081bb.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 3 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/43/level-3-on-css-cross-country-2b35c588ea146a297f629d5cf733ff90.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 2 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/42/level-2-on-css-cross-country-43b9d83055fa06b607cb0cf1215a0e70.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Level 1 on CSS Cross-Country",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/41/level-1-on-css-cross-country-96fb99da28e17edb7da62911777bf1d3.png",
-    "course_url": "http://www.codeschool.com/courses/css-cross-country"
-  }, {
-    "name": "Completed Try Git",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png",
-    "course_url": "http://www.codeschool.com/courses/try-git"
-  }, {
-    "name": "Level 1 on Try Git",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/621/level-1-on-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png",
-    "course_url": "http://www.codeschool.com/courses/try-git"
-  }, {
-    "name": "Completed jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Level 6 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/272/level-6-on-jquery-the-return-flight-9c2d863402253f2c9d9f1628a105bd12.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Journeyperson",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/497/journeyperson-7d6eea0f0d15e9c2fed170689934b4b4.png",
-    "course_url": null
-  }, {
-    "name": "Level 5 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/271/level-5-on-jquery-the-return-flight-938ac3ac45604503fac408d819f68560.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Level 4 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/270/level-4-on-jquery-the-return-flight-9bf81c63ee232fbc6139425ec262d8e7.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Level 3 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/269/level-3-on-jquery-the-return-flight-f8832ed11d58dcd18951900378b75cfb.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Level 2 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/268/level-2-on-jquery-the-return-flight-8451c5234c1ece3329669618656e38eb.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Level 1 on jQuery: The Return Flight",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/267/level-1-on-jquery-the-return-flight-53a2e4c530f99e6216252c3839ac1eb9.png",
-    "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
-  }, {
-    "name": "Completed Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Level 5 on Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/196/level-5-on-try-jquery-d932a0a14a14f5b274c820948ad048c6.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Level 4 on Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/195/level-4-on-try-jquery-2e887987593d69f5d7a9c3888abbf797.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Level 3 on Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/194/level-3-on-try-jquery-0fd4605995b2b2aed756dcd55ba3c3c8.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Level 2 on Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/193/level-2-on-try-jquery-804e03c59fd757dbe7c3964d238e37a2.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Level 1 on Try jQuery",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/192/level-1-on-try-jquery-195852b5089f07d0a4ec66634dbc3285.png",
-    "course_url": "http://www.codeschool.com/courses/try-jquery"
-  }, {
-    "name": "Apprentice",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/534/apprentice-0f19184c0b7fc1eaa3e9c89e758c5d99.png",
-    "course_url": null
-  }, {
-    "name": "Level 1 on ES2015: The Shape of JavaScript to Come",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/576/level-1-on-es2015-the-shape-of-javascript-to-come-9fe76219e758da8911fd550c1a1afcba.png",
-    "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
-  }, {
-    "name": "Completed JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Level 5 on JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/326/level-5-on-javascript-road-trip-part-3-4eed5ac5c7d57bd16f954c77bdd8d422.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Level 4 on JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/325/level-4-on-javascript-road-trip-part-3-1bccb584d89ff6bd4b001749064711fe.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Level 3 on JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/324/level-3-on-javascript-road-trip-part-3-cb0d68e550ebbbc24cf1bcd6ef7623f8.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Level 2 on JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/323/level-2-on-javascript-road-trip-part-3-e58e3b10b168279919542555c1c961d9.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Tenderfoot",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/496/tenderfoot-59d41c72e7dafb6adafe6802e288d636.png",
-    "course_url": null
-  }, {
-    "name": "Level 1 on JavaScript Road Trip Part 3",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/322/level-1-on-javascript-road-trip-part-3-9ad1dad72f2be56c98fe319ea809be32.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
-  }, {
-    "name": "Completed JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Level 5 on JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/305/level-5-on-javascript-road-trip-part-2-f8e71724cc96cd76a8153c75d55dffaf.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Level 4 on JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/304/level-4-on-javascript-road-trip-part-2-9f89ee08fc861e56070d76312e305f7c.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Level 3 on JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/303/level-3-on-javascript-road-trip-part-2-ad721f643fdf8de2665d40e7c26826ef.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Cadet",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/495/cadet-068d8b9938da926dce6ea4911d6adfc6.png",
-    "course_url": null
-  }, {
-    "name": "Level 2 on JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/302/level-2-on-javascript-road-trip-part-2-e691e2995191012f4d5ff4bf9664cc05.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Level 1 on JavaScript Road Trip Part 2",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/301/level-1-on-javascript-road-trip-part-2-baf68d7f42f8b6b5f185a356de5690b2.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
-  }, {
-    "name": "Bullseye",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/582/bullseye-11b609ec6bac32b255919f670f1966b0.png",
-    "course_url": null
-  }, {
-    "name": "Completed JavaScript Road Trip Part 1",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
-  }, {
-    "name": "Level 3 on JavaScript Road Trip Part 1",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/299/level-3-on-javascript-road-trip-part-1-ae7652ab8f363e27fea8afe06cee30e3.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
-  }, {
-    "name": "Scout",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/531/scout-54448d7074a378e1ee249cf9be818f73.png",
-    "course_url": null
-  }, {
-    "name": "Level 2 on JavaScript Road Trip Part 1",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/298/level-2-on-javascript-road-trip-part-1-e568b2c31b1fd0da0dc94cc4d5452150.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
-  }, {
-    "name": "Level 1 on JavaScript Road Trip Part 1",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/297/level-1-on-javascript-road-trip-part-1-ff645bd94243922a90b775da5ee2647c.png",
-    "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
-  }, {
-    "name": "Rookie",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/530/rookie-0fa91bd64fa59be22b5e5600807d1057.png",
-    "course_url": null
-  }, {
-    "name": "Level 2 on Shaping up with AngularJS",
-    "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/394/level-2-on-shaping-up-with-angularjs-35372b710b98fee826132a53226d08ef.png",
-    "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
-  }]
+  "badges": [
+    {
+      "name": "Completed Fundamentals of Design",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/277/completed-fundamentals-of-design-b9f4f4d4ff73f8a9fdff2043a223404e.png",
+      "course_url": "http://www.codeschool.com/courses/fundamentals-of-design"
+    },
+    {
+      "name": "Level 3 on Fundamentals of Design",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/280/level-3-on-fundamentals-of-design-ace096931085868e735c7bacd461dae9.png",
+      "course_url": "http://www.codeschool.com/courses/fundamentals-of-design"
+    },
+    {
+      "name": "Level 2 on Fundamentals of Design",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/279/level-2-on-fundamentals-of-design-f317d98005bbbcb64332ffa40e7da3d0.png",
+      "course_url": "http://www.codeschool.com/courses/fundamentals-of-design"
+    },
+    {
+      "name": "Level 1 on Fundamentals of Design",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/278/level-1-on-fundamentals-of-design-6aee5bf14eccf277d180785ad70f0d18.png",
+      "course_url": "http://www.codeschool.com/courses/fundamentals-of-design"
+    },
+    {
+      "name": "Website Ready",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/619/website-ready-eb250ab24db2afa50877f16fe10104a5.png",
+      "course_url": null
+    },
+    {
+      "name": "Completed Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/315/completed-front-end-formations-165329e44a56cd6d401c0c60369d368e.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Level 5 on Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/320/level-5-on-front-end-formations-cb3cef3fb878f727936622823c99698d.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Level 4 on Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/319/level-4-on-front-end-formations-f76933da76d45889cd6441de1987413f.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Level 3 on Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/318/level-3-on-front-end-formations-5db12952d80199300bd5106e47f84b44.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Level 2 on Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/317/level-2-on-front-end-formations-f8f7a7c43e94c88a4e2631386777fc73.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Level 1 on Front-end Formations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/316/level-1-on-front-end-formations-c27483b64148275c96bb8d0c999893d9.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-formations"
+    },
+    {
+      "name": "Course Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/448/course-complete-81fb30908f005de5c75e5376d041f05f.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Level 5 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/449/level-5-complete-854f2231143a3b3b49bc44c00cbbe7e7.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Level 4 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/447/level-4-complete-161720168d30cd46936555dd6f4e20ef.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Level 3 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/446/level-3-complete-3ce06a25d49e2457712ba2b72463a66c.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Level 2 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/445/level-2-complete-8189525329228c8f6513e22202b8729b.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Level 1 Complete on Front End Foundations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/444/level-1-complete-on-front-end-foundations-a14a15c153bbe32611fca5be835923bf.png",
+      "course_url": "http://www.codeschool.com/courses/front-end-foundations"
+    },
+    {
+      "name": "Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/680/close-encounters-with-php-2537a20d039051c88403a2a8d937cc6c.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Level 5 on Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/685/level-5-on-close-encounters-with-php-55cbb868c07d1cc4e1597867c2a9f7c3.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Level 4 on Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/684/level-4-on-close-encounters-with-php-92eb09e2a3cd5ef002061a766e086524.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Level 3 on Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/683/level-3-on-close-encounters-with-php-da2f5942a2bd91f4a85984f1b9d19c91.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Level 2 on Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/682/level-2-on-close-encounters-with-php-458a7a9255f5c07dedfab263c390a37e.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Level 1 on Close Encounters With PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/681/level-1-on-close-encounters-with-php-0f521076ad1b26824b3070c8882fb462.png",
+      "course_url": "http://www.codeschool.com/courses/close-encounters-with-php"
+    },
+    {
+      "name": "Try PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/679/try-php-749a67b4c361bb990b9a8606bfe19245.png",
+      "course_url": "http://www.codeschool.com/courses/try-php"
+    },
+    {
+      "name": "Level 4 on Try PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/678/level-4-on-try-php-1f0e7fecea059b3181262bdb44251b98.png",
+      "course_url": "http://www.codeschool.com/courses/try-php"
+    },
+    {
+      "name": "Level 3 on Try PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/677/level-3-on-try-php-afa35ad0485126600b23f1951dd65176.png",
+      "course_url": "http://www.codeschool.com/courses/try-php"
+    },
+    {
+      "name": "Level 2 on Try PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/676/level-2-on-try-php-e1a41f1d88335883e55733f98d01416a.png",
+      "course_url": "http://www.codeschool.com/courses/try-php"
+    },
+    {
+      "name": "Level 1 on Try PHP",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/675/level-1-on-try-php-9d8e72cfa27caacc2fca4f2671140353.png",
+      "course_url": "http://www.codeschool.com/courses/try-php"
+    },
+    {
+      "name": "Level 4 on Adventures in Web Animations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/529/level-4-on-adventures-in-web-animations-a4fb7c34507124c79f1ebbd36155306e.png",
+      "course_url": "http://www.codeschool.com/courses/adventures-in-web-animations"
+    },
+    {
+      "name": "Adventures in Web Animations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/525/adventures-in-web-animations-ddb801dc0f6e1c033511311fa0eddece.png",
+      "course_url": "http://www.codeschool.com/courses/adventures-in-web-animations"
+    },
+    {
+      "name": "Voyager",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/499/voyager-9f70792cc4c6d3aa86ad11da0d01f1f8.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 3 on Adventures in Web Animations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/528/level-3-on-adventures-in-web-animations-c17742d856ddd426281a68d37f67fc11.png",
+      "course_url": "http://www.codeschool.com/courses/adventures-in-web-animations"
+    },
+    {
+      "name": "Level 2 on Adventures in Web Animations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/527/level-2-on-adventures-in-web-animations-722749acfc35887c7b18a47fbf45c3c1.png",
+      "course_url": "http://www.codeschool.com/courses/adventures-in-web-animations"
+    },
+    {
+      "name": "Level 1 on Adventures in Web Animations",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/526/level-1-on-adventures-in-web-animations-3383b245a916a85fad67e1d8ba7b43d3.png",
+      "course_url": "http://www.codeschool.com/courses/adventures-in-web-animations"
+    },
+    {
+      "name": "You, Me & SVG",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/618/you-me-svg-bafffdf6009ac4f5fd37d68e116f70d2.png",
+      "course_url": "http://www.codeschool.com/courses/you-me-svg"
+    },
+    {
+      "name": "Level 4 on You, Me & SVG",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/617/level-4-on-you-me-svg-36ea3700ce23fc2522f31257c4ae32bf.png",
+      "course_url": "http://www.codeschool.com/courses/you-me-svg"
+    },
+    {
+      "name": "Level 3 on You, Me & SVG",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/616/level-3-on-you-me-svg-287c88d78554f5f060232b706fa9c27b.png",
+      "course_url": "http://www.codeschool.com/courses/you-me-svg"
+    },
+    {
+      "name": "Level 2 on You, Me & SVG",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/615/level-2-on-you-me-svg-74c36d9cb22fdd2ad76c928adc034be9.png",
+      "course_url": "http://www.codeschool.com/courses/you-me-svg"
+    },
+    {
+      "name": "Level 1 on You, Me & SVG",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/614/level-1-on-you-me-svg-02d0ccc11f2f18a933e4b76218a754c2.png",
+      "course_url": "http://www.codeschool.com/courses/you-me-svg"
+    },
+    {
+      "name": "Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/674/cracking-the-case-with-flexbox-bd5a2fab4f22076828152007da4ded45.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Level 5 on Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/673/level-5-on-cracking-the-case-with-flexbox-cb18c1ad2d09988a1fbf7ea483546942.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Level 4 on Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/672/level-4-on-cracking-the-case-with-flexbox-12034f6415ce57f261e5fef4028d1125.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Level 3 on Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/671/level-3-on-cracking-the-case-with-flexbox-cbd2336e1a33b27fa215178f1a856f99.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Level 2 on Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/670/level-2-on-cracking-the-case-with-flexbox-4d14e6144f4763180026e211e1f8ddad.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Level 1 on Cracking the Case With Flexbox",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/669/level-1-on-cracking-the-case-with-flexbox-bed91090dd5750ac3f809511243018ca.png",
+      "course_url": "http://www.codeschool.com/courses/cracking-the-case-with-flexbox"
+    },
+    {
+      "name": "Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/524/breaking-the-ice-with-regular-expressions-07f250b8acc97e47f862e00b1f5115b2.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Level 5 on Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/523/level-5-on-breaking-the-ice-with-regular-expressions-c314d0ed82590cd43cec2e52cd294bb6.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Level 4 on Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/522/level-4-on-breaking-the-ice-with-regular-expressions-0f12435bb0517d673e428c5057ba8428.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Level 3 on Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/521/level-3-on-breaking-the-ice-with-regular-expressions-6035feb314a9b2cea9705b8251bde666.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Level 2 on Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/520/level-2-on-breaking-the-ice-with-regular-expressions-ef13f5c1a5e5ad445c420774fca4beb5.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Level 1 on Breaking the Ice with Regular Expressions",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/519/level-1-on-breaking-the-ice-with-regular-expressions-91c2cacad20b86797199e1c19fe5973a.png",
+      "course_url": "http://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions"
+    },
+    {
+      "name": "Completed JavaScript Best Practices",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/435/completed-javascript-best-practices-320e73d2694215bc24264e74a2f76528.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-best-practices"
+    },
+    {
+      "name": "Level 4 on JavaScript Best Practices",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/434/level-4-on-javascript-best-practices-d4e9474e7e997185fb83e1921471339b.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-best-practices"
+    },
+    {
+      "name": "Level 3 on JavaScript Best Practices",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/433/level-3-on-javascript-best-practices-85675b292fa04dd8eb4d7f58a7f5a9e7.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-best-practices"
+    },
+    {
+      "name": "Level 2 on JavaScript Best Practices",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/432/level-2-on-javascript-best-practices-79bffdc90ec0ff126fc1659ba99011ba.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-best-practices"
+    },
+    {
+      "name": "Level 1 on JavaScript Best Practices",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/431/level-1-on-javascript-best-practices-dbf4a18275286110037ee1051cbe3f6a.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-best-practices"
+    },
+    {
+      "name": "Level 1 on App Evolution With Swift",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/588/level-1-on-app-evolution-with-swift-5abead6e17afa8a733e029e8bcfceef6.png",
+      "course_url": "http://www.codeschool.com/courses/app-evolution-with-swift"
+    },
+    {
+      "name": "Mobile Maven",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/584/mobile-maven-50fbe55af7a771048363d4ca774eb346.png",
+      "course_url": null
+    },
+    {
+      "name": "Completed Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    },
+    {
+      "name": "Level 1 on Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/393/level-1-on-shaping-up-with-angularjs-2f5667cc62303ce2416d902fcf6c5ffc.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    },
+    {
+      "name": "Level 5 on Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/397/level-5-on-shaping-up-with-angularjs-b17ca2086d841080f3456bb1284ecb60.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    },
+    {
+      "name": "Level 4 on Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/396/level-4-on-shaping-up-with-angularjs-77764ec8afba15dfd9908531db51d784.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    },
+    {
+      "name": "Adventurer",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/532/adventurer-2b3c43359d7f3f9962ddee6f44874b25.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 3 on Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/395/level-3-on-shaping-up-with-angularjs-80d76a75bfe1e5fa60359ce1cea02ceb.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    },
+    {
+      "name": "Completed Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 7 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/457/level-7-on-git-real-2f0bd90419daeb525867098ccb24350a.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 6 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/131/level-6-on-git-real-8c4a8570b4ff32ff6937c0361843829d.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 5 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/130/level-5-on-git-real-e3eb99951842d9a67515385ca4bb6e97.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 4 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/129/level-4-on-git-real-7d1b8286719e6d2d9808015690490824.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 3 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/128/level-3-on-git-real-27b162952118559cd3f033adfd14e1bb.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 5 on Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/644/level-5-on-accelerating-through-angular-3ef2eee6f806d07ffe0749f0bc866547.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 4 on Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/643/level-4-on-accelerating-through-angular-7a63c07139596b7acd896903cdc743d1.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 3 on Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/642/level-3-on-accelerating-through-angular-0666345752352b7e145f92dc2474ae88.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 2 on Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/641/level-2-on-accelerating-through-angular-443fedc56af23bc7b194ccd7ed83393a.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 1 on Accelerating Through Angular",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/640/level-1-on-accelerating-through-angular-f87cd49c2f19e94a2d9bc28ded170132.png",
+      "course_url": "http://www.codeschool.com/courses/accelerating-through-angular"
+    },
+    {
+      "name": "Level 1 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/476/level-1-complete-de745560878ebb460fba573e79046c16.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "Course Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "Level 5 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/480/level-5-complete-3bc853e52fc4af239ae004ed75a41da1.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "Level 4 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/479/level-4-complete-719708db6ba12cdbd47795ebfe506ad5.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "Level 3 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/478/level-3-complete-5922abd3533c5749d4d23bca6ad592ff.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "Level 2 Complete",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/477/level-2-complete-9d11a00ae92516cc3221911fbd15a67f.png",
+      "course_url": "http://www.codeschool.com/courses/blasting-off-with-bootstrap"
+    },
+    {
+      "name": "ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 6 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/581/level-6-on-es2015-the-shape-of-javascript-to-come-c0b66591f29bed56c59e03b4f0124b34.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 5 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/580/level-5-on-es2015-the-shape-of-javascript-to-come-f7673bf7abc648391e2fc05327ff2097.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 4 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/579/level-4-on-es2015-the-shape-of-javascript-to-come-3f5eed1d9ae0ef681ad9741c2233da74.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 3 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/578/level-3-on-es2015-the-shape-of-javascript-to-come-aec2427850a8b1d270e049084c9c38ab.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 2 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/577/level-2-on-es2015-the-shape-of-javascript-to-come-cf4097ec806c462c1b6597e9ab80ba5f.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Level 2 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/127/level-2-on-git-real-e54555a4dc93b7f888de65aadde81ecf.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Level 1 on Git Real",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/126/level-1-on-git-real-408eb3872930209fd4b302fb2f2ccb3c.png",
+      "course_url": "http://www.codeschool.com/courses/git-real"
+    },
+    {
+      "name": "Completed Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/177/completed-assembling-sass-part-2-f0396c24666f2e57291fcb591d5660e6.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Level 5 on Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/182/level-5-on-assembling-sass-part-2-67649e1a251a8fbfc462421f8eeec59c.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Level 4 on Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/181/level-4-on-assembling-sass-part-2-d39942e239c5c97729c1c2bc303b3a0e.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Wayfarer",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/498/wayfarer-40cc9baa2715dd61a6feef3bd57b93b7.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 3 on Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/180/level-3-on-assembling-sass-part-2-aebc68cb616b52aec9bf07f47823ecc8.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Level 2 on Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/179/level-2-on-assembling-sass-part-2-dcb45398b4b5d89ca9064af0521ad32d.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Level 1 on Assembling Sass Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/178/level-1-on-assembling-sass-part-2-4e2c92173d4863bed99b94f3fc2aa218.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass-part-2"
+    },
+    {
+      "name": "Completed Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 7 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/469/level-7-on-assembling-sass-a45355224abb5ba48ba9cf20627fcb03.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 6 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/154/level-6-on-assembling-sass-7d1cb73ece12d81db076041f07d110c7.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 5 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/151/level-5-on-assembling-sass-1c3dcf00411a59a52cb46787aaca979e.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 4 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/150/level-4-on-assembling-sass-f6d35714434c4df2d09943fa0bd095c6.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 3 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/149/level-3-on-assembling-sass-fd9d6769a18ab08e2fc22455eb3d86a4.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 2 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/148/level-2-on-assembling-sass-2b06e13b1b37bd8bdf0c3452693d3209.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Level 1 on Assembling Sass",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/147/level-1-on-assembling-sass-02ebd3581dddac8a59c6a6d922c35a7f.png",
+      "course_url": "http://www.codeschool.com/courses/assembling-sass"
+    },
+    {
+      "name": "Completed Journey into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 5 on Journey Into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/455/level-5-on-journey-into-mobile-0534b5640af3447293cfbda0e911f835.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 4 on Journey into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/106/level-4-on-journey-into-mobile-b1604a6c2640a14ecef6d93885c57fbc.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 3 on Journey into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/105/level-3-on-journey-into-mobile-d179708d37f471ca87f3e3db0a8f1fe8.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 2 on Journey into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/104/level-2-on-journey-into-mobile-520441dac8d2b9fe4deae674e7f1ecb7.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 1 on Journey into Mobile",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/103/level-1-on-journey-into-mobile-38943a0dda8082a17e2bcc254325e729.png",
+      "course_url": "http://www.codeschool.com/courses/journey-into-mobile"
+    },
+    {
+      "name": "Level 8 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/462/level-8-on-css-cross-country-9e2ff4f365747a7f619c4632b8f447d6.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Completed CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 7 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/47/level-7-on-css-cross-country-5a39ca2a094961f9c82b71f7ddbccbfb.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 6 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/46/level-6-on-css-cross-country-f6a27acffa789bf7725fc9f046fc4254.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 5 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/45/level-5-on-css-cross-country-b7ef43220bbf0447349b8fb10fb71f34.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 4 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/44/level-4-on-css-cross-country-812c700bf5d3aa4abce2eeb1187081bb.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 3 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/43/level-3-on-css-cross-country-2b35c588ea146a297f629d5cf733ff90.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 2 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/42/level-2-on-css-cross-country-43b9d83055fa06b607cb0cf1215a0e70.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Level 1 on CSS Cross-Country",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/41/level-1-on-css-cross-country-96fb99da28e17edb7da62911777bf1d3.png",
+      "course_url": "http://www.codeschool.com/courses/css-cross-country"
+    },
+    {
+      "name": "Completed Try Git",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png",
+      "course_url": "http://www.codeschool.com/courses/try-git"
+    },
+    {
+      "name": "Level 1 on Try Git",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/621/level-1-on-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png",
+      "course_url": "http://www.codeschool.com/courses/try-git"
+    },
+    {
+      "name": "Completed jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Level 6 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/272/level-6-on-jquery-the-return-flight-9c2d863402253f2c9d9f1628a105bd12.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Journeyperson",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/497/journeyperson-7d6eea0f0d15e9c2fed170689934b4b4.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 5 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/271/level-5-on-jquery-the-return-flight-938ac3ac45604503fac408d819f68560.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Level 4 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/270/level-4-on-jquery-the-return-flight-9bf81c63ee232fbc6139425ec262d8e7.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Level 3 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/269/level-3-on-jquery-the-return-flight-f8832ed11d58dcd18951900378b75cfb.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Level 2 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/268/level-2-on-jquery-the-return-flight-8451c5234c1ece3329669618656e38eb.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Level 1 on jQuery: The Return Flight",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/267/level-1-on-jquery-the-return-flight-53a2e4c530f99e6216252c3839ac1eb9.png",
+      "course_url": "http://www.codeschool.com/courses/jquery-the-return-flight"
+    },
+    {
+      "name": "Completed Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Level 5 on Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/196/level-5-on-try-jquery-d932a0a14a14f5b274c820948ad048c6.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Level 4 on Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/195/level-4-on-try-jquery-2e887987593d69f5d7a9c3888abbf797.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Level 3 on Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/194/level-3-on-try-jquery-0fd4605995b2b2aed756dcd55ba3c3c8.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Level 2 on Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/193/level-2-on-try-jquery-804e03c59fd757dbe7c3964d238e37a2.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Level 1 on Try jQuery",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/192/level-1-on-try-jquery-195852b5089f07d0a4ec66634dbc3285.png",
+      "course_url": "http://www.codeschool.com/courses/try-jquery"
+    },
+    {
+      "name": "Apprentice",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/534/apprentice-0f19184c0b7fc1eaa3e9c89e758c5d99.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 1 on ES2015: The Shape of JavaScript to Come",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/576/level-1-on-es2015-the-shape-of-javascript-to-come-9fe76219e758da8911fd550c1a1afcba.png",
+      "course_url": "http://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    },
+    {
+      "name": "Completed JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Level 5 on JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/326/level-5-on-javascript-road-trip-part-3-4eed5ac5c7d57bd16f954c77bdd8d422.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Level 4 on JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/325/level-4-on-javascript-road-trip-part-3-1bccb584d89ff6bd4b001749064711fe.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Level 3 on JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/324/level-3-on-javascript-road-trip-part-3-cb0d68e550ebbbc24cf1bcd6ef7623f8.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Level 2 on JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/323/level-2-on-javascript-road-trip-part-3-e58e3b10b168279919542555c1c961d9.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Tenderfoot",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/496/tenderfoot-59d41c72e7dafb6adafe6802e288d636.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 1 on JavaScript Road Trip Part 3",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/322/level-1-on-javascript-road-trip-part-3-9ad1dad72f2be56c98fe319ea809be32.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-3"
+    },
+    {
+      "name": "Completed JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Level 5 on JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/305/level-5-on-javascript-road-trip-part-2-f8e71724cc96cd76a8153c75d55dffaf.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Level 4 on JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/304/level-4-on-javascript-road-trip-part-2-9f89ee08fc861e56070d76312e305f7c.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Level 3 on JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/303/level-3-on-javascript-road-trip-part-2-ad721f643fdf8de2665d40e7c26826ef.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Cadet",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/495/cadet-068d8b9938da926dce6ea4911d6adfc6.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 2 on JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/302/level-2-on-javascript-road-trip-part-2-e691e2995191012f4d5ff4bf9664cc05.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Level 1 on JavaScript Road Trip Part 2",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/301/level-1-on-javascript-road-trip-part-2-baf68d7f42f8b6b5f185a356de5690b2.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-2"
+    },
+    {
+      "name": "Bullseye",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/582/bullseye-11b609ec6bac32b255919f670f1966b0.png",
+      "course_url": null
+    },
+    {
+      "name": "Completed JavaScript Road Trip Part 1",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
+    },
+    {
+      "name": "Level 3 on JavaScript Road Trip Part 1",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/299/level-3-on-javascript-road-trip-part-1-ae7652ab8f363e27fea8afe06cee30e3.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
+    },
+    {
+      "name": "Scout",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/531/scout-54448d7074a378e1ee249cf9be818f73.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 2 on JavaScript Road Trip Part 1",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/298/level-2-on-javascript-road-trip-part-1-e568b2c31b1fd0da0dc94cc4d5452150.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
+    },
+    {
+      "name": "Level 1 on JavaScript Road Trip Part 1",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/297/level-1-on-javascript-road-trip-part-1-ff645bd94243922a90b775da5ee2647c.png",
+      "course_url": "http://www.codeschool.com/courses/javascript-road-trip-part-1"
+    },
+    {
+      "name": "Rookie",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/530/rookie-0fa91bd64fa59be22b5e5600807d1057.png",
+      "course_url": null
+    },
+    {
+      "name": "Level 2 on Shaping up with AngularJS",
+      "badge": "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/394/level-2-on-shaping-up-with-angularjs-35372b710b98fee826132a53226d08ef.png",
+      "course_url": "http://www.codeschool.com/courses/shaping-up-with-angularjs"
+    }
+  ]
 }

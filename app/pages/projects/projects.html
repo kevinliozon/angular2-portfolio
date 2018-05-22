@@ -1,0 +1,12 @@
+<div class="container-stretch" [@routeTrans]="'true'">
+  <my-filters [page]="'projects'" (selectFilter)="filterFor($event)"></my-filters>
+
+  <main class="row container-dual">
+    <section class="col-xs-12 col-sm-4 container-select block-center-xs">
+      <my-list-preview [objects]="projects" [type]="'project'" [filterValue]="filterValue" (focusedItem)="focusItem($event)"></my-list-preview>
+    </section>
+
+    <!-- PREVIEW -->
+    <my-preview class="col-xs-8 container-preview hidden-xs" [focusedItem]="focusedItem" [type]="'project'"></my-preview>
+  </main>
+</div>

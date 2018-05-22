@@ -1,0 +1,59 @@
+.card-reg {
+  @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
+  @include transition(all, 0.15s, ease, 0s);
+  background: linear-gradient(to right, $dark 50%, transparent 50%) right bottom/200% 100%;
+  border: 0;
+  border-radius: 0;
+  height: $card-height;
+  margin: auto auto 20px;
+  max-width: 300px;
+  position: relative;
+  transform-origin: left 0% 0; // for scaling from top to bottom
+
+  &.active,
+  &:focus {
+    background-position: left bottom;
+    color: $light;
+
+    .btn-card {
+      @include btn-anim();
+
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+}
+
+.card-info {
+  h3 {
+    font-size: $font-base;
+    margin-top: $padding-sm;
+  }
+
+  p {
+    font-size: $font-small;
+  }
+}
+
+.card-image,
+.card-info,
+.card-link {
+  padding: 20px;
+}
+
+.card-link {
+  @include position(absolute, auto, auto, 0px, auto);
+  width: 100%;
+
+  .btn-card {
+    @extend .btn-primary;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-reg {
+    @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+  }
+}

@@ -1,0 +1,83 @@
+.btn {
+  border: none;
+  border-radius: 0px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:visited {
+    color: $light;
+  }
+}
+
+.btn-dark {
+  background-color: $grey;
+  color: $light;
+
+  &:visited {
+    background-color: $grey;
+  }
+}
+
+.btn-reg {
+  @extend .btn;
+  @extend .btn-dark;
+  @include drop-shadow(false, 3px, 3px, 3px, 0px, $grey);
+  @include transition(all, 0.3s, ease-in, 0s);
+  min-width: 100px;
+  padding: 10px;
+}
+
+.btn-primary {
+  @extend .btn-reg;
+
+  &:hover,
+  &:active {
+    @include btn-anim();
+  }
+}
+
+.btn-font {
+  @extend .btn;
+  @extend .btn-dark;
+  @include position(absolute, auto, 50px, -35px, auto);
+  @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+  @include transition(all, 0.3s, ease-in, 0s);
+  background-color: $grey;
+  font-size: $font-micro;
+  padding: 2px 10px;
+
+  &:hover,
+  &:focus {
+    color: $light;
+  }
+
+  &:hover {
+    background-color: darken($grey, 10%);
+  }
+
+  &.selected {
+    background-color: $primary;
+  }
+
+  .btn-label-big {
+    font-size: $font-big;
+  }
+}
+
+.btn-group-line {
+  .btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn-group--details,
+  .btn-group--jumbo {
+    @include flex-layout(wrap, center, flex-start, flex-start);
+    .btn {
+      width: 100%;
+    }
+  }
+}

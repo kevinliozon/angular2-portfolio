@@ -1,0 +1,112 @@
+img {
+  width: 10%;
+}
+
+.img {
+  display: block;
+}
+
+.img-group {
+  @include flex-layout(wrap, flex-start, flex-start, flex-start);
+
+  .img {
+    margin: 10px;
+  }
+}
+
+.img-float {
+  @include square($img-big);
+}
+
+.img-brand {
+  @include square($img-mega);
+}
+
+.img-label {
+  @include transition(all, 0.4s, ease, 0s);
+  font-size: $font-micro;
+  font-weight: bold;
+  margin: auto;
+  opacity: 0;
+  text-align: center;
+  width: calc(#{$img-big} + 15px);
+}
+
+// Rounded containe for images
+.img-round {
+  @include round($img-mega);
+  @include drop-shadow(false, 0px, 3px, 3px, 0px, $grey);
+  background-color: $light;
+  padding: calc(#{$img-mega} / 4);
+
+  img {
+    @include square($img-md);
+  }
+}
+
+.img-round--sm {
+  @extend .img-round;
+  @include round($img-big);
+  padding: calc(#{$img-md} / 4);
+
+  img {
+    @include square($img-md);
+  }
+}
+
+.img-round--big {
+  @extend .img-round;
+  @include round($img-giga);
+  padding: calc(#{$img-mega} / 4);
+
+  img {
+    @include square($img-mega);
+  }
+
+  + .img-label {
+    font-size: $font-base;
+    width: calc(#{$img-giga} + 15px);
+  }
+}
+
+.img-link {
+  @include transition(all, 0.4s, ease, 0s);
+  cursor: pointer;
+}
+
+.img--flip {
+  @include transform(scaleX(-1));
+}
+
+.img-wrap {
+  min-height: 150px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    .img-link {
+      @include drop-shadow(false, 0px, 6px, 6px, 0px, $grey);
+      @include transform(translateY(-5px));
+    }
+
+    .img-label {
+      opacity: 1;
+    }
+  }
+}
+
+/**
+  Media Queries
+ */
+@media screen and (max-width: 768px) {
+  .img-group {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-label {
+    opacity: 1;
+  }
+}

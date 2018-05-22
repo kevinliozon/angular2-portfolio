@@ -1,0 +1,28 @@
+<div class="row">
+
+  <section class="col-xs-12 col-sm-8 content-jumbo">
+    <h2>{{ profile.name }}</h2>
+    <h4>{{ profile.title }} - {{ age }}</h4>
+    <p>{{ 'homeText0' | translate }}</p>
+    <p>{{ 'homeText1' | translate }}</p>
+    <p>{{ 'homeText2' | translate }}</p>
+  </section>
+
+  <figure class="col-xs-12 col-sm-4 img-jumbo">
+    <img class="img--flip" [src]="profile.images.avatar" [alt]="profile.name">
+  </figure>
+
+  <footer class="col-xs-12 btn-group btn-group--jumbo">
+    <header class="header-sub"><h4>{{ 'homeText3' | translate }}</h4></header>
+    <a
+      *ngFor="let btn of profileBtn"
+      [class]="btn.class"
+      [routerLink]="[btn.route]"
+      [fragment]="btn.fragment">
+        {{ btn.name | translate }}
+    </a>
+    <a class="btn btn-primary" href="../assets/cv_kevinliozon_en.pdf" *ngIf="sessionBtn() === 'eng'" target="_blank">CV</a>
+    <a class="btn btn-primary" href="../assets/cv_kevinliozon_fr.pdf" *ngIf="sessionBtn() === 'fra'" target="_blank">CV</a>
+  </footer>
+
+</div>

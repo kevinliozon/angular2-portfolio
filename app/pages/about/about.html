@@ -1,0 +1,99 @@
+<div class="container" [@routeTrans]="'true'">
+
+  <main class="wrap-articles">
+
+    <article id="about-fed" class="jumbotron wrap-jumbo">
+      <div class="row">
+
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header>
+            <h2>{{ 'aboutTitle0' | translate }}</h2>
+          </header>
+
+          <p>{{ 'aboutText0' | translate }}</p>
+
+          <footer class="img-group">
+            <header class="header-sub"><h4>{{ 'aboutTitle7' | translate }}</h4></header>
+            <figure class="img-wrap" *ngFor="let skill of skillsDev; let i=index">
+              <img class="img img-float" [src]="skill.image" [alt]="skill.name">
+              <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
+            </figure>
+          </footer>
+        </section>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img [src]="details.images.dev">
+        </figure>
+
+      </div>
+    </article>
+
+
+    <article id="about-ux" class="jumbotron wrap-jumbo">
+      <div class="row">
+
+        <section class="content-jumbo col-xs-12 col-sm-8">
+          <header>
+            <h2>{{ 'aboutTitle1' | translate }}</h2>
+          </header>
+          <p>{{ 'aboutText1' | translate }}</p>
+
+          <footer class="img-group">
+            <header class="header-sub"><h4>{{ 'aboutTitle7' | translate }}</h4></header>
+            <figure class="img-wrap" *ngFor="let skill of skillsDesign; let i=index">
+              <img class="img img-float" *ngIf="i < 5" [src]="skill.image" [alt]="skill.name">
+              <figcaption class="img-label" *ngIf="i < 5">{{ skill.name }}</figcaption>
+            </figure>
+          </footer>
+        </section>
+
+        <figure class="col-xs-12 col-sm-4 img-jumbo">
+          <img [src]="details.images.design">
+        </figure>
+
+      </div>
+    </article>
+  </main>
+
+  <section id="about-tools" class="wrap-cards row">
+    <header><h2>{{ 'aboutTitle2' | translate }}</h2></header>
+    <my-card
+      class="col-xs-12 col-sm-4 col-md-3"
+      *ngFor="let tool of tools"
+      [hidden]="!tool.featured"
+      [object]="tool"
+      (moreInfo)="openModal($event, 'tool')">
+    </my-card>
+  </section>
+  
+  
+  <article id="about-experiences" class="jumbotron wrap-jumbo">
+    <div class="row">
+      
+      <section class="content-jumbo col-xs-12 col-sm-8">
+        <header>
+          <h2>{{ 'aboutTitle3' | translate }}</h2>
+        </header>
+        <p>{{ 'aboutText2' | translate }}</p>
+      </section>
+      
+      <figure class="col-xs-12 col-sm-4 img-jumbo">
+        <img [src]="details.images.process">
+      </figure>
+    
+    </div>
+  </article>
+
+  <section id="about-hobbies" class="wrap-cards row">
+    <header><h2>{{ 'aboutTitle4' | translate }}</h2></header>
+    <my-card
+      class="col-xs-12 col-sm-4 col-md-3"
+      *ngFor="let hobby of hobbies"
+      [object]="hobby"
+      (moreInfo)="openModal($event, 'hobby')">
+    </my-card>
+  </section>
+
+  <my-modal [details]="detailsModal" [type]="typeModal"></my-modal>
+
+</div>

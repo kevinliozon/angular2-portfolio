@@ -1,0 +1,60 @@
+<!-- DIPLOMA LIST -->
+
+<div class="grid-list" *ngIf="type === 'diploma'">
+  <figure
+    class="grid-list-cell"
+    *ngFor="let object of objects"
+    (mouseover)="focusItem(object)"
+    (click)="goTo(object)"
+    [class.active]="focusedItemId === object.id">
+
+    <div class="grid-list-icn">
+      <!-- PROJECT LOGO -->
+      <img class="img img-float block-center-xs" [src]="object.school.image" [alt]="object.name"/>
+    </div>
+
+    <figcaption class="grid-list-label ellipsis-one-line">
+      <h5>
+        {{ object.name | translate }}
+        <!-- SCHOOL -->
+        <span class="sub-label">{{ 'at' | translate }} {{ object.school.name | translate }}</span>
+      </h5>
+    </figcaption>
+
+    <div class="grid-list-arrows" [class.active]="focusedItemId === object.id"> >>> </div>
+
+  </figure>
+</div>
+
+<!-- PROJECT OR ROLE LIST -->
+
+<div class="grid-list" *ngIf="type === 'project' || type === 'role'">
+  <figure
+    class="grid-list-cell"
+    *ngFor="let object of objects | filter:{ category: filterValue }"
+    (mouseover)="focusItem(object)"
+    (click)="goTo(object)"
+    [class.active]="focusedItemId === object.id">
+
+    <div class="grid-list-icn">
+      <!-- PROJECT LOGO -->
+      <img *ngIf="type === 'project'" class="img img-float block-center-xs" [src]="object.image" [alt]="object.name"/>
+      <!-- ROLE LOGO -->
+      <img *ngIf="type === 'role'" class="img img-float block-center-xs" [src]="object.company.logo" [alt]="object.company.name"/>
+    </div>
+
+    <figcaption class="grid-list-label ellipsis-one-line">
+      <h5>
+        <span *ngIf="!object.confidentiality">{{ object.name | translate }}</span>
+        <span *ngIf="object.confidentiality">{{ object.confidentiality | translate }}</span>
+        <!-- PROJECT CLIENT -->
+        <span class="sub-label" *ngIf="type === 'project' && object.client">{{ 'for' | translate }} {{ object.client.name }}</span>
+        <!-- ROLE COMPANY  -->
+        <span class="sub-label" *ngIf="type === 'role'">{{ 'for' | translate }} {{ object.company.name }}</span>
+      </h5>
+    </figcaption>
+
+    <div class="grid-list-arrows" [class.active]="focusedItemId === object.id"> >>> </div>
+
+  </figure>
+</div>

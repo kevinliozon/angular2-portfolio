@@ -1,1 +1,60 @@
+.main-footer {
+  background-color: $primary;
+  position: relative;
 
+  .footer-social {
+    @include flex-layout(wrap, space-evenly, space-around, center);
+    width: 75%;
+    margin: auto;
+    padding: $gap-big $gap-reg $gap-md;
+  }
+
+  .footer-copyright {
+    background-color: $alt;
+    color: $light;
+    font-size: $font-small;
+    padding: $gap-md 0 $gap-mega;
+    text-align: center;
+
+    p {
+      margin-bottom: $gap-sm;
+    }
+  }
+
+  .triangle {
+    @include triangle('bottom', $light, 50px, 30px);
+    @extend %triangles-plugged;
+    top: -1px;
+  }
+}
+
+.navbar-footer {
+  text-align: center;
+  padding: 0px;
+
+  .nav-route {
+    display: inline-block;
+    font-size: $font-base;
+    margin: auto $gap-sm $gap-sm;
+
+    a {
+      color: $light;
+      text-decoration: underline;
+      @include transition(all, 0.2s, ease-in, 0s);
+    }
+
+    a:hover,
+    &.active > a {
+      text-shadow: 1.5px 1.5px $grey;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-backdrop {
+  @include drop-shadow(false, 0px, -10px, 30px, 0px, $light);
+  margin-top: 20px;
+  position: relative;
+  background: $light;
+  height: 50px;
+}

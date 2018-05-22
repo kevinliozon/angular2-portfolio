@@ -1,0 +1,75 @@
+.container-toggle {
+  @include position(absolute, 0, 0, auto, auto);
+
+  .toggle-label {
+    float: left;
+    width: 50%;
+  }
+}
+
+// The switch - the box around the btn-toggle
+.toggle {
+  float: left;
+  display: inline-block;
+  height: 34px;
+  margin: 0 auto;
+  position: relative;
+  width: 60px;
+}
+
+// Input
+.toggle-input {
+  display: none; // Hide default HTML checkbox
+}
+
+.toggle-input:checked {
+
+  // elem adjacent to toggle-input after checked
+  + .toggle-btn {
+    background-color: $primary;
+
+    &::before {
+      @include transform(translateX(26px));
+    }
+  }
+}
+
+// The slider
+.toggle-btn {
+  @include position(absolute, 0, 0, 0, 0);
+  @include transition(all, 0.4s, ease, 0s);
+  background-color: $grey;
+  cursor: pointer;
+
+  &::before {
+    @include position(absolute, auto, auto, 4px, 4px);
+    @include square(26px);
+    @include transition(all, 0.4s, ease, 0s);
+    content: '';
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-toggle {
+    position: static;
+    margin: 40px auto;
+    .toggle, .toggle-label {
+      float: none;
+      display: block;
+    }
+    .toggle-label {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // Return line for toggle
+  .container-toggle {
+    display: block;
+    position: relative;
+    width: 80px;
+  }
+}

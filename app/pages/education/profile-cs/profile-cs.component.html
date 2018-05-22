@@ -1,0 +1,20 @@
+<figure class="col-xs-12 col-sm-4 img-jumbo">
+  <img [src]="profile.organism.image">
+</figure>
+
+<section class="col-xs-12 col-sm-8 content-jumbo">
+
+  <header>
+    <h2>Report card</h2>
+    <h4>ID: {{ profile.username }}</h4>
+  </header>
+
+  <p>{{ profile.total_score }} points</p>
+  <p>Courses completed: {{ certifs.length }}</p>
+  <p>Since {{ profile.member_since | date: "dd/MM/yyyy"}}</p>
+
+</section>
+
+<footer class="col-xs-12 btn-jumbo">
+  <a class="btn btn-primary" [href]="profile.organism.url" target="_blank" role="button">{{ "more" | translate }}</a>
+</footer>

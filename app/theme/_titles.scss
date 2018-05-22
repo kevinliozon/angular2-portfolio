@@ -1,0 +1,56 @@
+@for $i from 1 through 6 {
+  h#{$i},
+  label,
+  .img-label,
+  .btn {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+h1 {
+  @include special-font($font-tera, $light);
+}
+
+h2 {
+  @include special-font($font-giga, $alt);
+  margin: 0px auto $gap-big;
+
+  .wrap-cards &,
+  .img-group & {
+    text-align: center;
+  }
+
+  .wrap-details &,
+  .img-modal & {
+    margin-bottom: $gap-sm;
+  }
+}
+
+h3,
+h4,
+h5 {
+  font-size: $font-big;
+}
+
+.header-sub {
+  width: 100%;
+  margin: $gap-md 0px;
+}
+
+h4 > .content-prefix {
+  font-size: $font-small;
+}
+
+/**
+  Media Queries
+ */
+@media screen and (max-width: 768px) {
+  .wrap-jumbo,
+  .wrap-details {
+    @for $i from 1 through 6 {
+      h#{$i} {
+        text-align: center;
+      }
+    }
+  }
+}

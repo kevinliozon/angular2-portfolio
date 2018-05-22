@@ -1,0 +1,7 @@
+<div class="wrap-cookie" *ngIf="!isConsented">
+  <p>{{ 'cookie' | translate }}</p>
+  <div class="btn-group-line">
+    <button class="btn-primary" (click)="consentToCookies(true, $event)">{{ 'agree' | translate }}</button>
+    <a [routerLink]="'cookie-policy'" class="btn-primary">{{ 'why' | translate }}?</a>
+  </div>
+</div>

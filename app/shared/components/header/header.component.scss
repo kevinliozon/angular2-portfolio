@@ -1,0 +1,221 @@
+// Anchor for complete scrolltop
+#anchor-top {
+  position: absolute;
+  top: -50px;
+}
+
+// Container
+.main-header > .navbar {
+  @include drop-shadow(false, 0px, 2px, 10px, 0px, $grey);
+  background-color: $light;
+
+  .navbar-collapse {
+    padding-right: 0; // remove in burger menu
+    max-height: 75%;
+  }
+}
+
+// Cell height
+.navbar-brand,
+.nav > li {
+  height: $header-height;
+}
+
+// Logo
+.navbar-brand {
+  @extend %no-margin;
+  @include special-font($font-big, $grey);
+
+  a {
+    text-decoration: none;
+  }
+
+  .header-logo {
+    width: 50px;
+    height: 100%;
+  }
+
+  .header-label {
+    color: $grey;
+    margin-left: $gap-reg;
+  }
+}
+
+// Menu
+.nav {
+  margin-right: 0;
+
+  .nav-route {
+
+    > a {
+      @include special-font($font-base, $grey);
+      @include transition(all, 0.25s, ease, 0s);
+      background: linear-gradient(to bottom, $primary 50%, $light 50%);
+      background-size: 100% 200%;
+      background-position: bottom left;
+      font-family: 'Roboto', sans-serif;
+      height: 100%;
+      line-height: 46px;
+    }
+
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      background-position: top left;
+      color: $light;
+      font-weight: bold;
+    }
+  }
+}
+
+.nav-lang {
+  width: 100px;
+
+  > .dropdown-toggle {
+    height: 100%;
+    text-align: center;
+  }
+
+  img {
+    height: 100%;
+    width: 20px;
+  }
+
+  .caret {
+    @extend %block-centred;
+  }
+
+  .dropdown-menu {
+    @extend %no-padding;
+    @extend %no-radius;
+    @include transition(all, 0.4s, ease, 0s);
+    min-width: 0;
+    width: 100px;
+    text-align: center;
+    display: block;
+    transform-origin: 0% top 0; // for scaling from top to bottom
+    cursor: pointer;
+
+    li a {
+      padding: 15px 20px;
+    }
+
+    .selected {
+      background-color: $primary;
+      &:hover > a {
+        color: $dark;
+      }
+      a {
+        color: $light;
+      }
+    }
+  }
+
+  .dropdown-menu:not(.open) {
+    @include anim-dropdown(0);
+  }
+
+  &.open > .dropdown-menu {
+    @include anim-dropdown(1);
+  }
+
+}
+
+// Burger Menu
+
+.navbar-toggle {
+  border: none;
+  margin: 20px 0px 20px 20px;
+  box-sizing: content-box;
+  height: 20px;
+
+  &:not(.nav-lang) {
+    padding-right: 40px;
+  }
+
+  .icon-bar {
+    @include transition(all, 0.3s, ease-in, 0s);
+  }
+
+  // anim burger menu
+  &:not(.collapsed) {
+    .icn-burger-top {
+      @include transform(rotate(45deg) translateY(5px));
+    }
+    .icn-burger-mid {
+      display: none;
+    }
+    .icn-burger-bot {
+      @include transform(rotate(-45deg) translateY(-4px));
+    }
+  }
+}
+
+// overwrite default highlight
+.navbar .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+// Title
+.page-header {
+  background-color: $secondary;
+  padding: $header-height 0 0 $gap-md;
+  margin-bottom: 50px;
+  position: relative;
+
+  h1 {
+    @include transition(all, 0.25s, ease, 0s);
+    text-indent: 0;
+  }
+
+  &.title-has-changed > h1 {
+    text-indent: -9999px;
+  }
+
+  .triangle {
+    @include triangle('bottom', $secondary, 50px, 30px);
+    @extend %triangles-plugged;
+    bottom: -49px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .nav-route > a {
+    font-size: $font-small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-top: 0;
+    .nav-route > a {
+      font-size: $font-base;
+      text-align: center;
+    }
+  }
+  .nav-lang {
+    width: auto;
+    img {
+      height: auto;
+    }
+    .caret {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header-label {
+    display: none;
+  }
+
+  .nav-lang,
+  .navbar-toggle {
+    margin: 20px 5px
+  }
+}

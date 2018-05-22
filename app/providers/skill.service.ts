@@ -3,11 +3,8 @@ import { Injectable } from '@angular/core';
 import { SKILLS } from '../shared/data/mock-skills';
 
 @Injectable()
-export class SkillService
-{
-  public getSkills()
-  {
+export class SkillService {
+  public getSkills(): any {
     return SKILLS;
   }
-
 }

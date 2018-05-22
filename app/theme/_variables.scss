@@ -1,0 +1,208 @@
+/**
+ * Colours
+ */
+
+$primary: #66cc99;
+$secondary: #6699cc;
+$alt: #62b2b0;
+$dark: #303030;
+$grey: #707070;
+$light-grey: #f0f0f0;
+$light: #fcfcfc;
+$alert: #d8746a;
+$info: #cc9d14;
+
+/**
+ * Fonts
+ */
+
+$font-micro: 1rem;
+$font-small: 1.2rem;
+$font-base: 1.6rem;
+$font-big: 1.8rem;
+$font-macro: 2.2rem;
+$font-mega: 2.6rem;
+$font-giga: 3rem;
+$font-tera: 4rem;
+
+/**
+ * Images
+ */
+
+$img-sm: 25px;
+$img-md: 50px;
+$img-big: 75px;
+$img-mega: 100px;
+$img-giga: 150px;
+
+/**
+ * Containers
+ */
+
+$header-height: 7.5rem;
+$card-height: 20rem;
+$gap-sm: 0.5rem;
+$gap-reg: 1.5rem;
+$gap-md: 3rem;
+$gap-big: 4.5rem;
+$gap-mega: 6rem;
+$gap-tera: 40vh;
+$padding-sm: 1rem;
+
+/**
+ * Mixins
+ */
+
+@mixin special-font($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin highlight($bg-color, $font-color) {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+@mixin square($value) {
+  width: $value;
+  height: $value;
+}
+
+@mixin round($value) {
+  border-radius: 50%;
+  width: $value;
+  height: $value;
+}
+
+@mixin position($type, $top, $right, $bottom, $left) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// center vertically
+@mixin vertical-align($height) {
+  height: $height;
+  line-height: $height / 2;
+}
+
+@mixin anim-dropdown($value) {
+  @include transform(scaleY($value));
+  opacity: $value;
+}
+
+@mixin triangle($dir, $color, $base, $height) {
+  $tip: $height solid $color;
+
+  @include square($base);
+  border: $base solid transparent;
+  border-#{$dir}: none; // border concerned disappear
+  @if $dir == 'top' {
+    border-bottom: $tip;
+  } @else if $dir == 'bottom' {
+    border-top: $tip;
+  } @else if $dir == 'right' {
+    border-left: $tip;
+  } @else if $dir == 'left' {
+    border-right: $tip;
+  }
+}
+
+@mixin drop-shadow($isInset, $hor, $ver, $blur, $spread, $color) {
+  @if $isInset == true {
+    -webkit-box-shadow: inset $hor $ver $blur $spread $color;
+    -moz-box-shadow: inset $hor $ver $blur $spread $color;
+    box-shadow: inset $hor $ver $blur $spread $color;
+  } @else if $isInset == false {
+    -webkit-box-shadow: $hor $ver $blur $spread $color;
+    -moz-box-shadow: $hor $ver $blur $spread $color;
+    box-shadow: $hor $ver $blur $spread $color;
+  }
+}
+
+@mixin flex-layout($hasWrap: nowrap, $justif: flex-start, $alignContent: stretch, $alignItems: stretch) {
+  display: flex;
+  flex-wrap: $hasWrap;
+  justify-content: $justif;
+  align-content: $alignContent;
+  align-items: $alignItems;
+}
+
+@mixin border($top, $right, $bottom, $left, $color, $radius) {
+  border-top: $top solid $color;
+  border-right: $right solid $color;
+  border-bottom: $bottom solid $color;
+  border-left: $left solid $color;
+  border-radius: $radius;
+}
+
+// ANIMS
+
+@mixin transform($tansformation) {
+  -webkit-transform: $tansformation;
+  -moz-transform: $tansformation;
+  -ms-transform: $tansformation;
+  -o-transform: $tansformation;
+  transform: $tansformation;
+}
+
+@mixin transition($prop, $dur, $timing, $delay, $others...) {
+  -webkit-transition: $prop $dur $timing $delay, $others;
+  -moz-transition: $prop $dur $timing $delay, $others;
+  -ms-transition: $prop $dur $timing $delay, $others;
+  -o-transition: $prop $dur $timing $delay, $others;
+  transition: $prop $dur $timing $delay, $others;
+}
+
+@mixin btn-anim() {
+  @include drop-shadow(false, 5px, 5px, 3px, 0px, $grey);
+  @include transform(translateX(-3px));
+  background-color: $primary;
+}
+
+/**
+ * General
+ */
+
+// Container
+
+%no-padding { padding: 0; }
+
+%no-margin { margin: 0; }
+
+%block-centred {
+  display: block;
+  margin: 0 auto;
+}
+
+%block-half-centred {
+  margin: 0 auto;
+  width: 50%;
+}
+
+// Borders
+
+%no-radius { border-radius: 0; }
+
+%no-border { border: 0; }
+
+%triangles-plugged {
+  position: absolute;
+  margin: 0 auto;
+  left: 25%;
+  right: 25%;
+}
+
+%btn-filter {
+  @include transition(all, 0.4s, ease, 0s);
+  border-radius: 0;
+  background-color: $grey;
+  color: $light;
+}
+
+%btn-filter-anim {
+  @include transform(scaleY(1.1));
+  background-color: $primary;
+}
