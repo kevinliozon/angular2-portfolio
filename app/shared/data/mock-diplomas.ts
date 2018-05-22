@@ -8,6 +8,11 @@ export let DIPLOMAS: Diploma[] = [{
     'image': '../../../assets/img/png/diplomas/nng.png',
     'name': 'NNG Certification Diploma',
     'alt': 'Image of Nielsen and Norman Group certification diploma',
+  },
+  {
+    'image': '../../../assets/img/thumb/diplomas/nng.png',
+    'name': 'NNG Certification Diploma',
+    'alt': 'Image of Nielsen and Norman Group certification diploma',
   }],
   'subjects': [
     {'name': 'Interaction Design', 'spe': true},
