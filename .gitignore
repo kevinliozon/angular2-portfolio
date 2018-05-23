@@ -4,8 +4,8 @@
 node_modules
 dist
 .tmp
-typings
-npm-debug.log
 .idea
 .idea/workspace.xml
 .idea/tasks.xml
+typings
+npm-debug.log

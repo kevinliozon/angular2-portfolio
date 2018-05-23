@@ -28,9 +28,12 @@ gulp.task("fonts", function() {
 });
 
 // Move Html files to /dist and modify index.html
-gulp.task('html', function() {
-  return gulp.src('app/**/*.html', {base: 'app'}) // base allow to keep the folder structure from the root app/
-    .pipe(gulp.dest('dist/app'));
+gulp.task('html-pages', function() {
+  return gulp.src('app/**/*.html', {base: 'app/pages'}) // base allow to keep the folder structure from the root app/
+    .pipe(gulp.dest('dist/app/pages'));
+});
+
+gulp.task('html-index', function() {
   return gulp.src('index.html')
     .pipe(htmlReplace({
       'css': 'styles.min.css',
